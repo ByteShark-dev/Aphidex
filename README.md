@@ -10,8 +10,10 @@ Aphidex works as a "Pokedex-like" system for Grounded and Grounded 2, where play
 - Plan combat strategies
 - Build optimized loadouts
 
-## Screenshots
+## Vision
+Create a complete companion system that helps players understand the game deeply and make better decisions in combat and progression.
 
+## Screenshots
 ### Enemy Information
 ![Enemy Screen](./assets/Screenshot_1768358831.png)
 ### Menu
@@ -53,8 +55,8 @@ Work in progress.
 Available on Google Play:
 https://play.google.com/store/apps/details?id=...
 
+
 Core data system is already defined.  
 Application layer is under development.
 
-## Vision
-Create a complete companion system that helps players understand the game deeply and make better decisions in combat and progression.
+
