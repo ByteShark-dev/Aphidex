@@ -10,6 +10,14 @@ Aphidex works as a "Pokedex-like" system for Grounded and Grounded 2, where play
 - Plan combat strategies
 - Build optimized loadouts
 
+## Screenshots
+### Menu
+![Menu_Screen](./asstets/Captura_de_pantalla_2026-01-13_205642.png)
+
+### Enemy Information
+![Enemy Screen](./assets/Screenshot_1768358831.png)
+
+
 ## Core Features
 - Offline functionality (no internet required)
 - Structured enemy database
