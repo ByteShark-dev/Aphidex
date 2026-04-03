@@ -1,5 +1,5 @@
 # Aphidex
-## 📦 Data Layer
+## Data Layer
 Aphidex uses a structured JSON system for its data.
 
 Repository:
