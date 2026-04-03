@@ -22,6 +22,12 @@ Aphidex is built with a separation of layers:
 - App logic (UI and processing)
 - Data layer (JSON-based system)
 
+## How It Works
+
+- The app loads structured JSON data
+- Processes enemy stats, weaknesses, and resistances
+- Displays information for decision-making (combat, builds)
+- Works fully offline without external APIs
 ## Data Layer
 Aphidex uses a structured JSON system for its data.
 
