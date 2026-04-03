@@ -50,6 +50,8 @@ https://github.com/ByteShark-dev/Aphidex-Data
 
 ## Status
 Work in progress.
+Available on Google Play:
+https://play.google.com/store/apps/details?id=...
 
 Core data system is already defined.  
 Application layer is under development.
