@@ -96,6 +96,10 @@ void main() {
       ),
     );
     await tester.pump();
+    scrollController.jumpTo(160);
+    controller.requestTargetRefresh();
+    await tester.pump();
+    await tester.pump();
 
     final overlayContext = tester.element(find.byType(TutorialHost));
     final before = controller.currentTargetRect(overlayContext);
@@ -104,7 +108,7 @@ void main() {
     scrollController.jumpTo(320);
     controller.requestTargetRefresh();
     await tester.pump();
-    await tester.pump(const Duration(milliseconds: 300));
+    await tester.pump();
 
     final after = controller.currentTargetRect(overlayContext);
     expect(after, isNotNull);
