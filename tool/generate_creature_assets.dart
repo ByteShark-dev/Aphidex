@@ -32,6 +32,11 @@ const _indexFields = [
   'temperament',
   'health',
   'collectionGroup',
+  'technicalId',
+  'bestiaryId',
+  'cardTier',
+  'bossCardStyle',
+  'groupId',
 ];
 
 void main() {

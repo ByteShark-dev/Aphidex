@@ -42,6 +42,7 @@ flutter:
     - assets/g2/creatures/cards/
     - assets/g2/creatures/cards_golden/
     - assets/g2/creatures/photos/
+    - assets/g2/tier_icons/
     - assets/data/creatures/en/
     - assets/data/creatures/en/details/
     - assets/data/creatures/es/

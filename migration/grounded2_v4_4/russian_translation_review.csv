@@ -1,0 +1,39 @@
+﻿id,name_ru,status
+g2_ancient_pond_jockey,Древний рой прудовых наездников,automatic_pending_human_review
+g2_chop_r,CHOP.R,automatic_pending_human_review
+g2_cku,C.K.U.,automatic_pending_human_review
+g2_diving_bell_spider,Паук-серебрянка,automatic_pending_human_review
+g2_green_shield_bug,Зелёный щитник,automatic_pending_human_review
+g2_koi_calico,Калико,automatic_pending_human_review
+g2_koi_dagon,Дагон,automatic_pending_human_review
+g2_koi_oriole,Иволга,automatic_pending_human_review
+g2_koi_sunny,Санни,automatic_pending_human_review
+g2_ogrr_green_shield_bug,Зелёный щитник O.G.R.R.,automatic_pending_human_review
+g2_ogrr_striped_bark_scorpion,Полосатый древесный скорпион O.G.R.R.,automatic_pending_human_review
+g2_ogrr_tiger_mosquito,Тигровый комар O.G.R.R.,automatic_pending_human_review
+g2_ogrr_toe_biter,Водяной клоп O.G.R.R.,automatic_pending_human_review
+g2_ogrr_toe_biter_leviathan,Водяной клоп-левиафан O.G.R.R.,automatic_pending_human_review
+g2_orc_green_shield_bug,Зелёный щитник O.R.C.,automatic_pending_human_review
+g2_orc_striped_bark_scorpion,Полосатый древесный скорпион O.R.C.,automatic_pending_human_review
+g2_orc_striped_bark_scorpion_jr,Молодой полосатый древесный скорпион O.R.C.,automatic_pending_human_review
+g2_orc_striped_bark_scorpling,Детёныш полосатого древесного скорпиона O.R.C.,automatic_pending_human_review
+g2_orc_tiger_mosquito,Тигровый комар O.R.C.,automatic_pending_human_review
+g2_orc_toe_biter,Водяной клоп O.R.C.,automatic_pending_human_review
+g2_orc_toe_biter_leviathan,Водяной клоп-левиафан O.R.C.,automatic_pending_human_review
+g2_orc_toe_biter_nymph,Нимфа водяного клопа O.R.C.,automatic_pending_human_review
+g2_papa_toe_biter,Папа-водяной клоп,automatic_pending_human_review
+g2_pond_jockey,Рой прудовых наездников,automatic_pending_human_review
+g2_sauc_r,SAUC.R,automatic_pending_human_review
+g2_spiny_water_flea,Колючая водяная блоха,automatic_pending_human_review
+g2_striped_bark_scorpion,Полосатый древесный скорпион,automatic_pending_human_review
+g2_striped_bark_scorpion_jr,Молодой полосатый древесный скорпион,automatic_pending_human_review
+g2_striped_bark_scorpling,Детёныш полосатого древесного скорпиона,automatic_pending_human_review
+g2_tadpole,Головастик,automatic_pending_human_review
+g2_tick,Клещ,automatic_pending_human_review
+g2_tiger_mosquito,Тигровый комар,automatic_pending_human_review
+g2_toe_biter,Водяной клоп,automatic_pending_human_review
+g2_toe_biter_leviathan,Водяной клоп-левиафан,automatic_pending_human_review
+g2_toe_biter_nymph,Нимфа водяного клопа,automatic_pending_human_review
+g2_water_boatman,Водяной гребляк,automatic_pending_human_review
+g2_water_flea,Водяная блоха,automatic_pending_human_review
+g2_buggy_toe_biter,Багги: нимфа водяного клопа,automatic_pending_human_review
