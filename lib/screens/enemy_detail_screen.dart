@@ -142,7 +142,10 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
   late int _selectedIndex;
   int _selectedPhaseIndex = 0;
   int _selectedInfusionIndex = 0;
+  int _selectedEncounterIndex = 0;
+  String? _groupSelectedId;
   Future<Enemy>? _enemyFuture;
+  Future<List<EnemyIndexEntry>>? _groupSummariesFuture;
   String? _loadedLanguageCode;
 
   bool get _usesLazyDetails => _summaryVariants != null;
@@ -150,9 +153,11 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
   int get _variantCount =>
       _usesLazyDetails ? _summaryVariants!.length : _legacyVariants!.length;
 
-  String get _currentId => _usesLazyDetails
-      ? _summaryVariants![_selectedIndex].id
-      : _legacyVariants![_selectedIndex].id;
+  String get _currentId =>
+      _groupSelectedId ??
+      (_usesLazyDetails
+          ? _summaryVariants![_selectedIndex].id
+          : _legacyVariants![_selectedIndex].id);
 
   String get _currentSpeciesKey => _usesLazyDetails
       ? _summaryVariants![_selectedIndex].speciesKey
@@ -193,6 +198,18 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
     }
     _loadedLanguageCode = languageCode;
     _enemyFuture = EnemyRepository.loadDetail(_currentId, languageCode);
+    final groupId = _usesLazyDetails
+        ? _summaryVariants![_selectedIndex].groupId
+        : _legacyVariants![_selectedIndex].groupId;
+    if (groupId != null && groupId.isNotEmpty) {
+      _groupSummariesFuture = EnemyRepository.loadGame('g2', languageCode).then(
+        (entries) => entries
+            .where((entry) => entry.groupId == groupId && entry.game == 'g2')
+            .toList(growable: false),
+      );
+    } else {
+      _groupSummariesFuture = null;
+    }
   }
 
   int _compareVariantGames(
@@ -335,6 +352,8 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
       _selectedIndex = nextIndex;
       _selectedPhaseIndex = 0;
       _selectedInfusionIndex = 0;
+      _selectedEncounterIndex = 0;
+      _groupSelectedId = null;
       if (_usesLazyDetails) {
         _enemyFuture = EnemyRepository.loadDetail(
           _currentId,
@@ -344,6 +363,20 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
     });
     WidgetsBinding.instance.addPostFrameCallback((_) {
       TutorialController.instance.requestTargetRefresh();
+    });
+  }
+
+  void _selectGroupedEntry(String id) {
+    if (id == _currentId) return;
+    setState(() {
+      _groupSelectedId = id;
+      _selectedPhaseIndex = 0;
+      _selectedInfusionIndex = 0;
+      _selectedEncounterIndex = 0;
+      _enemyFuture = EnemyRepository.loadDetail(
+        id,
+        _loadedLanguageCode ?? context.l10n.languageCode,
+      );
     });
   }
 
@@ -427,6 +460,22 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
     );
     final favorites = FavoritesController.instance;
     final gold = GoldController.instance;
+    final namedVariants = enemy.encounterVariants;
+    final selectedEncounter =
+        namedVariants.isEmpty || _selectedEncounterIndex == 0
+        ? null
+        : namedVariants[(_selectedEncounterIndex - 1).clamp(
+            0,
+            namedVariants.length - 1,
+          )];
+    final displayName =
+        selectedEncounter?.name.resolve(languageCode).trim().isNotEmpty == true
+        ? selectedEncounter!.name.resolve(languageCode)
+        : enemy.name.resolve(languageCode);
+    final effectiveHealth = selectedEncounter?.health ?? enemy.health;
+    final effectiveAttacks = selectedEncounter?.attacks.isNotEmpty == true
+        ? selectedEncounter!.attacks
+        : enemy.attacks;
     final selectedInfusion = enemy.infusions.isEmpty
         ? null
         : enemy.infusions[_selectedInfusionIndex.clamp(
@@ -441,16 +490,25 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
     final resistancesV1 = enemy.resistances
         .where((item) => item.trim().isNotEmpty)
         .toList();
+    final encounterElemental = selectedEncounter?.elementalWeaknesses;
+    final encounterDamage = selectedEncounter?.damageWeaknesses;
+    final encounterResistances = selectedEncounter?.resistances;
     final effectiveElementalWeaknesses = _mergeBonuses(
-      enemy.elementalWeaknesses,
+      encounterElemental?.isNotEmpty == true
+          ? encounterElemental!
+          : enemy.elementalWeaknesses,
       selectedInfusion?.elementalWeaknesses ?? const [],
     );
     final effectiveDamageWeaknesses = _mergeBonuses(
-      enemy.damageWeaknesses,
+      encounterDamage?.isNotEmpty == true
+          ? encounterDamage!
+          : enemy.damageWeaknesses,
       selectedInfusion?.damageWeaknesses ?? const [],
     );
     final effectiveResistances = _mergeBonuses(
-      enemy.resistancesV2,
+      encounterResistances?.isNotEmpty == true
+          ? encounterResistances!
+          : enemy.resistancesV2,
       selectedInfusion?.resistances ?? const [],
     );
     final effectiveInflictsEffects = _mergeStringIds(
@@ -532,7 +590,7 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
     return Scaffold(
       appBar: AppBar(
         title: OverflowMarqueeText(
-          enemy.name.resolve(languageCode),
+          displayName,
           style: Theme.of(context).appBarTheme.titleTextStyle,
         ),
         actions: [
@@ -570,6 +628,34 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
               ),
               const SizedBox(height: 12),
             ],
+            if (_groupSummariesFuture != null) ...[
+              FutureBuilder<List<EnemyIndexEntry>>(
+                future: _groupSummariesFuture,
+                builder: (context, snapshot) {
+                  final entries = snapshot.data ?? const <EnemyIndexEntry>[];
+                  if (entries.length < 2) return const SizedBox.shrink();
+                  return _RelatedEntrySwitcher(
+                    entries: entries,
+                    selectedId: enemy.id,
+                    onChanged: _selectGroupedEntry,
+                  );
+                },
+              ),
+              const SizedBox(height: 12),
+            ],
+            if (namedVariants.isNotEmpty) ...[
+              _EncounterVariantSwitcher(
+                baseName: enemy.name.resolve(languageCode),
+                variants: namedVariants,
+                selectedIndex: _selectedEncounterIndex,
+                languageCode: languageCode,
+                onChanged: (index) => setState(() {
+                  _selectedEncounterIndex = index;
+                  _selectedPhaseIndex = 0;
+                }),
+              ),
+              const SizedBox(height: 12),
+            ],
             useSummaryRow
                 ? Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -587,7 +673,7 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
                                 'detail-photo-${enemy.id}-${selectedInfusion?.id ?? 'base'}',
                               ),
                               photoAsset: visiblePhotoAsset,
-                              title: enemy.name.resolve(languageCode),
+                              title: displayName,
                               gamePick: _gamePickForEnemy(enemy),
                             ),
                           ),
@@ -618,7 +704,7 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
                               'detail-photo-${enemy.id}-${selectedInfusion?.id ?? 'base'}',
                             ),
                             photoAsset: visiblePhotoAsset,
-                            title: enemy.name.resolve(languageCode),
+                            title: displayName,
                             gamePick: _gamePickForEnemy(enemy),
                           ),
                         ),
@@ -643,7 +729,7 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
             ],
             if (enemy.healthDisplay.shouldRender) ...[
               _HealthBar(
-                health: enemy.health,
+                health: effectiveHealth,
                 displayMode: enemy.healthDisplay,
               ),
               const SizedBox(height: 18),
@@ -891,7 +977,7 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
             if (enemy.combatStats != null) ...[
               _CombatStatsSection(
                 stats: enemy.combatStats!,
-                fallbackHealth: enemy.health?.value,
+                fallbackHealth: effectiveHealth?.value,
                 l10n: l10n,
                 languageCode: languageCode,
               ),
@@ -948,7 +1034,8 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
               ),
               const SizedBox(height: 18),
             ],
-            if (_hasCombatMoves(enemy) && enemy.bossPhases.isEmpty) ...[
+            if ((_hasCombatMoves(enemy) || effectiveAttacks.isNotEmpty) &&
+                enemy.bossPhases.isEmpty) ...[
               _CollapsibleCardSection(
                 title: enemy.abilities.isNotEmpty
                     ? l10n.abilitiesTitle
@@ -961,7 +1048,7 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
                         embedded: true,
                       )
                     : _AttackListSection(
-                        attacks: enemy.attacks,
+                        attacks: effectiveAttacks,
                         embedded: true,
                       ),
               ),
@@ -1031,6 +1118,74 @@ class _VariantSwitcher extends StatelessWidget {
       ],
       selected: {selectedGame},
       onSelectionChanged: (selection) => onChanged(selection.first),
+    );
+  }
+}
+
+class _RelatedEntrySwitcher extends StatelessWidget {
+  final List<EnemyIndexEntry> entries;
+  final String selectedId;
+  final ValueChanged<String> onChanged;
+
+  const _RelatedEntrySwitcher({
+    required this.entries,
+    required this.selectedId,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: [
+        for (final entry in entries)
+          ChoiceChip(
+            key: ValueKey('related-entry-${entry.id}'),
+            label: Text(entry.name),
+            selected: entry.id == selectedId,
+            onSelected: (_) => onChanged(entry.id),
+          ),
+      ],
+    );
+  }
+}
+
+class _EncounterVariantSwitcher extends StatelessWidget {
+  final String baseName;
+  final List<EncounterVariant> variants;
+  final int selectedIndex;
+  final String languageCode;
+  final ValueChanged<int> onChanged;
+
+  const _EncounterVariantSwitcher({
+    required this.baseName,
+    required this.variants,
+    required this.selectedIndex,
+    required this.languageCode,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: [
+        ChoiceChip(
+          key: const ValueKey('encounter-variant-base'),
+          label: Text(baseName),
+          selected: selectedIndex == 0,
+          onSelected: (_) => onChanged(0),
+        ),
+        for (var index = 0; index < variants.length; index++)
+          ChoiceChip(
+            key: ValueKey('encounter-variant-${variants[index].id}'),
+            label: Text(variants[index].name.resolve(languageCode)),
+            selected: selectedIndex == index + 1,
+            onSelected: (_) => onChanged(index + 1),
+          ),
+      ],
     );
   }
 }
@@ -1177,7 +1332,13 @@ class _DetailSummarySidebar extends StatelessWidget {
             Expanded(
               child: _SummaryStatCard(
                 icon: Image.asset(
-                  UiMapper.tierIcon(tier: enemy.tier, isBoss: enemy.isBoss),
+                  UiMapper.tierIcon(
+                    tier: enemy.tier,
+                    isBoss: enemy.isBoss,
+                    game: enemy.game,
+                    cardTier: enemy.cardTier,
+                    bossCardStyle: enemy.bossCardStyle,
+                  ),
                   width: 28,
                   height: 28,
                 ),

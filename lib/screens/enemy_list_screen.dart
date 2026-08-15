@@ -2712,6 +2712,9 @@ class EnemyTile extends StatelessWidget {
                         UiMapper.tierIcon(
                           tier: enemy.tier,
                           isBoss: enemy.isBoss,
+                          game: enemy.game,
+                          cardTier: enemy.cardTier,
+                          bossCardStyle: enemy.bossCardStyle,
                         ),
                         width: 26,
                       ),

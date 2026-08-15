@@ -2,11 +2,25 @@ import 'dart:convert';
 
 import 'creature_card_support.dart';
 
+enum BossCardStyle {
+  red,
+  yellow;
+
+  static BossCardStyle? fromJson(Object? value) => switch (value) {
+    'red' => BossCardStyle.red,
+    'yellow' => BossCardStyle.yellow,
+    _ => null,
+  };
+}
+
 class Enemy implements CreatureCardCarrier {
   @override
   final String id;
   final String speciesKey;
   final String? collectionGroup;
+  final String? technicalId;
+  final String? bestiaryId;
+  final String? groupId;
   final LocalizedText name;
   final int? order;
   @override
@@ -14,6 +28,8 @@ class Enemy implements CreatureCardCarrier {
   final String? temperament;
 
   final int tier;
+  final int? cardTier;
+  final BossCardStyle? bossCardStyle;
   final String danger;
   final bool isUnderConstruction;
   final bool isBoss;
@@ -64,6 +80,7 @@ class Enemy implements CreatureCardCarrier {
   final List<LocalizedText> lesserMutations;
   final List<AbilityInfo> abilities;
   final List<BossPhaseInfo> bossPhases;
+  final List<EncounterVariant> encounterVariants;
 
   const Enemy({
     required this.order,
@@ -73,9 +90,14 @@ class Enemy implements CreatureCardCarrier {
     required this.id,
     required this.speciesKey,
     this.collectionGroup,
+    this.technicalId,
+    this.bestiaryId,
+    this.groupId,
     required this.name,
     required this.game,
     required this.tier,
+    this.cardTier,
+    this.bossCardStyle,
     required this.danger,
     this.isUnderConstruction = false,
     required this.isBoss,
@@ -119,6 +141,7 @@ class Enemy implements CreatureCardCarrier {
     this.lesserMutations = const [],
     this.abilities = const [],
     this.bossPhases = const [],
+    this.encounterVariants = const [],
   });
 
   factory Enemy.fromJson(Map<String, dynamic> json) {
@@ -261,14 +284,31 @@ class Enemy implements CreatureCardCarrier {
       return const [];
     }
 
+    List<EncounterVariant> encounterVariantList() {
+      final raw = json['encounterVariants'];
+      if (raw is! List) return const [];
+      return raw
+          .whereType<Map>()
+          .map(
+            (item) => EncounterVariant.fromJson(item.cast<String, dynamic>()),
+          )
+          .where((item) => item.isNamed)
+          .toList(growable: false);
+    }
+
     return Enemy(
       id: json['id'] as String,
       speciesKey: (json['speciesKey'] as String?) ?? (json['id'] as String),
       collectionGroup: json['collectionGroup'] as String?,
+      technicalId: json['technicalId'] as String?,
+      bestiaryId: json['bestiaryId'] as String?,
+      groupId: json['groupId'] as String?,
       name: LocalizedText.fromJson(json['name'], legacyLanguage: 'en'),
       game: json['game'] as String,
       temperament: json['temperament'] as String?,
       tier: json['tier'] as int,
+      cardTier: json['cardTier'] as int?,
+      bossCardStyle: BossCardStyle.fromJson(json['bossCardStyle']),
       danger: json['danger'] as String,
       isUnderConstruction: json['underConstruction'] as bool? ?? false,
       isBoss: json['isBoss'] as bool? ?? false,
@@ -333,6 +373,7 @@ class Enemy implements CreatureCardCarrier {
       lesserMutations: localizedTextList('lesserMutations'),
       abilities: abilityList('abilities'),
       bossPhases: phaseList('bossPhases'),
+      encounterVariants: encounterVariantList(),
     );
   }
 
@@ -675,6 +716,143 @@ class EnemyAttack {
     howToAvoid: LocalizedText.maybeFromJson(json['howToAvoid']),
     notes: LocalizedText.maybeFromJson(json['notes']),
   );
+}
+
+class CombatModifier {
+  final String kind;
+  final String classification;
+  final int percent;
+
+  const CombatModifier({
+    required this.kind,
+    required this.classification,
+    required this.percent,
+  });
+
+  factory CombatModifier.fromJson(Map<String, dynamic> json) => CombatModifier(
+    kind: (json['kind'] ?? '').toString(),
+    classification: (json['classification'] ?? '').toString(),
+    percent: ((json['percent'] as num?) ?? 0).round(),
+  );
+}
+
+class EncounterVariant {
+  static const _elementalTypes = {'fresh', 'salty', 'sour', 'spicy', 'water'};
+
+  final String id;
+  final String role;
+  final LocalizedText name;
+  final HealthInfo? health;
+  final List<EnemyAttack> attacks;
+  final List<BonusInfo> elementalWeaknesses;
+  final List<BonusInfo> damageWeaknesses;
+  final List<BonusInfo> resistances;
+  final List<CombatModifier> modifiers;
+
+  const EncounterVariant({
+    required this.id,
+    required this.role,
+    required this.name,
+    this.health,
+    this.attacks = const [],
+    this.elementalWeaknesses = const [],
+    this.damageWeaknesses = const [],
+    this.resistances = const [],
+    this.modifiers = const [],
+  });
+
+  bool get isNamed => role == 'named_or_miniboss';
+
+  factory EncounterVariant.fromJson(Map<String, dynamic> json) {
+    List<BonusInfo> bonuses(String key) {
+      final raw = json[key];
+      if (raw is! List) return const [];
+      return [
+        for (final row in raw.whereType<Map>())
+          for (final type in (row['damageTypes'] as List? ?? const []))
+            BonusInfo(
+              type: type.toString().toLowerCase(),
+              bonusPct: ((row['percent'] as num?) ?? 0).round(),
+            ),
+      ];
+    }
+
+    List<EnemyAttack> attacks() {
+      final raw = json['attacks'];
+      if (raw is! List) return const [];
+      return raw
+          .whereType<Map>()
+          .map((row) {
+            final damage = row['damage'] is Map
+                ? row['damage'] as Map
+                : const {};
+            final amount = damage['amount'] as num?;
+            final damageType = damage['type']?.toString();
+            final details = [
+              if (amount != null)
+                'Damage: ${amount.toStringAsFixed(amount % 1 == 0 ? 0 : 1)}',
+              if (damageType != null && damageType.isNotEmpty) damageType,
+            ].join(' · ');
+            return EnemyAttack(
+              name: LocalizedText(
+                en: (row['id'] ?? row['ability'] ?? '').toString(),
+              ),
+              tags: [
+                if (row['ranged'] == true) 'ranged',
+                if (row['jumpAttack'] == true) 'jump',
+              ],
+              notes: details.isEmpty
+                  ? null
+                  : LocalizedText(en: details, es: details, ru: details),
+            );
+          })
+          .toList(growable: false);
+    }
+
+    final weaknessRows = bonuses('weaknesses');
+    final stats = json['stats'] is Map ? json['stats'] as Map : const {};
+    final healthValue = stats['health'] as num?;
+    final rawModifiers = json['specialCombatModifiers'];
+    return EncounterVariant(
+      id:
+          (json['variantKey'] ??
+                  json['technicalCharacterRow'] ??
+                  json['id'] ??
+                  '')
+              .toString(),
+      role: (json['role'] ?? '').toString(),
+      name: LocalizedText(
+        en: json['nameEn']?.toString(),
+        es: json['nameEsMX']?.toString(),
+        ru: json['nameEn']?.toString(),
+      ),
+      health: healthValue == null
+          ? null
+          : HealthInfo(
+              rating: HealthInfo.visualRating(
+                fallbackRating: 1,
+                value: healthValue.round(),
+              ),
+              value: healthValue.round(),
+            ),
+      attacks: attacks(),
+      elementalWeaknesses: weaknessRows
+          .where((item) => _elementalTypes.contains(item.type))
+          .toList(growable: false),
+      damageWeaknesses: weaknessRows
+          .where((item) => !_elementalTypes.contains(item.type))
+          .toList(growable: false),
+      resistances: bonuses('resistances'),
+      modifiers: rawModifiers is List
+          ? rawModifiers
+                .whereType<Map>()
+                .map(
+                  (row) => CombatModifier.fromJson(row.cast<String, dynamic>()),
+                )
+                .toList(growable: false)
+          : const [],
+    );
+  }
 }
 
 class LootEntry {

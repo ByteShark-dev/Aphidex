@@ -6,12 +6,15 @@ class EnemyIndexEntry implements CreatureCardCarrier {
   final String id;
   final String speciesKey;
   final String? collectionGroup;
+  final String? groupId;
   final String name;
   final int? order;
   @override
   final String game;
   final String? temperament;
   final int tier;
+  final int? cardTier;
+  final BossCardStyle? bossCardStyle;
   final String danger;
   final bool isUnderConstruction;
   final bool isBoss;
@@ -35,11 +38,14 @@ class EnemyIndexEntry implements CreatureCardCarrier {
     required this.id,
     required this.speciesKey,
     this.collectionGroup,
+    this.groupId,
     required this.name,
     required this.order,
     required this.game,
     this.temperament,
     required this.tier,
+    this.cardTier,
+    this.bossCardStyle,
     required this.danger,
     this.isUnderConstruction = false,
     required this.isBoss,
@@ -64,11 +70,14 @@ class EnemyIndexEntry implements CreatureCardCarrier {
     id: json['id'] as String,
     speciesKey: (json['speciesKey'] as String?) ?? (json['id'] as String),
     collectionGroup: json['collectionGroup'] as String?,
+    groupId: json['groupId'] as String?,
     name: (json['name'] ?? '').toString(),
     order: json['order'] as int?,
     game: json['game'] as String,
     temperament: json['temperament'] as String?,
     tier: json['tier'] as int,
+    cardTier: json['cardTier'] as int?,
+    bossCardStyle: BossCardStyle.fromJson(json['bossCardStyle']),
     danger: json['danger'] as String,
     isUnderConstruction: json['underConstruction'] as bool? ?? false,
     isBoss: json['isBoss'] as bool? ?? false,
@@ -94,11 +103,14 @@ class EnemyIndexEntry implements CreatureCardCarrier {
         id: enemy.id,
         speciesKey: enemy.speciesKey,
         collectionGroup: enemy.collectionGroup,
+        groupId: enemy.groupId,
         name: enemy.name.resolve(languageCode),
         order: enemy.order,
         game: enemy.game,
         temperament: enemy.temperament,
         tier: enemy.tier,
+        cardTier: enemy.cardTier,
+        bossCardStyle: enemy.bossCardStyle,
         danger: enemy.danger,
         isUnderConstruction: enemy.isUnderConstruction,
         isBoss: enemy.isBoss,
