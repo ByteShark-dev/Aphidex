@@ -28,6 +28,7 @@ TIER_SOURCE = Path(r"C:\Users\tibur\Downloads\Nuevos tiers")
 CAPTURES = Path(r"F:\XboxCaptureCopies")
 CARD_EXPORTS = Path(r"F:\Software_Instaladores\F-model\Output\Exports\Augusta\Content\Blueprints\Items\Icons\CreatureCards")
 REPORTS = ROOT / "migration" / "grounded2_v4_4"
+BUGGY_PHOTO_SOURCE = REPORTS / "source_assets" / "g2_buggy_toe_biter.png"
 
 TIER_FILES = (
     "G2_tier_0.png", "G2_tier_1.png", "G2_tier_2.png",
@@ -70,16 +71,36 @@ RU_NAMES = {
     "g2_buggy_toe_biter": "Багги: нимфа водяного клопа",
 }
 
+# Existing G1 species keys reused from G2 so Shared mode can group the same
+# creature without reading or rewriting any Grounded 1 source file.
+SHARED_G1_SPECIES_KEYS = {
+    "g2_diving_bell_spider": "g1_diving_bell_spider",
+    "g2_green_shield_bug": "g1_green_shield_bug",
+    "g2_koi_calico": "g1_koi_fish",
+    "g2_koi_dagon": "g1_koi_fish",
+    "g2_koi_oriole": "g1_koi_fish",
+    "g2_koi_sunny": "g1_koi_fish",
+    "g2_spiny_water_flea": "g1_spiny_water_flea",
+    "g2_tadpole": "g1_tadpole",
+    "g2_tick": "g1_tick",
+    "g2_tiger_mosquito": "g1_tiger_mosquito",
+    "g2_water_boatman": "g1_water_boatman",
+    "g2_water_flea": "g1_water_flea",
+}
+
 PHOTO_MAP = {
     "g2_ancient_pond_jockey": "G2_Jinete_Antiguo.png",
     "g2_chop_r": "G2_choper.png", "g2_cku": "G2_CKU.png",
     "g2_diving_bell_spider": "G2_ A_Campana.png",
+    "g2_green_shield_bug": "G2_Chinche_V.png",
     "g2_koi_calico": "G2_koi_calico.png", "g2_koi_dagon": "G2_koi_Dagon.png",
     "g2_koi_oriole": "G2_koi_monarca.png", "g2_koi_sunny": "G2_koi_soleada.png",
     "g2_orc_green_shield_bug": "G2_Chinche_V_ORC.png",
     "g2_orc_tiger_mosquito": "G2_Mosco_tigre_orc.png",
     "g2_orc_toe_biter_leviathan": "G2_Chinche_M_Leviatan_ORC.png",
     "g2_orc_toe_biter_nymph": "G2_Chinche_M_ninfa_orc.png",
+    "g2_ogrr_toe_biter_leviathan": "G2_Chinche_M_L_ogrr_acida.png",
+    "g2_papa_toe_biter": "G2_Chinche_M_papa_A.png",
     "g2_pond_jockey": "G2_Jinete_A.png", "g2_sauc_r": "G2_Saucr.png",
     "g2_spiny_water_flea": "G2_Pulga_A_Espinoza.png",
     "g2_striped_bark_scorpion": "G2_Escorpion_R_Adulto.png",
@@ -87,7 +108,10 @@ PHOTO_MAP = {
     "g2_striped_bark_scorpling": "G2_Escorpion_R_ninfa.png",
     "g2_tadpole": "G2_Renacuajo.png", "g2_tick": "G2_garrapatas.png",
     "g2_tiger_mosquito": "G2_Mosco_tigre.png", "g2_water_boatman": "G2_Barquero.png",
-    "g2_water_flea": "G2_Pulga_A.png", "g2_buggy_toe_biter": "G2_Chinche_M_buggie.png",
+    "g2_toe_biter": "G2_Chinche_M_Adulta_Barco.png",
+    "g2_toe_biter_leviathan": "G2_Chinche_M_L.png",
+    "g2_toe_biter_nymph": "G2_Chinche_M_Ninfa.png",
+    "g2_water_flea": "G2_Pulga_A.png",
 }
 
 
@@ -144,11 +168,19 @@ def attacks(rows: list[dict]) -> list[dict]:
             tags.append("ranged")
         notes = []
         if row.get("resolved") is False:
-            notes.append("Damage row unresolved in extractor v4.4; no value was inferred.")
+            notes.append("unidentified_damage")
         elif damage.get("amount") is not None:
             notes.append(f"Extracted base damage: {damage['amount']:g}.")
+        if notes == ["unidentified_damage"]:
+            localized_notes = {
+                "en": "Unidentified",
+                "es": "Sin identificar",
+                "ru": "Не идентифицировано",
+            }
+        else:
+            localized_notes = {lang: " ".join(notes) for lang in ("en", "es", "ru")}
         output.append({"name": {"en": name, "es": name, "ru": name}, "tags": tags,
-                       "notes": {"en": " ".join(notes), "es": " ".join(notes), "ru": " ".join(notes)}})
+                       "notes": localized_notes})
     return output
 
 
@@ -156,6 +188,77 @@ def weak_points(parts: list[str]) -> list[dict]:
     return [{"part": re.sub(r"(?<!^)(?=[A-Z])", "_", part).lower(),
              "susceptibleDamage": "any", "susceptibleDamageTypes": ["any"]}
             for part in (parts or [])]
+
+
+def snake_id(value: str) -> str:
+    value = value.replace("ORC", "Orc").replace("OGRE", "Ogre")
+    value = re.sub(r"(?<!^)(?=[A-Z])", "_", value)
+    return re.sub(r"[^a-z0-9]+", "_", value.lower()).strip("_")
+
+
+def build_wave_entry(parent: dict, variant: dict, order: int) -> dict:
+    """Materialize a contextual raid/wave row without changing its parent."""
+    technical_id = variant.get("characterRow") or variant.get("id") or "wave"
+    stable_id = f"g2_wave_{snake_id(technical_id)}"
+    normalized_technical_id = technical_id.lower()
+    is_scorpion_wave = (
+        "scorpion" in normalized_technical_id
+        or "scorpling" in normalized_technical_id
+    )
+    enabled = parent["id"].startswith("g2_orc_") or is_scorpion_wave
+    result = deepcopy(parent)
+    parent_name = parent.get("name", {})
+    result.update({
+        "id": stable_id,
+        "speciesKey": f"wave_{snake_id(technical_id)}",
+        "name": {
+            "en": f"{parent_name.get('en', parent['id'])} Raid/Wave",
+            "es": f"{parent_name.get('es', parent['id'])} Incursión/Oleada",
+            "ru": f"{parent_name.get('ru', parent['id'])} Рейд/волна",
+        },
+        "order": order,
+        "enabled": enabled,
+        "availability": "active" if enabled else "inactive_future",
+        "isRaidWave": True,
+        "parentId": parent["id"],
+        "technicalId": technical_id,
+        "favoriteKey": stable_id,
+        "defaultGold": False,
+        "encounterVariants": [],
+        "contextVariants": [],
+        "specialCombatModifiers": variant.get("specialCombatModifiers", []),
+        "mechanicSignals": variant.get("mechanicSignals", []),
+        "weakPoints": weak_points(variant.get("weakpoints", [])),
+        "attacks": attacks(variant.get("attacks", [])),
+        "abilities": [],
+        "bossPhases": [],
+        "description": {
+            "en": "Raid/wave configuration extracted from Grounded 2 v4.4.",
+            "es": "Configuración de incursión/oleada extraída de Grounded 2 v4.4.",
+            "ru": "Конфигурация рейда/волны извлечена из Grounded 2 v4.4.",
+        },
+    })
+    result.pop("goldLinkId", None)
+    weakness_rows = variant.get("weaknesses", [])
+    weakness_values = bonuses(weakness_rows)
+    elemental = {"fresh", "spicy", "sour", "salty", "water"}
+    result["weaknesses"] = [damage_id(kind) for row in weakness_rows for kind in row.get("damageTypes", [])]
+    result["resistances"] = [damage_id(kind) for row in variant.get("resistances", []) for kind in row.get("damageTypes", [])]
+    result["elementalWeaknesses"] = [row for row in weakness_values if row["type"] in elemental]
+    result["damageWeaknesses"] = [row for row in weakness_values if row["type"] not in elemental]
+    result["resistancesV2"] = bonuses(variant.get("resistances", []))
+    health = variant.get("stats", {}).get("health")
+    if health is None:
+        result["health"] = None
+        result["combatStats"] = {}
+    else:
+        hp = int(round(float(health)))
+        result["health"] = {
+            "value": hp,
+            "rating": 1 if hp < 400 else 2 if hp < 700 else 3 if hp < 1100 else 4 if hp < 2000 else 5,
+        }
+        result["combatStats"] = {"health": hp}
+    return result
 
 
 def merge_encounter_variants(crosswalk_rows: list[dict], extracted_rows: list[dict]) -> list[dict]:
@@ -200,7 +303,7 @@ def copy_special_gold_card(stable_id: str) -> str:
 
 
 def main() -> None:
-    required = [EXTRACTOR, BESTIARY, CROSSWALK, INVENTORY, *LOCALIZATION.values(), TIER_SOURCE, CAPTURES]
+    required = [EXTRACTOR, BESTIARY, CROSSWALK, INVENTORY, *LOCALIZATION.values(), TIER_SOURCE, CAPTURES, BUGGY_PHOTO_SOURCE]
     missing = [str(path) for path in required if not path.exists()]
     if missing:
         raise FileNotFoundError("Missing required input(s): " + ", ".join(missing))
@@ -259,7 +362,9 @@ def main() -> None:
         normal_card = copy_card(raw, "normal")
         gold_card = copy_card(raw, "gold") or copy_special_gold_card(stable_id)
         old.update({
-            "id": stable_id, "speciesKey": link["speciesKeyProposal"], "groupId": link.get("groupId"),
+            "id": stable_id,
+            "speciesKey": SHARED_G1_SPECIES_KEYS.get(stable_id, link["speciesKeyProposal"]),
+            "groupId": link.get("groupId"),
             "name": {"en": link["gameNameEn"], "es": link["gameNameEsMX"], "ru": ru_name},
             "tier": 5 if is_boss else max(1, raw_tier), "cardTier": card_tier,
             "technicalId": technical_id, "bestiaryId": bestiary_id,
@@ -324,18 +429,22 @@ def main() -> None:
         },
         "localizationStatus": "ru_automatic_pending_review",
     })
-    photo_name = PHOTO_MAP["g2_buggy_toe_biter"]
-    if (CAPTURES / photo_name).is_file():
-        destination = ROOT / "assets" / "g2" / "creatures" / "photos" / "v4_4_g2_buggy_toe_biter.png"
-        shutil.copy2(CAPTURES / photo_name, destination)
-        buggy["photo"] = destination.relative_to(ROOT).as_posix()
-        mapped_photos.append("g2_buggy_toe_biter")
+    destination = ROOT / "assets" / "g2" / "creatures" / "photos" / "v4_4_g2_buggy_toe_biter.png"
+    shutil.copy2(BUGGY_PHOTO_SOURCE, destination)
+    buggy["photo"] = destination.relative_to(ROOT).as_posix()
+    mapped_photos.append("g2_buggy_toe_biter")
     final.append(buggy)
     auto_ru.append("g2_buggy_toe_biter")
 
+    wave_entries = []
+    for parent in list(final):
+        for variant in parent.get("contextVariants", []):
+            wave_entries.append(build_wave_entry(parent, variant, 1000 + len(wave_entries)))
+    final.extend(wave_entries)
+
     if len({entry["id"] for entry in final}) != len(final):
         raise ValueError("Duplicate final IDs")
-    if len(crosswalk["entries"]) != 123 or len(final) != 132:
+    if len(crosswalk["entries"]) != 123 or len(final) != 182:
         raise ValueError(f"Unexpected roster: include={len(crosswalk['entries'])}, final={len(final)}")
 
     for filename in TIER_FILES:
@@ -358,6 +467,9 @@ def main() -> None:
             writer.writerow([stable_id, entry["name"]["ru"], "automatic_pending_human_review"])
     write_json(REPORTS / "validation_report.json", {
         "include": 123, "preservedSpecial": 8, "toeBiterBuggy": 1, "final": len(final),
+        "raidWaveEntries": len(wave_entries),
+        "activeRaidWaveEntries": sum(entry.get("enabled") is True for entry in wave_entries),
+        "disabledRaidWaveEntries": sum(entry.get("enabled") is False for entry in wave_entries),
         "newCrosswalkIds": sum(row["mappingStatus"] == "NEW" for row in crosswalk["entries"]),
         "preservedCrosswalkIds": sum(row["mappingStatus"] == "PRESERVE" for row in crosswalk["entries"]),
         "namedVariants": sum(len(entry.get("encounterVariants", [])) for entry in final),

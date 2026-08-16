@@ -29,7 +29,8 @@ void main() {
     () {
       final source = _readList('assets/data/enemies_g2.json');
       final sourceById = {
-        for (final item in source) item['id'] as String: item,
+        for (final item in source)
+          if (item['enabled'] != false) item['id'] as String: item,
       };
 
       for (final language in _languages) {

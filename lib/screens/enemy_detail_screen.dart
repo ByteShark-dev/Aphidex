@@ -200,20 +200,10 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
     }
     _loadedLanguageCode = languageCode;
     _enemyFuture = EnemyRepository.loadDetail(_currentId, languageCode);
-    final groupId = _usesLazyDetails
-        ? _summaryVariants![_selectedIndex].groupId
-        : _legacyVariants![_selectedIndex].groupId;
-    if (widget.relatedSummaries != null) {
-      _groupSummariesFuture = Future.value(widget.relatedSummaries);
-    } else if (groupId != null && groupId.isNotEmpty) {
-      _groupSummariesFuture = EnemyRepository.loadGame('g2', languageCode).then(
-        (entries) => entries
-            .where((entry) => entry.groupId == groupId && entry.game == 'g2')
-            .toList(growable: false),
-      );
-    } else {
-      _groupSummariesFuture = null;
-    }
+    _groupSummariesFuture = _loadGroupSummaries(
+      languageCode,
+      index: _selectedIndex,
+    );
   }
 
   int _compareVariantGames(
@@ -238,6 +228,27 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
     return EnemyRepository.loadDetail(
       _currentId,
       _loadedLanguageCode ?? context.l10n.languageCode,
+    );
+  }
+
+  Future<List<EnemyIndexEntry>>? _loadGroupSummaries(
+    String languageCode, {
+    required int index,
+  }) {
+    if (widget.relatedSummaries != null) {
+      return Future.value(widget.relatedSummaries);
+    }
+    if (!_usesLazyDetails) {
+      return null;
+    }
+    final groupId = _summaryVariants![index].groupId;
+    if (groupId == null || groupId.isEmpty) {
+      return null;
+    }
+    return EnemyRepository.loadGame('g2', languageCode).then(
+      (entries) => entries
+          .where((entry) => entry.groupId == groupId && entry.game == 'g2')
+          .toList(growable: false),
     );
   }
 
@@ -352,17 +363,20 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
     if (!mounted) {
       return;
     }
+    final languageCode = _loadedLanguageCode ?? context.l10n.languageCode;
+    final nextGroupSummaries = _loadGroupSummaries(
+      languageCode,
+      index: nextIndex,
+    );
     setState(() {
       _selectedIndex = nextIndex;
       _selectedPhaseIndex = 0;
       _selectedInfusionIndex = 0;
       _selectedEncounterIndex = 0;
       _groupSelectedId = null;
+      _groupSummariesFuture = nextGroupSummaries;
       if (_usesLazyDetails) {
-        _enemyFuture = EnemyRepository.loadDetail(
-          _currentId,
-          _loadedLanguageCode ?? context.l10n.languageCode,
-        );
+        _enemyFuture = EnemyRepository.loadDetail(_currentId, languageCode);
       }
     });
     WidgetsBinding.instance.addPostFrameCallback((_) {
