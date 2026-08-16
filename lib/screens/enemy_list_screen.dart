@@ -2936,6 +2936,8 @@ class _EnemyTileThumbnail extends StatelessWidget {
       fallbackAssetName: 'assets/global/Creaturecard_Proximamente.webp',
       width: 56,
       height: 56,
+      cacheWidth: 128,
+      cacheHeight: 128,
       fit: isIconThumbnail ? BoxFit.contain : BoxFit.cover,
     );
 

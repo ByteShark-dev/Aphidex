@@ -1438,6 +1438,7 @@ class _DetailPhotoPanel extends StatelessWidget {
         child: Image.asset(
           photoAsset,
           fit: BoxFit.cover,
+          cacheWidth: 1280,
           errorBuilder: (context, error, stackTrace) {
             return AphidexStatePanel(
               gamePick: gamePick,

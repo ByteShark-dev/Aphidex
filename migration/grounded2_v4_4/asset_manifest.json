@@ -493,20 +493,20 @@
       "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_WaterFlea_G.png"
     },
     "g2_buggy_black_soldier_ant": {
-      "normal": "assets/g2/creatures/cards/Creaturecard_Black_Soldier_AntG2.png",
-      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_Black_Soldier_Ant.png"
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_BlackAntSoldier.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_BlackAntSoldier_G.png"
     },
     "g2_buggy_ladybug": {
-      "normal": "assets/g2/creatures/cards/Creaturecard_Ladybug.png",
-      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_Ladybug.png"
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Ladybug.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Ladybug_G.png"
     },
     "g2_buggy_orb_weaver": {
-      "normal": "assets/g2/creatures/cards/Creaturecard_Orb_Weaver.png",
-      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_Orb_Weaver.png"
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_OrbWeaver.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaver_G.png"
     },
     "g2_buggy_red_soldier_ant": {
-      "normal": "assets/g2/creatures/cards/Creaturecard_Red_Soldier_Ant.png",
-      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_Red_Soldier_Ant.png"
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_RedAntSoldier.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_RedAntSoldier_G.png"
     },
     "g2_ice_sickles_event": {
       "normal": "",

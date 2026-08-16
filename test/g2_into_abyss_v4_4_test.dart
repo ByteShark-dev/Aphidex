@@ -124,6 +124,24 @@ void main() {
     expect(buggies.every((entry) => entry.health == null), isTrue);
   });
 
+  test('all Buggies use their matching v4.4 creature cards', () {
+    const cardSources = {
+      'g2_buggy_black_soldier_ant': 'g2_black_soldier_ant',
+      'g2_buggy_ladybug': 'g2_ladybug',
+      'g2_buggy_orb_weaver': 'g2_orb_weaver',
+      'g2_buggy_red_soldier_ant': 'g2_red_soldier_ant',
+      'g2_buggy_toe_biter': 'g2_toe_biter_nymph',
+    };
+
+    for (final mapping in cardSources.entries) {
+      final buggy = loadDetail(mapping.key);
+      final source = loadDetail(mapping.value);
+      expect(buggy.cardNormal, source.cardNormal);
+      expect(buggy.cardGold, source.cardGold);
+      expect(buggy.cardTier, source.cardTier);
+    }
+  });
+
   test('unresolved attack damage is explicitly unidentified', () {
     EnemyAttack unresolved(String language) =>
         loadDetail(
@@ -156,7 +174,7 @@ void main() {
 
     for (final id in mappedIds) {
       final enemy = loadDetail(id);
-      expect(enemy.photo, 'assets/g2/creatures/photos/v4_4_$id.png');
+      expect(enemy.photo, 'assets/g2/creatures/photos/v4_4_$id.webp');
       expect(File(enemy.photo).existsSync(), isTrue);
     }
   });

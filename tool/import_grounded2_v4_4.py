@@ -11,6 +11,7 @@ import html
 import json
 import re
 import shutil
+import subprocess
 from copy import deepcopy
 from pathlib import Path
 
@@ -30,6 +31,15 @@ CARD_EXPORTS = Path(r"F:\Software_Instaladores\F-model\Output\Exports\Augusta\Co
 REPORTS = ROOT / "migration" / "grounded2_v4_4"
 BUGGY_PHOTO_SOURCE = REPORTS / "source_assets" / "g2_buggy_toe_biter.png"
 SPANISH_NAME_OVERRIDES = REPORTS / "spanish_name_overrides.json"
+IMAGEMAGICK = Path(r"F:\Software_Instaladores\ImageMagick-7.1.2-Q16-HDRI\magick.exe")
+
+BUGGY_CARD_SOURCE_IDS = {
+    "g2_buggy_black_soldier_ant": "g2_black_soldier_ant",
+    "g2_buggy_ladybug": "g2_ladybug",
+    "g2_buggy_orb_weaver": "g2_orb_weaver",
+    "g2_buggy_red_soldier_ant": "g2_red_soldier_ant",
+    "g2_buggy_toe_biter": "g2_toe_biter_nymph",
+}
 
 TIER_FILES = (
     "G2_tier_0.png", "G2_tier_1.png", "G2_tier_2.png",
@@ -129,6 +139,17 @@ def load_json(path: Path):
 def write_json(path: Path, value) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def convert_photo_to_webp(source: Path, destination: Path) -> None:
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    subprocess.run(
+        [
+            str(IMAGEMAGICK), str(source), "-resize", "1280x720>", "-strip",
+            "-quality", "86", "-define", "webp:method=6", str(destination),
+        ],
+        check=True,
+    )
 
 
 def clean_text(value: str | None) -> str:
@@ -332,7 +353,7 @@ def copy_special_gold_card(stable_id: str) -> str:
 
 
 def main() -> None:
-    required = [EXTRACTOR, BESTIARY, CROSSWALK, INVENTORY, *LOCALIZATION.values(), TIER_SOURCE, CAPTURES, BUGGY_PHOTO_SOURCE, SPANISH_NAME_OVERRIDES]
+    required = [EXTRACTOR, BESTIARY, CROSSWALK, INVENTORY, *LOCALIZATION.values(), TIER_SOURCE, CAPTURES, BUGGY_PHOTO_SOURCE, SPANISH_NAME_OVERRIDES, IMAGEMAGICK]
     missing = [str(path) for path in required if not path.exists()]
     if missing:
         raise FileNotFoundError("Missing required input(s): " + ", ".join(missing))
@@ -462,8 +483,8 @@ def main() -> None:
                 unresolved.append({"id": stable_id, "technicalId": technical_id, "attack": attack})
         photo_name = PHOTO_MAP.get(stable_id)
         if photo_name and (CAPTURES / photo_name).is_file():
-            destination = ROOT / "assets" / "g2" / "creatures" / "photos" / f"v4_4_{stable_id}.png"
-            shutil.copy2(CAPTURES / photo_name, destination)
+            destination = ROOT / "assets" / "g2" / "creatures" / "photos" / f"v4_4_{stable_id}.webp"
+            convert_photo_to_webp(CAPTURES / photo_name, destination)
             old["photo"] = destination.relative_to(ROOT).as_posix()
             mapped_photos.append(stable_id)
         elif is_new:
@@ -492,8 +513,8 @@ def main() -> None:
         },
         "localizationStatus": "ru_automatic_pending_review",
     })
-    destination = ROOT / "assets" / "g2" / "creatures" / "photos" / "v4_4_g2_buggy_toe_biter.png"
-    shutil.copy2(BUGGY_PHOTO_SOURCE, destination)
+    destination = ROOT / "assets" / "g2" / "creatures" / "photos" / "v4_4_g2_buggy_toe_biter.webp"
+    convert_photo_to_webp(BUGGY_PHOTO_SOURCE, destination)
     buggy["photo"] = destination.relative_to(ROOT).as_posix()
     mapped_photos.append("g2_buggy_toe_biter")
     final.append(buggy)
@@ -521,6 +542,12 @@ def main() -> None:
             entry["healthDisplay"] = "hidden"
             if isinstance(entry.get("combatStats"), dict):
                 entry["combatStats"].pop("health", None)
+        buggy_card_source_id = BUGGY_CARD_SOURCE_IDS.get(entry["id"])
+        if buggy_card_source_id:
+            card_source = next(item for item in final if item["id"] == buggy_card_source_id)
+            entry["cardNormal"] = card_source.get("cardNormal", "")
+            entry["cardGold"] = card_source.get("cardGold", "")
+            entry["cardTier"] = card_source.get("cardTier", entry.get("cardTier"))
         if entry["id"] == "g2_buggy_toe_biter":
             entry["tier"] = 3
             entry["cardTier"] = 3
@@ -562,6 +589,24 @@ def main() -> None:
         destination = ROOT / "assets" / "g2" / "tier_icons" / filename
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(TIER_SOURCE / filename, destination)
+    for legacy_png in (ROOT / "assets" / "g2" / "creatures" / "photos").glob("v4_4_*.png"):
+        webp = legacy_png.with_suffix(".webp")
+        if webp.is_file() and not legacy_png.is_symlink():
+            legacy_png.unlink()
+    referenced_cards = {
+        path
+        for entry in final
+        for path in (entry.get("cardNormal"), entry.get("cardGold"))
+        if path
+    }
+    for card_dir in (
+        ROOT / "assets" / "g2" / "creatures" / "cards",
+        ROOT / "assets" / "g2" / "creatures" / "cards_golden",
+    ):
+        for card_file in card_dir.iterdir():
+            relative = card_file.relative_to(ROOT).as_posix()
+            if card_file.is_file() and not card_file.is_symlink() and relative not in referenced_cards:
+                card_file.unlink()
     write_json(master_path, final)
     REPORTS.mkdir(parents=True, exist_ok=True)
     write_json(REPORTS / "unresolved_attacks.json", unresolved)
