@@ -32,6 +32,11 @@ const _indexFields = [
   'temperament',
   'health',
   'collectionGroup',
+  'technicalId',
+  'bestiaryId',
+  'cardTier',
+  'bossCardStyle',
+  'groupId',
 ];
 
 void main() {
@@ -73,6 +78,9 @@ void main() {
 
       for (final creature in source.value) {
         final normalized = _withDerivedCardFields(creature);
+        if (normalized['enabled'] == false) {
+          continue;
+        }
         index.add(_buildIndexEntry(normalized, language));
         final detail = _localizeValue(normalized, language);
         final id = creature['id'] as String?;

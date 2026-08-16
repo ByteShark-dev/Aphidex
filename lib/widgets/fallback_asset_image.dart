@@ -7,6 +7,8 @@ class FallbackAssetImage extends StatelessWidget {
   final double? height;
   final BoxFit? fit;
   final BorderRadius? borderRadius;
+  final int? cacheWidth;
+  final int? cacheHeight;
 
   const FallbackAssetImage.asset({
     super.key,
@@ -16,12 +18,21 @@ class FallbackAssetImage extends StatelessWidget {
     this.height,
     this.fit,
     this.borderRadius,
+    this.cacheWidth,
+    this.cacheHeight,
   });
 
   @override
   Widget build(BuildContext context) {
     Widget buildImage(String asset) {
-      final image = Image.asset(asset, width: width, height: height, fit: fit);
+      final image = Image.asset(
+        asset,
+        width: width,
+        height: height,
+        fit: fit,
+        cacheWidth: cacheWidth,
+        cacheHeight: cacheHeight,
+      );
       if (borderRadius == null) {
         return image;
       }
@@ -33,6 +44,8 @@ class FallbackAssetImage extends StatelessWidget {
       width: width,
       height: height,
       fit: fit,
+      cacheWidth: cacheWidth,
+      cacheHeight: cacheHeight,
       errorBuilder: (context, error, stackTrace) =>
           buildImage(fallbackAssetName),
     );

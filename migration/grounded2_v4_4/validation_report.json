@@ -1,0 +1,17 @@
+{
+  "include": 123,
+  "preservedSpecial": 8,
+  "toeBiterBuggy": 1,
+  "final": 132,
+  "raidWaveVariants": 50,
+  "activeRaidWaveVariants": 40,
+  "disabledRaidWaveVariants": 10,
+  "newCrosswalkIds": 37,
+  "preservedCrosswalkIds": 86,
+  "namedVariants": 20,
+  "activeWaveVariants": 40,
+  "contextVariants": 50,
+  "unresolvedAttacks": 11,
+  "automaticRussianRows": 38,
+  "g1FilesTouched": false
+}

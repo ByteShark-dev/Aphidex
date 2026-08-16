@@ -1,0 +1,123 @@
+[
+  {
+    "id": "g2_bombardier_beetle",
+    "technicalId": "Bombardier",
+    "attack": {
+      "id": "BeetleAOE",
+      "ability": "BeetleAOE",
+      "resolved": false,
+      "cooldown": 30.0,
+      "reason": "attack_row_missing"
+    }
+  },
+  {
+    "id": "g2_ladybug",
+    "technicalId": "Ladybug",
+    "attack": {
+      "id": "LadybugMelee",
+      "ability": "LadybugMelee",
+      "resolved": false,
+      "cooldown": 10.0,
+      "reason": "attack_row_missing"
+    }
+  },
+  {
+    "id": "g2_ladybug",
+    "technicalId": "Ladybug",
+    "attack": {
+      "id": "LadybugPowerAttack",
+      "ability": "LadybugPowerAttack",
+      "resolved": false,
+      "cooldown": 10.0,
+      "reason": "attack_row_missing"
+    }
+  },
+  {
+    "id": "g2_ogrr_ladybug",
+    "technicalId": "LadybugOGRE",
+    "attack": {
+      "id": "LadybugMelee",
+      "ability": "LadybugMelee",
+      "resolved": false,
+      "cooldown": 10.0,
+      "reason": "attack_row_missing"
+    }
+  },
+  {
+    "id": "g2_ogrr_ladybug",
+    "technicalId": "LadybugOGRE",
+    "attack": {
+      "id": "LadybugPowerAttack",
+      "ability": "LadybugPowerAttack",
+      "resolved": false,
+      "cooldown": 10.0,
+      "reason": "attack_row_missing"
+    }
+  },
+  {
+    "id": "g2_ogrr_praying_mantis_nymph",
+    "technicalId": "GreenMantisOGRE",
+    "attack": {
+      "id": "PrayingMantisPowerattack",
+      "ability": "PrayingMantisPowerattack",
+      "resolved": false,
+      "cooldown": 15.0,
+      "reason": "attack_row_missing"
+    }
+  },
+  {
+    "id": "g2_orc_bombardier_beetle",
+    "technicalId": "BombardierORC",
+    "attack": {
+      "id": "BeetleAOE",
+      "ability": "BeetleAOE",
+      "resolved": false,
+      "cooldown": 30.0,
+      "reason": "attack_row_missing"
+    }
+  },
+  {
+    "id": "g2_orc_ladybug",
+    "technicalId": "LadybugORC",
+    "attack": {
+      "id": "LadybugMelee",
+      "ability": "LadybugMelee",
+      "resolved": false,
+      "cooldown": 10.0,
+      "reason": "attack_row_missing"
+    }
+  },
+  {
+    "id": "g2_orc_ladybug",
+    "technicalId": "LadybugORC",
+    "attack": {
+      "id": "LadybugPowerAttack",
+      "ability": "LadybugPowerAttack",
+      "resolved": false,
+      "cooldown": 10.0,
+      "reason": "attack_row_missing"
+    }
+  },
+  {
+    "id": "g2_orc_praying_mantis_nymph",
+    "technicalId": "GreenMantisORC",
+    "attack": {
+      "id": "PrayingMantisPowerattack",
+      "ability": "PrayingMantisPowerattack",
+      "resolved": false,
+      "cooldown": 15.0,
+      "reason": "attack_row_missing"
+    }
+  },
+  {
+    "id": "g2_praying_mantis_nymph",
+    "technicalId": "GreenMantis",
+    "attack": {
+      "id": "PrayingMantisPowerattack",
+      "ability": "PrayingMantisPowerattack",
+      "resolved": false,
+      "cooldown": 15.0,
+      "reason": "attack_row_missing"
+    }
+  }
+]

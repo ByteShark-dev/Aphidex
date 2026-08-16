@@ -1,0 +1,578 @@
+{
+  "cards": {
+    "g2_aphid": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Aphid.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Aphid_G.png"
+    },
+    "g2_axl": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Boss_Tarantula.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Boss_Tarantula_G.png"
+    },
+    "g2_baby_garden_snail": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_SnailBaby.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_SnailBaby_G.png"
+    },
+    "g2_bee": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bee.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bee_G.png"
+    },
+    "g2_black_soldier_ant": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_BlackAntSoldier.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_BlackAntSoldier_G.png"
+    },
+    "g2_black_worker_ant": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_BlackAnt.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_BlackAnt_G.png"
+    },
+    "g2_blue_butterfly": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_BlueButterfly.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_BlueButterfly_G.png"
+    },
+    "g2_bombardier_beetle": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bombardier.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bombardier_G.png"
+    },
+    "g2_caterpillar": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Caterpillar.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Caterpillar_G.png"
+    },
+    "g2_cockroach": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_G.png"
+    },
+    "g2_cockroach_nymph": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Nymph.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Nymph_G.png"
+    },
+    "g2_cockroach_queen": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Queen.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Queen_G.png"
+    },
+    "g2_cricket": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Cricket.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Cricket_G.png"
+    },
+    "g2_crow": {
+      "normal": "",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_Crow.png"
+    },
+    "g2_firefly": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Firefly.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Firefly_G.png"
+    },
+    "g2_garden_snail": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Snail.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Snail_G.png"
+    },
+    "g2_garter_snake": {
+      "normal": "",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_Garter_Snake.png"
+    },
+    "g2_gnat": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Gnat.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Gnat_G.png"
+    },
+    "g2_grub": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Grub.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Grub_G.png"
+    },
+    "g2_king_dozer": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Boss_Lizard.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Boss_Lizard_G.png"
+    },
+    "g2_ladybug": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Ladybug.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Ladybug_G.png"
+    },
+    "g2_larva": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Larva.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Larva_G.png"
+    },
+    "g2_lawn_mite": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Mite.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Mite_G.png"
+    },
+    "g2_masked_fighter": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Boss_V_Armor_1.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Boss_V_Armor_1_G.png"
+    },
+    "g2_masked_stranger": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Boss_V_Armor_1.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Boss_V_Armor_1_G.png"
+    },
+    "g2_mosquito": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Mosquito.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Mosquito_G.png"
+    },
+    "g2_northern_scorpion": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_G.png"
+    },
+    "g2_northern_scorpion_jr": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_Jr.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_Jr_G.png"
+    },
+    "g2_northern_scorpling": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpling.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpling_G.png"
+    },
+    "g2_ogrr_blue_butterfly": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_BlueButterfly_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_BlueButterfly_OGRR_G.png"
+    },
+    "g2_ogrr_cricket": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Cricket_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Cricket_OGRR_G.png"
+    },
+    "g2_ogrr_ladybug": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Ladybug_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Ladybug_OGRR_G.png"
+    },
+    "g2_ogrr_northern_scorpion": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_OGRR_G.png"
+    },
+    "g2_ogrr_pincher_earwig": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigM_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigM_OGRR_G.png"
+    },
+    "g2_ogrr_praying_mantis_nymph": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PrayingMantis_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PrayingMantis_OGRR_G.png"
+    },
+    "g2_ogrr_rust_beetle": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_RustBeetle_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_RustBeetle_OGRR_G.png"
+    },
+    "g2_ogrr_wasp": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Wasp_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Wasp_OGRR_G.png"
+    },
+    "g2_ogrr_wasp_drone": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Wasp_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Wasp_OGRR_G.png"
+    },
+    "g2_ogrr_whipper_earwig": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigF_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigF_OGRR_G.png"
+    },
+    "g2_ogrr_wolf_spider": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WolfSpider_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WolfSpider_OGRR_G.png"
+    },
+    "g2_orb_weaver": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_OrbWeaver.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaver_G.png"
+    },
+    "g2_orb_weaver_jr": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_OrbWeaverJr.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaverJr_G.png"
+    },
+    "g2_orc_bee": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bee_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bee_ORC_G.png"
+    },
+    "g2_orc_black_soldier_ant": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_BlackAntSoldier_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_BlackAntSoldier_ORC_G.png"
+    },
+    "g2_orc_blue_butterfly": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_BlueButterfly_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_BlueButterfly_ORC_G.png"
+    },
+    "g2_orc_bombardier_beetle": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bombardier_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bombardier_ORC_G.png"
+    },
+    "g2_orc_broodmother": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_TierBoss_Broodmother_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_TierBoss_Broodmother_ORC_G.png"
+    },
+    "g2_orc_cockroach": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_ORC_G.png"
+    },
+    "g2_orc_cockroach_nymph": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Nymph_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Nymph_ORC_G.png"
+    },
+    "g2_orc_cockroach_queen": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Queen_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Queen_ORC_G.png"
+    },
+    "g2_orc_cricket": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Cricket_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Cricket_ORC_G.png"
+    },
+    "g2_orc_firefly": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Firefly_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Firefly_ORC_G.png"
+    },
+    "g2_orc_ladybug": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Ladybug_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Ladybug_ORC_G.png"
+    },
+    "g2_orc_larva": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Larva_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Larva_ORC_G.png"
+    },
+    "g2_orc_mosquito": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Mosquito_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Mosquito_ORC_G.png"
+    },
+    "g2_orc_northern_scorpion": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_ORC_G.png"
+    },
+    "g2_orc_northern_scorpion_jr": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_Jr_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_Jr_ORC_G.png"
+    },
+    "g2_orc_northern_scorpling": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpling_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpling_ORC_G.png"
+    },
+    "g2_orc_pincher_earwig": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigM_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigM_ORC_G.png"
+    },
+    "g2_orc_potato_beetle": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PotatoBeetle_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PotatoBeetle_ORC_G.png"
+    },
+    "g2_orc_praying_mantis_nymph": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PrayingMantis_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PrayingMantis_ORC_G.png"
+    },
+    "g2_orc_red_soldier_ant": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_RedAntSoldier_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_RedAntSoldier_ORC_G.png"
+    },
+    "g2_orc_rust_beetle": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_RustBeetle_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_RustBeetle_ORC_G.png"
+    },
+    "g2_orc_spiderling": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Spiderling_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Spiderling_ORC_G.png"
+    },
+    "g2_orc_stinkbug": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_StinkBug_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_StinkBug_ORC_G.png"
+    },
+    "g2_orc_wasp": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Wasp_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Wasp_ORC_Gold.png"
+    },
+    "g2_orc_wasp_drone": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WaspDrone_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WaspDrone_ORC_Gold.png"
+    },
+    "g2_orc_weaver": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_OrbWeaver_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaver_ORC_G.png"
+    },
+    "g2_orc_weaver_jr": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_OrbWeaverJr_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaverJr_ORC_G.png"
+    },
+    "g2_orc_weevil": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Weevil_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Weevil_ORC_G.png"
+    },
+    "g2_orc_whipper_earwig": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigF_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigF_ORC_G.png"
+    },
+    "g2_orc_wolf_spider": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WolfSpider_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WolfSpider_ORC_G.png"
+    },
+    "g2_pincher_earwig": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigM.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigM_G.png"
+    },
+    "g2_potato_beetle": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PotatoBeetle.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PotatoBeetle_G.png"
+    },
+    "g2_praying_mantis_nymph": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PrayingMantis.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PrayingMantis_G.png"
+    },
+    "g2_red_soldier_ant": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_RedAntSoldier.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_RedAntSoldier_G.png"
+    },
+    "g2_red_worker_ant": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_RedAntWorker.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_RedAntWorker_G.png"
+    },
+    "g2_rust_beetle": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_RustBeetle.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_RustBeetle_G.png"
+    },
+    "g2_spiderling": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Spiderling.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Spiderling_G.png"
+    },
+    "g2_stinkbug": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_StinkBug.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_StinkBug_G.png"
+    },
+    "g2_wasp": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Wasp.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Wasp_Gold.png"
+    },
+    "g2_wasp_drone": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WaspDrone.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WaspDrone_Gold.png"
+    },
+    "g2_weevil": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Weevil.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Weevil_G.png"
+    },
+    "g2_whipper_earwig": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigF.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigF_G.png"
+    },
+    "g2_wolf_spider": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WolfSpider.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WolfSpider_G.png"
+    },
+    "g2_woolly_aphid": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WoollyAphid.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WoollyAphid_G.png"
+    },
+    "g2_ancient_pond_jockey": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PondJockey.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PondJockey_G.png"
+    },
+    "g2_chop_r": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Tayzt.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Tayzt_G.png"
+    },
+    "g2_cku": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Ruzt.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Ruzt_G.png"
+    },
+    "g2_diving_bell_spider": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_DivingBell.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_DivingBell_G.png"
+    },
+    "g2_green_shield_bug": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_GreenShield.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_GreenShield_G.png"
+    },
+    "g2_koi_calico": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png"
+    },
+    "g2_koi_dagon": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png"
+    },
+    "g2_koi_oriole": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png"
+    },
+    "g2_koi_sunny": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png"
+    },
+    "g2_ogrr_green_shield_bug": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_GreenShield_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_GreenShield_OGRR_G.png"
+    },
+    "g2_ogrr_striped_bark_scorpion": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_StripedBark_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_StripedBark_OGRR_G.png"
+    },
+    "g2_ogrr_tiger_mosquito": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_MosquitoTiger_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_MosquitoTiger_OGRR_G.png"
+    },
+    "g2_ogrr_toe_biter": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Adult_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Adult_OGRR_G.png"
+    },
+    "g2_ogrr_toe_biter_leviathan": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier4_ToeBiter_Leviathan_OGRR.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier4_ToeBiter_Leviathan_OGRR_G.png"
+    },
+    "g2_orc_green_shield_bug": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_GreenShield_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_GreenShield_ORC_G.png"
+    },
+    "g2_orc_striped_bark_scorpion": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_StripedBark_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_StripedBark_G_ORC.png"
+    },
+    "g2_orc_striped_bark_scorpion_jr": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_Jr_StripedBark_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_Jr_StripedBark_G_ORC.png"
+    },
+    "g2_orc_striped_bark_scorpling": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpling_StripedBark_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpling_StripedBark_G_ORC.png"
+    },
+    "g2_orc_tiger_mosquito": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_MosquitoTiger_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_MosquitoTiger_ORC_G.png"
+    },
+    "g2_orc_toe_biter": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Adult_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Adult_ORC_G.png"
+    },
+    "g2_orc_toe_biter_leviathan": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier4_ToeBiter_Leviathan_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier4_ToeBiter_Leviathan_ORC_G.png"
+    },
+    "g2_orc_toe_biter_nymph": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Nymph_ORC.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Nymph_ORC_G.png"
+    },
+    "g2_papa_toe_biter": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier4_ToeBiter_LeviathanEggs.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier4_ToeBiter_LeviathanEggs_G.png"
+    },
+    "g2_pond_jockey": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PondJockey.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PondJockey_G.png"
+    },
+    "g2_sauc_r": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Arcr.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Arcr_G.png"
+    },
+    "g2_spiny_water_flea": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WaterFleaSpiny.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WaterFleaSpinyG.png"
+    },
+    "g2_striped_bark_scorpion": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_StripedBark.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_StripedBark_G.png"
+    },
+    "g2_striped_bark_scorpion_jr": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_Jr_StripedBark.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_Jr_StripedBark_G.png"
+    },
+    "g2_striped_bark_scorpling": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpling_StripedBark.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpling_StripedBark_G.png"
+    },
+    "g2_tadpole": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Tadpole.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Tadpole_G.png"
+    },
+    "g2_tick": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Tick.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_TickG.png"
+    },
+    "g2_tiger_mosquito": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_MosquitoTiger.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_MosquitoTigerG.png"
+    },
+    "g2_toe_biter": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Adult.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Adult_G.png"
+    },
+    "g2_toe_biter_leviathan": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier4_ToeBiter_Leviathan.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier4_ToeBiter_Leviathan_G.png"
+    },
+    "g2_toe_biter_nymph": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Nymph.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Nymph_G.png"
+    },
+    "g2_water_boatman": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Waterboatman.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Waterboatman_G.png"
+    },
+    "g2_water_flea": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_WaterFlea.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_WaterFlea_G.png"
+    },
+    "g2_buggy_black_soldier_ant": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_BlackAntSoldier.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_BlackAntSoldier_G.png"
+    },
+    "g2_buggy_ladybug": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Ladybug.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Ladybug_G.png"
+    },
+    "g2_buggy_orb_weaver": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_OrbWeaver.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaver_G.png"
+    },
+    "g2_buggy_red_soldier_ant": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_RedAntSoldier.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_RedAntSoldier_G.png"
+    },
+    "g2_ice_sickles_event": {
+      "normal": "",
+      "gold": ""
+    },
+    "g2_masked_stranger_orc_waves": {
+      "normal": "",
+      "gold": ""
+    },
+    "g2_mixr_defenses": {
+      "normal": "",
+      "gold": ""
+    },
+    "g2_orchid_mantis": {
+      "normal": "assets/g1/creatures/cards/normal/Creaturecard_Mantis.webp",
+      "gold": "assets/g1/creatures/cards/gold/Creaturecardgold_Mantis.webp"
+    },
+    "g2_buggy_toe_biter": {
+      "normal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Nymph.png",
+      "gold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Nymph_G.png"
+    }
+  },
+  "misplacedGoldCards": [
+    "Creaturecard_Garter_Snake.png",
+    "Creaturecard_Crow.png"
+  ],
+  "photosMapped": [
+    "g2_ancient_pond_jockey",
+    "g2_chop_r",
+    "g2_cku",
+    "g2_diving_bell_spider",
+    "g2_green_shield_bug",
+    "g2_koi_calico",
+    "g2_koi_dagon",
+    "g2_koi_oriole",
+    "g2_koi_sunny",
+    "g2_ogrr_toe_biter_leviathan",
+    "g2_orc_green_shield_bug",
+    "g2_orc_tiger_mosquito",
+    "g2_orc_toe_biter_leviathan",
+    "g2_orc_toe_biter_nymph",
+    "g2_papa_toe_biter",
+    "g2_pond_jockey",
+    "g2_sauc_r",
+    "g2_spiny_water_flea",
+    "g2_striped_bark_scorpion",
+    "g2_striped_bark_scorpion_jr",
+    "g2_striped_bark_scorpling",
+    "g2_tadpole",
+    "g2_tick",
+    "g2_tiger_mosquito",
+    "g2_toe_biter",
+    "g2_toe_biter_leviathan",
+    "g2_toe_biter_nymph",
+    "g2_water_boatman",
+    "g2_water_flea",
+    "g2_buggy_toe_biter"
+  ],
+  "photosMissing": [
+    "g2_ogrr_green_shield_bug",
+    "g2_ogrr_striped_bark_scorpion",
+    "g2_ogrr_tiger_mosquito",
+    "g2_ogrr_toe_biter",
+    "g2_orc_striped_bark_scorpion",
+    "g2_orc_striped_bark_scorpion_jr",
+    "g2_orc_striped_bark_scorpling",
+    "g2_orc_toe_biter"
+  ]
+}

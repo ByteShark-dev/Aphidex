@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
@@ -7,6 +8,7 @@ import 'package:aphidex/controllers/monetization_controller.dart';
 import 'package:aphidex/controllers/review_prompt_controller.dart';
 import 'package:aphidex/controllers/tutorial_controller.dart';
 import 'package:aphidex/data/local_storage.dart';
+import 'package:aphidex/data/creature_card_state.dart';
 import 'package:aphidex/i18n/app_localizations.dart';
 import 'package:aphidex/models/enemy_index_entry.dart';
 import 'package:aphidex/models/game_pick.dart';
@@ -36,20 +38,11 @@ void main() {
     await Hive.openBox('aphidex');
   });
 
-  tearDownAll(() async {
-    await Hive.box('aphidex').close();
+  tearDownAll(() {
+    unawaited(Hive.box('aphidex').close());
   });
 
-  setUp(() async {
-    await Hive.box('aphidex').clear();
-    await FavoritesController.instance.reset();
-    await GoldController.instance.reset();
-    await LocalStorage.setBool(TutorialController.completionKey, true);
-    await LocalStorage.setBool('review_prompt_disabled_forever', true);
-    await LocalStorage.setBool('monetization_ads_removed', true);
-    await LocalStorage.setInt('ui_game_pick', GamePick.g2.index);
-    MonetizationController.instance.adsRemoved.value = true;
-
+  setUp(() {
     regressionListView.physicalSize = const Size(390, 844);
     regressionListView.devicePixelRatio = 1.0;
 
@@ -86,42 +79,50 @@ void main() {
         .setMockMessageHandler('flutter/assets', null);
   });
 
-  testWidgets(
-    'legacy gold hydration keeps the filtered result stable on first load',
-    (tester) async {
+  testWidgets('gold progress keeps the filtered result stable on first load', (
+    tester,
+  ) async {
+    await _prepareRegressionState(tester);
+    await tester.runAsync(() async {
       await LocalStorage.setBool('ui_filter_gold', true);
       await LocalStorage.setStringSet('gold_cards', {'g2_regular_test'});
-      GoldController.instance.reloadFromStorage();
-
-      await tester.pumpWidget(_buildApp());
-      await tester.pump();
-
-      expect(find.byType(AphidexLoadingPanel), findsOneWidget);
-      expect(
-        find.byKey(const ValueKey('enemy-tile-regular_test')),
-        findsNothing,
+      await LocalStorage.setString(
+        creatureCardProgressStorageKey,
+        encodeCreatureCardProgressMap({
+          'g2:g2_regular_test': CreatureCardProgress.gold,
+        }),
       );
+    });
+    GoldController.instance.reloadFromStorage();
 
-      await tester.pump(const Duration(milliseconds: 900));
+    await tester.pumpWidget(_buildApp());
+    await tester.pump();
 
-      expect(
-        find.byKey(const ValueKey('enemy-tile-regular_test')),
-        findsOneWidget,
-      );
-      expect(
-        find.byKey(const ValueKey('enemy-tile-g2_event_test')),
-        findsNothing,
-      );
-    },
-  );
+    expect(find.byType(AphidexLoadingPanel), findsOneWidget);
+    expect(find.byKey(const ValueKey('enemy-tile-regular_test')), findsNothing);
+
+    await tester.pump(const Duration(milliseconds: 900));
+    await tester.pump(const Duration(milliseconds: 100));
+
+    expect(
+      find.byKey(const ValueKey('enemy-tile-regular_test')),
+      findsOneWidget,
+    );
+    expect(
+      find.byKey(const ValueKey('enemy-tile-g2_event_test')),
+      findsNothing,
+    );
+  });
 
   testWidgets(
     'favorites empty state stays in the left pane during master-detail',
     (tester) async {
+      await _prepareRegressionState(tester);
       regressionListView.physicalSize = const Size(1024, 768);
 
       await tester.pumpWidget(_buildApp());
       await tester.pump(const Duration(milliseconds: 900));
+      await tester.pump(const Duration(milliseconds: 100));
 
       final favoritesSize = tester.getSize(
         find.byKey(const ValueKey('favorites-filter-chip')),
@@ -140,15 +141,22 @@ void main() {
       await tester.pump(const Duration(milliseconds: 300));
 
       expect(find.text('No favorites yet'), findsOneWidget);
-      expect(find.text('Select an entry'), findsOneWidget);
+      expect(find.byType(EnemyDetailScreen), findsNothing);
+      await tester.pumpWidget(const SizedBox.shrink());
+      await tester.pump();
+      await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 100)),
+      );
     },
   );
 
   testWidgets('favorite and progress taps do not open the detail route', (
     tester,
   ) async {
+    await _prepareRegressionState(tester);
     await tester.pumpWidget(_buildApp());
     await tester.pump(const Duration(milliseconds: 900));
+    await tester.pump(const Duration(milliseconds: 100));
 
     await tester.tap(
       find.byKey(const ValueKey('favorite-toggle-g2_regular_test')),
@@ -161,7 +169,26 @@ void main() {
     );
     await tester.pump(const Duration(milliseconds: 300));
     expect(find.byType(EnemyDetailScreen), findsNothing);
+
+    await tester.pumpWidget(const SizedBox.shrink());
+    await tester.pump();
+    await tester.runAsync(
+      () => Future<void>.delayed(const Duration(milliseconds: 100)),
+    );
   });
+}
+
+Future<void> _prepareRegressionState(WidgetTester tester) async {
+  await tester.runAsync(() async {
+    await Hive.box('aphidex').clear();
+    await FavoritesController.instance.reset();
+    await GoldController.instance.reset();
+    await LocalStorage.setBool(TutorialController.completionKey, true);
+    await LocalStorage.setBool('review_prompt_disabled_forever', true);
+    await LocalStorage.setBool('monetization_ads_removed', true);
+    await LocalStorage.setInt('ui_game_pick', GamePick.g2.index);
+  });
+  MonetizationController.instance.adsRemoved.value = true;
 }
 
 Widget _buildApp() {
@@ -174,7 +201,10 @@ Widget _buildApp() {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       builder: (context, child) =>
           TutorialHost(child: child ?? const SizedBox.shrink()),
-      home: EnemyListScreen(enemiesLoaderOverride: (_) async => _testEntries),
+      home: EnemyListScreen(
+        enemiesLoaderOverride: (_) async => _testEntries,
+        persistViewStateOnDispose: false,
+      ),
     ),
   );
 }
@@ -221,12 +251,8 @@ const _svg =
     '<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">'
     '<rect width="32" height="32" fill="#ffffff"/></svg>';
 
-final ByteData _transparentImage = ByteData.view(
-  Uint8List.fromList(
-    base64Decode(
-      'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4////fwAJ+wP9KobjigAAAABJRU5ErkJggg==',
-    ),
-  ).buffer,
+final ByteData _transparentImage = ByteData.sublistView(
+  File('assets/global/CreatureTier5.png').readAsBytesSync(),
 );
 
 final List<EnemyIndexEntry> _testEntries = [

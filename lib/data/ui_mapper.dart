@@ -1,3 +1,4 @@
+import '../models/enemy.dart';
 import 'effect_catalog.dart';
 
 class UiMapper {
@@ -216,17 +217,29 @@ class UiMapper {
     required bool isBoss,
     String? enemyId,
     String? game,
+    int? cardTier,
+    BossCardStyle? bossCardStyle,
   }) {
     const base = 'assets/global';
 
-    if (isBoss) return '$base/CreatureTierBoss.webp';
-    if (game == 'g2' && enemyId != null) {
-      switch (enemyId) {
-        case 'g2_garter_snake':
-        case 'g2_crow':
-          return '$base/CreatureTier5.png';
+    if (game == 'g2') {
+      const g2Base = 'assets/g2/tier_icons';
+      if (isBoss) {
+        return bossCardStyle == BossCardStyle.yellow
+            ? '$g2Base/G2_tier_boss_V.png'
+            : '$g2Base/G2_tier_boss.png';
       }
+      return switch (cardTier ?? tier) {
+        0 => '$g2Base/G2_tier_0.png',
+        1 => '$g2Base/G2_tier_1.png',
+        2 => '$g2Base/G2_tier_2.png',
+        3 => '$g2Base/G2_tier_3.png',
+        4 => '$g2Base/CreatureTier4.png',
+        _ => '$base/CreatureTier5.png',
+      };
     }
+
+    if (isBoss) return '$base/CreatureTierBoss.webp';
 
     switch (tier) {
       case 1:

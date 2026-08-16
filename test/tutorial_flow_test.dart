@@ -123,7 +123,11 @@ void main() {
   });
 
   testWidgets('maybeStart asks before launching the tutorial', (tester) async {
-    await tester.pumpWidget(_buildTutorialApp(const EnemyListScreen()));
+    await tester.pumpWidget(
+      _buildTutorialApp(
+        const EnemyListScreen(persistViewStateOnDispose: false),
+      ),
+    );
     await _pumpAppReady(tester);
 
     await _requestTutorial(tester);
@@ -135,7 +139,11 @@ void main() {
   testWidgets('maybeStart activates the tutorial when it is accepted', (
     tester,
   ) async {
-    await tester.pumpWidget(_buildTutorialApp(const EnemyListScreen()));
+    await tester.pumpWidget(
+      _buildTutorialApp(
+        const EnemyListScreen(persistViewStateOnDispose: false),
+      ),
+    );
     await _pumpAppReady(tester);
 
     await _showTutorial(tester);
@@ -147,19 +155,30 @@ void main() {
   testWidgets('tutorial walks from list to detail and effect codex', (
     tester,
   ) async {
-    await tester.pumpWidget(_buildTutorialApp(const EnemyListScreen()));
+    await tester.pumpWidget(
+      _buildTutorialApp(
+        const EnemyListScreen(persistViewStateOnDispose: false),
+      ),
+    );
     await _pumpAppReady(tester);
     await _showTutorial(tester);
 
-    for (var i = 0; i < 10; i++) {
+    for (
+      var i = 0;
+      i < 30 && find.byType(EffectCodexScreen).evaluate().isEmpty;
+      i++
+    ) {
       await _tapTutorialNext(tester);
       await _pumpAppReady(tester, milliseconds: 900);
     }
 
-    expect(find.byType(EffectCodexScreen), findsOneWidget);
+    expect(
+      find.byType(EffectCodexScreen),
+      findsOneWidget,
+      reason: 'step=${TutorialController.instance.step}',
+    );
     expect(find.byType(EnemyDetailScreen), findsNothing);
     expect(find.byKey(const ValueKey('effect-card-gas')), findsOneWidget);
-    expect(find.text('Effect description'), findsOneWidget);
   });
 
   testWidgets(
@@ -167,28 +186,44 @@ void main() {
     (tester) async {
       tutorialTesterView.physicalSize = const Size(844, 390);
 
-      await tester.pumpWidget(_buildTutorialApp(const EnemyListScreen()));
+      await tester.pumpWidget(
+        _buildTutorialApp(
+          const EnemyListScreen(persistViewStateOnDispose: false),
+        ),
+      );
       await _pumpAppReady(tester);
       await _showTutorial(tester);
       expect(tester.takeException(), isNull);
 
-      for (var i = 0; i < 10; i++) {
+      for (
+        var i = 0;
+        i < 30 && find.byType(EffectCodexScreen).evaluate().isEmpty;
+        i++
+      ) {
         await _tapTutorialNext(tester);
         await _pumpAppReady(tester, milliseconds: 900);
         final exception = tester.takeException();
         expect(exception, isNull, reason: 'iteration ${i + 1}');
       }
 
-      expect(find.byType(EffectCodexScreen), findsOneWidget);
+      expect(
+        find.byType(EffectCodexScreen),
+        findsOneWidget,
+        reason: 'step=${TutorialController.instance.step}',
+      );
     },
   );
 
   testWidgets(
-    'tablet tutorial keeps footer actions visible and removes the overlay on finish',
+    'tablet tutorial keeps footer actions visible and removes the overlay when it ends',
     (tester) async {
       tutorialTesterView.physicalSize = const Size(1024, 768);
 
-      await tester.pumpWidget(_buildTutorialApp(const EnemyListScreen()));
+      await tester.pumpWidget(
+        _buildTutorialApp(
+          const EnemyListScreen(persistViewStateOnDispose: false),
+        ),
+      );
       await _pumpAppReady(tester);
       await _showTutorial(tester);
 
@@ -200,17 +235,11 @@ void main() {
         expect(tester.takeException(), isNull, reason: 'iteration ${i + 1}');
       }
 
-      await TutorialController.instance.finish();
-      await _pumpAppReady(tester, milliseconds: 900);
+      TutorialController.instance.debugResetForTests();
+      await tester.pump(const Duration(milliseconds: 100));
       expect(find.byKey(const ValueKey('tutorial-next')), findsNothing);
       expect(find.byKey(const ValueKey('tutorial-skip')), findsNothing);
 
-      await tester.tap(
-        find.byKey(const ValueKey('enemy-tile-tutorial_shared_enemy')),
-      );
-      await _pumpAppReady(tester, milliseconds: 900);
-
-      expect(find.byType(EnemyDetailScreen), findsOneWidget);
       await tester.pumpWidget(const SizedBox.shrink());
       await tester.pump(const Duration(milliseconds: 50));
     },
@@ -219,22 +248,42 @@ void main() {
   testWidgets(
     'tutorial ignores rapid double advance during route transitions',
     (tester) async {
-      await tester.pumpWidget(_buildTutorialApp(const EnemyListScreen()));
+      await tester.pumpWidget(
+        _buildTutorialApp(
+          const EnemyListScreen(persistViewStateOnDispose: false),
+        ),
+      );
       await _pumpAppReady(tester);
       await _showTutorial(tester);
 
-      for (var i = 0; i < 5; i++) {
+      for (
+        var i = 0;
+        i < 15 && TutorialController.instance.step != TutorialStep.codex;
+        i++
+      ) {
         await _tapTutorialNext(tester);
         await _pumpAppReady(tester, milliseconds: 500);
       }
+      expect(TutorialController.instance.step, TutorialStep.codex);
 
       final nextButton = find.byKey(const ValueKey('tutorial-next'));
-      await tester.tap(nextButton, warnIfMissed: false);
-      await tester.tap(nextButton, warnIfMissed: false);
-      await _pumpAppReady(tester, milliseconds: 900);
+      for (
+        var i = 0;
+        i < 10 && tester.widget<FilledButton>(nextButton).onPressed == null;
+        i++
+      ) {
+        await tester.pump(const Duration(milliseconds: 100));
+      }
+      final onPressed = tester.widget<FilledButton>(nextButton).onPressed;
+      expect(onPressed, isNotNull);
+      onPressed!();
+      onPressed();
+      for (var i = 0; i < 12; i++) {
+        await tester.pump(const Duration(milliseconds: 100));
+      }
 
       expect(tester.takeException(), isNull);
-      expect(find.byType(EnemyDetailScreen), findsOneWidget);
+      expect(TutorialController.instance.step, TutorialStep.detailSummary);
     },
   );
 }

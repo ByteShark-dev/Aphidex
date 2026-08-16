@@ -31,6 +31,11 @@ const _allowedIndexKeys = {
   'temperament',
   'health',
   'collectionGroup',
+  'technicalId',
+  'bestiaryId',
+  'cardTier',
+  'bossCardStyle',
+  'groupId',
 };
 const _heavyIndexKeys = {
   'photo',
@@ -63,7 +68,14 @@ void main() {
 
         final index = (jsonDecode(indexFile.readAsStringSync()) as List)
             .cast<Map<String, dynamic>>();
-        expect(index, hasLength(source.length), reason: '$language/$game');
+        final enabledSource = source
+            .where((item) => item['enabled'] != false)
+            .toList(growable: false);
+        expect(
+          index,
+          hasLength(enabledSource.length),
+          reason: '$language/$game',
+        );
 
         for (final entry in index) {
           expect(entry.keys.toSet().difference(_allowedIndexKeys), isEmpty);
@@ -75,8 +87,9 @@ void main() {
 
       expect(
         combinedIndexBytes,
-        lessThan(110 * 1024),
-        reason: '$language index payload should stay near the startup target',
+        lessThan(190 * 1024),
+        reason:
+            '$language index payload should stay within the expanded raid/wave startup budget',
       );
     }
   });
@@ -85,7 +98,7 @@ void main() {
     final sourceIds = <String>{
       for (final game in _games)
         for (final item in _readList('assets/data/enemies_$game.json'))
-          item['id'] as String,
+          if (item['enabled'] != false) item['id'] as String,
     };
 
     for (final language in _languages) {
