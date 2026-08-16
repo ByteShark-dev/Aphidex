@@ -292,7 +292,6 @@ class Enemy implements CreatureCardCarrier {
           .map(
             (item) => EncounterVariant.fromJson(item.cast<String, dynamic>()),
           )
-          .where((item) => item.isNamed)
           .toList(growable: false);
     }
 
@@ -788,22 +787,35 @@ class EncounterVariant {
                 : const {};
             final amount = damage['amount'] as num?;
             final damageType = damage['type']?.toString();
-            final details = [
-              if (amount != null)
-                'Damage: ${amount.toStringAsFixed(amount % 1 == 0 ? 0 : 1)}',
-              if (damageType != null && damageType.isNotEmpty) damageType,
-            ].join(' · ');
+            final amountText = amount?.toStringAsFixed(amount % 1 == 0 ? 0 : 1);
+            final isUnresolved = row['resolved'] == false;
+            final technicalName = (row['id'] ?? row['ability'] ?? '')
+                .toString();
             return EnemyAttack(
-              name: LocalizedText(
-                en: (row['id'] ?? row['ability'] ?? '').toString(),
-              ),
+              name: _readableEncounterAttackName(technicalName),
               tags: [
+                if (damageType != null && damageType.isNotEmpty)
+                  damageType.toLowerCase(),
                 if (row['ranged'] == true) 'ranged',
                 if (row['jumpAttack'] == true) 'jump',
               ],
-              notes: details.isEmpty
-                  ? null
-                  : LocalizedText(en: details, es: details, ru: details),
+              notes: isUnresolved
+                  ? const LocalizedText(
+                      en: 'Unidentified',
+                      es: 'Sin identificar',
+                      ru: 'Не идентифицировано',
+                    )
+                  : amountText == null
+                  ? const LocalizedText(
+                      en: "We're preparing this information for you.",
+                      es: 'Estamos preparando esta información para ti.',
+                      ru: 'Мы готовим эту информацию для вас.',
+                    )
+                  : LocalizedText(
+                      en: 'Attack damage: $amountText',
+                      es: 'Daño del ataque: $amountText',
+                      ru: 'Урон атаки: $amountText',
+                    ),
             );
           })
           .toList(growable: false);
@@ -824,7 +836,7 @@ class EncounterVariant {
       name: LocalizedText(
         en: json['nameEn']?.toString(),
         es: json['nameEsMX']?.toString(),
-        ru: json['nameEn']?.toString(),
+        ru: (json['nameRu'] ?? json['nameEn'])?.toString(),
       ),
       health: healthValue == null
           ? null
@@ -853,6 +865,86 @@ class EncounterVariant {
           : const [],
     );
   }
+}
+
+LocalizedText _readableEncounterAttackName(String raw) {
+  var text = raw.replaceAll('_', ' ');
+  text = text.replaceAllMapped(RegExp(r'(?<=[a-z0-9])(?=[A-Z])'), (_) => ' ');
+  text = text.replaceAllMapped(
+    RegExp(r'(?<=[A-Za-z])(?=\d)|(?<=\d)(?=[A-Za-z])'),
+    (_) => ' ',
+  );
+  text = text
+      .replaceAll(RegExp(r'\b(Augusta|OGRE|ORC)\b', caseSensitive: false), '')
+      .replaceAll(RegExp(r'\bAOE\b', caseSensitive: false), 'Area Attack')
+      .replaceAll(RegExp(r'\s+'), ' ')
+      .trim();
+  final tokens = text.split(' ');
+  const actionWords = {
+    'area',
+    'back',
+    'bite',
+    'block',
+    'buck',
+    'burrow',
+    'charge',
+    'combo',
+    'dive',
+    'double',
+    'fart',
+    'gas',
+    'gust',
+    'karate',
+    'leap',
+    'lunge',
+    'melee',
+    'multistrike',
+    'pollen',
+    'power',
+    'ranged',
+    'roar',
+    'slam',
+    'smash',
+    'sonic',
+    'spray',
+    'sting',
+    'tail',
+    'triple',
+  };
+  final actionIndex = tokens.indexWhere(
+    (token) => actionWords.contains(token.toLowerCase()),
+  );
+  if (actionIndex >= 0) {
+    text = tokens.skip(actionIndex).join(' ');
+  } else if (tokens.isNotEmpty &&
+      const {'left', 'right'}.contains(tokens.last.toLowerCase())) {
+    text = '${tokens.last} Strike';
+  }
+  const esWords = {
+    'area': 'área',
+    'attack': 'ataque',
+    'bite': 'mordida',
+    'block': 'bloqueo',
+    'burrow': 'subterráneo',
+    'charge': 'carga',
+    'combo': 'combo',
+    'gas': 'gas',
+    'kick': 'patada',
+    'left': 'izquierda',
+    'power': 'potente',
+    'right': 'derecha',
+    'slam': 'golpe',
+    'spray': 'rocío',
+    'sting': 'aguijonazo',
+    'strike': 'golpe',
+    'tail': 'cola',
+    'whip': 'latigazo',
+  };
+  final es = text
+      .split(' ')
+      .map((word) => esWords[word.toLowerCase()] ?? word)
+      .join(' ');
+  return LocalizedText(en: text, es: es, ru: text);
 }
 
 class LootEntry {

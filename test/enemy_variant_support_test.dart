@@ -261,7 +261,20 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(
-      find.byKey(const ValueKey('encounter-variant-base')),
+      find.byKey(const ValueKey('encounter-variant-picker')),
+      findsOneWidget,
+    );
+    await tester.ensureVisible(
+      find.byKey(const ValueKey('encounter-variant-picker')),
+    );
+    await tester.tap(find.byKey(const ValueKey('encounter-variant-picker')));
+    await tester.pumpAndSettle();
+    expect(
+      find.byKey(
+        const ValueKey(
+          'encounter-variant-g2_wave_ant_soldier_black_augusta_orc_wave',
+        ),
+      ),
       findsOneWidget,
     );
     await tester.tap(
@@ -283,11 +296,12 @@ void main() {
 
     await tester.drag(find.byType(ListView), const Offset(0, 1600));
     await tester.pumpAndSettle();
-    tester
-        .widget<ChoiceChip>(
-          find.byKey(const ValueKey('encounter-variant-base')),
-        )
-        .onSelected!(true);
+    await tester.ensureVisible(
+      find.byKey(const ValueKey('encounter-variant-picker')),
+    );
+    await tester.tap(find.byKey(const ValueKey('encounter-variant-picker')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('encounter-variant-base')));
     await tester.pumpAndSettle();
     expect(find.text(enemy.name.resolve('en')), findsWidgets);
     await tester.scrollUntilVisible(
@@ -339,8 +353,9 @@ void main() {
             .toList(growable: false);
     final sunny = rows.singleWhere((entry) => entry.id == 'g2_koi_sunny');
     await tester.runAsync(() async {
-      await EnemyRepository.loadDetail('g2_koi_sunny', 'en');
-      await EnemyRepository.loadDetail('g2_koi_calico', 'en');
+      for (final entry in rows) {
+        await EnemyRepository.loadDetail(entry.id, 'en');
+      }
     });
 
     await tester.pumpWidget(
@@ -352,19 +367,33 @@ void main() {
         ),
       ),
     );
-    final calicoChip = find.byKey(
+    await _pumpUntilVisible(
+      tester,
+      find.byKey(const ValueKey('related-entry-picker')),
+    );
+    await tester.tap(find.byKey(const ValueKey('related-entry-picker')));
+    await tester.pumpAndSettle();
+    final calicoOption = find.byKey(
       const ValueKey('related-entry-g2_koi_calico'),
     );
-    await _pumpUntilVisible(tester, calicoChip);
+    await _pumpUntilVisible(tester, calicoOption);
 
     for (final entry in rows) {
       expect(find.byKey(ValueKey('related-entry-${entry.id}')), findsOneWidget);
     }
 
-    await tester.tap(calicoChip);
+    await tester.tap(calicoOption);
     await _pumpUntilVisible(tester, find.text('Calico'));
 
     expect(find.text('Calico'), findsWidgets);
+    final nextButton = tester.widget<IconButton>(
+      find.byKey(const ValueKey('related-entry-next')),
+    );
+    expect(nextButton.onPressed, isNotNull);
+    nextButton.onPressed!();
+    await tester.pumpAndSettle();
+    await _pumpUntilVisible(tester, find.text('Oriole'));
+    expect(find.text('Oriole'), findsWidgets);
   });
 
   testWidgets('detail rebuilds cleanly when the selected entry key changes', (

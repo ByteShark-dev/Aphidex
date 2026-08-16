@@ -1153,18 +1153,21 @@ class _RelatedEntrySwitcher extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      children: [
-        for (final entry in entries)
-          ChoiceChip(
+    final orderedEntries = [...entries]
+      ..sort((a, b) => (a.order ?? 999999).compareTo(b.order ?? 999999));
+    return _CompactVariantNavigator<String>(
+      key: const ValueKey('related-entry-navigator'),
+      keyPrefix: 'related-entry',
+      options: [
+        for (final entry in orderedEntries)
+          _VariantNavigatorOption(
+            value: entry.id,
+            label: entry.name,
             key: ValueKey('related-entry-${entry.id}'),
-            label: Text(entry.name),
-            selected: entry.id == selectedId,
-            onSelected: (_) => onChanged(entry.id),
           ),
       ],
+      selectedValue: selectedId,
+      onChanged: onChanged,
     );
   }
 }
@@ -1186,24 +1189,169 @@ class _EncounterVariantSwitcher extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      children: [
-        ChoiceChip(
-          key: const ValueKey('encounter-variant-base'),
-          label: Text(baseName),
-          selected: selectedIndex == 0,
-          onSelected: (_) => onChanged(0),
+    return _CompactVariantNavigator<int>(
+      key: const ValueKey('encounter-variant-navigator'),
+      keyPrefix: 'encounter-variant',
+      options: [
+        const _VariantNavigatorOption(
+          value: 0,
+          label: '',
+          key: ValueKey('encounter-variant-base'),
         ),
         for (var index = 0; index < variants.length; index++)
-          ChoiceChip(
+          _VariantNavigatorOption(
+            value: index + 1,
             key: ValueKey('encounter-variant-${variants[index].id}'),
-            label: Text(variants[index].name.resolve(languageCode)),
-            selected: selectedIndex == index + 1,
-            onSelected: (_) => onChanged(index + 1),
+            label: variants[index].name.resolve(languageCode),
           ),
       ],
+      selectedValue: selectedIndex,
+      baseLabel: baseName,
+      onChanged: onChanged,
+    );
+  }
+}
+
+class _VariantNavigatorOption<T> {
+  final T value;
+  final String label;
+  final Key key;
+
+  const _VariantNavigatorOption({
+    required this.value,
+    required this.label,
+    required this.key,
+  });
+}
+
+class _CompactVariantNavigator<T> extends StatefulWidget {
+  final String keyPrefix;
+  final List<_VariantNavigatorOption<T>> options;
+  final T selectedValue;
+  final String? baseLabel;
+  final ValueChanged<T> onChanged;
+
+  const _CompactVariantNavigator({
+    super.key,
+    required this.keyPrefix,
+    required this.options,
+    required this.selectedValue,
+    required this.onChanged,
+    this.baseLabel,
+  });
+
+  @override
+  State<_CompactVariantNavigator<T>> createState() =>
+      _CompactVariantNavigatorState<T>();
+}
+
+class _CompactVariantNavigatorState<T>
+    extends State<_CompactVariantNavigator<T>> {
+  late T _selectedValue;
+
+  @override
+  void initState() {
+    super.initState();
+    _selectedValue = widget.selectedValue;
+  }
+
+  @override
+  void didUpdateWidget(covariant _CompactVariantNavigator<T> oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.selectedValue != oldWidget.selectedValue ||
+        !widget.options.any((option) => option.value == _selectedValue)) {
+      _selectedValue = widget.selectedValue;
+    }
+  }
+
+  int get _selectedIndex {
+    final index = widget.options.indexWhere(
+      (option) => option.value == _selectedValue,
+    );
+    return index < 0 ? 0 : index;
+  }
+
+  String _labelFor(_VariantNavigatorOption<T> option) =>
+      option.label.isEmpty ? (widget.baseLabel ?? '') : option.label;
+
+  void _select(T value) {
+    if (value == _selectedValue) return;
+    setState(() => _selectedValue = value);
+    widget.onChanged(value);
+  }
+
+  void _step(int offset) {
+    if (widget.options.length < 2) return;
+    final next = (_selectedIndex + offset) % widget.options.length;
+    _select(widget.options[next < 0 ? widget.options.length - 1 : next].value);
+  }
+
+  Future<void> _showPicker(BuildContext context) async {
+    final selected = await showModalBottomSheet<T>(
+      context: context,
+      showDragHandle: true,
+      builder: (context) => SafeArea(
+        child: ListView(
+          shrinkWrap: true,
+          padding: const EdgeInsets.only(bottom: 12),
+          children: [
+            for (final option in widget.options)
+              ListTile(
+                key: option.key,
+                leading: option.value == _selectedValue
+                    ? const Icon(Icons.check_circle)
+                    : const Icon(Icons.circle_outlined),
+                title: Text(_labelFor(option)),
+                selected: option.value == _selectedValue,
+                onTap: () => Navigator.of(context).pop(option.value),
+              ),
+          ],
+        ),
+      ),
+    );
+    if (selected != null) _select(selected);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final selected = widget.options[_selectedIndex];
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.surfaceContainerLow,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: Theme.of(context).colorScheme.outlineVariant),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(4),
+        child: Row(
+          children: [
+            IconButton(
+              key: ValueKey('${widget.keyPrefix}-previous'),
+              tooltip: MaterialLocalizations.of(context).previousPageTooltip,
+              onPressed: widget.options.length > 1 ? () => _step(-1) : null,
+              icon: const Icon(Icons.chevron_left),
+            ),
+            Expanded(
+              child: OutlinedButton.icon(
+                key: ValueKey('${widget.keyPrefix}-picker'),
+                onPressed: () => _showPicker(context),
+                icon: const Icon(Icons.swap_horiz, size: 18),
+                label: Text(
+                  _labelFor(selected),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ),
+            IconButton(
+              key: ValueKey('${widget.keyPrefix}-next'),
+              tooltip: MaterialLocalizations.of(context).nextPageTooltip,
+              onPressed: widget.options.length > 1 ? () => _step(1) : null,
+              icon: const Icon(Icons.chevron_right),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

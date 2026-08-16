@@ -38,7 +38,7 @@ void main() {
         isTrue,
       );
 
-      expect(ladybug['name']['es'], 'Catarinita');
+      expect(ladybug['name']['es'], 'Mariquita');
       expect(
         (ladybug['resistancesV2'] as List).whereType<Map>().any(
           (bonus) => bonus['type'] == 'spicy' && bonus['bonusPct'] == 25,

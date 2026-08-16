@@ -74,16 +74,22 @@ void main() {
     );
   });
 
-  test('only the 20 Named C.R.O. rows become typed encounter variants', () {
+  test('Named C.R.O. and active waves become typed encounter variants', () {
     final enemies = loadIndex().map((entry) => loadDetail(entry.id));
     final variants = enemies
         .expand((enemy) => enemy.encounterVariants)
         .toList();
+    final named = variants.where((variant) => variant.isNamed).toList();
+    final waves = variants
+        .where((variant) => variant.role == 'wave_or_raid')
+        .toList();
 
-    expect(variants, hasLength(20));
-    expect(variants.every((variant) => variant.isNamed), isTrue);
-    expect(variants.every((variant) => variant.health?.value != null), isTrue);
-    expect(variants.every((variant) => variant.attacks.isNotEmpty), isTrue);
+    expect(named, hasLength(20));
+    expect(waves, hasLength(40));
+    expect(variants, hasLength(60));
+    expect(named.every((variant) => variant.health?.value != null), isTrue);
+    expect(named.every((variant) => variant.attacks.isNotEmpty), isTrue);
+    expect(waves.every((variant) => variant.id.startsWith('g2_wave_')), isTrue);
   });
 
   test('Koi quick-navigation group has four independent G2 entries', () {
@@ -106,9 +112,16 @@ void main() {
     final buggy = loadDetail('g2_buggy_toe_biter');
 
     expect(buggy.collectionGroup, 'buggy');
+    expect(buggy.tier, 3);
+    expect(buggy.cardTier, 3);
     expect(buggy.health, isNull);
     expect(buggy.attacks, isEmpty);
     expect(buggy.cardNormal, loadDetail('g2_toe_biter_nymph').cardNormal);
+    final buggies = loadIndex()
+        .where((entry) => entry.collectionGroup == 'buggy')
+        .map((entry) => loadDetail(entry.id));
+    expect(buggies.every((entry) => !entry.healthDisplay.shouldRender), isTrue);
+    expect(buggies.every((entry) => entry.health == null), isTrue);
   });
 
   test('unresolved attack damage is explicitly unidentified', () {
@@ -117,7 +130,13 @@ void main() {
           'g2_bombardier_beetle',
           language: language,
         ).attacks.singleWhere(
-          (attack) => attack.name.resolve(language) == 'BeetleAOE',
+          (attack) =>
+              attack.notes?.resolve(language) ==
+              switch (language) {
+                'es' => 'Sin identificar',
+                'ru' => 'Не идентифицировано',
+                _ => 'Unidentified',
+              },
         );
 
     expect(unresolved('es').notes?.resolve('es'), 'Sin identificar');
@@ -142,15 +161,16 @@ void main() {
     }
   });
 
-  test('C.R.O. and scorpion raid waves are active', () {
-    final waves = loadMaster()
-        .where((entry) => entry['isRaidWave'] == true)
+  test('C.R.O. and scorpion waves stay inside their parent selector', () {
+    final master = loadMaster();
+    final active = master
+        .expand((entry) => (entry['encounterVariants'] as List? ?? const []))
+        .whereType<Map<String, dynamic>>()
+        .where((entry) => entry['role'] == 'wave_or_raid')
         .toList(growable: false);
-    final active = waves
-        .where((entry) => entry['enabled'] == true)
-        .toList(growable: false);
-    final disabled = waves
-        .where((entry) => entry['enabled'] == false)
+    final contextual = master
+        .expand((entry) => (entry['contextVariants'] as List? ?? const []))
+        .whereType<Map<String, dynamic>>()
         .toList(growable: false);
     final indexedIds = loadIndex().map((entry) => entry.id).toSet();
     const activeScorpionWaveIds = {
@@ -159,20 +179,94 @@ void main() {
       'g2_wave_scorpling_northern_wave',
     };
 
-    expect(waves, hasLength(50));
+    expect(master, hasLength(132));
+    expect(contextual, hasLength(50));
     expect(active, hasLength(40));
-    expect(disabled, hasLength(10));
     expect(
-      active.every(
+      activeScorpionWaveIds.every((id) => active.any((v) => v['id'] == id)),
+      isTrue,
+    );
+    expect(indexedIds.any((id) => id.startsWith('g2_wave_')), isFalse);
+    expect(master.any((entry) => entry['isRaidWave'] == true), isFalse);
+  });
+
+  test('all G2 generic weaknesses are presented as busting damage', () {
+    final master = loadMaster();
+    for (final entry in master) {
+      expect(
+        entry['weaknesses'] as List? ?? const [],
+        isNot(contains('generic')),
+      );
+      expect(
+        (entry['damageWeaknesses'] as List? ?? const [])
+            .whereType<Map<String, dynamic>>()
+            .map((row) => row['type']),
+        isNot(contains('generic')),
+      );
+      for (final variant in [
+        ...(entry['encounterVariants'] as List? ?? const []),
+        ...(entry['contextVariants'] as List? ?? const []),
+      ].whereType<Map<String, dynamic>>()) {
+        final types = (variant['weaknesses'] as List? ?? const [])
+            .whereType<Map<String, dynamic>>()
+            .expand((row) => row['damageTypes'] as List? ?? const []);
+        expect(
+          types,
+          isNot(contains('General')),
+          reason: entry['id'].toString(),
+        );
+      }
+    }
+    expect(
+      master.any(
         (entry) =>
-            (entry['parentId'] as String).startsWith('g2_orc_') ||
-            activeScorpionWaveIds.contains(entry['id']),
+            (entry['weaknesses'] as List? ?? const []).contains('busting'),
       ),
       isTrue,
     );
-    expect(activeScorpionWaveIds.every(indexedIds.contains), isTrue);
-    expect(active.every((entry) => indexedIds.contains(entry['id'])), isTrue);
-    expect(disabled.any((entry) => indexedIds.contains(entry['id'])), isFalse);
+  });
+
+  test('all O.G.R.R. entries expose the three flavor infusions', () {
+    final ogrr = loadIndex()
+        .where((entry) => entry.collectionGroup == 'ogrr')
+        .map((entry) => loadDetail(entry.id))
+        .toList();
+    expect(ogrr, hasLength(16));
+    expect(
+      ogrr.every(
+        (entry) => entry.infusions
+            .map((infusion) => infusion.id)
+            .toSet()
+            .containsAll({'fresh', 'sour', 'spicy'}),
+      ),
+      isTrue,
+    );
+  });
+
+  test('new combat copy is user-facing and new creatures are aggressive', () {
+    final master = loadMaster();
+    final technicalCopy = RegExp(
+      r'Extracted base damage|v4\.4 combat data|datos de combate v4\.4',
+      caseSensitive: false,
+    );
+    expect(technicalCopy.hasMatch(jsonEncode(master)), isFalse);
+    expect(
+      master.singleWhere(
+        (entry) => entry['id'] == 'g2_green_shield_bug',
+      )['collectionGroup'],
+      'angry',
+    );
+    expect(
+      loadDetail('g2_northern_scorpion').attacks.first.name.resolve('en'),
+      'Combo 2',
+    );
+    expect(
+      loadDetail(
+        'g2_northern_scorpion',
+        language: 'es',
+      ).attacks.first.notes?.resolve('es'),
+      'Daño del ataque: 28',
+    );
   });
 
   test('new matching G2 insects join their unchanged G1 Shared entries', () {

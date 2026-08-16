@@ -29,12 +29,19 @@ CAPTURES = Path(r"F:\XboxCaptureCopies")
 CARD_EXPORTS = Path(r"F:\Software_Instaladores\F-model\Output\Exports\Augusta\Content\Blueprints\Items\Icons\CreatureCards")
 REPORTS = ROOT / "migration" / "grounded2_v4_4"
 BUGGY_PHOTO_SOURCE = REPORTS / "source_assets" / "g2_buggy_toe_biter.png"
+SPANISH_NAME_OVERRIDES = REPORTS / "spanish_name_overrides.json"
 
 TIER_FILES = (
     "G2_tier_0.png", "G2_tier_1.png", "G2_tier_2.png",
     "G2_tier_3.png", "CreatureTier4.png", "G2_tier_boss.png",
     "G2_tier_boss_V.png",
 )
+
+PENDING_INFO = {
+    "en": "We're preparing this information for you.",
+    "es": "Estamos preparando esta información para ti.",
+    "ru": "Мы готовим эту информацию для вас.",
+}
 
 # Automatic Russian names for rows that do not have an existing curated RU row.
 RU_NAMES = {
@@ -148,6 +155,21 @@ def damage_id(raw: str) -> str:
     return aliases.get(key, re.sub(r"(?<!^)(?=[A-Z])", "_", raw).lower())
 
 
+def normalized_weakness_id(raw: str) -> str:
+    value = damage_id(raw)
+    return "busting" if value == "generic" else value
+
+
+def normalize_weakness_rows(rows: list[dict]) -> list[dict]:
+    normalized = deepcopy(rows or [])
+    for row in normalized:
+        row["damageTypes"] = [
+            "Busting" if damage_id(kind) == "generic" else kind
+            for kind in row.get("damageTypes", [])
+        ]
+    return normalized
+
+
 def bonuses(rows: list[dict]) -> list[dict]:
     output = []
     for row in rows or []:
@@ -156,31 +178,76 @@ def bonuses(rows: list[dict]) -> list[dict]:
     return output
 
 
+def readable_attack_name(raw: str) -> dict[str, str]:
+    text = raw.replace("_", " ")
+    text = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", " ", text)
+    text = re.sub(r"(?<=[A-Za-z])(?=\d)|(?<=\d)(?=[A-Za-z])", " ", text)
+    text = re.sub(r"\b(Augusta|OGRE|ORC)\b", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bAOE\b", "Area Attack", text, flags=re.IGNORECASE)
+    text = re.sub(r"\b2H\b", "Two-Handed", text, flags=re.IGNORECASE)
+    text = re.sub(r"\s+", " ", text).strip()
+    tokens = text.split()
+    action_words = {
+        "area", "back", "bite", "block", "buck", "burrow", "charge",
+        "combo", "dive", "double", "fart", "gas", "gust", "karate",
+        "leap", "lunge", "melee", "multistrike", "pollen", "power",
+        "ranged", "roar", "slam", "smash", "sonic", "spray", "sting",
+        "tail", "triple",
+    }
+    action_index = next(
+        (index for index, token in enumerate(tokens) if token.lower() in action_words),
+        None,
+    )
+    if action_index is not None:
+        text = " ".join(tokens[action_index:])
+    elif tokens and tokens[-1].lower() in {"left", "right"}:
+        text = f"{tokens[-1]} Strike"
+    words_es = {
+        "area": "área", "attack": "ataque", "back": "trasera",
+        "bite": "mordida", "block": "bloqueo", "buck": "embestida",
+        "burrow": "subterráneo", "charge": "carga", "charged": "cargado",
+        "cloud": "nube", "combo": "combo", "defensive": "defensivo",
+        "dive": "picada", "double": "doble", "fart": "nube de gas", "gas": "gas", "gust": "ráfaga",
+        "jump": "salto", "karate": "karate", "kick": "patada", "leap": "salto",
+        "left": "izquierda", "lunge": "arremetida", "melee": "cuerpo a cuerpo",
+        "multi": "múltiple", "multistrike": "golpe múltiple", "offensive": "ofensivo",
+        "pollen": "polen", "power": "potente", "ranged": "a distancia",
+        "right": "derecha", "roar": "rugido", "side": "lateral", "slam": "golpe",
+        "smash": "aplastamiento", "sonic": "sónico", "spray": "rocío",
+        "stab": "estocada", "sting": "aguijonazo", "strike": "golpe",
+        "tail": "cola", "triple": "triple", "whip": "latigazo",
+    }
+    es = " ".join(words_es.get(word.lower(), word) for word in text.split())
+    return {"en": text, "es": es[:1].upper() + es[1:], "ru": text}
+
+
 def attacks(rows: list[dict]) -> list[dict]:
     output = []
     for row in rows or []:
-        name = row.get("id") or row.get("ability") or "Unknown attack"
+        technical_name = row.get("id") or row.get("ability") or "Unknown attack"
         tags = []
         damage = row.get("damage") or {}
         if damage.get("type"):
             tags.append(damage_id(damage["type"]))
         if row.get("ranged"):
             tags.append("ranged")
-        notes = []
         if row.get("resolved") is False:
-            notes.append("unidentified_damage")
-        elif damage.get("amount") is not None:
-            notes.append(f"Extracted base damage: {damage['amount']:g}.")
-        if notes == ["unidentified_damage"]:
             localized_notes = {
                 "en": "Unidentified",
                 "es": "Sin identificar",
                 "ru": "Не идентифицировано",
             }
+        elif damage.get("amount") is not None:
+            amount = f"{damage['amount']:g}"
+            localized_notes = {
+                "en": f"Attack damage: {amount}",
+                "es": f"Daño del ataque: {amount}",
+                "ru": f"Урон атаки: {amount}",
+            }
         else:
-            localized_notes = {lang: " ".join(notes) for lang in ("en", "es", "ru")}
-        output.append({"name": {"en": name, "es": name, "ru": name}, "tags": tags,
-                       "notes": localized_notes})
+            localized_notes = deepcopy(PENDING_INFO)
+        output.append({"name": readable_attack_name(technical_name), "technicalId": technical_name,
+                       "tags": tags, "notes": localized_notes})
     return output
 
 
@@ -196,68 +263,30 @@ def snake_id(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", value.lower()).strip("_")
 
 
-def build_wave_entry(parent: dict, variant: dict, order: int) -> dict:
-    """Materialize a contextual raid/wave row without changing its parent."""
+def is_active_wave(parent_id: str, variant: dict) -> bool:
     technical_id = variant.get("characterRow") or variant.get("id") or "wave"
-    stable_id = f"g2_wave_{snake_id(technical_id)}"
     normalized_technical_id = technical_id.lower()
     is_scorpion_wave = (
         "scorpion" in normalized_technical_id
         or "scorpling" in normalized_technical_id
     )
-    enabled = parent["id"].startswith("g2_orc_") or is_scorpion_wave
-    result = deepcopy(parent)
+    return parent_id.startswith("g2_orc_") or is_scorpion_wave
+
+
+def build_wave_variant(parent: dict, variant: dict) -> dict:
+    """Expose an active raid/wave through its parent detail selector."""
+    technical_id = variant.get("characterRow") or variant.get("id") or "wave"
+    result = deepcopy(variant)
     parent_name = parent.get("name", {})
     result.update({
-        "id": stable_id,
-        "speciesKey": f"wave_{snake_id(technical_id)}",
-        "name": {
-            "en": f"{parent_name.get('en', parent['id'])} Raid/Wave",
-            "es": f"{parent_name.get('es', parent['id'])} Incursión/Oleada",
-            "ru": f"{parent_name.get('ru', parent['id'])} Рейд/волна",
-        },
-        "order": order,
-        "enabled": enabled,
-        "availability": "active" if enabled else "inactive_future",
-        "isRaidWave": True,
-        "parentId": parent["id"],
-        "technicalId": technical_id,
-        "favoriteKey": stable_id,
-        "defaultGold": False,
-        "encounterVariants": [],
-        "contextVariants": [],
-        "specialCombatModifiers": variant.get("specialCombatModifiers", []),
-        "mechanicSignals": variant.get("mechanicSignals", []),
-        "weakPoints": weak_points(variant.get("weakpoints", [])),
-        "attacks": attacks(variant.get("attacks", [])),
-        "abilities": [],
-        "bossPhases": [],
-        "description": {
-            "en": "Raid/wave configuration extracted from Grounded 2 v4.4.",
-            "es": "Configuración de incursión/oleada extraída de Grounded 2 v4.4.",
-            "ru": "Конфигурация рейда/волны извлечена из Grounded 2 v4.4.",
-        },
+        "id": f"g2_wave_{snake_id(technical_id)}",
+        "variantKey": f"g2_wave_{snake_id(technical_id)}",
+        "role": "wave_or_raid",
+        "nameEn": f"{parent_name.get('en', parent['id'])} Raid/Wave",
+        "nameEsMX": f"{parent_name.get('es', parent['id'])} Incursión/Oleada",
+        "nameRu": f"{parent_name.get('ru', parent['id'])} Рейд/волна",
     })
-    result.pop("goldLinkId", None)
-    weakness_rows = variant.get("weaknesses", [])
-    weakness_values = bonuses(weakness_rows)
-    elemental = {"fresh", "spicy", "sour", "salty", "water"}
-    result["weaknesses"] = [damage_id(kind) for row in weakness_rows for kind in row.get("damageTypes", [])]
-    result["resistances"] = [damage_id(kind) for row in variant.get("resistances", []) for kind in row.get("damageTypes", [])]
-    result["elementalWeaknesses"] = [row for row in weakness_values if row["type"] in elemental]
-    result["damageWeaknesses"] = [row for row in weakness_values if row["type"] not in elemental]
-    result["resistancesV2"] = bonuses(variant.get("resistances", []))
-    health = variant.get("stats", {}).get("health")
-    if health is None:
-        result["health"] = None
-        result["combatStats"] = {}
-    else:
-        hp = int(round(float(health)))
-        result["health"] = {
-            "value": hp,
-            "rating": 1 if hp < 400 else 2 if hp < 700 else 3 if hp < 1100 else 4 if hp < 2000 else 5,
-        }
-        result["combatStats"] = {"health": hp}
+    result["weaknesses"] = normalize_weakness_rows(result.get("weaknesses", []))
     return result
 
 
@@ -303,7 +332,7 @@ def copy_special_gold_card(stable_id: str) -> str:
 
 
 def main() -> None:
-    required = [EXTRACTOR, BESTIARY, CROSSWALK, INVENTORY, *LOCALIZATION.values(), TIER_SOURCE, CAPTURES, BUGGY_PHOTO_SOURCE]
+    required = [EXTRACTOR, BESTIARY, CROSSWALK, INVENTORY, *LOCALIZATION.values(), TIER_SOURCE, CAPTURES, BUGGY_PHOTO_SOURCE, SPANISH_NAME_OVERRIDES]
     missing = [str(path) for path in required if not path.exists()]
     if missing:
         raise FileNotFoundError("Missing required input(s): " + ", ".join(missing))
@@ -314,7 +343,14 @@ def main() -> None:
     extractor = {entry["id"]: entry for entry in load_json(EXTRACTOR)["creatures"]}
     bestiary = {entry["id"]: entry for entry in load_json(BESTIARY)["creatures"]}
     crosswalk = load_json(CROSSWALK)
-    inventory = {row["bestiaryId"]: row for row in csv.DictReader(INVENTORY.open(encoding="utf-8-sig"))}
+    spanish_names = load_json(SPANISH_NAME_OVERRIDES)
+    inventory_rows = list(csv.DictReader(INVENTORY.open(encoding="utf-8-sig")))
+    inventory = {row["bestiaryId"]: row for row in inventory_rows}
+    inventory_order = {
+        row["bestiaryId"]: 201 + index
+        for index, row in enumerate(inventory_rows)
+        if row.get("status") == "INCLUDE"
+    }
     localized = {lang: localization_rows(path) for lang, path in LOCALIZATION.items()}
     named = {}
     for variant in crosswalk["namedEncounterVariantMap"]:
@@ -325,13 +361,14 @@ def main() -> None:
     auto_ru = []
     mapped_photos = []
     missing_photos = []
-    for order, link in enumerate(crosswalk["entries"], start=201):
+    for fallback_order, link in enumerate(crosswalk["entries"], start=201):
         stable_id = link["aphidexId"]
         technical_id = link["technicalId"]
         bestiary_id = link["bestiaryId"]
         game = extractor.get(technical_id, {})
         raw = bestiary.get(technical_id, bestiary.get(bestiary_id, {}))
         inv = inventory.get(bestiary_id, {})
+        order = inventory_order.get(bestiary_id, fallback_order)
         old = deepcopy(current_by_id.get(stable_id, {}))
         is_new = link["mappingStatus"] == "NEW"
         ru_name = old.get("name", {}).get("ru") or RU_NAMES.get(stable_id) or link["gameNameEn"]
@@ -341,13 +378,13 @@ def main() -> None:
         description_es = localized["es"].get((bestiary_id, "description"), "")
         if is_new:
             old = {
-                "id": stable_id, "speciesKey": link["speciesKeyProposal"], "collectionGroup": link.get("variantType") or "other",
+                "id": stable_id, "speciesKey": link["speciesKeyProposal"], "collectionGroup": link.get("variantType") or "angry",
                 "game": "g2", "danger": "unknown", "order": order, "defaultGold": False,
-                "photo": "assets/global/Proximamente.png", "temperament": "other", "loot": [], "abilities": [],
-                "behavior": {"en": "Behavior is sourced from the v4.4 combat data.", "es": "El comportamiento se basa en los datos de combate v4.4.", "ru": "Поведение основано на боевых данных версии 4.4."},
-                "interactionWithPlayer": {"en": "See the verified combat values below.", "es": "Consulta abajo los valores de combate verificados.", "ru": "Проверенные боевые значения приведены ниже."},
-                "interactionWithCreatures": {"en": "No additional interaction was verified.", "es": "No se verificó una interacción adicional.", "ru": "Дополнительные взаимодействия не подтверждены."},
-                "strategy": {"en": "Use the listed weaknesses and resistances.", "es": "Usa las fortalezas y debilidades indicadas.", "ru": "Используйте указанные слабости и сопротивления."},
+                "photo": "assets/global/Proximamente.png", "temperament": "aggressive", "loot": [], "abilities": [],
+                "behavior": deepcopy(PENDING_INFO),
+                "interactionWithPlayer": deepcopy(PENDING_INFO),
+                "interactionWithCreatures": deepcopy(PENDING_INFO),
+                "strategy": deepcopy(PENDING_INFO),
             }
         tier_raw = inv.get("gameTierRaw") or game.get("tier") or old.get("tier", 1)
         raw_tier = int(float(tier_raw)) if tier_raw not in (None, "") else 1
@@ -365,20 +402,44 @@ def main() -> None:
             "id": stable_id,
             "speciesKey": SHARED_G1_SPECIES_KEYS.get(stable_id, link["speciesKeyProposal"]),
             "groupId": link.get("groupId"),
-            "name": {"en": link["gameNameEn"], "es": link["gameNameEsMX"], "ru": ru_name},
+            "name": {"en": link["gameNameEn"], "es": spanish_names["entries"].get(stable_id, link["gameNameEsMX"]), "ru": ru_name},
+            "order": order,
             "tier": 5 if is_boss else max(1, raw_tier), "cardTier": card_tier,
             "technicalId": technical_id, "bestiaryId": bestiary_id,
             "isBoss": is_boss, "bossCardStyle": "yellow" if yellow else ("red" if is_boss else None),
             "isKillable": not yellow, "healthDisplay": "hidden" if yellow else "normal",
             "cardNormal": normal_card, "cardGold": gold_card,
-            "weaknesses": [damage_id(x) for row in game.get("weaknesses", []) for x in row.get("damageTypes", [])],
+            "weaknesses": [normalized_weakness_id(x) for row in game.get("weaknesses", []) for x in row.get("damageTypes", [])],
             "resistances": [damage_id(x) for row in game.get("resistances", []) for x in row.get("damageTypes", [])],
-            "elementalWeaknesses": bonuses([r for r in game.get("weaknesses", []) if any(damage_id(x) in {"fresh", "spicy", "sour", "salty"} for x in r.get("damageTypes", []))]),
-            "damageWeaknesses": bonuses([r for r in game.get("weaknesses", []) if any(damage_id(x) not in {"fresh", "spicy", "sour", "salty"} for x in r.get("damageTypes", []))]),
+            "elementalWeaknesses": bonuses([r for r in normalize_weakness_rows(game.get("weaknesses", [])) if any(damage_id(x) in {"fresh", "spicy", "sour", "salty"} for x in r.get("damageTypes", []))]),
+            "damageWeaknesses": bonuses([r for r in normalize_weakness_rows(game.get("weaknesses", [])) if any(damage_id(x) not in {"fresh", "spicy", "sour", "salty"} for x in r.get("damageTypes", []))]),
             "resistancesV2": bonuses(game.get("resistances", [])), "weakPoints": weak_points(game.get("weakpoints", [])),
             "attacks": attacks(game.get("attacks", [])),
-            "encounterVariants": merge_encounter_variants(named.get(stable_id, []), game.get("encounterVariants", [])),
-            "contextVariants": game.get("contextVariants", []), "specialCombatModifiers": game.get("specialCombatModifiers", []),
+            "encounterVariants": merge_encounter_variants(
+                named.get(stable_id, []),
+                [
+                    *game.get("encounterVariants", []),
+                    *[
+                        build_wave_variant(
+                            {
+                                "id": stable_id,
+                                "name": {
+                                    "en": link["gameNameEn"],
+                                    "es": link["gameNameEsMX"],
+                                    "ru": ru_name,
+                                },
+                            },
+                            variant,
+                        )
+                        for variant in game.get("contextVariants", [])
+                        if is_active_wave(stable_id, variant)
+                    ],
+                ],
+            ),
+            "contextVariants": [
+                {**deepcopy(variant), "weaknesses": normalize_weakness_rows(variant.get("weaknesses", []))}
+                for variant in game.get("contextVariants", [])
+            ], "specialCombatModifiers": game.get("specialCombatModifiers", []),
             "mechanicSignals": game.get("mechanicSignals", []), "dataRevision": "grounded2-v4.4",
         })
         if health is None:
@@ -392,7 +453,9 @@ def main() -> None:
         if description_es:
             old.setdefault("description", {})["es"] = description_es
         if is_new:
-            old.setdefault("description", {})["ru"] = f"Автоматически переведённая запись бестиария Grounded 2 для существа «{ru_name}». Боевые данные соответствуют версии 4.4."
+            old.setdefault("description", {}).setdefault("en", PENDING_INFO["en"])
+            old.setdefault("description", {}).setdefault("es", PENDING_INFO["es"])
+            old.setdefault("description", {})["ru"] = PENDING_INFO["ru"]
             old["localizationStatus"] = "ru_automatic_pending_review"
         for attack in game.get("attacks", []):
             if attack.get("resolved") is False:
@@ -419,13 +482,13 @@ def main() -> None:
     buggy.update({
         "id": "g2_buggy_toe_biter", "speciesKey": "buggy_toe_biter", "collectionGroup": "buggy",
         "name": {"en": "Toe-biter Nymph Buggy", "es": "Bichito: ninfa de mordedor de dedos", "ru": RU_NAMES["g2_buggy_toe_biter"]},
-        "favoriteKey": "g2_buggy_toe_biter", "tier": 1, "cardTier": toe.get("cardTier", 3),
+        "favoriteKey": "g2_buggy_toe_biter", "tier": 3, "cardTier": 3,
         "isBoss": False, "bossCardStyle": None, "isKillable": False, "health": None, "healthDisplay": "hidden",
         "attacks": [], "combatStats": None, "dataVerification": "buggy_stats_unverified",
         "description": {
-            "en": "An amphibious Toe-biter Nymph Buggy that can travel on land and through water. Specific combat stats were not present in the supplied v4.4 dumps.",
-            "es": "Una Buggie anfibia de ninfa de mordedor de dedos que puede desplazarse por tierra y agua. Los dumps v4.4 entregados no incluyen stats de combate específicos.",
-            "ru": "Амфибийный багги из нимфы водяного клопа, способный двигаться по суше и воде. В предоставленных данных v4.4 нет отдельных боевых характеристик.",
+            "en": "An amphibious Toe-biter Nymph Buggy that can travel on land and through water. We're preparing the rest of its information for you.",
+            "es": "Una Buggie anfibia de ninfa de mordedor de dedos que puede desplazarse por tierra y agua. Estamos preparando el resto de su información para ti.",
+            "ru": "Амфибийный багги из нимфы водяного клопа, способный двигаться по суше и воде. Мы готовим для вас остальную информацию.",
         },
         "localizationStatus": "ru_automatic_pending_review",
     })
@@ -436,15 +499,63 @@ def main() -> None:
     final.append(buggy)
     auto_ru.append("g2_buggy_toe_biter")
 
-    wave_entries = []
-    for parent in list(final):
-        for variant in parent.get("contextVariants", []):
-            wave_entries.append(build_wave_entry(parent, variant, 1000 + len(wave_entries)))
-    final.extend(wave_entries)
+    infusion_template = deepcopy(current_by_id["g2_ogrr_blue_butterfly"]["infusions"])
+    if len(infusion_template) != 3:
+        raise ValueError("Unexpected O.G.R.R. infusion template")
+    for entry in final:
+        spanish_entry_name = spanish_names["entries"].get(entry["id"])
+        if spanish_entry_name:
+            entry.setdefault("name", {})["es"] = spanish_entry_name
+        for variant in entry.get("encounterVariants", []):
+            spanish_variant_name = spanish_names["variants"].get(variant.get("id"))
+            if spanish_variant_name:
+                variant["nameEsMX"] = spanish_variant_name
+        for variant in entry.get("contextVariants", []):
+            technical_id = variant.get("characterRow") or variant.get("id") or "wave"
+            stable_variant_id = f"g2_wave_{snake_id(technical_id)}"
+            spanish_variant_name = spanish_names["variants"].get(stable_variant_id)
+            if spanish_variant_name:
+                variant["nameEsMX"] = spanish_variant_name
+        if entry.get("collectionGroup") == "buggy":
+            entry["health"] = None
+            entry["healthDisplay"] = "hidden"
+            if isinstance(entry.get("combatStats"), dict):
+                entry["combatStats"].pop("health", None)
+        if entry["id"] == "g2_buggy_toe_biter":
+            entry["tier"] = 3
+            entry["cardTier"] = 3
+        if entry.get("collectionGroup") == "ogrr" and not entry.get("infusions"):
+            entry["infusions"] = deepcopy(infusion_template)
+            for infusion in entry["infusions"]:
+                infusion.pop("imageAsset", None)
+
+        entry["weaknesses"] = [
+            "busting" if weakness == "generic" else weakness
+            for weakness in entry.get("weaknesses", [])
+        ]
+        for weakness in entry.get("damageWeaknesses", []):
+            if weakness.get("type") == "generic":
+                weakness["type"] = "busting"
+        for variant in [
+            *entry.get("encounterVariants", []),
+            *entry.get("contextVariants", []),
+        ]:
+            variant["weaknesses"] = normalize_weakness_rows(variant.get("weaknesses", []))
+
+    wave_variants = [
+        (entry, variant)
+        for entry in final
+        for variant in entry.get("contextVariants", [])
+    ]
+    active_wave_variants = [
+        variant
+        for entry, variant in wave_variants
+        if is_active_wave(entry["id"], variant)
+    ]
 
     if len({entry["id"] for entry in final}) != len(final):
         raise ValueError("Duplicate final IDs")
-    if len(crosswalk["entries"]) != 123 or len(final) != 182:
+    if len(crosswalk["entries"]) != 123 or len(final) != 132:
         raise ValueError(f"Unexpected roster: include={len(crosswalk['entries'])}, final={len(final)}")
 
     for filename in TIER_FILES:
@@ -467,12 +578,21 @@ def main() -> None:
             writer.writerow([stable_id, entry["name"]["ru"], "automatic_pending_human_review"])
     write_json(REPORTS / "validation_report.json", {
         "include": 123, "preservedSpecial": 8, "toeBiterBuggy": 1, "final": len(final),
-        "raidWaveEntries": len(wave_entries),
-        "activeRaidWaveEntries": sum(entry.get("enabled") is True for entry in wave_entries),
-        "disabledRaidWaveEntries": sum(entry.get("enabled") is False for entry in wave_entries),
+        "raidWaveVariants": len(wave_variants),
+        "activeRaidWaveVariants": len(active_wave_variants),
+        "disabledRaidWaveVariants": len(wave_variants) - len(active_wave_variants),
         "newCrosswalkIds": sum(row["mappingStatus"] == "NEW" for row in crosswalk["entries"]),
         "preservedCrosswalkIds": sum(row["mappingStatus"] == "PRESERVE" for row in crosswalk["entries"]),
-        "namedVariants": sum(len(entry.get("encounterVariants", [])) for entry in final),
+        "namedVariants": sum(
+            variant.get("role") == "named_or_miniboss"
+            for entry in final
+            for variant in entry.get("encounterVariants", [])
+        ),
+        "activeWaveVariants": sum(
+            variant.get("role") == "wave_or_raid"
+            for entry in final
+            for variant in entry.get("encounterVariants", [])
+        ),
         "contextVariants": sum(len(entry.get("contextVariants", [])) for entry in final),
         "unresolvedAttacks": len(unresolved), "automaticRussianRows": len(auto_ru),
         "g1FilesTouched": False,
