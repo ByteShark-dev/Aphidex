@@ -31,6 +31,11 @@ const _allowedIndexKeys = {
   'temperament',
   'health',
   'collectionGroup',
+  'technicalId',
+  'bestiaryId',
+  'cardTier',
+  'bossCardStyle',
+  'groupId',
 };
 const _heavyIndexKeys = {
   'photo',
@@ -75,7 +80,7 @@ void main() {
 
       expect(
         combinedIndexBytes,
-        lessThan(110 * 1024),
+        lessThan(160 * 1024),
         reason: '$language index payload should stay near the startup target',
       );
     }

@@ -244,6 +244,129 @@ void main() {
     expect(find.text('Cricket'), findsOneWidget);
   });
 
+  testWidgets('Named C.R.O. selector applies stats and restores the base', (
+    tester,
+  ) async {
+    final enemy = Enemy.fromJson(
+      jsonDecode(
+            File(
+              'assets/data/creatures/en/details/g2_orc_black_soldier_ant.json',
+            ).readAsStringSync(),
+          )
+          as Map<String, dynamic>,
+    );
+    testerView.physicalSize = const Size(390, 844);
+
+    await tester.pumpWidget(_buildTestApp(EnemyDetailScreen(enemy: enemy)));
+    await tester.pumpAndSettle();
+
+    expect(
+      find.byKey(const ValueKey('encounter-variant-base')),
+      findsOneWidget,
+    );
+    await tester.tap(
+      find.byKey(
+        const ValueKey(
+          'encounter-variant-Ant_Soldier_Black_Augusta_ORC_A_Named',
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.text('Officer Tang'), findsWidgets);
+    await tester.scrollUntilVisible(
+      find.text('1350 HP'),
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
+    expect(find.text('1350 HP'), findsOneWidget);
+
+    await tester.drag(find.byType(ListView), const Offset(0, 1600));
+    await tester.pumpAndSettle();
+    tester
+        .widget<ChoiceChip>(
+          find.byKey(const ValueKey('encounter-variant-base')),
+        )
+        .onSelected!(true);
+    await tester.pumpAndSettle();
+    expect(find.text(enemy.name.resolve('en')), findsWidgets);
+    await tester.scrollUntilVisible(
+      find.text('${enemy.health!.value} HP'),
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
+    expect(find.text('${enemy.health!.value} HP'), findsOneWidget);
+  });
+
+  testWidgets('Koi selector navigates only across the four G2 entries', (
+    tester,
+  ) async {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMessageHandler('flutter/assets', (message) async {
+          final key = utf8.decode(
+            message!.buffer.asUint8List(
+              message.offsetInBytes,
+              message.lengthInBytes,
+            ),
+          );
+          if (key == 'AssetManifest.bin') {
+            return const StandardMessageCodec().encodeMessage(
+              <Object?, Object?>{},
+            );
+          }
+          if (key == 'AssetManifest.json') return _stringData('{}');
+          if (key == 'FontManifest.json') return _stringData('[]');
+          final assetOffset = key.indexOf('assets/data/');
+          if (key.endsWith('.json') && assetOffset != -1) {
+            final file = File(key.substring(assetOffset));
+            if (file.existsSync()) {
+              return _stringData(file.readAsStringSync());
+            }
+          }
+          return _transparentImage;
+        });
+    EnemyRepository.clearCaches();
+    final rows =
+        (jsonDecode(
+                  File(
+                    'assets/data/creatures/en/index_g2.json',
+                  ).readAsStringSync(),
+                )
+                as List<dynamic>)
+            .cast<Map<String, dynamic>>()
+            .map(EnemyIndexEntry.fromJson)
+            .where((entry) => entry.groupId == 'koi')
+            .toList(growable: false);
+    final sunny = rows.singleWhere((entry) => entry.id == 'g2_koi_sunny');
+    await tester.runAsync(() async {
+      await EnemyRepository.loadDetail('g2_koi_sunny', 'en');
+      await EnemyRepository.loadDetail('g2_koi_calico', 'en');
+    });
+
+    await tester.pumpWidget(
+      _buildTestApp(
+        EnemyDetailScreen(
+          summary: sunny,
+          variantSummaries: [sunny],
+          relatedSummaries: rows,
+        ),
+      ),
+    );
+    final calicoChip = find.byKey(
+      const ValueKey('related-entry-g2_koi_calico'),
+    );
+    await _pumpUntilVisible(tester, calicoChip);
+
+    for (final entry in rows) {
+      expect(find.byKey(ValueKey('related-entry-${entry.id}')), findsOneWidget);
+    }
+
+    await tester.tap(calicoChip);
+    await _pumpUntilVisible(tester, find.text('Calico'));
+
+    expect(find.text('Calico'), findsWidgets);
+  });
+
   testWidgets('detail rebuilds cleanly when the selected entry key changes', (
     tester,
   ) async {
@@ -351,6 +474,12 @@ Widget _buildTestApp(Widget home) {
       home: home,
     ),
   );
+}
+
+Future<void> _pumpUntilVisible(WidgetTester tester, Finder finder) async {
+  for (var tick = 0; tick < 40 && finder.evaluate().isEmpty; tick++) {
+    await tester.pump(const Duration(milliseconds: 250));
+  }
 }
 
 ByteData _stringData(String value) {

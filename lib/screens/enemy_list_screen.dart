@@ -213,6 +213,7 @@ class EnemyListScreen extends StatefulWidget {
   final String? preloadedLanguageCode;
   final GamePick? preloadedGamePick;
   final bool restorePhoneDetailOnStartup;
+  final bool persistViewStateOnDispose;
   final VoidCallback? onInitialListInteractive;
 
   const EnemyListScreen({
@@ -222,6 +223,7 @@ class EnemyListScreen extends StatefulWidget {
     this.preloadedLanguageCode,
     this.preloadedGamePick,
     this.restorePhoneDetailOnStartup = true,
+    this.persistViewStateOnDispose = true,
     this.onInitialListInteractive,
   });
 
@@ -231,6 +233,9 @@ class EnemyListScreen extends StatefulWidget {
 
 class _EnemyListScreenState extends State<EnemyListScreen>
     with WidgetsBindingObserver {
+  bool get _shouldPersistViewState =>
+      widget.persistViewStateOnDispose && widget.enemiesLoaderOverride == null;
+
   SortMode sortMode = SortMode.defaultOrder;
   GamePick gamePick = GamePick.g1;
   bool sortDescending = false;
@@ -428,7 +433,9 @@ class _EnemyListScreenState extends State<EnemyListScreen>
       _onKillCountsChanged,
     );
     WidgetsBinding.instance.removeObserver(this);
-    unawaited(_persistViewState());
+    if (_shouldPersistViewState) {
+      unawaited(_persistViewState());
+    }
     _listScrollController.dispose();
     _searchController.dispose();
     super.dispose();
@@ -517,6 +524,7 @@ class _EnemyListScreenState extends State<EnemyListScreen>
     String? detailGame,
     String? selectedSpeciesKey,
   }) {
+    if (!_shouldPersistViewState) return;
     unawaited(
       _persistViewState(
         detailOpen: detailOpen,
@@ -534,9 +542,21 @@ class _EnemyListScreenState extends State<EnemyListScreen>
       return false;
     }
 
-    _progressHydrationFuture ??= gold.ensureMigrated(enemies).whenComplete(() {
-      _progressHydrationFuture = null;
-    });
+    if (_progressHydrationFuture == null) {
+      final completer = Completer<void>();
+      _progressHydrationFuture = completer.future;
+      WidgetsBinding.instance.addPostFrameCallback((_) async {
+        try {
+          await gold.ensureMigrated(enemies);
+          completer.complete();
+        } catch (error, stackTrace) {
+          completer.completeError(error, stackTrace);
+        } finally {
+          _progressHydrationFuture = null;
+          if (mounted) setState(() {});
+        }
+      });
+    }
     return true;
   }
 
@@ -2009,7 +2029,11 @@ class _EnemyListScreenState extends State<EnemyListScreen>
                                   controller: _searchController,
                                   onChanged: (value) {
                                     setState(() => query = value);
-                                    LocalStorage.setString(_kQuery, value);
+                                    if (_shouldPersistViewState) {
+                                      unawaited(
+                                        LocalStorage.setString(_kQuery, value),
+                                      );
+                                    }
                                     _scheduleViewStatePersist();
                                   },
                                   decoration: InputDecoration(
@@ -2022,10 +2046,14 @@ class _EnemyListScreenState extends State<EnemyListScreen>
                                             onPressed: () {
                                               setState(() => query = '');
                                               _searchController.clear();
-                                              LocalStorage.setString(
-                                                _kQuery,
-                                                '',
-                                              );
+                                              if (_shouldPersistViewState) {
+                                                unawaited(
+                                                  LocalStorage.setString(
+                                                    _kQuery,
+                                                    '',
+                                                  ),
+                                                );
+                                              }
                                               _scheduleViewStatePersist();
                                             },
                                           ),
@@ -2055,12 +2083,14 @@ class _EnemyListScreenState extends State<EnemyListScreen>
                                             () => filterFavorites =
                                                 !filterFavorites,
                                           );
-                                          unawaited(
-                                            LocalStorage.setBool(
-                                              _kFilterFavorites,
-                                              filterFavorites,
-                                            ),
-                                          );
+                                          if (_shouldPersistViewState) {
+                                            unawaited(
+                                              LocalStorage.setBool(
+                                                _kFilterFavorites,
+                                                filterFavorites,
+                                              ),
+                                            );
+                                          }
                                           _scheduleViewStatePersist();
                                         },
                                       ),
@@ -2076,12 +2106,14 @@ class _EnemyListScreenState extends State<EnemyListScreen>
                                           setState(
                                             () => filterGold = !filterGold,
                                           );
-                                          unawaited(
-                                            LocalStorage.setBool(
-                                              _kFilterGold,
-                                              filterGold,
-                                            ),
-                                          );
+                                          if (_shouldPersistViewState) {
+                                            unawaited(
+                                              LocalStorage.setBool(
+                                                _kFilterGold,
+                                                filterGold,
+                                              ),
+                                            );
+                                          }
                                           _scheduleViewStatePersist();
                                         },
                                       ),

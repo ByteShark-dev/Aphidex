@@ -38,27 +38,22 @@ void main() {
         isTrue,
       );
 
-      expect(ladybug['name']['es'], 'Mariquita');
+      expect(ladybug['name']['es'], 'Catarinita');
       expect(
         (ladybug['resistancesV2'] as List).whereType<Map>().any(
-          (bonus) => bonus['type'] == 'sizzle',
+          (bonus) => bonus['type'] == 'spicy' && bonus['bonusPct'] == 25,
         ),
         isTrue,
       );
 
       expect(bee['name']['es'], 'Abeja');
-      expect(
-        (bee['description']['es'] as String).startsWith('Una criatura'),
-        isTrue,
-      );
-      expect(bee['advancedLootTable'], isNotEmpty);
+      expect((bee['description']['es'] as String).contains('néctar'), isTrue);
+      expect(bee['attacks'], isNotEmpty);
 
       expect(firefly['name']['es'], 'Luciérnaga');
       expect((firefly['inflictsEffects'] as List).contains('busting'), isTrue);
       expect(
-        (firefly['description']['en'] as String).startsWith(
-          'A Tier 3 neutral firefly',
-        ),
+        (firefly['description']['en'] as String).contains('glow goo'),
         isTrue,
       );
     },
@@ -119,7 +114,7 @@ void main() {
     );
   });
 
-  test('g2 scorpions expose both stinger and rump weak points', () {
+  test('g2 scorpions expose the extracted abdomen and stinger weak points', () {
     for (final id in [
       'g2_northern_scorpion',
       'g2_northern_scorpion_jr',
@@ -133,16 +128,16 @@ void main() {
       expect(
         weakPoints[0],
         equals({
-          'part': 'stinger',
-          'susceptibleDamage': 'stabbing',
-          'susceptibleDamageTypes': ['stabbing'],
+          'part': 'butt',
+          'susceptibleDamage': 'any',
+          'susceptibleDamageTypes': ['any'],
         }),
         reason: id,
       );
       expect(
         weakPoints[1],
         equals({
-          'part': 'rump',
+          'part': 'stinger',
           'susceptibleDamage': 'any',
           'susceptibleDamageTypes': ['any'],
         }),
@@ -306,7 +301,7 @@ void main() {
       expect((orcCockroachQueen['bossPhases'] as List), hasLength(2));
       expect(
         orcCockroachQueen['description']['en'],
-        contains('required elite encounter'),
+        allOf(contains('remote-controlled'), contains('O.R.C. Receiver')),
       );
     },
   );
@@ -402,10 +397,22 @@ void main() {
         'g2_ogrr_wolf_spider',
       };
 
-      expect(ogrrEntries, hasLength(11));
-      expect(ogrrEntries.map((enemy) => enemy['id']).toSet(), expectedIds);
+      const extractedV44Ids = {
+        'g2_ogrr_green_shield_bug',
+        'g2_ogrr_striped_bark_scorpion',
+        'g2_ogrr_tiger_mosquito',
+        'g2_ogrr_toe_biter',
+        'g2_ogrr_toe_biter_leviathan',
+      };
+      expect(ogrrEntries, hasLength(16));
+      expect(
+        ogrrEntries.map((enemy) => enemy['id']).toSet(),
+        expectedIds.union(extractedV44Ids),
+      );
 
-      for (final enemy in ogrrEntries) {
+      for (final enemy in ogrrEntries.where(
+        (enemy) => expectedIds.contains(enemy['id']),
+      )) {
         final infusions = (enemy['infusions'] as List)
             .cast<Map<String, dynamic>>();
         expect(
@@ -415,6 +422,11 @@ void main() {
         );
         expect(enemy['lesserMutationsDescription'], isA<Map>());
         expect((enemy['lesserMutations'] as List), hasLength(7));
+      }
+
+      for (final id in extractedV44Ids) {
+        expect(entry(id)['health']['value'], isPositive, reason: id);
+        expect((entry(id)['attacks'] as List), isNotEmpty, reason: id);
       }
 
       expect(entry('g2_masked_stranger_orc_waves')['healthDisplay'], 'hidden');
@@ -458,23 +470,23 @@ void main() {
       'g2_orc_wasp': 1075,
       'g2_orc_wasp_drone': 1075,
       'g2_orc_pincher_earwig': 1100,
-      'g2_orc_potato_beetle': 1500,
+      'g2_orc_potato_beetle': 2000,
       'g2_orc_rust_beetle': 938,
-      'g2_orc_firefly': 495,
-      'g2_orc_broodmother': 2250,
+      'g2_orc_firefly': 660,
+      'g2_orc_broodmother': 2500,
       'g2_masked_fighter': 1875,
-      'g2_ogrr_wasp': 1300,
-      'g2_ogrr_wasp_drone': 1300,
-      'g2_ogrr_praying_mantis_nymph': 1600,
-      'g2_ogrr_wolf_spider': 1600,
-      'g2_ogrr_cricket': 1500,
-      'g2_ogrr_ladybug': 1500,
-      'g2_ogrr_blue_butterfly': 1400,
-      'g2_ogrr_northern_scorpion': 1500,
-      'g2_orb_weaver_jr': 320,
+      'g2_ogrr_wasp': 1600,
+      'g2_ogrr_wasp_drone': 1600,
+      'g2_ogrr_praying_mantis_nymph': 1800,
+      'g2_ogrr_wolf_spider': 1800,
+      'g2_ogrr_cricket': 1800,
+      'g2_ogrr_ladybug': 2200,
+      'g2_ogrr_blue_butterfly': 1600,
+      'g2_ogrr_northern_scorpion': 1700,
+      'g2_orb_weaver_jr': 440,
       'g2_orc_stinkbug': 800,
       'g2_orc_northern_scorpion': 875,
-      'g2_orc_blue_butterfly': 425,
+      'g2_orc_blue_butterfly': 500,
     };
 
     for (final item in approvedHealthValues.entries) {
@@ -482,7 +494,7 @@ void main() {
       expect(entry(item.key)['healthDisplay'], 'normal', reason: item.key);
     }
 
-    expect(entry('g2_orc_black_soldier_ant')['health']['value'], 480);
+    expect(entry('g2_orc_black_soldier_ant')['health']['value'], 680);
     expect(entry('g2_orc_black_soldier_ant')['healthDisplay'], isNot('hidden'));
   });
 

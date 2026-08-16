@@ -698,6 +698,7 @@ class TutorialController extends ChangeNotifier {
       await action();
     } finally {
       _transitionLocked = false;
+      notifyListeners();
     }
   }
 

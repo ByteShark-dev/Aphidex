@@ -30,6 +30,7 @@ void main() {
     hiveDir = await Directory.systemTemp.createTemp('aphidex_test_');
     Hive.init(hiveDir.path);
     await Hive.openBox('aphidex');
+    await LocalStorage.setBool(TutorialController.completionKey, true);
   });
 
   tearDownAll(() async {
@@ -116,10 +117,8 @@ void main() {
   group('effect codex navigation', () {
     late Future<ByteData?> Function(ByteData?) handler;
 
-    setUp(() async {
-      await Hive.box('aphidex').clear();
+    setUp(() {
       EnemyRepository.clearCaches();
-      await LocalStorage.setBool(TutorialController.completionKey, true);
       handler = (message) async {
         final key = utf8.decode(
           message!.buffer.asUint8List(
@@ -178,11 +177,12 @@ void main() {
       await tester.pumpAndSettle();
 
       await tester.scrollUntilVisible(
-        find.byKey(const ValueKey('effect-bonus-resistance-gas')),
+        find.byKey(const ValueKey('effect-bonus-resistance-gas')).first,
         300,
+        scrollable: find.byType(Scrollable).first,
       );
       await tester.tap(
-        find.byKey(const ValueKey('effect-bonus-resistance-gas')),
+        find.byKey(const ValueKey('effect-bonus-resistance-gas')).first,
       );
       await tester.pumpAndSettle();
 
@@ -200,10 +200,13 @@ void main() {
       await tester.pumpAndSettle();
 
       await tester.scrollUntilVisible(
-        find.byKey(const ValueKey('weakpoint-effect-chopping')),
+        find.byKey(const ValueKey('weakpoint-effect-chopping')).first,
         200,
+        scrollable: find.byType(Scrollable).first,
       );
-      await tester.tap(find.byKey(const ValueKey('weakpoint-effect-chopping')));
+      await tester.tap(
+        find.byKey(const ValueKey('weakpoint-effect-chopping')).first,
+      );
       await tester.pumpAndSettle();
 
       expect(find.text('Chopping'), findsOneWidget);
@@ -211,7 +214,9 @@ void main() {
     });
 
     testWidgets('opens from the home app bar button', (tester) async {
-      await tester.pumpWidget(_buildTestApp(const EnemyListScreen()));
+      await tester.pumpWidget(
+        _buildTestApp(const EnemyListScreen(persistViewStateOnDispose: false)),
+      );
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 400));
 
@@ -224,15 +229,23 @@ void main() {
         find.byKey(const ValueKey('effect-card-slashing')),
         findsOneWidget,
       );
+      await tester.pumpWidget(const SizedBox.shrink());
+      await tester.pump(const Duration(milliseconds: 50));
     });
 
     testWidgets('highlights the focused effect when opened with an id', (
       tester,
     ) async {
       await tester.pumpWidget(
-        _buildTestApp(const EffectCodexScreen(initialEffectId: 'gas_hazard')),
+        _buildTestApp(
+          const EffectCodexScreen(
+            initialEffectId: 'gas_hazard',
+            autoScrollToInitialEffect: false,
+          ),
+        ),
       );
-      await tester.pumpAndSettle();
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 400));
 
       final highlighted = tester.widget<AnimatedContainer>(
         find.byKey(const ValueKey('effect-card-gas')),

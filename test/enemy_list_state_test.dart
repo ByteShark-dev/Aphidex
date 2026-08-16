@@ -135,6 +135,57 @@ void main() {
     'master-detail restores the selected species into the right pane',
     (tester) async {
       stateTesterView.physicalSize = const Size(1400, 1000);
+      await tester.runAsync(() async {
+        await LocalStorage.setInt('ui_game_pick', GamePick.g2.index);
+        await LocalStorage.setString(
+          aphidexViewStateStorageKey,
+          const AphidexViewState(
+            gamePickIndex: 2,
+            sortModeIndex: 0,
+            sortDescending: false,
+            query: '',
+            filterFavorites: false,
+            filterGold: false,
+            tierFilters: <String>{},
+            classFilters: <String>{},
+            dangerFilters: <String>{},
+            selectedSpeciesKey: 'state_secondary',
+            detailEnemyId: 'g2_state_secondary',
+            detailGame: 'g2',
+            detailOpen: false,
+            listScrollOffset: 0,
+          ).toStorageString(),
+        );
+      });
+
+      await tester.pumpWidget(
+        _buildTestApp(
+          EnemyListScreen(
+            enemiesLoaderOverride: (_) async => _testEntries,
+            persistViewStateOnDispose: false,
+          ),
+        ),
+      );
+      await _pumpUntilVisible(
+        tester,
+        find.byKey(const ValueKey('enemy-tile-card-state_secondary')),
+      );
+      await tester.pump(const Duration(milliseconds: 300));
+
+      final selectedCard = tester.widget<Card>(
+        find.byKey(const ValueKey('enemy-tile-card-state_secondary')),
+      );
+      expect(selectedCard.color, isNotNull);
+      expect(find.byType(EnemyDetailScreen), findsOneWidget);
+      expect(find.text('State Secondary'), findsWidgets);
+      await _disposeTestApp(tester);
+    },
+  );
+
+  testWidgets('phone restores the last open detail route from saved state', (
+    tester,
+  ) async {
+    await tester.runAsync(() async {
       await LocalStorage.setInt('ui_game_pick', GamePick.g2.index);
       await LocalStorage.setString(
         aphidexViewStateStorageKey,
@@ -151,65 +202,25 @@ void main() {
           selectedSpeciesKey: 'state_secondary',
           detailEnemyId: 'g2_state_secondary',
           detailGame: 'g2',
-          detailOpen: false,
+          detailOpen: true,
           listScrollOffset: 0,
         ).toStorageString(),
       );
-
-      await tester.pumpWidget(
-        _buildTestApp(
-          EnemyListScreen(enemiesLoaderOverride: (_) async => _testEntries),
-        ),
-      );
-      await _pumpUntilVisible(
-        tester,
-        find.byKey(const ValueKey('enemy-tile-card-state_secondary')),
-      );
-      await tester.pump(const Duration(milliseconds: 300));
-
-      final selectedCard = tester.widget<Card>(
-        find.byKey(const ValueKey('enemy-tile-card-state_secondary')),
-      );
-      expect(selectedCard.color, isNotNull);
-      expect(find.text('Secondary detail entry'), findsOneWidget);
-      await _disposeTestApp(tester);
-    },
-  );
-
-  testWidgets('phone restores the last open detail route from saved state', (
-    tester,
-  ) async {
-    await LocalStorage.setInt('ui_game_pick', GamePick.g2.index);
-    await LocalStorage.setString(
-      aphidexViewStateStorageKey,
-      const AphidexViewState(
-        gamePickIndex: 2,
-        sortModeIndex: 0,
-        sortDescending: false,
-        query: '',
-        filterFavorites: false,
-        filterGold: false,
-        tierFilters: <String>{},
-        classFilters: <String>{},
-        dangerFilters: <String>{},
-        selectedSpeciesKey: 'state_secondary',
-        detailEnemyId: 'g2_state_secondary',
-        detailGame: 'g2',
-        detailOpen: true,
-        listScrollOffset: 0,
-      ).toStorageString(),
-    );
+    });
 
     await tester.pumpWidget(
       _buildTestApp(
-        EnemyListScreen(enemiesLoaderOverride: (_) async => _testEntries),
+        EnemyListScreen(
+          enemiesLoaderOverride: (_) async => _testEntries,
+          persistViewStateOnDispose: false,
+        ),
       ),
     );
     await _pumpUntilVisible(tester, find.byType(EnemyDetailScreen));
     await tester.pump(const Duration(milliseconds: 300));
 
     expect(find.byType(EnemyDetailScreen), findsOneWidget);
-    expect(find.text('Secondary detail entry'), findsOneWidget);
+    expect(find.text('State Secondary'), findsWidgets);
     await _disposeTestApp(tester);
   });
 }

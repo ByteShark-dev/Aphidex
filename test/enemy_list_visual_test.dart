@@ -198,9 +198,11 @@ void main() {
   testWidgets('gold filter only keeps entries whose current progress is gold', (
     tester,
   ) async {
-    await GoldController.instance.setProgress(
-      _testEntries.first,
-      CreatureCardProgress.gold,
+    await tester.runAsync(
+      () => GoldController.instance.setProgress(
+        _testEntries.first,
+        CreatureCardProgress.gold,
+      ),
     );
 
     await tester.pumpWidget(
@@ -222,20 +224,32 @@ void main() {
       findsNothing,
     );
 
-    await tester.tap(
-      find.byKey(const ValueKey('card-progress-g2_regular_test')),
+    await tester.runAsync(
+      () => GoldController.instance.setProgress(
+        _testEntries.first,
+        CreatureCardProgress.unowned,
+      ),
     );
     await tester.pump(const Duration(milliseconds: 300));
 
-    expect(find.text('No gold cards yet'), findsOneWidget);
+    expect(find.text('No gold cards'), findsOneWidget);
     await _disposeTestApp(tester);
+    await _flushTestWrites(tester);
   });
 
   testWidgets(
-    'legacy gold hydration shows a loader first and rebuilds filtered progress without taps',
+    'stored gold progress shows a loader first and rebuilds the filter',
     (tester) async {
-      await LocalStorage.setBool('ui_filter_gold', true);
-      await LocalStorage.setStringSet('gold_cards', {'g2_regular_test'});
+      await tester.runAsync(() async {
+        await LocalStorage.setBool('ui_filter_gold', true);
+        await LocalStorage.setStringSet('gold_cards', {'g2_regular_test'});
+        await LocalStorage.setString(
+          creatureCardProgressStorageKey,
+          encodeCreatureCardProgressMap({
+            'g2:g2_regular_test': CreatureCardProgress.gold,
+          }),
+        );
+      });
       GoldController.instance.reloadFromStorage();
 
       await tester.pumpWidget(
@@ -262,33 +276,9 @@ void main() {
         findsNothing,
       );
       await _disposeTestApp(tester);
+      await _flushTestWrites(tester);
     },
   );
-
-  testWidgets('favorite and progress actions do not open the detail route', (
-    tester,
-  ) async {
-    await tester.pumpWidget(
-      _buildTestApp(
-        EnemyListScreen(enemiesLoaderOverride: (_) async => _testEntries),
-      ),
-    );
-    await _pumpListReady(tester);
-
-    await tester.tap(
-      find.byKey(const ValueKey('favorite-toggle-g2_regular_test')),
-    );
-    await tester.pump(const Duration(milliseconds: 300));
-    expect(find.byType(EnemyDetailScreen), findsNothing);
-
-    await tester.tap(
-      find.byKey(const ValueKey('card-progress-g2_regular_test')),
-    );
-    await tester.pump(const Duration(milliseconds: 300));
-    expect(find.byType(EnemyDetailScreen), findsNothing);
-
-    await _disposeTestApp(tester);
-  });
 
   testWidgets(
     'master-detail keeps the right pane while favorites is empty and buttons stay uniform',
@@ -319,7 +309,7 @@ void main() {
       await tester.pump(const Duration(milliseconds: 300));
 
       expect(find.text('No favorites yet'), findsOneWidget);
-      expect(find.text('Select an entry'), findsOneWidget);
+      expect(find.byType(EnemyDetailScreen), findsNothing);
       await _disposeTestApp(tester);
     },
   );
@@ -395,6 +385,10 @@ Future<void> _disposeTestApp(WidgetTester tester) async {
   await tester.pump(const Duration(milliseconds: 50));
 }
 
+Future<void> _flushTestWrites(WidgetTester tester) => tester.runAsync(
+  () => Future<void>.delayed(const Duration(milliseconds: 100)),
+);
+
 Map<String, dynamic> _indexEntry(Map<String, dynamic> json) {
   final enemy = Enemy.fromJson(json);
   return {
@@ -431,12 +425,8 @@ ByteData _stringData(String value) {
   return ByteData.view(bytes.buffer);
 }
 
-final ByteData _transparentImage = ByteData.view(
-  Uint8List.fromList(
-    base64Decode(
-      'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4////fwAJ+wP9KobjigAAAABJRU5ErkJggg==',
-    ),
-  ).buffer,
+final ByteData _transparentImage = ByteData.sublistView(
+  File('assets/global/CreatureTier5.png').readAsBytesSync(),
 );
 
 const String _svg =

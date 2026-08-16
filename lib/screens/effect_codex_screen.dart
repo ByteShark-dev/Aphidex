@@ -33,8 +33,13 @@ Future<void> showEffectInfoSheet(
 
 class EffectCodexScreen extends StatefulWidget {
   final String? initialEffectId;
+  final bool autoScrollToInitialEffect;
 
-  const EffectCodexScreen({super.key, this.initialEffectId});
+  const EffectCodexScreen({
+    super.key,
+    this.initialEffectId,
+    this.autoScrollToInitialEffect = true,
+  });
 
   @override
   State<EffectCodexScreen> createState() => _EffectCodexScreenState();
@@ -54,7 +59,7 @@ class _EffectCodexScreenState extends State<EffectCodexScreen> {
       for (final entry in effectCatalogEntries) entry.id: GlobalKey(),
     };
 
-    if (_highlightedId != null) {
+    if (_highlightedId != null && widget.autoScrollToInitialEffect) {
       WidgetsBinding.instance.addPostFrameCallback(
         (_) => _scrollToHighlighted(),
       );

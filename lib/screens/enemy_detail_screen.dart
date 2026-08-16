@@ -119,6 +119,7 @@ class EnemyDetailScreen extends StatefulWidget {
   final List<Enemy>? variants;
   final EnemyIndexEntry? summary;
   final List<EnemyIndexEntry>? variantSummaries;
+  final List<EnemyIndexEntry>? relatedSummaries;
   final String? initialGame;
   final TutorialTargetScope tutorialTargetScope;
 
@@ -128,6 +129,7 @@ class EnemyDetailScreen extends StatefulWidget {
     this.variants,
     this.summary,
     this.variantSummaries,
+    this.relatedSummaries,
     this.initialGame,
     this.tutorialTargetScope = TutorialTargetScope.inlineDetail,
   }) : assert(enemy != null || summary != null);
@@ -201,7 +203,9 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
     final groupId = _usesLazyDetails
         ? _summaryVariants![_selectedIndex].groupId
         : _legacyVariants![_selectedIndex].groupId;
-    if (groupId != null && groupId.isNotEmpty) {
+    if (widget.relatedSummaries != null) {
+      _groupSummariesFuture = Future.value(widget.relatedSummaries);
+    } else if (groupId != null && groupId.isNotEmpty) {
       _groupSummariesFuture = EnemyRepository.loadGame('g2', languageCode).then(
         (entries) => entries
             .where((entry) => entry.groupId == groupId && entry.game == 'g2')
