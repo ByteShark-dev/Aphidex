@@ -1,1 +1,876 @@
-{"id":"g2_orc_stinkbug","speciesKey":"orc_stinkbug","collectionGroup":"orc","name":"Chinche apestosa C.R.O.","game":"g2","tier":2,"danger":"muy_alta","isBoss":false,"order":291,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_StinkBug_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_StinkBug_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Stinkbug.webp","weaknesses":["fresh","stabbing"],"resistances":["generic","gas"],"temperament":"aggressive","description":"Chinche apestosa a control remoto que atrae a los enemigos con sus vapores letales. Al morir, suelta un receptor C.R.O. y partes de criatura.","behavior":"Patrulla transmisores y accesos importantes, usando el gas como herramienta de control antes que como simple daño. Se recoloca poco, pero llena el espacio con nubes para obligarte a pelear en sus términos.","interactionWithPlayer":"Se vuelve hostil al instante y convierte el terreno alrededor en una mala zona para sostener el combate. Si no llevas respuesta al gas, cada error de posición se multiplica rápido.","interactionWithCreatures":"Suele cubrir transmisores y patrullas O.R.C. como pieza de control pesado, obligando a otras criaturas a cruzar sus nubes si quieren acercarse.","strategy":"Fresh sigue ayudando, pero lo principal es no quedarte dentro de las nubes. Bloquea el mordisco, sal del área tras cada salto y vuelve a entrar solo cuando el gas ya te deje una ruta clara.","environments":["Zona de entrada","Pozo de fuego","Zona de la estatua"],"loot":[{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"loot","item":"Stinkbug Gas Sack","minCount":0,"maxCount":2},{"section":"loot","item":"Stinkbug Part","minCount":1,"maxCount":6},{"section":"rare","item":"Stinkbug Gas Sack","minCount":0,"maxCount":2},{"section":"rare","item":"Stinkbug Part","minCount":0,"maxCount":4}],"combatStats":{"attackDamageSummary":"Mordisco: 62.5. Salto de gas: 81.25. Mordisco de General Diesel: 75. Salto de gas pesado: 93.75.","health":800},"abilities":[{"name":"Mordisco","description":"Un mordisco directo para castigarte si intentas pelear demasiado cerca del gas.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Salto de gas","description":"Salta y cae dejando gas en la zona de impacto para obligarte a reposicionarte.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Mordisco de General Diesel","description":"Una versión más dura de su mordisco para la variante nombrada más peligrosa.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Salto de gas pesado","description":"Una versión más fuerte del salto que castiga todavía más las malas posiciones.","blockable":true,"breaksGuard":false,"staggers":true}],"elementalWeaknesses":[{"type":"fresh","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25},{"type":"gas","bonusPct":90}],"healthDisplay":"normal","health":{"value":800,"rating":3},"groupId":null,"cardTier":2,"technicalId":"StinkbugORC","bestiaryId":"StinkbugORC","bossCardStyle":null,"isKillable":true,"damageWeaknesses":[{"type":"stabbing","bonusPct":15}],"weakPoints":[],"attacks":[{"name":"Mordida L","technicalId":"StinkBugBite_L","tags":["chopping"],"notes":"Daño del ataque: 50"},{"name":"Mordida R","technicalId":"StinkBugBite_R","tags":["chopping"],"notes":"Daño del ataque: 50"},{"name":"Nube de gas","technicalId":"StinkBugFart","tags":["general_unblockable"],"notes":"Daño del ataque: 0"},{"name":"Salto","technicalId":"StinkBugLeap","tags":["mining"],"notes":"Daño del ataque: 65"}],"encounterVariants":[{"id":"StinkBug_ORC_Named","characterRow":"StinkBug_ORC_Named","role":"named_or_miniboss","variantMarkers":["named"],"sharedBestiaryEntry":true,"stats":{"health":1100.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":45}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"},{"damageTypes":["Gas"],"percent":90.0,"sourceId":"DamageResistGasLarge"}],"weaknesses":[{"damageTypes":["Fresh"],"percent":15.0,"sourceId":"DamageResistDownFreshTiny"},{"damageTypes":["Stabbing"],"percent":15.0,"sourceId":"DamageResistDownStabbingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"StinkBugBite_L_Named","ability":"StinkBugBite1_Named","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"Chopping","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"StinkBugBite_R_Named","ability":"StinkBugBite2_Named","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"Chopping","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"StinkBugFart_Named","ability":"StinkBugFart_Named","resolved":true,"cooldown":25.0,"priority":10,"targetType":"Enemy","damage":{"amount":0.0,"type":"Gas","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":1000.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"StinkBugLeap_Named","ability":"StinkBugLeap_Named","resolved":true,"cooldown":10.0,"priority":11,"targetType":"Enemy","damage":{"amount":75.0,"type":"Mining","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"parentBestiaryId":"StinkbugORC","parentAphidexId":"g2_orc_stinkbug","technicalCharacterRow":"StinkBug_ORC_Named","variantKey":"StinkBug_ORC_Named","nameEn":"Major Diesel","nameEsMX":"Comandante Diesel","nameBindingConfidence":"high","topLevelAphidexId":null,"killFavoriteStateOwner":"g2_orc_stinkbug","policy":"CHILD_VARIANT_NO_TOP_LEVEL_ID"},{"id":"g2_wave_stink_bug_orc_wave","characterRow":"StinkBug_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":800.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":45}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"},{"damageTypes":["Gas"],"percent":90.0,"sourceId":"DamageResistGasLarge"}],"weaknesses":[{"damageTypes":["Fresh"],"percent":15.0,"sourceId":"DamageResistDownFreshTiny"},{"damageTypes":["Stabbing"],"percent":15.0,"sourceId":"DamageResistDownStabbingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"StinkBugBite_L","ability":"StinkBugBite1","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Chopping","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"StinkBugBite_R","ability":"StinkBugBite2","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Chopping","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"StinkBugFart","ability":"StinkBugFart","resolved":true,"cooldown":25.0,"priority":10,"targetType":"Enemy","damage":{"amount":0.0,"type":"GeneralUnblockable","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":1000.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"StinkBugLeap","ability":"StinkBugLeap","resolved":true,"cooldown":10.0,"priority":11,"targetType":"Enemy","damage":{"amount":65.0,"type":"Mining","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_stink_bug_orc_wave","nameEn":"O.R.C. Stinkbug Raid/Wave","nameEsMX":"Chinche apestosa C.R.O.  (Oleada)","nameRu":"O.R.C. Вонючка Рейд/волна"}],"contextVariants":[{"id":"StinkBug_ORC_Wave","characterRow":"StinkBug_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":800.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":45}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"},{"damageTypes":["Gas"],"percent":90.0,"sourceId":"DamageResistGasLarge"}],"weaknesses":[{"damageTypes":["Fresh"],"percent":15.0,"sourceId":"DamageResistDownFreshTiny"},{"damageTypes":["Stabbing"],"percent":15.0,"sourceId":"DamageResistDownStabbingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"StinkBugBite_L","ability":"StinkBugBite1","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Chopping","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"StinkBugBite_R","ability":"StinkBugBite2","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Chopping","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"StinkBugFart","ability":"StinkBugFart","resolved":true,"cooldown":25.0,"priority":10,"targetType":"Enemy","damage":{"amount":0.0,"type":"GeneralUnblockable","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":1000.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"StinkBugLeap","ability":"StinkBugLeap","resolved":true,"cooldown":10.0,"priority":11,"targetType":"Enemy","damage":{"amount":65.0,"type":"Mining","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Chinche apestosa C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_stinkbug",
+  "speciesKey": "orc_stinkbug",
+  "collectionGroup": "orc",
+  "name": "Chinche apestosa C.R.O.",
+  "game": "g2",
+  "tier": 2,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 291,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_StinkBug_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_StinkBug_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Stinkbug.webp",
+  "weaknesses": [
+    "fresh",
+    "stabbing"
+  ],
+  "resistances": [
+    "generic",
+    "gas"
+  ],
+  "temperament": "aggressive",
+  "description": "Chinche apestosa a control remoto que atrae a los enemigos con sus vapores letales. Al morir, suelta un receptor C.R.O. y partes de criatura.",
+  "behavior": "Patrulla transmisores y accesos importantes, usando el gas como herramienta de control antes que como simple daño. Se recoloca poco, pero llena el espacio con nubes para obligarte a pelear en sus términos.",
+  "interactionWithPlayer": "Se vuelve hostil al instante y convierte el terreno alrededor en una mala zona para sostener el combate. Si no llevas respuesta al gas, cada error de posición se multiplica rápido.",
+  "interactionWithCreatures": "Suele cubrir transmisores y patrullas O.R.C. como pieza de control pesado, obligando a otras criaturas a cruzar sus nubes si quieren acercarse.",
+  "strategy": "Fresh sigue ayudando, pero lo principal es no quedarte dentro de las nubes. Bloquea el mordisco, sal del área tras cada salto y vuelve a entrar solo cuando el gas ya te deje una ruta clara.",
+  "environments": [
+    "Zona de entrada",
+    "Pozo de fuego",
+    "Zona de la estatua"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Stink Bug Feelers",
+      "minCount": 2,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "Stink Bug Gas Sack",
+      "minCount": 0,
+      "maxCount": 4
+    }
+  ],
+  "combatStats": {
+    "health": 800,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "Un mordisco directo para castigarte si intentas pelear demasiado cerca del gas.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Salto de gas",
+      "description": "Salta y cae dejando gas en la zona de impacto para obligarte a reposicionarte.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Mordisco de General Diesel",
+      "description": "Una versión más dura de su mordisco para la variante nombrada más peligrosa.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Salto de gas pesado",
+      "description": "Una versión más fuerte del salto que castiga todavía más las malas posiciones.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    },
+    {
+      "type": "gas",
+      "bonusPct": 90
+    }
+  ],
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 3,
+    "value": 800
+  },
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "StinkbugORC",
+  "bestiaryId": "StinkbugORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 15
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Mordida L",
+      "technicalId": "StinkBugBite_L",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 0.0,
+      "range": 350.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mordida R",
+      "technicalId": "StinkBugBite_R",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 0.0,
+      "range": 350.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Nube de gas",
+      "technicalId": "StinkBugFart",
+      "tags": [
+        "general",
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 25.0,
+      "range": 1000.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Salto",
+      "technicalId": "StinkBugLeap",
+      "tags": [
+        "projectile",
+        "smashing"
+      ],
+      "notes": "Daño del ataque: 65",
+      "damageTypes": [
+        "smashing"
+      ],
+      "damage": 65.0,
+      "cooldownSeconds": 10.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "StinkBug_ORC_Named",
+      "characterRow": "StinkBug_ORC_Named",
+      "role": "named_or_miniboss",
+      "variantMarkers": [
+        "named"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1100.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 45
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 90.0,
+          "sourceId": "DamageResistGasLarge"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownStabbingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "StinkBugBite_L_Named",
+          "ability": "StinkBugBite1_Named",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Chopping",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "StinkBugBite_R_Named",
+          "ability": "StinkBugBite2_Named",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Chopping",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "StinkBugFart_Named",
+          "ability": "StinkBugFart_Named",
+          "resolved": true,
+          "cooldown": 25.0,
+          "priority": 10,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Gas",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 1000.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "StinkBugLeap_Named",
+          "ability": "StinkBugLeap_Named",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 11,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "Mining",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "parentBestiaryId": "StinkbugORC",
+      "parentAphidexId": "g2_orc_stinkbug",
+      "technicalCharacterRow": "StinkBug_ORC_Named",
+      "variantKey": "StinkBug_ORC_Named",
+      "nameEn": "Major Diesel",
+      "nameEsMX": "Comandante Diesel",
+      "nameBindingConfidence": "high",
+      "topLevelAphidexId": null,
+      "killFavoriteStateOwner": "g2_orc_stinkbug",
+      "policy": "CHILD_VARIANT_NO_TOP_LEVEL_ID"
+    },
+    {
+      "id": "g2_wave_stink_bug_orc_wave",
+      "characterRow": "StinkBug_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 800.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 45
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 90.0,
+          "sourceId": "DamageResistGasLarge"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownStabbingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "StinkBugBite_L",
+          "ability": "StinkBugBite1",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Chopping",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "StinkBugBite_R",
+          "ability": "StinkBugBite2",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Chopping",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "StinkBugFart",
+          "ability": "StinkBugFart",
+          "resolved": true,
+          "cooldown": 25.0,
+          "priority": 10,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 1000.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "StinkBugLeap",
+          "ability": "StinkBugLeap",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 11,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 65.0,
+            "type": "Mining",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_stink_bug_orc_wave",
+      "nameEn": "O.R.C. Stinkbug Raid/Wave",
+      "nameEsMX": "Chinche apestosa C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Вонючка Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "StinkBug_ORC_Wave",
+      "characterRow": "StinkBug_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 800.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 45
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 90.0,
+          "sourceId": "DamageResistGasLarge"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownStabbingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "StinkBugBite_L",
+          "ability": "StinkBugBite1",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Chopping",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "StinkBugBite_R",
+          "ability": "StinkBugBite2",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Chopping",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "StinkBugFart",
+          "ability": "StinkBugFart",
+          "resolved": true,
+          "cooldown": 25.0,
+          "priority": 10,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 1000.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "StinkBugLeap",
+          "ability": "StinkBugLeap",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 11,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 65.0,
+            "type": "Mining",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Chinche apestosa C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_83ac46eac971a9bf",
+      "targetType": "creature",
+      "targetId": "g2_orc_stinkbug",
+      "technicalId": "StinkbugORC",
+      "map": "surface",
+      "world": {
+        "x": -178153.69,
+        "y": 47348.062,
+        "z": 4149.426
+      },
+      "u": 0.3122132771436933,
+      "v": 0.4901526919976389,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_995a69e4e9279ec2",
+      "targetType": "creature",
+      "targetId": "g2_orc_stinkbug",
+      "technicalId": "StinkbugORC",
+      "map": "surface",
+      "world": {
+        "x": -177477.92,
+        "y": 45404.387,
+        "z": 1684.4636
+      },
+      "u": 0.3147446953467954,
+      "v": 0.4817610771903195,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2cfc4f479c9a7593",
+      "targetType": "creature",
+      "targetId": "g2_orc_stinkbug",
+      "technicalId": "StinkbugORC",
+      "map": "surface",
+      "world": {
+        "x": -182334.39,
+        "y": 47633.99,
+        "z": 4071.391
+      },
+      "u": 0.2965524752707052,
+      "v": 0.49138715642128333,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2049cc00762b6d45",
+      "targetType": "creature",
+      "targetId": "g2_orc_stinkbug",
+      "technicalId": "StinkbugORC",
+      "map": "surface",
+      "world": {
+        "x": -255299.31,
+        "y": 90178.45,
+        "z": 2459.4387
+      },
+      "u": 0.02322763593795728,
+      "v": 0.6750684408466143,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2e21ea2c70e18825",
+      "targetType": "creature",
+      "targetId": "g2_orc_stinkbug",
+      "technicalId": "StinkbugORC",
+      "map": "surface",
+      "world": {
+        "x": -255421.36,
+        "y": 88145.56,
+        "z": 2371.5476
+      },
+      "u": 0.022770439566871577,
+      "v": 0.6662916495488659,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1a815081ce54e0bc",
+      "targetType": "creature",
+      "targetId": "g2_orc_stinkbug",
+      "technicalId": "StinkbugORC",
+      "map": "surface",
+      "world": {
+        "x": -80131.57,
+        "y": 109582.99,
+        "z": 6578.3457
+      },
+      "u": 0.6794017863623061,
+      "v": 0.7588455255923771,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stink Bug Feelers",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Stink Bug Feelers",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stink Bug Feelers",
+      "countLabel": "3",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stink Bug Gas Sack",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Stink Bug Gas Sack",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

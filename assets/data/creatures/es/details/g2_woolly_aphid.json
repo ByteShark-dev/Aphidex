@@ -1,1 +1,1317 @@
-{"id":"g2_woolly_aphid","speciesKey":"woolly_aphid","collectionGroup":"harmless","name":"Pulgón lanudo","game":"g2","tier":3,"danger":"intermedia","isBoss":false,"order":323,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WoollyAphid.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WoollyAphid_G.png","photo":"assets/g2/creatures/photos/Woolly_Aphid.webp","weaknesses":[],"resistances":[],"temperament":"peaceful","health":{"value":12,"rating":1},"description":"Estas haditas suavecitas merodean por el jardín en busca de savia y vegetales. Al morir, sueltan pelusa de pulgón lanudo y carne de pulgón lanudo cruda.","behavior":"Se comporta casi igual que un pulgón común: vaga, se detiene un momento, salta y huye en cuanto algo le parece peligroso.","interactionWithPlayer":"Escapa en cuanto te detecta, así que atraparlo depende más de cerrarle la ruta que de perseguirlo a campo abierto.","interactionWithCreatures":"Frente a otras criaturas reacciona igual que el pulgón normal: su primera y casi única respuesta es escapar.","strategy":"Trátalo como a un pulgón con mejor abrigo: golpea rápido antes de que encadene varios saltos y se te vaya de las manos.","environments":["Cancha de croquet","Invernadero","Alrededores del invernadero","Parche de calabazas","Huerto vegetal"],"loot":[{"section":"loot","item":"Raw Woolly Aphid Meat","minCount":1,"maxCount":1},{"section":"loot","item":"Woolly Aphid Fuzz","minCount":1,"maxCount":3},{"section":"rare","item":"Rocío de pulgón","minCount":0,"maxCount":2},{"section":"rare","item":"Raw Woolly Aphid Meat","minCount":0,"maxCount":2}],"combatStats":{"health":12},"lootTransformations":[{"id":"spicy_cooked_meat","effects":["spicy","burning"],"description":"Si la criatura se elimina con daño picante o un efecto de calor verificado, la carne compatible puede convertirse en carne cocinada."},{"id":"salty_jerky","effects":["salty"],"description":"Si la criatura se elimina con daño salado, la carne compatible puede convertirse en carne seca."}],"groupId":null,"cardTier":3,"technicalId":"WoollyAphid","bestiaryId":"WoollyAphid","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[{"name":"Wooly Aphid Chill","technicalId":"WoolyAphidChill","tags":[],"notes":"Daño del ataque: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_woolly_aphid",
+  "speciesKey": "woolly_aphid",
+  "collectionGroup": "harmless",
+  "name": "Pulgón lanudo",
+  "game": "g2",
+  "tier": 3,
+  "danger": "baja",
+  "isBoss": false,
+  "order": 323,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WoollyAphid.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WoollyAphid_G.png",
+  "photo": "assets/g2/creatures/photos/Woolly_Aphid.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "peaceful",
+  "health": {
+    "rating": 1,
+    "value": 12
+  },
+  "description": "Estas haditas suavecitas merodean por el jardín en busca de savia y vegetales. Al morir, sueltan pelusa de pulgón lanudo y carne de pulgón lanudo cruda.",
+  "behavior": "Se comporta casi igual que un pulgón común: vaga, se detiene un momento, salta y huye en cuanto algo le parece peligroso.",
+  "interactionWithPlayer": "Escapa en cuanto te detecta, así que atraparlo depende más de cerrarle la ruta que de perseguirlo a campo abierto.",
+  "interactionWithCreatures": "Frente a otras criaturas reacciona igual que el pulgón normal: su primera y casi única respuesta es escapar.",
+  "strategy": "Trátalo como a un pulgón con mejor abrigo: golpea rápido antes de que encadene varios saltos y se te vaya de las manos.",
+  "environments": [
+    "Cancha de croquet",
+    "Invernadero",
+    "Alrededores del invernadero",
+    "Parche de calabazas",
+    "Huerto vegetal"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Frozen Droplet",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Fuzz Aphid Woolly",
+      "minCount": 1,
+      "maxCount": 6
+    },
+    {
+      "section": "rare",
+      "item": "Honeydew",
+      "minCount": 0,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "Pet Tombstone Aphid",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Woolly Aphid Meat",
+      "minCount": 1,
+      "maxCount": 3
+    }
+  ],
+  "combatStats": {
+    "health": 12,
+    "stunThreshold": null,
+    "stunCooldownSeconds": null
+  },
+  "lootTransformations": [
+    {
+      "id": "spicy_cooked_meat",
+      "effects": [
+        "spicy",
+        "burning"
+      ],
+      "description": "Si la criatura se elimina con daño picante o un efecto de calor verificado, la carne compatible puede convertirse en carne cocinada."
+    },
+    {
+      "id": "salty_jerky",
+      "effects": [
+        "salty"
+      ],
+      "description": "Si la criatura se elimina con daño salado, la carne compatible puede convertirse en carne seca."
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "WoollyAphid",
+  "bestiaryId": "WoollyAphid",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Wooly Aphid Chill",
+      "technicalId": "WoolyAphidChill",
+      "tags": [],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 30.0,
+      "range": 175.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_8e046e2f5289904c",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -148523.5,
+        "y": -25621.709,
+        "z": 1138.071
+      },
+      "u": 0.42320725782850455,
+      "v": 0.17511328941732016,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_59464d5b12be45d8",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -146562.17,
+        "y": -37129.51,
+        "z": 429.6125
+      },
+      "u": 0.43055435294117644,
+      "v": 0.12542955459988192,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa45058cb46861b1",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -139262.14,
+        "y": -49897.36,
+        "z": 1420.3192
+      },
+      "u": 0.4579000901375475,
+      "v": 0.07030568918121258,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8665ceddfd267ee1",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -121572.34,
+        "y": -39021.242,
+        "z": 649.8981
+      },
+      "u": 0.5241656564237636,
+      "v": 0.11726219829665238,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_02e1fdde9ce196ff",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -125344.35,
+        "y": -52940.996,
+        "z": 1291.5977
+      },
+      "u": 0.5100357974831724,
+      "v": 0.057165107074795524,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_be678854999dc531",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -112809.57,
+        "y": -48472.57,
+        "z": 1107.6163
+      },
+      "u": 0.5569907825577992,
+      "v": 0.07645707192849306,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c79eb6ba9acfecf5",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -116750.21,
+        "y": -34487.54,
+        "z": -548.7868
+      },
+      "u": 0.5422292396839332,
+      "v": 0.1368359854962475,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b2aa48ac98858b7a",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -114230.48,
+        "y": -27099.47,
+        "z": -743.28455
+      },
+      "u": 0.5516680877963127,
+      "v": 0.16873320988278942,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4b543b8c84b70c3c",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -116240.336,
+        "y": -30610.111,
+        "z": -2089.0825
+      },
+      "u": 0.5441392154521509,
+      "v": 0.15357638222447081,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f0c12e731ccefa3d",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -98395.66,
+        "y": 24912.324,
+        "z": 1510.3315
+      },
+      "u": 0.6109849435177056,
+      "v": 0.393288724917784,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6f1e8ee1ac206d35",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -97749.195,
+        "y": 22033.785,
+        "z": 1356.2914
+      },
+      "u": 0.613406585894059,
+      "v": 0.3808609319504174,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ee7a3b1aa5830412",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -185329.25,
+        "y": -24284.1,
+        "z": 1045.2007
+      },
+      "u": 0.2853338015803336,
+      "v": 0.1808882772577789,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_08e892646efbb07f",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -173826.36,
+        "y": -22604.498,
+        "z": 1073.7579
+      },
+      "u": 0.32842335147790463,
+      "v": 0.18813978433257444,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_27f6a41f73b7b868",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -166953.94,
+        "y": -25668.93,
+        "z": 438.011
+      },
+      "u": 0.3541672718759145,
+      "v": 0.17490941765747534,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eddcc870ac4ba194",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -163512.02,
+        "y": -22838.314,
+        "z": 471.09082
+      },
+      "u": 0.36706062159789293,
+      "v": 0.18713030805295555,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_99ed367e7321f261",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -168120.47,
+        "y": -19860.166,
+        "z": 948.88696
+      },
+      "u": 0.34979747848990345,
+      "v": 0.19998815252550806,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60044b82e46d55b3",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -177840.9,
+        "y": -19676.598,
+        "z": 982.1796
+      },
+      "u": 0.31338498097746564,
+      "v": 0.20078068828737666,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9a041c672f113dbf",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -186100.0,
+        "y": -22990.0,
+        "z": 1101.781
+      },
+      "u": 0.2824465905765291,
+      "v": 0.18647541951260643,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7923f85a12deb569",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -179369.61,
+        "y": -22701.885,
+        "z": 978.0836
+      },
+      "u": 0.3076584700029266,
+      "v": 0.18771932608145717,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7c3d57dc4d6f919a",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -77671.125,
+        "y": 48230.99,
+        "z": 742.46313
+      },
+      "u": 0.6886185542873866,
+      "v": 0.4939646418753688,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9f74346a1133b82f",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -81865.164,
+        "y": 46319.54,
+        "z": 377.51303
+      },
+      "u": 0.6729077848405034,
+      "v": 0.4857121551564213,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_00dc82b799f8ed88",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -187987.62,
+        "y": -24630.18,
+        "z": 10534.6
+      },
+      "u": 0.2753756113549898,
+      "v": 0.17939411282570203,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_45829e13e980ebbf",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -187441.9,
+        "y": -24423.043,
+        "z": 9755.669
+      },
+      "u": 0.27741986537898744,
+      "v": 0.18028840529555606,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d574d52b1070f3db",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -184800.0,
+        "y": -36703.062,
+        "z": 291.02612
+      },
+      "u": 0.2873163593795727,
+      "v": 0.12727069951935235,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eac3782aacb1b96c",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -186800.0,
+        "y": -11453.063,
+        "z": 828.5291
+      },
+      "u": 0.2798244073748903,
+      "v": 0.23628494598195462,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_85fe67361788b2ad",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -165450.0,
+        "y": -22553.064,
+        "z": 6460.778
+      },
+      "u": 0.3598009950248756,
+      "v": 0.18836184528206423,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_25fd91b7d30fc778",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -224721.52,
+        "y": 4112.4185,
+        "z": 1469.9916
+      },
+      "u": 0.13777130348258712,
+      "v": 0.30348729464541696,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_037f314f9cf5e029",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -219609.33,
+        "y": 1915.1221,
+        "z": 1571.1931
+      },
+      "u": 0.15692144454199594,
+      "v": 0.2940006958023443,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3ae55732a292d5f4",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -167129.95,
+        "y": -25668.93,
+        "z": 438.011
+      },
+      "u": 0.3535079426397424,
+      "v": 0.17490941765747534,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8876c0f62b9ffb33",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -167954.6,
+        "y": -19860.166,
+        "z": 948.88696
+      },
+      "u": 0.3504188235294117,
+      "v": 0.19998815252550806,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_32019ed9b5b3c5a0",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -173604.28,
+        "y": -22568.764,
+        "z": 1073.7579
+      },
+      "u": 0.32925525782850457,
+      "v": 0.18829406216375752,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f7859e22cb61fc55",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -179178.44,
+        "y": -22701.885,
+        "z": 978.0836
+      },
+      "u": 0.3083745882352941,
+      "v": 0.18771932608145717,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5c201c27fe692036",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -177621.56,
+        "y": -19676.598,
+        "z": 982.1796
+      },
+      "u": 0.3142066233538191,
+      "v": 0.20078068828737666,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_131a866fe453f61a",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -163238.44,
+        "y": -22838.314,
+        "z": 471.09082
+      },
+      "u": 0.3680854457126134,
+      "v": 0.18713030805295555,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fcda6e2b33dfe6cf",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -218515.22,
+        "y": -45678.57,
+        "z": 4285.8403
+      },
+      "u": 0.16101995434591745,
+      "v": 0.08851987654945608,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b6fc2686e1a46809",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -223782.23,
+        "y": -37688.754,
+        "z": 2437.071
+      },
+      "u": 0.1412898612818261,
+      "v": 0.12301507675183407,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5cf0fea3dd18a3f1",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -224143.28,
+        "y": -15629.223,
+        "z": 2255.4573
+      },
+      "u": 0.13993737664618086,
+      "v": 0.2182548092081963,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0d2baaff2a7cca58",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -211046.77,
+        "y": -11194.682,
+        "z": 1935.8297
+      },
+      "u": 0.18899658882060288,
+      "v": 0.2374004790960452,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b7995894f54ae816",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -199711.08,
+        "y": -13316.363,
+        "z": 784.992
+      },
+      "u": 0.23145981153058245,
+      "v": 0.22824034188380132,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_89bb507571a80546",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -202822.4,
+        "y": -29609.012,
+        "z": 918.1938
+      },
+      "u": 0.21980488147497806,
+      "v": 0.15789852311324734,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8715d6474c95df00",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -213793.0,
+        "y": -33355.586,
+        "z": 1941.4901
+      },
+      "u": 0.17870927714369328,
+      "v": 0.14172307924782862,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d91cde3952c682fb",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -195050.03,
+        "y": -40458.316,
+        "z": 1033.0972
+      },
+      "u": 0.24891999297629502,
+      "v": 0.11105778065604184,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5ed7ac4e13fa9c81",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -203839.92,
+        "y": -45335.438,
+        "z": 2538.3174
+      },
+      "u": 0.21599327597307577,
+      "v": 0.09000131329791723,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_73405ab489ba478f",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -207643.89,
+        "y": -52740.01,
+        "z": 1836.702
+      },
+      "u": 0.20174369563944977,
+      "v": 0.05803284324141999,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_74d501d1ba44be0a",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -206276.72,
+        "y": -52778.56,
+        "z": 3426.4275
+      },
+      "u": 0.2068650816505707,
+      "v": 0.05786640762290242,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_de634c3a03d5c7fc",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -213350.72,
+        "y": -52666.96,
+        "z": 1815.9812
+      },
+      "u": 0.18036604741000878,
+      "v": 0.05834822902436971,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9c6df971c9c6237e",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -220203.17,
+        "y": -48946.516,
+        "z": 4642.445
+      },
+      "u": 0.15469693415276553,
+      "v": 0.07441085933046628,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5aea54bb18066c04",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -203225.84,
+        "y": -53429.316,
+        "z": 926.20215
+      },
+      "u": 0.21829360491659353,
+      "v": 0.055056836225651475,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7c6726580b5497c0",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -58383.633,
+        "y": 45605.996,
+        "z": 4167.0796
+      },
+      "u": 0.7608690364647351,
+      "v": 0.482631503094696,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fb784efecad862a4",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -7265.521,
+        "y": 65176.87,
+        "z": -1233.2031
+      },
+      "u": 0.9523562573017267,
+      "v": 0.5671267175984485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d0d84caca1ff91e",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -26635.48,
+        "y": 27013.01,
+        "z": -4742.3276
+      },
+      "u": 0.8797968557213929,
+      "v": 0.40235821839952784,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_40c86c8567a7bc7d",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -27822.629,
+        "y": 70082.46,
+        "z": 3991.6597
+      },
+      "u": 0.8753498240561896,
+      "v": 0.5883060925879079,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e805b95561a47e8b",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -21008.89,
+        "y": 29818.1,
+        "z": -974.8375
+      },
+      "u": 0.9008739268364061,
+      "v": 0.41446890294291255,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_761bf0ab594ac30c",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -18461.105,
+        "y": 24509.822,
+        "z": -2178.4724
+      },
+      "u": 0.9104178683055312,
+      "v": 0.39155096436461756,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3c39cc1df85b2c67",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -7001.6924,
+        "y": 41510.79,
+        "z": 1011.4969
+      },
+      "u": 0.9533445529060579,
+      "v": 0.4649508768024286,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9cd3e0168d03b06b",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -6475.521,
+        "y": 57861.87,
+        "z": -853.9081
+      },
+      "u": 0.9553155783435762,
+      "v": 0.5355449653427776,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d025e4278c510bf5",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -45616.96,
+        "y": 49925.273,
+        "z": 6108.0513
+      },
+      "u": 0.808692687152473,
+      "v": 0.5012795326418753,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa1815976d47cef6",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -45141.63,
+        "y": 44424.004,
+        "z": 6502.781
+      },
+      "u": 0.8104732619256657,
+      "v": 0.4775283754785395,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2638fd81f9c74ae9",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -53749.81,
+        "y": 46947.82,
+        "z": 4735.1855
+      },
+      "u": 0.778227226221832,
+      "v": 0.4884246887595919,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1cab2674599f1544",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -47195.773,
+        "y": 72026.31,
+        "z": 275.45923
+      },
+      "u": 0.8027784915422886,
+      "v": 0.5966984629395397,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_645e90767007d1bb",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -49736.12,
+        "y": 75919.766,
+        "z": -1122.5057
+      },
+      "u": 0.793262412642669,
+      "v": 0.6135080545745847,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_56cf0a192c407518",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -209685.25,
+        "y": -52028.445,
+        "z": 1217.2631
+      },
+      "u": 0.1940968100673105,
+      "v": 0.06110495117632171,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_97dce245a6341699",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -24027.2,
+        "y": -19371.47,
+        "z": -3134.0195
+      },
+      "u": 0.8895674100087796,
+      "v": 0.20209804671557471,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_40b1f19a6d5b164f",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -13916.93,
+        "y": 11151.584,
+        "z": -1826.7483
+      },
+      "u": 0.9274402388059702,
+      "v": 0.33387816011468086,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a4f56e07206b468d",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -17289.365,
+        "y": -13502.894,
+        "z": -1282.1493
+      },
+      "u": 0.9148071782265145,
+      "v": 0.22743501367737584,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_501ba503ed1eb99a",
+      "targetType": "creature",
+      "targetId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "map": "surface",
+      "world": {
+        "x": -77671.88,
+        "y": 23812.781,
+        "z": -4393.759
+      },
+      "u": 0.6886157260755048,
+      "v": 0.3885415622902436,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Frozen Droplet",
+      "countLabel": "1",
+      "chancePct": 0,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Fuzz Aphid Woolly",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Fuzz Aphid Woolly",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Fuzz Aphid Woolly",
+      "countLabel": "2",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Honeydew",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Pet Tombstone Aphid",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Woolly Aphid Meat",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Woolly Aphid Meat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

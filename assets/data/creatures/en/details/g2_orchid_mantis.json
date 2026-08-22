@@ -1,1 +1,334 @@
-{"id":"g2_orchid_mantis","underConstruction":true,"speciesKey":"orchid_mantis","collectionGroup":"other","name":"Orchid Mantis","game":"g2","tier":3,"danger":"proximamente","isBoss":true,"order":287,"defaultGold":false,"cardNormal":"assets/g1/creatures/cards/normal/Creaturecard_Mantis.webp","cardGold":"assets/g1/creatures/cards/gold/Creaturecardgold_Mantis.webp","photo":"assets/g1/creatures/photos/Mantis.webp","weaknesses":["salty"],"resistances":["spicy","busting","chopping","slashing","stabbing","explosive","poison","gas"],"temperament":"aggressive","health":{"rating":5,"value":3400},"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_arrows_only","susceptibleDamageTypes":["stabbingArrowsOnly"]},"description":"The Orchid Mantis also exists in Grounded 2, but only inside player-made Playgrounds. Even outside the main campaign it keeps almost all of its identity as a brutal, highly technical optional duel.","behavior":"Inside Playgrounds it behaves like a mobile assassin, alternating frontal slashes, repositioning leaps, and roars that weaken the player. It is not part of Brookhollow Park's normal world spawns.","interactionWithPlayer":"It attacks as soon as the encounter begins and gives away no free safe windows. Its bleed and stat-reduction attacks mean that even correct blocking is not always enough on its own.","interactionWithCreatures":"As a Playgrounds-only boss, its interaction with other creatures depends on the custom map, but its design is built to dominate any enclosed arena where players place it.","strategy":"Salty remains the cleanest direct answer. The priority is denying free pounces and never underestimating the scream: once damage, recovery, and perfect-block penalties stack up, the fight collapses fast.","environments":["Playgrounds"],"respawnInfo":"Depends on the Playground configuration.","loot":[{"section":"loot","item":"Orchid Mantis Chunk","minCount":4,"maxCount":11},{"section":"loot","item":"Orchid Mantis Claw","minCount":2,"maxCount":2},{"section":"loot","item":"Orchid Mantis Head","minCount":1,"maxCount":1},{"section":"rare","item":"Orchid Mantis Chunk","minCount":0,"maxCount":13},{"section":"rare","item":"Mantis Trinket","minCount":0,"maxCount":1}],"advancedLootTable":[{"item":"Mantis Trinket","countLabel":"1","chancePct":1},{"item":"Orchid Mantis Chunk","countLabel":"x4","chancePct":100},{"item":"Orchid Mantis Chunk","countLabel":"x1","chancePct":40},{"item":"Orchid Mantis Chunk","countLabel":"x5","chancePct":25},{"item":"Orchid Mantis Chunk","countLabel":"x1","chancePct":20},{"item":"Orchid Mantis Chunk","countLabel":"x13","chancePct":1},{"item":"Orchid Mantis Claw","countLabel":"x2","chancePct":100,"notes":"Not stealable"},{"item":"Orchid Mantis Head","countLabel":"x1","chancePct":100,"notes":"Not stealable"}],"combatStats":{"health":3400,"stunThreshold":260,"stunCooldownSeconds":120,"attackDamageSummary":"Slash: 150\nCharged Strike: 175\nCombo Slam: 120\nGround Shred: 90\nVertical Shockwave: 120\nCharged Strike Unearth: 80\nPounce: 100\nEscape Leap: 90\nScream: 10"},"inflictsEffects":["generic","slashing","bleed"],"specialTraits":["Ground Shred and Vertical Shockwave reduce the player's attack damage by 50% for 30 seconds.","Pounce and Scream reduce exhaustion recovery by 50% for 20 seconds.","Combo Slam and Scream worsen perfect-block timing by 150 ms for 30 seconds."],"elementalWeaknesses":[{"type":"salty","bonusPct":25}],"damageWeaknesses":[],"resistancesV2":[{"type":"spicy","bonusPct":50},{"type":"chopping","bonusPct":25},{"type":"busting","bonusPct":50},{"type":"slashing","bonusPct":50},{"type":"stabbing","bonusPct":50},{"type":"explosive","bonusPct":50},{"type":"gas","bonusPct":100}],"bossPhases":[{"id":"phase1","label":"Phase 1","startsAtHealthPct":100,"trigger":"It begins as soon as the Playground encounter starts.","summary":"The opening phase is still a clean but lethal duel. It mixes slashes, a charged strike that causes bleed, combo slams, long pounces, and vertical shockwaves whenever you give it space.","aggressionChange":"The tempo is already high, but the most committed moves still leave short clear punish windows.","newPatterns":["If you drift too far away, it alternates Pounce and Vertical Shockwave to reclaim the lane.","When you crowd it too hard, it can use Escape Leap to jump back and reset spacing."],"attacks":[{"name":"Slash","tags":["melee"],"tell":"It draws back one scythe and releases it in a very fast frontal arc.","howToAvoid":"Perfect-block it cleanly or leave its frontal semicircle before the arc finishes.","notes":"This is the baseline tool it uses to open most close-range exchanges."},{"name":"Charged Strike","tags":["melee","bleed"],"tell":"It pauses for a split second and holds one scythe back before releasing a much heavier slash.","howToAvoid":"Do not block on the first fake beat; wait for the real hit or roll to the side.","notes":"It applies bleed even through a regular block, so you either perfect-block it or avoid being there."},{"name":"Combo Slam","tags":["melee","aoe"],"tell":"It stands taller and pounds the ground several times in succession with its front limbs.","howToAvoid":"Do not stay planted underneath it. Only block if you truly read the chain, or move off the line before the second hit.","notes":"It is one of the patterns that punishes melee greed the hardest, and it also worsens your perfect-block window on hit."},{"name":"Pounce","tags":["melee"],"tell":"It lowers its body, vibrates briefly, and then launches in a straight line at your last position.","howToAvoid":"Roll late to one side; backing straight away usually leaves you inside the landing zone.","notes":"Besides the direct hit, this leap also cuts stamina recovery if it connects."},{"name":"Vertical Shockwave","tags":["ranged","aoe"],"tell":"It slams the ground hard and sends a straight shockwave traveling out from its position.","howToAvoid":"Leave the lane or jump when the wave is about to reach you; blocking is not the correct answer.","notes":"On hit, it also cuts your attack damage by 50% for 30 seconds."}]},{"id":"phase2","label":"Phase 2","startsAtHealthPct":80,"trigger":"At about 80% health it unleashes a massive scream and enters the real attrition phase.","summary":"The first scream pushes the fight forward. The mantis gains about 10% more damage, rises to roughly 62.5% generic resistance, and adds Ground Shred to tear apart anyone who stays in front too long.","aggressionChange":"The scream can come back roughly every minute, so the pressure never fully cools off again.","newPatterns":["The stamina-recovery penalty makes panic blocking much more expensive.","Ground Shred is a five-hit flurry that forces you off the central line."],"resistancesV2":[{"type":"generic","bonusPct":62}],"attacks":[{"name":"Scream","tags":["aoe"],"tell":"It rises up, rattles its body, and unleashes a shriek that shakes the whole arena.","howToAvoid":"Do not spend your stamina right before it. If you are already inside its hitbox, try to leave; otherwise steady your defense.","notes":"It deals damage and also cuts stamina recovery by 50% for 20 seconds while worsening perfect-block timing by 150 ms for 30 seconds."},{"name":"Ground Shred","tags":["melee","bleed"],"tell":"It lowers its scythes and chains a long series of low shredding hits forward.","howToAvoid":"Do not try to tank the whole series with blind blocking. Leave the line or only answer the timings you truly read.","notes":"It is a five-hit flurry, inflicts bleed, and also lowers your attack damage by 50% for 30 seconds on hit."}],"specialTraits":["During this phase the mantis becomes much tougher and hits roughly 10% harder than in the opener."]},{"id":"phase3","label":"Phase 3","startsAtHealthPct":40,"trigger":"Below 40% health it screams again and turns every mistake into a fast collapse.","summary":"The final phase pushes generic resistance to about 77.5%, raises the total damage buff to 25%, and upgrades both the vertical shockwaves and the charged follow-up.","aggressionChange":"There are almost no long punish windows left here. Obvious heals or overextended combos are exactly what this phase is designed to kill.","newPatterns":["Multi Shockwave fires four vertical waves in very rapid succession.","Its charged strike can now continue into a second hit if you commit after the first one too early."],"resistancesV2":[{"type":"generic","bonusPct":78}],"attacks":[{"name":"Multi Shockwave","tags":["ranged","aoe"],"tell":"It plants its scythes and repeats the shockwave release with almost no pause between each one.","howToAvoid":"Do not read the first wave as if it were the only one. Leave the lane early or be ready to jump more than once.","notes":"Each wave still reduces your attack damage on hit, so letting even one through makes the rest of the phase worse."},{"name":"Double Charged Strike","tags":["melee","bleed"],"tell":"The first charge looks familiar, but its body does not settle after the initial impact and it chains a second hit.","howToAvoid":"Do not counterattack on reflex after the first hit. Wait for the second release or roll fully out to the side.","notes":"It turns an otherwise correct automatic answer into a mistake if you forget the move now has a follow-up."}],"specialTraits":["The scream that starts this phase reapplies the same recovery and perfect-block penalties from phase 2."]}],"listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orchid_mantis",
+  "underConstruction": true,
+  "speciesKey": "orchid_mantis",
+  "collectionGroup": "other",
+  "name": "Orchid Mantis",
+  "game": "g2",
+  "tier": 3,
+  "danger": "proximamente",
+  "isBoss": true,
+  "order": 287,
+  "defaultGold": false,
+  "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Mantis.webp",
+  "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Mantis.webp",
+  "photo": "assets/g1/creatures/photos/Mantis.webp",
+  "weaknesses": [
+    "salty"
+  ],
+  "resistances": [
+    "spicy",
+    "busting",
+    "chopping",
+    "slashing",
+    "stabbing",
+    "explosive",
+    "poison",
+    "gas"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 5,
+    "value": 3400
+  },
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_arrows_only",
+    "susceptibleDamageTypes": [
+      "stabbingArrowsOnly"
+    ]
+  },
+  "description": "The Orchid Mantis also exists in Grounded 2, but only inside player-made Playgrounds. Even outside the main campaign it keeps almost all of its identity as a brutal, highly technical optional duel.",
+  "behavior": "Inside Playgrounds it behaves like a mobile assassin, alternating frontal slashes, repositioning leaps, and roars that weaken the player. It is not part of Brookhollow Park's normal world spawns.",
+  "interactionWithPlayer": "It attacks as soon as the encounter begins and gives away no free safe windows. Its bleed and stat-reduction attacks mean that even correct blocking is not always enough on its own.",
+  "interactionWithCreatures": "As a Playgrounds-only boss, its interaction with other creatures depends on the custom map, but its design is built to dominate any enclosed arena where players place it.",
+  "strategy": "Salty remains the cleanest direct answer. The priority is denying free pounces and never underestimating the scream: once damage, recovery, and perfect-block penalties stack up, the fight collapses fast.",
+  "environments": [
+    "Playgrounds"
+  ],
+  "respawnInfo": "Depends on the Playground configuration.",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Orchid Mantis Chunk",
+      "minCount": 4,
+      "maxCount": 11
+    },
+    {
+      "section": "loot",
+      "item": "Orchid Mantis Claw",
+      "minCount": 2,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Orchid Mantis Head",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Orchid Mantis Chunk",
+      "minCount": 0,
+      "maxCount": 13
+    },
+    {
+      "section": "rare",
+      "item": "Mantis Trinket",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Mantis Trinket",
+      "countLabel": "1",
+      "chancePct": 1
+    },
+    {
+      "item": "Orchid Mantis Chunk",
+      "countLabel": "x4",
+      "chancePct": 100
+    },
+    {
+      "item": "Orchid Mantis Chunk",
+      "countLabel": "x1",
+      "chancePct": 40
+    },
+    {
+      "item": "Orchid Mantis Chunk",
+      "countLabel": "x5",
+      "chancePct": 25
+    },
+    {
+      "item": "Orchid Mantis Chunk",
+      "countLabel": "x1",
+      "chancePct": 20
+    },
+    {
+      "item": "Orchid Mantis Chunk",
+      "countLabel": "x13",
+      "chancePct": 1
+    },
+    {
+      "item": "Orchid Mantis Claw",
+      "countLabel": "x2",
+      "chancePct": 100,
+      "notes": "Not stealable"
+    },
+    {
+      "item": "Orchid Mantis Head",
+      "countLabel": "x1",
+      "chancePct": 100,
+      "notes": "Not stealable"
+    }
+  ],
+  "combatStats": {
+    "health": 3400,
+    "stunThreshold": 260,
+    "stunCooldownSeconds": 120,
+    "attackDamageSummary": "Slash: 150\nCharged Strike: 175\nCombo Slam: 120\nGround Shred: 90\nVertical Shockwave: 120\nCharged Strike Unearth: 80\nPounce: 100\nEscape Leap: 90\nScream: 10"
+  },
+  "inflictsEffects": [
+    "generic",
+    "slashing",
+    "bleed"
+  ],
+  "specialTraits": [
+    "Ground Shred and Vertical Shockwave reduce the player's attack damage by 50% for 30 seconds.",
+    "Pounce and Scream reduce exhaustion recovery by 50% for 20 seconds.",
+    "Combo Slam and Scream worsen perfect-block timing by 150 ms for 30 seconds."
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "salty",
+      "bonusPct": 25
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "spicy",
+      "bonusPct": 50
+    },
+    {
+      "type": "chopping",
+      "bonusPct": 25
+    },
+    {
+      "type": "busting",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 50
+    },
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    },
+    {
+      "type": "explosive",
+      "bonusPct": 50
+    },
+    {
+      "type": "gas",
+      "bonusPct": 100
+    }
+  ],
+  "bossPhases": [
+    {
+      "id": "phase1",
+      "label": "Phase 1",
+      "startsAtHealthPct": 100,
+      "trigger": "It begins as soon as the Playground encounter starts.",
+      "summary": "The opening phase is still a clean but lethal duel. It mixes slashes, a charged strike that causes bleed, combo slams, long pounces, and vertical shockwaves whenever you give it space.",
+      "aggressionChange": "The tempo is already high, but the most committed moves still leave short clear punish windows.",
+      "newPatterns": [
+        "If you drift too far away, it alternates Pounce and Vertical Shockwave to reclaim the lane.",
+        "When you crowd it too hard, it can use Escape Leap to jump back and reset spacing."
+      ],
+      "attacks": [
+        {
+          "name": "Slash",
+          "tags": [
+            "melee"
+          ],
+          "tell": "It draws back one scythe and releases it in a very fast frontal arc.",
+          "howToAvoid": "Perfect-block it cleanly or leave its frontal semicircle before the arc finishes.",
+          "notes": "This is the baseline tool it uses to open most close-range exchanges."
+        },
+        {
+          "name": "Charged Strike",
+          "tags": [
+            "melee",
+            "bleed"
+          ],
+          "tell": "It pauses for a split second and holds one scythe back before releasing a much heavier slash.",
+          "howToAvoid": "Do not block on the first fake beat; wait for the real hit or roll to the side.",
+          "notes": "It applies bleed even through a regular block, so you either perfect-block it or avoid being there."
+        },
+        {
+          "name": "Combo Slam",
+          "tags": [
+            "melee",
+            "aoe"
+          ],
+          "tell": "It stands taller and pounds the ground several times in succession with its front limbs.",
+          "howToAvoid": "Do not stay planted underneath it. Only block if you truly read the chain, or move off the line before the second hit.",
+          "notes": "It is one of the patterns that punishes melee greed the hardest, and it also worsens your perfect-block window on hit."
+        },
+        {
+          "name": "Pounce",
+          "tags": [
+            "melee"
+          ],
+          "tell": "It lowers its body, vibrates briefly, and then launches in a straight line at your last position.",
+          "howToAvoid": "Roll late to one side; backing straight away usually leaves you inside the landing zone.",
+          "notes": "Besides the direct hit, this leap also cuts stamina recovery if it connects."
+        },
+        {
+          "name": "Vertical Shockwave",
+          "tags": [
+            "ranged",
+            "aoe"
+          ],
+          "tell": "It slams the ground hard and sends a straight shockwave traveling out from its position.",
+          "howToAvoid": "Leave the lane or jump when the wave is about to reach you; blocking is not the correct answer.",
+          "notes": "On hit, it also cuts your attack damage by 50% for 30 seconds."
+        }
+      ]
+    },
+    {
+      "id": "phase2",
+      "label": "Phase 2",
+      "startsAtHealthPct": 80,
+      "trigger": "At about 80% health it unleashes a massive scream and enters the real attrition phase.",
+      "summary": "The first scream pushes the fight forward. The mantis gains about 10% more damage, rises to roughly 62.5% generic resistance, and adds Ground Shred to tear apart anyone who stays in front too long.",
+      "aggressionChange": "The scream can come back roughly every minute, so the pressure never fully cools off again.",
+      "newPatterns": [
+        "The stamina-recovery penalty makes panic blocking much more expensive.",
+        "Ground Shred is a five-hit flurry that forces you off the central line."
+      ],
+      "resistancesV2": [
+        {
+          "type": "generic",
+          "bonusPct": 62
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Scream",
+          "tags": [
+            "aoe"
+          ],
+          "tell": "It rises up, rattles its body, and unleashes a shriek that shakes the whole arena.",
+          "howToAvoid": "Do not spend your stamina right before it. If you are already inside its hitbox, try to leave; otherwise steady your defense.",
+          "notes": "It deals damage and also cuts stamina recovery by 50% for 20 seconds while worsening perfect-block timing by 150 ms for 30 seconds."
+        },
+        {
+          "name": "Ground Shred",
+          "tags": [
+            "melee",
+            "bleed"
+          ],
+          "tell": "It lowers its scythes and chains a long series of low shredding hits forward.",
+          "howToAvoid": "Do not try to tank the whole series with blind blocking. Leave the line or only answer the timings you truly read.",
+          "notes": "It is a five-hit flurry, inflicts bleed, and also lowers your attack damage by 50% for 30 seconds on hit."
+        }
+      ],
+      "specialTraits": [
+        "During this phase the mantis becomes much tougher and hits roughly 10% harder than in the opener."
+      ]
+    },
+    {
+      "id": "phase3",
+      "label": "Phase 3",
+      "startsAtHealthPct": 40,
+      "trigger": "Below 40% health it screams again and turns every mistake into a fast collapse.",
+      "summary": "The final phase pushes generic resistance to about 77.5%, raises the total damage buff to 25%, and upgrades both the vertical shockwaves and the charged follow-up.",
+      "aggressionChange": "There are almost no long punish windows left here. Obvious heals or overextended combos are exactly what this phase is designed to kill.",
+      "newPatterns": [
+        "Multi Shockwave fires four vertical waves in very rapid succession.",
+        "Its charged strike can now continue into a second hit if you commit after the first one too early."
+      ],
+      "resistancesV2": [
+        {
+          "type": "generic",
+          "bonusPct": 78
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Multi Shockwave",
+          "tags": [
+            "ranged",
+            "aoe"
+          ],
+          "tell": "It plants its scythes and repeats the shockwave release with almost no pause between each one.",
+          "howToAvoid": "Do not read the first wave as if it were the only one. Leave the lane early or be ready to jump more than once.",
+          "notes": "Each wave still reduces your attack damage on hit, so letting even one through makes the rest of the phase worse."
+        },
+        {
+          "name": "Double Charged Strike",
+          "tags": [
+            "melee",
+            "bleed"
+          ],
+          "tell": "The first charge looks familiar, but its body does not settle after the initial impact and it chains a second hit.",
+          "howToAvoid": "Do not counterattack on reflex after the first hit. Wait for the second release or roll fully out to the side.",
+          "notes": "It turns an otherwise correct automatic answer into a mistake if you forget the move now has a follow-up."
+        }
+      ],
+      "specialTraits": [
+        "The scream that starts this phase reapplies the same recovery and perfect-block penalties from phase 2."
+      ]
+    }
+  ],
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "appearanceType": "no_natural_spawn"
+}

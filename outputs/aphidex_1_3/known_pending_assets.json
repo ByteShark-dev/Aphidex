@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "type": "mixr_variant",
+      "id": "mixr_picnic",
+      "status": "known_pending_assets"
+    },
+    {
+      "type": "mixr_variant",
+      "id": "mixr_resting",
+      "status": "known_pending_assets"
+    }
+  ]
+}

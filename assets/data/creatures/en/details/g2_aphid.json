@@ -1,1 +1,2813 @@
-{"id":"g2_aphid","speciesKey":"aphid","collectionGroup":"harmless","name":"Aphid","game":"g2","tier":1,"danger":"baja","isBoss":false,"order":207,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Aphid.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Aphid_G.png","photo":"assets/g2/creatures/photos/Aphid.webp","weaknesses":[],"resistances":[],"temperament":"peaceful","health":{"value":12,"rating":1},"description":"A tiny harmless sausage-shaped bug found in grassy areas around the park. Becomes raw aphid meat on death.","behavior":"It wanders without a clear route, pecks at ground resources, and sometimes drops aphid honeydew. Most of its life is built around finding food and fleeing from anything that feels even remotely dangerous.","interactionWithPlayer":"It fears the player and flees on sight. If you want an easy kill, it is usually better to cut off its route than to chase blindly while it chains short hops away from you.","interactionWithCreatures":"Plenty of small predators chase it, so almost every interaction ends in flight. It controls nothing; it just survives long enough to keep serving as food for something else.","strategy":"Its only real defense is speed. If you want it for food, get close before it notices you or wait for the brief pause it often leaves after the first escape burst.","environments":["Ceremony Area","Croquet Court","Entrance Area","Greenhouse","Greenhouse Surroundings","Fire Pit","Ice Cream Cart Surroundings","Picnic Table Area","Pine Hill","Pumpkin Patch","Snackbar Front Area","Statue Area","Veggie Garden"],"respawnInfo":"1 day","loot":[{"section":"loot","item":"Raw Aphid Meat","minCount":1,"maxCount":1},{"section":"passive","item":"Aphid Honeydew","minCount":0,"maxCount":1},{"section":"rare","item":"Raw Aphid Meat","minCount":0,"maxCount":6},{"section":"rare","item":"Aphid Honeydew","minCount":0,"maxCount":4}],"combatStats":{"health":12},"specialTraits":["Can be tamed with Plant Slurry.","Exclusive stealing can grant a Speed Droplet."],"lootTransformations":[{"id":"spicy_cooked_meat","effects":["spicy","burning"],"description":"If the creature is killed with spicy damage or a verified heat effect, compatible meat can become cooked meat."},{"id":"salty_jerky","effects":["salty"],"description":"If the creature is killed with salty damage, compatible meat can become jerky."}],"groupId":null,"cardTier":0,"technicalId":"Aphid","bestiaryId":"Aphid","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_aphid",
+  "speciesKey": "aphid",
+  "collectionGroup": "harmless",
+  "name": "Aphid",
+  "game": "g2",
+  "tier": 1,
+  "danger": "baja",
+  "isBoss": false,
+  "order": 207,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Aphid.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Aphid_G.png",
+  "photo": "assets/g2/creatures/photos/Aphid.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "peaceful",
+  "health": {
+    "rating": 1,
+    "value": 12
+  },
+  "description": "A tiny harmless sausage-shaped bug found in grassy areas around the park. Becomes raw aphid meat on death.",
+  "behavior": "It wanders without a clear route, pecks at ground resources, and sometimes drops aphid honeydew. Most of its life is built around finding food and fleeing from anything that feels even remotely dangerous.",
+  "interactionWithPlayer": "It fears the player and flees on sight. If you want an easy kill, it is usually better to cut off its route than to chase blindly while it chains short hops away from you.",
+  "interactionWithCreatures": "Plenty of small predators chase it, so almost every interaction ends in flight. It controls nothing; it just survives long enough to keep serving as food for something else.",
+  "strategy": "Its only real defense is speed. If you want it for food, get close before it notices you or wait for the brief pause it often leaves after the first escape burst.",
+  "environments": [
+    "Ceremony Area",
+    "Croquet Court",
+    "Entrance Area",
+    "Greenhouse",
+    "Greenhouse Surroundings",
+    "Fire Pit",
+    "Ice Cream Cart Surroundings",
+    "Picnic Table Area",
+    "Pine Hill",
+    "Pumpkin Patch",
+    "Snackbar Front Area",
+    "Statue Area",
+    "Veggie Garden"
+  ],
+  "respawnInfo": "1 day",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Speed",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Aphid Meat",
+      "minCount": 1,
+      "maxCount": 7
+    },
+    {
+      "section": "rare",
+      "item": "Honeydew",
+      "minCount": 0,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "Pet Tombstone Aphid",
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 12,
+    "stunThreshold": null,
+    "stunCooldownSeconds": null
+  },
+  "specialTraits": [
+    "Can be tamed with Plant Slurry.",
+    "Exclusive stealing can grant a Speed Droplet."
+  ],
+  "lootTransformations": [
+    {
+      "id": "spicy_cooked_meat",
+      "effects": [
+        "spicy",
+        "burning"
+      ],
+      "description": "If the creature is killed with spicy damage or a verified heat effect, compatible meat can become cooked meat."
+    },
+    {
+      "id": "salty_jerky",
+      "effects": [
+        "salty"
+      ],
+      "description": "If the creature is killed with salty damage, compatible meat can become jerky."
+    }
+  ],
+  "groupId": null,
+  "cardTier": 0,
+  "technicalId": "Aphid",
+  "bestiaryId": "Aphid",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_811f9f1e4f3bb856",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -193200.0,
+        "y": 27100.0,
+        "z": 4600.0
+      },
+      "u": 0.2558501609599063,
+      "v": 0.40273378868370013,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_676ff222b8fb1311",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -162530.62,
+        "y": 27291.695,
+        "z": 4850.5107
+      },
+      "u": 0.3707369224465906,
+      "v": 0.4035614119234337,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_40a2b9045662eab6",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -161559.73,
+        "y": 34244.188,
+        "z": 4118.4136
+      },
+      "u": 0.3743738530875036,
+      "v": 0.4335780778817775,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_99f111bc4721f980",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -167578.36,
+        "y": 42950.63,
+        "z": 4066.941
+      },
+      "u": 0.3518282095405327,
+      "v": 0.47116723636057,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_43f7645185509066",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -203300.0,
+        "y": 8700.0,
+        "z": 4971.084
+      },
+      "u": 0.21801580333625986,
+      "v": 0.32329370098659244,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_45ae3ab373f7529d",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -218874.58,
+        "y": 12736.899,
+        "z": 647.7476
+      },
+      "u": 0.15967380040971618,
+      "v": 0.3407225928661776,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2d1fb43c89be19d9",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -222622.72,
+        "y": 31361.24,
+        "z": -450.32535
+      },
+      "u": 0.14563335791630086,
+      "v": 0.4211312495151361,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2b053d6f0d0a1192",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -250509.08,
+        "y": 70177.195,
+        "z": 2473.9285
+      },
+      "u": 0.041171722563652376,
+      "v": 0.5887151011046463,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aac925527b6f2bc9",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -206308.16,
+        "y": 52097.26,
+        "z": -156.81018
+      },
+      "u": 0.20674730816505707,
+      "v": 0.5106568607808416,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7e1f119adb4e4b9",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -219976.03,
+        "y": 69500.05,
+        "z": -1266.8102
+      },
+      "u": 0.1555477951419374,
+      "v": 0.5857915979424909,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5bf3ede3a1e9caa2",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -200122.25,
+        "y": 64988.668,
+        "z": 202.80638
+      },
+      "u": 0.22991957857769973,
+      "v": 0.5663141750231893,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e7fb47e8b54467fb",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -191075.67,
+        "y": 80064.11,
+        "z": -609.3536
+      },
+      "u": 0.26380785016095987,
+      "v": 0.6314008290749642,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bcb0779337dddfca",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -215613.2,
+        "y": 3841.8206,
+        "z": 1910.179
+      },
+      "u": 0.17189085162423173,
+      "v": 0.3023190163352728,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_88be83043a964578",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -233955.61,
+        "y": 65387.43,
+        "z": 570.31177
+      },
+      "u": 0.10318062393912793,
+      "v": 0.5680357885150519,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d22bfd9b4b8d3e1a",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -156630.1,
+        "y": 9384.783,
+        "z": 5075.466
+      },
+      "u": 0.392840128767925,
+      "v": 0.3262501804199342,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_96403030b94622e5",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -220313.83,
+        "y": 57498.055,
+        "z": -841.8102
+      },
+      "u": 0.15428240444834654,
+      "v": 0.5339742318913905,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eaef1e792955b4c9",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -247366.84,
+        "y": 44973.367,
+        "z": 892.9986
+      },
+      "u": 0.052942478197249065,
+      "v": 0.47990019313601484,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_81be06d8d4b6202b",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -206183.8,
+        "y": 79592.04,
+        "z": -674.29675
+      },
+      "u": 0.20721315774070825,
+      "v": 0.6293627159119656,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e11970e7a33b0350",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -216859.0,
+        "y": 40807.133,
+        "z": 290.17892
+      },
+      "u": 0.16722411472051507,
+      "v": 0.4619129108356523,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cac6ba999129a631",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -255849.56,
+        "y": 58822.5,
+        "z": 1746.0905
+      },
+      "u": 0.021166412642669014,
+      "v": 0.5396923855299772,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e28d3c8c168579c",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -146562.17,
+        "y": -37129.51,
+        "z": 429.6125
+      },
+      "u": 0.43055435294117644,
+      "v": 0.12542955459988192,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_637beb5c9f19e80d",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -155222.55,
+        "y": -50278.746,
+        "z": 871.8236
+      },
+      "u": 0.3981127772900205,
+      "v": 0.0686590947634708,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c6230946cdcf5c72",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -139262.14,
+        "y": -49897.36,
+        "z": 1420.3192
+      },
+      "u": 0.4579000901375475,
+      "v": 0.07030568918121258,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bbdb569c57e9ccf8",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -134446.05,
+        "y": -35392.273,
+        "z": 573.24567
+      },
+      "u": 0.47594104770266316,
+      "v": 0.13292989479720047,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_48e2386b536de41b",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -121572.34,
+        "y": -39021.242,
+        "z": 649.8981
+      },
+      "u": 0.5241656564237636,
+      "v": 0.11726219829665238,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c596711dde93fca1",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -112809.57,
+        "y": -48472.57,
+        "z": 1107.6163
+      },
+      "u": 0.5569907825577992,
+      "v": 0.07645707192849306,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_151b208e7e342a6a",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -109011.54,
+        "y": -30419.82,
+        "z": 379.61313
+      },
+      "u": 0.5712181117939714,
+      "v": 0.1543979438401214,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1ea9e01a8db295c6",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -118720.11,
+        "y": -25413.107,
+        "z": 571.3958
+      },
+      "u": 0.5348500415569213,
+      "v": 0.17601390687241758,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9ba25c22cfaea929",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -126581.164,
+        "y": -23975.09,
+        "z": 2753.5505
+      },
+      "u": 0.5054027219198127,
+      "v": 0.1822223958175226,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0a62a6dfa2732fe",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -137373.62,
+        "y": -25822.79,
+        "z": 3075.848
+      },
+      "u": 0.464974440737489,
+      "v": 0.17424514309806893,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b53c6578f8885fa0",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -216874.16,
+        "y": 139365.58,
+        "z": 5049.2153
+      },
+      "u": 0.16716732572431958,
+      "v": 0.8874287626275401,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4d8619a7a1f0e248",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -100300.25,
+        "y": 42860.297,
+        "z": -143.96046
+      },
+      "u": 0.6038503950834065,
+      "v": 0.47077723302133406,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_618b2d280a3f0255",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -83339.125,
+        "y": 52370.14,
+        "z": -527.87933
+      },
+      "u": 0.6673863623061165,
+      "v": 0.5118349918205584,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fdfb437d95827b5e",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -88480.25,
+        "y": 45200.297,
+        "z": -272.70184
+      },
+      "u": 0.6481278314310799,
+      "v": 0.4808799398262922,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fb133f2164266564",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -118990.25,
+        "y": 42000.297,
+        "z": -238.05423
+      },
+      "u": 0.5338381035996488,
+      "v": 0.4670642724007083,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9d53853418ea72a8",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -112097.945,
+        "y": 58037.8,
+        "z": -328.20618
+      },
+      "u": 0.5596565127304652,
+      "v": 0.5363045248334597,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_821cde29c7406d08",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -82330.25,
+        "y": 44750.297,
+        "z": 340.67407
+      },
+      "u": 0.6711655838454784,
+      "v": 0.4789371115945694,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_047d515e26515d13",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -105750.25,
+        "y": 22710.297,
+        "z": 1322.5459
+      },
+      "u": 0.5834348258706468,
+      "v": 0.38378170220086005,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_91346e69cb0ea9cb",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -97476.52,
+        "y": 575.53705,
+        "z": 1321.6996
+      },
+      "u": 0.6144280199004974,
+      "v": 0.28821717657138046,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ee6ceacc593f6bc9",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -130198.53,
+        "y": -1247.4738,
+        "z": -299.88025
+      },
+      "u": 0.4918521556921276,
+      "v": 0.28034651669112065,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5b707f0b7592d677",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -121020.25,
+        "y": 2365.2969,
+        "z": 1007.7237
+      },
+      "u": 0.5262337723148961,
+      "v": 0.2959442787149,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f3857285bfeae04c",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -154788.1,
+        "y": 5825.443,
+        "z": 5245.314
+      },
+      "u": 0.39974021656423764,
+      "v": 0.3108830998903786,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_db155e1feedf9edb",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -245119.72,
+        "y": 135982.1,
+        "z": 5197.0107
+      },
+      "u": 0.061360135791630084,
+      "v": 0.8728209393709417,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9b49ae9e470d7086",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -233961.86,
+        "y": 142458.1,
+        "z": 5498.7764
+      },
+      "u": 0.10315721158911331,
+      "v": 0.9007803963234673,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ddd68bcd81b833cb",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -246830.03,
+        "y": 123249.08,
+        "z": 5618.0063
+      },
+      "u": 0.05495335557506585,
+      "v": 0.8178474488574079,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a59e6641ce77c98a",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -100464.72,
+        "y": -33575.242,
+        "z": -429.0042
+      },
+      "u": 0.6032342944103014,
+      "v": 0.14077473729656803,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f3a18371a02f8f02",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -89464.72,
+        "y": -22767.236,
+        "z": -2830.2114
+      },
+      "u": 0.644440030436055,
+      "v": 0.1874371799308542,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_744fca38be6b5562",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -80486.64,
+        "y": -51946.094,
+        "z": -3782.7725
+      },
+      "u": 0.6780717026631548,
+      "v": 0.061460493060123134,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2d175de759056a1b",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -68442.59,
+        "y": -47317.023,
+        "z": -4252.3823
+      },
+      "u": 0.7231884249341528,
+      "v": 0.08144602600556539,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d6c6fd7e88444f7",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -50930.047,
+        "y": -52960.633,
+        "z": -3397.0874
+      },
+      "u": 0.7887899907521218,
+      "v": 0.05708032636815922,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a8313855f7595eba",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -24826.61,
+        "y": -46718.64,
+        "z": -2103.5508
+      },
+      "u": 0.886572839332748,
+      "v": 0.08402948241841637,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_39c7f1b85972aa52",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -21388.389,
+        "y": -26277.818,
+        "z": -1885.5769
+      },
+      "u": 0.8994523326894938,
+      "v": 0.1722806069989038,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6142dee160c95309",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -51215.797,
+        "y": -19428.096,
+        "z": -4421.646
+      },
+      "u": 0.7877195781094528,
+      "v": 0.2018535698456868,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_97f00ff45a9ebd47",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -33442.76,
+        "y": -15734.19,
+        "z": -4421.646
+      },
+      "u": 0.8542969482001755,
+      "v": 0.2178016250948647,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c39c8774e5f6fed2",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -179600.0,
+        "y": 133100.0,
+        "z": 130.42647
+      },
+      "u": 0.3067954345917472,
+      "v": 0.8603777721561683,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07e66e7c7169424b",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -175512.95,
+        "y": 110789.34,
+        "z": 620.3474
+      },
+      "u": 0.3221054258121158,
+      "v": 0.7640538163420187,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e5ef0b47995f723",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -196100.0,
+        "y": 100482.586,
+        "z": 946.7533
+      },
+      "u": 0.24498683055311676,
+      "v": 0.7195554771228603,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c92c37e197120eba",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -254110.34,
+        "y": 93887.21,
+        "z": 3016.1995
+      },
+      "u": 0.027681489025460942,
+      "v": 0.6910806266970234,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_489c7a4cb1aae73d",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -167514.89,
+        "y": 152623.28,
+        "z": 510.2164
+      },
+      "u": 0.3520659666374012,
+      "v": 0.9446675045113417,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9acd225a7b94493d",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -183170.84,
+        "y": 104634.11,
+        "z": 984.6795
+      },
+      "u": 0.293419153643547,
+      "v": 0.7374792505270259,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fe6e7d3a3e04c791",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -200501.19,
+        "y": 139878.02,
+        "z": 1409.9769
+      },
+      "u": 0.22850007843137254,
+      "v": 0.8896411690699048,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3174bcd6cb2b3385",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -191789.42,
+        "y": 120456.67,
+        "z": 612.40533
+      },
+      "u": 0.2611341597892888,
+      "v": 0.805791508896197,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1187bc8695e3b918",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -197308.36,
+        "y": 133680.83,
+        "z": 1284.2532
+      },
+      "u": 0.24046034299092775,
+      "v": 0.8628854453157937,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_816be75b1f0badc0",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -230444.88,
+        "y": 123895.13,
+        "z": 826.1557
+      },
+      "u": 0.11633173426982732,
+      "v": 0.8206367025887512,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cf1c391b359b0aea",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -221241.66,
+        "y": 124636.375,
+        "z": 1488.1849
+      },
+      "u": 0.15080677553409422,
+      "v": 0.8238369508390251,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3083574186291611",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -167460.64,
+        "y": 148208.83,
+        "z": 699.2014
+      },
+      "u": 0.3522691858355282,
+      "v": 0.9256085754279448,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_79061b1b9b6e0a0f",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -232816.17,
+        "y": 81480.08,
+        "z": 786.0356
+      },
+      "u": 0.10744893883523553,
+      "v": 0.637514132388903,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e5a971b36acb9b5",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -144453.95,
+        "y": -5792.3003,
+        "z": 307.63147
+      },
+      "u": 0.43845169446883225,
+      "v": 0.2607247006189392,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_61ac11f2104dfd81",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -172350.0,
+        "y": -42800.0,
+        "z": -761.7445
+      },
+      "u": 0.3339537606087211,
+      "v": 0.10094780335610086,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0f6a0823cdcf4227",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -181280.64,
+        "y": 120021.914,
+        "z": 1271.0068
+      },
+      "u": 0.30049979748317235,
+      "v": 0.8039144950501729,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b938c61f0d649bd5",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -93961.766,
+        "y": 80004.484,
+        "z": -1627.393
+      },
+      "u": 0.6275942040386303,
+      "v": 0.6311434000168649,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d95a59545a75045a",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -77890.1,
+        "y": 64877.72,
+        "z": -792.8381
+      },
+      "u": 0.687798279192274,
+      "v": 0.5658351685639599,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d972d4523d61b2c4",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -179442.33,
+        "y": -56557.793,
+        "z": -23.128216
+      },
+      "u": 0.30738606262803636,
+      "v": 0.04154996191921744,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a217dd672a9c5d6b",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -92692.016,
+        "y": 76440.7,
+        "z": -331.02902
+      },
+      "u": 0.6323506570676031,
+      "v": 0.615757132979172,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_722dc0054b9db1f6",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -176200.23,
+        "y": -44300.0,
+        "z": -858.5832
+      },
+      "u": 0.3195308914252268,
+      "v": 0.0944717092503584,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_74886e587fca9166",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -87524.7,
+        "y": 17678.8,
+        "z": 1226.595
+      },
+      "u": 0.6517072988001169,
+      "v": 0.36205873682435274,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dbaa83fb35751ed9",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -203803.78,
+        "y": 138855.7,
+        "z": 1557.9567
+      },
+      "u": 0.21612865554580044,
+      "v": 0.8852274087191163,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f5554e9a9871a3a6",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -167175.45,
+        "y": 74199.47,
+        "z": -740.7966
+      },
+      "u": 0.3533375007316359,
+      "v": 0.6060808553840965,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_769852f37ef98260",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -113673.49,
+        "y": 135633.12,
+        "z": -2586.7703
+      },
+      "u": 0.5537545589698566,
+      "v": 0.8713142544902606,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_81f6971f11f9b65a",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -118373.21,
+        "y": 134509.69,
+        "z": -3005.418
+      },
+      "u": 0.5361495206321334,
+      "v": 0.8664639622227843,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9b60214740190a54",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -119230.016,
+        "y": 128052.14,
+        "z": -3444.2412
+      },
+      "u": 0.5329399459174715,
+      "v": 0.8385841612277596,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c04d262041f68cf",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -112444.03,
+        "y": 121522.9,
+        "z": -2520.8008
+      },
+      "u": 0.5583600866256951,
+      "v": 0.8103948461084408,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d373f4eb13d00903",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -101014.86,
+        "y": 132172.7,
+        "z": 1413.9275
+      },
+      "u": 0.6011734831723734,
+      "v": 0.8563742507799984,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e5a21f1f9a2c6119",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -80218.055,
+        "y": 119977.74,
+        "z": 58.384415
+      },
+      "u": 0.6790778156277437,
+      "v": 0.8037237783961548,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_30d1556bd327d0bf",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -103875.89,
+        "y": 119948.516,
+        "z": -1122.1707
+      },
+      "u": 0.590456133450395,
+      "v": 0.8035976068133907,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fc7b40b13210f21f",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -129631.14,
+        "y": 117766.67,
+        "z": -3598.4753
+      },
+      "u": 0.49397758501609595,
+      "v": 0.7941777134665654,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_87e8eccc7fe83126",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -66677.18,
+        "y": 96302.375,
+        "z": -2542.4917
+      },
+      "u": 0.729801608428446,
+      "v": 0.7015078505776204,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f9ed739beb4e036a",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -106374.6,
+        "y": 105971.586,
+        "z": -3305.5808
+      },
+      "u": 0.581096025753585,
+      "v": 0.7432536641538072,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5c7683b073b55162",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -136661.33,
+        "y": 125234.07,
+        "z": -3561.0105
+      },
+      "u": 0.4676426619841967,
+      "v": 0.8264174368833798,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c87906378829f625",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -140349.66,
+        "y": 110725.836,
+        "z": -3044.0476
+      },
+      "u": 0.4538262663154814,
+      "v": 0.7637796444219581,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a93203bf6dbcb63",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -94199.36,
+        "y": 112138.84,
+        "z": -1596.789
+      },
+      "u": 0.6267041826163302,
+      "v": 0.7698801423391517,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6836f979551d9793",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -121480.945,
+        "y": 106915.42,
+        "z": -3239.2454
+      },
+      "u": 0.5245080199004974,
+      "v": 0.7473285693566067,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c378a02e3d52543d",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -168873.6,
+        "y": 62918.383,
+        "z": 399.01907
+      },
+      "u": 0.3469762715832601,
+      "v": 0.5573759346993844,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9f43d444ed9c68a4",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -181427.92,
+        "y": 77162.875,
+        "z": -12.108509
+      },
+      "u": 0.29994809013754753,
+      "v": 0.6188750484863816,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_759b8f18d01b18c7",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -177715.02,
+        "y": 57332.863,
+        "z": 1534.4192
+      },
+      "u": 0.31385652443664036,
+      "v": 0.5332610325997134,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_51c33b4cc8209b8f",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -162372.05,
+        "y": 49033.84,
+        "z": 1385.7599
+      },
+      "u": 0.3713309218612819,
+      "v": 0.49743086331056574,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0430c4f6aeca4ed",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -122618.05,
+        "y": 46114.24,
+        "z": -1183.3813
+      },
+      "u": 0.5202484518583553,
+      "v": 0.48482579374314866,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9789eb19a37e4238",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -138150.19,
+        "y": 59290.645,
+        "z": -2420.8293
+      },
+      "u": 0.46206542815335083,
+      "v": 0.5417135529133991,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ccedbb5ffb6ea9a7",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -139479.7,
+        "y": 47997.508,
+        "z": -613.50635
+      },
+      "u": 0.45708511559847814,
+      "v": 0.4929566076060377,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3871a0cc9a1da74b",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -151587.38,
+        "y": 46346.594,
+        "z": 302.1732
+      },
+      "u": 0.41173003687445126,
+      "v": 0.4858289579897124,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a5a7317e724bca8",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -175235.5,
+        "y": 84945.14,
+        "z": -964.46265
+      },
+      "u": 0.3231447468539655,
+      "v": 0.6524741688169323,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8558dee632813a99",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -145742.72,
+        "y": 130690.26,
+        "z": -2778.8054
+      },
+      "u": 0.433623992976295,
+      "v": 0.8499739701492538,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07544f087ed7cdfd",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -157667.7,
+        "y": 129558.56,
+        "z": -3023.2751
+      },
+      "u": 0.3889533040678958,
+      "v": 0.8450879730162745,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_80928be75692f991",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -162404.83,
+        "y": 140159.83,
+        "z": -1673.8589
+      },
+      "u": 0.37120812876792514,
+      "v": 0.8908578544565307,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ab24beb1c82a0518",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -105198.82,
+        "y": 96750.71,
+        "z": -4207.6074
+      },
+      "u": 0.5855004694176178,
+      "v": 0.7034434903448858,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fe779da8d94600b9",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -117278.69,
+        "y": 93781.05,
+        "z": -4546.6865
+      },
+      "u": 0.540249566286216,
+      "v": 0.6906222919301795,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b44c0c86dd940719",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -136944.05,
+        "y": 40114.266,
+        "z": -429.97354
+      },
+      "u": 0.46658359964881485,
+      "v": 0.45892152957247667,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_49bf4881d18c48e8",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -124467.15,
+        "y": 124615.87,
+        "z": -2887.4072
+      },
+      "u": 0.5133217676324261,
+      "v": 0.8237484226325996,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8624918d1bba1da2",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -157126.9,
+        "y": 66025.836,
+        "z": -354.66132
+      },
+      "u": 0.390979127889962,
+      "v": 0.5707920400708323,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d8663d73a020f8d",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -76840.305,
+        "y": 157748.19,
+        "z": 1582.0629
+      },
+      "u": 0.6917307860696517,
+      "v": 0.966793770806982,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6e223c377b06770f",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -91105.12,
+        "y": 153625.5,
+        "z": 387.52927
+      },
+      "u": 0.6382951314018144,
+      "v": 0.9489944852011131,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_733cec7014cbbdbf",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -106878.56,
+        "y": 158109.58,
+        "z": 1586.1086
+      },
+      "u": 0.5792082036874451,
+      "v": 0.968354034572898,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c4a69d665e3aa25d",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -116276.57,
+        "y": 140178.22,
+        "z": -782.7307
+      },
+      "u": 0.5440034837576821,
+      "v": 0.8909372513702672,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a52f9fe21d97cd2d",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -123178.11,
+        "y": 135076.84,
+        "z": -539.97504
+      },
+      "u": 0.5181504805384841,
+      "v": 0.8689125734041655,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c17a4ab7dfdbe2ba",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -114267.38,
+        "y": 85210.57,
+        "z": -2914.8425
+      },
+      "u": 0.5515298612818261,
+      "v": 0.6536201352559239,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b4f0213a99ae1ae6",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -132546.36,
+        "y": 93374.336,
+        "z": -5243.009
+      },
+      "u": 0.4830572408545508,
+      "v": 0.6888663465047643,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dab79ea18377f2a0",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -139474.48,
+        "y": 98066.68,
+        "z": -4715.768
+      },
+      "u": 0.4571046695932104,
+      "v": 0.7091250540517751,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8476cd51f1663c66",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -143783.16,
+        "y": 87734.734,
+        "z": -5252.0483
+      },
+      "u": 0.44096445771144277,
+      "v": 0.6645179509908086,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7b481889d8a9a1b",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -129250.75,
+        "y": 80292.984,
+        "z": -4059.2961
+      },
+      "u": 0.49540251682762654,
+      "v": 0.6323889687832026,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_075e4f2cc6c2b418",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -150573.12,
+        "y": 104642.36,
+        "z": -4424.6475
+      },
+      "u": 0.4155294304945859,
+      "v": 0.7375148690446074,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b94c29c7862c8eac",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -166225.06,
+        "y": 131002.94,
+        "z": -2354.5315
+      },
+      "u": 0.35689763886450104,
+      "v": 0.8513239335525761,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5626ac785e337acd",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -164056.62,
+        "y": 111243.16,
+        "z": -2913.9314
+      },
+      "u": 0.36502056306701786,
+      "v": 0.7660131370267308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0067231c2612b00d",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -162374.0,
+        "y": 100481.03,
+        "z": -2779.662
+      },
+      "u": 0.3713236172080773,
+      "v": 0.7195487592545746,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5e20b3f80ec9a30e",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -155585.95,
+        "y": 80845.484,
+        "z": -3736.8516
+      },
+      "u": 0.3967514896107696,
+      "v": 0.6347743301121511,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2e8276df80729ef6",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -91471.42,
+        "y": 126336.04,
+        "z": 1899.2766
+      },
+      "u": 0.6369229803921569,
+      "v": 0.8311750778311829,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1ae654ab5c9b7ad1",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -99940.07,
+        "y": 144422.86,
+        "z": 267.6535
+      },
+      "u": 0.6051996207199297,
+      "v": 0.9092630434269331,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ab484d387d1f1054",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -88555.07,
+        "y": 145402.45,
+        "z": 1170.1753
+      },
+      "u": 0.6478475575065846,
+      "v": 0.9134923214436294,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_57e14b59c36d3ce8",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -71210.85,
+        "y": 142075.39,
+        "z": -1735.933
+      },
+      "u": 0.7128185894059117,
+      "v": 0.8991280856733282,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_308dfc9f445eca2a",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -79526.1,
+        "y": 130636.71,
+        "z": 955.7856
+      },
+      "u": 0.6816698624524437,
+      "v": 0.8497427735896788,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_775d1f1c45b212e6",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -68877.5,
+        "y": 114046.14,
+        "z": -2687.3867
+      },
+      "u": 0.7215592625109745,
+      "v": 0.7781147118644067,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_edce0107bde4a6aa",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -80678.62,
+        "y": 99879.79,
+        "z": -3198.4636
+      },
+      "u": 0.6773525501902253,
+      "v": 0.71695296804115,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aca4715134aab6b0",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -99040.98,
+        "y": 89378.98,
+        "z": -2750.838
+      },
+      "u": 0.6085675902838749,
+      "v": 0.6716168122101357,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e80ffd333cbca862",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -96146.91,
+        "y": 80195.86,
+        "z": -1710.6945
+      },
+      "u": 0.6194087070529705,
+      "v": 0.6319696460072517,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4b06d8f47cfd7ea8",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -79511.63,
+        "y": 72832.625,
+        "z": 517.543
+      },
+      "u": 0.6817240667251975,
+      "v": 0.6001796441521208,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a121ef8a82d892a9",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -72728.734,
+        "y": 89692.98,
+        "z": -2190.0078
+      },
+      "u": 0.7071326323675738,
+      "v": 0.6729724745762711,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60eb850630d553a1",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -62345.496,
+        "y": 78523.96,
+        "z": -1313.7023
+      },
+      "u": 0.7460279927421716,
+      "v": 0.6247513915169913,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f25da97e53b909e8",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -142414.95,
+        "y": 13611.386,
+        "z": 2010.3453
+      },
+      "u": 0.446089739537606,
+      "v": 0.34449809960367656,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5bef73cce663c090",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -140416.03,
+        "y": 3071.2905,
+        "z": 618.4598
+      },
+      "u": 0.453577645888206,
+      "v": 0.29899233270933473,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3e2d92841539b074",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -146388.6,
+        "y": -4173.651,
+        "z": 1872.6929
+      },
+      "u": 0.4312045419959028,
+      "v": 0.2677130507462686,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_779d0433885544d7",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -146851.97,
+        "y": 33082.945,
+        "z": 1657.6589
+      },
+      "u": 0.429468769095698,
+      "v": 0.42856453191668775,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_54b7332151fffa26",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -139160.33,
+        "y": 22330.594,
+        "z": 1007.6548
+      },
+      "u": 0.458281467954346,
+      "v": 0.38214237396070494,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c2098f3b9764b314",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -129953.18,
+        "y": 30670.826,
+        "z": 68.97108
+      },
+      "u": 0.492771230904302,
+      "v": 0.4181504588245214,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0d6d0961c5f164c4",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -117591.5,
+        "y": 32332.662,
+        "z": -579.6526
+      },
+      "u": 0.5390777875329237,
+      "v": 0.4253252630407286,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_308c96131a051da9",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -146772.12,
+        "y": 68517.12,
+        "z": -2612.7803
+      },
+      "u": 0.42976788527948495,
+      "v": 0.5815478998229193,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b4aef61a24b6e63c",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -211051.56,
+        "y": -24631.432,
+        "z": 1594.2043
+      },
+      "u": 0.18897864559555166,
+      "v": 0.1793887074458217,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9520a29a05ab34c7",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -197029.45,
+        "y": -35769.67,
+        "z": 132.57994
+      },
+      "u": 0.24150513315774066,
+      "v": 0.13130052247238386,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_41aeddc1a1e8502f",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -188659.4,
+        "y": -33212.06,
+        "z": 1166.614
+      },
+      "u": 0.272859139596137,
+      "v": 0.1423427378362425,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e60c5ad2dd07f6de",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -189635.52,
+        "y": -38835.316,
+        "z": 1110.186
+      },
+      "u": 0.2692026175007317,
+      "v": 0.1180649144784552,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_983293356517face",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -222090.94,
+        "y": -44880.883,
+        "z": 4877.7144
+      },
+      "u": 0.14762539303482586,
+      "v": 0.09196380726874102,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_16e974582edf2945",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -226150.02,
+        "y": -25542.812,
+        "z": 2606.9365
+      },
+      "u": 0.13242017676324266,
+      "v": 0.17545391901509402,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2aea397431858243",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -26134.703,
+        "y": 25436.273,
+        "z": -4742.3276
+      },
+      "u": 0.8816727543459175,
+      "v": 0.39555082027152366,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a7022701a14fc91c",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -21671.426,
+        "y": 24822.564,
+        "z": -4705.599
+      },
+      "u": 0.8983920828797191,
+      "v": 0.39290119544649643,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b7adde8afa01689a",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -55202.04,
+        "y": 76832.766,
+        "z": -1534.1041
+      },
+      "u": 0.7727872074919521,
+      "v": 0.6174498371869466,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b5c533ee75f93def",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -59658.44,
+        "y": 49309.668,
+        "z": 2561.1072
+      },
+      "u": 0.7560936400351186,
+      "v": 0.4986217220338984,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ccb3dc9703d68c6",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -56730.688,
+        "y": 67981.55,
+        "z": 478.4367
+      },
+      "u": 0.7670609287679251,
+      "v": 0.5792356320094443,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_00239f9eedff6cda",
+      "targetType": "creature",
+      "targetId": "g2_aphid",
+      "technicalId": "Aphid",
+      "map": "surface",
+      "world": {
+        "x": -15246.345,
+        "y": 141.9869,
+        "z": -1535.5863
+      },
+      "u": 0.9224602821188177,
+      "v": 0.28634536885740786,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Aphid.webp",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Speed",
+      "countLabel": "1",
+      "chancePct": 0,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Aphid Meat",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 6,
+      "notes": "6 independent rolls"
+    },
+    {
+      "item": "Aphid Meat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Honeydew",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Pet Tombstone Aphid",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

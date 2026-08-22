@@ -1,1 +1,1950 @@
-{"id":"g2_ancient_pond_jockey","speciesKey":"ancient_pond_jockey","collectionGroup":"angry","game":"g2","danger":"unknown","order":265,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_ancient_pond_jockey.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Мы готовим эту информацию для вас.","interactionWithPlayer":"Мы готовим эту информацию для вас.","interactionWithCreatures":"Мы готовим эту информацию для вас.","strategy":"Мы готовим эту информацию для вас.","groupId":null,"name":"Древний рой прудовых наездников","tier":3,"cardTier":3,"technicalId":"PondJockeyAncient","bestiaryId":"PondJockeyAncient","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PondJockey.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PondJockey_G.png","weaknesses":["salty"],"resistances":[],"elementalWeaknesses":[{"type":"salty","bonusPct":15}],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[{"name":"Pond Jockey Homing Projectile 5 Projectile","technicalId":"PondJockey_HomingProjectile_5Projectile","tags":["buff","ranged"],"notes":"Урон атаки: 0"},{"name":"Pond Jockey Homing Projectile 5 Projectile Burst","technicalId":"PondJockey_HomingProjectile_5Projectile_Burst","tags":["buff","ranged"],"notes":"Урон атаки: 0"},{"name":"Pond Jockey Homing Projectile 3 Projectile","technicalId":"PondJockey_HomingProjectile_3Projectile","tags":["buff","ranged"],"notes":"Урон атаки: 0"},{"name":"Pond Jockey Homing Projectile 3 Projectile Burst","technicalId":"PondJockey_HomingProjectile_3Projectile_Burst","tags":["buff","ranged"],"notes":"Урон атаки: 0"},{"name":"Pond Jockey Homing Projectile 1 Projectile","technicalId":"PondJockey_HomingProjectile_1Projectile","tags":["buff","ranged"],"notes":"Урон атаки: 0"},{"name":"Pond Jockey Homing Projectile 1 Projectile Burst","technicalId":"PondJockey_HomingProjectile_1Projectile_Burst","tags":["buff","ranged"],"notes":"Урон атаки: 0"},{"name":"Pond Jockey Water Dodge","technicalId":"PondJockey_WaterDodge","tags":[],"notes":"Урон атаки: 0"},{"name":"Melee","technicalId":"PondJockey_Melee","tags":["generic"],"notes":"Урон атаки: 120"},{"name":"Melee W Swarm","technicalId":"PondJockey_Melee_W_Swarm","tags":["generic"],"notes":"Урон атаки: 100"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":1200,"rating":4},"combatStats":{"health":1200},"description":"Мы готовим эту информацию для вас.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ancient_pond_jockey",
+  "speciesKey": "ancient_pond_jockey",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "muy_alta",
+  "order": 265,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_ancient_pond_jockey.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Algae",
+      "minCount": 0,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "Pond Jockey Meat",
+      "minCount": 1,
+      "maxCount": 5
+    }
+  ],
+  "abilities": [],
+  "behavior": "Они обитают в глубинах Бездны и ведут себя похоже на обычных водяных жокеев: перемещаются группой и атакуют приближающиеся угрозы. Они значительно выносливее поверхностных вариантов.",
+  "interactionWithPlayer": "Они враждебны и могут сильно раздражать из-за огромного запаса здоровья. По внешнему виду их легко принять за второстепенных врагов, но убийство занимает гораздо больше времени, чем ожидается.",
+  "interactionWithCreatures": "Обычно они встречаются рядом с другими древними водяными жокеями и могут сражаться с существами, вошедшими в их зону. Повышенная живучесть делает их трудной добычей для мелких врагов.",
+  "strategy": "Если бой необходим, используйте оружие с инфузией Salty и не позволяйте им окружить вас. Но обычно лучше проплыть мимо: здоровья у них ещё больше, чем у обычных водяных жокеев, а основной трофей всё равно остаётся их мясом, поэтому затраты редко окупаются.",
+  "groupId": null,
+  "name": "Древний рой прудовых наездников",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "PondJockeyAncient",
+  "bestiaryId": "PondJockeyAncient",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PondJockey.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PondJockey_G.png",
+  "weaknesses": [
+    "salty"
+  ],
+  "resistances": [],
+  "elementalWeaknesses": [
+    {
+      "type": "salty",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Pond Jockey Homing Projectile 5 Projectile",
+      "technicalId": "PondJockey_HomingProjectile_5Projectile",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 5 Projectile Passive Attack"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 5 Projectile Passive Attack",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Homing Projectile 5 Projectile Burst",
+      "technicalId": "PondJockey_HomingProjectile_5Projectile_Burst",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 15.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 5 Projectile Passive Attack Burst"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 5 Projectile Passive Attack Burst",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Homing Projectile 3 Projectile",
+      "technicalId": "PondJockey_HomingProjectile_3Projectile",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 3 Projectile Passive Attack"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 3 Projectile Passive Attack",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Homing Projectile 3 Projectile Burst",
+      "technicalId": "PondJockey_HomingProjectile_3Projectile_Burst",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 15.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 3 Projectile Passive Attack Burst"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 3 Projectile Passive Attack Burst",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Homing Projectile 1 Projectile",
+      "technicalId": "PondJockey_HomingProjectile_1Projectile",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 5.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 1 Projectile Passive Attack"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 1 Projectile Passive Attack",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Homing Projectile 1 Projectile Burst",
+      "technicalId": "PondJockey_HomingProjectile_1Projectile_Burst",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 15.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 1 Projectile Passive Attack Burst"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 1 Projectile Passive Attack Burst",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Water Dodge",
+      "technicalId": "PondJockey_WaterDodge",
+      "tags": [],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "movement_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Melee",
+      "technicalId": "PondJockey_Melee",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 120",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 5.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Melee W Swarm",
+      "technicalId": "PondJockey_Melee_W_Swarm",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 100",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 5.0,
+      "range": 600.0,
+      "stun": 4,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 4,
+    "value": 1200
+  },
+  "combatStats": {
+    "health": 1200,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "description": "Мы готовим эту информацию для вас.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_5e42f9bcc0422b46",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 177513.73,
+        "y": 191225.2,
+        "z": -8248.795
+      },
+      "u": 0.08442149609348927,
+      "v": 0.4159028127931771,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_f8ab7db229551dd7",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 175706.44,
+        "y": 197023.73,
+        "z": -7246.3994
+      },
+      "u": 0.05970476874791322,
+      "v": 0.4665441323667378,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_a2b36903167f7ba7",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 237853.48,
+        "y": 152677.22,
+        "z": 29075.54
+      },
+      "u": 0.9096355728881471,
+      "v": 0.07924497466950961,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_b63d4537baa7a829",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 206334.88,
+        "y": 175800.2,
+        "z": -11593.182
+      },
+      "u": 0.4785832002671119,
+      "v": 0.2811889535181238,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_e03b4de7dc349975",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 198741.4,
+        "y": 169708.95,
+        "z": -10671.172
+      },
+      "u": 0.3747338043405676,
+      "v": 0.22799117100213231,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_ec59644ea9624eca",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 203050.55,
+        "y": 199680.69,
+        "z": -10671.172
+      },
+      "u": 0.43366628647746225,
+      "v": 0.48974862737739877,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_5f8beeda2c19c426",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 187350.94,
+        "y": 200342.08,
+        "z": -10540.961
+      },
+      "u": 0.2189564281803005,
+      "v": 0.4955248607249465,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_275f7fd342a2edb8",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 184011.72,
+        "y": 173561.9,
+        "z": -9198.828
+      },
+      "u": 0.17328883178631052,
+      "v": 0.26164081535181233,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_72645cf968870dca",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 226220.73,
+        "y": 186260.56,
+        "z": -11889.583
+      },
+      "u": 0.7505446079465777,
+      "v": 0.37254425108742,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_4ad810fa752c41ec",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 194813.2,
+        "y": 188456.34,
+        "z": -8350.699
+      },
+      "u": 0.3210112427378966,
+      "v": 0.3917210418763326,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_221cfd9dc18e412f",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 195850.28,
+        "y": 193061.95,
+        "z": -8768.347
+      },
+      "u": 0.33519448040066774,
+      "v": 0.4319440238805971,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_abcf4ee8d7d35e36",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 232602.98,
+        "y": 150571.27,
+        "z": 8896.388
+      },
+      "u": 0.8378290687145243,
+      "v": 0.060852711982942335,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_02626d1e6b9780b7",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 236088.27,
+        "y": 157325.28,
+        "z": 30804.951
+      },
+      "u": 0.8854943369616025,
+      "v": 0.1198386927078891,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_1209fea931e52c66",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 222234.12,
+        "y": 220689.78,
+        "z": -15117.452
+      },
+      "u": 0.6960232237729548,
+      "v": 0.6732309997441365,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_dbeb911d4f2738af",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 221467.94,
+        "y": 212820.08,
+        "z": -14179.575
+      },
+      "u": 0.685544848881469,
+      "v": 0.6045011677611939,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_b0a4f2caed173e14",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 220575.5,
+        "y": 206738.9,
+        "z": -12865.266
+      },
+      "u": 0.6733397262103505,
+      "v": 0.5513913313432836,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_e13c225860b6cad4",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 227506.88,
+        "y": 223223.25,
+        "z": -14262.218
+      },
+      "u": 0.7681341585308848,
+      "v": 0.6953569978678038,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_fb2af6aeac4178b4",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 227204.67,
+        "y": 223959.55,
+        "z": -14123.856
+      },
+      "u": 0.7640010962270452,
+      "v": 0.7017874558635393,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_8fd7fa6c2755629a",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 220050.56,
+        "y": 226180.22,
+        "z": -16024.677
+      },
+      "u": 0.6661605801669449,
+      "v": 0.7211816228571429,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_bcc1e426a4b9f50e",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 216056.47,
+        "y": 226117.08,
+        "z": -15929.614
+      },
+      "u": 0.6115368985642738,
+      "v": 0.7206301912153517,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_e15ba70451afd5e9",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 213630.12,
+        "y": 225502.48,
+        "z": -15500.883
+      },
+      "u": 0.5783538281135225,
+      "v": 0.7152625971855011,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_74a702ad5625667b",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 226837.7,
+        "y": 226729.33,
+        "z": -15185.302
+      },
+      "u": 0.7589823679465778,
+      "v": 0.725977261577825,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_492cc4c8975a7041",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 224194.33,
+        "y": 200112.2,
+        "z": -11997.027
+      },
+      "u": 0.7228313044407343,
+      "v": 0.49351720938166316,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_a29a74c850eedf35",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 230173.38,
+        "y": 223303.0,
+        "z": -14802.735
+      },
+      "u": 0.8046015508514192,
+      "v": 0.6960534925373135,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_276605f3506fc7b5",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 223924.89,
+        "y": 223712.52,
+        "z": -15385.168
+      },
+      "u": 0.7191464088146913,
+      "v": 0.6996300254157781,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_b793c762c21b279f",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 231971.83,
+        "y": 156017.08,
+        "z": -10593.531
+      },
+      "u": 0.8291973812353921,
+      "v": 0.10841356008528774,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_be08739a6f88c358",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 235844.48,
+        "y": 161464.75,
+        "z": -10510.894
+      },
+      "u": 0.8821602339899834,
+      "v": 0.1559906524520256,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_3e7736ea72bec8bb",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 227971.92,
+        "y": 159210.64,
+        "z": -10385.4795
+      },
+      "u": 0.7744941045742908,
+      "v": 0.13630443803837966,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_8e82a0c64769b7fd",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 230472.25,
+        "y": 177446.39,
+        "z": -12760.068
+      },
+      "u": 0.8086889348914859,
+      "v": 0.2955659135181238,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_e47eb798f5d9fcda",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 227837.83,
+        "y": 177910.9,
+        "z": -12838.051
+      },
+      "u": 0.7726602727212019,
+      "v": 0.2996227002132196,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_20a9443bb66fe8f7",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 227541.75,
+        "y": 182117.97,
+        "z": -11342.471
+      },
+      "u": 0.7686110450751252,
+      "v": 0.3363650428997868,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_be951580cfb4090a",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 219656.25,
+        "y": 180008.56,
+        "z": -11516.007
+      },
+      "u": 0.6607679465776294,
+      "v": 0.31794256238805974,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_bf5e3bac64772862",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 213308.72,
+        "y": 184309.28,
+        "z": -11601.675
+      },
+      "u": 0.5739583209348915,
+      "v": 0.3555027950533049,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_2a63361c285f06e3",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 194269.1,
+        "y": 172064.88,
+        "z": -10579.021
+      },
+      "u": 0.3135700621035059,
+      "v": 0.24856662788912584,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_e8b7a994bfd435fd",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 197496.66,
+        "y": 175717.83,
+        "z": -9642.1875
+      },
+      "u": 0.35771058217028384,
+      "v": 0.28046957714285703,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_11d94ab6e789d5b9",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 202720.95,
+        "y": 170605.12,
+        "z": -14136.367
+      },
+      "u": 0.42915863505843094,
+      "v": 0.23581784972281444,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_60394b1071999bc0",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 201603.78,
+        "y": 180781.98,
+        "z": -13771.073
+      },
+      "u": 0.41388007639399,
+      "v": 0.3246972069936035,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_e9136f986cb2ba5f",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 234496.7,
+        "y": 152752.92,
+        "z": -10553.721
+      },
+      "u": 0.8637278237061772,
+      "v": 0.07990609876332634,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_f9b0def1875337f5",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 230594.23,
+        "y": 173090.47,
+        "z": -11632.854
+      },
+      "u": 0.8103571488480803,
+      "v": 0.2575235930063966,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_f5d999340f10fb7a",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 227762.17,
+        "y": 165315.19,
+        "z": -10853.055
+      },
+      "u": 0.7716255369616029,
+      "v": 0.18961837577825164,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_0e5472d5796816ea",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 228858.58,
+        "y": 169636.9,
+        "z": -11497.101
+      },
+      "u": 0.7866201792320533,
+      "v": 0.2273619240938166,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_fe72a1f6040f11b5",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 223102.67,
+        "y": 168822.98,
+        "z": -11472.64
+      },
+      "u": 0.7079016237729551,
+      "v": 0.22025357373134336,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_c881ddd3b51ab503",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 225329.14,
+        "y": 174970.61,
+        "z": -11732.078
+      },
+      "u": 0.7383511099833057,
+      "v": 0.2739437495948826,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_d7d6476f1d55b431",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 225887.1,
+        "y": 172304.05,
+        "z": -11935.46
+      },
+      "u": 0.7459818417362271,
+      "v": 0.2506554132196161,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_76fec91f627b2e79",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 210625.16,
+        "y": 177088.28,
+        "z": -13972.979
+      },
+      "u": 0.5372576138898164,
+      "v": 0.29243836861407246,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_99b39733e1b1a455",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 211817.56,
+        "y": 179065.3,
+        "z": -12267.006
+      },
+      "u": 0.5535650275792988,
+      "v": 0.3097046243070361,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_320fa42e1eb5f4c6",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 218913.03,
+        "y": 186383.45,
+        "z": -11854.121
+      },
+      "u": 0.6506035755592654,
+      "v": 0.3736175078891259,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_d698b6f6078c4fae",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 196008.44,
+        "y": 186932.52,
+        "z": -10097.086
+      },
+      "u": 0.3373574966277129,
+      "v": 0.3784127972707888,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_4b38b611a295cc03",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 193756.11,
+        "y": 188509.6,
+        "z": -12804.683
+      },
+      "u": 0.30655434577629365,
+      "v": 0.39218618678038386,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_9702b1d992bb5e62",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 222573.62,
+        "y": 177647.86,
+        "z": -11760.423
+      },
+      "u": 0.7006662688480801,
+      "v": 0.2973254468230276,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_2a2aa84744ead9ab",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 233389.22,
+        "y": 158074.53,
+        "z": -10527.696
+      },
+      "u": 0.8485817867111853,
+      "v": 0.1263822492110874,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_49237a79340a70c7",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 235541.77,
+        "y": 175744.5,
+        "z": -12454.483
+      },
+      "u": 0.8780203336227045,
+      "v": 0.2807024989339019,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_dab0b289c3013181",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 234809.73,
+        "y": 173684.53,
+        "z": -12039.084
+      },
+      "u": 0.8680088617028381,
+      "v": 0.26271180144989337,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_88f76efe7dcfceac",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 236469.98,
+        "y": 147070.58,
+        "z": -10357.178
+      },
+      "u": 0.8907146513522538,
+      "v": 0.03027952170575681,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_6dd4b6f67c0cc7ca",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 237958.58,
+        "y": 152703.33,
+        "z": -10395.113
+      },
+      "u": 0.9110729338230382,
+      "v": 0.0794730057142856,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_c574c3b9df6ab92e",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 226275.6,
+        "y": 185509.64,
+        "z": -11875.606
+      },
+      "u": 0.7512950170283806,
+      "v": 0.3659861096801707,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_2e5237e4074139fc",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 226733.48,
+        "y": 184695.97,
+        "z": -11812.18
+      },
+      "u": 0.7575570420033391,
+      "v": 0.3588799426865672,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_9f60fbd92a7c286e",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 226707.22,
+        "y": 183467.23,
+        "z": -11824.811
+      },
+      "u": 0.7571979069115192,
+      "v": 0.3481487720255865,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_b620851cb87051b6",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 232587.73,
+        "y": 170275.3,
+        "z": -11293.401
+      },
+      "u": 0.8376205077796329,
+      "v": 0.23293737484008517,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_e1e9cfa3c1c9a712",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 229713.75,
+        "y": 179399.67,
+        "z": -11459.751
+      },
+      "u": 0.7983155926544241,
+      "v": 0.3126248365031984,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_f821267edf1525ad",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 224999.5,
+        "y": 196639.25,
+        "z": -12161.603
+      },
+      "u": 0.7338429115191987,
+      "v": 0.4631862857142857,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_d0f03a5b7fbd1791",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 220412.1,
+        "y": 187644.4,
+        "z": -11914.121
+      },
+      "u": 0.6711050470784642,
+      "v": 0.3846299837953091,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_cf69ac2733ed8fed",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 238524.78,
+        "y": 152191.75,
+        "z": 35098.39
+      },
+      "u": 0.9188163568614358,
+      "v": 0.0750051343283582,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_ac9831712dd5c916",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 234809.25,
+        "y": 158441.3,
+        "z": 35620.38
+      },
+      "u": 0.8680022971619364,
+      "v": 0.12958542601279308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_ec0910c16350cbb0",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 185830.94,
+        "y": 197722.08,
+        "z": -10360.895
+      },
+      "u": 0.1981687153255426,
+      "v": 0.47264315496801695,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_b99c9f0770968cb3",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 199310.77,
+        "y": 171109.86,
+        "z": -11847.424
+      },
+      "u": 0.38252058070116846,
+      "v": 0.24022598413646043,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_4ef24fcf8e5e9f0b",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 180650.67,
+        "y": 172770.42,
+        "z": -10598.089
+      },
+      "u": 0.12732268554257115,
+      "v": 0.25472844417910456,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_a88f359b59b72d46",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 206905.97,
+        "y": 172611.1,
+        "z": -11335.931
+      },
+      "u": 0.48639349956594324,
+      "v": 0.2533370268656717,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_8acb3ce2428de862",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 187766.97,
+        "y": 174287.75,
+        "z": -10735.744
+      },
+      "u": 0.22464610724540904,
+      "v": 0.2679800085287847,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_9864aba231d9ad27",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 197876.39,
+        "y": 197168.1,
+        "z": -9228.728
+      },
+      "u": 0.3629038178297164,
+      "v": 0.4678049842217485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_8446ca0bd14946ad",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 225076.92,
+        "y": 220778.52,
+        "z": -12086.177
+      },
+      "u": 0.7349017172621036,
+      "v": 0.6740060083582089,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_1118c39c689806be",
+      "targetType": "creature",
+      "targetId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "map": "abyss",
+      "world": {
+        "x": 225076.92,
+        "y": 220778.52,
+        "z": -12661.358
+      },
+      "u": 0.7349017172621036,
+      "v": 0.6740060083582089,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    }
+  ],
+  "environmentHazards": [
+    "required_equipment"
+  ],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Algae",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Algae",
+      "countLabel": "2",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pond Jockey Meat",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Pond Jockey Meat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

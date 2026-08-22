@@ -1,0 +1,1046 @@
+{
+  "effects": [
+    {
+      "technicalEffect": "Blue Butterfly Chill Gust",
+      "normalizedEffect": "chill",
+      "localizedName": {
+        "en": "Chill",
+        "es": "Congelamiento",
+        "ru": "Холод"
+      },
+      "iconAsset": "assets/global/effects_damage/Chilling_Attack.png",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Chill Large",
+      "normalizedEffect": "chill",
+      "localizedName": {
+        "en": "Chill",
+        "es": "Congelamiento",
+        "ru": "Холод"
+      },
+      "iconAsset": "assets/global/effects_damage/Chilling_Attack.png",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 3,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Corrosion Large",
+      "normalizedEffect": "tang_buildup",
+      "localizedName": {
+        "en": "Tang buildup",
+        "es": "Corrosión",
+        "ru": "Коррозия"
+      },
+      "iconAsset": "assets/global/effects_damage/TangBuildUp.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Corrosion Medium",
+      "normalizedEffect": "tang_buildup",
+      "localizedName": {
+        "en": "Tang buildup",
+        "es": "Corrosión",
+        "ru": "Коррозия"
+      },
+      "iconAsset": "assets/global/effects_damage/TangBuildUp.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 14,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Full Heal",
+      "normalizedEffect": "full heal",
+      "localizedName": {
+        "en": "Full Heal",
+        "es": "Full Heal",
+        "ru": "Full Heal"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 3,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Infected Healing Received Down",
+      "normalizedEffect": "infected healing received down",
+      "localizedName": {
+        "en": "Infected Healing Received Down",
+        "es": "Infected Healing Received Down",
+        "ru": "Infected Healing Received Down"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 1,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Infection Damage Debuff Short",
+      "normalizedEffect": "infection",
+      "localizedName": {
+        "en": "Infection",
+        "es": "Infección",
+        "ru": "Инфекция"
+      },
+      "iconAsset": "assets/global/effects_damage/Infection.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 4,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Infection Speed Debuff Short",
+      "normalizedEffect": "infection",
+      "localizedName": {
+        "en": "Infection",
+        "es": "Infección",
+        "ru": "Инфекция"
+      },
+      "iconAsset": "assets/global/effects_damage/Infection.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 4,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Ladybug Roar Attack Up",
+      "normalizedEffect": "ladybug roar attack up",
+      "localizedName": {
+        "en": "Ladybug Roar Attack Up",
+        "es": "Ladybug Roar Attack Up",
+        "ru": "Ladybug Roar Attack Up"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 3,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Ladybug Roar Move Speed Up",
+      "normalizedEffect": "ladybug roar move speed up",
+      "localizedName": {
+        "en": "Ladybug Roar Move Speed Up",
+        "es": "Ladybug Roar Move Speed Up",
+        "ru": "Ladybug Roar Move Speed Up"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 3,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "OGRE Blue Butterfly Gust Mint",
+      "normalizedEffect": "fresh",
+      "localizedName": {
+        "en": "Fresh",
+        "es": "Fresco",
+        "ru": "Свежесть"
+      },
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 1,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "OGRE Blue Butterfly Gust Sour",
+      "normalizedEffect": "sour",
+      "localizedName": {
+        "en": "Sour",
+        "es": "Ácido",
+        "ru": "Кислый"
+      },
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 1,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "OGRE Blue Butterfly Gust Spicy",
+      "normalizedEffect": "spicy",
+      "localizedName": {
+        "en": "Spicy",
+        "es": "Picante",
+        "ru": "Острый"
+      },
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 1,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "ORCs Scream Slow",
+      "normalizedEffect": "orcs scream slow",
+      "localizedName": {
+        "en": "ORCs Scream Slow",
+        "es": "ORCs Scream Slow",
+        "ru": "ORCs Scream Slow"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 1,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Orb Weaver Swarm Roar Speed Buff ORC",
+      "normalizedEffect": "orb weaver swarm roar speed buff orc",
+      "localizedName": {
+        "en": "Orb Weaver Swarm Roar Speed Buff ORC",
+        "es": "Orb Weaver Swarm Roar Speed Buff ORC",
+        "ru": "Orb Weaver Swarm Roar Speed Buff ORC"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 1,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Orb Weaver Swarm Roar Token Debuff ORC",
+      "normalizedEffect": "orb weaver swarm roar token debuff orc",
+      "localizedName": {
+        "en": "Orb Weaver Swarm Roar Token Debuff ORC",
+        "es": "Orb Weaver Swarm Roar Token Debuff ORC",
+        "ru": "Orb Weaver Swarm Roar Token Debuff ORC"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 1,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Parry Time Debuff Mantis",
+      "normalizedEffect": "parry time debuff mantis",
+      "localizedName": {
+        "en": "Parry Time Debuff Mantis",
+        "es": "Parry Time Debuff Mantis",
+        "ru": "Parry Time Debuff Mantis"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 1,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Pond Jockey Homing Proctile 1 Projectile Passive Attack",
+      "normalizedEffect": "pond jockey homing proctile 1 projectile passive attack",
+      "localizedName": {
+        "en": "Pond Jockey Homing Proctile 1 Projectile Passive Attack",
+        "es": "Pond Jockey Homing Proctile 1 Projectile Passive Attack",
+        "ru": "Pond Jockey Homing Proctile 1 Projectile Passive Attack"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Pond Jockey Homing Proctile 1 Projectile Passive Attack Burst",
+      "normalizedEffect": "pond jockey homing proctile 1 projectile passive attack burst",
+      "localizedName": {
+        "en": "Pond Jockey Homing Proctile 1 Projectile Passive Attack Burst",
+        "es": "Pond Jockey Homing Proctile 1 Projectile Passive Attack Burst",
+        "ru": "Pond Jockey Homing Proctile 1 Projectile Passive Attack Burst"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Pond Jockey Homing Proctile 3 Projectile Passive Attack",
+      "normalizedEffect": "pond jockey homing proctile 3 projectile passive attack",
+      "localizedName": {
+        "en": "Pond Jockey Homing Proctile 3 Projectile Passive Attack",
+        "es": "Pond Jockey Homing Proctile 3 Projectile Passive Attack",
+        "ru": "Pond Jockey Homing Proctile 3 Projectile Passive Attack"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Pond Jockey Homing Proctile 3 Projectile Passive Attack Burst",
+      "normalizedEffect": "pond jockey homing proctile 3 projectile passive attack burst",
+      "localizedName": {
+        "en": "Pond Jockey Homing Proctile 3 Projectile Passive Attack Burst",
+        "es": "Pond Jockey Homing Proctile 3 Projectile Passive Attack Burst",
+        "ru": "Pond Jockey Homing Proctile 3 Projectile Passive Attack Burst"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Pond Jockey Homing Proctile 5 Projectile Passive Attack",
+      "normalizedEffect": "pond jockey homing proctile 5 projectile passive attack",
+      "localizedName": {
+        "en": "Pond Jockey Homing Proctile 5 Projectile Passive Attack",
+        "es": "Pond Jockey Homing Proctile 5 Projectile Passive Attack",
+        "ru": "Pond Jockey Homing Proctile 5 Projectile Passive Attack"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Pond Jockey Homing Proctile 5 Projectile Passive Attack Burst",
+      "normalizedEffect": "pond jockey homing proctile 5 projectile passive attack burst",
+      "localizedName": {
+        "en": "Pond Jockey Homing Proctile 5 Projectile Passive Attack Burst",
+        "es": "Pond Jockey Homing Proctile 5 Projectile Passive Attack Burst",
+        "ru": "Pond Jockey Homing Proctile 5 Projectile Passive Attack Burst"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Potato Beetle Roar Health Regen",
+      "normalizedEffect": "potato beetle roar health regen",
+      "localizedName": {
+        "en": "Potato Beetle Roar Health Regen",
+        "es": "Potato Beetle Roar Health Regen",
+        "ru": "Potato Beetle Roar Health Regen"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Potato Beetle Roar Venon Resist",
+      "normalizedEffect": "potato beetle roar venon resist",
+      "localizedName": {
+        "en": "Potato Beetle Roar Venon Resist",
+        "es": "Potato Beetle Roar Venon Resist",
+        "ru": "Potato Beetle Roar Venon Resist"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Sizzle Large Increase",
+      "normalizedEffect": "sizzle",
+      "localizedName": {
+        "en": "Sizzle",
+        "es": "Calor",
+        "ru": "Перегрев"
+      },
+      "iconAsset": "assets/global/effects_damage/Sizzling_Attack.png",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 3,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Sizzle Small Increase",
+      "normalizedEffect": "sizzle",
+      "localizedName": {
+        "en": "Sizzle",
+        "es": "Calor",
+        "ru": "Перегрев"
+      },
+      "iconAsset": "assets/global/effects_damage/Sizzling_Attack.png",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 11,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Venom Huge",
+      "normalizedEffect": "venom",
+      "localizedName": {
+        "en": "Venom",
+        "es": "Veneno letal",
+        "ru": "Яд"
+      },
+      "iconAsset": "assets/global/effects_damage/Venom.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 6,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Venom Large",
+      "normalizedEffect": "venom",
+      "localizedName": {
+        "en": "Venom",
+        "es": "Veneno letal",
+        "ru": "Яд"
+      },
+      "iconAsset": "assets/global/effects_damage/Venom.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Venom Medium",
+      "normalizedEffect": "venom",
+      "localizedName": {
+        "en": "Venom",
+        "es": "Veneno letal",
+        "ru": "Яд"
+      },
+      "iconAsset": "assets/global/effects_damage/Venom.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 15,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Venom Small",
+      "normalizedEffect": "venom",
+      "localizedName": {
+        "en": "Venom",
+        "es": "Veneno letal",
+        "ru": "Яд"
+      },
+      "iconAsset": "assets/global/effects_damage/Venom.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Venom Tiny",
+      "normalizedEffect": "venom",
+      "localizedName": {
+        "en": "Venom",
+        "es": "Veneno letal",
+        "ru": "Яд"
+      },
+      "iconAsset": "assets/global/effects_damage/Venom.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 15,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Venom Very Large",
+      "normalizedEffect": "venom",
+      "localizedName": {
+        "en": "Venom",
+        "es": "Veneno letal",
+        "ru": "Яд"
+      },
+      "iconAsset": "assets/global/effects_damage/Venom.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "Wasp Support Heal Apply Attack Effect",
+      "normalizedEffect": "wasp support heal apply attack effect",
+      "localizedName": {
+        "en": "Wasp Support Heal Apply Attack Effect",
+        "es": "Wasp Support Heal Apply Attack Effect",
+        "ru": "Wasp Support Heal Apply Attack Effect"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 3,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "Web Slow",
+      "normalizedEffect": "web slow",
+      "localizedName": {
+        "en": "Web Slow",
+        "es": "Web Slow",
+        "ru": "Web Slow"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "acid",
+      "normalizedEffect": "acid",
+      "localizedName": {
+        "en": "Acid",
+        "es": "Ácido",
+        "ru": "Кислота"
+      },
+      "iconAsset": "assets/global/effects_damage/Tooltype_Acid.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 4,
+      "inflictsUsage": 0,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "all",
+      "normalizedEffect": "all",
+      "localizedName": {
+        "en": "all",
+        "es": "all",
+        "ru": "all"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 15,
+      "immunityUsage": 0,
+      "inflictsUsage": 0,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "bleed",
+      "normalizedEffect": "bleed",
+      "localizedName": {
+        "en": "Bleed",
+        "es": "Sangrado",
+        "ru": "Кровотечение"
+      },
+      "iconAsset": "assets/global/effects_damage/Bleed.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 12,
+      "immunityUsage": 0,
+      "inflictsUsage": 4,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "burning",
+      "normalizedEffect": "burning",
+      "localizedName": {
+        "en": "Burning",
+        "es": "Quemaduras",
+        "ru": "Горение"
+      },
+      "iconAsset": "assets/global/effects_damage/Tooltype_Burning.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 2,
+      "immunityUsage": 0,
+      "inflictsUsage": 6,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "busting",
+      "normalizedEffect": "busting",
+      "localizedName": {
+        "en": "Busting",
+        "es": "Aplastante",
+        "ru": "Дробящий"
+      },
+      "iconAsset": "assets/global/effects_damage/Tooltype_Busting.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 48,
+      "resistanceUsage": 28,
+      "immunityUsage": 0,
+      "inflictsUsage": 26,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "chill",
+      "normalizedEffect": "chill",
+      "localizedName": {
+        "en": "Chill",
+        "es": "Congelamiento",
+        "ru": "Холод"
+      },
+      "iconAsset": "assets/global/effects_damage/Chilling_Attack.png",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 2,
+      "immunityUsage": 0,
+      "inflictsUsage": 0,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "chopping",
+      "normalizedEffect": "chopping",
+      "localizedName": {
+        "en": "Chopping",
+        "es": "Corte",
+        "ru": "Рубящий"
+      },
+      "iconAsset": "assets/global/effects_damage/Tooltype_Chopping.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 14,
+      "resistanceUsage": 55,
+      "immunityUsage": 0,
+      "inflictsUsage": 26,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "dust",
+      "normalizedEffect": "dust",
+      "localizedName": {
+        "en": "Dust",
+        "es": "Polvo",
+        "ru": "Пыль"
+      },
+      "iconAsset": "assets/global/effects_damage/Dust.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 12,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "explosive",
+      "normalizedEffect": "explosive",
+      "localizedName": {
+        "en": "Explosive",
+        "es": "Explosivo",
+        "ru": "Взрывной"
+      },
+      "iconAsset": "assets/global/effects_damage/Tooltype_Explosive.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 2,
+      "resistanceUsage": 46,
+      "immunityUsage": 0,
+      "inflictsUsage": 8,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "fresh",
+      "normalizedEffect": "fresh",
+      "localizedName": {
+        "en": "Fresh",
+        "es": "Fresco",
+        "ru": "Свежесть"
+      },
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 98,
+      "resistanceUsage": 121,
+      "immunityUsage": 0,
+      "inflictsUsage": 0,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "gas",
+      "normalizedEffect": "gas",
+      "localizedName": {
+        "en": "Gas",
+        "es": "Gas",
+        "ru": "Газ"
+      },
+      "iconAsset": "assets/global/effects_damage/Gas_Hazard.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 89,
+      "immunityUsage": 6,
+      "inflictsUsage": 4,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "general",
+      "normalizedEffect": "general",
+      "localizedName": {
+        "en": "general",
+        "es": "general",
+        "ru": "general"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 22,
+      "resistanceUsage": 26,
+      "immunityUsage": 0,
+      "inflictsUsage": 0,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "generic",
+      "normalizedEffect": "generic",
+      "localizedName": {
+        "en": "Generic damage",
+        "es": "Daño genérico",
+        "ru": "Обычный урон"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 12,
+      "resistanceUsage": 78,
+      "immunityUsage": 0,
+      "inflictsUsage": 30,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "infection",
+      "normalizedEffect": "infection",
+      "localizedName": {
+        "en": "Infection",
+        "es": "Infección",
+        "ru": "Инфекция"
+      },
+      "iconAsset": "assets/global/effects_damage/Infection.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 0,
+      "immunityUsage": 0,
+      "inflictsUsage": 1,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "poison",
+      "normalizedEffect": "poison",
+      "localizedName": {
+        "en": "Poison",
+        "es": "Envenenamiento",
+        "ru": "Отравление"
+      },
+      "iconAsset": "assets/global/effects_damage/Poison.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 55,
+      "immunityUsage": 1,
+      "inflictsUsage": 10,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "salty",
+      "normalizedEffect": "salty",
+      "localizedName": {
+        "en": "Salty",
+        "es": "Salado",
+        "ru": "Солёный"
+      },
+      "iconAsset": "assets/global/effects_damage/Damagetype_Salty.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 62,
+      "resistanceUsage": 29,
+      "immunityUsage": 0,
+      "inflictsUsage": 0,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "shock",
+      "normalizedEffect": "shock",
+      "localizedName": {
+        "en": "Shock",
+        "es": "Electricidad",
+        "ru": "Электрошок"
+      },
+      "iconAsset": "assets/global/effects_damage/Tooltype_Shock.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 8,
+      "immunityUsage": 0,
+      "inflictsUsage": 5,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "sizzle",
+      "normalizedEffect": "sizzle",
+      "localizedName": {
+        "en": "Sizzle",
+        "es": "Calor",
+        "ru": "Перегрев"
+      },
+      "iconAsset": "assets/global/effects_damage/Sizzling_Attack.png",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 2,
+      "immunityUsage": 0,
+      "inflictsUsage": 3,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "slashing",
+      "normalizedEffect": "slashing",
+      "localizedName": {
+        "en": "Slashing",
+        "es": "Tajo",
+        "ru": "Режущий"
+      },
+      "iconAsset": "assets/global/effects_damage/Tooltype_Slashing.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 65,
+      "resistanceUsage": 124,
+      "immunityUsage": 0,
+      "inflictsUsage": 6,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "smashing",
+      "normalizedEffect": "smashing",
+      "localizedName": {
+        "en": "smashing",
+        "es": "smashing",
+        "ru": "smashing"
+      },
+      "iconAsset": "assets/global/effects_damage/Generic_Damage.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 1,
+      "immunityUsage": 0,
+      "inflictsUsage": 0,
+      "knownEffect": false,
+      "mappingStatus": "generic_fallback"
+    },
+    {
+      "technicalEffect": "sour",
+      "normalizedEffect": "sour",
+      "localizedName": {
+        "en": "Sour",
+        "es": "Ácido",
+        "ru": "Кислый"
+      },
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 36,
+      "resistanceUsage": 15,
+      "immunityUsage": 0,
+      "inflictsUsage": 7,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "spicy",
+      "normalizedEffect": "spicy",
+      "localizedName": {
+        "en": "Spicy",
+        "es": "Picante",
+        "ru": "Острый"
+      },
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 95,
+      "resistanceUsage": 104,
+      "immunityUsage": 0,
+      "inflictsUsage": 2,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "stabbing",
+      "normalizedEffect": "stabbing",
+      "localizedName": {
+        "en": "Stabbing",
+        "es": "Perforación",
+        "ru": "Колющий"
+      },
+      "iconAsset": "assets/global/effects_damage/Tooltype_Stabbing.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 70,
+      "resistanceUsage": 134,
+      "immunityUsage": 0,
+      "inflictsUsage": 28,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "tang_buildup",
+      "normalizedEffect": "tang_buildup",
+      "localizedName": {
+        "en": "Tang buildup",
+        "es": "Corrosión",
+        "ru": "Коррозия"
+      },
+      "iconAsset": "assets/global/effects_damage/TangBuildUp.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 2,
+      "immunityUsage": 0,
+      "inflictsUsage": 4,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "venom",
+      "normalizedEffect": "venom",
+      "localizedName": {
+        "en": "Venom",
+        "es": "Veneno letal",
+        "ru": "Яд"
+      },
+      "iconAsset": "assets/global/effects_damage/Venom.webp",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 0,
+      "resistanceUsage": 95,
+      "immunityUsage": 0,
+      "inflictsUsage": 7,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    },
+    {
+      "technicalEffect": "water",
+      "normalizedEffect": "water",
+      "localizedName": {
+        "en": "Water",
+        "es": "Agua",
+        "ru": "Вода"
+      },
+      "iconAsset": "assets/global/effects_damage/Tooltype_Water.png",
+      "iconExistsOnDisk": true,
+      "weaknessUsage": 8,
+      "resistanceUsage": 27,
+      "immunityUsage": 0,
+      "inflictsUsage": 1,
+      "knownEffect": true,
+      "mappingStatus": "semantic_icon"
+    }
+  ],
+  "summary": {
+    "technicalEffects": 61,
+    "knownEffectsWithoutIcon": 0,
+    "genericFallbacks": 21
+  }
+}

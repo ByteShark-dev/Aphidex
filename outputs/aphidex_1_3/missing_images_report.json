@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "type": "armor",
+      "id": "Flippers",
+      "reason": "no_verified_image"
+    },
+    {
+      "type": "armor",
+      "id": "Rebreather",
+      "reason": "no_verified_image"
+    }
+  ]
+}

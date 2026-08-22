@@ -1,1 +1,1535 @@
-{"id":"g2_pincher_earwig","speciesKey":"pincher_earwig","collectionGroup":"angry","name":"Pincher Earwig","game":"g2","tier":3,"danger":"alta","isBoss":false,"order":226,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigM.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigM_G.png","photo":"assets/g2/creatures/photos/Pincher_Earwig.webp","weaknesses":["sour"],"resistances":["spicy"],"temperament":"aggressive","health":{"value":1100,"rating":4},"description":"A nocturnal pest that occasionally stalks prey in pairs. Can drop its pinching pincers, head and earwig parts when killed.","behavior":"It stays close to its area and alternates between frontal pressure and a defensive stance. When it reads that you are still in its face, it speeds into combos that punish late blocks and overcommitted positioning very well.","interactionWithPlayer":"It attacks with short combos and punishes close-range misreads very well. It does not look as extreme as the whipper, but it still earns its jump into impossible territory.","interactionWithCreatures":"It may react aggressively if another creature invades its space.","strategy":"Do not stay planted in front of it. Backing off or breaking the rhythm of its combo is usually safer than trying to absorb the whole string, and the best punish window comes right after the defensive stance or a misplaced chain.","environments":["O.R.C. Caves","Greenhouse Surroundings","Minor Caves","Pumpkin Patch","Scarecrow","Veggie Garden"],"loot":[{"section":"loot","item":"Earwig Head","minCount":0,"maxCount":1},{"section":"loot","item":"Earwig Part","minCount":2,"maxCount":4},{"section":"loot","item":"Earwig Pincer","minCount":0,"maxCount":2},{"section":"rare","item":"Earwig Part","minCount":0,"maxCount":4},{"section":"rare","item":"Earwig Pincer","minCount":0,"maxCount":1},{"section":"rare","item":"Pincer Pincher","minCount":0,"maxCount":1}],"combatStats":{"health":1100,"attackDamageSummary":"3-Hit Combo: 55. 5-Hit Combo: 55. Charged Pinch: 90."},"abilities":[{"name":"3-Hit Combo","description":"A short fast string used to pin you in front of its pincers.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"5-Hit Combo","description":"It extends pressure into a longer string if you remain in its frontal range.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Charged Pinch","description":"It delays briefly before snapping forward with a heavier strike that rewards a perfect block.","blockable":true,"breaksGuard":true,"staggers":true}],"elementalWeaknesses":[{"type":"sour","bonusPct":15}],"resistancesV2":[{"type":"spicy","bonusPct":25}],"groupId":null,"cardTier":3,"technicalId":"Earwig","bestiaryId":"Earwig","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Combo 3 X","technicalId":"EarwigCombo3X","tags":["chopping"],"notes":"Attack damage: 55"},{"name":"Combo 5 X","technicalId":"EarwigCombo5X","tags":["chopping"],"notes":"Attack damage: 55"},{"name":"Power Attack","technicalId":"EarwigPowerAttack","tags":["chopping"],"notes":"Attack damage: 90"},{"name":"Block Offensive","technicalId":"BlockOffensive","tags":["maine"],"notes":"Attack damage: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_pincher_earwig",
+  "speciesKey": "pincher_earwig",
+  "collectionGroup": "angry",
+  "name": "Pincher Earwig",
+  "game": "g2",
+  "tier": 3,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 226,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigM.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigM_G.png",
+  "photo": "assets/g2/creatures/photos/Pincher_Earwig.webp",
+  "weaknesses": [
+    "sour"
+  ],
+  "resistances": [
+    "spicy"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 4,
+    "value": 1100
+  },
+  "description": "A nocturnal pest that occasionally stalks prey in pairs. Can drop its pinching pincers, head and earwig parts when killed.",
+  "behavior": "It stays close to its area and alternates between frontal pressure and a defensive stance. When it reads that you are still in its face, it speeds into combos that punish late blocks and overcommitted positioning very well.",
+  "interactionWithPlayer": "It attacks with short combos and punishes close-range misreads very well. It does not look as extreme as the whipper, but it still earns its jump into impossible territory.",
+  "interactionWithCreatures": "It may react aggressively if another creature invades its space.",
+  "strategy": "Do not stay planted in front of it. Backing off or breaking the rhythm of its combo is usually safer than trying to absorb the whole string, and the best punish window comes right after the defensive stance or a misplaced chain.",
+  "environments": [
+    "O.R.C. Caves",
+    "Greenhouse Surroundings",
+    "Minor Caves",
+    "Pumpkin Patch",
+    "Scarecrow",
+    "Veggie Garden"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Earwig",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Earwig Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Earwig Part",
+      "minCount": 2,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "Earwig Pincer",
+      "minCount": 0,
+      "maxCount": 3
+    }
+  ],
+  "combatStats": {
+    "health": 1100,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "3-Hit Combo",
+      "description": "A short fast string used to pin you in front of its pincers.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "5-Hit Combo",
+      "description": "It extends pressure into a longer string if you remain in its frontal range.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Charged Pinch",
+      "description": "It delays briefly before snapping forward with a heavier strike that rewards a perfect block.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "sour",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "Earwig",
+  "bestiaryId": "Earwig",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Combo 3 X",
+      "technicalId": "EarwigCombo3X",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 55",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 5 X",
+      "technicalId": "EarwigCombo5X",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 55",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power Attack",
+      "technicalId": "EarwigPowerAttack",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 90",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 90.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 12,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Offensive",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_e8f2f6356276cec2",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -143948.5,
+        "y": -16376.06,
+        "z": 7669.636
+      },
+      "u": 0.4403450980392157,
+      "v": 0.21503041807909604,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_12039ac19d557ece",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -144186.05,
+        "y": -14909.218,
+        "z": 7669.636
+      },
+      "u": 0.43945524143985953,
+      "v": 0.22136335596593307,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f35d007fd2dce0ee",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -134641.38,
+        "y": -53167.62,
+        "z": 1358.8262
+      },
+      "u": 0.47520934621012584,
+      "v": 0.056186681507715656,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0b32014fb359d2c",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -135250.8,
+        "y": -50822.613,
+        "z": 965.80347
+      },
+      "u": 0.4729264735147791,
+      "v": 0.06631100551479886,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d8c1f9b5dac35347",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -143593.86,
+        "y": -33233.9,
+        "z": 12974.755
+      },
+      "u": 0.44167357096868604,
+      "v": 0.14224844590606292,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_afb3da760498bddf",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -144065.81,
+        "y": -33769.793,
+        "z": 14409.6045
+      },
+      "u": 0.43990565759438105,
+      "v": 0.13993478357365713,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0e087c2d300f6175",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -145175.55,
+        "y": -32090.889,
+        "z": 15895.057
+      },
+      "u": 0.4357485981855429,
+      "v": 0.1471832771059955,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0a6a327d5ecb58d",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -142488.75,
+        "y": -30733.2,
+        "z": 12237.832
+      },
+      "u": 0.4458132865086333,
+      "v": 0.15304495825954972,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_071f5cc00c3883e7",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -156859.98,
+        "y": -50210.406,
+        "z": 1021.029
+      },
+      "u": 0.39197900380450684,
+      "v": 0.0689541456109284,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6963ad5a00dad79f",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -149415.66,
+        "y": -48846.633,
+        "z": 1464.1985
+      },
+      "u": 0.41986524787825574,
+      "v": 0.07484209380217553,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_456b7cff2621061b",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -124472.16,
+        "y": -27542.34,
+        "z": 2406.297
+      },
+      "u": 0.5133030002926544,
+      "v": 0.16682116468504932,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9a0d8304be1fc759",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -122405.66,
+        "y": -21474.945,
+        "z": 2976.4287
+      },
+      "u": 0.5210440597014925,
+      "v": 0.19301651201619022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf5b40879915129b",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -125141.59,
+        "y": -30684.014,
+        "z": 2871.9897
+      },
+      "u": 0.5107953315774071,
+      "v": 0.15325731370267306,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aef1bfa240771111",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -144448.14,
+        "y": -32212.041,
+        "z": 15910.042
+      },
+      "u": 0.43847345858940584,
+      "v": 0.14666021593726283,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c970e546ee6d771a",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -116084.51,
+        "y": -48806.895,
+        "z": -330.70392
+      },
+      "u": 0.5447229359086918,
+      "v": 0.07501365848722495,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_62a93ed2455d27e3",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -120116.97,
+        "y": -48480.04,
+        "z": -2821.9216
+      },
+      "u": 0.5296174375182909,
+      "v": 0.07642482097984651,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ea5169a9c8ca23ff",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -118148.88,
+        "y": -49904.953,
+        "z": -2826.9094
+      },
+      "u": 0.5369898554287387,
+      "v": 0.07027290719284925,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1f3d6d8a67d5afdb",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -117082.85,
+        "y": -47979.75,
+        "z": -3323.8242
+      },
+      "u": 0.5409831782265144,
+      "v": 0.0785847710599545,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_332358be5734cac1",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -117521.01,
+        "y": -45646.035,
+        "z": -3315.1826
+      },
+      "u": 0.5393418413813287,
+      "v": 0.08866034303060963,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c5b6b87f87a0c444",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -104868.33,
+        "y": -30161.39,
+        "z": -295.7294
+      },
+      "u": 0.5867384770266315,
+      "v": 0.15551368850661948,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5c6b670c9aa6bd40",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -99549.06,
+        "y": -18537.82,
+        "z": -31.923637
+      },
+      "u": 0.6066643347966052,
+      "v": 0.2056972439497428,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2765b542e167d567",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -104830.83,
+        "y": -23760.178,
+        "z": 6250.159
+      },
+      "u": 0.5868789511267193,
+      "v": 0.1831502560418248,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2ee369bcb58651f5",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -103490.44,
+        "y": -27483.793,
+        "z": 8495.825
+      },
+      "u": 0.5919000199004975,
+      "v": 0.16707393527278855,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_86bd3625844e4f46",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -103315.9,
+        "y": -23815.258,
+        "z": 10900.069
+      },
+      "u": 0.5925538425519461,
+      "v": 0.1829124538662619,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d1dd98a8d40028ea",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -102505.555,
+        "y": -19821.273,
+        "z": 11456.167
+      },
+      "u": 0.5955893754755633,
+      "v": 0.20015606901087782,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_03c354d4bd5d54a5",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -100760.47,
+        "y": -30105.207,
+        "z": -485.46536
+      },
+      "u": 0.602126422007609,
+      "v": 0.1557562527700481,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5e29048a314929d6",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -103607.945,
+        "y": -19526.354,
+        "z": -396.42566
+      },
+      "u": 0.5914598489903424,
+      "v": 0.2014293511425922,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_028d49e635e3ca70",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -104331.2,
+        "y": -24092.324,
+        "z": 4497.163
+      },
+      "u": 0.588750553116769,
+      "v": 0.18171625020659418,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_583b1519c431cada",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -103260.664,
+        "y": -26185.96,
+        "z": 4944.889
+      },
+      "u": 0.5927607552824116,
+      "v": 0.17267719436714732,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b4ee65b3075b8cc",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -103426.69,
+        "y": -22471.715,
+        "z": 6890.181
+      },
+      "u": 0.5921388258706468,
+      "v": 0.188713061135003,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ab7b05ce3f9aadc6",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -105255.91,
+        "y": -25024.203,
+        "z": 10296.641
+      },
+      "u": 0.5852866116476442,
+      "v": 0.17769295947381733,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2afa9a333e29fc81",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -105110.65,
+        "y": -25231.22,
+        "z": 12285.365
+      },
+      "u": 0.5858307521217442,
+      "v": 0.17679918509149167,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_343799a8696fbdd9",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -105109.02,
+        "y": -23158.504,
+        "z": 12285.365
+      },
+      "u": 0.585836858062628,
+      "v": 0.18574792100514378,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_78dd6aa34bf3e960",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -104235.945,
+        "y": -23808.207,
+        "z": 13730.779
+      },
+      "u": 0.589107376060872,
+      "v": 0.18294289582595497,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_600ed65e58ed23b5",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -103160.78,
+        "y": -27541.68,
+        "z": 14176.219
+      },
+      "u": 0.5931349183494293,
+      "v": 0.16682401416645587,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_42ebbcd7dd0a9917",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -137229.72,
+        "y": -8233.941,
+        "z": 4332.2705
+      },
+      "u": 0.46551348668422593,
+      "v": 0.2501831706551985,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ce4429e3f53cb172",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -137527.38,
+        "y": -6608.161,
+        "z": 5030.499
+      },
+      "u": 0.464398459467369,
+      "v": 0.25720230683868794,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9f5dace254c4f9d8",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -137622.86,
+        "y": -5648.443,
+        "z": 4998.9717
+      },
+      "u": 0.4640407936786655,
+      "v": 0.2613457895606712,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3bc54f1e2ed3749a",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -171950.0,
+        "y": -7550.0,
+        "z": -2300.0
+      },
+      "u": 0.3354521510096576,
+      "v": 0.25313601484104903,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aec3ed1b45e6015d",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -165180.55,
+        "y": -20317.984,
+        "z": 527.079
+      },
+      "u": 0.3608103482587065,
+      "v": 0.19801157089130622,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ad049f44c6d1f8a7",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -126216.16,
+        "y": -16468.58,
+        "z": -8550.0
+      },
+      "u": 0.5067700181445712,
+      "v": 0.2146309725946538,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ed405615c0e71c04",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -115544.414,
+        "y": -2258.0374,
+        "z": 6018.1416
+      },
+      "u": 0.5467461225636524,
+      "v": 0.2759835133754954,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a34a5caa5a4ccbec",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -116179.336,
+        "y": -2625.5327,
+        "z": 8939.205
+      },
+      "u": 0.5443677199882938,
+      "v": 0.27439689061135003,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bc63e3e655e2589e",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -116820.04,
+        "y": -2195.7031,
+        "z": 19000.477
+      },
+      "u": 0.5419676581796898,
+      "v": 0.2762526352373724,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b9feb86ac04b574e",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -164796.44,
+        "y": -37472.824,
+        "z": 13213.135
+      },
+      "u": 0.36224921510096575,
+      "v": 0.12394733208533605,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf0a043814129b18",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -200668.05,
+        "y": -48505.926,
+        "z": 198.73267
+      },
+      "u": 0.22787502487562195,
+      "v": 0.07631306086516566,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_018ce83727d34e16",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -210743.06,
+        "y": -45615.277,
+        "z": 529.37683
+      },
+      "u": 0.1901342791922739,
+      "v": 0.0887931374989459,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca6d675ff9c48993",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -215410.81,
+        "y": -17249.041,
+        "z": 393.7678
+      },
+      "u": 0.17264899970734562,
+      "v": 0.2112614133400793,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_63318b2d99fd6b8c",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -210631.58,
+        "y": -29326.648,
+        "z": 4670.4233
+      },
+      "u": 0.19055188059701497,
+      "v": 0.15911760033729658,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bec8cd153c238f2a",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -219176.77,
+        "y": -6242.9614,
+        "z": 846.55853
+      },
+      "u": 0.15854180392156866,
+      "v": 0.25877901815667426,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_00f9e34a05c65825",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -217748.06,
+        "y": -33185.25,
+        "z": -1061.9192
+      },
+      "u": 0.16389371729587357,
+      "v": 0.1424584872248925,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_84a6e1001abe92b3",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -203386.66,
+        "y": -4213.785,
+        "z": -227.78333
+      },
+      "u": 0.21769117705589697,
+      "v": 0.26753977637237536,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd72ae905ed3f366",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -42192.03,
+        "y": 63484.746,
+        "z": 2532.6423
+      },
+      "u": 0.8215223927421714,
+      "v": 0.5598211480900582,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c155bedc9349d270",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -40722.03,
+        "y": 62314.746,
+        "z": 2279.3545
+      },
+      "u": 0.8270289774656131,
+      "v": 0.5547697946875789,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_726114fbf2b4aabf",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -216547.89,
+        "y": -33500.004,
+        "z": -1488.6233
+      },
+      "u": 0.1683895253146034,
+      "v": 0.14109956954211994,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d315287de0e29462",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -205399.0,
+        "y": -24479.717,
+        "z": -700.0
+      },
+      "u": 0.21015299970734563,
+      "v": 0.18004372119065684,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e2f383cd183ba37c",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -210369.22,
+        "y": -38433.277,
+        "z": -1445.096
+      },
+      "u": 0.19153467486098918,
+      "v": 0.11980067607724094,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fa2f58c0519223d4",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -43897.35,
+        "y": 44893.797,
+        "z": -3937.178
+      },
+      "u": 0.8151343049458589,
+      "v": 0.4795566579306855,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a07d07d1839910ef",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -28611.28,
+        "y": 73790.984,
+        "z": -1665.8527
+      },
+      "u": 0.8723955563359672,
+      "v": 0.6043172595328442,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e5b8f2a829f30113",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -203594.48,
+        "y": -9789.356,
+        "z": 1219.0933
+      },
+      "u": 0.21691268832309038,
+      "v": 0.24346782804620964,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca7a9fe6553ba8cd",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -17815.941,
+        "y": 44206.984,
+        "z": -4615.5977
+      },
+      "u": 0.9128346371671057,
+      "v": 0.4765914141833207,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3fc7850d632c0416",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -26328.215,
+        "y": 44592.676,
+        "z": 4263.638
+      },
+      "u": 0.8809478630377524,
+      "v": 0.47825659930854203,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a41bb10425e1b41",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -41811.133,
+        "y": 58943.984,
+        "z": 1797.3994
+      },
+      "u": 0.8229492237635353,
+      "v": 0.5402168800742052,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e5b104aa0c52d819",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -207984.44,
+        "y": -10409.6,
+        "z": -1138.6224
+      },
+      "u": 0.20046800351185248,
+      "v": 0.24078998903786153,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e39fc720a4747ed2",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -206295.0,
+        "y": -12965.0,
+        "z": -1135.9199
+      },
+      "u": 0.2067966052092479,
+      "v": 0.22975731511931863,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_10b2a2474af126d1",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -213648.58,
+        "y": -6135.438,
+        "z": 4316.7627
+      },
+      "u": 0.17925027099795146,
+      "v": 0.2592432392613205,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_480f90c696088881",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -27379.951,
+        "y": 52644.895,
+        "z": -3167.3782
+      },
+      "u": 0.8770080852209541,
+      "v": 0.513021217977907,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2d9f67f64af42315",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -36011.242,
+        "y": 54157.05,
+        "z": 9230.393
+      },
+      "u": 0.8446754762657301,
+      "v": 0.5195497900328865,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_61caebc622d12e6f",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -35381.348,
+        "y": 53943.836,
+        "z": 9420.914
+      },
+      "u": 0.847035044073749,
+      "v": 0.518629260747112,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2cb88b50a6caf135",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -34288.688,
+        "y": 46886.508,
+        "z": 20576.076
+      },
+      "u": 0.8511281222124671,
+      "v": 0.4881599805717177,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b2810d3c95be723b",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -204110.03,
+        "y": -49631.332,
+        "z": 771.0995
+      },
+      "u": 0.2149814503950834,
+      "v": 0.07145423742305428,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d94c0528011783e2",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -205597.6,
+        "y": -35298.855,
+        "z": -1418.6437
+      },
+      "u": 0.20940904887328066,
+      "v": 0.1333332173033139,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ab041f2493c59bd6",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -205421.45,
+        "y": -46657.44,
+        "z": 635.1495
+      },
+      "u": 0.21006890254609303,
+      "v": 0.08429370705793068,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d29a592ea1cfcf6",
+      "targetType": "creature",
+      "targetId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "map": "surface",
+      "world": {
+        "x": -204841.44,
+        "y": -33584.76,
+        "z": -1480.8602
+      },
+      "u": 0.212241606087211,
+      "v": 0.14073364432076899,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Pincher_Earwig.webp",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Earwig",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Earwig Part",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Part",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Pincer",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Pincer",
+      "countLabel": "1",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Pincer",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

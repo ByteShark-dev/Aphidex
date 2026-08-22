@@ -1,1 +1,633 @@
-{"id":"g2_praying_mantis_nymph","speciesKey":"praying_mantis_nymph","collectionGroup":"angry","name":"Нимфа богомола","game":"g2","tier":3,"danger":"muy_alta","isBoss":false,"order":235,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PrayingMantis.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PrayingMantis_G.png","photo":"assets/g2/creatures/photos/Praying_Mantis_Nymph.webp","weaknesses":["slashing","fresh"],"resistances":["stabbing","generic","spicy"],"temperament":"aggressive","health":{"value":1400,"rating":4},"description":"Быстрая и агрессивная нимфа богомола из Grounded 2, которая сочетает прыжки, удары когтями и постоянное давление вблизи.","behavior":"Она держится возле своей точки появления и атакует сразу, как только видит явное окно.","interactionWithPlayer":"Она нападает на игрока сразу и использует высокую подвижность, чтобы не отдавать инициативу.","interactionWithCreatures":"Она часто дерётся с другими насекомыми, если те заходят на её территорию.","strategy":"Не давайте ей зациклить прыжки и наказания. Ломайте её ритм и контратакуйте после приземлений.","environments":["Церемониальная зона","Площадка для крокета","Входная зона","Окрестности теплицы","Окрестности тележки с мороженым","Сосновый холм","Тыквенная грядка","Передняя зона снэк-бара","Зона статуи","Огород"],"loot":[{"section":"loot","item":"Praying Mantis Chunk","minCount":2,"maxCount":6},{"section":"loot","item":"Praying Mantis Claw","minCount":0,"maxCount":2},{"section":"loot","item":"Praying Mantis Head","minCount":0,"maxCount":1},{"section":"rare","item":"Cleaving Claw","minCount":0,"maxCount":1},{"section":"rare","item":"Praying Mantis Chunk","minCount":0,"maxCount":9}],"combatStats":{"health":1400,"attackDamageSummary":"Удар когтями: 75. Комбо из 3 ударов когтями: 75. Заряженный удар: 100. Прыжок на цель: 90. Вертикальная ударная волна: 85."},"abilities":[{"name":"Разрез","description":"Быстрый удар когтями, которым она открывает размен и удерживает игрока перед собой.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 ударов когтями","description":"Короткая и быстрая серия, предназначенная для наказания нервных ответов вблизи.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Заряженный удар","description":"Она на миг задерживает удар, а затем наносит куда более тяжёлую и опасную атаку.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Наскок","description":"Она внезапно бросается вперёд, чтобы снова закрыть дистанцию, которую игрок только что открыл.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Вертикальная волна","description":"Она резко бьёт по земле, покрывая ближайшее пространство опасной ударной волной.","blockable":false,"breaksGuard":false,"staggers":true}],"elementalWeaknesses":[{"type":"fresh","bonusPct":15}],"resistancesV2":[{"type":"stabbing","bonusPct":50},{"type":"generic","bonusPct":25},{"type":"spicy","bonusPct":50}],"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_bows_and_spears","susceptibleDamageTypes":["stabbing"]},"groupId":null,"cardTier":3,"technicalId":"GreenMantis","bestiaryId":"GreenMantis","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","damageWeaknesses":[{"type":"slashing","bonusPct":15}],"weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Left Strike","technicalId":"PrayingMantisCleaveLeft","tags":["chopping_slashing"],"notes":"Урон атаки: 75"},{"name":"Right Strike","technicalId":"PrayingMantisCleaveRight","tags":["chopping_slashing"],"notes":"Урон атаки: 75"},{"name":"Praying Mantis Pounce","technicalId":"PrayingMantisPounce","tags":["chopping_slashing_unblockable"],"notes":"Урон атаки: 90"},{"name":"Praying Mantis Slash","technicalId":"PrayingMantisSlash","tags":["chopping_slashing_unblockable"],"notes":"Урон атаки: 85"},{"name":"Praying Mantis Powerattack","technicalId":"PrayingMantisPowerattack","tags":[],"notes":"Не идентифицировано"},{"name":"Combo","technicalId":"PrayingMantisAttackCombo","tags":["chopping_slashing"],"notes":"Урон атаки: 75"},{"name":"Praying Mantis Stealth Jump Attack","technicalId":"PrayingMantisStealthJumpAttack","tags":["chopping_slashing_unblockable"],"notes":"Урон атаки: 80"},{"name":"Block Offensive","technicalId":"BlockOffensive","tags":["maine"],"notes":"Урон атаки: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_praying_mantis_nymph",
+  "speciesKey": "praying_mantis_nymph",
+  "collectionGroup": "angry",
+  "name": "Нимфа богомола",
+  "game": "g2",
+  "tier": 3,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 235,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PrayingMantis.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PrayingMantis_G.png",
+  "photo": "assets/g2/creatures/photos/Praying_Mantis_Nymph.webp",
+  "weaknesses": [
+    "slashing",
+    "fresh"
+  ],
+  "resistances": [
+    "stabbing",
+    "generic",
+    "spicy"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 4,
+    "value": 1400
+  },
+  "description": "Быстрая и агрессивная нимфа богомола из Grounded 2, которая сочетает прыжки, удары когтями и постоянное давление вблизи.",
+  "behavior": "Она держится возле своей точки появления и атакует сразу, как только видит явное окно.",
+  "interactionWithPlayer": "Она нападает на игрока сразу и использует высокую подвижность, чтобы не отдавать инициативу.",
+  "interactionWithCreatures": "Она часто дерётся с другими насекомыми, если те заходят на её территорию.",
+  "strategy": "Не давайте ей зациклить прыжки и наказания. Ломайте её ритм и контратакуйте после приземлений.",
+  "environments": [
+    "Церемониальная зона",
+    "Площадка для крокета",
+    "Входная зона",
+    "Окрестности теплицы",
+    "Окрестности тележки с мороженым",
+    "Сосновый холм",
+    "Тыквенная грядка",
+    "Передняя зона снэк-бара",
+    "Зона статуи",
+    "Огород"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Mantis Low Life Crit",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Mantis Green Chunk",
+      "minCount": 2,
+      "maxCount": 15
+    },
+    {
+      "section": "loot",
+      "item": "Mantis Green Claw",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Mantis Green Head",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1400,
+    "stunThreshold": 90,
+    "stunCooldownSeconds": 20
+  },
+  "abilities": [
+    {
+      "name": "Разрез",
+      "description": "Быстрый удар когтями, которым она открывает размен и удерживает игрока перед собой.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Комбо из 3 ударов когтями",
+      "description": "Короткая и быстрая серия, предназначенная для наказания нервных ответов вблизи.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Заряженный удар",
+      "description": "Она на миг задерживает удар, а затем наносит куда более тяжёлую и опасную атаку.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Наскок",
+      "description": "Она внезапно бросается вперёд, чтобы снова закрыть дистанцию, которую игрок только что открыл.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Вертикальная волна",
+      "description": "Она резко бьёт по земле, покрывая ближайшее пространство опасной ударной волной.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": true
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    },
+    {
+      "type": "general",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_bows_and_spears",
+    "susceptibleDamageTypes": [
+      "stabbing"
+    ]
+  },
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "GreenMantis",
+  "bestiaryId": "GreenMantis",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_bows_and_spears",
+      "susceptibleDamageTypes": [
+        "stabbing"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Left Strike",
+      "technicalId": "PrayingMantisCleaveLeft",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 75",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Right Strike",
+      "technicalId": "PrayingMantisCleaveRight",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 75",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Pounce",
+      "technicalId": "PrayingMantisPounce",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 90",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 90.0,
+      "cooldownSeconds": 20.0,
+      "range": 600.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Slash",
+      "technicalId": "PrayingMantisSlash",
+      "tags": [
+        "chopping",
+        "projectile",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 85",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 20.0,
+      "range": 200.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "projectile",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Powerattack",
+      "technicalId": "PrayingMantisPowerattack",
+      "tags": [],
+      "notes": "Не идентифицировано"
+    },
+    {
+      "name": "Combo",
+      "technicalId": "PrayingMantisAttackCombo",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 75",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Stealth Jump Attack",
+      "technicalId": "PrayingMantisStealthJumpAttack",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 80",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 80.0,
+      "cooldownSeconds": 0.0,
+      "range": 600.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Offensive",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_336b9924f407f195",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -158780.2,
+        "y": -23326.766,
+        "z": 848.68695
+      },
+      "u": 0.38478590576529115,
+      "v": 0.1850214673075301,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d439b45deaef0c8d",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -240537.86,
+        "y": 150947.53,
+        "z": 4422.044
+      },
+      "u": 0.07852367339771735,
+      "v": 0.9374326280462097,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_afc8512dae09c8db",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -162871.8,
+        "y": 8899.696,
+        "z": 4901.4453
+      },
+      "u": 0.36945887035411185,
+      "v": 0.324155867712286,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f34d2b0159d5892f",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -219281.8,
+        "y": 31389.697,
+        "z": 511.4451
+      },
+      "u": 0.15814836406204277,
+      "v": 0.42125410965511423,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_73841ea730393113",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -164900.0,
+        "y": -59250.0,
+        "z": 671.4582
+      },
+      "u": 0.36186128182616334,
+      "v": 0.02992663799645838,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_24f0b18353833010",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -120995.164,
+        "y": -3198.5518,
+        "z": 646.7937
+      },
+      "u": 0.5263277438688909,
+      "v": 0.2719229402006915,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_71cbe8e0ef15c809",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -125731.59,
+        "y": 33918.445,
+        "z": -285.97522
+      },
+      "u": 0.5085852057360257,
+      "v": 0.43217171633358636,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0fa9cf741a7418bd",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -146759.38,
+        "y": 103231.07,
+        "z": -4768.808
+      },
+      "u": 0.42981560901375476,
+      "v": 0.7314217711442786,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_838e250192eaa4b9",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -68487.766,
+        "y": 117581.68,
+        "z": -2360.5315
+      },
+      "u": 0.723019196722271,
+      "v": 0.7933790383674847,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07bc74b4e002a842",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -163974.2,
+        "y": 45380.05,
+        "z": 2878.2375
+      },
+      "u": 0.3653293064091308,
+      "v": 0.481656004722152,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8daedb9279380ae5",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -228135.05,
+        "y": -18257.41,
+        "z": 9833.696
+      },
+      "u": 0.12498430201931524,
+      "v": 0.2069078849818703,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_db621ce470e08963",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -46233.14,
+        "y": 73294.22,
+        "z": 150.72888
+      },
+      "u": 0.8063844916593503,
+      "v": 0.602172532591281,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_96e225fe11d0a335",
+      "targetType": "creature",
+      "targetId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "map": "surface",
+      "world": {
+        "x": -23344.977,
+        "y": -12107.066,
+        "z": -2987.9402
+      },
+      "u": 0.8921230009950247,
+      "v": 0.23346135599966272,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Mantis Low Life Crit",
+      "countLabel": "1",
+      "chancePct": 2,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 9,
+      "notes": "9 independent rolls"
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Claw",
+      "countLabel": "1",
+      "chancePct": 40,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Claw",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

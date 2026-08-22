@@ -354,7 +354,7 @@ void main() {
     final sunny = rows.singleWhere((entry) => entry.id == 'g2_koi_sunny');
     await tester.runAsync(() async {
       for (final entry in rows) {
-        await EnemyRepository.loadDetail(entry.id, 'en');
+        await EnemyRepository.loadDetail(entry.game, entry.id, 'en');
       }
     });
 

@@ -1,1 +1,394 @@
-{"id":"g2_mosquito","speciesKey":"mosquito","collectionGroup":"angry","name":"Mosquito","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":254,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Mosquito.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Mosquito_G.png","photo":"assets/g2/creatures/photos/Mosquito.webp","weaknesses":["fresh","slashing"],"resistances":["generic"],"temperament":"aggressive","health":{"value":500,"rating":2},"description":"Buitres chupasangre que vuelan cerca del agua, en especial, en torno al estanque. Al morir, puede soltar aguijón de mosquito y depósito de sangre de mosquito.","behavior":"Suele moverse dentro de un espacio aéreo relativamente pequeño, aunque también baja a descansar sobre hojas o suelo seco. Además de hostigar, se cura con parte del daño que inflige, así que dejarlo trabajar gratis hace la pelea mucho más larga.","interactionWithPlayer":"Ataca al jugador en cuanto lo ve y rara vez se cansa de insistir. No seguirá bajo el agua, pero mientras el combate siga en superficie intentará mantenerte siempre reaccionando a su ritmo.","interactionWithCreatures":"Es neutral con muchas criaturas salvo que la ataquen, pero avispas y drones avispa son especialmente agresivos con los mosquitos y suelen eliminarlos en cuanto coinciden.","strategy":"Conviene llevar al menos un arma de tier 2 y evitar pelear contra enjambres. El picotazo simple y el ataque en bucle son manejables si lees el ritmo; el problema real empieza cuando dejas que conecte varias veces y se alargue demasiado.","environments":["Área de ceremonia","Cancha de croquet","Zona de entrada","Invernadero","Alrededores del invernadero","Alrededores del carrito de helados","Zona de la mesa de pícnic","Colina de pinos","Parche de calabazas","Zona frontal del snack bar","Zona de la estatua","Huerto vegetal"],"loot":[{"section":"loot","item":"Pico de mosquito","minCount":1,"maxCount":1},{"section":"passive","item":"Saco de sangre de mosquito","minCount":0,"maxCount":1,"notes":"Cuando está lleno por atacar"},{"section":"rare","item":"Pico de mosquito","minCount":0,"maxCount":2},{"section":"rare","item":"Saco de sangre de mosquito","minCount":0,"maxCount":1}],"advancedLootTable":[{"item":"Pico de mosquito","countLabel":"x1","chancePct":100},{"item":"Pico de mosquito","countLabel":"x2","chancePct":1},{"item":"Saco de sangre de mosquito","countLabel":"x1","chancePct":100,"notes":"Cuando está lleno por atacar"},{"item":"Saco de sangre de mosquito","countLabel":"x1","chancePct":1}],"combatStats":{"health":500,"stunThreshold":30,"stunCooldownSeconds":12,"attackDamageSummary":"Picotazo: 60. Combo de picotazos: 45. Picado en bucle: 70."},"inflictsEffects":["stabbing"],"inflicts":["Todos sus ataques hacen daño perforante."],"specialTraits":["Roba vida equivalente al 75% del daño que inflige."],"abilities":[{"name":"Pinchazo","description":"Prepara el pico y lo lanza de frente en un golpe bloqueable.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo de 3 pinchazos","description":"Se balancea de lado a lado antes de enlazar tres picotazos bloqueables.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Picado en bucle","description":"Vuela en un arco antes de cargar con un picotazo potente y bloqueable.","blockable":true,"breaksGuard":false,"staggers":false}],"elementalWeaknesses":[{"type":"fresh","bonusPct":30}],"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25}],"groupId":null,"cardTier":2,"technicalId":"Mosquito","bestiaryId":"Mosquito","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[],"attacks":[{"name":"Mordida","technicalId":"MosquitoBite","tags":["stabbing"],"notes":"Daño del ataque: 60"},{"name":"Combo estocada","technicalId":"MosquitoComboStab","tags":["stabbing"],"notes":"Daño del ataque: 45"},{"name":"Picada Bomb","technicalId":"MosquitoDiveBomb","tags":["stabbing"],"notes":"Daño del ataque: 70"}],"encounterVariants":[],"contextVariants":[{"id":"Mosquito_Wave","characterRow":"Mosquito_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":500.0,"stun":{"max":30.0,"duration":3.0,"cooldown":12.0,"staggerThreshold":30}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"}],"weaknesses":[{"damageTypes":["Fresh"],"percent":30.0,"sourceId":"DamageResistDownFreshMedium"},{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"MosquitoBite","ability":"MosquitoBite","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"MosquitoComboStab","ability":"MosquitoCombo","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":45.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"MosquitoDiveBomb","ability":"MosquitoDive","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":70.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"}],"mechanicSignals":[],"quality":{"resolvedAttacks":3,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Mosquito  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_mosquito",
+  "speciesKey": "mosquito",
+  "collectionGroup": "angry",
+  "name": "Mosquito",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 254,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Mosquito.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Mosquito_G.png",
+  "photo": "assets/g2/creatures/photos/Mosquito.webp",
+  "weaknesses": [
+    "fresh",
+    "slashing"
+  ],
+  "resistances": [
+    "generic"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 2,
+    "value": 500
+  },
+  "description": "Buitres chupasangre que vuelan cerca del agua, en especial, en torno al estanque. Al morir, puede soltar aguijón de mosquito y depósito de sangre de mosquito.",
+  "behavior": "Suele moverse dentro de un espacio aéreo relativamente pequeño, aunque también baja a descansar sobre hojas o suelo seco. Además de hostigar, se cura con parte del daño que inflige, así que dejarlo trabajar gratis hace la pelea mucho más larga.",
+  "interactionWithPlayer": "Ataca al jugador en cuanto lo ve y rara vez se cansa de insistir. No seguirá bajo el agua, pero mientras el combate siga en superficie intentará mantenerte siempre reaccionando a su ritmo.",
+  "interactionWithCreatures": "Es neutral con muchas criaturas salvo que la ataquen, pero avispas y drones avispa son especialmente agresivos con los mosquitos y suelen eliminarlos en cuanto coinciden.",
+  "strategy": "Conviene llevar al menos un arma de tier 2 y evitar pelear contra enjambres. El picotazo simple y el ataque en bucle son manejables si lees el ritmo; el problema real empieza cuando dejas que conecte varias veces y se alargue demasiado.",
+  "environments": [
+    "Área de ceremonia",
+    "Cancha de croquet",
+    "Zona de entrada",
+    "Invernadero",
+    "Alrededores del invernadero",
+    "Alrededores del carrito de helados",
+    "Zona de la mesa de pícnic",
+    "Colina de pinos",
+    "Parche de calabazas",
+    "Zona frontal del snack bar",
+    "Zona de la estatua",
+    "Huerto vegetal"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Mosquito Beak",
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Mosquito Blood Sack",
+      "minCount": 1,
+      "maxCount": 2
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Mosquito Beak",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Mosquito Beak",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mosquito Blood Sack",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mosquito Blood Sack",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 500,
+    "stunThreshold": 30,
+    "stunCooldownSeconds": 12
+  },
+  "inflictsEffects": [
+    "stabbing"
+  ],
+  "inflicts": [
+    "Todos sus ataques hacen daño perforante."
+  ],
+  "specialTraits": [
+    "Roba vida equivalente al 75% del daño que inflige."
+  ],
+  "abilities": [
+    {
+      "name": "Pinchazo",
+      "description": "Prepara el pico y lo lanza de frente en un golpe bloqueable.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo de 3 pinchazos",
+      "description": "Se balancea de lado a lado antes de enlazar tres picotazos bloqueables.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Picado en bucle",
+      "description": "Vuela en un arco antes de cargar con un picotazo potente y bloqueable.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Mosquito",
+  "bestiaryId": "Mosquito",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Mordida",
+      "technicalId": "MosquitoBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 60",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 60.0,
+      "cooldownSeconds": 0.0,
+      "range": 250.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo estocada",
+      "technicalId": "MosquitoComboStab",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 45",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Picada Bomb",
+      "technicalId": "MosquitoDiveBomb",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 70",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 70.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [
+    {
+      "id": "Mosquito_Wave",
+      "characterRow": "Mosquito_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 500.0,
+        "stun": {
+          "max": 30.0,
+          "duration": 3.0,
+          "cooldown": 12.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "MosquitoBite",
+          "ability": "MosquitoBite",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "MosquitoComboStab",
+          "ability": "MosquitoCombo",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 45.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "MosquitoDiveBomb",
+          "ability": "MosquitoDive",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 70.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 3,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Mosquito  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_df7438024b9d61e5",
+      "targetType": "creature",
+      "targetId": "g2_mosquito",
+      "technicalId": "Mosquito",
+      "map": "surface",
+      "world": {
+        "x": -130697.58,
+        "y": 53597.742,
+        "z": -237.26355
+      },
+      "u": 0.48998272636815915,
+      "v": 0.51713503587149,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ed9bc2dee866b868",
+      "targetType": "creature",
+      "targetId": "g2_mosquito",
+      "technicalId": "Mosquito",
+      "map": "surface",
+      "world": {
+        "x": -219760.2,
+        "y": -16076.148,
+        "z": 5834.441
+      },
+      "u": 0.15635628914252264,
+      "v": 0.21632525696939028,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": []
+}

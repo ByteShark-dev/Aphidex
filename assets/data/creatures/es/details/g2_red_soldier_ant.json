@@ -1,1 +1,1766 @@
-{"id":"g2_red_soldier_ant","speciesKey":"red_soldier_ant","collectionGroup":"angry","name":"Hormiga soldado roja","game":"g2","tier":1,"danger":"intermedia","isBoss":false,"order":204,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_RedAntSoldier.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_RedAntSoldier_G.png","photo":"assets/g2/creatures/photos/Red_Soldier_Ant.webp","weaknesses":["stabbing","spicy"],"resistances":["slashing"],"temperament":"aggressive","health":{"value":320,"rating":1},"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_arrows_only","susceptibleDamageTypes":["stabbingArrowsOnly"]},"description":"Es una guerrera furiosa con grandes mandíbulas que defienden su territorio en la pradera seca y diversos hormigueros. Al morir, puede soltar glándula ácida, cabeza de hormiga roja, mandíbulas de hormiga roja y parte de hormiga roja.","behavior":"Patrulla entradas, túneles y zonas cercanas a los hormigueros rojos como escolta natural de las obreras. No hace nada especialmente complejo, pero reacciona rápido y cumple muy bien su papel de guardia constante.","interactionWithPlayer":"Es agresiva con el jugador salvo que vayas montado en un Red Soldier Ant Buggy. En cuanto te metes demasiado en su territorio o tocas los huevos, deja claro que la colonia primero pregunta poco y muerde mucho.","interactionWithCreatures":"Protege a las obreras rojas y se mete con lo que se acerque demasiado al hormiguero. En zonas conflictivas también acaba peleando con cucarachas, arañas y hormigas negras invasoras.","strategy":"Una sola cae con casi cualquier arma temprana, pero los grupos exigen más respeto del que aparentan. Bloquea limpio, no te dejes encerrar y corta primero a las que te cierran la retirada.","environments":["Zona de entrada","Pozo de fuego","Zona de la mesa de pícnic","Hormigueros rojos","Zona frontal del snack bar","Hormiguero en guerra"],"respawnInfo":"1 día","loot":[{"section":"loot","item":"Glándula de ácido","minCount":0,"maxCount":2},{"section":"loot","item":"Cabeza de hormiga roja","minCount":0,"maxCount":1},{"section":"loot","item":"Mandíbulas de hormiga roja","minCount":0,"maxCount":2},{"section":"loot","item":"Parte de hormiga roja","minCount":1,"maxCount":2},{"section":"rare","item":"Glándula de ácido","minCount":0,"maxCount":1},{"section":"rare","item":"Parte de hormiga roja","minCount":0,"maxCount":3}],"advancedLootTable":[{"item":"Glándula de ácido","countLabel":"x3","chancePct":50},{"item":"Glándula de ácido","countLabel":"x1","chancePct":1},{"item":"Cabeza de hormiga roja","countLabel":"x1","chancePct":30},{"item":"Mandíbulas de hormiga roja","countLabel":"x1","chancePct":75},{"item":"Mandíbulas de hormiga roja","countLabel":"x1","chancePct":25},{"item":"Parte de hormiga roja","countLabel":"x1","chancePct":100},{"item":"Parte de hormiga roja","countLabel":"x1","chancePct":70},{"item":"Parte de hormiga roja","countLabel":"x3","chancePct":1}],"combatStats":{"health":320,"stunThreshold":50,"stunCooldownSeconds":5,"attackDamageSummary":"Mordisco: 30. Combo de 3 mordidas: 25. Mordisco cargado: 55. Mordisco aturdidor: 30."},"inflictsEffects":["chopping"],"inflicts":["Todos sus ataques hacen daño cortante."],"abilities":[{"name":"Mordisco","description":"A basic quick bite.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo de 3 mordidas","description":"Encadena tres mordidas bloqueables con poca pausa.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Mordisco cargado","description":"Retrasa un instante antes de lanzar una mordida más fuerte.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Mordisco aturdidor","description":"Inclina la cabeza y lanza un mordisco que rompe la guardia si no bloqueas perfecto.","blockable":true,"breaksGuard":true,"staggers":false},{"name":"Postura defensiva","description":"Se alza sobre las patas traseras y protege el frente de su cuerpo de ataques ligeros."}],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"damageWeaknesses":[{"type":"stabbing","bonusPct":15}],"resistancesV2":[{"type":"slashing","bonusPct":25}],"groupId":null,"cardTier":1,"technicalId":"AntRedSoldier","bestiaryId":"AntRedSoldier","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Izquierda golpe","technicalId":"AntRedSoldierAugustaLeft","tags":["chopping"],"notes":"Daño del ataque: 30"},{"name":"Derecha golpe","technicalId":"AntRedSoldierAugustaRight","tags":["chopping"],"notes":"Daño del ataque: 30"},{"name":"Golpe múltiple","technicalId":"AntRedSoldierAugustaMultistrike","tags":["chopping"],"notes":"Daño del ataque: 25"},{"name":"Potente ataque","technicalId":"AntRedSoldierAugustaPowerAttack","tags":["chopping"],"notes":"Daño del ataque: 55"},{"name":"Aplastamiento","technicalId":"AntRedSoldierAugustaSmash","tags":["chopping"],"notes":"Daño del ataque: 30"},{"name":"Bloqueo ofensivo","technicalId":"BlockOffensive","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[],"contextVariants":[{"id":"Ant_Soldier_Brown_Augusta_Wave","characterRow":"Ant_Soldier_Brown_Augusta_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":320.0,"stun":{"max":25.0,"duration":4.0,"cooldown":8.0,"staggerThreshold":10}},"weakpoints":["Eyes"],"resistances":[{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"}],"weaknesses":[{"damageTypes":["Stabbing"],"percent":15.0,"sourceId":"DamageResistDownStabbingTiny"},{"damageTypes":["Spicy"],"percent":15.0,"sourceId":"DamageResistDownSpicyTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"AntRedSoldierAugustaLeft","ability":"AntRedSoldierAugustaLeft","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Chopping","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"AntRedSoldierAugustaRight","ability":"AntRedSoldierAugustaRight","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Chopping","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"AntRedSoldierAugustaMultistrike","ability":"AntRedSoldierAugustaMultistrike","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":25.0,"type":"Chopping","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"AntRedSoldierAugustaPowerAttack","ability":"AntRedSoldierAugustaPowerAttack","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":55.0,"type":"Chopping","hitStun":10,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"AntRedSoldierAugustaSmash","ability":"AntRedSoldierAugustaSmash","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Chopping","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BlockOffensive","ability":"BlockOffensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":0,"hiddenContextualModifiers":["DamageResistBurrTrapDown","DamageResistTurretDown"],"extractionWarnings":[]},"nameEsMX":"Hormiga soldado roja  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_red_soldier_ant",
+  "speciesKey": "red_soldier_ant",
+  "collectionGroup": "angry",
+  "name": "Hormiga soldado roja",
+  "game": "g2",
+  "tier": 1,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 204,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_RedAntSoldier.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_RedAntSoldier_G.png",
+  "photo": "assets/g2/creatures/photos/Red_Soldier_Ant.webp",
+  "weaknesses": [
+    "stabbing",
+    "spicy"
+  ],
+  "resistances": [
+    "slashing"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 1,
+    "value": 320
+  },
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_arrows_only",
+    "susceptibleDamageTypes": [
+      "stabbingArrowsOnly"
+    ]
+  },
+  "description": "Es una guerrera furiosa con grandes mandíbulas que defienden su territorio en la pradera seca y diversos hormigueros. Al morir, puede soltar glándula ácida, cabeza de hormiga roja, mandíbulas de hormiga roja y parte de hormiga roja.",
+  "behavior": "Patrulla entradas, túneles y zonas cercanas a los hormigueros rojos como escolta natural de las obreras. No hace nada especialmente complejo, pero reacciona rápido y cumple muy bien su papel de guardia constante.",
+  "interactionWithPlayer": "Es agresiva con el jugador salvo que vayas montado en un Red Soldier Ant Buggy. En cuanto te metes demasiado en su territorio o tocas los huevos, deja claro que la colonia primero pregunta poco y muerde mucho.",
+  "interactionWithCreatures": "Protege a las obreras rojas y se mete con lo que se acerque demasiado al hormiguero. En zonas conflictivas también acaba peleando con cucarachas, arañas y hormigas negras invasoras.",
+  "strategy": "Una sola cae con casi cualquier arma temprana, pero los grupos exigen más respeto del que aparentan. Bloquea limpio, no te dejes encerrar y corta primero a las que te cierran la retirada.",
+  "environments": [
+    "Zona de entrada",
+    "Pozo de fuego",
+    "Zona de la mesa de pícnic",
+    "Hormigueros rojos",
+    "Zona frontal del snack bar",
+    "Hormiguero en guerra"
+  ],
+  "respawnInfo": "1 día",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Acid Gland",
+      "minCount": 0,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Ant Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Ant Mandibles",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Ant Part",
+      "minCount": 1,
+      "maxCount": 5
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Acid Gland",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Acid Gland",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Head",
+      "countLabel": "1",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Mandibles",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Mandibles",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Ant Part",
+      "countLabel": "1",
+      "chancePct": 70,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 320,
+    "stunThreshold": 50,
+    "stunCooldownSeconds": 5
+  },
+  "inflictsEffects": [
+    "chopping"
+  ],
+  "inflicts": [
+    "Todos sus ataques hacen daño cortante."
+  ],
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "A basic quick bite.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo de 3 mordidas",
+      "description": "Encadena tres mordidas bloqueables con poca pausa.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Mordisco cargado",
+      "description": "Retrasa un instante antes de lanzar una mordida más fuerte.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Mordisco aturdidor",
+      "description": "Inclina la cabeza y lanza un mordisco que rompe la guardia si no bloqueas perfecto.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": false
+    },
+    {
+      "name": "Postura defensiva",
+      "description": "Se alza sobre las patas traseras y protege el frente de su cuerpo de ataques ligeros."
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 1,
+  "technicalId": "AntRedSoldier",
+  "bestiaryId": "AntRedSoldier",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only",
+      "susceptibleDamageTypes": [
+        "stabbingArrowsOnly"
+      ],
+      "weaponFamilies": [
+        "bow",
+        "crossbow"
+      ],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Izquierda golpe",
+      "technicalId": "AntRedSoldierAugustaLeft",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 30",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 5.0,
+      "range": 175.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Derecha golpe",
+      "technicalId": "AntRedSoldierAugustaRight",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 30",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 5.0,
+      "range": 175.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Golpe múltiple",
+      "technicalId": "AntRedSoldierAugustaMultistrike",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 25",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 25.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente ataque",
+      "technicalId": "AntRedSoldierAugustaPowerAttack",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 55",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 20.0,
+      "range": 175.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Aplastamiento",
+      "technicalId": "AntRedSoldierAugustaSmash",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 30",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bloqueo ofensivo",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [
+    {
+      "id": "Ant_Soldier_Brown_Augusta_Wave",
+      "characterRow": "Ant_Soldier_Brown_Augusta_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 320.0,
+        "stun": {
+          "max": 25.0,
+          "duration": 4.0,
+          "cooldown": 8.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [
+        "Eyes"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSpicyTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "AntRedSoldierAugustaLeft",
+          "ability": "AntRedSoldierAugustaLeft",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Chopping",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "AntRedSoldierAugustaRight",
+          "ability": "AntRedSoldierAugustaRight",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Chopping",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "AntRedSoldierAugustaMultistrike",
+          "ability": "AntRedSoldierAugustaMultistrike",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 25.0,
+            "type": "Chopping",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "AntRedSoldierAugustaPowerAttack",
+          "ability": "AntRedSoldierAugustaPowerAttack",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Chopping",
+            "hitStun": 10,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "AntRedSoldierAugustaSmash",
+          "ability": "AntRedSoldierAugustaSmash",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Chopping",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BlockOffensive",
+          "ability": "BlockOffensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [
+          "DamageResistBurrTrapDown",
+          "DamageResistTurretDown"
+        ],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Hormiga soldado roja  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_bc02864b86cfd9c5",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -179261.0,
+        "y": 103957.13,
+        "z": -2045.3464
+      },
+      "u": 0.30806532045654084,
+      "v": 0.7345564597352222,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a099da234abaf20d",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -193069.38,
+        "y": 107030.414,
+        "z": 724.3759
+      },
+      "u": 0.2563394603453321,
+      "v": 0.7478250440003372,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5eb7f800efe6f731",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -117721.26,
+        "y": 146492.02,
+        "z": -1792.7235
+      },
+      "u": 0.5385917096868598,
+      "v": 0.9181964266801586,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_37bbc98835fb86c7",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -119923.97,
+        "y": 149166.22,
+        "z": -1790.6798
+      },
+      "u": 0.5303404108867428,
+      "v": 0.9297420072518761,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_296240f64721ef7e",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -176761.97,
+        "y": 110415.38,
+        "z": -2549.4453
+      },
+      "u": 0.31742662686567163,
+      "v": 0.7624392829074965,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b3e328daa640699a",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -178203.44,
+        "y": 100340.84,
+        "z": -1539.1505
+      },
+      "u": 0.31202691483757683,
+      "v": 0.7189435034994518,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a819db21c0d9c04",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -183352.11,
+        "y": 89620.1,
+        "z": -1789.6859
+      },
+      "u": 0.29274012057360266,
+      "v": 0.6726578227506536,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d615274d0fc242e2",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -237740.0,
+        "y": 123160.0,
+        "z": 990.0
+      },
+      "u": 0.08900438981562774,
+      "v": 0.8174628552154481,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b6f5ded9c855c01",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -249394.1,
+        "y": 124751.48,
+        "z": 1388.0559
+      },
+      "u": 0.045348410886742734,
+      "v": 0.8243339047137195,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca955b973c605853",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -248024.45,
+        "y": 123489.0,
+        "z": 1562.7423
+      },
+      "u": 0.05047908691834939,
+      "v": 0.8188832785226411,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7a779df813f54dd",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -222461.7,
+        "y": 831.8435,
+        "z": 399.05167
+      },
+      "u": 0.1462365349721978,
+      "v": 0.28932375303145286,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d4de5ef2e3cc52b",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -221918.67,
+        "y": 8494.962,
+        "z": -519.4234
+      },
+      "u": 0.14827071232074915,
+      "v": 0.3224084707310903,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4638a38569023a48",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -216348.84,
+        "y": 5638.385,
+        "z": -1019.4234
+      },
+      "u": 0.16913516183786947,
+      "v": 0.31007549641622395,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d47148a591a6409a",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -217877.77,
+        "y": 3726.5422,
+        "z": -1019.4234
+      },
+      "u": 0.16340782674860993,
+      "v": 0.3018213138240999,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ba7d9bfdff0addd4",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -219345.42,
+        "y": -1077.6693,
+        "z": -1519.4233
+      },
+      "u": 0.15791004506877374,
+      "v": 0.281079629972173,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_819b6a849b2205c2",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -220484.88,
+        "y": -1591.6362,
+        "z": -1519.4233
+      },
+      "u": 0.15364165525314602,
+      "v": 0.2788606312977485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ecc9abc1ace6fad6",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -220388.47,
+        "y": -4696.5664,
+        "z": -1969.6768
+      },
+      "u": 0.15400280479953174,
+      "v": 0.26545541785310733,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_37db3c5938b03069",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -219099.52,
+        "y": -6083.537,
+        "z": -1900.4371
+      },
+      "u": 0.15883118056774953,
+      "v": 0.25946731643477516,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_515e39a158a88820",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -240421.39,
+        "y": 126128.32,
+        "z": -490.3917
+      },
+      "u": 0.07895996722270993,
+      "v": 0.83027826831942,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_acbff2cb8b4e6419",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -223198.88,
+        "y": 3820.3914,
+        "z": 1083.8892
+      },
+      "u": 0.1434750763827919,
+      "v": 0.30222649799139895,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0f91caf5ecd0355d",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -219955.55,
+        "y": -4810.701,
+        "z": -1969.6768
+      },
+      "u": 0.15562451273046538,
+      "v": 0.26496265357955984,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6731df3107aa45e9",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -221901.17,
+        "y": -3914.985,
+        "z": -1864.0989
+      },
+      "u": 0.1483362669007901,
+      "v": 0.2688298143182394,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a082068f49278882",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -221245.12,
+        "y": -4608.9556,
+        "z": -1969.6768
+      },
+      "u": 0.15079381445712614,
+      "v": 0.2658336683767603,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e18bcab7e5ba3b12",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -222545.42,
+        "y": -5260.4355,
+        "z": -1988.1249
+      },
+      "u": 0.14592292186128178,
+      "v": 0.26302097161649385,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5f75108917ada557",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -218537.83,
+        "y": 6044.0854,
+        "z": -848.69635
+      },
+      "u": 0.16093525782850457,
+      "v": 0.3118270657289822,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2781eac2306cfdbd",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -234696.88,
+        "y": 56104.953,
+        "z": 4601.7305
+      },
+      "u": 0.10040384430787239,
+      "v": 0.5279596587907918,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c8b2bfbd85758350",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -221692.42,
+        "y": 7033.259,
+        "z": -519.4234
+      },
+      "u": 0.14911823939127886,
+      "v": 0.3160977199426595,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6e2b7d09ad52d84a",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -219542.95,
+        "y": -4604.6167,
+        "z": -1969.6768
+      },
+      "u": 0.15717010242903126,
+      "v": 0.2658524011265705,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf39e51f3e74660a",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -219244.34,
+        "y": -6504.8027,
+        "z": -1900.4371
+      },
+      "u": 0.15828868832309043,
+      "v": 0.257648545556961,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07b771a2bfd451ba",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -235858.64,
+        "y": 56584.1,
+        "z": 4601.7305
+      },
+      "u": 0.09605191922739241,
+      "v": 0.5300283261657813,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f455750aa9f07cb2",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -180759.56,
+        "y": 127496.75,
+        "z": 12.7570305
+      },
+      "u": 0.30245175065847235,
+      "v": 0.8361863226241673,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_18ab492f26ab4c05",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -178623.39,
+        "y": 139435.72,
+        "z": 547.17175
+      },
+      "u": 0.3104537922153936,
+      "v": 0.8877315847879246,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e7c9dcd1985b3a2",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -213332.36,
+        "y": 96705.0,
+        "z": 1168.9661
+      },
+      "u": 0.18043482352941184,
+      "v": 0.7032461421705033,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e69c5127b2bfa5f2",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -217609.89,
+        "y": 109580.586,
+        "z": 901.7492
+      },
+      "u": 0.164411298800117,
+      "v": 0.7588351465722236,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b06fbc8a07ae9975",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -184864.23,
+        "y": 109539.11,
+        "z": 613.6355
+      },
+      "u": 0.2870757553409423,
+      "v": 0.7586560782528038,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_47285e67a27dc346",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -210025.06,
+        "y": 96801.14,
+        "z": 1080.1874
+      },
+      "u": 0.19282388996195493,
+      "v": 0.7036612166287209,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7eb3ee41a22c3534",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -185041.42,
+        "y": 108239.8,
+        "z": 531.44147
+      },
+      "u": 0.28641200585308746,
+      "v": 0.7530464423644488,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_140f6e8dc3ebe98f",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -183130.95,
+        "y": 97146.11,
+        "z": -1196.5023
+      },
+      "u": 0.29356858062628033,
+      "v": 0.7051505887511594,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fc6e191fd4997f24",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -177724.27,
+        "y": 104072.375,
+        "z": -1839.0603
+      },
+      "u": 0.31382187415861873,
+      "v": 0.7350540180453664,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2f06429b9d78d685",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -105666.96,
+        "y": 109765.15,
+        "z": -3989.8608
+      },
+      "u": 0.5837468282118817,
+      "v": 0.7596319824605785,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_33b7e5be0112847e",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -131555.83,
+        "y": 114194.05,
+        "z": -8159.7812
+      },
+      "u": 0.48676774246414994,
+      "v": 0.7787532979171937,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_42a00362f171b2a4",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -124058.836,
+        "y": 101340.266,
+        "z": -9118.588
+      },
+      "u": 0.514851302077846,
+      "v": 0.7232584213846025,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_192e60ddfec8f66e",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -109857.97,
+        "y": 110081.49,
+        "z": -6906.683
+      },
+      "u": 0.5680474053263096,
+      "v": 0.7609977475335189,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cc7e11f27c3411c6",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -114742.445,
+        "y": 105739.6,
+        "z": -7338.6646
+      },
+      "u": 0.5497502791922738,
+      "v": 0.7422520887089974,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_11057b6eb59491c6",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -122917.18,
+        "y": 106289.07,
+        "z": -6909.2964
+      },
+      "u": 0.519127918056775,
+      "v": 0.7446243683278523,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_39e23d7ef1b1fde6",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -122865.55,
+        "y": 98461.76,
+        "z": -7362.0312
+      },
+      "u": 0.5193213227977759,
+      "v": 0.7108307708913063,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2d0471a263725de3",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -114542.74,
+        "y": 99519.2,
+        "z": -8907.229
+      },
+      "u": 0.5504983693298214,
+      "v": 0.7153961581920905,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6d6436c5b6818443",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -113461.984,
+        "y": 105650.91,
+        "z": -9420.495
+      },
+      "u": 0.5545468553702078,
+      "v": 0.7418691788515053,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ad818f9882f1c428",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -108585.95,
+        "y": 101176.48,
+        "z": -7416.929
+      },
+      "u": 0.5728123617208076,
+      "v": 0.7225512923518002,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c0d054cfa150cacf",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -126780.18,
+        "y": 106972.11,
+        "z": -7659.3125
+      },
+      "u": 0.5046572127597307,
+      "v": 0.7475733225398432,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f151eedd77f7cd4d",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -124680.15,
+        "y": 109919.48,
+        "z": -8168.067
+      },
+      "u": 0.5125238747439275,
+      "v": 0.7602982861961379,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c1d5574fc29cf9aa",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -125940.58,
+        "y": 104195.46,
+        "z": -9152.654
+      },
+      "u": 0.5078023342112964,
+      "v": 0.7355854247407033,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2ba1f92e4adba76c",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -108155.98,
+        "y": 112046.43,
+        "z": -6914.8555
+      },
+      "u": 0.5744230190225345,
+      "v": 0.7694811717682772,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0cb517072a71c7fd",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -127749.945,
+        "y": 118080.1,
+        "z": -9159.663
+      },
+      "u": 0.5010244963418203,
+      "v": 0.7955309149169407,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c234a19b17361a6e",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -132432.34,
+        "y": 108213.945,
+        "z": -7664.2456
+      },
+      "u": 0.48348435703833775,
+      "v": 0.7529348160890462,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b8cf600fa34d58ac",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -133208.52,
+        "y": 100971.98,
+        "z": -7161.114
+      },
+      "u": 0.48057680538484054,
+      "v": 0.721668384855384,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3ec695517352cb6f",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -117201.336,
+        "y": 99881.2,
+        "z": -8910.214
+      },
+      "u": 0.5405393325139011,
+      "v": 0.7169590555696096,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6d80762e7b8ff951",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -186435.72,
+        "y": 106875.66,
+        "z": -546.84576
+      },
+      "u": 0.2811889915130231,
+      "v": 0.7471569096888439,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f8b07867c97c8736",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -128373.25,
+        "y": 112442.055,
+        "z": -8275.087
+      },
+      "u": 0.498689610769681,
+      "v": 0.7711892415886669,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_53a4e4f98005dcb4",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -130812.69,
+        "y": 107009.07,
+        "z": -7652.9043
+      },
+      "u": 0.48955152707052974,
+      "v": 0.7477328934986087,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b8df70a151784965",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -134195.25,
+        "y": 102665.47,
+        "z": -7159.191
+      },
+      "u": 0.4768805384840503,
+      "v": 0.7289798519268066,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d2aaa55b56c6a9e9",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -128586.04,
+        "y": 99332.766,
+        "z": -6666.844
+      },
+      "u": 0.49789250453614287,
+      "v": 0.7145912487730838,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3d4d1e8cf8e682a9",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -180983.28,
+        "y": 98125.9,
+        "z": -1022.87103
+      },
+      "u": 0.30161370090722855,
+      "v": 0.7093807302470697,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_85eba3f78542caa8",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -182399.84,
+        "y": 100437.76,
+        "z": -798.2608
+      },
+      "u": 0.29630730114135206,
+      "v": 0.7193619455266043,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6c5064b146e9a7aa",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -178124.4,
+        "y": 111316.38,
+        "z": -2538.4934
+      },
+      "u": 0.3123229967808019,
+      "v": 0.7663292567670125,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_028da814fb47ddbb",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -169655.73,
+        "y": 110921.61,
+        "z": -3088.989
+      },
+      "u": 0.344046431372549,
+      "v": 0.764624878320263,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b2c8b80002266749",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -131117.25,
+        "y": 97324.95,
+        "z": -5617.075
+      },
+      "u": 0.48841065261925665,
+      "v": 0.7059227118644068,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ac9c39f07368152a",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -183213.47,
+        "y": 84881.53,
+        "z": -510.0221
+      },
+      "u": 0.29325946268656716,
+      "v": 0.6521995392528881,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fdcbb77e56bc21a6",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -127457.805,
+        "y": 133997.89,
+        "z": -3795.6562
+      },
+      "u": 0.5021188457711443,
+      "v": 0.8642543189139051,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fedee0524637eecd",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -115423.945,
+        "y": 142150.81,
+        "z": -2260.002
+      },
+      "u": 0.5471973965466783,
+      "v": 0.899453703684965,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fe953f853edc4e9f",
+      "targetType": "creature",
+      "targetId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "map": "surface",
+      "world": {
+        "x": -216408.98,
+        "y": -10567.757,
+        "z": -895.0
+      },
+      "u": 0.16890987884108863,
+      "v": 0.24010716262754025,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Red_Soldier_Ant.webp",
+  "immunities": []
+}

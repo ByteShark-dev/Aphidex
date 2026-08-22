@@ -1,1 +1,65 @@
-{"id":"g2_masked_stranger_orc_waves","speciesKey":"g2_masked_stranger_orc_waves","collectionGroup":"other","name":"Oleadas C.R.O. de la Enmascarada Misteriosa","game":"g2","tier":3,"danger":"imposible","isBoss":false,"order":290,"defaultGold":false,"isKillable":false,"cardNormal":"","cardGold":"","photo":"assets/g2/creatures/photos/Masked_Stranger_ORC_Waves.webp","weaknesses":[],"resistances":[],"temperament":"other","description":"Oleadas O.R.C. enviadas por la Enmascarada Misteriosa para presionar al jugador fuera de un duelo normal. La amenaza depende de qué criaturas O.R.C. participen en la zona.","behavior":"Funcionan como ataques de oleada: varias criaturas modificadas intentan forzar errores, cortar rutas y mantener presión constante.","interactionWithPlayer":"La Enmascarada Misteriosa usa estas oleadas como presión indirecta. No conviene tratarlas como una sola criatura con debilidades globales.","interactionWithCreatures":"Pueden participar variantes O.R.C. de insectos comunes y amenazas mayores cuando la zona o el progreso lo permiten.","strategy":"Prioriza control de oleada, rutas limpias y eliminación rápida de unidades pequeñas antes de quedar encerrado por criaturas más resistentes. Revisa la ficha de cada criatura O.R.C. para debilidades y resistencias específicas.","environments":["Zonas con presión O.R.C. ligada a la Enmascarada Misteriosa"],"loot":[{"section":"passive","item":"Consulta las criaturas O.R.C. participantes para su botín específico.","minCount":0,"maxCount":0}],"abilities":[{"name":"Oleada enviada","description":"La amenaza llega como grupo, no como criatura única.","blockable":null,"breaksGuard":null,"staggers":null},{"name":"Composición variable","description":"Puede mezclar unidades O.R.C. menores, apoyos rápidos y amenazas pesadas según la zona.","blockable":null,"breaksGuard":null,"staggers":null}],"specialTraits":["Sin debilidades ni resistencias globales: dependen de cada criatura O.R.C. participante.","Trátala como una entrada de evento y consulta cada ficha O.R.C. para el detalle real del combate."],"healthDisplay":"hidden","listIconAsset":"assets/global/effects_damage/Summon_HP.webp","hasCreatureCard":false,"hasGoldCreatureCard":false,"hasSelectableCardVariants":false,"defaultCardVariant":null}
+{
+  "id": "g2_masked_stranger_orc_waves",
+  "speciesKey": "g2_masked_stranger_orc_waves",
+  "collectionGroup": "other",
+  "name": "Oleadas C.R.O. de la Enmascarada Misteriosa",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible",
+  "isBoss": false,
+  "order": 290,
+  "defaultGold": false,
+  "isKillable": false,
+  "cardNormal": "",
+  "cardGold": "",
+  "photo": "assets/g2/creatures/photos/Masked_Stranger_ORC_Waves.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "other",
+  "description": "Oleadas O.R.C. enviadas por la Enmascarada Misteriosa para presionar al jugador fuera de un duelo normal. La amenaza depende de qué criaturas O.R.C. participen en la zona.",
+  "behavior": "Funcionan como ataques de oleada: varias criaturas modificadas intentan forzar errores, cortar rutas y mantener presión constante.",
+  "interactionWithPlayer": "La Enmascarada Misteriosa usa estas oleadas como presión indirecta. No conviene tratarlas como una sola criatura con debilidades globales.",
+  "interactionWithCreatures": "Pueden participar variantes O.R.C. de insectos comunes y amenazas mayores cuando la zona o el progreso lo permiten.",
+  "strategy": "Prioriza control de oleada, rutas limpias y eliminación rápida de unidades pequeñas antes de quedar encerrado por criaturas más resistentes. Revisa la ficha de cada criatura O.R.C. para debilidades y resistencias específicas.",
+  "environments": [
+    "Zonas con presión O.R.C. ligada a la Enmascarada Misteriosa"
+  ],
+  "loot": [
+    {
+      "section": "passive",
+      "item": "Consulta las criaturas O.R.C. participantes para su botín específico.",
+      "minCount": 0,
+      "maxCount": 0
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Oleada enviada",
+      "description": "La amenaza llega como grupo, no como criatura única.",
+      "blockable": null,
+      "breaksGuard": null,
+      "staggers": null
+    },
+    {
+      "name": "Composición variable",
+      "description": "Puede mezclar unidades O.R.C. menores, apoyos rápidos y amenazas pesadas según la zona.",
+      "blockable": null,
+      "breaksGuard": null,
+      "staggers": null
+    }
+  ],
+  "specialTraits": [
+    "Sin debilidades ni resistencias globales: dependen de cada criatura O.R.C. participante.",
+    "Trátala como una entrada de evento y consulta cada ficha O.R.C. para el detalle real del combate."
+  ],
+  "healthDisplay": "hidden",
+  "listIconAsset": "assets/global/effects_damage/Summon_HP.webp",
+  "hasCreatureCard": false,
+  "hasGoldCreatureCard": false,
+  "hasSelectableCardVariants": false,
+  "defaultCardVariant": null,
+  "appearanceType": "no_natural_spawn",
+  "entityType": "special",
+  "customAsset": "assets/g2/defenses/Masked_Stranger_ORC_Waves_Icon.png",
+  "presentationOverrideProvenance": "user_provided_editorial_asset"
+}

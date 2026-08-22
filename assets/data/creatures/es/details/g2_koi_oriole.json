@@ -1,1 +1,166 @@
-{"id":"g2_koi_oriole","speciesKey":"g1_koi_fish","collectionGroup":"angry","game":"g2","danger":"unknown","order":244,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_koi_oriole.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":"koi","name":"Monarca","tier":5,"cardTier":5,"technicalId":"KoiC","bestiaryId":"KoiC","isBoss":true,"bossCardStyle":"yellow","isKillable":false,"healthDisplay":"hidden","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png","weaknesses":[],"resistances":[],"elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[{"name":"Carga","technicalId":"KoiCharge_Augusta","tags":["general_unblockable"],"notes":"Daño del ataque: 500"},{"name":"Koi Eat","technicalId":"KoiEat_Augusta","tags":["general_unblockable"],"notes":"Daño del ataque: 500"},{"name":"Koi Thrash","technicalId":"KoiThrash_Augusta","tags":["general_unblockable"],"notes":"Daño del ataque: 500"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":null,"description":"Príncipe del Estanque del Zorrillo. Al principio, parece un poco malo, pero una vez que lo conoces, te das cuenta de que es un miserable.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_koi_oriole",
+  "speciesKey": "g1_koi_fish",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "alta",
+  "order": 244,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_koi_oriole.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Koi Fish Scale",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "abilities": [],
+  "behavior": "Patrulla el Estanque del Zorrillo y suele combatir de forma más agresiva que los otros koi. Cuando fija un objetivo, frecuentemente se aleja para tomar distancia y después lanzarse contra él a gran velocidad con una embestida.",
+  "interactionWithPlayer": "Es extremadamente peligroso y no puede ser eliminado. Tiene una marcada tendencia a utilizar su embestida contra el jugador, por lo que incluso mantener cierta distancia no garantiza estar a salvo.",
+  "interactionWithCreatures": "Es uno de los principales depredadores del estanque y puede atacar a las criaturas que encuentre durante su recorrido. Su gran tamaño y velocidad hacen que prácticamente ninguna criatura pequeña pueda enfrentarse a él.",
+  "strategy": "Vigílalo incluso cuando parezca estar alejándose: tomar distancia puede ser la preparación para una embestida. Si comienza a separarse de ti, prepárate para cambiar rápidamente de dirección y busca cobertura. Al igual que con los demás koi del estanque, evita a toda costa que los tres te detecten simultáneamente.",
+  "groupId": "koi",
+  "name": "Monarca",
+  "tier": 5,
+  "cardTier": 5,
+  "technicalId": "KoiC",
+  "bestiaryId": "KoiC",
+  "isBoss": true,
+  "bossCardStyle": "yellow",
+  "isKillable": false,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png",
+  "weaknesses": [],
+  "resistances": [],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Carga",
+      "technicalId": "KoiCharge_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Koi Eat",
+      "technicalId": "KoiEat_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Koi Thrash",
+      "technicalId": "KoiThrash_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 5,
+    "value": 2000000000
+  },
+  "description": "Príncipe del Estanque del Zorrillo. Al principio, parece un poco malo, pero una vez que lo conoces, te das cuenta de que es un miserable.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_6c460103e97b4e52",
+      "targetType": "creature",
+      "targetId": "g2_koi_oriole",
+      "technicalId": "KoiC",
+      "map": "surface",
+      "world": {
+        "x": -38825.36,
+        "y": 13567.1045,
+        "z": -11285.726
+      },
+      "u": 0.8341338577699736,
+      "v": 0.3443069188295808,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "fixed_encounter",
+  "hideHealth": true,
+  "presentationOverrideProvenance": "presentation_rule",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "combatStats": {
+    "health": 2000000000,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Koi Fish Scale",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

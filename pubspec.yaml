@@ -2,7 +2,7 @@ name: aphidex
 description: "Aphidex"
 publish_to: 'none'
 
-version: 1.2.0+21
+version: 1.3.1+23
 
 environment:
   sdk: ^3.10.7
@@ -42,6 +42,7 @@ flutter:
     - assets/g2/creatures/cards/
     - assets/g2/creatures/cards_golden/
     - assets/g2/creatures/photos/
+    - assets/g2/creatures/thumbnails/
     - assets/g2/tier_icons/
     - assets/data/creatures/en/
     - assets/data/creatures/en/details/
@@ -49,6 +50,10 @@ flutter:
     - assets/data/creatures/es/details/
     - assets/data/creatures/ru/
     - assets/data/creatures/ru/details/
+    - assets/data/g2/
+    - assets/g2/equipment/icons/
+    - assets/g2/map/
+    - assets/g2/defenses/
     - assets/global/
     - assets/global/branding/
     - assets/global/effects_damage/

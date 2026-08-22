@@ -1,1 +1,696 @@
-{"id":"g2_cockroach_queen","speciesKey":"cockroach_queen","collectionGroup":"angry","name":"Cucaracha reina","game":"g2","tier":2,"danger":"muy_alta","isBoss":false,"order":220,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Queen.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Queen_G.png","photo":"assets/g2/creatures/photos/Cockroach_Queen.webp","weaknesses":[],"resistances":["gas","fresh","spicy","venom"],"temperament":"aggressive","health":{"value":1650,"rating":4},"description":"Una cucaracha matriarca grande y muy dura, lista para defenderse si la provocan.","behavior":"Se mantiene cerca de su grupo y presiona con un estilo frontal y pesado. Mientras conserva la cabeza mezcla mordidas, patadas y ácido; cuando la pierde cambia a un tramo sin cabeza mucho más lineal, pero también más caótico.","interactionWithPlayer":"Ataca en cuanto entras en rango y vuelve mucho más peligrosa la presencia de otras cucarachas cercanas. El gran error es pensar que el combate se relaja cuando la decapitas: en realidad solo cambia de forma.","interactionWithCreatures":"Las cucarachas cercanas reaccionan con mucha más facilidad cuando ella entra en combate.","strategy":"Rompe primero su apoyo si la arena lo permite y no la trates como una cucaracha grande sin más. La pelea mejora mucho si reservas espacio para la fase sin cabeza y no te quedas atrapado en medio del grupo cuando entra el ácido.","environments":["Pozo de fuego","Cuevas menores","Hormiguero tóxico"],"loot":[{"section":"loot","item":"Roach Chunk","minCount":4,"maxCount":9},{"section":"loot","item":"Roach Head","minCount":1,"maxCount":1},{"section":"loot","item":"Roach Milk","minCount":2,"maxCount":4},{"section":"loot","item":"Rotten Food","minCount":0,"maxCount":1},{"section":"loot","item":"Spoiled Meat","minCount":0,"maxCount":1},{"section":"rare","item":"Apple Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Billy Hog Bite","minCount":0,"maxCount":1},{"section":"rare","item":"Cookie Sandwich Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Everlasting Hogstopper","minCount":0,"maxCount":1},{"section":"rare","item":"Fresh Apple Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Fresh Billy Hog Bite","minCount":0,"maxCount":1},{"section":"rare","item":"Roach Chunk","minCount":0,"maxCount":3}],"combatStats":{"health":1650,"attackDamageSummary":"Mordisco: 50. Combo de 3 mordidas: 50. Patada lateral: 45. Golpe corporal: 60. Spray ácido: daño residual."},"abilities":[{"name":"Mordisco","description":"Un mordisco directo para abrir presión si te quedas demasiado tiempo frente a ella.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo de 3 mordidas","description":"Encadena varias mordidas cortas si detecta que sigues atrapado delante de ella.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Patada lateral","description":"Gira el cuerpo para cazar a quien intenta rodearla o pegar desde el costado.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Golpe corporal","description":"Empuja o deja caer todo el cuerpo para romper el espacio corto y castigar bloqueos tardíos.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Spray ácido","description":"Escupe ácido para cerrar rutas de escape y seguir dañando el suelo durante unos segundos.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Embestida sin cabeza","description":"Tras perder la cabeza se lanza en línea recta con el cuerpo, cubriendo mucha más distancia que en su fase normal.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Spray ácido sin cabeza","description":"Expulsa un chorro ácido errático durante la fase sin cabeza y deja daño residual si te quedas en la línea.","blockable":false,"breaksGuard":false,"staggers":false}],"resistancesV2":[{"type":"gas","bonusPct":90},{"type":"fresh","bonusPct":50},{"type":"spicy","bonusPct":50},{"type":"venom","bonusPct":50}],"bossPhases":[{"id":"phase1","label":"Fase 1","summary":"La reina pelea con la cabeza intacta y combina mordidas, patadas laterales, golpes corporales y spray ácido para controlar el frente.","startsAtHealthPct":100,"abilities":[{"name":"Mordisco","description":"Un mordisco directo para abrir presión si te quedas demasiado tiempo frente a ella.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo de 3 mordidas","description":"Encadena varias mordidas cortas si detecta que sigues atrapado delante de ella.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Patada lateral","description":"Gira el cuerpo para cazar a quien intenta rodearla o pegar desde el costado.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Golpe corporal","description":"Empuja o deja caer todo el cuerpo para romper el espacio corto y castigar bloqueos tardíos.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Spray ácido","description":"Escupe ácido para cerrar rutas de escape y seguir dañando el suelo durante unos segundos.","blockable":false,"breaksGuard":false,"staggers":false}]},{"id":"phase2","label":"Fase 2","summary":"Cuando queda decapitada no se detiene: cambia a embestidas corporales más largas y a un spray ácido mucho menos predecible.","trigger":"Comienza cuando la reina pierde la cabeza y entra en su tramo sin cabeza.","abilities":[{"name":"Golpe corporal","description":"Empuja o deja caer todo el cuerpo para romper el espacio corto y castigar bloqueos tardíos.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Embestida sin cabeza","description":"Tras perder la cabeza se lanza en línea recta con el cuerpo, cubriendo mucha más distancia que en su fase normal.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Spray ácido sin cabeza","description":"Expulsa un chorro ácido errático durante la fase sin cabeza y deja daño residual si te quedas en la línea.","blockable":false,"breaksGuard":false,"staggers":false}]}],"groupId":null,"cardTier":2,"technicalId":"Cockroach_Queen","bestiaryId":"Cockroach_Queen","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Mordida","technicalId":"CockroachQueenBite","tags":["stabbing"],"notes":"Daño del ataque: 50"},{"name":"Mordida derecha","technicalId":"CockroachQueenBiteRight","tags":["stabbing"],"notes":"Daño del ataque: 50"},{"name":"Mordida izquierda","technicalId":"CockroachQueenBiteLeft","tags":["stabbing"],"notes":"Daño del ataque: 50"},{"name":"Karate patada izquierda","technicalId":"CockroachQueenKarateKickLeft","tags":["stabbing"],"notes":"Daño del ataque: 50"},{"name":"Karate patada derecha","technicalId":"CockroachQueenKarateKickRight","tags":["stabbing"],"notes":"Daño del ataque: 50"},{"name":"Combo 3","technicalId":"CockroachQueenCombo3","tags":["stabbing"],"notes":"Daño del ataque: 45"},{"name":"Golpe","technicalId":"CockroachQueen_Slam","tags":["generic"],"notes":"Daño del ataque: 60"},{"name":"Rocío","technicalId":"CockroachQueenSpray","tags":["sizzle_direct_hit"],"notes":"Daño del ataque: 50"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_cockroach_queen",
+  "speciesKey": "cockroach_queen",
+  "collectionGroup": "angry",
+  "name": "Cucaracha reina",
+  "game": "g2",
+  "tier": 2,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 220,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Queen.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Queen_G.png",
+  "photo": "assets/g2/creatures/photos/Cockroach_Queen.webp",
+  "weaknesses": [],
+  "resistances": [
+    "gas",
+    "fresh",
+    "spicy",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 4,
+    "value": 1650
+  },
+  "description": "Una cucaracha matriarca grande y muy dura, lista para defenderse si la provocan.",
+  "behavior": "Se mantiene cerca de su grupo y presiona con un estilo frontal y pesado. Mientras conserva la cabeza mezcla mordidas, patadas y ácido; cuando la pierde cambia a un tramo sin cabeza mucho más lineal, pero también más caótico.",
+  "interactionWithPlayer": "Ataca en cuanto entras en rango y vuelve mucho más peligrosa la presencia de otras cucarachas cercanas. El gran error es pensar que el combate se relaja cuando la decapitas: en realidad solo cambia de forma.",
+  "interactionWithCreatures": "Las cucarachas cercanas reaccionan con mucha más facilidad cuando ella entra en combate.",
+  "strategy": "Rompe primero su apoyo si la arena lo permite y no la trates como una cucaracha grande sin más. La pelea mejora mucho si reservas espacio para la fase sin cabeza y no te quedas atrapado en medio del grupo cuando entra el ácido.",
+  "environments": [
+    "Pozo de fuego",
+    "Cuevas menores",
+    "Hormiguero tóxico"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Billy Hog",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cockroach Head",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cockroach Milk",
+      "minCount": 2,
+      "maxCount": 5
+    },
+    {
+      "section": "loot",
+      "item": "Cockroach Part",
+      "minCount": 4,
+      "maxCount": 12
+    },
+    {
+      "section": "rare",
+      "item": "Food Apple",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Apple Pristine",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Cookie Sandwich",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Cookie Sandwich Pristine",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Hot Dog",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Hot Dog Pristine",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Rotten",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Spoiled Meat",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1650,
+    "stunThreshold": 90,
+    "stunCooldownSeconds": 20
+  },
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "Un mordisco directo para abrir presión si te quedas demasiado tiempo frente a ella.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo de 3 mordidas",
+      "description": "Encadena varias mordidas cortas si detecta que sigues atrapado delante de ella.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Patada lateral",
+      "description": "Gira el cuerpo para cazar a quien intenta rodearla o pegar desde el costado.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Golpe corporal",
+      "description": "Empuja o deja caer todo el cuerpo para romper el espacio corto y castigar bloqueos tardíos.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Spray ácido",
+      "description": "Escupe ácido para cerrar rutas de escape y seguir dañando el suelo durante unos segundos.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Embestida sin cabeza",
+      "description": "Tras perder la cabeza se lanza en línea recta con el cuerpo, cubriendo mucha más distancia que en su fase normal.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Spray ácido sin cabeza",
+      "description": "Expulsa un chorro ácido errático durante la fase sin cabeza y deja daño residual si te quedas en la línea.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "gas",
+      "bonusPct": 90
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 50
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "bossPhases": [
+    {
+      "id": "phase1",
+      "label": "Fase 1",
+      "summary": "La reina pelea con la cabeza intacta y combina mordidas, patadas laterales, golpes corporales y spray ácido para controlar el frente.",
+      "startsAtHealthPct": 100,
+      "abilities": [
+        {
+          "name": "Mordisco",
+          "description": "Un mordisco directo para abrir presión si te quedas demasiado tiempo frente a ella.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Combo de 3 mordidas",
+          "description": "Encadena varias mordidas cortas si detecta que sigues atrapado delante de ella.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Patada lateral",
+          "description": "Gira el cuerpo para cazar a quien intenta rodearla o pegar desde el costado.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": true
+        },
+        {
+          "name": "Golpe corporal",
+          "description": "Empuja o deja caer todo el cuerpo para romper el espacio corto y castigar bloqueos tardíos.",
+          "blockable": true,
+          "breaksGuard": true,
+          "staggers": true
+        },
+        {
+          "name": "Spray ácido",
+          "description": "Escupe ácido para cerrar rutas de escape y seguir dañando el suelo durante unos segundos.",
+          "blockable": false,
+          "breaksGuard": false,
+          "staggers": false
+        }
+      ]
+    },
+    {
+      "id": "phase2",
+      "label": "Fase 2",
+      "summary": "Cuando queda decapitada no se detiene: cambia a embestidas corporales más largas y a un spray ácido mucho menos predecible.",
+      "trigger": "Comienza cuando la reina pierde la cabeza y entra en su tramo sin cabeza.",
+      "abilities": [
+        {
+          "name": "Golpe corporal",
+          "description": "Empuja o deja caer todo el cuerpo para romper el espacio corto y castigar bloqueos tardíos.",
+          "blockable": true,
+          "breaksGuard": true,
+          "staggers": true
+        },
+        {
+          "name": "Embestida sin cabeza",
+          "description": "Tras perder la cabeza se lanza en línea recta con el cuerpo, cubriendo mucha más distancia que en su fase normal.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Spray ácido sin cabeza",
+          "description": "Expulsa un chorro ácido errático durante la fase sin cabeza y deja daño residual si te quedas en la línea.",
+          "blockable": false,
+          "breaksGuard": false,
+          "staggers": false
+        }
+      ]
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Cockroach_Queen",
+  "bestiaryId": "Cockroach_Queen",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Mordida",
+      "technicalId": "CockroachQueenBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mordida derecha",
+      "technicalId": "CockroachQueenBiteRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mordida izquierda",
+      "technicalId": "CockroachQueenBiteLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Karate patada izquierda",
+      "technicalId": "CockroachQueenKarateKickLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 5.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Karate patada derecha",
+      "technicalId": "CockroachQueenKarateKickRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 5.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 3",
+      "technicalId": "CockroachQueenCombo3",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 45",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 3.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Golpe",
+      "technicalId": "CockroachQueen_Slam",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 60",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 60.0,
+      "cooldownSeconds": 8.0,
+      "range": 700.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Rocío",
+      "technicalId": "CockroachQueenSpray",
+      "tags": [
+        "sizzle"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "sizzle"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 14.0,
+      "range": 750.0,
+      "stun": 15,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_12b18fdc96bfa55e",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -164064.12,
+        "y": 105325.23,
+        "z": -4836.6904
+      },
+      "u": 0.36499246824700027,
+      "v": 0.7404630892992663,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2165b0c7e004b767",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -230824.27,
+        "y": 100215.64,
+        "z": 3905.0576
+      },
+      "u": 0.11491054843429914,
+      "v": 0.718402965511426,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7202a2af4ced73cf",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -195772.27,
+        "y": -5214.2246,
+        "z": 1581.2954
+      },
+      "u": 0.2462144992683641,
+      "v": 0.26322048237456785,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3fa2948f52cbf9d3",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -22733.828,
+        "y": 42567.56,
+        "z": -4567.136
+      },
+      "u": 0.8944123504828797,
+      "v": 0.46951337144784555,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_211c6c9e524c7f53",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -200221.11,
+        "y": -52558.207,
+        "z": -5619.2124
+      },
+      "u": 0.22954925139010834,
+      "v": 0.05881775879922427,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da3c31913f8e2609",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -45786.61,
+        "y": 50633.38,
+        "z": 1774.5612
+      },
+      "u": 0.8080571823236757,
+      "v": 0.5043367110211654,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [
+    "gas"
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Billy Hog",
+      "countLabel": "1",
+      "chancePct": 3,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Head",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Milk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Milk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Milk",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "3",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "4",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Apple",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Apple Pristine",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Cookie Sandwich",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Cookie Sandwich Pristine",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Hot Dog",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Hot Dog Pristine",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Rotten",
+      "countLabel": "1",
+      "chancePct": 15,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spoiled Meat",
+      "countLabel": "1",
+      "chancePct": 15,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

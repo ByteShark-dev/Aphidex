@@ -1,1 +1,173 @@
-{"id":"g2_koi_dagon","speciesKey":"g1_koi_fish","collectionGroup":"angry","game":"g2","danger":"unknown","order":245,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_koi_dagon.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"We're preparing this information for you.","interactionWithPlayer":"We're preparing this information for you.","interactionWithCreatures":"We're preparing this information for you.","strategy":"We're preparing this information for you.","groupId":"koi","name":"Dagon","tier":5,"cardTier":5,"technicalId":"KoiD","bestiaryId":"KoiD","isBoss":true,"bossCardStyle":"yellow","isKillable":false,"healthDisplay":"hidden","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png","weaknesses":[],"resistances":[],"elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[{"name":"Charge","technicalId":"KoiCharge_Augusta","tags":["general_unblockable"],"notes":"Attack damage: 500"},{"name":"Koi Eat","technicalId":"KoiEat_Augusta","tags":["general_unblockable"],"notes":"Attack damage: 500"},{"name":"Koi Thrash","technicalId":"KoiThrash_Augusta","tags":["general_unblockable"],"notes":"Attack damage: 500"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":null,"description":"Prince of The Abyss. The ancient pond jockeys worship and fear him in equal measure.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_koi_dagon",
+  "speciesKey": "g1_koi_fish",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "muy_alta",
+  "order": 245,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_koi_dagon.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Koi Fish Scale",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "abilities": [],
+  "behavior": "It patrols the depths of the Abyss and attacks any threat it detects. It can rapidly lunge at its target, try to swallow it, or thrash its massive body to hit everything nearby.",
+  "interactionWithPlayer": "It is extremely dangerous and cannot be killed. Its attacks deal enormous damage and cannot be blocked, so being detected may force you to leave the area immediately.",
+  "interactionWithCreatures": "It dominates the depths of the Abyss and has a particular relationship with the Ancient Pond Jockeys, which, according to their description, came to both worship and fear it.",
+  "strategy": "Do not try to fight it. Always keep track of its position while exploring the Abyss and use the environment to maintain distance. If it approaches, prioritize escaping instead of trying to block, because its attacks are unblockable and can kill you very quickly.",
+  "groupId": "koi",
+  "name": "Dagon",
+  "tier": 5,
+  "cardTier": 5,
+  "technicalId": "KoiD",
+  "bestiaryId": "KoiD",
+  "isBoss": true,
+  "bossCardStyle": "yellow",
+  "isKillable": false,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png",
+  "weaknesses": [],
+  "resistances": [],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Charge",
+      "technicalId": "KoiCharge_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Koi Eat",
+      "technicalId": "KoiEat_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Koi Thrash",
+      "technicalId": "KoiThrash_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 5,
+    "value": 2000000000
+  },
+  "description": "Prince of The Abyss. The ancient pond jockeys worship and fear him in equal measure.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_644b3ec067fe2680",
+      "targetType": "creature",
+      "targetId": "g2_koi_dagon",
+      "technicalId": "KoiD",
+      "map": "abyss",
+      "world": {
+        "x": 220552.22,
+        "y": 218920.27,
+        "z": -13923.988
+      },
+      "u": 0.6730213459766278,
+      "v": 0.6577770275479743,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    }
+  ],
+  "environmentHazards": [
+    "required_equipment"
+  ],
+  "eventAppearances": [],
+  "appearanceType": "fixed_encounter",
+  "hideHealth": true,
+  "presentationOverrideProvenance": "presentation_rule",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "combatStats": {
+    "health": 2000000000,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Koi Fish Scale",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "editorialCreatureRows": 38,
+  "equipment": {
+    "count": 209,
+    "es": "pending_human_review",
+    "ru": "pending_native_review"
+  },
+  "policy": "Technical IDs remain visible as provenance; generated display names never replace source statistics."
+}

@@ -1,1 +1,639 @@
-{"id":"g2_wasp","speciesKey":"wasp","collectionGroup":"angry","name":"Wasp","game":"g2","tier":3,"danger":"muy_alta","isBoss":false,"order":312,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Wasp.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Wasp_Gold.png","photo":"assets/g2/creatures/photos/Wasp.webp","weaknesses":["salty"],"resistances":["stabbing","explosive","slashing","poison","gas"],"temperament":"aggressive","health":{"value":1075,"rating":3},"description":"An aggressive winged creature. Can drop wasp shells, legs, and pollen.","behavior":"It patrols high overhead and dives violently the moment it spots a threat. It alternates pecks, stings, and stinger shots to force you to read height, cover, and the timing between rushes.","interactionWithPlayer":"It attacks on sight and punishes positioning mistakes brutally. If you lose cover or run out of ranged answers, the fight drags out and almost always starts tilting in the wasp's favor.","interactionWithCreatures":"It is neutral toward many creatures, but highly hostile toward bees and mosquitoes. Its mere presence often clears the air because several smaller creatures would rather flee than deal with it.","strategy":"The best answer is to isolate it and punish it with ranged damage or very clean melee windows. Its close attacks are blockable, but the stinger shot and the group fight are what really push it into impossible territory.","environments":["Brawny Boy Bin","Moldorc Highlands","Upper Grasslands","Wasp Queen Fight","After Disturbing The Hive","Eastern Flooded Zone","Flower Bed"],"loot":[{"section":"loot","item":"Pollen","minCount":0,"maxCount":4},{"section":"loot","item":"Wasp Leg","minCount":0,"maxCount":2},{"section":"loot","item":"Wasp Shell","minCount":1,"maxCount":5},{"section":"rare","item":"Pollen","minCount":0,"maxCount":1},{"section":"rare","item":"Wasp Leg","minCount":0,"maxCount":2},{"section":"rare","item":"Wasp Shell","minCount":0,"maxCount":1}],"advancedLootTable":[{"item":"Pollen","countLabel":"x4","chancePct":25},{"item":"Pollen","countLabel":"x1","chancePct":1},{"item":"Wasp Leg","countLabel":"x2","chancePct":50},{"item":"Wasp Leg","countLabel":"x2","chancePct":1},{"item":"Wasp Shell","countLabel":"x1","chancePct":100},{"item":"Wasp Shell","countLabel":"x4","chancePct":25},{"item":"Wasp Shell","countLabel":"x1","chancePct":1}],"combatStats":{"health":1075,"stunThreshold":100,"stunCooldownSeconds":20,"attackDamageSummary":"Sting: 40. Charged Sting: 70. Stinger Shot: 50."},"inflictsEffects":["stabbing","busting","poison"],"inflicts":["Its sting attacks deal stabbing damage with venom buildup; the stinger shot deals busting damage and can also build venom."],"abilities":[{"name":"Sting","description":"A direct blockable sting that applies 10 venom buildup on hit.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Charged Sting","description":"It charges in a straight line with its stinger forward and applies venom buildup on hit.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Stinger Shot","description":"It fires a stinger projectile. Weapons cannot block it, but shields can.","blockable":true,"breaksGuard":false,"staggers":false}],"elementalWeaknesses":[{"type":"salty","bonusPct":15}],"resistancesV2":[{"type":"stabbing","bonusPct":50},{"type":"explosive","bonusPct":50},{"type":"slashing","bonusPct":25},{"type":"poison","bonusPct":75},{"type":"gas","bonusPct":50}],"groupId":null,"cardTier":3,"technicalId":"Wasp","bestiaryId":"Wasp","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Sting","technicalId":"WaspStingAugusta","tags":["stabbing"],"notes":"Attack damage: 40"},{"name":"Sting Charged","technicalId":"WaspStingChargedAugusta","tags":["stabbing"],"notes":"Attack damage: 70"},{"name":"Wasp Stinger Shot","technicalId":"WaspStingerShotAugusta","tags":["general_ranged","ranged"],"notes":"Attack damage: 50"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_wasp",
+  "speciesKey": "wasp",
+  "collectionGroup": "angry",
+  "name": "Wasp",
+  "game": "g2",
+  "tier": 3,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 312,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Wasp.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Wasp_Gold.png",
+  "photo": "assets/g2/creatures/photos/Wasp.webp",
+  "weaknesses": [
+    "salty"
+  ],
+  "resistances": [
+    "stabbing",
+    "explosive",
+    "slashing",
+    "poison",
+    "gas"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 3,
+    "value": 1075
+  },
+  "description": "An aggressive winged creature. Can drop wasp shells, legs, and pollen.",
+  "behavior": "It patrols high overhead and dives violently the moment it spots a threat. It alternates pecks, stings, and stinger shots to force you to read height, cover, and the timing between rushes.",
+  "interactionWithPlayer": "It attacks on sight and punishes positioning mistakes brutally. If you lose cover or run out of ranged answers, the fight drags out and almost always starts tilting in the wasp's favor.",
+  "interactionWithCreatures": "It is neutral toward many creatures, but highly hostile toward bees and mosquitoes. Its mere presence often clears the air because several smaller creatures would rather flee than deal with it.",
+  "strategy": "The best answer is to isolate it and punish it with ranged damage or very clean melee windows. Its close attacks are blockable, but the stinger shot and the group fight are what really push it into impossible territory.",
+  "environments": [
+    "Brawny Boy Bin",
+    "Moldorc Highlands",
+    "Upper Grasslands",
+    "Wasp Queen Fight",
+    "After Disturbing The Hive",
+    "Eastern Flooded Zone",
+    "Flower Bed"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Pollen",
+      "minCount": 0,
+      "maxCount": 5
+    },
+    {
+      "section": "loot",
+      "item": "Wasp Leg",
+      "minCount": 0,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "Wasp Part",
+      "minCount": 1,
+      "maxCount": 6
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Pollen",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pollen",
+      "countLabel": "4",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Leg",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Wasp Leg",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Part",
+      "countLabel": "4",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 1075,
+    "stunThreshold": 100,
+    "stunCooldownSeconds": 20
+  },
+  "inflictsEffects": [
+    "stabbing",
+    "busting",
+    "poison"
+  ],
+  "inflicts": [
+    "Its sting attacks deal stabbing damage with venom buildup; the stinger shot deals busting damage and can also build venom."
+  ],
+  "abilities": [
+    {
+      "name": "Sting",
+      "description": "A direct blockable sting that applies 10 venom buildup on hit.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Charged Sting",
+      "description": "It charges in a straight line with its stinger forward and applies venom buildup on hit.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Stinger Shot",
+      "description": "It fires a stinger projectile. Weapons cannot block it, but shields can.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "salty",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    },
+    {
+      "type": "explosive",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "poison",
+      "bonusPct": 75
+    },
+    {
+      "type": "gas",
+      "bonusPct": 50
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "Wasp",
+  "bestiaryId": "Wasp",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Sting",
+      "technicalId": "WaspStingAugusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 40",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 5.0,
+      "range": 400.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Tiny"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Tiny",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Sting Charged",
+      "technicalId": "WaspStingChargedAugusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 70",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 70.0,
+      "cooldownSeconds": 10.0,
+      "range": 200.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Tiny"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Tiny",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Wasp Stinger Shot",
+      "technicalId": "WaspStingerShotAugusta",
+      "tags": [
+        "general",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Attack damage: 50",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 15.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Tiny"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Tiny",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_7ea47c83df0852cf",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -110261.72,
+        "y": -28168.023,
+        "z": 3931.341
+      },
+      "u": 0.5665349675153644,
+      "v": 0.16411984335947383,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8597c24b145d7a15",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -111248.61,
+        "y": -29221.438,
+        "z": 11221.588
+      },
+      "u": 0.5628381012584138,
+      "v": 0.15957183357787338,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7a7b2a48b411edb",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -111682.81,
+        "y": -21695.781,
+        "z": 7329.427
+      },
+      "u": 0.5612115984781972,
+      "v": 0.1920630755375664,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cdafe24ba51c3ec0",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -155250.0,
+        "y": -9496.224,
+        "z": 6568.5884
+      },
+      "u": 0.39800995024875624,
+      "v": 0.24473339499114596,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_30f8c8471dc1ad13",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -157687.16,
+        "y": -12219.841,
+        "z": 4870.3706
+      },
+      "u": 0.3888804073748902,
+      "v": 0.2329744616578126,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_de72af1d341ae872",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -160797.7,
+        "y": -36880.223,
+        "z": 12073.99
+      },
+      "u": 0.37722839918056766,
+      "v": 0.12650582531410745,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c5f3b54cb93f3d9d",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -167019.14,
+        "y": -59866.29,
+        "z": 9782.038
+      },
+      "u": 0.3539230342405618,
+      "v": 0.02726586997217298,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a6d0463140165f7",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -170550.0,
+        "y": -21596.225,
+        "z": 10418.588
+      },
+      "u": 0.3406965174129353,
+      "v": 0.19249289822076057,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0993d3758904b6aa",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -117383.15,
+        "y": -20200.365,
+        "z": 6128.8765
+      },
+      "u": 0.5398582616330114,
+      "v": 0.19851937869972167,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6019bfb6db265625",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -28540.867,
+        "y": 61381.27,
+        "z": 7117.4165
+      },
+      "u": 0.8726593217442201,
+      "v": 0.5507396090732777,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_69e7ebf36e14fc7a",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -194291.3,
+        "y": -12255.954,
+        "z": 5485.869
+      },
+      "u": 0.2517621773485514,
+      "v": 0.23281854753351883,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_74adde93bf1c4649",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -53809.516,
+        "y": 76040.48,
+        "z": -822.1837
+      },
+      "u": 0.7780035689786362,
+      "v": 0.6140292247238384,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_46e74f8ab5f9aa03",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -50630.426,
+        "y": 72140.15,
+        "z": 950.00214
+      },
+      "u": 0.7899123638279192,
+      "v": 0.5971899553082046,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_384d021677db3d79",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -34511.633,
+        "y": 44756.293,
+        "z": 29922.64
+      },
+      "u": 0.8502929755926252,
+      "v": 0.4789629987014083,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_68121676e018f309",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -21874.648,
+        "y": 68578.61,
+        "z": 3976.78
+      },
+      "u": 0.8976308181445714,
+      "v": 0.581813376507294,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_db4674ae534b46f4",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -24188.166,
+        "y": 57088.133,
+        "z": 6831.684
+      },
+      "u": 0.8889644352355868,
+      "v": 0.5322044362593811,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_526d8de050d61868",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -194960.0,
+        "y": -11690.0,
+        "z": 9860.494
+      },
+      "u": 0.24925724319578577,
+      "v": 0.2352619951091998,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c3cd67100d38850e",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -218805.28,
+        "y": -4986.296,
+        "z": 7796.8955
+      },
+      "u": 0.1599333965466784,
+      "v": 0.2642045404165613,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c13ab1d658027851",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -86502.29,
+        "y": -6861.8823,
+        "z": -624.6611
+      },
+      "u": 0.6555372221246708,
+      "v": 0.25610689149506705,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bba19df1161f0300",
+      "targetType": "creature",
+      "targetId": "g2_wasp",
+      "technicalId": "Wasp",
+      "map": "surface",
+      "world": {
+        "x": -85021.414,
+        "y": -5320.84,
+        "z": -2135.5486
+      },
+      "u": 0.6610845480831139,
+      "v": 0.26276018146555363,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Wasp.webp",
+  "immunities": []
+}

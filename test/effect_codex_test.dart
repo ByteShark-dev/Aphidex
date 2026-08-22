@@ -53,6 +53,7 @@ void main() {
         'spicy',
         'salty',
         'sour',
+        'acid',
         'venom',
         'poison',
         'gas',

@@ -1,1 +1,2600 @@
-{"id":"g2_ladybug","speciesKey":"ladybug","collectionGroup":"neutral","name":"Божья коровка","game":"g2","tier":2,"danger":"intermedia","isBoss":false,"order":246,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Ladybug.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Ladybug_G.png","photo":"assets/g2/creatures/photos/Ladybug.webp","weaknesses":["busting","fresh"],"resistances":["stabbing","spicy"],"temperament":"neutral","health":{"value":1600,"rating":4},"weakPoint":{"part":"legs","susceptibleDamage":"slashing","susceptibleDamageTypes":["slashing"]},"description":"Нейтральное существо 2-го тира, встречающееся во многих ранних зонах парка. С виду она спокойна, но для неподготовленного игрока всё ещё остаётся одной из первых настоящих стен.","behavior":"Она медленно бродит без чёткого маршрута и иногда укладывается спать под широкими листьями. В Grounded 2 у неё по-прежнему есть вариант O.R.C., а в огороде её более жёстким родственником выступает Potato Beetle.","interactionWithPlayer":"Она остаётся нейтральной, пока её не атакуют. Пока пассивна, на неё можно забраться, но в ярости она использует особый сброс, чтобы скинуть наездника. Её можно отвлечь Ladybug Bait, а перенос яйца божьей коровки сразу вызывает агрессию.","interactionWithCreatures":"Она редко начинает бой первой, но очень жёстко отвечает на любой удар. В роли Ladybuggy выделяется живучестью и водяной пушкой, поэтому дикая версия хорошо ощущается как тот же зверь, но переведённый в обычный бой.","strategy":"Для ранней игры это всё ещё серьёзный бой. Тяжёлое оружие вроде Red Ant Club работает отлично, но если идеальный блок ещё неуверенный, лучше сначала срывать её разгон рельефом, корнями или высокой травой, а уже потом наказывать сбоку.","environments":["Церемониальная зона","Площадка для крокета","Входная зона","Окрестности теплицы","Окрестности тележки с мороженым","Зона стола для пикника","Сосновый холм","Тыквенная грядка","Передняя зона снэк-бара","Зона статуи","Огород"],"respawnInfo":"1 день","loot":[{"section":"loot","item":"Голова божьей коровки","minCount":0,"maxCount":1},{"section":"loot","item":"Часть божьей коровки","minCount":1,"maxCount":5},{"section":"rare","item":"Голова божьей коровки","minCount":0,"maxCount":1},{"section":"rare","item":"Часть божьей коровки","minCount":0,"maxCount":3}],"combatStats":{"health":1600,"stunThreshold":75,"stunCooldownSeconds":5,"attackDamageSummary":"Укус: 75. Разбег: 120. Боковой удар: 100. Задний сброс: 120."},"inflictsEffects":["chopping","busting"],"inflicts":["Укус и разгон наносят рубящий урон, а боковой удар и задний сброс наносят дробящий."],"abilities":[{"name":"Укус","description":"Базовый блокируемый укус на ближней дистанции.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Бегущий таран","description":"Отходит назад, выравнивается и несётся прямо на игрока, пока не врежется или не исчерпает дистанцию.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Боковой удар","description":"Раскачивает корпус и бьёт боком. Ломает блок, если не сделать идеальный блок.","blockable":true,"breaksGuard":true,"staggers":false},{"name":"Задняя встряска","description":"Использует это только когда на ней кто-то сидит. Резко подпрыгивает и сбрасывает всадника.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Рёв","description":"Готовится и рычит, восстанавливая 150 здоровья и получая 25% к урону и 10% к скорости на 30 секунд."},{"name":"Защитная стойка","description":"Втягивает голову в панцирь и медленно наступает. Спереди игнорирует лёгкие атаки, пока вы не собьёте стойку заряженным ударом."}],"elementalWeaknesses":[{"type":"fresh","bonusPct":30}],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"stabbing","bonusPct":25},{"type":"spicy","bonusPct":25}],"groupId":null,"cardTier":2,"technicalId":"Ladybug","bestiaryId":"Ladybug","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[{"part":"legs","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Charge","technicalId":"LadybugCharge","tags":["chopping"],"notes":"Урон атаки: 120"},{"name":"Buck","technicalId":"LadybugBuck","tags":["generic"],"notes":"Урон атаки: 120"},{"name":"Melee","technicalId":"LadybugMelee","tags":[],"notes":"Не идентифицировано"},{"name":"Bite R","technicalId":"LadyBugBite_R","tags":["chopping"],"notes":"Урон атаки: 75"},{"name":"Bite L","technicalId":"LadyBugBite_L","tags":["chopping"],"notes":"Урон атаки: 75"},{"name":"Power Attack","technicalId":"LadybugPowerAttack","tags":[],"notes":"Не идентифицировано"},{"name":"Roar","technicalId":"LadybugRoar","tags":["generic"],"notes":"Урон атаки: 0"},{"name":"Block Defensive","technicalId":"BlockDefensive","tags":["maine"],"notes":"Урон атаки: 0"}],"encounterVariants":[],"contextVariants":[{"id":"Ladybug_Augusta_Wave","characterRow":"Ladybug_Augusta_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1600.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":40}},"weakpoints":["Legs"],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"},{"damageTypes":["Fresh"],"percent":30.0,"sourceId":"DamageResistDownFreshMedium"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"LadybugCharge","ability":"LadybugCharge","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":120.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"LadybugBuck","ability":"LadybugBuck","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Self","damage":{"amount":120.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":500.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"LadybugMelee","ability":"LadybugMelee","resolved":false,"cooldown":10.0,"reason":"attack_row_missing"},{"id":"LadyBugBite_R","ability":"LadybugBite1","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LadyBugBite_L","ability":"LadybugBite2","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LadybugPowerAttack","ability":"LadybugPowerAttack","resolved":false,"cooldown":10.0,"reason":"attack_row_missing"},{"id":"LadybugRoar","ability":"LadybugRoar","resolved":true,"cooldown":120.0,"priority":0,"targetType":"Enemy","damage":{"amount":0.0,"type":"General","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["LadybugRoarAttackUp","LadybugRoarMoveSpeedUp","FullHeal"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Self"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":2,"hiddenContextualModifiers":[],"extractionWarnings":["one_or_more_attacks_unresolved"]},"nameEsMX":"Mariquita(Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ladybug",
+  "speciesKey": "ladybug",
+  "collectionGroup": "neutral",
+  "name": "Божья коровка",
+  "game": "g2",
+  "tier": 2,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 246,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Ladybug.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Ladybug_G.png",
+  "photo": "assets/g2/creatures/photos/Ladybug.webp",
+  "weaknesses": [
+    "busting",
+    "fresh"
+  ],
+  "resistances": [
+    "stabbing",
+    "spicy"
+  ],
+  "temperament": "neutral",
+  "health": {
+    "rating": 4,
+    "value": 1600
+  },
+  "weakPoint": {
+    "part": "legs",
+    "susceptibleDamage": "slashing",
+    "susceptibleDamageTypes": [
+      "slashing"
+    ]
+  },
+  "description": "Нейтральное существо 2-го тира, встречающееся во многих ранних зонах парка. С виду она спокойна, но для неподготовленного игрока всё ещё остаётся одной из первых настоящих стен.",
+  "behavior": "Она медленно бродит без чёткого маршрута и иногда укладывается спать под широкими листьями. В Grounded 2 у неё по-прежнему есть вариант O.R.C., а в огороде её более жёстким родственником выступает Potato Beetle.",
+  "interactionWithPlayer": "Она остаётся нейтральной, пока её не атакуют. Пока пассивна, на неё можно забраться, но в ярости она использует особый сброс, чтобы скинуть наездника. Её можно отвлечь Ladybug Bait, а перенос яйца божьей коровки сразу вызывает агрессию.",
+  "interactionWithCreatures": "Она редко начинает бой первой, но очень жёстко отвечает на любой удар. В роли Ladybuggy выделяется живучестью и водяной пушкой, поэтому дикая версия хорошо ощущается как тот же зверь, но переведённый в обычный бой.",
+  "strategy": "Для ранней игры это всё ещё серьёзный бой. Тяжёлое оружие вроде Red Ant Club работает отлично, но если идеальный блок ещё неуверенный, лучше сначала срывать её разгон рельефом, корнями или высокой травой, а уже потом наказывать сбоку.",
+  "environments": [
+    "Церемониальная зона",
+    "Площадка для крокета",
+    "Входная зона",
+    "Окрестности теплицы",
+    "Окрестности тележки с мороженым",
+    "Зона стола для пикника",
+    "Сосновый холм",
+    "Тыквенная грядка",
+    "Передняя зона снэк-бара",
+    "Зона статуи",
+    "Огород"
+  ],
+  "respawnInfo": "1 день",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Ladybug Head",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Ladybug Shell",
+      "minCount": 1,
+      "maxCount": 8
+    }
+  ],
+  "combatStats": {
+    "health": 1600,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "inflictsEffects": [
+    "chopping",
+    "busting"
+  ],
+  "inflicts": [
+    "Укус и разгон наносят рубящий урон, а боковой удар и задний сброс наносят дробящий."
+  ],
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Базовый блокируемый укус на ближней дистанции.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Бегущий таран",
+      "description": "Отходит назад, выравнивается и несётся прямо на игрока, пока не врежется или не исчерпает дистанцию.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Боковой удар",
+      "description": "Раскачивает корпус и бьёт боком. Ломает блок, если не сделать идеальный блок.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": false
+    },
+    {
+      "name": "Задняя встряска",
+      "description": "Использует это только когда на ней кто-то сидит. Резко подпрыгивает и сбрасывает всадника.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Рёв",
+      "description": "Готовится и рычит, восстанавливая 150 здоровья и получая 25% к урону и 10% к скорости на 30 секунд."
+    },
+    {
+      "name": "Защитная стойка",
+      "description": "Втягивает голову в панцирь и медленно наступает. Спереди игнорирует лёгкие атаки, пока вы не собьёте стойку заряженным ударом."
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Ladybug",
+  "bestiaryId": "Ladybug",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [
+    {
+      "part": "legs",
+      "susceptibleDamage": "slashing",
+      "susceptibleDamageTypes": [
+        "slashing"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Charge",
+      "technicalId": "LadybugCharge",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 120",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Buck",
+      "technicalId": "LadybugBuck",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 120",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Melee",
+      "technicalId": "LadybugMelee",
+      "tags": [],
+      "notes": "Не идентифицировано"
+    },
+    {
+      "name": "Bite R",
+      "technicalId": "LadyBugBite_R",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 75",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 3.0,
+      "range": 240.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite L",
+      "technicalId": "LadyBugBite_L",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 75",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 3.0,
+      "range": 240.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power Attack",
+      "technicalId": "LadybugPowerAttack",
+      "tags": [],
+      "notes": "Не идентифицировано"
+    },
+    {
+      "name": "Roar",
+      "technicalId": "LadybugRoar",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 120.0,
+      "range": 250.0,
+      "stun": 0,
+      "statusEffects": [
+        "Ladybug Roar Attack Up",
+        "Ladybug Roar Move Speed Up",
+        "Full Heal"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Ladybug Roar Attack Up",
+          "value": null,
+          "durationSeconds": null
+        },
+        {
+          "id": "Ladybug Roar Move Speed Up",
+          "value": null,
+          "durationSeconds": null
+        },
+        {
+          "id": "Full Heal",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Defensive",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [
+    {
+      "id": "Ladybug_Augusta_Wave",
+      "characterRow": "Ladybug_Augusta_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1600.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [
+        "Legs"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownFreshMedium"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "LadybugCharge",
+          "ability": "LadybugCharge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 120.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "LadybugBuck",
+          "ability": "LadybugBuck",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Self",
+          "damage": {
+            "amount": 120.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 500.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "LadybugMelee",
+          "ability": "LadybugMelee",
+          "resolved": false,
+          "cooldown": 10.0,
+          "reason": "attack_row_missing"
+        },
+        {
+          "id": "LadyBugBite_R",
+          "ability": "LadybugBite1",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LadyBugBite_L",
+          "ability": "LadybugBite2",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LadybugPowerAttack",
+          "ability": "LadybugPowerAttack",
+          "resolved": false,
+          "cooldown": 10.0,
+          "reason": "attack_row_missing"
+        },
+        {
+          "id": "LadybugRoar",
+          "ability": "LadybugRoar",
+          "resolved": true,
+          "cooldown": 120.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "General",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "LadybugRoarAttackUp",
+              "LadybugRoarMoveSpeedUp",
+              "FullHeal"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Self"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 2,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": [
+          "one_or_more_attacks_unresolved"
+        ]
+      },
+      "nameEsMX": "Mariquita(Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_14947fafd05f563b",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -214479.39,
+        "y": 13962.79,
+        "z": 1889.0276
+      },
+      "u": 0.17613807667544623,
+      "v": 0.34601524985243276,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7da46ae16e7fcbbe",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -154887.6,
+        "y": 11151.637,
+        "z": 5487.353
+      },
+      "u": 0.39936749195200466,
+      "v": 0.33387838893667254,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_711f5eb9a392f52d",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -211643.31,
+        "y": 58720.59,
+        "z": 57.353245
+      },
+      "u": 0.18676196429616623,
+      "v": 0.5392523996964331,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_92d7003113448a79",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -235801.97,
+        "y": 40288.906,
+        "z": 687.2525
+      },
+      "u": 0.09626420368744512,
+      "v": 0.45967551962222786,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4b7d8ec68380906f",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -185431.89,
+        "y": 67538.66,
+        "z": 27.353243
+      },
+      "u": 0.2849493146034533,
+      "v": 0.5773235004637828,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fbf0dec495f2b382",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -156602.02,
+        "y": -35458.508,
+        "z": 710.13544
+      },
+      "u": 0.3929453157740708,
+      "v": 0.13264393206847117,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3497e8cd11003dcf",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -142910.72,
+        "y": -24818.453,
+        "z": 769.19904
+      },
+      "u": 0.4442325970149254,
+      "v": 0.17858126371532163,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_50e03393b5cf76dd",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -144829.72,
+        "y": -50683.41,
+        "z": 1718.3174
+      },
+      "u": 0.43704406906643256,
+      "v": 0.066912,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f93c2d1d22b9da8c",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -129725.375,
+        "y": -45153.793,
+        "z": 828.16296
+      },
+      "u": 0.4936245829675154,
+      "v": 0.09078554670714226,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f89997aad0c2cfc9",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -114779.336,
+        "y": -54228.793,
+        "z": 1413.7682
+      },
+      "u": 0.5496120863915716,
+      "v": 0.05160517736740026,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fb8d612797f4450a",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -109141.86,
+        "y": -28041.887,
+        "z": 471.1784
+      },
+      "u": 0.5707299362013463,
+      "v": 0.16466442243022178,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b6446b952c7d6166",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -128902.98,
+        "y": -23118.547,
+        "z": 2990.2053
+      },
+      "u": 0.4967052549019608,
+      "v": 0.18592043119993254,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_73be06775a93bfd2",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -135607.36,
+        "y": -23079.537,
+        "z": 2942.937
+      },
+      "u": 0.4715908083113843,
+      "v": 0.18608885282064255,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_01aebaac5aaa7d85",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -123991.66,
+        "y": -25555.463,
+        "z": 2756.8555
+      },
+      "u": 0.5151029417617794,
+      "v": 0.17539929963740616,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fe7ca786cfc4152",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -91029.23,
+        "y": 3305.6873,
+        "z": 1178.4318
+      },
+      "u": 0.6385794135206322,
+      "v": 0.30000431653259124,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_65bca03063542f49",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -178241.58,
+        "y": 95487.36,
+        "z": 1382.4476
+      },
+      "u": 0.3118840433128476,
+      "v": 0.6979891080192259,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d8606c636bed01bc",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -194623.36,
+        "y": 139495.05,
+        "z": 943.3192
+      },
+      "u": 0.250518288557214,
+      "v": 0.8879877358967871,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_12c424caaf1a447e",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -87030.016,
+        "y": 40395.14,
+        "z": -23.156433
+      },
+      "u": 0.6535603731928592,
+      "v": 0.46013417387638084,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_029fb0fc3eedc20f",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -92423.336,
+        "y": 16344.203,
+        "z": 1379.9567
+      },
+      "u": 0.6333571258999122,
+      "v": 0.35629675298085844,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2ff45b21bdc3e329",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -85210.37,
+        "y": 47794.062,
+        "z": -539.7605
+      },
+      "u": 0.6603767234416155,
+      "v": 0.49207825064507965,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_03a45a724e21326c",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -96933.336,
+        "y": 46004.203,
+        "z": 634.81866
+      },
+      "u": 0.6164627741293532,
+      "v": 0.4843507204317396,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3a5f85822071b370",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -119772.82,
+        "y": -5.796492,
+        "z": 1518.1409
+      },
+      "u": 0.5309066151594966,
+      "v": 0.28570732942150273,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b3cc02f1b54d3d5e",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -78474.77,
+        "y": 43900.98,
+        "z": -85.43585
+      },
+      "u": 0.6856081194029849,
+      "v": 0.47527027371616504,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_63d490476e68e56d",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -83963.336,
+        "y": 62409.203,
+        "z": 889.0406
+      },
+      "u": 0.6650480828797191,
+      "v": 0.5551776029682097,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fbb887c8d6b7c72",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -75117.64,
+        "y": 53464.523,
+        "z": 513.34863
+      },
+      "u": 0.6981838478197249,
+      "v": 0.5165598766843748,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d2a2fff2f8fcd67",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -128218.336,
+        "y": -1298.1901,
+        "z": -137.80203
+      },
+      "u": 0.4992699148961076,
+      "v": 0.2801275543367906,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2c5dedfa85e6e02e",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -89995.81,
+        "y": 30463.791,
+        "z": 704.28235
+      },
+      "u": 0.6424505800409716,
+      "v": 0.4172566067290666,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c60a76cb11a0a704",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -125174.586,
+        "y": 38487.605,
+        "z": -537.2065
+      },
+      "u": 0.5106717293532338,
+      "v": 0.4518985897630492,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a7afea64311c4179",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -70522.87,
+        "y": -38443.02,
+        "z": -4664.71
+      },
+      "u": 0.7153957459760024,
+      "v": 0.11975861168732614,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a43d3ce13e88045e",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -32897.13,
+        "y": -29013.389,
+        "z": -4073.844
+      },
+      "u": 0.856340865086333,
+      "v": 0.1604700635129438,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_874d2ee2f8fae9e1",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -179439.44,
+        "y": 108379.65,
+        "z": 982.10016
+      },
+      "u": 0.3073968884986831,
+      "v": 0.7536502302049076,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d8bda7bf3f7aeeb3",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -168890.48,
+        "y": 143962.3,
+        "z": 981.5798
+      },
+      "u": 0.3469130395083406,
+      "v": 0.9072746234927058,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0ce36753f30872ad",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -224887.92,
+        "y": 80560.33,
+        "z": 57.71474
+      },
+      "u": 0.13714797307579743,
+      "v": 0.6335432073530652,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_755e014d6a223aa2",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -206037.19,
+        "y": 136951.33,
+        "z": 738.3862
+      },
+      "u": 0.20776235528241146,
+      "v": 0.8770054891643476,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2f1d7413ea5906bf",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -193625.28,
+        "y": 150470.27,
+        "z": 2624.0364
+      },
+      "u": 0.25425707228563066,
+      "v": 0.9353721075976054,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_71c2ccb021dac312",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -204596.48,
+        "y": 106425.3,
+        "z": 662.6023
+      },
+      "u": 0.21315922036874446,
+      "v": 0.7452125271945357,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1c8d5feffa739e08",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -212692.7,
+        "y": 117720.33,
+        "z": 1228.3889
+      },
+      "u": 0.18283097453906932,
+      "v": 0.7939776453326588,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_15b48e9520f052b4",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -220891.81,
+        "y": 130248.625,
+        "z": 990.82263
+      },
+      "u": 0.15211730523851333,
+      "v": 0.8480672569356608,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_59eb70f80ec6cd75",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -185900.0,
+        "y": 135200.0,
+        "z": 588.27765
+      },
+      "u": 0.28319578577699733,
+      "v": 0.8694443039042078,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2d511bfe9e06c063",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -193633.33,
+        "y": 125691.96,
+        "z": 961.94806
+      },
+      "u": 0.25422691717881185,
+      "v": 0.8283943293700987,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_71dea7676b8d0200",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -169615.95,
+        "y": -25678.566,
+        "z": 1006.03564
+      },
+      "u": 0.3441954462979221,
+      "v": 0.17486781522894004,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bea4d7e73a91ec8d",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -185702.83,
+        "y": -19409.977,
+        "z": 1081.0844
+      },
+      "u": 0.28393437986537906,
+      "v": 0.20193179674508815,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9747b32e8fc0afd6",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -86033.336,
+        "y": 12734.203,
+        "z": 817.9061
+      },
+      "u": 0.6572939125548727,
+      "v": 0.3407109531663716,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_31ff34e0d560fb3a",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -170082.22,
+        "y": -51795.785,
+        "z": -1595.2092
+      },
+      "u": 0.3424488100673105,
+      "v": 0.062109436546083155,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_008637c0d7c0f011",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -166990.1,
+        "y": -45475.05,
+        "z": -113.25808
+      },
+      "u": 0.35403181738366984,
+      "v": 0.08939855299772324,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_043279c814180235",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -238187.08,
+        "y": 85110.53,
+        "z": 1105.5776
+      },
+      "u": 0.08732963886450107,
+      "v": 0.6531882229530315,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8c61f3c83bbfc293",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -173977.69,
+        "y": -24585.852,
+        "z": 1320.9783
+      },
+      "u": 0.3278564729294703,
+      "v": 0.17958549435871488,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2f8f7cec1387978c",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -136030.88,
+        "y": 79854.64,
+        "z": -5295.0073
+      },
+      "u": 0.4700043125548727,
+      "v": 0.6304964641200778,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c0d952047ac67862",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -119660.234,
+        "y": 66912.38,
+        "z": -1000.5367
+      },
+      "u": 0.5313283596136962,
+      "v": 0.5746196016527533,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e3a154d99ef2845a",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -150232.78,
+        "y": 73760.13,
+        "z": -3091.0906
+      },
+      "u": 0.4168043359672227,
+      "v": 0.6041840505944852,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6376687bcce5da02",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -121170.39,
+        "y": 116004.84,
+        "z": -4553.517
+      },
+      "u": 0.5256713514779046,
+      "v": 0.7865711955476854,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_535e5522d73ce0d5",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -122216.63,
+        "y": 129821.85,
+        "z": -3115.0903
+      },
+      "u": 0.5217521615452151,
+      "v": 0.846224700227675,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_330d9794423d72de",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -115041.91,
+        "y": 125050.13,
+        "z": -3214.9453
+      },
+      "u": 0.5486284904887327,
+      "v": 0.8256232950501728,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_59330b2f160420c7",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -143793.42,
+        "y": 29589.639,
+        "z": 1228.8252
+      },
+      "u": 0.44092602399765873,
+      "v": 0.4134825463192512,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fc7bd22ea0b8a147",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -130431.97,
+        "y": 122654.11,
+        "z": -3271.2434
+      },
+      "u": 0.4909776950541411,
+      "v": 0.8152787277173454,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e6dd6404c8724fcf",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -93147.38,
+        "y": 115657.16,
+        "z": -226.89828
+      },
+      "u": 0.630644874451273,
+      "v": 0.7850701232818955,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c8e03a4067a4f1ec",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -126794.15,
+        "y": 109001.336,
+        "z": -3443.3535
+      },
+      "u": 0.5046048814749781,
+      "v": 0.7563342948983893,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ffc4f216c6bc6cc6",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -160685.81,
+        "y": 58810.062,
+        "z": 169.67372
+      },
+      "u": 0.3776475364354697,
+      "v": 0.5396386857576525,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_92a67dd3231b447e",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -169744.9,
+        "y": 70657.89,
+        "z": 170.42482
+      },
+      "u": 0.34371240269242026,
+      "v": 0.5907904518087529,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0880e5e436bce7e5",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -182538.8,
+        "y": 62876.562,
+        "z": 506.98807
+      },
+      "u": 0.29578676031606677,
+      "v": 0.5571953768783202,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1c580dcb6a7c0904",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -166415.08,
+        "y": 50141.47,
+        "z": 1728.6769
+      },
+      "u": 0.35618582850453623,
+      "v": 0.5022129407201282,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60a28ffd042f52a5",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -143784.5,
+        "y": 131779.64,
+        "z": -2703.2734
+      },
+      "u": 0.44095943810359967,
+      "v": 0.8546772550805296,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1dc167aeb7b04bc9",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -158346.5,
+        "y": 134653.36,
+        "z": -3084.9714
+      },
+      "u": 0.3864105355575066,
+      "v": 0.8670842425162324,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e0652143d4af8fd",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -147130.77,
+        "y": 112123.766,
+        "z": -3697.7253
+      },
+      "u": 0.4284243909862453,
+      "v": 0.7698150619107851,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0f15238dda3157d8",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -104604.43,
+        "y": 99797.54,
+        "z": -4602.246
+      },
+      "u": 0.5877270400936494,
+      "v": 0.7165978622143518,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5a58f66ae50f31cc",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -145680.36,
+        "y": 43827.383,
+        "z": -634.6999
+      },
+      "u": 0.43385759203980107,
+      "v": 0.4749525263175648,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3a3d28de7c5a0404",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -102106.28,
+        "y": 125237.75,
+        "z": 132.70657
+      },
+      "u": 0.5970850500438981,
+      "v": 0.8264333249009191,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9cd1a2209252328b",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -150899.42,
+        "y": 106936.91,
+        "z": -4752.0283
+      },
+      "u": 0.4143071185250219,
+      "v": 0.7474213501981617,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_04fbef4434df052e",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -81432.69,
+        "y": 155997.47,
+        "z": 977.33234
+      },
+      "u": 0.6745278220661399,
+      "v": 0.959235219158445,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1309aa2a2616917c",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -104847.41,
+        "y": 156580.0,
+        "z": 1257.0452
+      },
+      "u": 0.5868168428446005,
+      "v": 0.9617502318913904,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ded33d578e513e5",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -103000.56,
+        "y": 144734.05,
+        "z": -468.29364
+      },
+      "u": 0.5937350986245244,
+      "v": 0.9106065739101105,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a41ce276aa56580a",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -135873.17,
+        "y": 47079.93,
+        "z": -1245.4977
+      },
+      "u": 0.4705950904302019,
+      "v": 0.4889950599544649,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e848222dcc667a69",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -166541.95,
+        "y": 126852.63,
+        "z": -3042.3806
+      },
+      "u": 0.355710576529119,
+      "v": 0.8334054014672401,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_552f10b98fc43014",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -96622.42,
+        "y": 135597.1,
+        "z": 1658.2565
+      },
+      "u": 0.6176274580040972,
+      "v": 0.8711587418838013,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ae429842176b0c5",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -75763.14,
+        "y": 121181.7,
+        "z": -480.99576
+      },
+      "u": 0.6957658203102136,
+      "v": 0.808921750569188,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e3b4f869fee0dec4",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -69737.87,
+        "y": 145345.67,
+        "z": -2241.1345
+      },
+      "u": 0.7183363371378403,
+      "v": 0.9132471796947468,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a2e562f6c7580b4",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -83312.24,
+        "y": 94884.47,
+        "z": -3510.4192
+      },
+      "u": 0.6674870728709396,
+      "v": 0.6953861931022851,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a0763fd7cf0207f",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -78175.805,
+        "y": 83912.47,
+        "z": -820.6881
+      },
+      "u": 0.6867280351185251,
+      "v": 0.6480157234168142,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b73a6e9bba4eb21c",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -61690.176,
+        "y": 76809.37,
+        "z": -1291.0085
+      },
+      "u": 0.7484828057360258,
+      "v": 0.6173488273884813,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ff611a77d0d000a7",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -125407.12,
+        "y": 87590.88,
+        "z": -5031.61
+      },
+      "u": 0.5098006625695055,
+      "v": 0.6638968762964836,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f98ae51ffbcd5c89",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -132160.61,
+        "y": 102061.305,
+        "z": -4650.429
+      },
+      "u": 0.48450225109745393,
+      "v": 0.726371432329876,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a6a7026b447a769",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -138290.47,
+        "y": 94810.93,
+        "z": -5430.934
+      },
+      "u": 0.46153994263974246,
+      "v": 0.695068691795261,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_97a5ebb1f17af928",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -148931.98,
+        "y": 97983.1,
+        "z": -5039.933
+      },
+      "u": 0.42167710155106813,
+      "v": 0.7087642060882031,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_df9285f9997d1705",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -144258.62,
+        "y": 81772.58,
+        "z": -5261.8755
+      },
+      "u": 0.4391833959613696,
+      "v": 0.6387769707395228,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_596dda5e1be8e97d",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -158442.95,
+        "y": 117754.14,
+        "z": -3370.7913
+      },
+      "u": 0.3860492361720807,
+      "v": 0.7941236164938023,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a80fc510d2ab25b3",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -69320.09,
+        "y": 95084.04,
+        "z": -2427.812
+      },
+      "u": 0.7199013309920983,
+      "v": 0.6962478158360738,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_916f3fb51c6fedc2",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -168694.6,
+        "y": 100458.664,
+        "z": -2280.4604
+      },
+      "u": 0.3476468012876792,
+      "v": 0.7194521963740618,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d797706470557fb7",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -158691.98,
+        "y": 89868.49,
+        "z": -4245.9595
+      },
+      "u": 0.38511637576821767,
+      "v": 0.6737302207606036,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_169ad845c581b277",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -144126.53,
+        "y": 6826.6436,
+        "z": 2741.5854
+      },
+      "u": 0.4396782019315189,
+      "v": 0.3152056794265959,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_beb41cdea11ef51d",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -132422.92,
+        "y": 2973.5098,
+        "z": -294.83096
+      },
+      "u": 0.48351964413227977,
+      "v": 0.2985701746993844,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_15fa1eeaf30de139",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -146782.52,
+        "y": 31476.158,
+        "z": 2005.175
+      },
+      "u": 0.42972892712906063,
+      "v": 0.4216273960367653,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f81d5631500c0747",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -134142.6,
+        "y": 34832.94,
+        "z": 64.737946
+      },
+      "u": 0.4770777641205736,
+      "v": 0.4361199534530736,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c293796cf36e5160",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -120381.25,
+        "y": 27256.582,
+        "z": 25.27254
+      },
+      "u": 0.5286274509803922,
+      "v": 0.40340981519521035,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6e6ad730400c09b3",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -134989.86,
+        "y": 66427.445,
+        "z": -3563.7026
+      },
+      "u": 0.47390394849283,
+      "v": 0.5725259451893077,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_311c6ba04ec58e86",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -166170.14,
+        "y": 142362.62,
+        "z": -44.840206
+      },
+      "u": 0.35710336786654956,
+      "v": 0.9003681713466566,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8e014da502c4ad0f",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -210797.14,
+        "y": -46234.434,
+        "z": 1605.9753
+      },
+      "u": 0.18993169681006727,
+      "v": 0.08611999150012642,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c42de105a20cc8a0",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -204040.23,
+        "y": -46665.254,
+        "z": 1437.2463
+      },
+      "u": 0.2152429195200468,
+      "v": 0.08425997092503584,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7b1dd91a6f80047d",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -198929.34,
+        "y": -50734.52,
+        "z": 1540.9187
+      },
+      "u": 0.23438819081065262,
+      "v": 0.06669133788683707,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cae736cbb546b868",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -200314.77,
+        "y": -46987.5,
+        "z": 1402.2974
+      },
+      "u": 0.22919840327772903,
+      "v": 0.08286870731090311,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fd4a10d437047ce9",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -169721.11,
+        "y": -25678.566,
+        "z": 1006.03564
+      },
+      "u": 0.343801519461516,
+      "v": 0.17486781522894004,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d9104233dd9961e1",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -174160.92,
+        "y": -24585.852,
+        "z": 1320.9783
+      },
+      "u": 0.32717009774656125,
+      "v": 0.17958549435871488,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a009cd7a2796ffd4",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -205692.92,
+        "y": -48135.707,
+        "z": 548.0197
+      },
+      "u": 0.20905198244073744,
+      "v": 0.07791144292098828,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e3f43f0967fac9d",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -208016.14,
+        "y": -52104.426,
+        "z": 1871.6578
+      },
+      "u": 0.20034925607257825,
+      "v": 0.06077691110548945,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ab951eae49dd4ced",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -208190.45,
+        "y": -47597.508,
+        "z": 1588.5856
+      },
+      "u": 0.19969629499561015,
+      "v": 0.08023506116873262,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f443bc2e51188239",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -35344.6,
+        "y": 77809.69,
+        "z": -168.49252
+      },
+      "u": 0.847172701199883,
+      "v": 0.6216676050257188,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_134663fc42435f7b",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -210528.11,
+        "y": -53717.473,
+        "z": 1103.3085
+      },
+      "u": 0.1909394767339772,
+      "v": 0.053812748326165796,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd9706ef9db570a6",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -209981.11,
+        "y": -49421.22,
+        "z": 1042.1552
+      },
+      "u": 0.1929885256072579,
+      "v": 0.07236137414621803,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd3bb8a1b8589318",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -205991.48,
+        "y": -52953.85,
+        "z": 2050.6885
+      },
+      "u": 0.20793358384547844,
+      "v": 0.05710961126570538,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_250e9152979e526e",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -40341.33,
+        "y": 67239.66,
+        "z": 4213.453
+      },
+      "u": 0.8284550705297044,
+      "v": 0.5760325990387047,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4cde1f9f87d55812",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -37755.664,
+        "y": 64156.48,
+        "z": 4133.104
+      },
+      "u": 0.838140913315774,
+      "v": 0.562721289822076,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_845969aea3560876",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -47328.227,
+        "y": 65202.883,
+        "z": 3933.1296
+      },
+      "u": 0.8022823220368744,
+      "v": 0.5672390260224303,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d619f6ce38b4a77",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -28974.602,
+        "y": 67239.69,
+        "z": 4839.813
+      },
+      "u": 0.8710345608428446,
+      "v": 0.5760327285605868,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_945bc970e6a24bbc",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -10668.371,
+        "y": 34456.312,
+        "z": 1177.9403
+      },
+      "u": 0.9396092628621598,
+      "v": 0.4344939012058352,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4bb229a0391e9a8c",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -41010.406,
+        "y": 78624.26,
+        "z": -851.52246
+      },
+      "u": 0.8259487278899619,
+      "v": 0.625184426342862,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c2fbe1edb095cdfc",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -42009.832,
+        "y": 77874.414,
+        "z": -851.5224
+      },
+      "u": 0.8222049020778461,
+      "v": 0.6219470441689856,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_53f62ed5fdd6ca1c",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -11950.466,
+        "y": 13848.548,
+        "z": -965.33636
+      },
+      "u": 0.9348065657594381,
+      "v": 0.34552202189054726,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_922d709f004e9c6d",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -22703.52,
+        "y": -19857.75,
+        "z": -2742.9385
+      },
+      "u": 0.8945258835235587,
+      "v": 0.19999858335441437,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_53065f6b5f88f35e",
+      "targetType": "creature",
+      "targetId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "map": "surface",
+      "world": {
+        "x": -16889.871,
+        "y": -6060.0454,
+        "z": -1279.7708
+      },
+      "u": 0.9163036731635938,
+      "v": 0.2595687389763049,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Ladybug.webp",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Ladybug Head",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ladybug Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ladybug Shell",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Ladybug Shell",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ladybug Shell",
+      "countLabel": "4",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

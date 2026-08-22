@@ -1,1 +1,1473 @@
-{"id":"g2_bee","speciesKey":"bee","collectionGroup":"neutral","name":"Abeja","game":"g2","tier":2,"danger":"intermedia","isBoss":false,"order":208,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bee.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bee_G.png","photo":"assets/g2/creatures/photos/Bee.webp","weaknesses":["sour","slashing"],"resistances":["generic"],"temperament":"neutral","health":{"value":500,"rating":2},"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_arrows_only","susceptibleDamageTypes":["stabbingArrowsOnly"]},"description":"Un noble animalito que sobrevuela gran parte del patio en busca de néctar de las plantas con flores. Al morir, puede soltar pelusa de abeja, aguijón de abeja y polen.","behavior":"Vuela alto durante buena parte del día y baja a flores y dientes de león amarillos para recoger polen. De noche suele dormirse sobre rocas grandes y hojas anchas, dejando una de las pocas ventanas cómodas para acercarte antes del combate.","interactionWithPlayer":"Se mantiene neutral hasta que la atacas. Golpear a una suele bastar para activar a las que estén cerca, y si lleva polen en las patas puedes hacer que lo suelte dañándola en pleno vuelo.","interactionWithCreatures":"Como normalmente vuela alto, entra poco en conflicto con el resto del ecosistema. Sus enemigos naturales más constantes son avispas y drones avispa, que sí buscan activamente pelearlas.","strategy":"La forma más segura de abrir es con distancia, cuando está flotando o recogiendo polen. Bloquea o esquiva la carga, sal del polen en cuanto empiece a sacudirse y, si puedes, castiga los ojos o aprovéchate de cuando duerme.","environments":["Gran parte del parque","Afloramientos rocosos","Parche de calabazas"],"respawnInfo":"1 día","loot":[{"section":"loot","item":"Pelusa de abeja","minCount":1,"maxCount":3},{"section":"loot","item":"Aguijón de abeja","minCount":0,"maxCount":1},{"section":"loot","item":"Polen","minCount":1,"maxCount":1,"notes":"Cuando la lleva en las patas"},{"section":"rare","item":"Pelusa de abeja","minCount":0,"maxCount":3},{"section":"rare","item":"Aguijón de abeja","minCount":0,"maxCount":1},{"section":"rare","item":"Polen","minCount":0,"maxCount":1}],"advancedLootTable":[{"item":"Pelusa de abeja","countLabel":"x1","chancePct":100},{"item":"Pelusa de abeja","countLabel":"x2","chancePct":25},{"item":"Pelusa de abeja","countLabel":"x3","chancePct":1},{"item":"Aguijón de abeja","countLabel":"x1","chancePct":40},{"item":"Aguijón de abeja","countLabel":"x1","chancePct":1},{"item":"Polen","countLabel":"x2","chancePct":100,"notes":"Cuando la lleva en las patas"},{"item":"Polen","countLabel":"x1","chancePct":1}],"combatStats":{"health":500,"stunThreshold":50,"stunCooldownSeconds":20,"attackDamageSummary":"Mordisco: 50. Combo de aguijonazos: 60. Aguijonazo cargado: 80. Nube de polen: 25."},"inflictsEffects":["stabbing","generic"],"inflicts":["Sus ataques normales infligen perforación y la nube de polen hace daño general, además de reducir la velocidad de movimiento."],"abilities":[{"name":"Mordisco","description":"Un ataque básico y bloqueable a corta distancia.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo de aguijonazos","description":"Lanza una serie de tres aguijonazos rápidos y bloqueables.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Aguijonazo cargado","description":"Se prepara y luego se lanza recto con el aguijón por delante hasta alcanzar al objetivo o agotar la carga.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Nube de polen","description":"Se sacude y deja una nube persistente de polen que reduce un 50% la velocidad de movimiento del jugador.","blockable":false,"breaksGuard":false,"staggers":false}],"elementalWeaknesses":[{"type":"sour","bonusPct":15}],"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25}],"groupId":null,"cardTier":2,"technicalId":"Bee","bestiaryId":"Bee","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Aguijonazo","technicalId":"BeeSting","tags":["stabbing"],"notes":"Daño del ataque: 60"},{"name":"Aguijonazo cargado","technicalId":"BeeStingCharged","tags":["stabbing"],"notes":"Daño del ataque: 80"},{"name":"Mordida","technicalId":"BeeBite","tags":["stabbing"],"notes":"Daño del ataque: 50"},{"name":"Polen nube","technicalId":"BeePollenCloud","tags":["general_unblockable","ranged"],"notes":"Daño del ataque: 25"}],"encounterVariants":[],"contextVariants":[{"id":"Bee_Wave","characterRow":"Bee_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":500.0,"stun":{"max":50.0,"duration":4.0,"cooldown":20.0,"staggerThreshold":30}},"weakpoints":["Eyes"],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"}],"weaknesses":[{"damageTypes":["Sour"],"percent":15.0,"sourceId":"DamageResistDownSourTiny"},{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"BeeSting","ability":"BeeSting","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BeeStingCharged","ability":"BeeStingCharge","resolved":true,"cooldown":15.0,"priority":2,"targetType":"Enemy","damage":{"amount":80.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":200.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"BeeBite","ability":"BeeBite","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":450.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BeePollenCloud","ability":"BeePollenCloud","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":25.0,"type":"GeneralUnblockable","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":700.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Abeja  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_bee",
+  "speciesKey": "bee",
+  "collectionGroup": "neutral",
+  "name": "Abeja",
+  "game": "g2",
+  "tier": 2,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 208,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bee.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bee_G.png",
+  "photo": "assets/g2/creatures/photos/Bee.webp",
+  "weaknesses": [
+    "sour",
+    "slashing"
+  ],
+  "resistances": [
+    "generic"
+  ],
+  "temperament": "neutral",
+  "health": {
+    "rating": 2,
+    "value": 500
+  },
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_arrows_only",
+    "susceptibleDamageTypes": [
+      "stabbingArrowsOnly"
+    ]
+  },
+  "description": "Un noble animalito que sobrevuela gran parte del patio en busca de néctar de las plantas con flores. Al morir, puede soltar pelusa de abeja, aguijón de abeja y polen.",
+  "behavior": "Vuela alto durante buena parte del día y baja a flores y dientes de león amarillos para recoger polen. De noche suele dormirse sobre rocas grandes y hojas anchas, dejando una de las pocas ventanas cómodas para acercarte antes del combate.",
+  "interactionWithPlayer": "Se mantiene neutral hasta que la atacas. Golpear a una suele bastar para activar a las que estén cerca, y si lleva polen en las patas puedes hacer que lo suelte dañándola en pleno vuelo.",
+  "interactionWithCreatures": "Como normalmente vuela alto, entra poco en conflicto con el resto del ecosistema. Sus enemigos naturales más constantes son avispas y drones avispa, que sí buscan activamente pelearlas.",
+  "strategy": "La forma más segura de abrir es con distancia, cuando está flotando o recogiendo polen. Bloquea o esquiva la carga, sal del polen en cuanto empiece a sacudirse y, si puedes, castiga los ojos o aprovéchate de cuando duerme.",
+  "environments": [
+    "Gran parte del parque",
+    "Afloramientos rocosos",
+    "Parche de calabazas"
+  ],
+  "respawnInfo": "1 día",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Bee Fuzz",
+      "minCount": 2,
+      "maxCount": 7
+    },
+    {
+      "section": "loot",
+      "item": "Bee Stinger",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Pollen",
+      "minCount": 2,
+      "maxCount": 3
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Bee Fuzz",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Bee Fuzz",
+      "countLabel": "2",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bee Fuzz",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bee Stinger",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bee Stinger",
+      "countLabel": "1",
+      "chancePct": 40,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pollen",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pollen",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 500,
+    "stunThreshold": 50,
+    "stunCooldownSeconds": 20
+  },
+  "inflictsEffects": [
+    "stabbing",
+    "generic"
+  ],
+  "inflicts": [
+    "Sus ataques normales infligen perforación y la nube de polen hace daño general, además de reducir la velocidad de movimiento."
+  ],
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "Un ataque básico y bloqueable a corta distancia.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo de aguijonazos",
+      "description": "Lanza una serie de tres aguijonazos rápidos y bloqueables.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Aguijonazo cargado",
+      "description": "Se prepara y luego se lanza recto con el aguijón por delante hasta alcanzar al objetivo o agotar la carga.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Nube de polen",
+      "description": "Se sacude y deja una nube persistente de polen que reduce un 50% la velocidad de movimiento del jugador.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "sour",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Bee",
+  "bestiaryId": "Bee",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only",
+      "susceptibleDamageTypes": [
+        "stabbingArrowsOnly"
+      ],
+      "weaponFamilies": [
+        "bow",
+        "crossbow"
+      ],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Aguijonazo",
+      "technicalId": "BeeSting",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 60",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 60.0,
+      "cooldownSeconds": 5.0,
+      "range": 400.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Aguijonazo cargado",
+      "technicalId": "BeeStingCharged",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 80",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 80.0,
+      "cooldownSeconds": 15.0,
+      "range": 200.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mordida",
+      "technicalId": "BeeBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 5.0,
+      "range": 450.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Polen nube",
+      "technicalId": "BeePollenCloud",
+      "tags": [
+        "general",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Daño del ataque: 25",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 25.0,
+      "cooldownSeconds": 20.0,
+      "range": 700.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [
+    {
+      "id": "Bee_Wave",
+      "characterRow": "Bee_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 500.0,
+        "stun": {
+          "max": 50.0,
+          "duration": 4.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [
+        "Eyes"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Sour"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSourTiny"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "BeeSting",
+          "ability": "BeeSting",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BeeStingCharged",
+          "ability": "BeeStingCharge",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 80.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 200.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "BeeBite",
+          "ability": "BeeBite",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 450.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BeePollenCloud",
+          "ability": "BeePollenCloud",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 25.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 700.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Abeja  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_d56741d22154b192",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -201200.0,
+        "y": 11000.0,
+        "z": 7650.0
+      },
+      "u": 0.22588235294117645,
+      "v": 0.33322371194873096,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0323afefd8cb836c",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -195721.39,
+        "y": 9098.602,
+        "z": 8032.0093
+      },
+      "u": 0.24640509452736314,
+      "v": 0.325014623695084,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_de655e3d8ffdc4b6",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -206180.0,
+        "y": 9880.0,
+        "z": 8590.0
+      },
+      "u": 0.20722739244951713,
+      "v": 0.32838822834977655,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_750b47fbce2ed867",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -157460.1,
+        "y": 8195.388,
+        "z": 8190.1787
+      },
+      "u": 0.38973096868598184,
+      "v": 0.3211150911206679,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_82721454ec6ec68a",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -154188.22,
+        "y": -34632.293,
+        "z": 2810.3093
+      },
+      "u": 0.4019873526485221,
+      "v": 0.13621102946285518,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f6016c7d5cfe65fe",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -154529.6,
+        "y": -36474.28,
+        "z": 2810.3093
+      },
+      "u": 0.4007085513608428,
+      "v": 0.1282584420271524,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_83d485668879f809",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -128952.18,
+        "y": -50644.652,
+        "z": 2990.5032
+      },
+      "u": 0.4965209528826456,
+      "v": 0.06707933363690022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2680734a348742bf",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -127752.48,
+        "y": -34747.9,
+        "z": 2536.913
+      },
+      "u": 0.5010150002926544,
+      "v": 0.1357119082553335,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fc0f0cc1c10081cf",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -128465.414,
+        "y": -38153.56,
+        "z": 2536.913
+      },
+      "u": 0.4983443666374013,
+      "v": 0.12100832515389157,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a2dec644fe3a18ff",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -122771.66,
+        "y": -46384.266,
+        "z": 2990.5032
+      },
+      "u": 0.5196730324846356,
+      "v": 0.08547310741209206,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b7e875738c7d2267",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -115200.0,
+        "y": 70850.0,
+        "z": 1900.0
+      },
+      "u": 0.5480362891425227,
+      "v": 0.5916198667678556,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1f69cc72e3362001",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -34872.8,
+        "y": -23260.635,
+        "z": -143.88193
+      },
+      "u": 0.8489400526777876,
+      "v": 0.18530698102706805,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8977e60f7fd95bce",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -37515.125,
+        "y": -24756.697,
+        "z": 706.18585
+      },
+      "u": 0.8390419666374013,
+      "v": 0.1788478888270512,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_23467c05f17a1e5a",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -35027.87,
+        "y": -25018.1,
+        "z": 193.98126
+      },
+      "u": 0.8483591641791045,
+      "v": 0.17771930854203555,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_750f9222463a16f0",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -35359.395,
+        "y": -20552.7,
+        "z": -1561.1234
+      },
+      "u": 0.8471172794849283,
+      "v": 0.19699820895522388,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7925c0b6b9b0a8c5",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -32427.088,
+        "y": -25693.844,
+        "z": 193.98126
+      },
+      "u": 0.8581016311384256,
+      "v": 0.17480185405177504,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_236aa53ea25090e7",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -186773.75,
+        "y": 120020.195,
+        "z": 12400.298
+      },
+      "u": 0.2799227392449517,
+      "v": 0.8039070734463276,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_19a7c550f37232d1",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -186105.23,
+        "y": 114301.18,
+        "z": 13863.98
+      },
+      "u": 0.28242699912203684,
+      "v": 0.7792158205582258,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9adaf269c3bf92db",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -186858.77,
+        "y": 122815.05,
+        "z": 9388.127
+      },
+      "u": 0.27960425636523273,
+      "v": 0.8159735694409308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_374d7d041e386439",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -226837.67,
+        "y": 146234.19,
+        "z": 24504.246
+      },
+      "u": 0.1298442563652326,
+      "v": 0.9170832724513028,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_69f0004577739a27",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -108894.695,
+        "y": 19417.754,
+        "z": 22217.373
+      },
+      "u": 0.5716558103599648,
+      "v": 0.3695664899907244,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6050d7ac4b53b555",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -106121.06,
+        "y": 22823.42,
+        "z": 22024.875
+      },
+      "u": 0.5820457805092186,
+      "v": 0.38427009899654263,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aee39f197169c968",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -107931.914,
+        "y": 26770.033,
+        "z": 21206.984
+      },
+      "u": 0.5752623648814751,
+      "v": 0.4013091904545071,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07cfb65d51f58458",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -110626.58,
+        "y": 22501.703,
+        "z": 18962.266
+      },
+      "u": 0.5651682107111501,
+      "v": 0.3828811192849313,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a4ce18b8ca05b0b4",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -109776.51,
+        "y": 22553.896,
+        "z": 21791.432
+      },
+      "u": 0.5683525525314603,
+      "v": 0.3831064571380387,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d424ed40522e4258",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -116636.75,
+        "y": 9363.1455,
+        "z": 24684.01
+      },
+      "u": 0.5426542581211589,
+      "v": 0.3261567627624589,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2caa2135f13e4712",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -132368.62,
+        "y": 79678.85,
+        "z": -2245.5383
+      },
+      "u": 0.4837230506292069,
+      "v": 0.6297375090648453,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b9bc01e34e301ca5",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -84589.95,
+        "y": 140198.02,
+        "z": 3355.1143
+      },
+      "u": 0.662700801872988,
+      "v": 0.8910227358124632,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f6856386b432ff5b",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -71552.805,
+        "y": 146825.52,
+        "z": 946.09674
+      },
+      "u": 0.7115376341820311,
+      "v": 0.9196362782696686,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_149db6cc9449d38b",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -71928.766,
+        "y": 122827.4,
+        "z": 536.92773
+      },
+      "u": 0.7101292932982147,
+      "v": 0.8160268892824015,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ed5aa6286f7e934c",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -72385.83,
+        "y": 125898.96,
+        "z": 943.5027
+      },
+      "u": 0.7084171425226807,
+      "v": 0.8292880303566912,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6017da2f2684e30b",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -80193.7,
+        "y": 118781.32,
+        "z": 2409.5598
+      },
+      "u": 0.6791690488732807,
+      "v": 0.7985583593894932,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_701e9c533f0427d7",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -162369.23,
+        "y": 77569.445,
+        "z": 835.1849
+      },
+      "u": 0.3713414855136084,
+      "v": 0.6206303722067628,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8d6ac3f0c9babb45",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -134457.66,
+        "y": 81723.06,
+        "z": -2219.5742
+      },
+      "u": 0.47589755692127594,
+      "v": 0.6385631732861118,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_25117a6911c4d85d",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -159962.55,
+        "y": 76266.484,
+        "z": 241.3941
+      },
+      "u": 0.3803568510389231,
+      "v": 0.6150049735053545,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f2d6e58b6ebf3d67",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -158822.03,
+        "y": 51538.715,
+        "z": 2636.5032
+      },
+      "u": 0.38462921158911323,
+      "v": 0.5082454007926469,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f97f088c7635c2f4",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -69491.58,
+        "y": 124541.56,
+        "z": 536.92773
+      },
+      "u": 0.7192589335674568,
+      "v": 0.8234275969306012,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b86eb4aab0dd6aab",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -78068.586,
+        "y": 120026.64,
+        "z": 2409.5598
+      },
+      "u": 0.6871296749195199,
+      "v": 0.8039348990640021,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_91be6cfa82f4be44",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -96365.99,
+        "y": 141347.38,
+        "z": 2461.6514
+      },
+      "u": 0.6185880386303776,
+      "v": 0.8959849781600472,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3cf8f0f012553081",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -83354.195,
+        "y": 144019.22,
+        "z": 3355.1143
+      },
+      "u": 0.6673299104477611,
+      "v": 0.9075203696770384,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da7862977ce14f58",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -69891.06,
+        "y": 148411.11,
+        "z": 946.09674
+      },
+      "u": 0.7177624910740416,
+      "v": 0.9264818983050847,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ad48dc1381754d11",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -117219.484,
+        "y": 55792.65,
+        "z": 14844.825
+      },
+      "u": 0.5404713505414106,
+      "v": 0.526611323045788,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5cc66f3f56f5a871",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -152329.25,
+        "y": 105931.23,
+        "z": 11617.356
+      },
+      "u": 0.40895100965759434,
+      "v": 0.7430794313179863,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da6184fc5b8aab18",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -39954.598,
+        "y": 68516.31,
+        "z": 6592.349
+      },
+      "u": 0.8299037593210419,
+      "v": 0.5815444027321022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a1ee741628e88e97",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -204065.0,
+        "y": -20856.4,
+        "z": 3943.4062
+      },
+      "u": 0.21515013169446884,
+      "v": 0.19568701576861458,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bd9f01ab5454a0f6",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -200940.19,
+        "y": -22159.96,
+        "z": 3647.504
+      },
+      "u": 0.22685559496634472,
+      "v": 0.1900590309469601,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_08af8ad334940026",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -205423.44,
+        "y": -23343.996,
+        "z": 4253.942
+      },
+      "u": 0.2100614480538484,
+      "v": 0.18494707857323553,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0f8a1cbb7a56636",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -56308.76,
+        "y": 76453.88,
+        "z": -675.04584
+      },
+      "u": 0.7686414609306409,
+      "v": 0.615814036259381,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_49e29b16358a2b6b",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -52082.066,
+        "y": 77254.56,
+        "z": -1296.2146
+      },
+      "u": 0.7844745552238807,
+      "v": 0.619270888945105,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7aa1d3ca72ac39cd",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -40393.246,
+        "y": 62902.08,
+        "z": 7739.1416
+      },
+      "u": 0.8282605944395669,
+      "v": 0.5573055481912471,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cd5c33f7b941c9e9",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -58284.535,
+        "y": 66483.51,
+        "z": 2166.3035
+      },
+      "u": 0.7612402551946151,
+      "v": 0.572768,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d539dba50a7a4f08",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -42896.96,
+        "y": 75255.17,
+        "z": 1016.7952
+      },
+      "u": 0.8188817418788412,
+      "v": 0.6106387304157179,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8e4b36a0f1e8abb2",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -55000.426,
+        "y": 69580.15,
+        "z": 1120.0021
+      },
+      "u": 0.773542448697688,
+      "v": 0.5861374213677376,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_610ee5a5bbc5f1bb",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -57134.535,
+        "y": 65983.51,
+        "z": 2408.5012
+      },
+      "u": 0.7655481275973076,
+      "v": 0.5706093019647525,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_90367946276bfa58",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -226943.02,
+        "y": -47351.035,
+        "z": 11927.466
+      },
+      "u": 0.12944961779338604,
+      "v": 0.08129918273041567,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95854f43278690f2",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -19139.963,
+        "y": -10696.245,
+        "z": 283.0815
+      },
+      "u": 0.9078748825285339,
+      "v": 0.2395524290412345,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_707e5beeb261deb3",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -17778.56,
+        "y": -14183.827,
+        "z": 294.54297
+      },
+      "u": 0.9129746654960492,
+      "v": 0.22449515621890548,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ce2f077312d75d6f",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -16644.707,
+        "y": 719.1412,
+        "z": 190.02682
+      },
+      "u": 0.9172220516242318,
+      "v": 0.2888371725642972,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dce463c50c118c03",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -13781.508,
+        "y": 7073.862,
+        "z": 638.0872
+      },
+      "u": 0.9279475263681592,
+      "v": 0.31627301917530987,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_979800f2d7778d57",
+      "targetType": "creature",
+      "targetId": "g2_bee",
+      "technicalId": "Bee",
+      "map": "surface",
+      "world": {
+        "x": -15911.621,
+        "y": 13849.093,
+        "z": -201.15334
+      },
+      "u": 0.9199681741878841,
+      "v": 0.34552437487140564,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Bee.webp",
+  "immunities": []
+}

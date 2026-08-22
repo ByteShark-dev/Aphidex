@@ -36,8 +36,12 @@ void main() {
     final requestedKeys = <String>[];
     _installAssetHandler(requestedKeys);
 
-    final first = await EnemyRepository.loadDetail('g1_test_enemy', 'en');
-    final second = await EnemyRepository.loadDetail('g1_test_enemy', 'en');
+    final first = await EnemyRepository.loadDetail('g1', 'g1_test_enemy', 'en');
+    final second = await EnemyRepository.loadDetail(
+      'g1',
+      'g1_test_enemy',
+      'en',
+    );
 
     expect(first.id, 'g1_test_enemy');
     expect(identical(first, second), isTrue);

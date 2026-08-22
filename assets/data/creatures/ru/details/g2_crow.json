@@ -1,1 +1,76 @@
-{"id":"g2_crow","speciesKey":"crow","collectionGroup":"harmless","name":"Ворон","game":"g2","tier":5,"danger":"baja","isBoss":true,"order":225,"defaultGold":true,"cardNormal":"","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_Crow.png","photo":"assets/g2/creatures/photos/Crow.webp","weaknesses":[],"resistances":[],"temperament":"peaceful","description":"Колоссальное невзаимодействующее существо, которое пересекает парк Brookhollow и сбрасывает вороньи перья при приземлении и взлете.","behavior":"Он появляется между 5:00 и 20:00, выбирает одного окуня Brookhollow, остается там на несколько минут, а затем снова покидает карту.","interactionWithPlayer":"Он не воюет и не может участвовать в осмысленном взаимодействии. Практическое взаимодействие заключается в том, чтобы следовать за ним и собирать перья с его насестов.","interactionWithCreatures":"Он игнорирует остальных существ парка и использует свои точки отдыха лишь на короткое время.","strategy":"Изучите зону церемонии, тележку с мороженым, статую, чучело, стол для пикника и насесты в огороде, чтобы максимизировать каждое движение пера.","environments":["Церемониальная зона","Окрестности тележки с мороженым","Зона стола для пикника","Пугало","Зона статуи","Огород"],"respawnInfo":"Дневной цикл тот же: садитесь на несколько минут, затем еще несколько минут, прежде чем снова приземлиться в другом месте.","loot":[{"section":"passive","item":"Воронье перо","minCount":0,"maxCount":0,"notes":"Пассивное выпадение"},{"section":"loot","item":"Кусок вороньего пера","minCount":1,"maxCount":6}],"specialTraits":["Известные насесты: подиум в церемониальной зоне, колесо тележки с мороженым, фонарный столб у зоны стола для пикника, рука статуи Уэнделла, мусорный бак у огненной ямы, забор Fairy Garden House и плечо пугала."],"groupId":null,"cardTier":5,"technicalId":"CrowDummy","bestiaryId":"CrowDummy","bossCardStyle":"yellow","isKillable":false,"healthDisplay":"hidden","elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":null,"listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":false,"defaultCardVariant":"gold"}
+{
+  "id": "g2_crow",
+  "speciesKey": "crow",
+  "collectionGroup": "harmless",
+  "name": "Ворон",
+  "game": "g2",
+  "tier": 5,
+  "danger": "baja",
+  "isBoss": true,
+  "order": 225,
+  "defaultGold": true,
+  "cardNormal": "",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_Crow.png",
+  "photo": "assets/g2/creatures/photos/Crow.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "peaceful",
+  "description": "Колоссальное невзаимодействующее существо, которое пересекает парк Brookhollow и сбрасывает вороньи перья при приземлении и взлете.",
+  "behavior": "Он появляется между 5:00 и 20:00, выбирает одного окуня Brookhollow, остается там на несколько минут, а затем снова покидает карту.",
+  "interactionWithPlayer": "Он не воюет и не может участвовать в осмысленном взаимодействии. Практическое взаимодействие заключается в том, чтобы следовать за ним и собирать перья с его насестов.",
+  "interactionWithCreatures": "Он игнорирует остальных существ парка и использует свои точки отдыха лишь на короткое время.",
+  "strategy": "Изучите зону церемонии, тележку с мороженым, статую, чучело, стол для пикника и насесты в огороде, чтобы максимизировать каждое движение пера.",
+  "environments": [
+    "Церемониальная зона",
+    "Окрестности тележки с мороженым",
+    "Зона стола для пикника",
+    "Пугало",
+    "Зона статуи",
+    "Огород"
+  ],
+  "respawnInfo": "Дневной цикл тот же: садитесь на несколько минут, затем еще несколько минут, прежде чем снова приземлиться в другом месте.",
+  "loot": [
+    {
+      "section": "passive",
+      "item": "Воронье перо",
+      "minCount": 0,
+      "maxCount": 0,
+      "notes": "Пассивное выпадение"
+    },
+    {
+      "section": "loot",
+      "item": "Кусок вороньего пера",
+      "minCount": 1,
+      "maxCount": 6
+    }
+  ],
+  "specialTraits": [
+    "Известные насесты: подиум в церемониальной зоне, колесо тележки с мороженым, фонарный столб у зоны стола для пикника, рука статуи Уэнделла, мусорный бак у огненной ямы, забор Fairy Garden House и плечо пугала."
+  ],
+  "groupId": null,
+  "cardTier": 5,
+  "technicalId": "CrowDummy",
+  "bestiaryId": "CrowDummy",
+  "bossCardStyle": "yellow",
+  "isKillable": false,
+  "healthDisplay": "hidden",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": null,
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": false,
+  "defaultCardVariant": "gold",
+  "appearanceType": "no_natural_spawn",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22"
+}

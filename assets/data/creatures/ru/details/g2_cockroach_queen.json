@@ -1,1 +1,696 @@
-{"id":"g2_cockroach_queen","speciesKey":"cockroach_queen","collectionGroup":"angry","name":"Королева тараканов","game":"g2","tier":2,"danger":"muy_alta","isBoss":false,"order":220,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Queen.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Queen_G.png","photo":"assets/g2/creatures/photos/Cockroach_Queen.webp","weaknesses":[],"resistances":["gas","fresh","spicy","venom"],"temperament":"aggressive","health":{"value":1650,"rating":4},"description":"Королева тараканов ощущается скорее как повторяющийся мини-босс, чем как обычный тяжёлый враг. Она координирует ближайших тараканов, доминирует на ближней дистанции и вдобавок меняет фазу, когда остаётся без головы.","behavior":"Она держится рядом со своей группой и давит тяжёлым фронтальным стилем. Пока голова на месте, она смешивает укусы, пинки и кислоту; потеряв голову, переходит в куда более линейный, но и более хаотичный отрезок.","interactionWithPlayer":"Она атакует сразу, как только вы входите в радиус, и делает присутствие других ближайших тараканов куда опаснее. Главная ошибка — думать, что бой станет спокойнее после обезглавливания: на деле он лишь меняет форму.","interactionWithCreatures":"Ближайшие тараканы куда легче подключаются к драке, когда в неё вступает королева.","strategy":"Сначала ломайте её поддержку, если арена это позволяет, и не воспринимайте её как просто крупного таракана. Бой становится заметно чище, если вы сохраняете пространство для безголовой фазы и не застреваете в центре группы, когда начинает работать кислота.","environments":["Огненная яма","Малые пещеры","Токсичный муравейник"],"loot":[{"section":"loot","item":"Roach Chunk","minCount":4,"maxCount":9},{"section":"loot","item":"Roach Head","minCount":1,"maxCount":1},{"section":"loot","item":"Roach Milk","minCount":2,"maxCount":4},{"section":"loot","item":"Rotten Food","minCount":0,"maxCount":1},{"section":"loot","item":"Spoiled Meat","minCount":0,"maxCount":1},{"section":"rare","item":"Apple Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Billy Hog Bite","minCount":0,"maxCount":1},{"section":"rare","item":"Cookie Sandwich Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Everlasting Hogstopper","minCount":0,"maxCount":1},{"section":"rare","item":"Fresh Apple Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Fresh Billy Hog Bite","minCount":0,"maxCount":1},{"section":"rare","item":"Roach Chunk","minCount":0,"maxCount":3}],"combatStats":{"health":1650,"attackDamageSummary":"Укус: 50. Комбо из 3 укусов: 50. Боковой пинок: 45. Удар корпусом: 60. Кислотный распыл: остаточный урон."},"abilities":[{"name":"Укус","description":"Прямой укус, которым она начинает давление, если игрок слишком долго стоит перед ней.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 укусов","description":"Она связывает несколько коротких укусов подряд, если видит, что игрок всё ещё зажат перед ней.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Боковой удар","description":"Она резко разворачивается в сторону, чтобы поймать тех, кто пытается обойти её или наказать с фланга.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Удар корпусом","description":"Она вкладывает в удар всё тело, ломая ближнюю дистанцию и наказывая за поздний блок.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Кислотный распыл","description":"Она выплёвывает кислоту, перекрывая пути отхода и оставляя на полу опасную зону на несколько секунд.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Безголовый таран","description":"Потеряв голову, она бросает тело по прямой, покрывая заметно большую дистанцию, чем в обычной фазе.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Безголовый кислотный распыл","description":"В безголовой фазе она выпускает более хаотичную кислотную струю и оставляет остаточный урон, если вы стоите на линии.","blockable":false,"breaksGuard":false,"staggers":false}],"resistancesV2":[{"type":"gas","bonusPct":90},{"type":"fresh","bonusPct":50},{"type":"spicy","bonusPct":50},{"type":"venom","bonusPct":50}],"bossPhases":[{"id":"phase1","label":"Фаза 1","summary":"Королева с целой головой сочетает укусы, боковые удары, удары корпусом и кислотный распыл, чтобы контролировать фронт.","startsAtHealthPct":100,"abilities":[{"name":"Укус","description":"Прямой укус, которым она начинает давление, если игрок слишком долго стоит перед ней.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 укусов","description":"Она связывает несколько коротких укусов подряд, если видит, что игрок всё ещё зажат перед ней.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Боковой удар","description":"Она резко разворачивается в сторону, чтобы поймать тех, кто пытается обойти её или наказать с фланга.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Удар корпусом","description":"Она вкладывает в удар всё тело, ломая ближнюю дистанцию и наказывая за поздний блок.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Кислотный распыл","description":"Она выплёвывает кислоту, перекрывая пути отхода и оставляя на полу опасную зону на несколько секунд.","blockable":false,"breaksGuard":false,"staggers":false}]},{"id":"phase2","label":"Фаза 2","summary":"После обезглавливания она не останавливается: переходит к более длинным рывкам корпусом и к куда менее предсказуемому кислотному распылу.","trigger":"Начинается, когда королева теряет голову и входит в безголовый отрезок.","abilities":[{"name":"Удар корпусом","description":"Она вкладывает в удар всё тело, ломая ближнюю дистанцию и наказывая за поздний блок.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Безголовый таран","description":"Потеряв голову, она бросает тело по прямой, покрывая заметно большую дистанцию, чем в обычной фазе.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Безголовый кислотный распыл","description":"В безголовой фазе она выпускает более хаотичную кислотную струю и оставляет остаточный урон, если вы стоите на линии.","blockable":false,"breaksGuard":false,"staggers":false}]}],"groupId":null,"cardTier":2,"technicalId":"Cockroach_Queen","bestiaryId":"Cockroach_Queen","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Bite","technicalId":"CockroachQueenBite","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Bite Right","technicalId":"CockroachQueenBiteRight","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Bite Left","technicalId":"CockroachQueenBiteLeft","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Karate Kick Left","technicalId":"CockroachQueenKarateKickLeft","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Karate Kick Right","technicalId":"CockroachQueenKarateKickRight","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Combo 3","technicalId":"CockroachQueenCombo3","tags":["stabbing"],"notes":"Урон атаки: 45"},{"name":"Slam","technicalId":"CockroachQueen_Slam","tags":["generic"],"notes":"Урон атаки: 60"},{"name":"Spray","technicalId":"CockroachQueenSpray","tags":["sizzle_direct_hit"],"notes":"Урон атаки: 50"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_cockroach_queen",
+  "speciesKey": "cockroach_queen",
+  "collectionGroup": "angry",
+  "name": "Королева тараканов",
+  "game": "g2",
+  "tier": 2,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 220,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Queen.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Queen_G.png",
+  "photo": "assets/g2/creatures/photos/Cockroach_Queen.webp",
+  "weaknesses": [],
+  "resistances": [
+    "gas",
+    "fresh",
+    "spicy",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 4,
+    "value": 1650
+  },
+  "description": "Королева тараканов ощущается скорее как повторяющийся мини-босс, чем как обычный тяжёлый враг. Она координирует ближайших тараканов, доминирует на ближней дистанции и вдобавок меняет фазу, когда остаётся без головы.",
+  "behavior": "Она держится рядом со своей группой и давит тяжёлым фронтальным стилем. Пока голова на месте, она смешивает укусы, пинки и кислоту; потеряв голову, переходит в куда более линейный, но и более хаотичный отрезок.",
+  "interactionWithPlayer": "Она атакует сразу, как только вы входите в радиус, и делает присутствие других ближайших тараканов куда опаснее. Главная ошибка — думать, что бой станет спокойнее после обезглавливания: на деле он лишь меняет форму.",
+  "interactionWithCreatures": "Ближайшие тараканы куда легче подключаются к драке, когда в неё вступает королева.",
+  "strategy": "Сначала ломайте её поддержку, если арена это позволяет, и не воспринимайте её как просто крупного таракана. Бой становится заметно чище, если вы сохраняете пространство для безголовой фазы и не застреваете в центре группы, когда начинает работать кислота.",
+  "environments": [
+    "Огненная яма",
+    "Малые пещеры",
+    "Токсичный муравейник"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Billy Hog",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cockroach Head",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cockroach Milk",
+      "minCount": 2,
+      "maxCount": 5
+    },
+    {
+      "section": "loot",
+      "item": "Cockroach Part",
+      "minCount": 4,
+      "maxCount": 12
+    },
+    {
+      "section": "rare",
+      "item": "Food Apple",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Apple Pristine",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Cookie Sandwich",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Cookie Sandwich Pristine",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Hot Dog",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Hot Dog Pristine",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Rotten",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Spoiled Meat",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1650,
+    "stunThreshold": 90,
+    "stunCooldownSeconds": 20
+  },
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Прямой укус, которым она начинает давление, если игрок слишком долго стоит перед ней.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Комбо из 3 укусов",
+      "description": "Она связывает несколько коротких укусов подряд, если видит, что игрок всё ещё зажат перед ней.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Боковой удар",
+      "description": "Она резко разворачивается в сторону, чтобы поймать тех, кто пытается обойти её или наказать с фланга.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Удар корпусом",
+      "description": "Она вкладывает в удар всё тело, ломая ближнюю дистанцию и наказывая за поздний блок.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Кислотный распыл",
+      "description": "Она выплёвывает кислоту, перекрывая пути отхода и оставляя на полу опасную зону на несколько секунд.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Безголовый таран",
+      "description": "Потеряв голову, она бросает тело по прямой, покрывая заметно большую дистанцию, чем в обычной фазе.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Безголовый кислотный распыл",
+      "description": "В безголовой фазе она выпускает более хаотичную кислотную струю и оставляет остаточный урон, если вы стоите на линии.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "gas",
+      "bonusPct": 90
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 50
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "bossPhases": [
+    {
+      "id": "phase1",
+      "label": "Фаза 1",
+      "summary": "Королева с целой головой сочетает укусы, боковые удары, удары корпусом и кислотный распыл, чтобы контролировать фронт.",
+      "startsAtHealthPct": 100,
+      "abilities": [
+        {
+          "name": "Укус",
+          "description": "Прямой укус, которым она начинает давление, если игрок слишком долго стоит перед ней.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Комбо из 3 укусов",
+          "description": "Она связывает несколько коротких укусов подряд, если видит, что игрок всё ещё зажат перед ней.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Боковой удар",
+          "description": "Она резко разворачивается в сторону, чтобы поймать тех, кто пытается обойти её или наказать с фланга.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": true
+        },
+        {
+          "name": "Удар корпусом",
+          "description": "Она вкладывает в удар всё тело, ломая ближнюю дистанцию и наказывая за поздний блок.",
+          "blockable": true,
+          "breaksGuard": true,
+          "staggers": true
+        },
+        {
+          "name": "Кислотный распыл",
+          "description": "Она выплёвывает кислоту, перекрывая пути отхода и оставляя на полу опасную зону на несколько секунд.",
+          "blockable": false,
+          "breaksGuard": false,
+          "staggers": false
+        }
+      ]
+    },
+    {
+      "id": "phase2",
+      "label": "Фаза 2",
+      "summary": "После обезглавливания она не останавливается: переходит к более длинным рывкам корпусом и к куда менее предсказуемому кислотному распылу.",
+      "trigger": "Начинается, когда королева теряет голову и входит в безголовый отрезок.",
+      "abilities": [
+        {
+          "name": "Удар корпусом",
+          "description": "Она вкладывает в удар всё тело, ломая ближнюю дистанцию и наказывая за поздний блок.",
+          "blockable": true,
+          "breaksGuard": true,
+          "staggers": true
+        },
+        {
+          "name": "Безголовый таран",
+          "description": "Потеряв голову, она бросает тело по прямой, покрывая заметно большую дистанцию, чем в обычной фазе.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Безголовый кислотный распыл",
+          "description": "В безголовой фазе она выпускает более хаотичную кислотную струю и оставляет остаточный урон, если вы стоите на линии.",
+          "blockable": false,
+          "breaksGuard": false,
+          "staggers": false
+        }
+      ]
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Cockroach_Queen",
+  "bestiaryId": "Cockroach_Queen",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "technicalId": "CockroachQueenBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Right",
+      "technicalId": "CockroachQueenBiteRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Left",
+      "technicalId": "CockroachQueenBiteLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Karate Kick Left",
+      "technicalId": "CockroachQueenKarateKickLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 5.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Karate Kick Right",
+      "technicalId": "CockroachQueenKarateKickRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 5.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 3",
+      "technicalId": "CockroachQueenCombo3",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 45",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 3.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Slam",
+      "technicalId": "CockroachQueen_Slam",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 60",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 60.0,
+      "cooldownSeconds": 8.0,
+      "range": 700.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spray",
+      "technicalId": "CockroachQueenSpray",
+      "tags": [
+        "sizzle"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "sizzle"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 14.0,
+      "range": 750.0,
+      "stun": 15,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_12b18fdc96bfa55e",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -164064.12,
+        "y": 105325.23,
+        "z": -4836.6904
+      },
+      "u": 0.36499246824700027,
+      "v": 0.7404630892992663,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2165b0c7e004b767",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -230824.27,
+        "y": 100215.64,
+        "z": 3905.0576
+      },
+      "u": 0.11491054843429914,
+      "v": 0.718402965511426,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7202a2af4ced73cf",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -195772.27,
+        "y": -5214.2246,
+        "z": 1581.2954
+      },
+      "u": 0.2462144992683641,
+      "v": 0.26322048237456785,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3fa2948f52cbf9d3",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -22733.828,
+        "y": 42567.56,
+        "z": -4567.136
+      },
+      "u": 0.8944123504828797,
+      "v": 0.46951337144784555,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_211c6c9e524c7f53",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -200221.11,
+        "y": -52558.207,
+        "z": -5619.2124
+      },
+      "u": 0.22954925139010834,
+      "v": 0.05881775879922427,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da3c31913f8e2609",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "map": "surface",
+      "world": {
+        "x": -45786.61,
+        "y": 50633.38,
+        "z": 1774.5612
+      },
+      "u": 0.8080571823236757,
+      "v": 0.5043367110211654,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [
+    "gas"
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Billy Hog",
+      "countLabel": "1",
+      "chancePct": 3,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Head",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Milk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Milk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Milk",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "3",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "4",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Apple",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Apple Pristine",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Cookie Sandwich",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Cookie Sandwich Pristine",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Hot Dog",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Hot Dog Pristine",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Rotten",
+      "countLabel": "1",
+      "chancePct": 15,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spoiled Meat",
+      "countLabel": "1",
+      "chancePct": 15,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

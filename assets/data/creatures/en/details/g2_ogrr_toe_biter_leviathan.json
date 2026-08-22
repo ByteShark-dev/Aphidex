@@ -1,1 +1,509 @@
-{"id":"g2_ogrr_toe_biter_leviathan","speciesKey":"ogrr_toe_biter_leviathan","collectionGroup":"ogrr","game":"g2","danger":"unknown","order":308,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_ogrr_toe_biter_leviathan.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"We're preparing this information for you.","interactionWithPlayer":"We're preparing this information for you.","interactionWithCreatures":"We're preparing this information for you.","strategy":"We're preparing this information for you.","groupId":null,"name":"O.G.R.R. Toe Biter Leviathan","tier":4,"cardTier":4,"technicalId":"ToeBiterLeviathanOGRE","bestiaryId":"ToeBiterLeviathanOGRE","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier4_ToeBiter_Leviathan_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier4_ToeBiter_Leviathan_OGRR_G.png","weaknesses":[],"resistances":["water","venom","slashing"],"elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[{"type":"water","bonusPct":35},{"type":"venom","bonusPct":50},{"type":"slashing","bonusPct":50}],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Area Attack","technicalId":"ToeBiterLeviathanAOE","tags":["generic"],"notes":"Attack damage: 140"},{"name":"Toe Biter Leviathan Range","technicalId":"ToeBiterLeviathanRange","tags":["general_unblockable","ranged"],"notes":"Attack damage: 100"},{"name":"Combo 5 A","technicalId":"ToeBiterLeviathanCombo5A","tags":["slashing"],"notes":"Attack damage: 85"},{"name":"Combo 5 B","technicalId":"ToeBiterLeviathanCombo5B","tags":["slashing"],"notes":"Attack damage: 85"},{"name":"Power Attack","technicalId":"ToeBiterLeviathanPowerAttack","tags":["slashing"],"notes":"Attack damage: 150"},{"name":"Block Offensive","technicalId":"BlockOffensive","tags":["maine"],"notes":"Attack damage: 0"},{"name":"Gas","technicalId":"ToeBiterLeviathanGas","tags":["gas"],"notes":"Attack damage: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":3200,"rating":5},"combatStats":{"health":3200},"description":"An abominable toe biter leviathan even by toe biter standards. They are resistant to the flavor of their mutation. Drops toe biter venom on death.","localizationStatus":"ru_automatic_pending_review","infusions":[{"id":"fresh","name":"Fresh","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["All direct hits also apply 20 Chill buildup."],"recommendations":"Do not stay on fresh damage as your main answer.","combatTips":["Swap to spicy damage or a reliable physical weapon if your build depends on fresh."]},{"id":"sour","name":"Sour","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["All direct hits also apply 20 Tang buildup."],"recommendations":"Avoid staying on sour weapons as your main answer.","combatTips":["Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."]},{"id":"spicy","name":"Spicy","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["All direct hits also apply 20 Sizzle buildup."],"recommendations":"Do not depend on spicy damage while this infusion is active.","combatTips":["Fresh is the cleanest elemental answer if the creature lets you hold the tempo."]}],"listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_toe_biter_leviathan",
+  "speciesKey": "ogrr_toe_biter_leviathan",
+  "collectionGroup": "ogrr",
+  "game": "g2",
+  "danger": "extrema",
+  "order": 308,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_ogrr_toe_biter_leviathan.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Toenail",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Infused Ooze",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Claw",
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Shell",
+      "minCount": 3,
+      "maxCount": 10
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Venom",
+      "minCount": 1,
+      "maxCount": 4
+    }
+  ],
+  "abilities": [],
+  "behavior": "It remains in the final section of the Abyss, guarding an important area required for story progression. Once combat begins, it uses the normal Leviathan's moveset with combos, area attacks, gas, and unblockable attacks, while its elemental infusion adds additional effects to its hits. It can also summon nymphs during the fight.",
+  "interactionWithPlayer": "It effectively functions as a miniboss, and fighting it directly can turn into an extremely long encounter. Its enormous health pool, infusion side effects, and the nymphs it keeps summoning cause mistakes to accumulate quickly, making it easy to die after several minutes of combat.",
+  "interactionWithCreatures": "The encounter is mainly focused on the player and the Leviathan itself. During the fight it can rely on summoned nymphs, which progressively increase pressure and can limit your movement while you try to keep your attention on the O.G.R.R.",
+  "strategy": "One of the most effective ways to kill it is to prepare roughly 10 water bombs before the fight. Place them together near an edge without getting close enough to be detected, then lure the Leviathan into them and detonate the cluster to deal a huge amount of damage at once. If you prefer to fight it directly, prepare for a very long battle: bring plenty of healing, control the nymphs it summons, and avoid building up infusion effects. Always check the active element and use Fresh → Sour, Sour → Spicy, and Spicy → Fresh. Avoid Slashing weapons and take advantage of its rear weak point whenever you have a safe opening.",
+  "groupId": null,
+  "name": "O.G.R.R. Toe Biter Leviathan",
+  "tier": 4,
+  "cardTier": 4,
+  "technicalId": "ToeBiterLeviathanOGRE",
+  "bestiaryId": "ToeBiterLeviathanOGRE",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier4_ToeBiter_Leviathan_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier4_ToeBiter_Leviathan_OGRR_G.png",
+  "weaknesses": [],
+  "resistances": [
+    "water",
+    "venom",
+    "slashing"
+  ],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "water",
+      "bonusPct": 35
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "butt",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Area Attack",
+      "technicalId": "ToeBiterLeviathanAOE",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 140",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 140.0,
+      "cooldownSeconds": 12.0,
+      "range": 1200.0,
+      "stun": 20,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Toe Biter Leviathan Range",
+      "technicalId": "ToeBiterLeviathanRange",
+      "tags": [
+        "general",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Attack damage: 100",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 5.0,
+      "range": 200.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 5 A",
+      "technicalId": "ToeBiterLeviathanCombo5A",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Attack damage: 85",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 5.0,
+      "range": 650.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 5 B",
+      "technicalId": "ToeBiterLeviathanCombo5B",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Attack damage: 85",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 5.0,
+      "range": 650.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power Attack",
+      "technicalId": "ToeBiterLeviathanPowerAttack",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Attack damage: 150",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 150.0,
+      "cooldownSeconds": 8.0,
+      "range": 650.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Offensive",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Gas",
+      "technicalId": "ToeBiterLeviathanGas",
+      "tags": [
+        "gas",
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [
+        "gas"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 60.0,
+      "range": 1600.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 5,
+    "value": 3200
+  },
+  "combatStats": {
+    "health": 3200,
+    "stunThreshold": 120,
+    "stunCooldownSeconds": 60
+  },
+  "description": "An abominable toe biter leviathan even by toe biter standards. They are resistant to the flavor of their mutation. Drops toe biter venom on death.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresh",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Chill buildup."
+      ],
+      "recommendations": "Do not stay on fresh damage as your main answer.",
+      "combatTips": [
+        "Swap to spicy damage or a reliable physical weapon if your build depends on fresh."
+      ]
+    },
+    {
+      "id": "sour",
+      "name": "Sour",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Tang buildup."
+      ],
+      "recommendations": "Avoid staying on sour weapons as your main answer.",
+      "combatTips": [
+        "Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."
+      ]
+    },
+    {
+      "id": "spicy",
+      "name": "Spicy",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Sizzle buildup."
+      ],
+      "recommendations": "Do not depend on spicy damage while this infusion is active.",
+      "combatTips": [
+        "Fresh is the cleanest elemental answer if the creature lets you hold the tempo."
+      ]
+    }
+  ],
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_c2cc3b00d8cf0c74",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanOGRE",
+      "map": "abyss",
+      "world": {
+        "x": 221490.53,
+        "y": 236377.0,
+        "z": -16800.01
+      },
+      "u": 0.6858537925876461,
+      "v": 0.8102349509594883,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    }
+  ],
+  "environmentHazards": [
+    "required_equipment"
+  ],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "OGRR creatures can be released from the scarecrow laboratory. Afterwards they may appear in different areas, mainly at night.",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Toenail",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Infused Ooze",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Claw",
+      "countLabel": "1",
+      "chancePct": 20,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Claw",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Head",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "3",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "3",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Venom",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Venom",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Venom",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

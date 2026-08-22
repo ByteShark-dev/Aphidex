@@ -1,1 +1,1976 @@
-{"id":"g2_black_soldier_ant","speciesKey":"black_soldier_ant","collectionGroup":"angry","name":"Black Soldier Ant","game":"g2","tier":3,"danger":"alta","isBoss":false,"order":201,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_BlackAntSoldier.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_BlackAntSoldier_G.png","photo":"assets/g2/creatures/photos/Black_Soldier_Ant.webp","weaknesses":["stabbing","spicy","water"],"resistances":["slashing","sour"],"temperament":"aggressive","health":{"value":680,"rating":2},"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_arrows_only","susceptibleDamageTypes":["stabbingArrowsOnly"]},"description":"Guards areas with high human-made resources and their home, the black ant hill. Can drop black ant head, black ant mandibles, and black ant part on death.","behavior":"It patrols wide stretches of the Community Garden and often investigates nearby worker ant sounds and local fights. It shares much of the red soldier ant moveset, but adds a tang spit projectile that leaves lingering area denial.","interactionWithPlayer":"It is hostile toward the player and extremely durable. Its tang spit is the move that punishes you the hardest unless you dodge it or block it with a shield.","interactionWithCreatures":"It roams the Community Garden freely and gets into fights with several local creatures. It also reacts to the nearby activity of other black ants.","strategy":"The key is avoiding the corrosive spit. Its bites block much like a red soldier ant, but the projectile hits hard and leaves corrosion behind. Water damage is one of the best answers against this variant.","environments":["Greenhouse","Greenhouse Surroundings","Veggie Garden","Garden Caves"],"loot":[{"section":"loot","item":"Black Ant Head","minCount":0,"maxCount":1},{"section":"loot","item":"Black Ant Mandibles","minCount":1,"maxCount":2},{"section":"loot","item":"Black Ant Part","minCount":0,"maxCount":2},{"section":"rare","item":"Black Ant Head","minCount":0,"maxCount":1},{"section":"rare","item":"Black Ant Mandibles","minCount":0,"maxCount":1},{"section":"rare","item":"Black Ant Part","minCount":0,"maxCount":3}],"advancedLootTable":[{"item":"Black Ant Head","countLabel":"x1","chancePct":50},{"item":"Black Ant Head","countLabel":"x1","chancePct":1},{"item":"Black Ant Mandibles","countLabel":"x1","chancePct":100},{"item":"Black Ant Mandibles","countLabel":"x1","chancePct":50},{"item":"Black Ant Mandibles","countLabel":"x1","chancePct":1},{"item":"Black Ant Part","countLabel":"x4","chancePct":70}],"combatStats":{"health":680,"stunThreshold":50,"stunCooldownSeconds":5,"attackDamageSummary":"3-Bite Combo: 55. Charged Bite: 85. Stunning Bite: 60. Corrosive Spit: 80."},"inflictsEffects":["chopping","sour","tang_buildup"],"inflicts":["Its bites deal chopping damage. The spit deals sour damage and adds corrosion with a lingering hazard zone."],"abilities":[{"name":"3-Combo Bite","description":"Three quick blockable bites.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Charged Bite","description":"A slower but much stronger bite.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Stunning Bite","description":"It breaks guard unless you perfect block it.","blockable":true,"breaksGuard":true,"staggers":false},{"name":"Corrosive Spit","description":"It fires a corrosive projectile that applies buildup and leaves behind an area that continues to increase corrosion.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Blocking Stance","description":"It guards the front of its body against light attacks until a charged hit breaks the stance."}],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"damageWeaknesses":[{"type":"stabbing","bonusPct":15},{"type":"water","bonusPct":100}],"resistancesV2":[{"type":"slashing","bonusPct":25},{"type":"sour","bonusPct":75}],"groupId":null,"cardTier":3,"technicalId":"AntBlackSoldier","bestiaryId":"AntBlackSoldier","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Bite Left","technicalId":"AntBlackSoldierAugustaBiteLeft","tags":["chopping"],"notes":"Attack damage: 55"},{"name":"Bite Right","technicalId":"AntBlackSoldierAugustaBiteRight","tags":["chopping"],"notes":"Attack damage: 55"},{"name":"Multistrike","technicalId":"AntBlackSoldierAugustaMultistrike","tags":["chopping"],"notes":"Attack damage: 55"},{"name":"Power Attack","technicalId":"AntBlackSoldierAugustaPowerAttack","tags":["chopping"],"notes":"Attack damage: 85"},{"name":"Smash","technicalId":"AntBlackSoldierAugustaSmash","tags":["chopping"],"notes":"Attack damage: 60"},{"name":"Spray","technicalId":"AntBlackSoldierAugustaSourSpray","tags":["sour","ranged"],"notes":"Attack damage: 80"},{"name":"Block Offensive","technicalId":"BlockOffensive","tags":["maine"],"notes":"Attack damage: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_black_soldier_ant",
+  "speciesKey": "black_soldier_ant",
+  "collectionGroup": "angry",
+  "name": "Black Soldier Ant",
+  "game": "g2",
+  "tier": 3,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 201,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_BlackAntSoldier.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_BlackAntSoldier_G.png",
+  "photo": "assets/g2/creatures/photos/Black_Soldier_Ant.webp",
+  "weaknesses": [
+    "stabbing",
+    "spicy",
+    "water"
+  ],
+  "resistances": [
+    "slashing",
+    "sour"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 2,
+    "value": 680
+  },
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_arrows_only",
+    "susceptibleDamageTypes": [
+      "stabbingArrowsOnly"
+    ]
+  },
+  "description": "Guards areas with high human-made resources and their home, the black ant hill. Can drop black ant head, black ant mandibles, and black ant part on death.",
+  "behavior": "It patrols wide stretches of the Community Garden and often investigates nearby worker ant sounds and local fights. It shares much of the red soldier ant moveset, but adds a tang spit projectile that leaves lingering area denial.",
+  "interactionWithPlayer": "It is hostile toward the player and extremely durable. Its tang spit is the move that punishes you the hardest unless you dodge it or block it with a shield.",
+  "interactionWithCreatures": "It roams the Community Garden freely and gets into fights with several local creatures. It also reacts to the nearby activity of other black ants.",
+  "strategy": "The key is avoiding the corrosive spit. Its bites block much like a red soldier ant, but the projectile hits hard and leaves corrosion behind. Water damage is one of the best answers against this variant.",
+  "environments": [
+    "Greenhouse",
+    "Greenhouse Surroundings",
+    "Veggie Garden",
+    "Garden Caves"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Ant Head Black",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Ant Mandibles Black",
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Ant Part Black",
+      "minCount": 0,
+      "maxCount": 5
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Ant Head Black",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Head Black",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Mandibles Black",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Mandibles Black",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Mandibles Black",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Part Black",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Ant Part Black",
+      "countLabel": "2",
+      "chancePct": 70,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 680,
+    "stunThreshold": 60,
+    "stunCooldownSeconds": 5
+  },
+  "inflictsEffects": [
+    "chopping",
+    "sour",
+    "tang_buildup"
+  ],
+  "inflicts": [
+    "Its bites deal chopping damage. The spit deals sour damage and adds corrosion with a lingering hazard zone."
+  ],
+  "abilities": [
+    {
+      "name": "3-Combo Bite",
+      "description": "Three quick blockable bites.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Charged Bite",
+      "description": "A slower but much stronger bite.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Stunning Bite",
+      "description": "It breaks guard unless you perfect block it.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": false
+    },
+    {
+      "name": "Corrosive Spit",
+      "description": "It fires a corrosive projectile that applies buildup and leaves behind an area that continues to increase corrosion.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Blocking Stance",
+      "description": "It guards the front of its body against light attacks until a charged hit breaks the stance."
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 15
+    },
+    {
+      "type": "water",
+      "bonusPct": 100
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "sour",
+      "bonusPct": 75
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "AntBlackSoldier",
+  "bestiaryId": "AntBlackSoldier",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only",
+      "susceptibleDamageTypes": [
+        "stabbingArrowsOnly"
+      ],
+      "weaponFamilies": [
+        "bow",
+        "crossbow"
+      ],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Bite Left",
+      "technicalId": "AntBlackSoldierAugustaBiteLeft",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 55",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Right",
+      "technicalId": "AntBlackSoldierAugustaBiteRight",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 55",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Multistrike",
+      "technicalId": "AntBlackSoldierAugustaMultistrike",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 55",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power Attack",
+      "technicalId": "AntBlackSoldierAugustaPowerAttack",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 85",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 20.0,
+      "range": 175.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Smash",
+      "technicalId": "AntBlackSoldierAugustaSmash",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 60",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 60.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spray",
+      "technicalId": "AntBlackSoldierAugustaSourSpray",
+      "tags": [
+        "projectile",
+        "ranged",
+        "sour"
+      ],
+      "notes": "Attack damage: 80",
+      "damageTypes": [
+        "sour"
+      ],
+      "damage": 80.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Corrosion Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Corrosion Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Offensive",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_9b89641e6d34886f",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -131527.4,
+        "y": -27812.05,
+        "z": 3005.8152
+      },
+      "u": 0.48687424056189643,
+      "v": 0.16565671979087612,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c3b4d24e6db04863",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -150308.4,
+        "y": -22984.664,
+        "z": 394.5868
+      },
+      "u": 0.41652106526192567,
+      "v": 0.1864984571380386,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_284de05c39b701f3",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -130218.34,
+        "y": -22727.092,
+        "z": 3028.348
+      },
+      "u": 0.4917779479075213,
+      "v": 0.18761049747870817,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_34005cd04b6dba06",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -137733.61,
+        "y": -25533.646,
+        "z": 3049.9734
+      },
+      "u": 0.46362592683640624,
+      "v": 0.1754934922674761,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2520338ce097858d",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -221850.77,
+        "y": -4657.1646,
+        "z": -1982.0505
+      },
+      "u": 0.1485250640913082,
+      "v": 0.26562553102959785,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c590914416923579",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -219989.89,
+        "y": -6880.4653,
+        "z": -2014.433
+      },
+      "u": 0.15549587591454486,
+      "v": 0.256026661323889,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b46dad3bc1b66774",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -221100.17,
+        "y": -14607.999,
+        "z": -269.4234
+      },
+      "u": 0.15133679367866545,
+      "v": 0.22266383769289144,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5abff0f17285c3d2",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -225662.89,
+        "y": -9018.909,
+        "z": -519.4234
+      },
+      "u": 0.13424495405326303,
+      "v": 0.24679415289653425,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_097371cbe4bfb4af",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -225822.98,
+        "y": -14100.361,
+        "z": -982.1888
+      },
+      "u": 0.13364526075504826,
+      "v": 0.22485551199932538,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b5e3cde31a54df9d",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -225644.72,
+        "y": -15475.607,
+        "z": -982.1888
+      },
+      "u": 0.13431301843722562,
+      "v": 0.21891803032296145,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2e197349a4788a25",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -221391.4,
+        "y": -1578.236,
+        "z": -1510.6482
+      },
+      "u": 0.15024585308750368,
+      "v": 0.2789184852685723,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c40588597f43bd44",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -222492.62,
+        "y": -5889.456,
+        "z": -1945.8204
+      },
+      "u": 0.14612070939420546,
+      "v": 0.26030524098153296,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_128f3ef39820d83a",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -222188.72,
+        "y": -6269.378,
+        "z": -2014.433
+      },
+      "u": 0.14725911150131696,
+      "v": 0.2586649672316384,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e6a4709b32c6cc56",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -220723.95,
+        "y": -6916.576,
+        "z": -2014.433
+      },
+      "u": 0.1527461047702663,
+      "v": 0.2558707571296062,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9c357db96997bd39",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -222332.62,
+        "y": -12249.948,
+        "z": -489.81082
+      },
+      "u": 0.14672006555458006,
+      "v": 0.23284447781431822,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2712be27bc7ed1e5",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -226379.55,
+        "y": -9789.44,
+        "z": -519.4234
+      },
+      "u": 0.13156036289142525,
+      "v": 0.24346746538493966,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_12e63d51173f44bd",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -117376.22,
+        "y": -6028.6177,
+        "z": -62.262905
+      },
+      "u": 0.5398842212467077,
+      "v": 0.2597044248047896,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f1399ad5ea83dd68",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -179496.75,
+        "y": -40747.227,
+        "z": 696.95575
+      },
+      "u": 0.3071822066139889,
+      "v": 0.10981043743991903,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8c80dd1de928d075",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -111855.64,
+        "y": -6972.963,
+        "z": -197.1625
+      },
+      "u": 0.5605641814457125,
+      "v": 0.25562731211737916,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_46dfcab9dccb3900",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -129577.414,
+        "y": -33812.05,
+        "z": -421.83426
+      },
+      "u": 0.4941788413227978,
+      "v": 0.13975234336790618,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7a0bd83abc6fc375",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -131227.4,
+        "y": -32062.05,
+        "z": -1148.8065
+      },
+      "u": 0.48799803336259884,
+      "v": 0.14730778649127244,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f223f8cdc4d8cc2a",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -125477.414,
+        "y": -24712.05,
+        "z": -3439.237
+      },
+      "u": 0.5095373429323968,
+      "v": 0.1790406476094106,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_19b6883dc45a1301",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -114601.69,
+        "y": 27998.168,
+        "z": -103.93334
+      },
+      "u": 0.5502775440444835,
+      "v": 0.4066115356775445,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_36e00f6ab4ec3766",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -114963.45,
+        "y": 31450.479,
+        "z": -579.4205
+      },
+      "u": 0.5489223997658764,
+      "v": 0.4215165296230711,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3011718328fa2b7a",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -111964.99,
+        "y": 2887.0046,
+        "z": 1563.0735
+      },
+      "u": 0.5601545589698567,
+      "v": 0.298196697488827,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_43c0657337d70906",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -115657.14,
+        "y": -8532.421,
+        "z": 165.11472
+      },
+      "u": 0.5463238536728123,
+      "v": 0.24889451427607726,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b5699811be46dbe6",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -107805.22,
+        "y": -3566.7268,
+        "z": 914.2665
+      },
+      "u": 0.5757369575651157,
+      "v": 0.27033338290243697,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e86d64c525389ece",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -114741.27,
+        "y": 24294.625,
+        "z": 613.21155
+      },
+      "u": 0.5497546807140766,
+      "v": 0.39062187368243523,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e6b5b450223c46c7",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -111801.23,
+        "y": 21001.377,
+        "z": 1098.6027
+      },
+      "u": 0.560768,
+      "v": 0.37640361770806985,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c5d94c1c7b73d39",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -107765.13,
+        "y": 25151.51,
+        "z": 1315.6726
+      },
+      "u": 0.5758871337430495,
+      "v": 0.3943213856143014,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_16468dcd9314e348",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -125273.6,
+        "y": -14126.531,
+        "z": -7148.7993
+      },
+      "u": 0.5103008252853379,
+      "v": 0.22474252574416054,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_88f21184717162a6",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -104174.97,
+        "y": -6810.599,
+        "z": 388.51013
+      },
+      "u": 0.5893357869476149,
+      "v": 0.256328301812969,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_09fe921549abf417",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -102677.79,
+        "y": -8735.424,
+        "z": 588.5269
+      },
+      "u": 0.5949441872988002,
+      "v": 0.24801806992157854,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f4048bb5d8cb8cc6",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -116662.26,
+        "y": -10200.611,
+        "z": 819.815
+      },
+      "u": 0.5425586982733391,
+      "v": 0.24169227732523818,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4d688f67437ff945",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -101521.875,
+        "y": -4218.43,
+        "z": 634.2878
+      },
+      "u": 0.5992742171495464,
+      "v": 0.267519722067628,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7c08872bb3c78d89",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -121972.06,
+        "y": -10110.85,
+        "z": -2590.4062
+      },
+      "u": 0.5226683148961077,
+      "v": 0.24207981111392188,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fc99263771a4d170",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -110914.27,
+        "y": -10167.124,
+        "z": 838.61304
+      },
+      "u": 0.5640905308750366,
+      "v": 0.2418368539674509,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d5767f6261be15a1",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -113818.37,
+        "y": -3767.1238,
+        "z": 404.67908
+      },
+      "u": 0.5532118419666374,
+      "v": 0.26946818968209796,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b17d7c8823a41645",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -124375.43,
+        "y": -16364.938,
+        "z": -5272.4946
+      },
+      "u": 0.5136653485513608,
+      "v": 0.2150784361581921,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b81d19027d5d9084",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -188201.73,
+        "y": -25391.885,
+        "z": 6916.447
+      },
+      "u": 0.2745735604331284,
+      "v": 0.17610553065182563,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e514530d93b7aded",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -109856.625,
+        "y": -1870.9918,
+        "z": 523.7071
+      },
+      "u": 0.5680524436640328,
+      "v": 0.27765454252803784,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ed1bb0a7b4465da6",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -132377.4,
+        "y": -30562.05,
+        "z": -1148.8932
+      },
+      "u": 0.48369016095990636,
+      "v": 0.1537838805970149,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca263f3585573f6d",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -131027.414,
+        "y": -29012.05,
+        "z": -2138.6667
+      },
+      "u": 0.488747176119403,
+      "v": 0.1604758445062821,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_225e9b5ea3054742",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -127262.625,
+        "y": -23554.035,
+        "z": -5847.3276
+      },
+      "u": 0.5028499853672812,
+      "v": 0.1840402570199848,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f6b20a4c68d343ad",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -123528.11,
+        "y": -24575.344,
+        "z": -7398.3604
+      },
+      "u": 0.5168393889376647,
+      "v": 0.17963086155662367,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6d7fea972ba12028",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -123937.92,
+        "y": -14389.748,
+        "z": -7148.2437
+      },
+      "u": 0.5153042505121452,
+      "v": 0.22360611370267308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_51f1758502fe9106",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -163375.98,
+        "y": -24667.436,
+        "z": 2971.1692
+      },
+      "u": 0.36757022417325136,
+      "v": 0.17923326391769961,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0cab6432f0efd339",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -124323.27,
+        "y": -11743.4,
+        "z": -3554.5247
+      },
+      "u": 0.5138607386596429,
+      "v": 0.23503144615903537,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0ec2b042815c5b99",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -123427.414,
+        "y": -16262.051,
+        "z": -4052.8225
+      },
+      "u": 0.5172165937371964,
+      "v": 0.21552264008769711,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f45b696714ba2123",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -124454.72,
+        "y": -10110.85,
+        "z": -3554.5247
+      },
+      "u": 0.5133683301141352,
+      "v": 0.24207981111392188,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1c0065e264ecb15a",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -123627.414,
+        "y": -16012.051,
+        "z": -5066.4053
+      },
+      "u": 0.5164673985367282,
+      "v": 0.21660198910532083,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d1e33baa4c88ad4f",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -130773.96,
+        "y": -27396.021,
+        "z": 1002.20026
+      },
+      "u": 0.4896966087211003,
+      "v": 0.16745288176068804,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_25c7a122053bf98f",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -177506.58,
+        "y": -48963.64,
+        "z": -877.2898
+      },
+      "u": 0.31463733567456836,
+      "v": 0.0743369282401552,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_169ecc918b4b604a",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -176275.39,
+        "y": -47167.46,
+        "z": -728.3471
+      },
+      "u": 0.31924934386889076,
+      "v": 0.0820917487140569,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_54b12c929d1b2b62",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -168221.03,
+        "y": -40781.305,
+        "z": -372.38785
+      },
+      "u": 0.34942078314310804,
+      "v": 0.10966330921662876,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1636776a74d0d28d",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -162241.8,
+        "y": -24035.652,
+        "z": 2971.1692
+      },
+      "u": 0.37181883523558684,
+      "v": 0.18196092567670125,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_df908a23d399e538",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -125350.336,
+        "y": -14765.875,
+        "z": -7148.7993
+      },
+      "u": 0.5100133740708224,
+      "v": 0.22198222447086605,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ceeca99eb47328bf",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -227238.28,
+        "y": -21844.367,
+        "z": 2996.2776
+      },
+      "u": 0.12834358091893475,
+      "v": 0.19142157092503584,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95c153658f473fe4",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -32906.047,
+        "y": 45399.094,
+        "z": 24075.621
+      },
+      "u": 0.8563074622183202,
+      "v": 0.48173822521291837,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60c59c0831a0faef",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -34371.824,
+        "y": 44673.316,
+        "z": 25035.455
+      },
+      "u": 0.8508166967515365,
+      "v": 0.47860475412766673,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_af1bd03fb809e9d8",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -34256.42,
+        "y": 43849.543,
+        "z": 22148.504
+      },
+      "u": 0.8512489973661107,
+      "v": 0.4750481998144868,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f28eb3b5b377c42d",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -26818.38,
+        "y": 46615.96,
+        "z": 5271.0894
+      },
+      "u": 0.8791117167105649,
+      "v": 0.4869919176996374,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bde2d6822636a3fa",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -25836.26,
+        "y": 46508.47,
+        "z": 5259.425
+      },
+      "u": 0.8827907146619842,
+      "v": 0.4865278407960199,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e5ea3917d7aedd47",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -24646.424,
+        "y": 44625.188,
+        "z": 6432.0186
+      },
+      "u": 0.8872478117647059,
+      "v": 0.4783969664895859,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_884314e33b76e246",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -23841.922,
+        "y": 53660.195,
+        "z": 4384.723
+      },
+      "u": 0.8902614569505414,
+      "v": 0.5174046702082806,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f7a9236b3184d262",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -4766.939,
+        "y": 57615.027,
+        "z": -883.6012
+      },
+      "u": 0.9617158855136083,
+      "v": 0.5344792463445486,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3b6e6d5e6e728285",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -5179.3345,
+        "y": 55456.543,
+        "z": -1029.2087
+      },
+      "u": 0.960171061867135,
+      "v": 0.5251602160047222,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_575bc66deb0b2e8a",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -212274.23,
+        "y": -48778.984,
+        "z": 1619.2207
+      },
+      "u": 0.18439855311676906,
+      "v": 0.07513416132894851,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_539a04e86bd952e1",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -216530.0,
+        "y": -13145.0,
+        "z": -2141.4365
+      },
+      "u": 0.16845654082528533,
+      "v": 0.22898018382662955,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_658d779622689439",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -46278.645,
+        "y": 68950.4,
+        "z": 3911.306
+      },
+      "u": 0.8062140310213638,
+      "v": 0.5834185411923433,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dc00e469dfe0741b",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -33953.6,
+        "y": 50949.125,
+        "z": 4442.412
+      },
+      "u": 0.8523833538191397,
+      "v": 0.5056999072434437,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_af08af15e8bcfcc7",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -34036.258,
+        "y": 50134.9,
+        "z": 4407.94
+      },
+      "u": 0.852073718934738,
+      "v": 0.502184575427945,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_94504da8f1be3917",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -25138.592,
+        "y": 44445.09,
+        "z": 5135.7603
+      },
+      "u": 0.8854041622475856,
+      "v": 0.47761941209208186,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d3a51619b03f95b4",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -226518.86,
+        "y": -26974.697,
+        "z": 2671.5107
+      },
+      "u": 0.1310385109745391,
+      "v": 0.16927190434269335,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e573e6801c4c874",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -227096.16,
+        "y": -23992.06,
+        "z": 2912.2417
+      },
+      "u": 0.12887595902838747,
+      "v": 0.18214912960620627,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_151bc3e4ecc89828",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -222084.7,
+        "y": -25627.055,
+        "z": 2426.3801
+      },
+      "u": 0.14764876792508044,
+      "v": 0.17509020861792737,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d7bb941e515746a9",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -214730.0,
+        "y": -13245.0,
+        "z": -2148.296
+      },
+      "u": 0.17519929762949957,
+      "v": 0.22854844421958007,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c0cf7e983d03657f",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -29113.576,
+        "y": 52916.86,
+        "z": 4415.2446
+      },
+      "u": 0.8705139675738952,
+      "v": 0.5141953986002191,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bd30846e3b0fd66a",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -29378.61,
+        "y": 53333.805,
+        "z": 4415.2446
+      },
+      "u": 0.8695211565700908,
+      "v": 0.5159955153048318,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_96f8270eb0d7400b",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -210939.27,
+        "y": -50211.05,
+        "z": 1164.9897
+      },
+      "u": 0.1893992812408546,
+      "v": 0.06895136520785902,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_989407df6747b829",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -43929.81,
+        "y": 51849.688,
+        "z": 3542.8875
+      },
+      "u": 0.8150127105648229,
+      "v": 0.5095879944008769,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f5aa559cbd090968",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -44391.81,
+        "y": 47734.59,
+        "z": 3452.3118
+      },
+      "u": 0.8132820696517413,
+      "v": 0.4918214864659752,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b3f571929cc3291a",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -52339.418,
+        "y": 50003.457,
+        "z": 2183.9387
+      },
+      "u": 0.783510520807726,
+      "v": 0.5016170839362509,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_905b0c56ef9f7d0e",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -45537.305,
+        "y": 56901.5,
+        "z": 3956.1033
+      },
+      "u": 0.8089910728709394,
+      "v": 0.5313986676785564,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_25687ce1582abf17",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -46065.91,
+        "y": 57837.582,
+        "z": 3956.1033
+      },
+      "u": 0.8070109312262218,
+      "v": 0.5354401044270174,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bc3be1bf0681b1f4",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -47294.4,
+        "y": 68085.87,
+        "z": 3695.006
+      },
+      "u": 0.8024090371671057,
+      "v": 0.5796860227675183,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0034c17abb79323a",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -25685.863,
+        "y": 44696.812,
+        "z": 5358.9795
+      },
+      "u": 0.8833540982148083,
+      "v": 0.47870619566573913,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd09b5c20828ff57",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -221107.7,
+        "y": -12922.804,
+        "z": 2071.5786
+      },
+      "u": 0.15130858647936782,
+      "v": 0.22993949196390923,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c73b841d98ffa6f4",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -226900.0,
+        "y": -30300.0,
+        "z": 2871.869
+      },
+      "u": 0.12961076968100674,
+      "v": 0.15491525423728814,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_11d74b790df067e4",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -225506.06,
+        "y": -32140.094,
+        "z": 2650.826
+      },
+      "u": 0.13483243546971027,
+      "v": 0.14697083963234675,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c272aa7984e6e36c",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -224413.28,
+        "y": -38898.69,
+        "z": 2556.0618
+      },
+      "u": 0.13892596312554872,
+      "v": 0.11779130381988362,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ad6cc743cde11642",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -211350.0,
+        "y": -6785.0,
+        "z": 8022.3735
+      },
+      "u": 0.18786069651741294,
+      "v": 0.25643882283497765,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9b2ac76d7b5ee660",
+      "targetType": "creature",
+      "targetId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "map": "surface",
+      "world": {
+        "x": -210915.0,
+        "y": -7640.0,
+        "z": 7924.0557
+      },
+      "u": 0.18949019607843137,
+      "v": 0.2527474491947045,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Black_Soldier_Ant.webp",
+  "immunities": [
+    "acid"
+  ]
+}

@@ -1,1 +1,87 @@
-{"id":"g2_ice_sickles_event","speciesKey":"g2_ice_sickles_event","collectionGroup":"other","name":"Ice Sickles Defense","game":"g2","tier":3,"danger":"imposible_superior","isBoss":false,"order":289,"defaultGold":false,"cardNormal":"","cardGold":"","photo":"assets/g2/creatures/photos/Ice_Sickles_Defense.webp","weaknesses":[],"resistances":[],"temperament":"other","description":"Reference entry for the Ice Sickles defense inside the Ice Cream Cart. It works as a special weapon-defense event: you protect the frozen sickles until the event finishes and earn both the weapon and the recipe.","behavior":"The event revolves around frozen-biome scorpions: Northern Scorplings first, Northern Scorpion Jrs after that, and full Northern Scorpions in the hardest stretch. Every wave wants to break the sickles, not give you a fair duel.","interactionWithPlayer":"It begins when you interact with the frozen sickles. If you leave the area for too long or let them take too much damage, the event fails and you have to set it up again.","interactionWithCreatures":"The waves pressure through numbers and escalation. Scorplings try to slip through, the juniors punish loose play, and the adult scorpions turn the final stretch into a real elite defense.","strategy":"It feels like the Spicy Coaltana defense, but in the cold and with scorpions. Staying close to the objective, cutting down the small enemies before they touch the sickles, and saving resources for the adult closing waves usually decides the run.","environments":["Fallen Ice Cream Truck"],"loot":[{"section":"passive","item":"Awards the Ice Sickles and their recipe","minCount":0,"maxCount":0},{"section":"passive","item":"Can contribute to unlocking or upgrading Guard Dog","minCount":0,"maxCount":0}],"combatStats":{"attackDamageSummary":"The real pressure comes from scorpion waves and from not letting the sickles take too much damage."},"abilities":[{"name":"Weapon Defense","description":"You are not defending a MIX.R machine, but the weapon itself. If the sickles fall, the attempt ends.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Scorpion Waves","description":"The waves ramp from scorplings into adult northern scorpions, so the event genuinely gets harder as it approaches the end.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Recipe and Free Weapon","description":"Unlike the G1 Spicy Coaltana event, success here awards both the recipe and the sickles themselves.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Guard Dog Progress","description":"Winning this defense also contributes toward unlocking or advancing the Guard Dog mutation.","blockable":false,"breaksGuard":false,"staggers":false}],"specialTraits":["It is the clearest G2 equivalent to a special weapon-defense event.","This is not a single creature: it summarizes the event required to earn the Ice Sickles.","Aphidex also treats it as a useful entry for tracking Guard Dog progress."],"listIconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","hasCreatureCard":false,"hasGoldCreatureCard":false,"hasSelectableCardVariants":false,"defaultCardVariant":null}
+{
+  "id": "g2_ice_sickles_event",
+  "speciesKey": "g2_ice_sickles_event",
+  "collectionGroup": "other",
+  "name": "Ice Sickles Defense",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible_superior",
+  "isBoss": false,
+  "order": 289,
+  "defaultGold": false,
+  "cardNormal": "",
+  "cardGold": "",
+  "photo": "assets/g2/creatures/photos/Ice_Sickles_Defense.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "other",
+  "description": "Reference entry for the Ice Sickles defense inside the Ice Cream Cart. It works as a special weapon-defense event: you protect the frozen sickles until the event finishes and earn both the weapon and the recipe.",
+  "behavior": "The event revolves around frozen-biome scorpions: Northern Scorplings first, Northern Scorpion Jrs after that, and full Northern Scorpions in the hardest stretch. Every wave wants to break the sickles, not give you a fair duel.",
+  "interactionWithPlayer": "It begins when you interact with the frozen sickles. If you leave the area for too long or let them take too much damage, the event fails and you have to set it up again.",
+  "interactionWithCreatures": "The waves pressure through numbers and escalation. Scorplings try to slip through, the juniors punish loose play, and the adult scorpions turn the final stretch into a real elite defense.",
+  "strategy": "It feels like the Spicy Coaltana defense, but in the cold and with scorpions. Staying close to the objective, cutting down the small enemies before they touch the sickles, and saving resources for the adult closing waves usually decides the run.",
+  "environments": [
+    "Fallen Ice Cream Truck"
+  ],
+  "loot": [
+    {
+      "section": "passive",
+      "item": "Awards the Ice Sickles and their recipe",
+      "minCount": 0,
+      "maxCount": 0
+    },
+    {
+      "section": "passive",
+      "item": "Can contribute to unlocking or upgrading Guard Dog",
+      "minCount": 0,
+      "maxCount": 0
+    }
+  ],
+  "combatStats": {
+    "attackDamageSummary": "The real pressure comes from scorpion waves and from not letting the sickles take too much damage."
+  },
+  "abilities": [
+    {
+      "name": "Weapon Defense",
+      "description": "You are not defending a MIX.R machine, but the weapon itself. If the sickles fall, the attempt ends.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Scorpion Waves",
+      "description": "The waves ramp from scorplings into adult northern scorpions, so the event genuinely gets harder as it approaches the end.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Recipe and Free Weapon",
+      "description": "Unlike the G1 Spicy Coaltana event, success here awards both the recipe and the sickles themselves.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Guard Dog Progress",
+      "description": "Winning this defense also contributes toward unlocking or advancing the Guard Dog mutation.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "specialTraits": [
+    "It is the clearest G2 equivalent to a special weapon-defense event.",
+    "This is not a single creature: it summarizes the event required to earn the Ice Sickles.",
+    "Aphidex also treats it as a useful entry for tracking Guard Dog progress."
+  ],
+  "listIconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+  "hasCreatureCard": false,
+  "hasGoldCreatureCard": false,
+  "hasSelectableCardVariants": false,
+  "defaultCardVariant": null,
+  "appearanceType": "no_natural_spawn",
+  "entityType": "defense",
+  "customAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+  "presentationOverrideProvenance": "historical_custom_entry"
+}

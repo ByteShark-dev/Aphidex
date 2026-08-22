@@ -1,1 +1,327 @@
-{"id":"g2_sauc_r","speciesKey":"sauc_r","collectionGroup":"angry","game":"g2","danger":"unknown","order":278,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_sauc_r.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"SALS.R","tier":2,"cardTier":2,"technicalId":"SphereBotSaucR","bestiaryId":"SphereBotSaucR","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Arcr.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Arcr_G.png","weaknesses":["salty","sour"],"resistances":["stabbing","slashing"],"elementalWeaknesses":[{"type":"salty","bonusPct":15},{"type":"sour","bonusPct":30}],"damageWeaknesses":[],"resistancesV2":[{"type":"stabbing","bonusPct":50},{"type":"slashing","bonusPct":25}],"weakPoints":[],"attacks":[{"name":"A distancia","technicalId":"ArcR_Ranged_Augusta","tags":["sizzle","ranged"],"notes":"Daño del ataque: 60"},{"name":"Tayz T Pincher","technicalId":"TayzT_Pincher_Augusta","tags":["mining"],"notes":"Daño del ataque: 40"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":700,"rating":3},"combatStats":{"health":700},"description":"Esta versión mejorada de TAYZ.T, cargada con explosiones de energía, patrulla el laboratorio del estanque y acata órdenes en el hormiguero negro. Suelta ciencia bruta después de una derrota.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_sauc_r",
+  "speciesKey": "sauc_r",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "alta",
+  "order": 278,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_sauc_r.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Food Candy Spicy",
+      "minCount": 0,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "Sphere Bot Diode",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Sphere Bot Parts",
+      "minCount": 1,
+      "maxCount": 6
+    }
+  ],
+  "abilities": [],
+  "behavior": "Patrulla principalmente zonas relacionadas con los laboratorios y puede atacar tanto a corta como a larga distancia. Cuando tiene espacio, utiliza descargas de energía para presionar al objetivo sin necesidad de acercarse.",
+  "interactionWithPlayer": "Puede resultar más molesto que otros robots similares debido a sus ataques a distancia. Incluso mientras el jugador está ocupado con enemigos cuerpo a cuerpo, el SALS.R puede continuar atacando desde una posición más segura.",
+  "interactionWithCreatures": "Puede aparecer en zonas donde también se encuentran otros robots hostiles, complementando bien a los enemigos cuerpo a cuerpo al mantener presión desde la distancia mientras estos se acercan al objetivo.",
+  "strategy": "Utiliza preferentemente daño Ácido, seguido del Salado, y evita armas Perforantes o Cortantes. Si aparece junto a otros robots, puede valer la pena priorizar al SALS.R para eliminar primero la presión a distancia y después ocuparte de los enemigos cuerpo a cuerpo. Mantente en movimiento para evitar sus descargas mientras acortas la distancia.",
+  "groupId": null,
+  "name": "SALS.R",
+  "tier": 2,
+  "cardTier": 2,
+  "technicalId": "SphereBotSaucR",
+  "bestiaryId": "SphereBotSaucR",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Arcr.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Arcr_G.png",
+  "weaknesses": [
+    "salty",
+    "sour"
+  ],
+  "resistances": [
+    "stabbing",
+    "slashing"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "salty",
+      "bonusPct": 15
+    },
+    {
+      "type": "sour",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "A distancia",
+      "technicalId": "ArcR_Ranged_Augusta",
+      "tags": [
+        "projectile",
+        "ranged",
+        "sizzle"
+      ],
+      "notes": "Daño del ataque: 60",
+      "damageTypes": [
+        "sizzle"
+      ],
+      "damage": 60.0,
+      "cooldownSeconds": 0.0,
+      "range": 200.0,
+      "stun": 5,
+      "statusEffects": [
+        "Sizzle Large Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Large Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "projectile",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Tayz T Pincher",
+      "technicalId": "TayzT_Pincher_Augusta",
+      "tags": [
+        "smashing"
+      ],
+      "notes": "Daño del ataque: 40",
+      "damageTypes": [
+        "smashing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 0.0,
+      "range": 200.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 3,
+    "value": 700
+  },
+  "combatStats": {
+    "health": 700,
+    "stunThreshold": 60,
+    "stunCooldownSeconds": 2
+  },
+  "description": "Esta versión mejorada de TAYZ.T, cargada con explosiones de energía, patrulla el laboratorio del estanque y acata órdenes en el hormiguero negro. Suelta ciencia bruta después de una derrota.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_a638a31b520eedba",
+      "targetType": "creature",
+      "targetId": "g2_sauc_r",
+      "technicalId": "SphereBotSaucR",
+      "map": "abyss",
+      "world": {
+        "x": 221450.0,
+        "y": 233300.0,
+        "z": -13700.0
+      },
+      "u": 0.6852994991652754,
+      "v": 0.7833620469083156,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_a81fac259cd67725",
+      "targetType": "creature",
+      "targetId": "g2_sauc_r",
+      "technicalId": "SphereBotSaucR",
+      "map": "abyss",
+      "world": {
+        "x": 221757.17,
+        "y": 229718.86,
+        "z": -13700.0
+      },
+      "u": 0.689500395058431,
+      "v": 0.7520862485287845,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_44400f58bbe8a18c",
+      "targetType": "creature",
+      "targetId": "g2_sauc_r",
+      "technicalId": "SphereBotSaucR",
+      "map": "abyss",
+      "world": {
+        "x": 221237.17,
+        "y": 229718.86,
+        "z": -13700.0
+      },
+      "u": 0.6823888090818032,
+      "v": 0.7520862485287845,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_7065fd62e3a77b12",
+      "targetType": "creature",
+      "targetId": "g2_sauc_r",
+      "technicalId": "SphereBotSaucR",
+      "map": "abyss",
+      "world": {
+        "x": 221498.69,
+        "y": 230557.42,
+        "z": -12071.0
+      },
+      "u": 0.6859653897829716,
+      "v": 0.759409791727079,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_925e6e5d29b8a401",
+      "targetType": "creature",
+      "targetId": "g2_sauc_r",
+      "technicalId": "SphereBotSaucR",
+      "map": "abyss",
+      "world": {
+        "x": 221134.0,
+        "y": 225243.45,
+        "z": -13700.0
+      },
+      "u": 0.6809778430717863,
+      "v": 0.713000365031983,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    }
+  ],
+  "environmentHazards": [
+    "required_equipment"
+  ],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Bloqueado por progreso de historia",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Food Candy Spicy",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Food Candy Spicy",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Sphere Bot Diode",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Sphere Bot Diode",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Sphere Bot Parts",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Sphere Bot Parts",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Sphere Bot Parts",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

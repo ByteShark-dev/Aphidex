@@ -1,1 +1,966 @@
-{"id":"g2_tiger_mosquito","speciesKey":"g1_tiger_mosquito","collectionGroup":"angry","game":"g2","danger":"unknown","order":256,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_tiger_mosquito.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"We're preparing this information for you.","interactionWithPlayer":"We're preparing this information for you.","interactionWithCreatures":"We're preparing this information for you.","strategy":"We're preparing this information for you.","groupId":null,"name":"Tiger Mosquito","tier":3,"cardTier":3,"technicalId":"MosquitoTiger","bestiaryId":"MosquitoTiger","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_MosquitoTiger.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_MosquitoTigerG.png","weaknesses":["slashing","fresh"],"resistances":["generic"],"elementalWeaknesses":[{"type":"fresh","bonusPct":15}],"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25}],"weakPoints":[],"attacks":[{"name":"Bite","technicalId":"MosquitoTigerBite_Augusta","tags":["stabbing"],"notes":"Attack damage: 75"},{"name":"Combo Stab","technicalId":"MosquitoTigerComboStab_Augusta","tags":["stabbing"],"notes":"Attack damage: 75"},{"name":"Dive Bomb","technicalId":"MosquitoTigerDiveBomb_Augusta","tags":["stabbing"],"notes":"Attack damage: 120"},{"name":"Mosquito Tiger Dodge","technicalId":"MosquitoTigerDodge","tags":[],"notes":"Attack damage: 0"},{"name":"Combo","technicalId":"MosquitoTiger_2Hit_SideCombo","tags":["stabbing"],"notes":"Attack damage: 75"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":850,"rating":3},"combatStats":{"health":850},"description":"An even deadlier version of the common mosquito. Can drop blood sacks and tiger mosquito beaks.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_tiger_mosquito",
+  "speciesKey": "g1_tiger_mosquito",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "alta",
+  "order": 256,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_tiger_mosquito.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Mosquito Beak Tiger",
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Mosquito Blood Sack",
+      "minCount": 1,
+      "maxCount": 2
+    }
+  ],
+  "abilities": [],
+  "behavior": "It patrols large areas from the air and seems able to detect threats from quite far away. Once it begins chasing a target, it may follow for a considerable distance and can be difficult to shake off.",
+  "interactionWithPlayer": "It is extremely annoying and persistent. If Tiger Mosquitoes were already troublesome in Grounded, they can feel even worse in Grounded 2: they often spot you from far away and keep chasing for a long time.",
+  "interactionWithCreatures": "They tend to show up at the worst possible moments, especially when the player is already fighting another creature or trying to escape. Their ability to keep circling above a fight can quickly turn a controlled situation into a much more complicated one.",
+  "strategy": "Use Slashing weapons with a Fresh infusion and pay close attention to its strongest attacks. A perfect block (parry) has a good chance to knock the mosquito down, leaving it vulnerable for a few seconds; use that opening to deal as much damage as possible. If one appears while you are fighting another enemy, it is often worth making it a priority before it starts constantly interrupting the fight.",
+  "groupId": null,
+  "name": "Tiger Mosquito",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "MosquitoTiger",
+  "bestiaryId": "MosquitoTiger",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_MosquitoTiger.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_MosquitoTigerG.png",
+  "weaknesses": [
+    "slashing",
+    "fresh"
+  ],
+  "resistances": [
+    "generic"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "technicalId": "MosquitoTigerBite_Augusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 75",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 0.0,
+      "range": 250.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo Stab",
+      "technicalId": "MosquitoTigerComboStab_Augusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 75",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Dive Bomb",
+      "technicalId": "MosquitoTigerDiveBomb_Augusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 120",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mosquito Tiger Dodge",
+      "technicalId": "MosquitoTigerDodge",
+      "tags": [],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "movement_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo",
+      "technicalId": "MosquitoTiger_2Hit_SideCombo",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 75",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 15.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 3,
+    "value": 850
+  },
+  "combatStats": {
+    "health": 850,
+    "stunThreshold": 30,
+    "stunCooldownSeconds": 20
+  },
+  "description": "An even deadlier version of the common mosquito. Can drop blood sacks and tiger mosquito beaks.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_219f5a78eea50772",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -74312.08,
+        "y": -44549.082,
+        "z": 4976.722
+      },
+      "u": 0.7012014562481709,
+      "v": 0.09339632360232737,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f4bdfdc82de92b64",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -36619.543,
+        "y": -23509.639,
+        "z": 715.0698
+      },
+      "u": 0.8423967953175299,
+      "v": 0.18423193213593053,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5485195bf76531f4",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -32555.607,
+        "y": -24479.957,
+        "z": 165.02718
+      },
+      "u": 0.8576202020485807,
+      "v": 0.18004268501560003,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_84dda05b7e965464",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -32518.76,
+        "y": -19144.598,
+        "z": -3661.1792
+      },
+      "u": 0.8577582300263389,
+      "v": 0.20307754299688002,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9855b8da79d92d01",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -29038.834,
+        "y": -17852.701,
+        "z": -3652.5422
+      },
+      "u": 0.8707939493122623,
+      "v": 0.20865517402816428,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd5055f51cdf1472",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -32059.957,
+        "y": -14064.682,
+        "z": -3747.396
+      },
+      "u": 0.859476895054141,
+      "v": 0.2250095523737246,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cc316af6a7b873b9",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -35230.938,
+        "y": -15041.183,
+        "z": -3682.4724
+      },
+      "u": 0.8475984763242611,
+      "v": 0.2207936107934901,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_11e031f3f84e77bf",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -81863.11,
+        "y": -19290.256,
+        "z": -2331.0422
+      },
+      "u": 0.6729154790752122,
+      "v": 0.20244867972004385,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e4a2e562d10ab367",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -83718.86,
+        "y": -24155.682,
+        "z": -2849.6104
+      },
+      "u": 0.6659638841088675,
+      "v": 0.1814427086263597,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_540701ee17cf8040",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -40978.133,
+        "y": -30378.193,
+        "z": -3673.3572
+      },
+      "u": 0.8260696217734855,
+      "v": 0.1545776640863479,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_72e4be1590194fbd",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -44187.74,
+        "y": -29371.988,
+        "z": -3120.477
+      },
+      "u": 0.8140465109745392,
+      "v": 0.1589218495994603,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c3e189155834996a",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -48275.766,
+        "y": -32047.38,
+        "z": -3673.3572
+      },
+      "u": 0.798732863681592,
+      "v": 0.14737112269162655,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1102e5d0f7b7fbce",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -60117.555,
+        "y": -51900.055,
+        "z": -4152.6025
+      },
+      "u": 0.7543738062628036,
+      "v": 0.06165926165781266,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_444b59ce3b9a4fae",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -65104.656,
+        "y": -51401.938,
+        "z": -4152.6025
+      },
+      "u": 0.7356922455955516,
+      "v": 0.06380983003625938,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60051fa9cfbc3e01",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -77241.64,
+        "y": -23707.799,
+        "z": -3673.3572
+      },
+      "u": 0.690227394790752,
+      "v": 0.18337639693060123,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5ee4d87b99705219",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -74573.28,
+        "y": -20201.203,
+        "z": -3673.3572
+      },
+      "u": 0.7002230073163593,
+      "v": 0.19851576072181465,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ac948a24c3b2fa94",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -69992.8,
+        "y": -36265.977,
+        "z": -4152.6025
+      },
+      "u": 0.7173813754755635,
+      "v": 0.1291577685808247,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_84274134847eed69",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -70876.266,
+        "y": -33302.918,
+        "z": -4152.6025
+      },
+      "u": 0.7140719330406791,
+      "v": 0.14195046786406945,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_391611ccfca54065",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -59268.48,
+        "y": 154980.19,
+        "z": 1265.4738
+      },
+      "u": 0.7575544208369914,
+      "v": 0.954843218483852,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dede7a8f61bd75c3",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -103898.84,
+        "y": 3698.2307,
+        "z": 27083.525
+      },
+      "u": 0.5903701633011413,
+      "v": 0.30169908186525013,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9948620e141e8121",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -105546.54,
+        "y": 4782.293,
+        "z": 27083.525
+      },
+      "u": 0.5841979186420838,
+      "v": 0.3063794081794418,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_45d6a29e45653899",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -55823.48,
+        "y": 154600.19,
+        "z": 1315.4738
+      },
+      "u": 0.770459308165057,
+      "v": 0.9532026079770638,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2a7f53b3ad24d95c",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -18878.1,
+        "y": 28921.846,
+        "z": 42791.66
+      },
+      "u": 0.908855815042435,
+      "v": 0.4105994194451471,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2ad25096e98589bb",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -16968.055,
+        "y": 27346.387,
+        "z": 41396.566
+      },
+      "u": 0.9160107977758268,
+      "v": 0.4037975389493212,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7a2a85a5c597914a",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -18942.346,
+        "y": 40769.91,
+        "z": 8090.986
+      },
+      "u": 0.9086151510681885,
+      "v": 0.46175220440172016,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_866224280f5d960d",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -32794.21,
+        "y": 40411.566,
+        "z": 1386.0096
+      },
+      "u": 0.8567264009364941,
+      "v": 0.46020509142423466,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_017a6958b166098e",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -24863.922,
+        "y": 23622.645,
+        "z": -2887.5266
+      },
+      "u": 0.8864330694761487,
+      "v": 0.38772066987098397,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa98a812747855f7",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -24229.48,
+        "y": 25978.232,
+        "z": -2022.1964
+      },
+      "u": 0.888809673983026,
+      "v": 0.3978906719284931,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f0181f78458e154b",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -31939.793,
+        "y": 40936.82,
+        "z": 1403.542
+      },
+      "u": 0.8599270265144864,
+      "v": 0.46247282097984654,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6cfc1038e4d1adc9",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -34592.066,
+        "y": 41606.5,
+        "z": 25682.229
+      },
+      "u": 0.8499916755048289,
+      "v": 0.4653640947803356,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_86277ec9961376c7",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -61670.41,
+        "y": 64113.973,
+        "z": 1372.4911
+      },
+      "u": 0.7485568486976879,
+      "v": 0.5625377702673076,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_207ebed676e02b1c",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -34667.895,
+        "y": 38863.117,
+        "z": 25449.283
+      },
+      "u": 0.8497076218905474,
+      "v": 0.4535198237962728,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cf0a8cd36a8dd8b9",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -52222.465,
+        "y": 21839.457,
+        "z": 27970.709
+      },
+      "u": 0.783948623939128,
+      "v": 0.3800219410068302,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b61fbec73e634ce9",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -14077.517,
+        "y": 37983.895,
+        "z": 4441.435
+      },
+      "u": 0.9268386837576822,
+      "v": 0.44972387418838006,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f23eefd4332b7f26",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -44603.395,
+        "y": 8274.424,
+        "z": -4072.8037
+      },
+      "u": 0.812489477319286,
+      "v": 0.3214563208364955,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7e97bd2b3fe17db5",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -43671.96,
+        "y": 11819.253,
+        "z": -3512.622
+      },
+      "u": 0.8159786104770266,
+      "v": 0.3367607516316722,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_365eee2b1e0a2a5b",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -47155.484,
+        "y": 11272.819,
+        "z": -3366.0605
+      },
+      "u": 0.8029294131694469,
+      "v": 0.3344015796272873,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1cf22d814a4c5668",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -68916.88,
+        "y": 17261.682,
+        "z": -3358.4685
+      },
+      "u": 0.7214117459760023,
+      "v": 0.36025787321022007,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c1fd3f38d4ec2973",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -70967.086,
+        "y": 20974.277,
+        "z": -1933.5145
+      },
+      "u": 0.7137317235001462,
+      "v": 0.3762866162745594,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ad6d3ce0b1e2a920",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -67513.45,
+        "y": 20541.898,
+        "z": -3645.189
+      },
+      "u": 0.726668961076968,
+      "v": 0.3744198648789948,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5781e7c8dbbc2ac2",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -25108.527,
+        "y": -6050.8403,
+        "z": -3350.2544
+      },
+      "u": 0.885516785016096,
+      "v": 0.2596084810388734,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8502ecafcfc63caa",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -28539.73,
+        "y": -6892.245,
+        "z": -3086.3657
+      },
+      "u": 0.8726635809189347,
+      "v": 0.2559758036933974,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_80e01b86ea31fcd0",
+      "targetType": "creature",
+      "targetId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "map": "surface",
+      "world": {
+        "x": -25807.988,
+        "y": -2607.7578,
+        "z": -3999.6084
+      },
+      "u": 0.8828966208955223,
+      "v": 0.27447363189476354,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Mosquito Beak Tiger",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Mosquito Beak Tiger",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mosquito Blood Sack",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mosquito Blood Sack",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

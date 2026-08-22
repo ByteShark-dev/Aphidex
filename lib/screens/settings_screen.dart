@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../config/app_links.dart';
 import '../controllers/locale_controller.dart';
 import '../controllers/monetization_controller.dart';
 import '../controllers/review_prompt_controller.dart';
@@ -14,10 +15,8 @@ import 'data_management_screen.dart';
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
 
-  static const String donateUrl = 'https://www.patreon.com/cw/bytesharkdev';
-
-  Future<void> _openDonate(BuildContext context) async {
-    final uri = Uri.parse(donateUrl);
+  Future<void> _openWebsite(BuildContext context) async {
+    final uri = Uri.parse(AphidexLinks.publicWebsite);
     final ok = await launchUrl(uri, mode: LaunchMode.externalApplication);
     if (!ok && context.mounted) {
       ScaffoldMessenger.of(
@@ -341,11 +340,11 @@ class SettingsScreen extends StatelessWidget {
             ),
             Card(
               child: ListTile(
-                leading: const Icon(Icons.volunteer_activism),
-                title: Text(l10n.donateTitle),
-                subtitle: Text(l10n.donateSubtitle),
+                leading: const Icon(Icons.language),
+                title: Text(l10n.websiteTitle),
+                subtitle: Text(l10n.websiteSubtitle),
                 trailing: const Icon(Icons.open_in_new),
-                onTap: () => _openDonate(context),
+                onTap: () => _openWebsite(context),
               ),
             ),
             Card(

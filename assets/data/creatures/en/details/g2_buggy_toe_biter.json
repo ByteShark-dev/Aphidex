@@ -1,1 +1,89 @@
-{"id":"g2_buggy_toe_biter","speciesKey":"buggy_toe_biter","collectionGroup":"buggy","game":"g2","danger":"unknown","order":310,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_buggy_toe_biter.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"We're preparing this information for you.","interactionWithPlayer":"We're preparing this information for you.","interactionWithCreatures":"We're preparing this information for you.","strategy":"We're preparing this information for you.","groupId":null,"name":"Toe-biter Nymph Buggy","tier":3,"cardTier":3,"technicalId":"ToeBiterNymph","bestiaryId":"ToeBiterNymph","isBoss":false,"bossCardStyle":null,"isKillable":false,"healthDisplay":"hidden","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Nymph.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Nymph_G.png","weaknesses":["spicy"],"resistances":["water","fresh","venom","slashing","gas"],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"damageWeaknesses":[],"resistancesV2":[{"type":"water","bonusPct":35},{"type":"fresh","bonusPct":50},{"type":"venom","bonusPct":50},{"type":"slashing","bonusPct":50},{"type":"gas","bonusPct":90}],"weakPoints":[],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":null,"combatStats":null,"description":"An amphibious Toe-biter Nymph Buggy that can travel on land and through water. We're preparing the rest of its information for you.","localizationStatus":"ru_automatic_pending_review","favoriteKey":"g2_buggy_toe_biter","dataVerification":"buggy_stats_unverified","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_buggy_toe_biter",
+  "speciesKey": "buggy_toe_biter",
+  "collectionGroup": "buggy",
+  "game": "g2",
+  "danger": "baja",
+  "order": 310,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_buggy_toe_biter.webp",
+  "temperament": "aggressive",
+  "loot": [],
+  "abilities": [],
+  "behavior": "Unlike wild Toe Biters, this variant functions as the player's Buggy. It can travel both on land and through water, allowing you to move between both environments without dismounting.",
+  "interactionWithPlayer": "It is especially useful for exploring the new aquatic areas and flooded tunnels, since its amphibious nature lets you keep moving even when terrain constantly alternates between land and water.",
+  "interactionWithCreatures": "While mounted, you can cross areas inhabited by Toe Biters, Diving Bell Spiders, and other aquatic creatures without relying only on the player's own mobility. Its exact combat interactions depend on the actions you perform while using it.",
+  "strategy": "Use it mainly for exploration and mobility in mixed land-and-water areas. It can save considerable time in places where you would otherwise constantly enter and leave the water. Its specific combat stats are not yet verified, so for now its value as an amphibious Buggy is more important than any specific offensive strategy.",
+  "groupId": null,
+  "name": "Toe-biter Nymph Buggy",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "ToeBiterNymph",
+  "bestiaryId": "ToeBiterNymph",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": false,
+  "healthDisplay": "hidden",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Nymph.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Nymph_G.png",
+  "weaknesses": [
+    "spicy"
+  ],
+  "resistances": [
+    "water",
+    "fresh",
+    "venom",
+    "slashing",
+    "gas"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "water",
+      "bonusPct": 35
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 50
+    },
+    {
+      "type": "gas",
+      "bonusPct": 90
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": null,
+  "combatStats": null,
+  "description": "An amphibious Toe-biter Nymph Buggy that can travel on land and through water. We're preparing the rest of its information for you.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "favoriteKey": "g2_buggy_toe_biter",
+  "dataVerification": "buggy_stats_unverified",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "appearanceType": "no_natural_spawn",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22"
+}

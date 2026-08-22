@@ -1,1 +1,1451 @@
-{"id":"g2_northern_scorpion_jr","speciesKey":"northern_scorpion_jr","collectionGroup":"angry","name":"Молодой северный скорпион","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":260,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_Jr.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_Jr_G.png","photo":"assets/g2/creatures/photos/Northern_Scorpion_Jr.webp","weaknesses":["busting"],"resistances":["fresh","slashing","venom"],"temperament":"aggressive","health":{"value":600,"rating":2},"weakPoint":{"part":"stinger","susceptibleDamage":"stabbing","susceptibleDamageTypes":["stabbing"]},"description":"Юная версия северного скорпиона. Она меньше, но всё ещё очень опасна, если позволить ей подойти вплотную.","behavior":"Он двигается быстро и отлично использует тесные пространства, чтобы резко сокращать дистанцию.","interactionWithPlayer":"Он становится агрессивным, если получает урон или видит, что рядом атакуют другую похожую особь.","interactionWithCreatures":"Он легко втягивается в соседние драки, особенно если тревожат всю его группу.","strategy":"Относитесь к нему как к мобильной угрозе: сбивайте наступление и не давайте загнать себя в угол.","environments":["Бой с Axl","Церемониальная зона","Площадка для крокета","Входная зона","Огненная яма","Теплица","Тележка с мороженым","Окрестности тележки с мороженым","Малые пещеры","Зона стола для пикника","Сосновый холм","Пещера Pinch Whacker","Передняя зона снэк-бара"],"loot":[{"section":"loot","item":"Northern Scorpion Chunk","minCount":1,"maxCount":2},{"section":"loot","item":"Scorpion Venom","minCount":0,"maxCount":2},{"section":"rare","item":"Northern Scorpion Chunk","minCount":0,"maxCount":3}],"combatStats":{"health":600,"attackDamageSummary":"Комбо из 2 ударов: 28. Длинное комбо: 35. Удар клешнёй: 55. Удар из-под земли: 60."},"abilities":[{"name":"Комбо из 2 ударов","description":"Он начинает размен двумя короткими и быстрыми ударами.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Длинное комбо","description":"Он продлевает давление более длинной серией, если видит, что игрок всё ещё в досягаемости.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Удар клешнёй","description":"Он обрушивает тяжёлый удар клешнёй, ломая ответную попытку, если игрок входит слишком рано.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Подземный удар","description":"Он закапывается и неожиданно выскакивает обратно, чтобы заново открыть давление.","blockable":true,"breaksGuard":true,"staggers":true}],"resistancesV2":[{"type":"fresh","bonusPct":50},{"type":"slashing","bonusPct":25},{"type":"venom","bonusPct":50}],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},{"part":"stinger","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"groupId":null,"cardTier":2,"technicalId":"NorthernScorpionJr","bestiaryId":"NorthernScorpionJr","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"attacks":[{"name":"Combo 2","technicalId":"ScorpionNorthernJrCombo2","tags":["stabbing"],"notes":"Урон атаки: 28"},{"name":"Combo 4","technicalId":"ScorpionNorthernJrCombo4","tags":["stabbing"],"notes":"Урон атаки: 35"},{"name":"Power","technicalId":"ScorpionNorthernJrPower","tags":["stabbing"],"notes":"Урон атаки: 55"},{"name":"Burrow Strike","technicalId":"ScorpionNorthernJrBurrowStrike","tags":["stabbing"],"notes":"Урон атаки: 60"}],"encounterVariants":[{"id":"g2_wave_scorpion_jr_northern_wave","characterRow":"ScorpionJr_Northern_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":600.0,"stun":{"max":50.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":["Butt","Stinger"],"resistances":[{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"ScorpionNorthernJrCombo2","ability":"ScorpionNorthernJrCombo2","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":28.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrCombo4","ability":"ScorpionNorthernJrCombo4","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":36.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomLarge"],"statusEffectApplyType":"DamageOnly"}],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrPower","ability":"ScorpionNorthernJrPower","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":55.0,"type":"Stabbing","hitStun":16,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrBurrowStrike","ability":"ScorpionNorthernJrBurrowStrike","resolved":true,"cooldown":20.0,"priority":2,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomLarge"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":450.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_scorpion_jr_northern_wave","nameEn":"Northern Scorpion Jr. Raid/Wave","nameEsMX":"Cría de escorpión norteño  (Oleada)","nameRu":"Молодой северный скорпион Рейд/волна"}],"contextVariants":[{"id":"ScorpionJr_Northern_Wave","characterRow":"ScorpionJr_Northern_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":600.0,"stun":{"max":50.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":["Butt","Stinger"],"resistances":[{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"ScorpionNorthernJrCombo2","ability":"ScorpionNorthernJrCombo2","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":28.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrCombo4","ability":"ScorpionNorthernJrCombo4","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":36.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomLarge"],"statusEffectApplyType":"DamageOnly"}],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrPower","ability":"ScorpionNorthernJrPower","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":55.0,"type":"Stabbing","hitStun":16,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrBurrowStrike","ability":"ScorpionNorthernJrBurrowStrike","resolved":true,"cooldown":20.0,"priority":2,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomLarge"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":450.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Cría de escorpión norteño  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_northern_scorpion_jr",
+  "speciesKey": "northern_scorpion_jr",
+  "collectionGroup": "angry",
+  "name": "Молодой северный скорпион",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 260,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_Jr.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_Jr_G.png",
+  "photo": "assets/g2/creatures/photos/Northern_Scorpion_Jr.webp",
+  "weaknesses": [
+    "busting"
+  ],
+  "resistances": [
+    "fresh",
+    "slashing",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 2,
+    "value": 600
+  },
+  "weakPoint": {
+    "part": "stinger",
+    "susceptibleDamage": "stabbing",
+    "susceptibleDamageTypes": [
+      "stabbing"
+    ]
+  },
+  "description": "Юная версия северного скорпиона. Она меньше, но всё ещё очень опасна, если позволить ей подойти вплотную.",
+  "behavior": "Он двигается быстро и отлично использует тесные пространства, чтобы резко сокращать дистанцию.",
+  "interactionWithPlayer": "Он становится агрессивным, если получает урон или видит, что рядом атакуют другую похожую особь.",
+  "interactionWithCreatures": "Он легко втягивается в соседние драки, особенно если тревожат всю его группу.",
+  "strategy": "Относитесь к нему как к мобильной угрозе: сбивайте наступление и не давайте загнать себя в угол.",
+  "environments": [
+    "Бой с Axl",
+    "Церемониальная зона",
+    "Площадка для крокета",
+    "Входная зона",
+    "Огненная яма",
+    "Теплица",
+    "Тележка с мороженым",
+    "Окрестности тележки с мороженым",
+    "Малые пещеры",
+    "Зона стола для пикника",
+    "Сосновый холм",
+    "Пещера Pinch Whacker",
+    "Передняя зона снэк-бара"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Scorpion Northern Chunk",
+      "minCount": 1,
+      "maxCount": 5
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Venom",
+      "minCount": 0,
+      "maxCount": 2
+    }
+  ],
+  "combatStats": {
+    "health": 600,
+    "stunThreshold": 50,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Комбо из 2 ударов",
+      "description": "Он начинает размен двумя короткими и быстрыми ударами.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Длинное комбо",
+      "description": "Он продлевает давление более длинной серией, если видит, что игрок всё ещё в досягаемости.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Удар клешнёй",
+      "description": "Он обрушивает тяжёлый удар клешнёй, ломая ответную попытку, если игрок входит слишком рано.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Подземный удар",
+      "description": "Он закапывается и неожиданно выскакивает обратно, чтобы заново открыть давление.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "stinger",
+      "susceptibleDamage": "stabbing",
+      "susceptibleDamageTypes": [
+        "stabbing"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "NorthernScorpionJr",
+  "bestiaryId": "NorthernScorpionJr",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Combo 2",
+      "technicalId": "ScorpionNorthernJrCombo2",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 28",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 28.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 4",
+      "technicalId": "ScorpionNorthernJrCombo4",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 35",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power",
+      "technicalId": "ScorpionNorthernJrPower",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 55",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 20.0,
+      "range": 350.0,
+      "stun": 16,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Burrow Strike",
+      "technicalId": "ScorpionNorthernJrBurrowStrike",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 60",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 60.0,
+      "cooldownSeconds": 20.0,
+      "range": 450.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Large"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Large",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_scorpion_jr_northern_wave",
+      "characterRow": "ScorpionJr_Northern_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 600.0,
+        "stun": {
+          "max": 50.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [
+        "Butt",
+        "Stinger"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ScorpionNorthernJrCombo2",
+          "ability": "ScorpionNorthernJrCombo2",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 28.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrCombo4",
+          "ability": "ScorpionNorthernJrCombo4",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 36.0,
+              "type": "Stabbing",
+              "hitStun": 6,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [
+                "VenomLarge"
+              ],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrPower",
+          "ability": "ScorpionNorthernJrPower",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Stabbing",
+            "hitStun": 16,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrBurrowStrike",
+          "ability": "ScorpionNorthernJrBurrowStrike",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomLarge"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 450.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_scorpion_jr_northern_wave",
+      "nameEn": "Northern Scorpion Jr. Raid/Wave",
+      "nameEsMX": "Cría de escorpión norteño  (Oleada)",
+      "nameRu": "Молодой северный скорпион Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "ScorpionJr_Northern_Wave",
+      "characterRow": "ScorpionJr_Northern_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 600.0,
+        "stun": {
+          "max": 50.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [
+        "Butt",
+        "Stinger"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ScorpionNorthernJrCombo2",
+          "ability": "ScorpionNorthernJrCombo2",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 28.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrCombo4",
+          "ability": "ScorpionNorthernJrCombo4",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 36.0,
+              "type": "Stabbing",
+              "hitStun": 6,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [
+                "VenomLarge"
+              ],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrPower",
+          "ability": "ScorpionNorthernJrPower",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Stabbing",
+            "hitStun": 16,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrBurrowStrike",
+          "ability": "ScorpionNorthernJrBurrowStrike",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomLarge"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 450.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Cría de escorpión norteño  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_c510c8f45ba6b2eb",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -211012.08,
+        "y": 29699.164,
+        "z": -330.67267
+      },
+      "u": 0.18912653672812413,
+      "v": 0.41395540912387213,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c007a41b32e5e00a",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -201947.03,
+        "y": 75057.34,
+        "z": -876.16724
+      },
+      "u": 0.2230839964881475,
+      "v": 0.609784619951092,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9e55b0db96f2f706",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -131926.08,
+        "y": -18945.396,
+        "z": 1478.7166
+      },
+      "u": 0.48538079484928304,
+      "v": 0.20393757692891468,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3133550634998fa6",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -127238.7,
+        "y": -16782.637,
+        "z": 403.60742
+      },
+      "u": 0.5029396078431372,
+      "v": 0.21327506413694244,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c533dfab6ba1a8fd",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -88400.0,
+        "y": 63200.0,
+        "z": 1849.0588
+      },
+      "u": 0.6484284460052677,
+      "v": 0.558591786828569,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5f8c68e467f44aa8",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -97564.63,
+        "y": 45652.37,
+        "z": -1390.4861
+      },
+      "u": 0.6140979619549312,
+      "v": 0.4828317180200692,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c05e253578193c1d",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -99621.31,
+        "y": 59261.97,
+        "z": 4696.49
+      },
+      "u": 0.606393688030436,
+      "v": 0.5415897515810776,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_715548d580d63de4",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -100805.05,
+        "y": 58031.496,
+        "z": 832.35675
+      },
+      "u": 0.6019594263974247,
+      "v": 0.5362773079686313,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3933ac5cc52eec9b",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -101306.99,
+        "y": 58014.84,
+        "z": 3507.1094
+      },
+      "u": 0.6000791712028095,
+      "v": 0.5362053974196812,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b74e2f6f08cd5423",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -234931.39,
+        "y": 129800.4,
+        "z": 1517.7867
+      },
+      "u": 0.09952537547556331,
+      "v": 0.8461320920819633,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_736b73e1daa9624a",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -240320.08,
+        "y": 127465.39,
+        "z": 1680.2726
+      },
+      "u": 0.07933947205150721,
+      "v": 0.8360509290833966,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f91d715b099f601d",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -238828.25,
+        "y": 39856.758,
+        "z": -401.9892
+      },
+      "u": 0.08492783143107989,
+      "v": 0.4578097655451556,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0dc83dffd0e56d77",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -243255.31,
+        "y": 42055.03,
+        "z": -260.06894
+      },
+      "u": 0.06834417091015511,
+      "v": 0.4673005764398347,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_31beee4e2758f126",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -210362.08,
+        "y": 30449.164,
+        "z": 1569.3274
+      },
+      "u": 0.19156142112964594,
+      "v": 0.4171934561767434,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b09499c3f1c7c066",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -197439.89,
+        "y": 114203.164,
+        "z": 815.78284
+      },
+      "u": 0.23996763476733973,
+      "v": 0.77879264666498,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a5c4712bf81c7865",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -130063.65,
+        "y": -10917.587,
+        "z": -1526.8594
+      },
+      "u": 0.4923574129353234,
+      "v": 0.238596807960199,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_05d75f9312dea388",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -140355.88,
+        "y": 957.25653,
+        "z": 556.30994
+      },
+      "u": 0.4538029663447468,
+      "v": 0.2898652107543638,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5c2f3466be1e74db",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -138713.92,
+        "y": 25313.564,
+        "z": 416.0531
+      },
+      "u": 0.45995370910155103,
+      "v": 0.3950210369171094,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5214a032cd058f90",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -117660.44,
+        "y": 61069.527,
+        "z": -733.25146
+      },
+      "u": 0.5388195399473222,
+      "v": 0.5493936910700734,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fbf3a126775d23c8",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -242201.12,
+        "y": 91956.62,
+        "z": 1104.8397
+      },
+      "u": 0.07229314135206323,
+      "v": 0.6827455050172865,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a0e84d7773ee7fa",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -237445.7,
+        "y": 115367.4,
+        "z": 615.16846
+      },
+      "u": 0.09010683055311673,
+      "v": 0.7838191145965089,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_44746f9eefe95703",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -73416.6,
+        "y": 69120.805,
+        "z": -1212.2992
+      },
+      "u": 0.7045559028387475,
+      "v": 0.584154247069736,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_70bd25a92e04782e",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -183968.06,
+        "y": -34879.758,
+        "z": 3852.7764
+      },
+      "u": 0.29043278665496053,
+      "v": 0.13514262504427016,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b4856820e68ec17",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -97067.82,
+        "y": 62708.133,
+        "z": -112.39039
+      },
+      "u": 0.6159590002926544,
+      "v": 0.5564682021755628,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dc7eeebeb871c935",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -94891.766,
+        "y": 62824.418,
+        "z": 1699.7324
+      },
+      "u": 0.624110446356453,
+      "v": 0.5569702505776205,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_92735e0d2ae1986e",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -192500.47,
+        "y": 145386.75,
+        "z": 600.6186
+      },
+      "u": 0.2584705835528241,
+      "v": 0.9134245383253226,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_222db7b233617347",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -185478.42,
+        "y": -34045.637,
+        "z": 390.42358
+      },
+      "u": 0.2847750143400643,
+      "v": 0.13874385577198753,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_586319be548e9f9d",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -120745.91,
+        "y": 8491.409,
+        "z": -1469.236
+      },
+      "u": 0.5272614433713784,
+      "v": 0.3223931310228518,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7eea04d7b7214a99",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -164337.38,
+        "y": -21540.566,
+        "z": 2967.183
+      },
+      "u": 0.36396884284460046,
+      "v": 0.19273320016864837,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_422dde55fd869b96",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -71427.19,
+        "y": 112420.49,
+        "z": -3168.7817
+      },
+      "u": 0.7120081849575651,
+      "v": 0.7710961369424065,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8558c2474013f5db",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -93161.18,
+        "y": 107939.2,
+        "z": -2986.0637
+      },
+      "u": 0.6305931799824408,
+      "v": 0.7517486331056582,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c5df92201d786a02",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -164349.23,
+        "y": 114114.6,
+        "z": -3353.5332
+      },
+      "u": 0.36392445302897275,
+      "v": 0.7784102807993929,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_be336455c8d61849",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -125688.03,
+        "y": 73537.445,
+        "z": -3566.9893
+      },
+      "u": 0.5087483804506877,
+      "v": 0.6032226312505271,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3769ab60a2d8753d",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -151375.55,
+        "y": 70045.43,
+        "z": -2416.5728
+      },
+      "u": 0.4125235469710272,
+      "v": 0.5881462194114174,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b8c5694d1b144e60",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -169625.73,
+        "y": 97393.16,
+        "z": -4944.007
+      },
+      "u": 0.3441588106526192,
+      "v": 0.7062172014503753,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9895c971faad06e7",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -73091.305,
+        "y": 118033.81,
+        "z": -4950.6016
+      },
+      "u": 0.705774450102429,
+      "v": 0.7953310626528374,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ece73be233260b1a",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -169454.36,
+        "y": 98152.305,
+        "z": -4942.1206
+      },
+      "u": 0.34480075856014053,
+      "v": 0.7094947310903112,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f77482c1b48bded5",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -248712.34,
+        "y": 86439.59,
+        "z": 547.7025
+      },
+      "u": 0.04790226748609893,
+      "v": 0.6589263013744835,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_90d549ac5c7c0aca",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -138277.89,
+        "y": 89412.49,
+        "z": -8345.82
+      },
+      "u": 0.46158706701785185,
+      "v": 0.6717614881524581,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_19b2a2236a17c185",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -163276.08,
+        "y": 60483.91,
+        "z": -1803.6538
+      },
+      "u": 0.3679444471758853,
+      "v": 0.5468653505354583,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6c1b8c20250c1bed",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -92393.76,
+        "y": 139280.17,
+        "z": 1159.7147
+      },
+      "u": 0.6334679168861574,
+      "v": 0.8870600138291594,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6c10871781829946",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -161983.02,
+        "y": 73625.984,
+        "z": -658.94855
+      },
+      "u": 0.37278821890547265,
+      "v": 0.6036048891812126,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e321669a74930add",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -250015.0,
+        "y": 150664.0,
+        "z": 9559.0
+      },
+      "u": 0.043022534386889084,
+      "v": 0.9362085167383422,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ec7230935bbdfc78",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -252163.97,
+        "y": 150054.28,
+        "z": 9559.0
+      },
+      "u": 0.03497254433713783,
+      "v": 0.9335761140062401,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_93a0d865f4a93ccc",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -174272.73,
+        "y": 87854.74,
+        "z": -1425.4119
+      },
+      "u": 0.3267512601697395,
+      "v": 0.6650360644236444,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_45f5741379cd3207",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -68487.62,
+        "y": 80707.83,
+        "z": -4354.1895
+      },
+      "u": 0.7230197436347674,
+      "v": 0.6341800232734632,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d3f41d2251c0b910",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -123305.85,
+        "y": 85771.01,
+        "z": -4617.4185
+      },
+      "u": 0.5176719695639449,
+      "v": 0.6560397767096721,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b259c91a37fe3246",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -125221.164,
+        "y": 44641.305,
+        "z": -1621.9062
+      },
+      "u": 0.5104972492829968,
+      "v": 0.4784665499620541,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

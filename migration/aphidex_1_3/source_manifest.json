@@ -1,0 +1,861 @@
+{
+  "schema": "aphidex-1.3-source-manifest",
+  "version": "1.3.0",
+  "extractorRoot": "F:\\ByteShark-Dev\\Aphidex_extractor_v1\\aphidex_extractor_v1\\output_aphidex_extractor_v1",
+  "editorialWorkbook": "F:\\Ordenar\\APHIDEX NEW UPDATER\\Aphidex_G2_textos_criaturas_ES_EN_RU.xlsx",
+  "excludedTechnicalIds": [
+    "AntFireSoldier",
+    "AntFireWorker",
+    "ArcR",
+    "ArcRBoss",
+    "BlackOx",
+    "GnatMeaty",
+    "LarvaCharcoal",
+    "Mant",
+    "Mantis",
+    "MiteDust",
+    "Moth",
+    "RolyPoly",
+    "RolyPolySickly",
+    "Scarab",
+    "Schmector",
+    "SpiderBlackWidow",
+    "SpiderlingWidow",
+    "StinkbugGreenShield",
+    "Tazt",
+    "TaztRuzT",
+    "TermiteKing",
+    "TermiteSoldier",
+    "TermiteWorker",
+    "WaspQueen"
+  ],
+  "excelAliases": {
+    "Pond Jockeys": "g2_pond_jockey",
+    "Ancient Pond Jockeys": "g2_ancient_pond_jockey",
+    "Monarch": "g2_koi_oriole",
+    "Juvenile Striped Bark Scorpion": "g2_striped_bark_scorpion_jr",
+    "O.R.C. Juvenile Striped Bark Scorpion": "g2_orc_striped_bark_scorpion_jr",
+    "Toe Biter Buggy": "g2_buggy_toe_biter"
+  },
+  "technicalIdAliases": {
+    "ToeBiterNymph": "g2_toe_biter_nymph"
+  },
+  "editorialMappings": [
+    {
+      "row": 1,
+      "id": "g2_tadpole",
+      "englishName": "Tadpole"
+    },
+    {
+      "row": 2,
+      "id": "g2_water_flea",
+      "englishName": "Water Flea"
+    },
+    {
+      "row": 3,
+      "id": "g2_spiny_water_flea",
+      "englishName": "Spiny Water Flea"
+    },
+    {
+      "row": 4,
+      "id": "g2_water_boatman",
+      "englishName": "Water Boatman"
+    },
+    {
+      "row": 5,
+      "id": "g2_diving_bell_spider",
+      "englishName": "Diving Bell Spider"
+    },
+    {
+      "row": 6,
+      "id": "g2_pond_jockey",
+      "englishName": "Pond Jockeys"
+    },
+    {
+      "row": 7,
+      "id": "g2_ancient_pond_jockey",
+      "englishName": "Ancient Pond Jockeys"
+    },
+    {
+      "row": 8,
+      "id": "g2_koi_dagon",
+      "englishName": "Dagon"
+    },
+    {
+      "row": 9,
+      "id": "g2_koi_sunny",
+      "englishName": "Sunny"
+    },
+    {
+      "row": 10,
+      "id": "g2_koi_calico",
+      "englishName": "Calico"
+    },
+    {
+      "row": 11,
+      "id": "g2_koi_oriole",
+      "englishName": "Monarch"
+    },
+    {
+      "row": 12,
+      "id": "g2_tick",
+      "englishName": "Tick"
+    },
+    {
+      "row": 13,
+      "id": "g2_tiger_mosquito",
+      "englishName": "Tiger Mosquito"
+    },
+    {
+      "row": 14,
+      "id": "g2_orc_tiger_mosquito",
+      "englishName": "O.R.C. Tiger Mosquito"
+    },
+    {
+      "row": 15,
+      "id": "g2_ogrr_tiger_mosquito",
+      "englishName": "O.G.R.R. Tiger Mosquito"
+    },
+    {
+      "row": 16,
+      "id": "g2_green_shield_bug",
+      "englishName": "Green Shield Bug"
+    },
+    {
+      "row": 17,
+      "id": "g2_orc_green_shield_bug",
+      "englishName": "O.R.C. Green Shield Bug"
+    },
+    {
+      "row": 18,
+      "id": "g2_ogrr_green_shield_bug",
+      "englishName": "O.G.R.R. Green Shield Bug"
+    },
+    {
+      "row": 19,
+      "id": "g2_striped_bark_scorpion",
+      "englishName": "Striped Bark Scorpion"
+    },
+    {
+      "row": 20,
+      "id": "g2_striped_bark_scorpion_jr",
+      "englishName": "Juvenile Striped Bark Scorpion"
+    },
+    {
+      "row": 21,
+      "id": "g2_striped_bark_scorpling",
+      "englishName": "Striped Bark Scorpling"
+    },
+    {
+      "row": 22,
+      "id": "g2_orc_striped_bark_scorpion",
+      "englishName": "O.R.C. Striped Bark Scorpion"
+    },
+    {
+      "row": 23,
+      "id": "g2_orc_striped_bark_scorpion_jr",
+      "englishName": "O.R.C. Juvenile Striped Bark Scorpion"
+    },
+    {
+      "row": 24,
+      "id": "g2_orc_striped_bark_scorpling",
+      "englishName": "O.R.C. Striped Bark Scorpling"
+    },
+    {
+      "row": 25,
+      "id": "g2_ogrr_striped_bark_scorpion",
+      "englishName": "O.G.R.R. Striped Bark Scorpion"
+    },
+    {
+      "row": 26,
+      "id": "g2_cku",
+      "englishName": "C.K.U."
+    },
+    {
+      "row": 27,
+      "id": "g2_chop_r",
+      "englishName": "CHOP.R"
+    },
+    {
+      "row": 28,
+      "id": "g2_sauc_r",
+      "englishName": "SAUC.R"
+    },
+    {
+      "row": 29,
+      "id": "g2_toe_biter",
+      "englishName": "Toe Biter"
+    },
+    {
+      "row": 30,
+      "id": "g2_toe_biter_nymph",
+      "englishName": "Toe Biter Nymph"
+    },
+    {
+      "row": 31,
+      "id": "g2_papa_toe_biter",
+      "englishName": "Papa Toe Biter"
+    },
+    {
+      "row": 32,
+      "id": "g2_toe_biter_leviathan",
+      "englishName": "Toe Biter Leviathan"
+    },
+    {
+      "row": 33,
+      "id": "g2_buggy_toe_biter",
+      "englishName": "Toe Biter Buggy"
+    },
+    {
+      "row": 34,
+      "id": "g2_orc_toe_biter",
+      "englishName": "O.R.C. Toe Biter"
+    },
+    {
+      "row": 35,
+      "id": "g2_orc_toe_biter_nymph",
+      "englishName": "O.R.C. Toe Biter Nymph"
+    },
+    {
+      "row": 36,
+      "id": "g2_orc_toe_biter_leviathan",
+      "englishName": "O.R.C. Toe Biter Leviathan"
+    },
+    {
+      "row": 37,
+      "id": "g2_ogrr_toe_biter",
+      "englishName": "O.G.R.R. Toe Biter"
+    },
+    {
+      "row": 38,
+      "id": "g2_ogrr_toe_biter_leviathan",
+      "englishName": "O.G.R.R. Toe Biter Leviathan"
+    }
+  ],
+  "snapshotSha256": {
+    "creatures.json": "b18d273fd2f332fb5500da93066fe88250b5316705ca2799fbaf459aad671931",
+    "equipment.json": "4f110659973417b53124c01aeb555b00b001b03561977379a2cdec6bc62d12cf",
+    "map.json": "ccde4c21c7d4479086d9339565de22410d436c67ec6a052356c7bfea730490d0",
+    "mixr.json": "dece1ec05bc29d33d4d413f34bf8ed0594765bca19a5c70f136ed5341ee721e0",
+    "defenses.json": "99800ad5dca7bf5c82db05c6d5cb7a1c17e2362a436c843f6b54303acc280e04",
+    "g2_presentation_overrides.json": "f1437df42778d60ddbe802d3d9128b92ab6b03a139bc1a1309962964f3fced4d"
+  },
+  "summary": {
+    "editorial": {
+      "rowsApplied": 38
+    },
+    "presentationOverrides": {
+      "items": 49,
+      "applied": [
+        {
+          "publicId": "g2_tadpole",
+          "fields": [
+            "collectionGroup",
+            "danger",
+            "temperament"
+          ]
+        },
+        {
+          "publicId": "g2_water_boatman",
+          "fields": [
+            "collectionGroup",
+            "danger",
+            "temperament"
+          ]
+        },
+        {
+          "publicId": "g2_koi_calico",
+          "fields": [
+            "danger",
+            "hideHealth"
+          ]
+        },
+        {
+          "publicId": "g2_koi_dagon",
+          "fields": [
+            "danger",
+            "hideHealth"
+          ]
+        },
+        {
+          "publicId": "g2_koi_oriole",
+          "fields": [
+            "danger",
+            "hideHealth"
+          ]
+        },
+        {
+          "publicId": "g2_koi_sunny",
+          "fields": [
+            "danger",
+            "hideHealth"
+          ]
+        },
+        {
+          "publicId": "g2_orc_broodmother",
+          "fields": [
+            "appearanceSourceId",
+            "appearanceSourceTargetId",
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_masked_stranger_orc_waves",
+          "fields": [
+            "customAsset",
+            "entityType"
+          ]
+        },
+        {
+          "publicId": "g2_mixr_defenses",
+          "fields": [
+            "customAsset",
+            "entityType"
+          ]
+        },
+        {
+          "publicId": "g2_ice_sickles_event",
+          "fields": [
+            "customAsset",
+            "entityType"
+          ]
+        },
+        {
+          "publicId": "g2_woolly_aphid",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_buggy_toe_biter",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_water_flea",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_diving_bell_spider",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_spiny_water_flea",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_striped_bark_scorpling",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_cku",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_chop_r",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_sauc_r",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_tick",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_tiger_mosquito",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_toe_biter_nymph",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_pond_jockey",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_orc_striped_bark_scorpling",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_striped_bark_scorpion_jr",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_orc_toe_biter_nymph",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_orc_tiger_mosquito",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_orc_striped_bark_scorpion_jr",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_ancient_pond_jockey",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_toe_biter",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_green_shield_bug",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_ogrr_tiger_mosquito",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_orc_toe_biter",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_orc_green_shield_bug",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_ogrr_green_shield_bug",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_ogrr_toe_biter",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_striped_bark_scorpion",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_toe_biter_leviathan",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_papa_toe_biter",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_orc_striped_bark_scorpion",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_ogrr_striped_bark_scorpion",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_orc_toe_biter_leviathan",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_ogrr_toe_biter_leviathan",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_crow",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_garter_snake",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_masked_fighter",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_masked_stranger",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_axl",
+          "fields": [
+            "danger"
+          ]
+        },
+        {
+          "publicId": "g2_king_dozer",
+          "fields": [
+            "danger"
+          ]
+        }
+      ],
+      "dangerOverrides": 46,
+      "dangerProvenance": "community_calibrated_2026_08_22",
+      "schema": "aphidex-g2-presentation-overrides-v1"
+    },
+    "creatures": {
+      "items": 132,
+      "extractorMerged": 121,
+      "historicalPreserved": 11
+    },
+    "equipment": {
+      "items": 209,
+      "armorSets": 29,
+      "icons": 207
+    },
+    "map": {
+      "creatureMarkers": 4452,
+      "equipmentMarkers": 13,
+      "defenseMarkers": 4,
+      "creaturesWithLocations": 119,
+      "eventOnlyCreatures": 2,
+      "outOfBounds": 0
+    },
+    "mixr": {
+      "entries": 2,
+      "variants": 4,
+      "groups": 96,
+      "iceSicklesAttackers": 31
+    },
+    "covers": [
+      {
+        "publicId": "g2_aphid",
+        "technicalId": "Aphid",
+        "source": "Aphid.png",
+        "asset": "assets/g2/creatures/photos/Aphid.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Aphid.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_axl",
+        "technicalId": "Tarantula",
+        "source": "Axl.png",
+        "asset": "assets/g2/creatures/photos/Axl.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Axl.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_bee",
+        "technicalId": "Bee",
+        "source": "bee.png",
+        "asset": "assets/g2/creatures/photos/Bee.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Bee.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_black_soldier_ant",
+        "technicalId": "AntBlackSoldier",
+        "source": "black_soldier_ant.png",
+        "asset": "assets/g2/creatures/photos/Black_Soldier_Ant.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Black_Soldier_Ant.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_firefly",
+        "technicalId": "Firefly",
+        "source": "Firefly.png",
+        "asset": "assets/g2/creatures/photos/Firefly.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Firefly.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_gnat",
+        "technicalId": "Gnat",
+        "source": "gnat.png",
+        "asset": "assets/g2/creatures/photos/Gnat.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Gnat.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_ladybug",
+        "technicalId": "Ladybug",
+        "source": "Ladybug.png",
+        "asset": "assets/g2/creatures/photos/Ladybug.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Ladybug.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_larva",
+        "technicalId": "Larva",
+        "source": "larva.png",
+        "asset": "assets/g2/creatures/photos/Larva.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Larva.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_northern_scorpling",
+        "technicalId": "Scorpling",
+        "source": "Scorpling.png",
+        "asset": "assets/g2/creatures/photos/Northern_Scorpling.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Northern_Scorpling.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_ogrr_blue_butterfly",
+        "technicalId": "BlueButterflyOGRE",
+        "source": "OGRR_Blue_Butterfly.png",
+        "asset": "assets/g2/creatures/photos/OGRR_Blue_Butterfly.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/OGRR_Blue_Butterfly.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_ogrr_cricket",
+        "technicalId": "CricketOGRE",
+        "source": "OGRR_Cricket.png",
+        "asset": "assets/g2/creatures/photos/OGRR_Cricket.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/OGRR_Cricket.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_ogrr_green_shield_bug",
+        "technicalId": "GreenShieldBugOGRE",
+        "source": "green_shield_ogre_spicy.png",
+        "asset": "assets/g2/creatures/photos/OGRR_Green_Shield_Bug.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/OGRR_Green_Shield_Bug.webp",
+        "sourceKind": "provided_capture_explicit_review"
+      },
+      {
+        "publicId": "g2_ogrr_ladybug",
+        "technicalId": "LadybugOGRE",
+        "source": "OGRR_Ladybug.png",
+        "asset": "assets/g2/creatures/photos/OGRR_Ladybug.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/OGRR_Ladybug.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_ogrr_praying_mantis_nymph",
+        "technicalId": "GreenMantisOGRE",
+        "source": "OGRR_Praying_Mantis_Nymph.png",
+        "asset": "assets/g2/creatures/photos/OGRR_Praying_Mantis_Nymph.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/OGRR_Praying_Mantis_Nymph.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_ogrr_striped_bark_scorpion",
+        "technicalId": "StripedBarkScorpionAdultOGRE",
+        "source": "escorpion_corteza_ogrr_acido.png",
+        "asset": "assets/g2/creatures/photos/OGRR_Striped_Bark_Scorpion.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/OGRR_Striped_Bark_Scorpion.webp",
+        "sourceKind": "provided_capture_explicit_review"
+      },
+      {
+        "publicId": "g2_ogrr_tiger_mosquito",
+        "technicalId": "MosquitoTigerOGRE",
+        "source": "mosquito_tigre_ogrr_picante.png",
+        "asset": "assets/g2/creatures/photos/OGRR_Tiger_Mosquito.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/OGRR_Tiger_Mosquito.webp",
+        "sourceKind": "provided_capture_explicit_review"
+      },
+      {
+        "publicId": "g2_ogrr_toe_biter",
+        "technicalId": "ToeBiterAdultOGRE",
+        "source": "Toe_bitter_ogre_spicy.png",
+        "asset": "assets/g2/creatures/photos/OGRR_Toe_Biter.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/OGRR_Toe_Biter.webp",
+        "sourceKind": "provided_capture_explicit_review"
+      },
+      {
+        "publicId": "g2_ogrr_wolf_spider",
+        "technicalId": "SpiderWolfOGRE",
+        "source": "OGRR_Wolf_Spider.png",
+        "asset": "assets/g2/creatures/photos/OGRR_Wolf_Spider.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/OGRR_Wolf_Spider.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_orc_black_soldier_ant",
+        "technicalId": "AntBlackSoldierORC",
+        "source": "ORC_black_soldier_ant.png",
+        "asset": "assets/g2/creatures/photos/ORC_Black_Soldier_Ant.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/ORC_Black_Soldier_Ant.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_orc_cockroach_queen",
+        "technicalId": "Cockroach_QueenORC",
+        "source": "ORC_Cockroach_Queen.png",
+        "asset": "assets/g2/creatures/photos/ORC_Cockroach_Queen.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/ORC_Cockroach_Queen.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_orc_ladybug",
+        "technicalId": "LadybugORC",
+        "source": "ORC_ladyBug.png",
+        "asset": "assets/g2/creatures/photos/ORC_Ladybug.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/ORC_Ladybug.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_orc_larva",
+        "technicalId": "LarvaORC",
+        "source": "ORC_larva.png",
+        "asset": "assets/g2/creatures/photos/ORC_Larva.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/ORC_Larva.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_orc_mosquito",
+        "technicalId": "MosquitoORC",
+        "source": "ORC_Mosquito.png",
+        "asset": "assets/g2/creatures/photos/ORC_Mosquito.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/ORC_Mosquito.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_orc_rust_beetle",
+        "technicalId": "RustBeetleORC",
+        "source": "ORC_Rust_Beetle.png",
+        "asset": "assets/g2/creatures/photos/ORC_Rust_Beetle.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/ORC_Rust_Beetle.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_orc_striped_bark_scorpion",
+        "technicalId": "StripedBarkScorpionAdultORC",
+        "source": "Escorpion_corteza_orc_reposo.png",
+        "asset": "assets/g2/creatures/photos/ORC_Striped_Bark_Scorpion.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/ORC_Striped_Bark_Scorpion.webp",
+        "sourceKind": "provided_capture_explicit_review"
+      },
+      {
+        "publicId": "g2_orc_striped_bark_scorpion_jr",
+        "technicalId": "StripedBarkScorpionJrORC",
+        "source": "Escorpion_corteza_jr_ocr.png",
+        "asset": "assets/g2/creatures/photos/ORC_Striped_Bark_Scorpion_Jr.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/ORC_Striped_Bark_Scorpion_Jr.webp",
+        "sourceKind": "provided_capture_explicit_review"
+      },
+      {
+        "publicId": "g2_orc_striped_bark_scorpling",
+        "technicalId": "StripedBarkScorplingORC",
+        "source": "Escorpion_cortza_cria_orc.png",
+        "asset": "assets/g2/creatures/photos/ORC_Striped_Bark_Scorpling.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/ORC_Striped_Bark_Scorpling.webp",
+        "sourceKind": "provided_capture_explicit_review"
+      },
+      {
+        "publicId": "g2_orc_toe_biter",
+        "technicalId": "ToeBiterAdultORC",
+        "source": "Toe_bitter_orc.png",
+        "asset": "assets/g2/creatures/photos/ORC_Toe_Biter.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/ORC_Toe_Biter.webp",
+        "sourceKind": "provided_capture_explicit_review"
+      },
+      {
+        "publicId": "g2_pincher_earwig",
+        "technicalId": "Earwig",
+        "source": "pincher_earwig.png",
+        "asset": "assets/g2/creatures/photos/Pincher_Earwig.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Pincher_Earwig.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_red_soldier_ant",
+        "technicalId": "AntRedSoldier",
+        "source": "Red_soldier_ant.png",
+        "asset": "assets/g2/creatures/photos/Red_Soldier_Ant.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Red_Soldier_Ant.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_spiderling",
+        "technicalId": "Spiderling",
+        "source": "Spiderling.png",
+        "asset": "assets/g2/creatures/photos/Spiderling.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Spiderling.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_wasp",
+        "technicalId": "Wasp",
+        "source": "wasp.png",
+        "asset": "assets/g2/creatures/photos/Wasp.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Wasp.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_wasp_drone",
+        "technicalId": "WaspDrone",
+        "source": "Wasp_drone.png",
+        "asset": "assets/g2/creatures/photos/Wasp_Drone.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Wasp_Drone.webp",
+        "sourceKind": "provided_capture_exact_name"
+      },
+      {
+        "publicId": "g2_wolf_spider",
+        "technicalId": "SpiderWolf",
+        "source": "wolf_spider.png",
+        "asset": "assets/g2/creatures/photos/Wolf_Spider.webp",
+        "thumbnail": "assets/g2/creatures/thumbnails/Wolf_Spider.webp",
+        "sourceKind": "provided_capture_exact_name"
+      }
+    ]
+  }
+}

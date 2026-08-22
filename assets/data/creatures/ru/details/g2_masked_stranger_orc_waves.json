@@ -1,1 +1,65 @@
-{"id":"g2_masked_stranger_orc_waves","speciesKey":"g2_masked_stranger_orc_waves","collectionGroup":"other","name":"Masked Stranger O.R.C. Waves","game":"g2","tier":3,"danger":"imposible","isBoss":false,"order":290,"defaultGold":false,"isKillable":false,"cardNormal":"","cardGold":"","photo":"assets/g2/creatures/photos/Masked_Stranger_ORC_Waves.webp","weaknesses":[],"resistances":[],"temperament":"other","description":"O.R.C. waves sent by the Masked Stranger to pressure the player outside a normal duel. The threat depends on which O.R.C. creatures participate in the area.","behavior":"They behave as wave attacks: several modified creatures try to force mistakes, cut routes, and keep pressure constant.","interactionWithPlayer":"The Masked Stranger uses these waves as indirect pressure. They should not be treated as one creature with global weaknesses.","interactionWithCreatures":"O.R.C. variants of common insects and larger threats can participate when the zone or progression allows it.","strategy":"Prioritize wave control, clean routes, and fast removal of small units before tougher creatures pin you down. Check each O.R.C. creature sheet for specific weaknesses and resistances.","environments":["Areas with Masked Stranger-linked O.R.C. pressure"],"loot":[{"section":"passive","item":"Check participating O.R.C. creatures for their specific loot.","minCount":0,"maxCount":0}],"abilities":[{"name":"Sent Wave","description":"The threat arrives as a group, not as one creature.","blockable":null,"breaksGuard":null,"staggers":null},{"name":"Variable Composition","description":"It can mix smaller O.R.C. units, fast support, and heavier threats depending on the area.","blockable":null,"breaksGuard":null,"staggers":null}],"specialTraits":["No global weaknesses or resistances: they depend on each participating O.R.C. creature.","Treat it as an event entry and check each O.R.C. sheet for the real combat details."],"healthDisplay":"hidden","listIconAsset":"assets/global/effects_damage/Summon_HP.webp","hasCreatureCard":false,"hasGoldCreatureCard":false,"hasSelectableCardVariants":false,"defaultCardVariant":null}
+{
+  "id": "g2_masked_stranger_orc_waves",
+  "speciesKey": "g2_masked_stranger_orc_waves",
+  "collectionGroup": "other",
+  "name": "Masked Stranger O.R.C. Waves",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible",
+  "isBoss": false,
+  "order": 290,
+  "defaultGold": false,
+  "isKillable": false,
+  "cardNormal": "",
+  "cardGold": "",
+  "photo": "assets/g2/creatures/photos/Masked_Stranger_ORC_Waves.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "other",
+  "description": "O.R.C. waves sent by the Masked Stranger to pressure the player outside a normal duel. The threat depends on which O.R.C. creatures participate in the area.",
+  "behavior": "They behave as wave attacks: several modified creatures try to force mistakes, cut routes, and keep pressure constant.",
+  "interactionWithPlayer": "The Masked Stranger uses these waves as indirect pressure. They should not be treated as one creature with global weaknesses.",
+  "interactionWithCreatures": "O.R.C. variants of common insects and larger threats can participate when the zone or progression allows it.",
+  "strategy": "Prioritize wave control, clean routes, and fast removal of small units before tougher creatures pin you down. Check each O.R.C. creature sheet for specific weaknesses and resistances.",
+  "environments": [
+    "Areas with Masked Stranger-linked O.R.C. pressure"
+  ],
+  "loot": [
+    {
+      "section": "passive",
+      "item": "Check participating O.R.C. creatures for their specific loot.",
+      "minCount": 0,
+      "maxCount": 0
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Sent Wave",
+      "description": "The threat arrives as a group, not as one creature.",
+      "blockable": null,
+      "breaksGuard": null,
+      "staggers": null
+    },
+    {
+      "name": "Variable Composition",
+      "description": "It can mix smaller O.R.C. units, fast support, and heavier threats depending on the area.",
+      "blockable": null,
+      "breaksGuard": null,
+      "staggers": null
+    }
+  ],
+  "specialTraits": [
+    "No global weaknesses or resistances: they depend on each participating O.R.C. creature.",
+    "Treat it as an event entry and check each O.R.C. sheet for the real combat details."
+  ],
+  "healthDisplay": "hidden",
+  "listIconAsset": "assets/global/effects_damage/Summon_HP.webp",
+  "hasCreatureCard": false,
+  "hasGoldCreatureCard": false,
+  "hasSelectableCardVariants": false,
+  "defaultCardVariant": null,
+  "appearanceType": "no_natural_spawn",
+  "entityType": "special",
+  "customAsset": "assets/g2/defenses/Masked_Stranger_ORC_Waves_Icon.png",
+  "presentationOverrideProvenance": "user_provided_editorial_asset"
+}

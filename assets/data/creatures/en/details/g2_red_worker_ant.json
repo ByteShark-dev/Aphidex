@@ -1,1 +1,2867 @@
-{"id":"g2_red_worker_ant","speciesKey":"red_worker_ant","collectionGroup":"neutral","name":"Red Worker Ant","game":"g2","tier":1,"danger":"baja","isBoss":false,"order":206,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_RedAntWorker.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_RedAntWorker_G.png","photo":"assets/g2/creatures/photos/Red_Worker_Ant.webp","weaknesses":["stabbing","spicy"],"resistances":[],"temperament":"neutral","health":{"value":120,"rating":1},"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_arrows_only","susceptibleDamageTypes":["stabbingArrowsOnly"]},"description":"Harmless unless attacked, this creature patrols around the Pine Hills. Can drop red ant head and red ant part on death.","behavior":"It patrols the exits of several anthills while searching for food for the colony. It hunts weevils, picks nectar off the ground, and drags larger resources back into the nest, giving the whole species the feel of a colony that is always busy.","interactionWithPlayer":"It stays neutral toward the player, but defends the colony if you anger other red ants or get too close to their eggs. While calm, it often wanders curiously nearby and may even try to steal food from certain containers or dropped backpacks.","interactionWithCreatures":"Workers are backed up by red soldier ants and coordinate quickly when something invades the colony. In the more contested anthills, it is common to see them tangled up with cockroaches, spiders, and invading black ants.","strategy":"A lone worker falls easily, but groups are still dangerous early on. If you only need parts, the smart play is to peel off loners instead of waking half the colony for a tiny fight.","environments":["Ceremony Area","Croquet Court","Entrance Area","Fire Pit","Picnic Table Area","Red Anthills","Snackbar Front Area","War-Torn Anthill"],"respawnInfo":"1 day","loot":[{"section":"loot","item":"Red Ant Head","minCount":0,"maxCount":1},{"section":"loot","item":"Red Ant Part","minCount":1,"maxCount":2},{"section":"rare","item":"Red Ant Head","minCount":0,"maxCount":1},{"section":"rare","item":"Red Ant Part","minCount":0,"maxCount":3}],"combatStats":{"health":120,"stunThreshold":15,"stunCooldownSeconds":5,"attackDamageSummary":"Bite: 18. Charged Bite: 25."},"inflictsEffects":["chopping"],"inflicts":["All of its attacks deal chopping damage."],"abilities":[{"name":"Bite","description":"A basic, quick bite that is easy to block.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Charged Bite","description":"It delays briefly before delivering a stronger bite.","blockable":true,"breaksGuard":false,"staggers":false}],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"damageWeaknesses":[{"type":"stabbing","bonusPct":15}],"groupId":null,"cardTier":1,"technicalId":"AntRedWorker","bestiaryId":"AntRedWorker","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","resistancesV2":[],"weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Lunge","technicalId":"AntLunge","tags":["chopping"],"notes":"Attack damage: 25"},{"name":"Ant Worker","technicalId":"AntWorker","tags":["chopping"],"notes":"Attack damage: 18"}],"encounterVariants":[],"contextVariants":[{"id":"Ant_Worker_Brown_Wave","characterRow":"Ant_Worker_Brown_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":120.0,"stun":{"max":15.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":20}},"weakpoints":["Eyes"],"resistances":[],"weaknesses":[{"damageTypes":["Stabbing"],"percent":15.0,"sourceId":"DamageResistDownStabbingTiny"},{"damageTypes":["Spicy"],"percent":15.0,"sourceId":"DamageResistDownSpicyTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"AntLunge","ability":"AntRedLunge","resolved":true,"cooldown":10.0,"priority":10,"targetType":"Enemy","damage":{"amount":25.0,"type":"Chopping","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"AntWorker","ability":"AntRedWorker","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":18.0,"type":"Chopping","hitStun":4,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":150.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":2,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Hormiga obrera roja  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_red_worker_ant",
+  "speciesKey": "red_worker_ant",
+  "collectionGroup": "neutral",
+  "name": "Red Worker Ant",
+  "game": "g2",
+  "tier": 1,
+  "danger": "baja",
+  "isBoss": false,
+  "order": 206,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_RedAntWorker.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_RedAntWorker_G.png",
+  "photo": "assets/g2/creatures/photos/Red_Worker_Ant.webp",
+  "weaknesses": [
+    "stabbing",
+    "spicy"
+  ],
+  "resistances": [],
+  "temperament": "neutral",
+  "health": {
+    "rating": 1,
+    "value": 120
+  },
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_arrows_only",
+    "susceptibleDamageTypes": [
+      "stabbingArrowsOnly"
+    ]
+  },
+  "description": "Harmless unless attacked, this creature patrols around the Pine Hills. Can drop red ant head and red ant part on death.",
+  "behavior": "It patrols the exits of several anthills while searching for food for the colony. It hunts weevils, picks nectar off the ground, and drags larger resources back into the nest, giving the whole species the feel of a colony that is always busy.",
+  "interactionWithPlayer": "It stays neutral toward the player, but defends the colony if you anger other red ants or get too close to their eggs. While calm, it often wanders curiously nearby and may even try to steal food from certain containers or dropped backpacks.",
+  "interactionWithCreatures": "Workers are backed up by red soldier ants and coordinate quickly when something invades the colony. In the more contested anthills, it is common to see them tangled up with cockroaches, spiders, and invading black ants.",
+  "strategy": "A lone worker falls easily, but groups are still dangerous early on. If you only need parts, the smart play is to peel off loners instead of waking half the colony for a tiny fight.",
+  "environments": [
+    "Ceremony Area",
+    "Croquet Court",
+    "Entrance Area",
+    "Fire Pit",
+    "Picnic Table Area",
+    "Red Anthills",
+    "Snackbar Front Area",
+    "War-Torn Anthill"
+  ],
+  "respawnInfo": "1 day",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Ant Head",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Ant Part",
+      "minCount": 1,
+      "maxCount": 5
+    }
+  ],
+  "combatStats": {
+    "health": 120,
+    "stunThreshold": 15,
+    "stunCooldownSeconds": 5
+  },
+  "inflictsEffects": [
+    "chopping"
+  ],
+  "inflicts": [
+    "All of its attacks deal chopping damage."
+  ],
+  "abilities": [
+    {
+      "name": "Bite",
+      "description": "A basic, quick bite that is easy to block.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Charged Bite",
+      "description": "It delays briefly before delivering a stronger bite.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 15
+    }
+  ],
+  "groupId": null,
+  "cardTier": 1,
+  "technicalId": "AntRedWorker",
+  "bestiaryId": "AntRedWorker",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "resistancesV2": [],
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only",
+      "susceptibleDamageTypes": [
+        "stabbingArrowsOnly"
+      ],
+      "weaponFamilies": [
+        "bow",
+        "crossbow"
+      ],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Lunge",
+      "technicalId": "AntLunge",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 25",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 25.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Ant Worker",
+      "technicalId": "AntWorker",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 18",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 18.0,
+      "cooldownSeconds": 0.0,
+      "range": 150.0,
+      "stun": 4,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [
+    {
+      "id": "Ant_Worker_Brown_Wave",
+      "characterRow": "Ant_Worker_Brown_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 120.0,
+        "stun": {
+          "max": 15.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 20
+        }
+      },
+      "weakpoints": [
+        "Eyes"
+      ],
+      "resistances": [],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSpicyTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "AntLunge",
+          "ability": "AntRedLunge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 10,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 25.0,
+            "type": "Chopping",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "AntWorker",
+          "ability": "AntRedWorker",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 18.0,
+            "type": "Chopping",
+            "hitStun": 4,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 150.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 2,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Hormiga obrera roja  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_b90e9ec8060448d2",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -186875.5,
+        "y": 106833.27,
+        "z": -538.20135
+      },
+      "u": 0.2795415861867135,
+      "v": 0.7469738952694158,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_495f052a312d8199",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -184750.6,
+        "y": 88829.67,
+        "z": 1281.1923
+      },
+      "u": 0.28750141059408835,
+      "v": 0.6692452233746522,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d39bc680dbee8d9",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -192044.17,
+        "y": 103672.67,
+        "z": 1195.0731
+      },
+      "u": 0.26017987240269236,
+      "v": 0.7333283332490091,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07a2dc1ad6834c05",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -186194.6,
+        "y": 100806.18,
+        "z": 1001.1285
+      },
+      "u": 0.28209222124670763,
+      "v": 0.7209525605868959,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_66f7965f536cc04f",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -120590.1,
+        "y": 148541.94,
+        "z": -2202.4163
+      },
+      "u": 0.5278451038923031,
+      "v": 0.9270467432329875,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a0a842aef9672fd",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -119057.91,
+        "y": 147330.73,
+        "z": -1771.835
+      },
+      "u": 0.5335846508633304,
+      "v": 0.9218174699384434,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9ba370a5de4d4efc",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -178767.4,
+        "y": 104035.945,
+        "z": -2050.1345
+      },
+      "u": 0.3099143342112965,
+      "v": 0.7348967353065182,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b8bdb588f906c8dc",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -179196.81,
+        "y": 112651.21,
+        "z": -2985.6719
+      },
+      "u": 0.3083057746561311,
+      "v": 0.7720922465637914,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4fa3b00fbef26b77",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -180565.94,
+        "y": 97908.94,
+        "z": -1035.3027
+      },
+      "u": 0.30317704653204564,
+      "v": 0.7084440279956151,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a12091749fae3d3",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -182748.8,
+        "y": 89702.17,
+        "z": -1799.6117
+      },
+      "u": 0.2950001053555751,
+      "v": 0.673012151446159,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_747a66dc8072cc6e",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -176808.81,
+        "y": 141320.28,
+        "z": 536.25275
+      },
+      "u": 0.317251165349722,
+      "v": 0.8958679767265368,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_691ba88adf19c98d",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -181740.31,
+        "y": 125232.305,
+        "z": 1062.0779
+      },
+      "u": 0.29877788469417615,
+      "v": 0.8264098166793152,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a203079e2dcfa196",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -184100.08,
+        "y": 99774.375,
+        "z": -788.75543
+      },
+      "u": 0.28993824290313147,
+      "v": 0.716497849734379,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ea4f3708e9cf96cd",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -237110.9,
+        "y": 123570.0,
+        "z": 990.0
+      },
+      "u": 0.09136098331870063,
+      "v": 0.8192329876043511,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_515cfa843eba10bd",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -245784.83,
+        "y": 123378.73,
+        "z": 104.53659
+      },
+      "u": 0.05886864969271295,
+      "v": 0.8184071992579475,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_337710509fd33319",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -247605.5,
+        "y": 123825.734,
+        "z": 1563.7328
+      },
+      "u": 0.05204846356453029,
+      "v": 0.8203370925710431,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9215852c08b60be1",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -220743.56,
+        "y": 8676.079,
+        "z": -519.4234
+      },
+      "u": 0.1526726461808604,
+      "v": 0.3231904245551901,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9ad2daadd25cc5e8",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -222231.66,
+        "y": 7836.081,
+        "z": -519.4234
+      },
+      "u": 0.1470982592917764,
+      "v": 0.3195638204907665,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c5c0ff4b5e0e8aa0",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -221202.66,
+        "y": 6131.334,
+        "z": -519.4234
+      },
+      "u": 0.15095286859818552,
+      "v": 0.3122037524917784,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1cf52dab6bc577ad",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -216240.34,
+        "y": 6326.3013,
+        "z": -1019.4234
+      },
+      "u": 0.1695416002341235,
+      "v": 0.31304550354667343,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aea25a495e2b8d20",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -219237.61,
+        "y": 1412.3204,
+        "z": -1019.4234
+      },
+      "u": 0.15831389874158625,
+      "v": 0.291829901718526,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b8f6f18b4225394f",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -218484.83,
+        "y": 4003.0151,
+        "z": -1019.4234
+      },
+      "u": 0.16113379455662868,
+      "v": 0.3030149568361582,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e7ab9486e8fc73ec",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -219134.64,
+        "y": -1739.5376,
+        "z": -1519.4233
+      },
+      "u": 0.1586996218905472,
+      "v": 0.2782220823745678,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95cb06949db77a6a",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -243698.48,
+        "y": 125999.34,
+        "z": -895.23016
+      },
+      "u": 0.0666840667251975,
+      "v": 0.8297214105742473,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aceb88658e6cf2bc",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -243045.45,
+        "y": 122075.53,
+        "z": 271.16394
+      },
+      "u": 0.06913030143400639,
+      "v": 0.8127807686988785,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3234ed75cb6f8583",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -252115.5,
+        "y": 123995.734,
+        "z": 1703.7328
+      },
+      "u": 0.03515411179397132,
+      "v": 0.8210710499030272,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_026430965f6636bd",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -221674.75,
+        "y": 7356.045,
+        "z": 491.0313
+      },
+      "u": 0.14918443078724028,
+      "v": 0.3174913149506704,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_62f6db3ddea419b0",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -223558.62,
+        "y": 5207.1284,
+        "z": 890.72986
+      },
+      "u": 0.1421274989757097,
+      "v": 0.3082135908660089,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_be36c5a334b4e163",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -222068.62,
+        "y": 4825.2593,
+        "z": 870.4983
+      },
+      "u": 0.14770900321919814,
+      "v": 0.3065649107142255,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c75635616879fd8b",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -218386.11,
+        "y": 1353.9061,
+        "z": -1019.4234
+      },
+      "u": 0.1615035973075798,
+      "v": 0.29157770404924527,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8d4c4c454a8b2a24",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -236727.61,
+        "y": 55411.723,
+        "z": 4598.127
+      },
+      "u": 0.09279677846063804,
+      "v": 0.5249667103128425,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c21f168aa95509d0",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -237781.75,
+        "y": 50177.008,
+        "z": 4507.001
+      },
+      "u": 0.08884799531753,
+      "v": 0.5023663723416815,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a4046e58fb0aea41",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -218041.05,
+        "y": 1672.5171,
+        "z": 1642.59
+      },
+      "u": 0.16279618378694766,
+      "v": 0.2929532739286618,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c04a12c161cf816f",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -216318.62,
+        "y": 1075.2594,
+        "z": 1723.3376
+      },
+      "u": 0.16924836523266026,
+      "v": 0.2903746758816089,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f378d1b53bb324cf",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -188002.88,
+        "y": 111447.18,
+        "z": 795.9271
+      },
+      "u": 0.275318447761194,
+      "v": 0.7668939721730331,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_be20e4022c235785",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -200477.66,
+        "y": 104145.16,
+        "z": 1631.205
+      },
+      "u": 0.22858822124670763,
+      "v": 0.7353682597183574,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dfc0d440f2866de5",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -189357.3,
+        "y": 109929.07,
+        "z": 693.69037
+      },
+      "u": 0.27024482294410307,
+      "v": 0.7603396900244541,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_978cdc241eee4dcd",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -189291.11,
+        "y": 114361.45,
+        "z": 575.8266
+      },
+      "u": 0.270492769095698,
+      "v": 0.7794760300193946,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_23e39d9584e95cdd",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -189282.38,
+        "y": 108147.664,
+        "z": 946.295
+      },
+      "u": 0.27052547146619843,
+      "v": 0.7526486547600978,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_03e38f0e720eb2a3",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -201850.72,
+        "y": 102579.86,
+        "z": 1633.0978
+      },
+      "u": 0.22344477143693298,
+      "v": 0.7286102396492115,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ffbd1c8f0b1ee2a6",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -198808.47,
+        "y": 101733.42,
+        "z": 1449.7006
+      },
+      "u": 0.2348409669300556,
+      "v": 0.7249558229193017,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_65549738d72abb6c",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -185204.36,
+        "y": 101348.945,
+        "z": 1062.9497
+      },
+      "u": 0.28580163652326607,
+      "v": 0.7232958920650983,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8648cc50b40c750c",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -185874.73,
+        "y": 103806.875,
+        "z": 996.5093
+      },
+      "u": 0.2832904465905765,
+      "v": 0.73390774938865,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3d04e018bcdb1cfa",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -189375.34,
+        "y": 103621.016,
+        "z": 1034.7566
+      },
+      "u": 0.2701772455370208,
+      "v": 0.7331053224723839,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dafa653a86833119",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -181258.75,
+        "y": 123126.0,
+        "z": 1126.0977
+      },
+      "u": 0.30058179689786363,
+      "v": 0.8173160637490513,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e8de07dfadbf7b6",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -183744.45,
+        "y": 123071.79,
+        "z": 1138.305
+      },
+      "u": 0.291270424348844,
+      "v": 0.8170820177080698,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a5a2cd7ac01bfaa3",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -177938.56,
+        "y": 124678.53,
+        "z": 263.57178
+      },
+      "u": 0.31301914896107697,
+      "v": 0.824018950670377,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_db56860bca13d4c4",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -177795.03,
+        "y": 141954.89,
+        "z": 533.30896
+      },
+      "u": 0.313556808896693,
+      "v": 0.8986078394468336,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e09b600c95f37b1d",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -175679.02,
+        "y": 142521.58,
+        "z": 419.22003
+      },
+      "u": 0.3214833315774071,
+      "v": 0.9010544646260222,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9b11819f231fb87",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -176319.64,
+        "y": 144139.31,
+        "z": 376.53683
+      },
+      "u": 0.3190835844307872,
+      "v": 0.9080388457711442,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_306aa957c0a2199d",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -186695.88,
+        "y": 105882.09,
+        "z": -538.20135
+      },
+      "u": 0.280214438396254,
+      "v": 0.7428672744750823,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3d94c4d5e2254a37",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -186827.33,
+        "y": 108412.375,
+        "z": -538.2015
+      },
+      "u": 0.27972202985074635,
+      "v": 0.7537915169913146,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d414d4e29077497a",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -179605.73,
+        "y": 98017.164,
+        "z": -1035.3027
+      },
+      "u": 0.3067739701492537,
+      "v": 0.7089112738679484,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ac06b00f4a5a7145",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -183031.9,
+        "y": 88676.76,
+        "z": -1783.1726
+      },
+      "u": 0.2939396195493123,
+      "v": 0.6685850503415128,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a6e56b3ea695f7f2",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -179998.72,
+        "y": 103979.16,
+        "z": -2019.0669
+      },
+      "u": 0.3053018390400936,
+      "v": 0.7346515719706552,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_09207d7ad6ec08c4",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -113041.51,
+        "y": 127365.92,
+        "z": -2141.0964
+      },
+      "u": 0.5561219408838162,
+      "v": 0.8356214776962644,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c1168d9205a62815",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -113199.97,
+        "y": 117037.98,
+        "z": -2927.386
+      },
+      "u": 0.5555283535264852,
+      "v": 0.7910316701239564,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_323f1f523582d27b",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -102083.0,
+        "y": 112305.79,
+        "z": -2133.1465
+      },
+      "u": 0.5971722563652326,
+      "v": 0.7706009316131207,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a2c84a301c3414c6",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -124116.01,
+        "y": 127776.0,
+        "z": -3559.182
+      },
+      "u": 0.5146371296458881,
+      "v": 0.8373919554768531,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9bc09223a3ccced8",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -117438.18,
+        "y": 107030.13,
+        "z": -4425.981
+      },
+      "u": 0.5396521205736026,
+      "v": 0.7478238178598532,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2579b2b8fb3ef4a1",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -108804.06,
+        "y": 105760.8,
+        "z": -3648.4426
+      },
+      "u": 0.5719953268949372,
+      "v": 0.7423436175056919,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_328a9a87b6d78409",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -98062.35,
+        "y": 110540.945,
+        "z": -2287.3655
+      },
+      "u": 0.612233514779046,
+      "v": 0.7629813967450881,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d14e1097d8bf8b4a",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -115557.164,
+        "y": 105600.8,
+        "z": -7418.7773
+      },
+      "u": 0.5466983613696225,
+      "v": 0.7416528341344126,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_775c0cc0fabd4854",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -117500.89,
+        "y": 107483.766,
+        "z": -7409.3413
+      },
+      "u": 0.5394172104184957,
+      "v": 0.7497823441436884,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7994f6a6c5b2d47d",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -131279.98,
+        "y": 102655.33,
+        "z": -7169.9497
+      },
+      "u": 0.48780106994439565,
+      "v": 0.7289360735306519,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_814dd2fbc6b6bbb9",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -131770.0,
+        "y": 115088.9,
+        "z": -8170.4253
+      },
+      "u": 0.4859654667837284,
+      "v": 0.7826167197908761,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c5fa7dc96deced5e",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -118715.15,
+        "y": 147768.36,
+        "z": -1788.0778
+      },
+      "u": 0.534868621597893,
+      "v": 0.923706891980774,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d8f6bdd344110dcd",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -161756.45,
+        "y": 128639.53,
+        "z": -2933.4724
+      },
+      "u": 0.37363694468832304,
+      "v": 0.8411201565056076,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e652742e883120fd",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -123851.5,
+        "y": 99733.82,
+        "z": -9168.642
+      },
+      "u": 0.5156279777582675,
+      "v": 0.71632275773674,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9888096221f24382",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -122293.69,
+        "y": 101439.414,
+        "z": -9166.286
+      },
+      "u": 0.5214634966344747,
+      "v": 0.7236864825701999,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d927add18330aaa6",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -109287.086,
+        "y": 111012.46,
+        "z": -6919.4316
+      },
+      "u": 0.5701859230904301,
+      "v": 0.7650171137532678,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_302b024a251b49da",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -111364.4,
+        "y": 102922.234,
+        "z": -7409.322
+      },
+      "u": 0.5624043546971027,
+      "v": 0.7300884038114512,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f49d4bd612c5bf66",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -122386.54,
+        "y": 106783.266,
+        "z": -6919.4233
+      },
+      "u": 0.5211156827626574,
+      "v": 0.7467580081963067,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e74740d07843ae6a",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -123413.8,
+        "y": 98831.24,
+        "z": -7329.474
+      },
+      "u": 0.5172675914544923,
+      "v": 0.7124259623914325,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_61ce080e40c3d294",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -116382.914,
+        "y": 100008.164,
+        "z": -8908.038
+      },
+      "u": 0.5436051216856893,
+      "v": 0.7175072094443038,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4b7f4c40eb09dfe2",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -113265.8,
+        "y": 106623.125,
+        "z": -9356.453
+      },
+      "u": 0.5552817559262512,
+      "v": 0.7460666160721815,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_854b935f9653efce",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -108345.29,
+        "y": 102655.11,
+        "z": -7418.83
+      },
+      "u": 0.5737138683055312,
+      "v": 0.7289351237035163,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_97693f30766fbe8d",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -128064.445,
+        "y": 107540.7,
+        "z": -7659.077
+      },
+      "u": 0.49984638688908395,
+      "v": 0.7500281507715659,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0f07f9a35ba72a77",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -124453.37,
+        "y": 109315.06,
+        "z": -8164.856
+      },
+      "u": 0.5133733871817384,
+      "v": 0.7576887656632093,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6dfe25ac314c9dcb",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -126476.54,
+        "y": 104474.79,
+        "z": -9109.827
+      },
+      "u": 0.5057946409130817,
+      "v": 0.7367914029850746,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_12315603d38e76ca",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -109775.44,
+        "y": 109379.38,
+        "z": -4928.2886
+      },
+      "u": 0.5683565607257829,
+      "v": 0.7579664605784637,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_320b4be61bd4f35a",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -110648.09,
+        "y": 110283.73,
+        "z": -5226.704
+      },
+      "u": 0.5650876347673398,
+      "v": 0.7618708977148158,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6c7c625af479e667",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -108359.76,
+        "y": 112403.82,
+        "z": -6914.1255
+      },
+      "u": 0.5736596640327772,
+      "v": 0.7710241659499115,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_509d25432d940a51",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -110378.53,
+        "y": 112167.72,
+        "z": -6910.7007
+      },
+      "u": 0.5660974000585308,
+      "v": 0.7700048287376676,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_62a6390a3e31625b",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -110509.99,
+        "y": 102750.87,
+        "z": -7390.317
+      },
+      "u": 0.5656049540532632,
+      "v": 0.7293485575512269,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_872e7e5f2f841304",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -114284.414,
+        "y": 108165.35,
+        "z": -7843.19
+      },
+      "u": 0.5514660523266023,
+      "v": 0.7527250122270006,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_908cead3e648a741",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -118942.66,
+        "y": 108263.94,
+        "z": -7369.525
+      },
+      "u": 0.5340163745976002,
+      "v": 0.7531506643055906,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4955711033502787",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -120152.84,
+        "y": 107269.74,
+        "z": -7174.1147
+      },
+      "u": 0.529483069359087,
+      "v": 0.7488583091323046,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fb779228e3aabe35",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -122444.57,
+        "y": 104629.625,
+        "z": -6908.4146
+      },
+      "u": 0.5208983037752414,
+      "v": 0.7374598870056497,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ede1f78484d6e274",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -127044.52,
+        "y": 106534.55,
+        "z": -7660.678
+      },
+      "u": 0.5036670014632718,
+      "v": 0.7456842027152373,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_00afc778df4ed8e8",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -126150.36,
+        "y": 107163.06,
+        "z": -7667.011
+      },
+      "u": 0.5070165033655254,
+      "v": 0.7483977293195041,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e123aad0a18d3741",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -124953.73,
+        "y": 108885.22,
+        "z": -8159.577
+      },
+      "u": 0.511499050629207,
+      "v": 0.7558329761362678,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1b82ed7e15bb74ab",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -126134.37,
+        "y": 102904.81,
+        "z": -9169.517
+      },
+      "u": 0.5070764015218028,
+      "v": 0.730013177502319,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5e2ce4a832a7d947",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -123277.11,
+        "y": 99923.37,
+        "z": -9163.017
+      },
+      "u": 0.5177796289142523,
+      "v": 0.7171411201619023,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_096ce416e742e277",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -128415.695,
+        "y": 116275.04,
+        "z": -9066.397
+      },
+      "u": 0.4985306128182616,
+      "v": 0.787737755965933,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_de932602220ad074",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -129312.64,
+        "y": 119363.06,
+        "z": -8669.12
+      },
+      "u": 0.4951706783728416,
+      "v": 0.8010699613795429,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8fced657639c19ea",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -131003.61,
+        "y": 113771.07,
+        "z": -8160.93
+      },
+      "u": 0.4888363453321627,
+      "v": 0.7769271257272957,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cf3261c47a484558",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -130235.3,
+        "y": 109557.61,
+        "z": -8119.274
+      },
+      "u": 0.49171441615452155,
+      "v": 0.7587359500801079,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e69bb019e2b3a78e",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -131284.4,
+        "y": 110190.47,
+        "z": -8156.5513
+      },
+      "u": 0.4877845127304653,
+      "v": 0.7614682573572814,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d6b27f78084d451",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -131140.7,
+        "y": 107658.87,
+        "z": -7654.0576
+      },
+      "u": 0.4883228094820017,
+      "v": 0.7505383374652163,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a8702b9f42698ad",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -130640.48,
+        "y": 101997.484,
+        "z": -7155.6826
+      },
+      "u": 0.4901966215978929,
+      "v": 0.726095891795261,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_544abb60d499b19a",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -131660.7,
+        "y": 101447.695,
+        "z": -7153.83
+      },
+      "u": 0.4863749019607843,
+      "v": 0.7237222349270596,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8cbeca02b86c9902",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -134605.86,
+        "y": 100346.02,
+        "z": -7159.124
+      },
+      "u": 0.4753424032777291,
+      "v": 0.7189658676110972,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ddcf249df561bd58",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -134772.56,
+        "y": 102249.22,
+        "z": -7158.6406
+      },
+      "u": 0.4747179490781387,
+      "v": 0.7271827358124631,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9cfb5320b9038f6",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -129806.59,
+        "y": 98892.336,
+        "z": -6659.287
+      },
+      "u": 0.49332035352648523,
+      "v": 0.7126897380217556,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fd7d5d61c2e20100",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -129500.49,
+        "y": 100077.94,
+        "z": -6658.9263
+      },
+      "u": 0.4944669967808019,
+      "v": 0.7178084600725189,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a2274587a95792e8",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -122311.39,
+        "y": 98513.41,
+        "z": -7406.4746
+      },
+      "u": 0.5213971928592332,
+      "v": 0.7110537643983473,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8d2ab286ec32af3f",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -114507.945,
+        "y": 100406.984,
+        "z": -8911.259
+      },
+      "u": 0.550628710564823,
+      "v": 0.7192290733451387,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c99c6e0ec39c691b",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -117739.83,
+        "y": 100091.195,
+        "z": -8909.482
+      },
+      "u": 0.5385221469124962,
+      "v": 0.7178656871574333,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_147225921b0c48c4",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -113483.59,
+        "y": 106092.84,
+        "z": -9420.27
+      },
+      "u": 0.5544659198127012,
+      "v": 0.743777165696939,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_35344f18e0ad3f9e",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -108331.01,
+        "y": 101844.6,
+        "z": -7419.456
+      },
+      "u": 0.5737673608428446,
+      "v": 0.7254358310144196,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d728589c278322e",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -109017.77,
+        "y": 99584.875,
+        "z": -7455.839
+      },
+      "u": 0.5711947743634767,
+      "v": 0.7156797031790201,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_504f2c2b7bcf5a49",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -126498.45,
+        "y": 108893.81,
+        "z": -3433.435
+      },
+      "u": 0.5057125665788703,
+      "v": 0.7558700625685134,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f096b1f7304f0c1b",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -186784.9,
+        "y": 104198.79,
+        "z": -520.595
+      },
+      "u": 0.2798809716125256,
+      "v": 0.7355998016696179,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4682a80381e8dfc4",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -129061.71,
+        "y": 109823.66,
+        "z": -8103.9546
+      },
+      "u": 0.4961106561311091,
+      "v": 0.7598845933046632,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b532a9091bc7f820",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -127943.016,
+        "y": 117590.84,
+        "z": -9169.579
+      },
+      "u": 0.5003012570090724,
+      "v": 0.7934185857154903,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9d931f164324d45b",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -130100.56,
+        "y": 107610.36,
+        "z": -7654.6797
+      },
+      "u": 0.492219148961077,
+      "v": 0.7503289005818365,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_229f185dbaa64bca",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -133584.39,
+        "y": 101450.85,
+        "z": -7170.349
+      },
+      "u": 0.47916880538484047,
+      "v": 0.7237358563116622,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_76ea7daedf7949b1",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -131065.5,
+        "y": 99695.09,
+        "z": -6657.2974
+      },
+      "u": 0.4886045068773778,
+      "v": 0.7161555449869298,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9b7b7e66fd3bbd2b",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -134966.9,
+        "y": 105610.66,
+        "z": -3410.2375
+      },
+      "u": 0.47398995610184375,
+      "v": 0.7416954036596678,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c75054ddacf08811",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -183599.69,
+        "y": 92310.06,
+        "z": -1587.5625
+      },
+      "u": 0.2918126918349429,
+      "v": 0.6842714454844422,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7e94d81c06e2aa43",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -178538.5,
+        "y": 100553.28,
+        "z": -1542.031
+      },
+      "u": 0.31077178811823236,
+      "v": 0.7198606911206679,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f7c8babab0656e45",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -160744.2,
+        "y": 102822.9,
+        "z": -3056.6465
+      },
+      "u": 0.377428808896693,
+      "v": 0.7296595395901846,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7b52d1b77302df08",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -168874.17,
+        "y": 123462.016,
+        "z": -2190.7522
+      },
+      "u": 0.3469741363769388,
+      "v": 0.8187667779070749,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3218ad855483edb2",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -167665.97,
+        "y": 133042.05,
+        "z": -1812.002
+      },
+      "u": 0.3515000245829675,
+      "v": 0.8601275790538832,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eb566f1215562aa9",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -133473.75,
+        "y": 90805.77,
+        "z": -5017.8276
+      },
+      "u": 0.47958326016973957,
+      "v": 0.6777768297495574,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_98af865d0310929f",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -126886.02,
+        "y": 102349.86,
+        "z": -4542.293
+      },
+      "u": 0.5042607386596429,
+      "v": 0.7276172385529976,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_56c26e30082e1d7d",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -134284.34,
+        "y": 99160.4,
+        "z": -4531.4873
+      },
+      "u": 0.47654680948200173,
+      "v": 0.7138470764819969,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5f51510032e2c027",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -172725.34,
+        "y": 110296.72,
+        "z": -3299.958
+      },
+      "u": 0.33254774597600234,
+      "v": 0.7619269806897714,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f871c7bdc63fbeb0",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -165395.0,
+        "y": 115880.0,
+        "z": -2920.0
+      },
+      "u": 0.36000702370500437,
+      "v": 0.7860322118222447,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9878987c99e0adeb",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -182302.9,
+        "y": 75344.3,
+        "z": 340.58688
+      },
+      "u": 0.296670436055019,
+      "v": 0.6110235399274813,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_785687e27045cf27",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -120988.266,
+        "y": 138176.23,
+        "z": -2755.6729
+      },
+      "u": 0.526353583611355,
+      "v": 0.882293867611097,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fb47b00d4daf8a9b",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -126320.72,
+        "y": 138437.19,
+        "z": -3536.7605
+      },
+      "u": 0.5063783388937665,
+      "v": 0.8834205352896534,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a9c6f5c7c5900180",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -127877.28,
+        "y": 133800.73,
+        "z": -3800.49
+      },
+      "u": 0.5005475024875622,
+      "v": 0.8634031011046461,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cf17fe10f8d48c7d",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -83676.055,
+        "y": 99381.9,
+        "z": -3235.9736
+      },
+      "u": 0.6661242306116477,
+      "v": 0.7148033797116113,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_190fa9bf0a854342",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -74932.516,
+        "y": 105203.85,
+        "z": -3264.1038
+      },
+      "u": 0.6988773178811823,
+      "v": 0.7399390437642297,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f5d69c00bc93e6ed",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -119320.266,
+        "y": 96625.266,
+        "z": -4813.426
+      },
+      "u": 0.5326018715832601,
+      "v": 0.7029018989122185,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e29f01b045d3aa08",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -123783.766,
+        "y": 138382.89,
+        "z": -3033.0786
+      },
+      "u": 0.5158817076968101,
+      "v": 0.8831861006830256,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e20566ca46be8650",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -123263.54,
+        "y": 136976.22,
+        "z": -2991.8604
+      },
+      "u": 0.5178304618086041,
+      "v": 0.8771129491525423,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2491162b71edff7d",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -125692.4,
+        "y": 139855.31,
+        "z": -3549.367
+      },
+      "u": 0.5087320105355575,
+      "v": 0.8895431210051438,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e0b53af1a8b1349f",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -127567.86,
+        "y": 138936.2,
+        "z": -3540.7996
+      },
+      "u": 0.5017065823822067,
+      "v": 0.8855749591027912,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_932e6cd8be41da3e",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -126803.65,
+        "y": 134070.53,
+        "z": -3750.4065
+      },
+      "u": 0.5045692947029558,
+      "v": 0.8645679345644659,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7836e184101b02a7",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -218075.12,
+        "y": -11153.277,
+        "z": 3059.893
+      },
+      "u": 0.16266855838454788,
+      "v": 0.23757924088034404,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4fd7b041efbf5bb6",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -222464.73,
+        "y": -18052.594,
+        "z": 3109.8271
+      },
+      "u": 0.1462251846649107,
+      "v": 0.20779215677544483,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e284c61776a5e61d",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -215310.03,
+        "y": -593.68585,
+        "z": 1675.3293
+      },
+      "u": 0.17302651916886158,
+      "v": 0.28316917821738763,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8900304f9d46e0cd",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -223333.28,
+        "y": -36933.69,
+        "z": 2556.0618
+      },
+      "u": 0.14297161720807727,
+      "v": 0.12627498709840623,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5ae01cafabb5ac9f",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -209465.0,
+        "y": -5840.0,
+        "z": 8024.0557
+      },
+      "u": 0.19492186128182615,
+      "v": 0.2605187621215954,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_48ef3651524208d1",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -209715.0,
+        "y": -8490.0,
+        "z": 7843.522
+      },
+      "u": 0.19398536728124086,
+      "v": 0.24907766253478367,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fa1cd621a189515f",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -223515.0,
+        "y": -28540.0,
+        "z": 1947.961
+      },
+      "u": 0.1422908984489318,
+      "v": 0.16251387132135928,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6e829a4a75295bf3",
+      "targetType": "creature",
+      "targetId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "map": "surface",
+      "world": {
+        "x": -216869.28,
+        "y": -11263.905,
+        "z": -880.0
+      },
+      "u": 0.167185606087211,
+      "v": 0.2371016159878573,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Ant Head",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Head",
+      "countLabel": "1",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Ant Part",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

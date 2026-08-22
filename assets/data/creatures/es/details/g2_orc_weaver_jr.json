@@ -1,1 +1,877 @@
-{"id":"g2_orc_weaver_jr","speciesKey":"orc_weaver_jr","collectionGroup":"orc","name":"Araña tejedora juvenil C.R.O.","game":"g2","tier":1,"danger":"intermedia","isBoss":false,"order":283,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_OrbWeaverJr_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaverJr_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Orb_Weaver_Jr.webp","weaknesses":["spicy"],"resistances":["fresh","stabbing","poison"],"temperament":"aggressive","health":{"value":440,"rating":2},"description":"Una araña tejedora juvenil a control remoto con habilidades especiales. Al morir, puede soltar un receptor C.R.O. y partes de criatura.","behavior":"Se mueve entre telarañas, cuevas y zonas MIX.R con patrullas cortas. A diferencia de la versión base, casi siempre está lista para interceptar antes de dejarte acercarte demasiado.","interactionWithPlayer":"Te salta encima apenas te detecta y suele aparecer junto a otras arañas del mismo nido. Si dudas tras el primer bloqueo, el combo te vuelve a cerrar distancia enseguida.","interactionWithCreatures":"Normalmente opera alrededor de telarañas y otras arañas O.R.C., reforzando emboscadas donde ya hay presión de enemigos mayores.","strategy":"Sus ventanas siguen estando después del combo y del salto largo. Mantén el ritmo, no pelees pegado a otras telarañas y elimínala antes de que lleguen más arañas del área.","environments":["Cueva del alijo de dulces","Área de ceremonia","Cancha de croquet MIX.R","Oleadas O.R.C. del jardín","Centro de red","Oleadas O.R.C. del picnic","Colina de pinos","Zona de la estatua"],"loot":[{"section":"loot","item":"Orb Weaver Chunk","minCount":1,"maxCount":2},{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"loot","item":"Web Fiber","minCount":0,"maxCount":3}],"combatStats":{"health":440,"attackDamageSummary":"Mordisco: 43.75. Combo de 3 mordidas: 37.5. Mordisco cargado: 62.5."},"abilities":[{"name":"Mordisco","description":"Muerde rápido para abrir espacio y mantenerte cerca de su red.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo de 3 mordidas","description":"Un encadenado corto de mordidas que castiga si intentas contraatacar demasiado pronto.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Mordisco cargado","description":"Retrocede una fracción de segundo antes de lanzarse con más impulso hacia delante.","blockable":true,"breaksGuard":false,"staggers":false}],"elementalWeaknesses":[{"type":"spicy","bonusPct":30}],"resistancesV2":[{"type":"fresh","bonusPct":25},{"type":"stabbing","bonusPct":25},{"type":"poison","bonusPct":25}],"groupId":null,"cardTier":1,"technicalId":"SpiderOrbJrORC","bestiaryId":"SpiderOrbJrORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Spider Small","technicalId":"SpiderSmall","tags":["stabbing"],"notes":"Daño del ataque: 35"},{"name":"Mordida","technicalId":"SpiderSmallLeftBite","tags":["stabbing"],"notes":"Daño del ataque: 35"},{"name":"Triple mordida","technicalId":"SpiderSmallTripleBite","tags":["stabbing"],"notes":"Daño del ataque: 30"},{"name":"Potente ataque","technicalId":"SpiderSmallPowerAttack","tags":["stabbing"],"notes":"Daño del ataque: 50"}],"encounterVariants":[{"id":"g2_wave_spider_orb_weaver_jr_augusta_orc_wave","characterRow":"Spider_OrbWeaverJr_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":440.0,"stun":{"max":50.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":30}},"weakpoints":[],"resistances":[{"damageTypes":["Fresh"],"percent":25.0,"sourceId":"DamageResistFreshTiny"},{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Poison"],"percent":25.0,"sourceId":"DamageResistPoisonSmall"}],"weaknesses":[{"damageTypes":["Spicy"],"percent":30.0,"sourceId":"DamageResistDownSpicyMedium"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"SpiderSmall","ability":"SpiderSmallBite1","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderSmallLeftBite","ability":"SpiderSmallBite2","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderSmallTripleBite","ability":"SpiderSmallTripleBite","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderSmallPowerAttack","ability":"SpiderSmallPower","resolved":true,"cooldown":15.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_spider_orb_weaver_jr_augusta_orc_wave","nameEn":"O.R.C. Weaver Jr. Raid/Wave","nameEsMX":"Araña tejedora juvenil C.R.O.  (Oleada)","nameRu":"O.R.C. Молодой кругопряд Рейд/волна"}],"contextVariants":[{"id":"Spider_OrbWeaverJr_Augusta_ORC_Wave","characterRow":"Spider_OrbWeaverJr_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":440.0,"stun":{"max":50.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":30}},"weakpoints":[],"resistances":[{"damageTypes":["Fresh"],"percent":25.0,"sourceId":"DamageResistFreshTiny"},{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Poison"],"percent":25.0,"sourceId":"DamageResistPoisonSmall"}],"weaknesses":[{"damageTypes":["Spicy"],"percent":30.0,"sourceId":"DamageResistDownSpicyMedium"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"SpiderSmall","ability":"SpiderSmallBite1","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderSmallLeftBite","ability":"SpiderSmallBite2","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderSmallTripleBite","ability":"SpiderSmallTripleBite","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderSmallPowerAttack","ability":"SpiderSmallPower","resolved":true,"cooldown":15.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Araña tejedora juvenil C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_weaver_jr",
+  "speciesKey": "orc_weaver_jr",
+  "collectionGroup": "orc",
+  "name": "Araña tejedora juvenil C.R.O.",
+  "game": "g2",
+  "tier": 1,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 283,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_OrbWeaverJr_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaverJr_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Orb_Weaver_Jr.webp",
+  "weaknesses": [
+    "spicy"
+  ],
+  "resistances": [
+    "fresh",
+    "stabbing",
+    "poison"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 2,
+    "value": 440
+  },
+  "description": "Una araña tejedora juvenil a control remoto con habilidades especiales. Al morir, puede soltar un receptor C.R.O. y partes de criatura.",
+  "behavior": "Se mueve entre telarañas, cuevas y zonas MIX.R con patrullas cortas. A diferencia de la versión base, casi siempre está lista para interceptar antes de dejarte acercarte demasiado.",
+  "interactionWithPlayer": "Te salta encima apenas te detecta y suele aparecer junto a otras arañas del mismo nido. Si dudas tras el primer bloqueo, el combo te vuelve a cerrar distancia enseguida.",
+  "interactionWithCreatures": "Normalmente opera alrededor de telarañas y otras arañas O.R.C., reforzando emboscadas donde ya hay presión de enemigos mayores.",
+  "strategy": "Sus ventanas siguen estando después del combo y del salto largo. Mantén el ritmo, no pelees pegado a otras telarañas y elimínala antes de que lleguen más arañas del área.",
+  "environments": [
+    "Cueva del alijo de dulces",
+    "Área de ceremonia",
+    "Cancha de croquet MIX.R",
+    "Oleadas O.R.C. del jardín",
+    "Centro de red",
+    "Oleadas O.R.C. del picnic",
+    "Colina de pinos",
+    "Zona de la estatua"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Spider Chunk",
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Web",
+      "minCount": 0,
+      "maxCount": 3
+    }
+  ],
+  "combatStats": {
+    "health": 440,
+    "stunThreshold": 50,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "Muerde rápido para abrir espacio y mantenerte cerca de su red.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo de 3 mordidas",
+      "description": "Un encadenado corto de mordidas que castiga si intentas contraatacar demasiado pronto.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Mordisco cargado",
+      "description": "Retrocede una fracción de segundo antes de lanzarse con más impulso hacia delante.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 30
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 25
+    },
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "poison",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 1,
+  "technicalId": "SpiderOrbJrORC",
+  "bestiaryId": "SpiderOrbJrORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Spider Small",
+      "technicalId": "SpiderSmall",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 35",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 0.0,
+      "range": 300.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mordida",
+      "technicalId": "SpiderSmallLeftBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 35",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 0.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Triple mordida",
+      "technicalId": "SpiderSmallTripleBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente ataque",
+      "technicalId": "SpiderSmallPowerAttack",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 15.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_spider_orb_weaver_jr_augusta_orc_wave",
+      "characterRow": "Spider_OrbWeaverJr_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 440.0,
+        "stun": {
+          "max": 50.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Poison"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistPoisonSmall"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownSpicyMedium"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "SpiderSmall",
+          "ability": "SpiderSmallBite1",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderSmallLeftBite",
+          "ability": "SpiderSmallBite2",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderSmallTripleBite",
+          "ability": "SpiderSmallTripleBite",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderSmallPowerAttack",
+          "ability": "SpiderSmallPower",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_spider_orb_weaver_jr_augusta_orc_wave",
+      "nameEn": "O.R.C. Weaver Jr. Raid/Wave",
+      "nameEsMX": "Araña tejedora juvenil C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Молодой кругопряд Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Spider_OrbWeaverJr_Augusta_ORC_Wave",
+      "characterRow": "Spider_OrbWeaverJr_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 440.0,
+        "stun": {
+          "max": 50.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Poison"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistPoisonSmall"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownSpicyMedium"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "SpiderSmall",
+          "ability": "SpiderSmallBite1",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderSmallLeftBite",
+          "ability": "SpiderSmallBite2",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderSmallTripleBite",
+          "ability": "SpiderSmallTripleBite",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderSmallPowerAttack",
+          "ability": "SpiderSmallPower",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Araña tejedora juvenil C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_3cd4bb9609f1ee96",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -188821.75,
+        "y": 16663.371,
+        "z": 8735.797
+      },
+      "u": 0.2722509803921569,
+      "v": 0.3576747276498861,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3c7f2ae304d95a74",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -178350.0,
+        "y": 17900.0,
+        "z": 21200.0
+      },
+      "u": 0.31147790459467367,
+      "v": 0.36301374483514637,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f29f1b6a6e79b9c6",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -202918.69,
+        "y": 9282.763,
+        "z": 4952.7065
+      },
+      "u": 0.2194441814457126,
+      "v": 0.3258097196728224,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_343a78b73ec607fa",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -155111.78,
+        "y": 31668.361,
+        "z": 4046.9277
+      },
+      "u": 0.39852771905179984,
+      "v": 0.4224572125137026,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d5923a047a994796",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -173050.0,
+        "y": 16550.0,
+        "z": 20600.0
+      },
+      "u": 0.33133157740708225,
+      "v": 0.3571852601399781,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_22698445d23296c6",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -173950.0,
+        "y": 16600.0,
+        "z": 20600.0
+      },
+      "u": 0.3279601990049751,
+      "v": 0.35740112994350287,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_91bbac4ba5991321",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -177900.0,
+        "y": 18300.0,
+        "z": 21200.0
+      },
+      "u": 0.3131635937957273,
+      "v": 0.3647407032633443,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_083f4d3a23a924b2",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -210354.05,
+        "y": 136104.6,
+        "z": 169.8481
+      },
+      "u": 0.19159150131694475,
+      "v": 0.8733498203895773,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_621c4255928eef4a",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -147860.97,
+        "y": 77447.32,
+        "z": -4654.924
+      },
+      "u": 0.42568907930933564,
+      "v": 0.6201031102116537,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_498d340edd389087",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -145496.5,
+        "y": 74289.086,
+        "z": -4734.228
+      },
+      "u": 0.43454632718759145,
+      "v": 0.6064677631503499,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0a0833105c80912",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -57630.52,
+        "y": -43917.895,
+        "z": -4363.1943
+      },
+      "u": 0.7636901796897865,
+      "v": 0.0961214078758749,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd73b4c333cbd4f7",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -55850.52,
+        "y": -44527.895,
+        "z": -4593.1943
+      },
+      "u": 0.7703580169739538,
+      "v": 0.09348779627287296,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_032b07c8bf8eae44",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -214641.89,
+        "y": 138466.8,
+        "z": -18.124979
+      },
+      "u": 0.1755293555750658,
+      "v": 0.8835483733873006,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c63e52e044e658f0",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -224122.97,
+        "y": 116465.914,
+        "z": 52.174305
+      },
+      "u": 0.1400134574187884,
+      "v": 0.7885618346234927,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8df626a96cfb8236",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -215177.72,
+        "y": 138344.06,
+        "z": 34.43751
+      },
+      "u": 0.17352214925373133,
+      "v": 0.8830184561936082,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a20c004d9386390a",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -223428.36,
+        "y": 116476.6,
+        "z": 52.174305
+      },
+      "u": 0.1426154498097747,
+      "v": 0.788607970317902,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_28fa70934b37ad0b",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "map": "surface",
+      "world": {
+        "x": -219403.36,
+        "y": 112153.695,
+        "z": -689.29974
+      },
+      "u": 0.15769300321919816,
+      "v": 0.769944277257779,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Bloqueado por progreso de historia",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Chunk",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Web",
+      "countLabel": "3",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

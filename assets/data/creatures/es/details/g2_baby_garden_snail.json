@@ -1,1 +1,660 @@
-{"id":"g2_baby_garden_snail","speciesKey":"baby_garden_snail","collectionGroup":"harmless","name":"Caracol de jardín bebé","game":"g2","tier":3,"danger":"baja","isBoss":false,"order":274,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_SnailBaby.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_SnailBaby_G.png","photo":"assets/g2/creatures/photos/Baby_Garden_Snail.webp","weaknesses":["fresh","salty"],"resistances":[],"temperament":"peaceful","health":{"value":400,"rating":2},"description":"Suelta carne cruda de caracol y masa viscosa. Rompe el caparazón para reunir fragmentos de caracol de jardín.","behavior":"Se mueve sin prisa y depende casi por completo de su caparazón y de lo poco que la mayoría de criaturas quiere molestarse con ella.","interactionWithPlayer":"Rara vez genera presión real por sí sola. Si el jugador decide combatirla, la pelea es más una cuestión de tiempo que de peligro inmediato.","interactionWithCreatures":"Comparte la presencia tranquila del caracol adulto y pasa más tiempo coexistiendo que dominando o huyendo.","strategy":"No tiene demasiados trucos: mantén la calma, castiga su lentitud y no conviertas una pelea sencilla en algo largo por sobreextenderte sin necesidad.","environments":["Área de ceremonia","Cancha de croquet","Zona de entrada","Pozo de fuego","Alrededores del invernadero","Alrededores del carrito de helados","Zona de la mesa de pícnic","Colina de pinos","Parche de calabazas","Zona frontal del snack bar","Zona de la estatua","Huerto vegetal"],"loot":[{"section":"loot","item":"Garden Snail Slime","minCount":1,"maxCount":3},{"section":"loot","item":"Raw Snail Meat","minCount":2,"maxCount":2},{"section":"rare","item":"Garden Snail Slime","minCount":0,"maxCount":5},{"section":"rare","item":"Garden Snail Fragment","minCount":4,"maxCount":4}],"combatStats":{"health":400},"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_arrows_only","susceptibleDamageTypes":["stabbingArrowsOnly"]},"lootTransformations":[{"id":"spicy_cooked_meat","effects":["spicy","burning"],"description":"Si la criatura se elimina con daño picante o un efecto de calor verificado, la carne compatible puede convertirse en carne cocinada."},{"id":"salty_jerky","effects":["salty"],"description":"Si la criatura se elimina con daño salado, la carne compatible puede convertirse en carne seca."}],"groupId":null,"cardTier":3,"technicalId":"SnailSmall","bestiaryId":"SnailSmall","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[{"type":"fresh","bonusPct":15},{"type":"salty","bonusPct":30}],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_baby_garden_snail",
+  "speciesKey": "baby_garden_snail",
+  "collectionGroup": "harmless",
+  "name": "Caracol de jardín bebé",
+  "game": "g2",
+  "tier": 3,
+  "danger": "baja",
+  "isBoss": false,
+  "order": 274,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_SnailBaby.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_SnailBaby_G.png",
+  "photo": "assets/g2/creatures/photos/Baby_Garden_Snail.webp",
+  "weaknesses": [
+    "fresh",
+    "salty"
+  ],
+  "resistances": [],
+  "temperament": "peaceful",
+  "health": {
+    "rating": 2,
+    "value": 400
+  },
+  "description": "Suelta carne cruda de caracol y masa viscosa. Rompe el caparazón para reunir fragmentos de caracol de jardín.",
+  "behavior": "Se mueve sin prisa y depende casi por completo de su caparazón y de lo poco que la mayoría de criaturas quiere molestarse con ella.",
+  "interactionWithPlayer": "Rara vez genera presión real por sí sola. Si el jugador decide combatirla, la pelea es más una cuestión de tiempo que de peligro inmediato.",
+  "interactionWithCreatures": "Comparte la presencia tranquila del caracol adulto y pasa más tiempo coexistiendo que dominando o huyendo.",
+  "strategy": "No tiene demasiados trucos: mantén la calma, castiga su lentitud y no conviertas una pelea sencilla en algo largo por sobreextenderte sin necesidad.",
+  "environments": [
+    "Área de ceremonia",
+    "Cancha de croquet",
+    "Zona de entrada",
+    "Pozo de fuego",
+    "Alrededores del invernadero",
+    "Alrededores del carrito de helados",
+    "Zona de la mesa de pícnic",
+    "Colina de pinos",
+    "Parche de calabazas",
+    "Zona frontal del snack bar",
+    "Zona de la estatua",
+    "Huerto vegetal"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Snail Meat",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Snail Slime",
+      "minCount": 1,
+      "maxCount": 8
+    }
+  ],
+  "combatStats": {
+    "health": 400,
+    "stunThreshold": 15,
+    "stunCooldownSeconds": 5
+  },
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_arrows_only",
+    "susceptibleDamageTypes": [
+      "stabbingArrowsOnly"
+    ]
+  },
+  "lootTransformations": [
+    {
+      "id": "spicy_cooked_meat",
+      "effects": [
+        "spicy",
+        "burning"
+      ],
+      "description": "Si la criatura se elimina con daño picante o un efecto de calor verificado, la carne compatible puede convertirse en carne cocinada."
+    },
+    {
+      "id": "salty_jerky",
+      "effects": [
+        "salty"
+      ],
+      "description": "Si la criatura se elimina con daño salado, la carne compatible puede convertirse en carne seca."
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "SnailSmall",
+  "bestiaryId": "SnailSmall",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 15
+    },
+    {
+      "type": "salty",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only",
+      "susceptibleDamageTypes": [
+        "stabbingArrowsOnly"
+      ],
+      "weaponFamilies": [
+        "bow",
+        "crossbow"
+      ],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_1aad673f313ad4df",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -149275.19,
+        "y": -47360.473,
+        "z": 1266.1796
+      },
+      "u": 0.42039144512730464,
+      "v": 0.08125843514630236,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bad71d4dc1e9a42b",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -121683.47,
+        "y": -48601.438,
+        "z": 1214.7262
+      },
+      "u": 0.5237493661106234,
+      "v": 0.07590069773168062,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d9f48f4ac7c149d",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -130514.625,
+        "y": -30873.982,
+        "z": 14179.53
+      },
+      "u": 0.49066807140766755,
+      "v": 0.1524371466059533,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_65a8b90c4f5b003f",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -248043.88,
+        "y": 140221.4,
+        "z": 5466.354
+      },
+      "u": 0.05040630260462392,
+      "v": 0.8911236765325913,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8e786541712e18f1",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -256917.2,
+        "y": 109626.65,
+        "z": 13486.408
+      },
+      "u": 0.01716705882352937,
+      "v": 0.7590340231048148,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5952ec3ec796b9dc",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -49068.66,
+        "y": -51022.266,
+        "z": -3192.2097
+      },
+      "u": 0.7957627017851917,
+      "v": 0.06544902443713632,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_35aed34cb3b3ab0a",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -63358.66,
+        "y": -26695.387,
+        "z": -4510.041
+      },
+      "u": 0.7422327047117354,
+      "v": 0.17047779623914328,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a4b0ff1d0147ae33",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -225634.6,
+        "y": 17535.33,
+        "z": -151.70749
+      },
+      "u": 0.1343509277143693,
+      "v": 0.36143932001011897,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_101b977c1747fb36",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -208926.84,
+        "y": 156158.08,
+        "z": 5374.023
+      },
+      "u": 0.19693779572724615,
+      "v": 0.959928636141327,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5edf1c173da5d09b",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -99233.79,
+        "y": 91106.04,
+        "z": -2707.9678
+      },
+      "u": 0.6078453286508634,
+      "v": 0.6790732142676447,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e55e1ca0f3198830",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -172405.25,
+        "y": 32292.715,
+        "z": 5055.1562
+      },
+      "u": 0.33374679543459174,
+      "v": 0.4251527960199004,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1249a3366546de2d",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -194093.25,
+        "y": 24280.715,
+        "z": 4804.8613
+      },
+      "u": 0.25250406789581503,
+      "v": 0.39056181870309464,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0933e2978cc12276",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -204585.25,
+        "y": 80534.72,
+        "z": -789.8436
+      },
+      "u": 0.2132012876792508,
+      "v": 0.6334326388396998,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d186089b94b5cc73",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -120538.24,
+        "y": 47756.715,
+        "z": 1857.1564
+      },
+      "u": 0.5280393702077847,
+      "v": 0.49191700885403483,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_91ca3d6e54dc8218",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -152115.44,
+        "y": 54263.027,
+        "z": -1002.61884
+      },
+      "u": 0.4097519367866549,
+      "v": 0.5200073347162493,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_15cdd654f6913c92",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -148751.86,
+        "y": 63050.305,
+        "z": -888.2334
+      },
+      "u": 0.42235182674860994,
+      "v": 0.5579454942237962,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_03dbba6920c3793f",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -125483.5,
+        "y": 120477.875,
+        "z": -4183.967
+      },
+      "u": 0.5095145449224465,
+      "v": 0.8058830592798718,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a7db994f77891b73",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -112740.555,
+        "y": 118937.25,
+        "z": -3001.3467
+      },
+      "u": 0.5572493110916008,
+      "v": 0.7992315709587656,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6ad00fdbd5d24a03",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -98577.04,
+        "y": 112577.8,
+        "z": -868.72894
+      },
+      "u": 0.610305498390401,
+      "v": 0.7717753065182562,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9a3eb43a6c70e0bc",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -152852.16,
+        "y": 113913.64,
+        "z": -4867.844
+      },
+      "u": 0.40699220134621017,
+      "v": 0.7775426568850663,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5932863dbf76bce6",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -136612.06,
+        "y": 107637.98,
+        "z": -3317.4792
+      },
+      "u": 0.467827226221832,
+      "v": 0.7504481470613036,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e1b7472da3004b81",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -68222.305,
+        "y": 103798.57,
+        "z": -3830.964
+      },
+      "u": 0.7240136072578286,
+      "v": 0.7338718934142846,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2fbdbf7a43d53d94",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -74312.375,
+        "y": 85699.37,
+        "z": -1861.729
+      },
+      "u": 0.7012003511852503,
+      "v": 0.6557304784551817,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c8c52c7955261254",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -132297.03,
+        "y": 119604.8,
+        "z": -4721.729
+      },
+      "u": 0.4839912250512145,
+      "v": 0.8021136487056244,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6648c58b55fe4709",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -143355.03,
+        "y": 118427.8,
+        "z": -4101.729
+      },
+      "u": 0.44256822241732513,
+      "v": 0.7970320735306518,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5849ec72189fc22a",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -172941.03,
+        "y": 131409.8,
+        "z": -1107.729
+      },
+      "u": 0.3317397764120574,
+      "v": 0.8530805093178178,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_139bc41bd6695c40",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -29632.482,
+        "y": -5299.647,
+        "z": -1417.1072
+      },
+      "u": 0.8685701581504244,
+      "v": 0.2628516800404756,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a1835826855d1bf",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -14794.82,
+        "y": 14723.165,
+        "z": -1631.8048
+      },
+      "u": 0.9241516839332747,
+      "v": 0.3492980898895354,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ae830d3bffb82b27",
+      "targetType": "creature",
+      "targetId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "map": "surface",
+      "world": {
+        "x": -75051.7,
+        "y": 26237.53,
+        "z": -952.9528
+      },
+      "u": 0.6984308574773191,
+      "v": 0.39901016409478035,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Snail Meat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Snail Slime",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 5,
+      "notes": "5 independent rolls"
+    },
+    {
+      "item": "Snail Slime",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Snail Slime",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

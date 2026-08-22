@@ -1,1 +1,702 @@
-{"id":"g2_striped_bark_scorpion_jr","speciesKey":"striped_bark_scorpion_jr","collectionGroup":"angry","game":"g2","danger":"unknown","order":295,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_striped_bark_scorpion_jr.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Мы готовим эту информацию для вас.","interactionWithPlayer":"Мы готовим эту информацию для вас.","interactionWithCreatures":"Мы готовим эту информацию для вас.","strategy":"Мы готовим эту информацию для вас.","groupId":null,"name":"Молодой полосатый древесный скорпион","tier":3,"cardTier":4,"technicalId":"StripedBarkScorpionJr","bestiaryId":"StripedBarkScorpionJr","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_Jr_StripedBark.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_Jr_StripedBark_G.png","weaknesses":["busting"],"resistances":["fresh","slashing","venom"],"elementalWeaknesses":[],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"fresh","bonusPct":50},{"type":"slashing","bonusPct":25},{"type":"venom","bonusPct":50}],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},{"part":"stinger","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Combo 2","technicalId":"ScorpionStripedBarkJrCombo2","tags":["stabbing"],"notes":"Урон атаки: 85"},{"name":"Combo 4","technicalId":"ScorpionStripedBarkJrCombo4","tags":["stabbing"],"notes":"Урон атаки: 68"},{"name":"Power","technicalId":"ScorpionStripedBarkJrPower","tags":["stabbing"],"notes":"Урон атаки: 122"},{"name":"Burrow Strike","technicalId":"ScorpionStripedBarkJrBurrowStrike","tags":["stabbing"],"notes":"Урон атаки: 145"},{"name":"Tail Whip","technicalId":"ScorpionStripedBarkJrTailWhip","tags":["stabbing"],"notes":"Урон атаки: 10"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":900,"rating":3},"combatStats":{"health":900},"description":"Мы готовим эту информацию для вас.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_striped_bark_scorpion_jr",
+  "speciesKey": "striped_bark_scorpion_jr",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "muy_alta",
+  "order": 295,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_striped_bark_scorpion_jr.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Scorpion Striped Chunk",
+      "minCount": 1,
+      "maxCount": 5
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Venom",
+      "minCount": 0,
+      "maxCount": 2
+    }
+  ],
+  "abilities": [],
+  "behavior": "Он агрессивен и использует серии атак клешнями и хвостом. Также может зарываться, чтобы неожиданно атаковать цель снизу. Его часто можно встретить рядом с яйцами северного скорпиона или в сопровождении детёнышей, поэтому не стоит считать, что он находится один.",
+  "interactionWithPlayer": "Он заметно менее живуч, чем взрослый скорпион, но его атаки всё ещё способны наносить большой урон. Особенно опасен, если игрок недооценивает его из-за размера или теряет из виду место, где он зарылся.",
+  "interactionWithCreatures": "Он часто держится рядом с яйцами северного скорпиона и детёнышами, а также делит территорию с другими представителями вида. Может вступать в бой с существами, вошедшими в зону.",
+  "strategy": "Используйте Busting-урон и воспользуйтесь меньшим запасом здоровья, чтобы быстро его уничтожить. Перед началом боя осмотрите окружение: рядом могут быть детёныши или другие скорпионы. Если он начинает зарываться, приготовьтесь уклониться или заблокировать атаку в момент появления.",
+  "groupId": null,
+  "name": "Молодой полосатый древесный скорпион",
+  "tier": 3,
+  "cardTier": 4,
+  "technicalId": "StripedBarkScorpionJr",
+  "bestiaryId": "StripedBarkScorpionJr",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_Jr_StripedBark.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_Jr_StripedBark_G.png",
+  "weaknesses": [
+    "busting"
+  ],
+  "resistances": [
+    "fresh",
+    "slashing",
+    "venom"
+  ],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "butt",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    },
+    {
+      "part": "stinger",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Combo 2",
+      "technicalId": "ScorpionStripedBarkJrCombo2",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 85",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 4",
+      "technicalId": "ScorpionStripedBarkJrCombo4",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 68",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 68.0,
+      "cooldownSeconds": 15.0,
+      "range": 350.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power",
+      "technicalId": "ScorpionStripedBarkJrPower",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 122",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 122.0,
+      "cooldownSeconds": 20.0,
+      "range": 350.0,
+      "stun": 12,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Burrow Strike",
+      "technicalId": "ScorpionStripedBarkJrBurrowStrike",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 145",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 145.0,
+      "cooldownSeconds": 20.0,
+      "range": 450.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Very Large"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Very Large",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Tail Whip",
+      "technicalId": "ScorpionStripedBarkJrTailWhip",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 10",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 10.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 3,
+    "value": 900
+  },
+  "combatStats": {
+    "health": 900,
+    "stunThreshold": 60,
+    "stunCooldownSeconds": 5
+  },
+  "description": "Мы готовим эту информацию для вас.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_bb1c112e07658f31",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -134316.1,
+        "y": 12406.972,
+        "z": 389.7222
+      },
+      "u": 0.4764278372841674,
+      "v": 0.3392981673328274,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a662720d5658584",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -133432.8,
+        "y": 11141.107,
+        "z": 389.7222
+      },
+      "u": 0.47973665788703546,
+      "v": 0.3338329267560502,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_98512e823261503b",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -222964.98,
+        "y": 77055.11,
+        "z": -2197.2903
+      },
+      "u": 0.1443512601697395,
+      "v": 0.6184097842988446,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6d0918fcab10636f",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -35024.918,
+        "y": 45512.473,
+        "z": 6819.1772
+      },
+      "u": 0.8483702223002633,
+      "v": 0.4822277272619951,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0f64154374731ca7",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -48067.43,
+        "y": 67320.94,
+        "z": 854.6994
+      },
+      "u": 0.7995132853380159,
+      "v": 0.5763835169913146,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d1456800709ede41",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -9720.229,
+        "y": 35210.18,
+        "z": -656.25635
+      },
+      "u": 0.9431609800409717,
+      "v": 0.43774864794670715,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c3eff274c822eeb5",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -9987.983,
+        "y": 34081.65,
+        "z": -389.08246
+      },
+      "u": 0.9421579799824407,
+      "v": 0.43287633695927147,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_58c869422c492069",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -21601.285,
+        "y": 41815.734,
+        "z": -2586.4915
+      },
+      "u": 0.8986548293824993,
+      "v": 0.4662674408297496,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a58c93f4f3c9f3b0",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -46780.777,
+        "y": 76561.67,
+        "z": -1318.9147
+      },
+      "u": 0.804333056599356,
+      "v": 0.6162794083818196,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c270c5451614bc4c",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -3734.539,
+        "y": 53342.598,
+        "z": -1450.0161
+      },
+      "u": 0.9655832311384256,
+      "v": 0.5160334781684796,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_538fed818a47f53f",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -3088.9133,
+        "y": 53003.445,
+        "z": -1623.3171
+      },
+      "u": 0.9680017295171203,
+      "v": 0.5145692203389831,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1c53844dbdb9ea2e",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -23073.174,
+        "y": 41287.477,
+        "z": -2553.767
+      },
+      "u": 0.8931411685103892,
+      "v": 0.46398674613373814,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c555cecf5fd7d11a",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -19656.53,
+        "y": 41323.42,
+        "z": -2796.347
+      },
+      "u": 0.9059398349429324,
+      "v": 0.46414192630069984,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b7393b7084fbbbb3",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -32920.46,
+        "y": 44215.414,
+        "z": 7089.707
+      },
+      "u": 0.8562534714661985,
+      "v": 0.47662780983219494,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6203cbe2207ad7c8",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -24798.133,
+        "y": 60426.773,
+        "z": 4732.478
+      },
+      "u": 0.8866795134913668,
+      "v": 0.5466186674761784,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_392da6db3a064db6",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -36154.14,
+        "y": 66972.22,
+        "z": -356.8542
+      },
+      "u": 0.8441401837869474,
+      "v": 0.5748779546336116,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_616f197cc1dabc5a",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -49154.55,
+        "y": 54919.4,
+        "z": -1262.3824
+      },
+      "u": 0.7954409599063506,
+      "v": 0.5228411569272282,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bc2d26513ad4c387",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -48691.72,
+        "y": 55793.492,
+        "z": -1204.9761
+      },
+      "u": 0.7971747099795142,
+      "v": 0.5266149582932793,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d3d9125eecbf037",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -36032.9,
+        "y": 65999.24,
+        "z": -356.8542
+      },
+      "u": 0.8445943459174715,
+      "v": 0.5706772146049413,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c6a4b9f197b664ec",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -42375.62,
+        "y": 43471.79,
+        "z": 6305.215
+      },
+      "u": 0.8208346690079017,
+      "v": 0.47341729049666925,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ad7d4c602ccd970a",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -44186.684,
+        "y": 41971.207,
+        "z": 5277.2134
+      },
+      "u": 0.8140504667251974,
+      "v": 0.4669386793490176,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_573445e630518bf8",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -62331.38,
+        "y": 52567.938,
+        "z": 183.31645
+      },
+      "u": 0.7460808709394205,
+      "v": 0.5126889641285101,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0f8a79ccc420d029",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -43574.883,
+        "y": 68394.88,
+        "z": 4323.649
+      },
+      "u": 0.8163422585894059,
+      "v": 0.581020141327262,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_624995ca750ca926",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -16230.626,
+        "y": 24411.393,
+        "z": -1890.19
+      },
+      "u": 0.9187731891132572,
+      "v": 0.3911260073867949,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ae6ce29552266985",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "map": "surface",
+      "world": {
+        "x": -42028.133,
+        "y": 41132.566,
+        "z": 487.0732
+      },
+      "u": 0.8221363469710272,
+      "v": 0.4633179339910615,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Scorpion Striped Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Scorpion Striped Chunk",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Striped Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

@@ -1,1 +1,1173 @@
-{"id":"g2_orc_praying_mantis_nymph","speciesKey":"orc_praying_mantis_nymph","collectionGroup":"orc","name":"O.R.C. Praying Mantis Nymph","game":"g2","tier":3,"danger":"muy_alta","isBoss":false,"order":237,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PrayingMantis_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PrayingMantis_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Praying_Mantis_Nymph.webp","weaknesses":["slashing","fresh"],"resistances":["stabbing","generic","spicy"],"temperament":"aggressive","description":"An enthralled apex predator—it hungers for teen. Can drop an O.R.C. Receiver and its creature parts if defeated.","behavior":"It patrols vegetation, pumpkins, and O.R.C. zones with far more commitment than a normal nymph. It may move little before engaging, but once it does it barely gives up control of the duel.","interactionWithPlayer":"It attacks on sight and especially punishes players with slow reactions or weak reads on slash order. Stand still too long and it links pounce into charged strike very easily.","interactionWithCreatures":"It often enters as a light finisher inside O.R.C. groups, capitalizing on enemies that already have you pinned in place.","strategy":"Fresh is still the best answer. Block the opening slash, wait for the end of the charged strike or pounce, and do not force frontal punishes when the vertical shockwave is likely.","environments":["Croquet Court MIX.R","Statue Area","Pumpkin Patch"],"loot":[{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"loot","item":"Praying Mantis Chunk","minCount":2,"maxCount":6},{"section":"loot","item":"Praying Mantis Claw","minCount":0,"maxCount":2},{"section":"loot","item":"Praying Mantis Head","minCount":0,"maxCount":1},{"section":"rare","item":"Cleaving Claw","minCount":0,"maxCount":1},{"section":"rare","item":"Praying Mantis Chunk","minCount":0,"maxCount":6}],"combatStats":{"attackDamageSummary":"Slash: 94. 3-Hit Combo Slash: 94. Charged Strike: 125. Pounce: 113. Vertical Shockwave: 106.","health":1400},"abilities":[{"name":"Slash","description":"A quick slash used to open pressure and test your response.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"3-Hit Combo Slash","description":"It chains several slashes in a row to punish anyone who answers too early.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Charged Strike","description":"It delays briefly before driving in a deeper, stronger strike.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Pounce","description":"It launches forward to land on the player and resume pressure immediately.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Vertical Shockwave","description":"It strikes downward hard enough to create a vertical shock that complicates frontal punishes.","blockable":false,"breaksGuard":false,"staggers":true}],"elementalWeaknesses":[{"type":"fresh","bonusPct":15}],"resistancesV2":[{"type":"stabbing","bonusPct":50},{"type":"generic","bonusPct":25},{"type":"spicy","bonusPct":50}],"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_bows_and_spears","susceptibleDamageTypes":["stabbing"]},"healthDisplay":"normal","health":{"value":1400,"rating":4},"groupId":null,"cardTier":3,"technicalId":"GreenMantisORC","bestiaryId":"GreenMantisORC","bossCardStyle":null,"isKillable":true,"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Left Strike","technicalId":"PrayingMantisCleaveLeft","tags":["chopping_slashing"],"notes":"Attack damage: 75"},{"name":"Right Strike","technicalId":"PrayingMantisCleaveRight","tags":["chopping_slashing"],"notes":"Attack damage: 75"},{"name":"Praying Mantis Pounce","technicalId":"PrayingMantisPounce","tags":["chopping_slashing_unblockable"],"notes":"Attack damage: 90"},{"name":"Praying Mantis Slash","technicalId":"PrayingMantisSlash","tags":["chopping_slashing_unblockable"],"notes":"Attack damage: 85"},{"name":"Praying Mantis Powerattack","technicalId":"PrayingMantisPowerattack","tags":[],"notes":"Unidentified"},{"name":"Combo","technicalId":"PrayingMantisAttackCombo","tags":["chopping_slashing"],"notes":"Attack damage: 75"},{"name":"Praying Mantis Stealth Jump Attack","technicalId":"PrayingMantisStealthJumpAttack","tags":["chopping_slashing_unblockable"],"notes":"Attack damage: 80"},{"name":"Block Offensive","technicalId":"BlockOffensive","tags":["maine"],"notes":"Attack damage: 0"}],"encounterVariants":[{"id":"GreenMantis_ORC_Named","characterRow":"GreenMantis_ORC_Named","role":"named_or_miniboss","variantMarkers":["named"],"sharedBestiaryEntry":true,"stats":{"health":1500.0,"stun":{"max":90.0,"duration":3.0,"cooldown":20.0,"staggerThreshold":10}},"weakpoints":["Eyes"],"resistances":[{"damageTypes":["Stabbing"],"percent":50.0,"sourceId":"DamageResistStabbingMedium"},{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"},{"damageTypes":["Spicy"],"percent":50.0,"sourceId":"DamageResistSpicyMedium"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"},{"damageTypes":["Fresh"],"percent":15.0,"sourceId":"DamageResistDownFreshTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"PrayingMantisCleaveLeft_Named","ability":"PrayingMantisCleaveLeft_Named","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":80.0,"type":"ChoppingSlashing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisCleaveRight_Named","ability":"PrayingMantisCleaveRight_Named","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":80.0,"type":"ChoppingSlashing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisPounce_Named","ability":"PrayingMantisPounce_Named","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":95.0,"type":"ChoppingSlashingUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":50.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"PrayingMantisSlash_Named","ability":"PrayingMantisSlash_Named","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":80.0,"type":"ChoppingSlashingUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":200.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisPowerattack_Named","ability":"PrayingMantisPowerattack_Named","resolved":false,"cooldown":15.0,"reason":"attack_row_missing"},{"id":"PrayingMantisAttackCombo_Named","ability":"PrayingMantisAttackCombo_Named","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":80.0,"type":"ChoppingSlashing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisStealthJumpAttack_Named","ability":"PrayingMantisStealthJumpAttack_Named","resolved":true,"cooldown":0.0,"priority":5,"targetType":"Enemy","damage":{"amount":85.0,"type":"ChoppingSlashingUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":50.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":true,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":1,"hiddenContextualModifiers":[],"extractionWarnings":["one_or_more_attacks_unresolved"]},"parentBestiaryId":"GreenMantisORC","parentAphidexId":"g2_orc_praying_mantis_nymph","technicalCharacterRow":"GreenMantis_ORC_Named","variantKey":"GreenMantis_ORC_Named","nameEn":"Lieutenant Blade","nameEsMX":"Teniente Filo","nameBindingConfidence":"high","topLevelAphidexId":null,"killFavoriteStateOwner":"g2_orc_praying_mantis_nymph","policy":"CHILD_VARIANT_NO_TOP_LEVEL_ID"},{"id":"g2_wave_green_mantis_orc_wave","characterRow":"GreenMantis_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1400.0,"stun":{"max":90.0,"duration":3.0,"cooldown":20.0,"staggerThreshold":10}},"weakpoints":["Eyes"],"resistances":[{"damageTypes":["Stabbing"],"percent":50.0,"sourceId":"DamageResistStabbingMedium"},{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"},{"damageTypes":["Spicy"],"percent":50.0,"sourceId":"DamageResistSpicyMedium"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"},{"damageTypes":["Fresh"],"percent":15.0,"sourceId":"DamageResistDownFreshTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"PrayingMantisCleaveLeft","ability":"PrayingMantisCleaveLeft","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"ChoppingSlashing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisCleaveRight","ability":"PrayingMantisCleaveRight","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"ChoppingSlashing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisPounce","ability":"PrayingMantisPounce","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":90.0,"type":"ChoppingSlashingUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":50.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"PrayingMantisSlash","ability":"PrayingMantisSlash","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":85.0,"type":"ChoppingSlashingUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":200.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisPowerattack","ability":"PrayingMantisPowerattack","resolved":false,"cooldown":15.0,"reason":"attack_row_missing"},{"id":"PrayingMantisAttackCombo","ability":"PrayingMantisAttackCombo","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"ChoppingSlashing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisStealthJumpAttack","ability":"PrayingMantisStealthJumpAttack","resolved":true,"cooldown":0.0,"priority":5,"targetType":"Enemy","damage":{"amount":80.0,"type":"ChoppingSlashingUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":50.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":true,"hitResolutionType":"AOE"},{"id":"BlockOffensive","ability":"BlockOffensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":7,"unresolvedAttacks":1,"hiddenContextualModifiers":[],"extractionWarnings":["one_or_more_attacks_unresolved"]},"variantKey":"g2_wave_green_mantis_orc_wave","nameEn":"O.R.C. Praying Mantis Nymph Raid/Wave","nameEsMX":"Mantis religiosa C.R.O.  (Oleada)","nameRu":"O.R.C. Нимфа богомола Рейд/волна"}],"contextVariants":[{"id":"GreenMantis_ORC_Wave","characterRow":"GreenMantis_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1400.0,"stun":{"max":90.0,"duration":3.0,"cooldown":20.0,"staggerThreshold":10}},"weakpoints":["Eyes"],"resistances":[{"damageTypes":["Stabbing"],"percent":50.0,"sourceId":"DamageResistStabbingMedium"},{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"},{"damageTypes":["Spicy"],"percent":50.0,"sourceId":"DamageResistSpicyMedium"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"},{"damageTypes":["Fresh"],"percent":15.0,"sourceId":"DamageResistDownFreshTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"PrayingMantisCleaveLeft","ability":"PrayingMantisCleaveLeft","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"ChoppingSlashing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisCleaveRight","ability":"PrayingMantisCleaveRight","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"ChoppingSlashing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisPounce","ability":"PrayingMantisPounce","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":90.0,"type":"ChoppingSlashingUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":50.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"PrayingMantisSlash","ability":"PrayingMantisSlash","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":85.0,"type":"ChoppingSlashingUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":200.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisPowerattack","ability":"PrayingMantisPowerattack","resolved":false,"cooldown":15.0,"reason":"attack_row_missing"},{"id":"PrayingMantisAttackCombo","ability":"PrayingMantisAttackCombo","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"ChoppingSlashing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PrayingMantisStealthJumpAttack","ability":"PrayingMantisStealthJumpAttack","resolved":true,"cooldown":0.0,"priority":5,"targetType":"Enemy","damage":{"amount":80.0,"type":"ChoppingSlashingUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":50.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":true,"hitResolutionType":"AOE"},{"id":"BlockOffensive","ability":"BlockOffensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":7,"unresolvedAttacks":1,"hiddenContextualModifiers":[],"extractionWarnings":["one_or_more_attacks_unresolved"]},"nameEsMX":"Mantis religiosa C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_praying_mantis_nymph",
+  "speciesKey": "orc_praying_mantis_nymph",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Praying Mantis Nymph",
+  "game": "g2",
+  "tier": 3,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 237,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PrayingMantis_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PrayingMantis_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Praying_Mantis_Nymph.webp",
+  "weaknesses": [
+    "slashing",
+    "fresh"
+  ],
+  "resistances": [
+    "stabbing",
+    "generic",
+    "spicy"
+  ],
+  "temperament": "aggressive",
+  "description": "An enthralled apex predator—it hungers for teen. Can drop an O.R.C. Receiver and its creature parts if defeated.",
+  "behavior": "It patrols vegetation, pumpkins, and O.R.C. zones with far more commitment than a normal nymph. It may move little before engaging, but once it does it barely gives up control of the duel.",
+  "interactionWithPlayer": "It attacks on sight and especially punishes players with slow reactions or weak reads on slash order. Stand still too long and it links pounce into charged strike very easily.",
+  "interactionWithCreatures": "It often enters as a light finisher inside O.R.C. groups, capitalizing on enemies that already have you pinned in place.",
+  "strategy": "Fresh is still the best answer. Block the opening slash, wait for the end of the charged strike or pounce, and do not force frontal punishes when the vertical shockwave is likely.",
+  "environments": [
+    "Croquet Court MIX.R",
+    "Statue Area",
+    "Pumpkin Patch"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Mantis Low Life Crit",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Mantis Green Chunk",
+      "minCount": 2,
+      "maxCount": 12
+    },
+    {
+      "section": "loot",
+      "item": "Mantis Green Claw",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Mantis Green Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1400,
+    "stunThreshold": 90,
+    "stunCooldownSeconds": 20
+  },
+  "abilities": [
+    {
+      "name": "Slash",
+      "description": "A quick slash used to open pressure and test your response.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "3-Hit Combo Slash",
+      "description": "It chains several slashes in a row to punish anyone who answers too early.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Charged Strike",
+      "description": "It delays briefly before driving in a deeper, stronger strike.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Pounce",
+      "description": "It launches forward to land on the player and resume pressure immediately.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Vertical Shockwave",
+      "description": "It strikes downward hard enough to create a vertical shock that complicates frontal punishes.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": true
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    },
+    {
+      "type": "general",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_bows_and_spears",
+    "susceptibleDamageTypes": [
+      "stabbing"
+    ]
+  },
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 4,
+    "value": 1400
+  },
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "GreenMantisORC",
+  "bestiaryId": "GreenMantisORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_bows_and_spears",
+      "susceptibleDamageTypes": [
+        "stabbing"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Left Strike",
+      "technicalId": "PrayingMantisCleaveLeft",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Attack damage: 75",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Right Strike",
+      "technicalId": "PrayingMantisCleaveRight",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Attack damage: 75",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Pounce",
+      "technicalId": "PrayingMantisPounce",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Attack damage: 90",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 90.0,
+      "cooldownSeconds": 20.0,
+      "range": 600.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Slash",
+      "technicalId": "PrayingMantisSlash",
+      "tags": [
+        "chopping",
+        "projectile",
+        "slashing"
+      ],
+      "notes": "Attack damage: 85",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 20.0,
+      "range": 200.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "projectile",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Powerattack",
+      "technicalId": "PrayingMantisPowerattack",
+      "tags": [],
+      "notes": "Unidentified"
+    },
+    {
+      "name": "Combo",
+      "technicalId": "PrayingMantisAttackCombo",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Attack damage: 75",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Stealth Jump Attack",
+      "technicalId": "PrayingMantisStealthJumpAttack",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Attack damage: 80",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 80.0,
+      "cooldownSeconds": 0.0,
+      "range": 600.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Offensive",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "GreenMantis_ORC_Named",
+      "characterRow": "GreenMantis_ORC_Named",
+      "role": "named_or_miniboss",
+      "variantMarkers": [
+        "named"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1500.0,
+        "stun": {
+          "max": 90.0,
+          "duration": 3.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [
+        "Eyes"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistStabbingMedium"
+        },
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistSpicyMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownFreshTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "PrayingMantisCleaveLeft_Named",
+          "ability": "PrayingMantisCleaveLeft_Named",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 80.0,
+            "type": "ChoppingSlashing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisCleaveRight_Named",
+          "ability": "PrayingMantisCleaveRight_Named",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 80.0,
+            "type": "ChoppingSlashing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisPounce_Named",
+          "ability": "PrayingMantisPounce_Named",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 95.0,
+            "type": "ChoppingSlashingUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 50.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "PrayingMantisSlash_Named",
+          "ability": "PrayingMantisSlash_Named",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 80.0,
+            "type": "ChoppingSlashingUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 200.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisPowerattack_Named",
+          "ability": "PrayingMantisPowerattack_Named",
+          "resolved": false,
+          "cooldown": 15.0,
+          "reason": "attack_row_missing"
+        },
+        {
+          "id": "PrayingMantisAttackCombo_Named",
+          "ability": "PrayingMantisAttackCombo_Named",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 80.0,
+            "type": "ChoppingSlashing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisStealthJumpAttack_Named",
+          "ability": "PrayingMantisStealthJumpAttack_Named",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 5,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "ChoppingSlashingUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 50.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": true,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 1,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": [
+          "one_or_more_attacks_unresolved"
+        ]
+      },
+      "parentBestiaryId": "GreenMantisORC",
+      "parentAphidexId": "g2_orc_praying_mantis_nymph",
+      "technicalCharacterRow": "GreenMantis_ORC_Named",
+      "variantKey": "GreenMantis_ORC_Named",
+      "nameEn": "Lieutenant Blade",
+      "nameEsMX": "Teniente Filo",
+      "nameBindingConfidence": "high",
+      "topLevelAphidexId": null,
+      "killFavoriteStateOwner": "g2_orc_praying_mantis_nymph",
+      "policy": "CHILD_VARIANT_NO_TOP_LEVEL_ID"
+    },
+    {
+      "id": "g2_wave_green_mantis_orc_wave",
+      "characterRow": "GreenMantis_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1400.0,
+        "stun": {
+          "max": 90.0,
+          "duration": 3.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [
+        "Eyes"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistStabbingMedium"
+        },
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistSpicyMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownFreshTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "PrayingMantisCleaveLeft",
+          "ability": "PrayingMantisCleaveLeft",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "ChoppingSlashing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisCleaveRight",
+          "ability": "PrayingMantisCleaveRight",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "ChoppingSlashing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisPounce",
+          "ability": "PrayingMantisPounce",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 90.0,
+            "type": "ChoppingSlashingUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 50.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "PrayingMantisSlash",
+          "ability": "PrayingMantisSlash",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "ChoppingSlashingUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 200.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisPowerattack",
+          "ability": "PrayingMantisPowerattack",
+          "resolved": false,
+          "cooldown": 15.0,
+          "reason": "attack_row_missing"
+        },
+        {
+          "id": "PrayingMantisAttackCombo",
+          "ability": "PrayingMantisAttackCombo",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "ChoppingSlashing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisStealthJumpAttack",
+          "ability": "PrayingMantisStealthJumpAttack",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 5,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 80.0,
+            "type": "ChoppingSlashingUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 50.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": true,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlockOffensive",
+          "ability": "BlockOffensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 7,
+        "unresolvedAttacks": 1,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": [
+          "one_or_more_attacks_unresolved"
+        ]
+      },
+      "variantKey": "g2_wave_green_mantis_orc_wave",
+      "nameEn": "O.R.C. Praying Mantis Nymph Raid/Wave",
+      "nameEsMX": "Mantis religiosa C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Нимфа богомола Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "GreenMantis_ORC_Wave",
+      "characterRow": "GreenMantis_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1400.0,
+        "stun": {
+          "max": 90.0,
+          "duration": 3.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [
+        "Eyes"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistStabbingMedium"
+        },
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistSpicyMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownFreshTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "PrayingMantisCleaveLeft",
+          "ability": "PrayingMantisCleaveLeft",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "ChoppingSlashing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisCleaveRight",
+          "ability": "PrayingMantisCleaveRight",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "ChoppingSlashing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisPounce",
+          "ability": "PrayingMantisPounce",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 90.0,
+            "type": "ChoppingSlashingUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 50.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "PrayingMantisSlash",
+          "ability": "PrayingMantisSlash",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "ChoppingSlashingUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 200.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisPowerattack",
+          "ability": "PrayingMantisPowerattack",
+          "resolved": false,
+          "cooldown": 15.0,
+          "reason": "attack_row_missing"
+        },
+        {
+          "id": "PrayingMantisAttackCombo",
+          "ability": "PrayingMantisAttackCombo",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "ChoppingSlashing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PrayingMantisStealthJumpAttack",
+          "ability": "PrayingMantisStealthJumpAttack",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 5,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 80.0,
+            "type": "ChoppingSlashingUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 50.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": true,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlockOffensive",
+          "ability": "BlockOffensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 7,
+        "unresolvedAttacks": 1,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": [
+          "one_or_more_attacks_unresolved"
+        ]
+      },
+      "nameEsMX": "Mantis religiosa C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_f0586596191d3855",
+      "targetType": "creature",
+      "targetId": "g2_orc_praying_mantis_nymph",
+      "technicalId": "GreenMantisORC",
+      "map": "surface",
+      "world": {
+        "x": -197540.7,
+        "y": 12494.401,
+        "z": 5496.3413
+      },
+      "u": 0.2395900029265437,
+      "v": 0.3396756329538747,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_707d589812a250f2",
+      "targetType": "creature",
+      "targetId": "g2_orc_praying_mantis_nymph",
+      "technicalId": "GreenMantisORC",
+      "map": "surface",
+      "world": {
+        "x": -133172.16,
+        "y": -39420.68,
+        "z": 502.1548
+      },
+      "u": 0.4807130090722856,
+      "v": 0.11553766624504598,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Mantis Low Life Crit",
+      "countLabel": "1",
+      "chancePct": 2,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 6,
+      "notes": "6 independent rolls"
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Claw",
+      "countLabel": "1",
+      "chancePct": 40,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Claw",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

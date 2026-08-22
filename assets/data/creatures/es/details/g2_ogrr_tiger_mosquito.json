@@ -1,1 +1,368 @@
-{"id":"g2_ogrr_tiger_mosquito","speciesKey":"ogrr_tiger_mosquito","collectionGroup":"ogrr","game":"g2","danger":"unknown","order":257,"defaultGold":false,"photo":"assets/global/Proximamente.png","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"Mosquito tigre I.R.G.O.","tier":3,"cardTier":3,"technicalId":"MosquitoTigerOGRE","bestiaryId":"MosquitoTigerOGRE","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_MosquitoTiger_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_MosquitoTiger_OGRR_G.png","weaknesses":["slashing"],"resistances":["generic"],"elementalWeaknesses":[],"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25}],"weakPoints":[],"attacks":[{"name":"Mordida","technicalId":"MosquitoTigerBite_Augusta","tags":["stabbing"],"notes":"Daño del ataque: 75"},{"name":"Combo estocada","technicalId":"MosquitoTigerComboStab_Augusta","tags":["stabbing"],"notes":"Daño del ataque: 75"},{"name":"Picada Bomb","technicalId":"MosquitoTigerDiveBomb_Augusta","tags":["stabbing"],"notes":"Daño del ataque: 120"},{"name":"Mosquito Tiger Dodge","technicalId":"MosquitoTigerDodge","tags":[],"notes":"Daño del ataque: 0"},{"name":"Combo","technicalId":"MosquitoTiger_2Hit_SideCombo","tags":["stabbing"],"notes":"Daño del ataque: 75"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":1600,"rating":4},"combatStats":{"health":1600},"description":"Un mosquito tigre con modificaciones genéticas que es un 50 % más tigre y un 100 % más mosquito que antes. Es resistente a la esencia de su mutación.","localizationStatus":"ru_automatic_pending_review","infusions":[{"id":"fresh","name":"Fresco","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Chill."],"recommendations":"No te quedes en daño Fresh como respuesta principal.","combatTips":["Cambia a daño picante o a un arma física consistente si tu build depende de Fresh."]},{"id":"sour","name":"Ácido","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Tang."],"recommendations":"Evita quedarte en armas ácidas como respuesta principal.","combatTips":["Picante es la respuesta elemental más limpia; si no, usa un arma física que no dependa de Tang."]},{"id":"spicy","name":"Picante","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Sizzle."],"recommendations":"No dependas de daño picante cuando esta infusión está activa.","combatTips":["Fresh es la respuesta elemental más limpia si la criatura te deja sostener el ritmo."]}],"listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_tiger_mosquito",
+  "speciesKey": "ogrr_tiger_mosquito",
+  "collectionGroup": "ogrr",
+  "game": "g2",
+  "danger": "imposible",
+  "order": 257,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/OGRR_Tiger_Mosquito.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Mosquito Beak Tiger",
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Mosquito Blood Sack",
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ],
+  "abilities": [],
+  "behavior": "Aparece en medio del lago rodeado de otros mosquitos y conserva el patrón agresivo del mosquito tigre: estocadas, combos y picados rápidos mientras se reposiciona alrededor del jugador.",
+  "interactionWithPlayer": "Es una versión mucho más resistente y peligrosa del mosquito tigre. Sus ataques pueden activar efectos según la infusión que tenga, por lo que recibir golpes repetidos puede empeorar rápidamente el combate.",
+  "interactionWithCreatures": "Suele aparecer acompañado de otros mosquitos, que pueden intervenir constantemente durante la pelea y dificultar concentrarse en el I.R.G.O.",
+  "strategy": "Antes de enfrentarlo, elimina primero a los mosquitos que lo rodean para dejar el combate lo más limpio posible. Si necesitas cubrirte, puedes esconderte debajo de los nenúfares para evitar algunos de sus ataques. Lo ideal es combatirlo uno contra uno y conocer previamente el patrón del mosquito tigre practicando contra sus versiones normales. Revisa siempre qué infusión tiene activa y evita usar ese mismo elemento contra él. Sobre todo, intenta no recibir daño para impedir que sus efectos lleguen a activarse o acumularse. Los bloqueos perfectos siguen siendo una excelente oportunidad para noquearlo y castigarlo mientras está vulnerable.",
+  "groupId": null,
+  "name": "Mosquito tigre I.R.G.O.",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "MosquitoTigerOGRE",
+  "bestiaryId": "MosquitoTigerOGRE",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_MosquitoTiger_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_MosquitoTiger_OGRR_G.png",
+  "weaknesses": [
+    "slashing"
+  ],
+  "resistances": [
+    "generic"
+  ],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Mordida",
+      "technicalId": "MosquitoTigerBite_Augusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 75",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 0.0,
+      "range": 250.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo estocada",
+      "technicalId": "MosquitoTigerComboStab_Augusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 75",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Picada Bomb",
+      "technicalId": "MosquitoTigerDiveBomb_Augusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 120",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mosquito Tiger Dodge",
+      "technicalId": "MosquitoTigerDodge",
+      "tags": [],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "movement_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo",
+      "technicalId": "MosquitoTiger_2Hit_SideCombo",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 75",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 15.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 4,
+    "value": 1600
+  },
+  "combatStats": {
+    "health": 1600,
+    "stunThreshold": 30,
+    "stunCooldownSeconds": 20
+  },
+  "description": "Un mosquito tigre con modificaciones genéticas que es un 50 % más tigre y un 100 % más mosquito que antes. Es resistente a la esencia de su mutación.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresco",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Chill."
+      ],
+      "recommendations": "No te quedes en daño Fresh como respuesta principal.",
+      "combatTips": [
+        "Cambia a daño picante o a un arma física consistente si tu build depende de Fresh."
+      ]
+    },
+    {
+      "id": "sour",
+      "name": "Ácido",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Tang."
+      ],
+      "recommendations": "Evita quedarte en armas ácidas como respuesta principal.",
+      "combatTips": [
+        "Picante es la respuesta elemental más limpia; si no, usa un arma física que no dependa de Tang."
+      ]
+    },
+    {
+      "id": "spicy",
+      "name": "Picante",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Sizzle."
+      ],
+      "recommendations": "No dependas de daño picante cuando esta infusión está activa.",
+      "combatTips": [
+        "Fresh es la respuesta elemental más limpia si la criatura te deja sostener el ritmo."
+      ]
+    }
+  ],
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_00b4b4227f0c10bf",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_tiger_mosquito",
+      "technicalId": "MosquitoTigerOGRE",
+      "map": "surface",
+      "world": {
+        "x": -44640.81,
+        "y": 10626.318,
+        "z": -3543.9412
+      },
+      "u": 0.8123493216271583,
+      "v": 0.3316103787503162,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "Los OGRR pueden liberarse desde el laboratorio del espantapájaros. Después de hacerlo pueden aparecer en distintas zonas, principalmente durante la noche.",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/OGRR_Tiger_Mosquito.webp",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Mosquito Beak Tiger",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Mosquito Beak Tiger",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mosquito Blood Sack",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mosquito Blood Sack",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

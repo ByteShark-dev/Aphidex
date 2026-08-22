@@ -1,1 +1,493 @@
-{"id":"g2_chop_r","speciesKey":"chop_r","collectionGroup":"angry","game":"g2","danger":"unknown","order":277,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_chop_r.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Мы готовим эту информацию для вас.","interactionWithPlayer":"Мы готовим эту информацию для вас.","interactionWithCreatures":"Мы готовим эту информацию для вас.","strategy":"Мы готовим эту информацию для вас.","groupId":null,"name":"CHOP.R","tier":2,"cardTier":2,"technicalId":"SphereBotChopR","bestiaryId":"SphereBotChopR","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Tayzt.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Tayzt_G.png","weaknesses":["salty","sour"],"resistances":["stabbing","slashing"],"elementalWeaknesses":[{"type":"salty","bonusPct":15},{"type":"sour","bonusPct":30}],"damageWeaknesses":[],"resistancesV2":[{"type":"stabbing","bonusPct":50},{"type":"slashing","bonusPct":25}],"weakPoints":[{"part":"vent","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Melee","technicalId":"TayzT_Melee_Augusta","tags":["mining"],"notes":"Урон атаки: 40"},{"name":"Combo","technicalId":"TayzT_Combo_Augusta","tags":["mining"],"notes":"Урон атаки: 35"},{"name":"Tayz T Pincher","technicalId":"TayzT_Pincher_Augusta","tags":["mining"],"notes":"Урон атаки: 40"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":600,"rating":2},"combatStats":{"health":600},"description":"Мы готовим эту информацию для вас.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_chop_r",
+  "speciesKey": "chop_r",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "alta",
+  "order": 277,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_chop_r.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Cooked Pond Jockey Meat",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cooked Tadpole Meat",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Sphere Bot Diode",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Sphere Bot Parts",
+      "minCount": 1,
+      "maxCount": 6
+    }
+  ],
+  "abilities": [],
+  "behavior": "Он в основном патрулирует лаборатории и другие зоны с роботами. Атакует только с близкой дистанции ударами и сериями и часто находится рядом с C.K.U. или другими CHOP.R.",
+  "interactionWithPlayer": "Поодиночке он не слишком опасен, но несколько роботов, атакующих одновременно, способны поддерживать сильное давление и затруднять движение в тесных пространствах.",
+  "interactionWithCreatures": "Он часто образует небольшие группы с C.K.U. и другими CHOP.R, поэтому атака одного робота может быстро втянуть в бой несколько ближайших.",
+  "strategy": "Лучший элемент против него — Sour, затем Salty. Особенно избегайте Stabbing-оружия из-за заметного сопротивления и при возможности цельтесь в вентиляцию. Если рядом несколько роботов, быстро уменьшайте их количество, не позволяя всей группе одновременно давить на вас.",
+  "groupId": null,
+  "name": "CHOP.R",
+  "tier": 2,
+  "cardTier": 2,
+  "technicalId": "SphereBotChopR",
+  "bestiaryId": "SphereBotChopR",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Tayzt.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Tayzt_G.png",
+  "weaknesses": [
+    "salty",
+    "sour"
+  ],
+  "resistances": [
+    "stabbing",
+    "slashing"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "salty",
+      "bonusPct": 15
+    },
+    {
+      "type": "sour",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "vent",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Melee",
+      "technicalId": "TayzT_Melee_Augusta",
+      "tags": [
+        "smashing"
+      ],
+      "notes": "Урон атаки: 40",
+      "damageTypes": [
+        "smashing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 0.0,
+      "range": 200.0,
+      "stun": 10,
+      "statusEffects": [
+        "Infection Damage Debuff Short",
+        "Infection Speed Debuff Short"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Infection Damage Debuff Short",
+          "value": null,
+          "durationSeconds": null
+        },
+        {
+          "id": "Infection Speed Debuff Short",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo",
+      "technicalId": "TayzT_Combo_Augusta",
+      "tags": [
+        "smashing"
+      ],
+      "notes": "Урон атаки: 35",
+      "damageTypes": [
+        "smashing"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 0.0,
+      "range": 200.0,
+      "stun": 10,
+      "statusEffects": [
+        "Infection Damage Debuff Short",
+        "Infection Speed Debuff Short"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Infection Damage Debuff Short",
+          "value": null,
+          "durationSeconds": null
+        },
+        {
+          "id": "Infection Speed Debuff Short",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Tayz T Pincher",
+      "technicalId": "TayzT_Pincher_Augusta",
+      "tags": [
+        "smashing"
+      ],
+      "notes": "Урон атаки: 40",
+      "damageTypes": [
+        "smashing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 0.0,
+      "range": 200.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 2,
+    "value": 600
+  },
+  "combatStats": {
+    "health": 600,
+    "stunThreshold": 60,
+    "stunCooldownSeconds": 2
+  },
+  "description": "Мы готовим эту информацию для вас.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_ae7ad147f65fa573",
+      "targetType": "creature",
+      "targetId": "g2_chop_r",
+      "technicalId": "SphereBotChopR",
+      "map": "abyss",
+      "world": {
+        "x": 221375.42,
+        "y": 223714.62,
+        "z": -13700.0
+      },
+      "u": 0.6842795336227047,
+      "v": 0.6996483657142857,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_c64699e86b039626",
+      "targetType": "creature",
+      "targetId": "g2_chop_r",
+      "technicalId": "SphereBotChopR",
+      "map": "abyss",
+      "world": {
+        "x": 221450.0,
+        "y": 233300.0,
+        "z": -13700.0
+      },
+      "u": 0.6852994991652754,
+      "v": 0.7833620469083156,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_c3d0ad3a3f240836",
+      "targetType": "creature",
+      "targetId": "g2_chop_r",
+      "technicalId": "SphereBotChopR",
+      "map": "abyss",
+      "world": {
+        "x": 182977.52,
+        "y": 172613.12,
+        "z": -9723.65
+      },
+      "u": 0.15914498136894809,
+      "v": 0.2533546684861407,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_b88a790df0f4c689",
+      "targetType": "creature",
+      "targetId": "g2_chop_r",
+      "technicalId": "SphereBotChopR",
+      "map": "abyss",
+      "world": {
+        "x": 201353.69,
+        "y": 182181.98,
+        "z": -14527.024
+      },
+      "u": 0.41045981382303837,
+      "v": 0.33692407266524527,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_e09b6666d35e2be0",
+      "targetType": "creature",
+      "targetId": "g2_chop_r",
+      "technicalId": "SphereBotChopR",
+      "map": "abyss",
+      "world": {
+        "x": 220867.0,
+        "y": 229109.0,
+        "z": -13700.0
+      },
+      "u": 0.6773263171953255,
+      "v": 0.7467600511727078,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_de02771a6eb30afc",
+      "targetType": "creature",
+      "targetId": "g2_chop_r",
+      "technicalId": "SphereBotChopR",
+      "map": "abyss",
+      "world": {
+        "x": 222961.17,
+        "y": 228561.86,
+        "z": -13700.0
+      },
+      "u": 0.7059664518196996,
+      "v": 0.7419816173987205,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_c464c9b66306b85f",
+      "targetType": "creature",
+      "targetId": "g2_chop_r",
+      "technicalId": "SphereBotChopR",
+      "map": "abyss",
+      "world": {
+        "x": 220661.67,
+        "y": 228314.11,
+        "z": -12496.0
+      },
+      "u": 0.6745181980634393,
+      "v": 0.7398178988486139,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_d93b8bf861fac66d",
+      "targetType": "creature",
+      "targetId": "g2_chop_r",
+      "technicalId": "SphereBotChopR",
+      "map": "abyss",
+      "world": {
+        "x": 187823.6,
+        "y": 200730.03,
+        "z": -11000.027
+      },
+      "u": 0.2254205863105176,
+      "v": 0.49891301253731335,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_7c6ce613ba622093",
+      "targetType": "creature",
+      "targetId": "g2_chop_r",
+      "technicalId": "SphereBotChopR",
+      "map": "abyss",
+      "world": {
+        "x": 206965.0,
+        "y": 173535.0,
+        "z": -11990.0
+      },
+      "u": 0.48720080133555926,
+      "v": 0.26140588486140726,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_2bcb66d8e7794dec",
+      "targetType": "creature",
+      "targetId": "g2_chop_r",
+      "technicalId": "SphereBotChopR",
+      "map": "abyss",
+      "world": {
+        "x": 221134.0,
+        "y": 225243.45,
+        "z": -13700.0
+      },
+      "u": 0.6809778430717863,
+      "v": 0.713000365031983,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    }
+  ],
+  "environmentHazards": [
+    "required_equipment"
+  ],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Заблокировано прогрессом сюжета",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Cooked Pond Jockey Meat",
+      "countLabel": "1",
+      "chancePct": 20,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cooked Tadpole Meat",
+      "countLabel": "1",
+      "chancePct": 20,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Sphere Bot Diode",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Sphere Bot Diode",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Sphere Bot Parts",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Sphere Bot Parts",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Sphere Bot Parts",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

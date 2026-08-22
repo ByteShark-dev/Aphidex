@@ -1,1 +1,890 @@
-{"id":"g2_orc_pincher_earwig","speciesKey":"orc_pincher_earwig","collectionGroup":"orc","name":"O.R.C. Уховёртка-клешня","game":"g2","tier":3,"danger":"muy_alta","isBoss":false,"order":228,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigM_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigM_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Pincher_Earwig.webp","weaknesses":["sour"],"resistances":["spicy"],"temperament":"aggressive","description":"O.R.C. Уховёртка-клешня — это контролируемая версия ближней боевой уховёртки. Она сохраняет быстрые серии ударов и тяжёлый захват клешнёй, но теперь намного лучше наказывает за любую оставленную ошибку.","behavior":"Она патрулирует короткими циклами и почти всегда старается держать игрока прямо перед клешнями. Если ей дают пространство, она связывает серии заметно плотнее обычной версии.","interactionWithPlayer":"Она атакует сразу после обнаружения и куда сильнее наказывает фронтальный бой. Её быстрые серии делают даже маленькую ошибку серией подряд идущих попаданий.","interactionWithCreatures":"В волнах O.R.C. она часто занимает переднюю линию или короткий фланг, где клешни вынуждают отступать, пока другие юниты перекрывают выход.","strategy":"Кислота остаётся её главным наказанием. Держите ритм блоков, не стойте перед ней дольше нужного и наказывайте короткие откаты после заряженного захвата.","environments":["Пещера Bale Scale","Волны O.R.C. в саду","Теплица","Теплица MIX.R","Окрестности теплицы"],"loot":[{"section":"loot","item":"Earwig Head","minCount":0,"maxCount":1},{"section":"loot","item":"Earwig Part","minCount":2,"maxCount":4},{"section":"loot","item":"Earwig Pincer","minCount":0,"maxCount":2},{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"rare","item":"Earwig Part","minCount":0,"maxCount":4},{"section":"rare","item":"Earwig Pincer","minCount":0,"maxCount":1},{"section":"rare","item":"Pincer Pincher","minCount":0,"maxCount":1}],"combatStats":{"attackDamageSummary":"Комбо из 3 ударов: 68.75. Комбо из 5 ударов: 68.75. Заряженный захват клешнёй: 112.5.","health":1100},"abilities":[{"name":"Комбо из 3 ударов","description":"Серия из трёх ударов с минимальными паузами между ними.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 5 ударов","description":"Длинная серия, поддерживающая давление, если не сбить ритм.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Заряженный захват клешнёй","description":"Тяжёлый захват клешнёй, наказывающий за слабую защиту.","blockable":true,"breaksGuard":true,"staggers":true}],"elementalWeaknesses":[{"type":"sour","bonusPct":15}],"resistancesV2":[{"type":"spicy","bonusPct":25}],"healthDisplay":"normal","health":{"value":1100,"rating":4},"groupId":null,"cardTier":3,"technicalId":"EarwigORC","bestiaryId":"EarwigORC","bossCardStyle":null,"isKillable":true,"damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Combo 3 X","technicalId":"EarwigCombo3X","tags":["chopping"],"notes":"Урон атаки: 55"},{"name":"Combo 5 X","technicalId":"EarwigCombo5X","tags":["chopping"],"notes":"Урон атаки: 55"},{"name":"Power Attack","technicalId":"EarwigPowerAttack","tags":["chopping"],"notes":"Урон атаки: 90"},{"name":"Block Offensive","technicalId":"BlockOffensive","tags":["maine"],"notes":"Урон атаки: 0"}],"encounterVariants":[{"id":"Earwig_Augusta_ORC_A_Named","characterRow":"Earwig_Augusta_ORC_A_Named","role":"named_or_miniboss","variantMarkers":["named"],"sharedBestiaryEntry":true,"stats":{"health":1500.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":25}},"weakpoints":[],"resistances":[{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Sour"],"percent":15.0,"sourceId":"DamageResistDownSourTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"EarwigCombo3X","ability":"EarwigCombo3X","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":55.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":65.0,"type":"Chopping","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"}],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"EarwigCombo5X","ability":"EarwigCombo5X","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":55.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":65.0,"type":"Chopping","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"}],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"EarwigPowerAttack","ability":"EarwigPowerAttack","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":90.0,"type":"Chopping","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BlockOffensive","ability":"BlockOffensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"parentBestiaryId":"EarwigORC","parentAphidexId":"g2_orc_pincher_earwig","technicalCharacterRow":"Earwig_Augusta_ORC_A_Named","variantKey":"Earwig_Augusta_ORC_A_Named","nameEn":"Colonel Creeper","nameEsMX":"Coronel rastrero","nameBindingConfidence":"high","topLevelAphidexId":null,"killFavoriteStateOwner":"g2_orc_pincher_earwig","policy":"CHILD_VARIANT_NO_TOP_LEVEL_ID"},{"id":"g2_wave_earwig_augusta_orc_wave","characterRow":"Earwig_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1100.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":25}},"weakpoints":[],"resistances":[{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Sour"],"percent":15.0,"sourceId":"DamageResistDownSourTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"EarwigCombo3X","ability":"EarwigCombo3X","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":55.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":65.0,"type":"Chopping","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"}],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"EarwigCombo5X","ability":"EarwigCombo5X","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":55.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":65.0,"type":"Chopping","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"}],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"EarwigPowerAttack","ability":"EarwigPowerAttack","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":90.0,"type":"Chopping","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BlockOffensive","ability":"BlockOffensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_earwig_augusta_orc_wave","nameEn":"O.R.C. Pincher Earwig Raid/Wave","nameEsMX":"Tijerilla mordedora C.R.O.  (Oleada)","nameRu":"O.R.C. Уховёртка-клешня Рейд/волна"}],"contextVariants":[{"id":"Earwig_Augusta_ORC_Wave","characterRow":"Earwig_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1100.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":25}},"weakpoints":[],"resistances":[{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Sour"],"percent":15.0,"sourceId":"DamageResistDownSourTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"EarwigCombo3X","ability":"EarwigCombo3X","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":55.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":65.0,"type":"Chopping","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"}],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"EarwigCombo5X","ability":"EarwigCombo5X","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":55.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":65.0,"type":"Chopping","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"}],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"EarwigPowerAttack","ability":"EarwigPowerAttack","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":90.0,"type":"Chopping","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BlockOffensive","ability":"BlockOffensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Tijerilla mordedora C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_pincher_earwig",
+  "speciesKey": "orc_pincher_earwig",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Уховёртка-клешня",
+  "game": "g2",
+  "tier": 3,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 228,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigM_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigM_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Pincher_Earwig.webp",
+  "weaknesses": [
+    "sour"
+  ],
+  "resistances": [
+    "spicy"
+  ],
+  "temperament": "aggressive",
+  "description": "O.R.C. Уховёртка-клешня — это контролируемая версия ближней боевой уховёртки. Она сохраняет быстрые серии ударов и тяжёлый захват клешнёй, но теперь намного лучше наказывает за любую оставленную ошибку.",
+  "behavior": "Она патрулирует короткими циклами и почти всегда старается держать игрока прямо перед клешнями. Если ей дают пространство, она связывает серии заметно плотнее обычной версии.",
+  "interactionWithPlayer": "Она атакует сразу после обнаружения и куда сильнее наказывает фронтальный бой. Её быстрые серии делают даже маленькую ошибку серией подряд идущих попаданий.",
+  "interactionWithCreatures": "В волнах O.R.C. она часто занимает переднюю линию или короткий фланг, где клешни вынуждают отступать, пока другие юниты перекрывают выход.",
+  "strategy": "Кислота остаётся её главным наказанием. Держите ритм блоков, не стойте перед ней дольше нужного и наказывайте короткие откаты после заряженного захвата.",
+  "environments": [
+    "Пещера Bale Scale",
+    "Волны O.R.C. в саду",
+    "Теплица",
+    "Теплица MIX.R",
+    "Окрестности теплицы"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Earwig",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Earwig Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Earwig Part",
+      "minCount": 2,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "Earwig Pincer",
+      "minCount": 0,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1100,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Комбо из 3 ударов",
+      "description": "Серия из трёх ударов с минимальными паузами между ними.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Комбо из 5 ударов",
+      "description": "Длинная серия, поддерживающая давление, если не сбить ритм.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Заряженный захват клешнёй",
+      "description": "Тяжёлый захват клешнёй, наказывающий за слабую защиту.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "sour",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    }
+  ],
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 4,
+    "value": 1100
+  },
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "EarwigORC",
+  "bestiaryId": "EarwigORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Combo 3 X",
+      "technicalId": "EarwigCombo3X",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 55",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 5 X",
+      "technicalId": "EarwigCombo5X",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 55",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power Attack",
+      "technicalId": "EarwigPowerAttack",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 90",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 90.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 12,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Offensive",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "Earwig_Augusta_ORC_A_Named",
+      "characterRow": "Earwig_Augusta_ORC_A_Named",
+      "role": "named_or_miniboss",
+      "variantMarkers": [
+        "named"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1500.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 25
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Sour"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSourTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "EarwigCombo3X",
+          "ability": "EarwigCombo3X",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 65.0,
+              "type": "Chopping",
+              "hitStun": 12,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "EarwigCombo5X",
+          "ability": "EarwigCombo5X",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 65.0,
+              "type": "Chopping",
+              "hitStun": 12,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "EarwigPowerAttack",
+          "ability": "EarwigPowerAttack",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 90.0,
+            "type": "Chopping",
+            "hitStun": 12,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BlockOffensive",
+          "ability": "BlockOffensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "parentBestiaryId": "EarwigORC",
+      "parentAphidexId": "g2_orc_pincher_earwig",
+      "technicalCharacterRow": "Earwig_Augusta_ORC_A_Named",
+      "variantKey": "Earwig_Augusta_ORC_A_Named",
+      "nameEn": "Colonel Creeper",
+      "nameEsMX": "Coronel rastrero",
+      "nameBindingConfidence": "high",
+      "topLevelAphidexId": null,
+      "killFavoriteStateOwner": "g2_orc_pincher_earwig",
+      "policy": "CHILD_VARIANT_NO_TOP_LEVEL_ID"
+    },
+    {
+      "id": "g2_wave_earwig_augusta_orc_wave",
+      "characterRow": "Earwig_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1100.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 25
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Sour"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSourTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "EarwigCombo3X",
+          "ability": "EarwigCombo3X",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 65.0,
+              "type": "Chopping",
+              "hitStun": 12,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "EarwigCombo5X",
+          "ability": "EarwigCombo5X",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 65.0,
+              "type": "Chopping",
+              "hitStun": 12,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "EarwigPowerAttack",
+          "ability": "EarwigPowerAttack",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 90.0,
+            "type": "Chopping",
+            "hitStun": 12,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BlockOffensive",
+          "ability": "BlockOffensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_earwig_augusta_orc_wave",
+      "nameEn": "O.R.C. Pincher Earwig Raid/Wave",
+      "nameEsMX": "Tijerilla mordedora C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Уховёртка-клешня Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Earwig_Augusta_ORC_Wave",
+      "characterRow": "Earwig_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1100.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 25
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Sour"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSourTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "EarwigCombo3X",
+          "ability": "EarwigCombo3X",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 65.0,
+              "type": "Chopping",
+              "hitStun": 12,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "EarwigCombo5X",
+          "ability": "EarwigCombo5X",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 65.0,
+              "type": "Chopping",
+              "hitStun": 12,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "EarwigPowerAttack",
+          "ability": "EarwigPowerAttack",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 90.0,
+            "type": "Chopping",
+            "hitStun": 12,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BlockOffensive",
+          "ability": "BlockOffensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Tijerilla mordedora C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_3f9e8b01ce36b6ae",
+      "targetType": "creature",
+      "targetId": "g2_orc_pincher_earwig",
+      "technicalId": "EarwigORC",
+      "map": "surface",
+      "world": {
+        "x": -164996.75,
+        "y": -37349.938,
+        "z": 13213.135
+      },
+      "u": 0.36149885864793674,
+      "v": 0.12447787961885487,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_47731791de7473fa",
+      "targetType": "creature",
+      "targetId": "g2_orc_pincher_earwig",
+      "technicalId": "EarwigORC",
+      "map": "surface",
+      "world": {
+        "x": -187950.17,
+        "y": -49364.652,
+        "z": 2767.2778
+      },
+      "u": 0.27551589815627736,
+      "v": 0.07260560060713381,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_377a9d3f2c2f81ac",
+      "targetType": "creature",
+      "targetId": "g2_orc_pincher_earwig",
+      "technicalId": "EarwigORC",
+      "map": "surface",
+      "world": {
+        "x": -209568.53,
+        "y": -34774.06,
+        "z": -64.90252
+      },
+      "u": 0.19453404038630376,
+      "v": 0.13559896517412934,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_178c06c128bc5e2d",
+      "targetType": "creature",
+      "targetId": "g2_orc_pincher_earwig",
+      "technicalId": "EarwigORC",
+      "map": "surface",
+      "world": {
+        "x": -210493.47,
+        "y": -34618.12,
+        "z": -86.64968
+      },
+      "u": 0.19106923734269826,
+      "v": 0.13627221991736238,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a46a611e13e94bee",
+      "targetType": "creature",
+      "targetId": "g2_orc_pincher_earwig",
+      "technicalId": "EarwigORC",
+      "map": "surface",
+      "world": {
+        "x": -79963.695,
+        "y": 18101.906,
+        "z": -2859.4785
+      },
+      "u": 0.6800306420836991,
+      "v": 0.36388545300615566,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Earwig",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Earwig Part",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Part",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Pincer",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Pincer",
+      "countLabel": "1",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Pincer",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 40,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

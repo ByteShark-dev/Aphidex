@@ -1,6 +1,8 @@
 import 'dart:convert';
 
 import 'creature_card_support.dart';
+import 'catalog_entry_kind.dart';
+import 'location.dart';
 
 enum BossCardStyle {
   red,
@@ -50,6 +52,10 @@ class Enemy implements CreatureCardCarrier {
   final String? defaultCardVariantRaw;
   final String photo;
   final String listIconAsset;
+  final String mapMarkerAsset;
+  final String customAsset;
+  final CatalogEntryKind entryKind;
+  final bool hideHealth;
 
   final bool isKillable;
   final HealthInfo? health;
@@ -57,6 +63,7 @@ class Enemy implements CreatureCardCarrier {
   final List<BonusInfo> elementalWeaknesses;
   final List<BonusInfo> damageWeaknesses;
   final List<BonusInfo> resistancesV2;
+  final List<String> immunities;
   final List<CreatureInfusion> infusions;
   final WeakPointInfo? weakPoint;
   final List<WeakPointInfo> weakPoints;
@@ -81,6 +88,13 @@ class Enemy implements CreatureCardCarrier {
   final List<AbilityInfo> abilities;
   final List<BossPhaseInfo> bossPhases;
   final List<EncounterVariant> encounterVariants;
+  final List<LocationRecord> locations;
+  final List<String> environmentHazards;
+  final List<String> eventAppearances;
+  final String appearanceType;
+  final LocalizedText? appearanceCondition;
+  final String? appearanceSourceId;
+  final String? appearanceSourceTargetId;
 
   const Enemy({
     required this.order,
@@ -112,12 +126,17 @@ class Enemy implements CreatureCardCarrier {
     this.defaultCardVariantRaw,
     required this.photo,
     this.listIconAsset = '',
+    this.mapMarkerAsset = '',
+    this.customAsset = '',
+    this.entryKind = CatalogEntryKind.creature,
+    this.hideHealth = false,
     this.isKillable = true,
     this.health,
     this.healthDisplay = HealthDisplayMode.hidden,
     this.elementalWeaknesses = const [],
     this.damageWeaknesses = const [],
     this.resistancesV2 = const [],
+    this.immunities = const [],
     this.infusions = const [],
     this.weakPoint,
     this.weakPoints = const [],
@@ -142,6 +161,13 @@ class Enemy implements CreatureCardCarrier {
     this.abilities = const [],
     this.bossPhases = const [],
     this.encounterVariants = const [],
+    this.locations = const [],
+    this.environmentHazards = const [],
+    this.eventAppearances = const [],
+    this.appearanceType = 'unknown',
+    this.appearanceCondition,
+    this.appearanceSourceId,
+    this.appearanceSourceTargetId,
   });
 
   factory Enemy.fromJson(Map<String, dynamic> json) {
@@ -323,6 +349,10 @@ class Enemy implements CreatureCardCarrier {
       defaultCardVariantRaw: json['defaultCardVariant'] as String?,
       photo: json['photo'] as String,
       listIconAsset: (json['listIconAsset'] as String? ?? '').trim(),
+      mapMarkerAsset: (json['mapMarkerAsset'] as String? ?? '').trim(),
+      customAsset: (json['customAsset'] as String? ?? '').trim(),
+      entryKind: CatalogEntryKind.fromJson(json['entityType']),
+      hideHealth: json['hideHealth'] == true,
       isKillable: isKillable,
       weaknesses: List<String>.from(json['weaknesses'] ?? const []),
       resistances: List<String>.from(json['resistances'] ?? const []),
@@ -335,6 +365,7 @@ class Enemy implements CreatureCardCarrier {
       elementalWeaknesses: bonusList('elementalWeaknesses'),
       damageWeaknesses: bonusList('damageWeaknesses'),
       resistancesV2: bonusList('resistancesV2'),
+      immunities: List<String>.from(json['immunities'] ?? const []),
       infusions: infusionList('infusions'),
       weakPoint: (json['weakPoint'] is Map)
           ? WeakPointInfo.fromJson(
@@ -373,6 +404,20 @@ class Enemy implements CreatureCardCarrier {
       abilities: abilityList('abilities'),
       bossPhases: phaseList('bossPhases'),
       encounterVariants: encounterVariantList(),
+      locations: (json['locations'] as List? ?? const [])
+          .whereType<Map>()
+          .map((item) => LocationRecord.fromJson(item.cast<String, dynamic>()))
+          .toList(growable: false),
+      environmentHazards: List<String>.from(
+        json['environmentHazards'] ?? const [],
+      ),
+      eventAppearances: List<String>.from(json['eventAppearances'] ?? const []),
+      appearanceType: json['appearanceType']?.toString() ?? 'unknown',
+      appearanceCondition: LocalizedText.maybeFromJson(
+        json['appearanceCondition'],
+      ),
+      appearanceSourceId: json['appearanceSourceId']?.toString(),
+      appearanceSourceTargetId: json['appearanceSourceTargetId']?.toString(),
     );
   }
 
@@ -684,13 +729,84 @@ class CreatureInfusion {
 class WeakPointInfo {
   final String part;
   final String susceptibleDamage;
+  final List<String> susceptibleDamageTypes;
+  final List<String> weaponFamilies;
+  final String provenance;
 
-  const WeakPointInfo({required this.part, required this.susceptibleDamage});
+  const WeakPointInfo({
+    required this.part,
+    required this.susceptibleDamage,
+    this.susceptibleDamageTypes = const [],
+    this.weaponFamilies = const [],
+    this.provenance = 'unknown',
+  });
 
   factory WeakPointInfo.fromJson(Map<String, dynamic> json) => WeakPointInfo(
     part: (json['part'] ?? '') as String,
-    susceptibleDamage: (json['susceptibleDamage'] ?? 'any') as String,
+    susceptibleDamage: (json['susceptibleDamage'] ?? 'unknown') as String,
+    susceptibleDamageTypes: List<String>.from(
+      json['susceptibleDamageTypes'] ?? const [],
+    ),
+    weaponFamilies: List<String>.from(json['weaponFamilies'] ?? const []),
+    provenance: json['provenance']?.toString() ?? 'unknown',
   );
+}
+
+enum ActionType {
+  defensiveAction,
+  movementAction,
+  summonAction,
+  aoe,
+  projectile,
+  ranged,
+  melee;
+
+  static ActionType fromJson(Object? value) => switch (value?.toString()) {
+    'defensive_action' => defensiveAction,
+    'movement_action' => movementAction,
+    'summon_action' => summonAction,
+    'aoe' => aoe,
+    'projectile' => projectile,
+    'ranged' => ranged,
+    _ => melee,
+  };
+
+  bool get isOffensive => switch (this) {
+    defensiveAction || movementAction || summonAction => false,
+    _ => true,
+  };
+}
+
+enum AttackBlockability {
+  blockable,
+  unblockable,
+  unknown;
+
+  static AttackBlockability fromJson(Object? value) =>
+      switch (value?.toString()) {
+        'blockable' => blockable,
+        'unblockable' => unblockable,
+        _ => unknown,
+      };
+}
+
+class AttackStatusEffect {
+  final String id;
+  final double? value;
+  final double? durationSeconds;
+
+  const AttackStatusEffect({
+    required this.id,
+    this.value,
+    this.durationSeconds,
+  });
+
+  factory AttackStatusEffect.fromJson(Map<String, dynamic> json) =>
+      AttackStatusEffect(
+        id: json['id']?.toString() ?? '',
+        value: (json['value'] as num?)?.toDouble(),
+        durationSeconds: (json['durationSeconds'] as num?)?.toDouble(),
+      );
 }
 
 class EnemyAttack {
@@ -699,6 +815,18 @@ class EnemyAttack {
   final LocalizedText? tell;
   final LocalizedText? howToAvoid;
   final LocalizedText? notes;
+  final double? damage;
+  final double? cooldownSeconds;
+  final double? range;
+  final double? stun;
+  final List<String> statusEffects;
+  final List<AttackStatusEffect> statusEffectDetails;
+  final List<String> damageTypes;
+  final ActionType actionType;
+  final AttackBlockability blockability;
+  final bool ranged;
+  final bool projectile;
+  final String? hitResolutionType;
 
   const EnemyAttack({
     required this.name,
@@ -706,6 +834,18 @@ class EnemyAttack {
     this.tell,
     this.howToAvoid,
     this.notes,
+    this.damage,
+    this.cooldownSeconds,
+    this.range,
+    this.stun,
+    this.statusEffects = const [],
+    this.statusEffectDetails = const [],
+    this.damageTypes = const [],
+    this.actionType = ActionType.melee,
+    this.blockability = AttackBlockability.unknown,
+    this.ranged = false,
+    this.projectile = false,
+    this.hitResolutionType,
   });
 
   factory EnemyAttack.fromJson(Map<String, dynamic> json) => EnemyAttack(
@@ -714,6 +854,21 @@ class EnemyAttack {
     tell: LocalizedText.maybeFromJson(json['tell']),
     howToAvoid: LocalizedText.maybeFromJson(json['howToAvoid']),
     notes: LocalizedText.maybeFromJson(json['notes']),
+    damage: (json['damage'] as num?)?.toDouble(),
+    cooldownSeconds: (json['cooldownSeconds'] as num?)?.toDouble(),
+    range: (json['range'] as num?)?.toDouble(),
+    stun: (json['stun'] as num?)?.toDouble(),
+    statusEffects: List<String>.from(json['statusEffects'] ?? const []),
+    statusEffectDetails: (json['statusEffectDetails'] as List? ?? const [])
+        .whereType<Map>()
+        .map((row) => AttackStatusEffect.fromJson(row.cast<String, dynamic>()))
+        .toList(growable: false),
+    damageTypes: List<String>.from(json['damageTypes'] ?? const []),
+    actionType: ActionType.fromJson(json['actionType']),
+    blockability: AttackBlockability.fromJson(json['blockability']),
+    ranged: json['ranged'] == true,
+    projectile: json['projectile'] == true,
+    hitResolutionType: json['hitResolutionType']?.toString(),
   );
 }
 
@@ -816,6 +971,7 @@ class EncounterVariant {
                       es: 'Daño del ataque: $amountText',
                       ru: 'Урон атаки: $amountText',
                     ),
+              damage: amount?.toDouble(),
             );
           })
           .toList(growable: false);
@@ -975,12 +1131,14 @@ class AdvancedLootEntry {
   final LocalizedText item;
   final String countLabel;
   final int chancePct;
+  final int rollCount;
   final LocalizedText? notes;
 
   const AdvancedLootEntry({
     required this.item,
     required this.countLabel,
     required this.chancePct,
+    this.rollCount = 1,
     this.notes,
   });
 
@@ -989,6 +1147,7 @@ class AdvancedLootEntry {
         item: LocalizedText.fromJson(json['item'], legacyLanguage: 'en'),
         countLabel: (json['countLabel'] ?? '1') as String,
         chancePct: (json['chancePct'] ?? 0) as int,
+        rollCount: (json['rollCount'] as num?)?.round() ?? 1,
         notes: LocalizedText.maybeFromJson(json['notes']),
       );
 }

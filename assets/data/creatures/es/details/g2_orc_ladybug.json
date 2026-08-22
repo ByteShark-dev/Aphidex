@@ -1,1 +1,862 @@
-{"id":"g2_orc_ladybug","speciesKey":"orc_ladybug","collectionGroup":"orc","name":"Catarinita C.R.O.","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":248,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Ladybug_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Ladybug_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Ladybug.webp","weaknesses":["busting","fresh"],"resistances":["stabbing","spicy"],"temperament":"aggressive","health":{"value":1600,"rating":4},"description":"Este gigante fue modificado por tecnología C.R.O. Al morir, puede soltar un receptor C.R.O. y partes de criatura.","behavior":"Patrulla rutas cortas alrededor de puntos MIX.R y zonas de oleadas O.R.C. Se mueve con calma hasta que tiene una línea clara para embestir, momento en el que acelera de golpe.","interactionWithPlayer":"Te embiste en cuanto te detecta y ya no ofrece la ventana pasiva de una mariquita normal. Si te quedas delante de ella demasiado tiempo, la carga y el golpe lateral te van a fijar en seco.","interactionWithCreatures":"Funciona como unidad pesada dentro de patrullas O.R.C. y desplaza a criaturas menores que entren en su ruta.","strategy":"Fresh y daño contundente siguen siendo su punto débil principal. Esquiva la carga hacia un lado, castiga el final de la animación y no te quedes detrás demasiado tiempo porque la coz trasera pega muy duro.","environments":["Cancha de croquet MIX.R","Oleadas O.R.C. del picnic","Zona de la mesa de pícnic"],"loot":[{"section":"loot","item":"Ladybug Head","minCount":0,"maxCount":1},{"section":"loot","item":"Ladybug Part","minCount":1,"maxCount":5},{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"rare","item":"Ladybug Head","minCount":0,"maxCount":1},{"section":"rare","item":"Ladybug Part","minCount":0,"maxCount":3}],"combatStats":{"health":1600,"attackDamageSummary":"Mordisco: 94. Carga en carrera: 150. Golpe lateral: 125. Coz trasera: 150."},"abilities":[{"name":"Mordisco","description":"Una mordida directa y pesada para rematar cuando ya está encima de ti.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Carga en carrera","description":"Se alinea contigo y avanza de frente con toda su masa para derribarte.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Golpe lateral","description":"Sacude el costado para cazar a quien intenta rodearla durante la carga.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Sacudida trasera","description":"Lanza una coz fuerte hacia atrás para castigar a quien permanezca demasiado cerca de su espalda.","blockable":true,"breaksGuard":false,"staggers":true}],"elementalWeaknesses":[{"type":"fresh","bonusPct":30}],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"stabbing","bonusPct":25},{"type":"spicy","bonusPct":25}],"weakPoint":{"part":"legs","susceptibleDamage":"slashing","susceptibleDamageTypes":["slashing"]},"groupId":null,"cardTier":2,"technicalId":"LadybugORC","bestiaryId":"LadybugORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[{"part":"legs","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Carga","technicalId":"LadybugCharge","tags":["chopping"],"notes":"Daño del ataque: 120"},{"name":"Embestida","technicalId":"LadybugBuck","tags":["generic"],"notes":"Daño del ataque: 120"},{"name":"Cuerpo a cuerpo","technicalId":"LadybugMelee","tags":[],"notes":"Sin identificar"},{"name":"Mordida R","technicalId":"LadyBugBite_R","tags":["chopping"],"notes":"Daño del ataque: 75"},{"name":"Mordida L","technicalId":"LadyBugBite_L","tags":["chopping"],"notes":"Daño del ataque: 75"},{"name":"Potente ataque","technicalId":"LadybugPowerAttack","tags":[],"notes":"Sin identificar"},{"name":"Rugido","technicalId":"LadybugRoar","tags":["generic"],"notes":"Daño del ataque: 0"},{"name":"Bloqueo defensivo","technicalId":"BlockDefensive","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[{"id":"g2_wave_ladybug_augusta_orc_wave","characterRow":"Ladybug_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1600.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":40}},"weakpoints":["Legs"],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"},{"damageTypes":["Fresh"],"percent":30.0,"sourceId":"DamageResistDownFreshMedium"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"LadybugCharge","ability":"LadybugCharge","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":120.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"LadybugBuck","ability":"LadybugBuck","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Self","damage":{"amount":120.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":500.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"LadybugMelee","ability":"LadybugMelee","resolved":false,"cooldown":10.0,"reason":"attack_row_missing"},{"id":"LadyBugBite_R","ability":"LadybugBite1","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LadyBugBite_L","ability":"LadybugBite2","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LadybugPowerAttack","ability":"LadybugPowerAttack","resolved":false,"cooldown":10.0,"reason":"attack_row_missing"},{"id":"LadybugRoar","ability":"LadybugRoar","resolved":true,"cooldown":120.0,"priority":0,"targetType":"Enemy","damage":{"amount":0.0,"type":"General","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["LadybugRoarAttackUp","LadybugRoarMoveSpeedUp","FullHeal"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Self"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":2,"hiddenContextualModifiers":[],"extractionWarnings":["one_or_more_attacks_unresolved"]},"variantKey":"g2_wave_ladybug_augusta_orc_wave","nameEn":"O.R.C. Ladybug Raid/Wave","nameEsMX":"Catarinita C.R.O.  (Oleada)","nameRu":"O.R.C. Божья коровка Рейд/волна"}],"contextVariants":[{"id":"Ladybug_Augusta_ORC_Wave","characterRow":"Ladybug_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1600.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":40}},"weakpoints":["Legs"],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"},{"damageTypes":["Fresh"],"percent":30.0,"sourceId":"DamageResistDownFreshMedium"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"LadybugCharge","ability":"LadybugCharge","resolved":true,"cooldown":10.0,"priority":1,"targetType":"Enemy","damage":{"amount":120.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"LadybugBuck","ability":"LadybugBuck","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Self","damage":{"amount":120.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":500.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"LadybugMelee","ability":"LadybugMelee","resolved":false,"cooldown":10.0,"reason":"attack_row_missing"},{"id":"LadyBugBite_R","ability":"LadybugBite1","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LadyBugBite_L","ability":"LadybugBite2","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":75.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LadybugPowerAttack","ability":"LadybugPowerAttack","resolved":false,"cooldown":10.0,"reason":"attack_row_missing"},{"id":"LadybugRoar","ability":"LadybugRoar","resolved":true,"cooldown":120.0,"priority":0,"targetType":"Enemy","damage":{"amount":0.0,"type":"General","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["LadybugRoarAttackUp","LadybugRoarMoveSpeedUp","FullHeal"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Self"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":2,"hiddenContextualModifiers":[],"extractionWarnings":["one_or_more_attacks_unresolved"]},"nameEsMX":"Catarinita C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_ladybug",
+  "speciesKey": "orc_ladybug",
+  "collectionGroup": "orc",
+  "name": "Catarinita C.R.O.",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 248,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Ladybug_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Ladybug_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Ladybug.webp",
+  "weaknesses": [
+    "busting",
+    "fresh"
+  ],
+  "resistances": [
+    "stabbing",
+    "spicy"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 4,
+    "value": 1600
+  },
+  "description": "Este gigante fue modificado por tecnología C.R.O. Al morir, puede soltar un receptor C.R.O. y partes de criatura.",
+  "behavior": "Patrulla rutas cortas alrededor de puntos MIX.R y zonas de oleadas O.R.C. Se mueve con calma hasta que tiene una línea clara para embestir, momento en el que acelera de golpe.",
+  "interactionWithPlayer": "Te embiste en cuanto te detecta y ya no ofrece la ventana pasiva de una mariquita normal. Si te quedas delante de ella demasiado tiempo, la carga y el golpe lateral te van a fijar en seco.",
+  "interactionWithCreatures": "Funciona como unidad pesada dentro de patrullas O.R.C. y desplaza a criaturas menores que entren en su ruta.",
+  "strategy": "Fresh y daño contundente siguen siendo su punto débil principal. Esquiva la carga hacia un lado, castiga el final de la animación y no te quedes detrás demasiado tiempo porque la coz trasera pega muy duro.",
+  "environments": [
+    "Cancha de croquet MIX.R",
+    "Oleadas O.R.C. del picnic",
+    "Zona de la mesa de pícnic"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Ladybug Head",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Ladybug Shell",
+      "minCount": 1,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1600,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "Una mordida directa y pesada para rematar cuando ya está encima de ti.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Carga en carrera",
+      "description": "Se alinea contigo y avanza de frente con toda su masa para derribarte.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Golpe lateral",
+      "description": "Sacude el costado para cazar a quien intenta rodearla durante la carga.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Sacudida trasera",
+      "description": "Lanza una coz fuerte hacia atrás para castigar a quien permanezca demasiado cerca de su espalda.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoint": {
+    "part": "legs",
+    "susceptibleDamage": "slashing",
+    "susceptibleDamageTypes": [
+      "slashing"
+    ]
+  },
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "LadybugORC",
+  "bestiaryId": "LadybugORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [
+    {
+      "part": "legs",
+      "susceptibleDamage": "slashing",
+      "susceptibleDamageTypes": [
+        "slashing"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Carga",
+      "technicalId": "LadybugCharge",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 120",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Embestida",
+      "technicalId": "LadybugBuck",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 120",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Cuerpo a cuerpo",
+      "technicalId": "LadybugMelee",
+      "tags": [],
+      "notes": "Sin identificar"
+    },
+    {
+      "name": "Mordida R",
+      "technicalId": "LadyBugBite_R",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 75",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 3.0,
+      "range": 240.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mordida L",
+      "technicalId": "LadyBugBite_L",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 75",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 3.0,
+      "range": 240.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente ataque",
+      "technicalId": "LadybugPowerAttack",
+      "tags": [],
+      "notes": "Sin identificar"
+    },
+    {
+      "name": "Rugido",
+      "technicalId": "LadybugRoar",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 120.0,
+      "range": 250.0,
+      "stun": 0,
+      "statusEffects": [
+        "Ladybug Roar Attack Up",
+        "Ladybug Roar Move Speed Up",
+        "Full Heal"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Ladybug Roar Attack Up",
+          "value": null,
+          "durationSeconds": null
+        },
+        {
+          "id": "Ladybug Roar Move Speed Up",
+          "value": null,
+          "durationSeconds": null
+        },
+        {
+          "id": "Full Heal",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bloqueo defensivo",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_ladybug_augusta_orc_wave",
+      "characterRow": "Ladybug_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1600.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [
+        "Legs"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownFreshMedium"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "LadybugCharge",
+          "ability": "LadybugCharge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 120.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "LadybugBuck",
+          "ability": "LadybugBuck",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Self",
+          "damage": {
+            "amount": 120.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 500.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "LadybugMelee",
+          "ability": "LadybugMelee",
+          "resolved": false,
+          "cooldown": 10.0,
+          "reason": "attack_row_missing"
+        },
+        {
+          "id": "LadyBugBite_R",
+          "ability": "LadybugBite1",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LadyBugBite_L",
+          "ability": "LadybugBite2",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LadybugPowerAttack",
+          "ability": "LadybugPowerAttack",
+          "resolved": false,
+          "cooldown": 10.0,
+          "reason": "attack_row_missing"
+        },
+        {
+          "id": "LadybugRoar",
+          "ability": "LadybugRoar",
+          "resolved": true,
+          "cooldown": 120.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "General",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "LadybugRoarAttackUp",
+              "LadybugRoarMoveSpeedUp",
+              "FullHeal"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Self"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 2,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": [
+          "one_or_more_attacks_unresolved"
+        ]
+      },
+      "variantKey": "g2_wave_ladybug_augusta_orc_wave",
+      "nameEn": "O.R.C. Ladybug Raid/Wave",
+      "nameEsMX": "Catarinita C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Божья коровка Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Ladybug_Augusta_ORC_Wave",
+      "characterRow": "Ladybug_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1600.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [
+        "Legs"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownFreshMedium"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "LadybugCharge",
+          "ability": "LadybugCharge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 120.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "LadybugBuck",
+          "ability": "LadybugBuck",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Self",
+          "damage": {
+            "amount": 120.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 500.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "LadybugMelee",
+          "ability": "LadybugMelee",
+          "resolved": false,
+          "cooldown": 10.0,
+          "reason": "attack_row_missing"
+        },
+        {
+          "id": "LadyBugBite_R",
+          "ability": "LadybugBite1",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LadyBugBite_L",
+          "ability": "LadybugBite2",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 75.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LadybugPowerAttack",
+          "ability": "LadybugPowerAttack",
+          "resolved": false,
+          "cooldown": 10.0,
+          "reason": "attack_row_missing"
+        },
+        {
+          "id": "LadybugRoar",
+          "ability": "LadybugRoar",
+          "resolved": true,
+          "cooldown": 120.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "General",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "LadybugRoarAttackUp",
+              "LadybugRoarMoveSpeedUp",
+              "FullHeal"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Self"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 2,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": [
+          "one_or_more_attacks_unresolved"
+        ]
+      },
+      "nameEsMX": "Catarinita C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_a84a36f8b62fc61c",
+      "targetType": "creature",
+      "targetId": "g2_orc_ladybug",
+      "technicalId": "LadybugORC",
+      "map": "surface",
+      "world": {
+        "x": -196562.55,
+        "y": 117015.9,
+        "z": 12135.53
+      },
+      "u": 0.2432541293532339,
+      "v": 0.7909363420187199,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7dccfd758503009c",
+      "targetType": "creature",
+      "targetId": "g2_orc_ladybug",
+      "technicalId": "LadybugORC",
+      "map": "surface",
+      "world": {
+        "x": -196102.52,
+        "y": 115273.87,
+        "z": 12318.231
+      },
+      "u": 0.2449773906935909,
+      "v": 0.7834153085420356,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/ORC_Ladybug.webp",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Ladybug Head",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ladybug Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ladybug Shell",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Ladybug Shell",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ladybug Shell",
+      "countLabel": "4",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

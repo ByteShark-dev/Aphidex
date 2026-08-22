@@ -1,1 +1,912 @@
-{"id":"g2_orc_cockroach_nymph","speciesKey":"orc_cockroach_nymph","collectionGroup":"orc","name":"O.R.C. Нимфа таракана","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":219,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Nymph_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Nymph_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Cockroach_Nymph.webp","weaknesses":[],"resistances":["gas","fresh","spicy","venom"],"temperament":"aggressive","health":{"value":400,"rating":2},"description":"O.R.C. Нимфа таракана — милитаризованная юная форма тараканьей нимфы. Она сохраняет скорость стаи, но теперь действует куда агрессивнее, закрывая пространство для взрослых вариантов.","behavior":"Она передвигается небольшими группами по маршрутам O.R.C. и мусорным зонам, редко задерживаясь надолго. В бою старается постоянно висеть на игроке, изматывая его и создавая окна для крупных тараканов.","interactionWithPlayer":"Она атакует сразу после обнаружения и лучше всего работает в группе. Одна нимфа терпима, но несколько сразу заставляют тратить время на защиту от мелких целей.","interactionWithCreatures":"Обычно она сопровождает взрослых тараканов O.R.C. и королеву, работая мобильной завесой и дешёвым источником давления.","strategy":"Сами по себе они несложные, поэтому лучший ответ — убирать их быстро, пока они не испортили читаемость основного боя. Если игнорировать их слишком долго, они начнут красть время на лечение и пространство.","environments":["Пещера со сладким тайником","Волны O.R.C. в саду","Теплица MIX.R","Огненная яма","Сетевой центр"],"loot":[{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"loot","item":"Roach Chunk","minCount":1,"maxCount":3},{"section":"rare","item":"Roach Chunk","minCount":0,"maxCount":3}],"combatStats":{"health":400,"attackDamageSummary":"Укус: 15."},"abilities":[{"name":"Укус","description":"Быстрый ройный укус, задача которого — донимать игрока и накапливать давление.","blockable":true,"breaksGuard":false,"staggers":false}],"resistancesV2":[{"type":"gas","bonusPct":90},{"type":"fresh","bonusPct":25},{"type":"spicy","bonusPct":25},{"type":"venom","bonusPct":25}],"groupId":null,"cardTier":2,"technicalId":"Cockroach_NymphORC","bestiaryId":"Cockroach_NymphORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Bite","technicalId":"CockroachNymphBite","tags":["stabbing"],"notes":"Урон атаки: 15"},{"name":"Bite Left","technicalId":"CockroachNymphBiteLeft","tags":["stabbing"],"notes":"Урон атаки: 15"},{"name":"Bite Right","technicalId":"CockroachNymphBiteRight","tags":["stabbing"],"notes":"Урон атаки: 15"}],"encounterVariants":[{"id":"g2_wave_cockroach_nymph_orc_wave","characterRow":"Cockroach_Nymph_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":400.0,"stun":{"max":70.0,"duration":5.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":[],"resistances":[{"damageTypes":["Gas"],"percent":90.0,"sourceId":"DamageResistGasLarge"},{"damageTypes":["Fresh"],"percent":25.0,"sourceId":"DamageResistFreshTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"},{"damageTypes":["Venom"],"percent":25.0,"sourceId":"DamageResistVenomSmall"}],"weaknesses":[],"specialCombatModifiers":[],"immunities":[{"damageTypes":["Gas"],"sourceId":"GasImmunity"}],"attacks":[{"id":"CockroachNymphBite","ability":"CockroachNymphBite","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":15.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachNymphBiteLeft","ability":"CockroachNymphBiteLeft","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":15.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachNymphBiteRight","ability":"CockroachNymphBiteRight","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":15.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":3,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_cockroach_nymph_orc_wave","nameEn":"O.R.C. Cockroach Nymph Raid/Wave","nameEsMX":"Ninfa de cucaracha C.R.O.  (Oleada)","nameRu":"O.R.C. Нимфа таракана Рейд/волна"}],"contextVariants":[{"id":"Cockroach_Nymph_ORC_Wave","characterRow":"Cockroach_Nymph_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":400.0,"stun":{"max":70.0,"duration":5.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":[],"resistances":[{"damageTypes":["Gas"],"percent":90.0,"sourceId":"DamageResistGasLarge"},{"damageTypes":["Fresh"],"percent":25.0,"sourceId":"DamageResistFreshTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"},{"damageTypes":["Venom"],"percent":25.0,"sourceId":"DamageResistVenomSmall"}],"weaknesses":[],"specialCombatModifiers":[],"immunities":[{"damageTypes":["Gas"],"sourceId":"GasImmunity"}],"attacks":[{"id":"CockroachNymphBite","ability":"CockroachNymphBite","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":15.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachNymphBiteLeft","ability":"CockroachNymphBiteLeft","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":15.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachNymphBiteRight","ability":"CockroachNymphBiteRight","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":15.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":3,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Ninfa de cucaracha C.R.O.  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_cockroach_nymph",
+  "speciesKey": "orc_cockroach_nymph",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Нимфа таракана",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 219,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Nymph_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Nymph_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Cockroach_Nymph.webp",
+  "weaknesses": [],
+  "resistances": [
+    "gas",
+    "fresh",
+    "spicy",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 2,
+    "value": 400
+  },
+  "description": "O.R.C. Нимфа таракана — милитаризованная юная форма тараканьей нимфы. Она сохраняет скорость стаи, но теперь действует куда агрессивнее, закрывая пространство для взрослых вариантов.",
+  "behavior": "Она передвигается небольшими группами по маршрутам O.R.C. и мусорным зонам, редко задерживаясь надолго. В бою старается постоянно висеть на игроке, изматывая его и создавая окна для крупных тараканов.",
+  "interactionWithPlayer": "Она атакует сразу после обнаружения и лучше всего работает в группе. Одна нимфа терпима, но несколько сразу заставляют тратить время на защиту от мелких целей.",
+  "interactionWithCreatures": "Обычно она сопровождает взрослых тараканов O.R.C. и королеву, работая мобильной завесой и дешёвым источником давления.",
+  "strategy": "Сами по себе они несложные, поэтому лучший ответ — убирать их быстро, пока они не испортили читаемость основного боя. Если игнорировать их слишком долго, они начнут красть время на лечение и пространство.",
+  "environments": [
+    "Пещера со сладким тайником",
+    "Волны O.R.C. в саду",
+    "Теплица MIX.R",
+    "Огненная яма",
+    "Сетевой центр"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Cockroach Part",
+      "minCount": 1,
+      "maxCount": 6
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 400,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Быстрый ройный укус, задача которого — донимать игрока и накапливать давление.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "gas",
+      "bonusPct": 90
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Cockroach_NymphORC",
+  "bestiaryId": "Cockroach_NymphORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "technicalId": "CockroachNymphBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 15",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 15.0,
+      "cooldownSeconds": 2.0,
+      "range": 400.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Left",
+      "technicalId": "CockroachNymphBiteLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 15",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 15.0,
+      "cooldownSeconds": 2.0,
+      "range": 400.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Right",
+      "technicalId": "CockroachNymphBiteRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 15",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 15.0,
+      "cooldownSeconds": 2.0,
+      "range": 400.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_cockroach_nymph_orc_wave",
+      "characterRow": "Cockroach_Nymph_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 400.0,
+        "stun": {
+          "max": 70.0,
+          "duration": 5.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 90.0,
+          "sourceId": "DamageResistGasLarge"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistVenomSmall"
+        }
+      ],
+      "weaknesses": [],
+      "specialCombatModifiers": [],
+      "immunities": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "sourceId": "GasImmunity"
+        }
+      ],
+      "attacks": [
+        {
+          "id": "CockroachNymphBite",
+          "ability": "CockroachNymphBite",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 15.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachNymphBiteLeft",
+          "ability": "CockroachNymphBiteLeft",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 15.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachNymphBiteRight",
+          "ability": "CockroachNymphBiteRight",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 15.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 3,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_cockroach_nymph_orc_wave",
+      "nameEn": "O.R.C. Cockroach Nymph Raid/Wave",
+      "nameEsMX": "Ninfa de cucaracha C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Нимфа таракана Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Cockroach_Nymph_ORC_Wave",
+      "characterRow": "Cockroach_Nymph_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 400.0,
+        "stun": {
+          "max": 70.0,
+          "duration": 5.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 90.0,
+          "sourceId": "DamageResistGasLarge"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistVenomSmall"
+        }
+      ],
+      "weaknesses": [],
+      "specialCombatModifiers": [],
+      "immunities": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "sourceId": "GasImmunity"
+        }
+      ],
+      "attacks": [
+        {
+          "id": "CockroachNymphBite",
+          "ability": "CockroachNymphBite",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 15.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachNymphBiteLeft",
+          "ability": "CockroachNymphBiteLeft",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 15.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachNymphBiteRight",
+          "ability": "CockroachNymphBiteRight",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 15.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 3,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Ninfa de cucaracha C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_f76c56e8a05e508c",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -173990.0,
+        "y": 18705.0,
+        "z": 19335.0
+      },
+      "u": 0.32781035996488145,
+      "v": 0.36648924867189475,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_070d320c701145b6",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -178433.02,
+        "y": 14338.596,
+        "z": 19499.0
+      },
+      "u": 0.31116691366695937,
+      "v": 0.34763775320010115,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a816774669bce767",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -178332.61,
+        "y": 12997.965,
+        "z": 19500.0
+      },
+      "u": 0.3115430471173544,
+      "v": 0.34184971818871746,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8408516c4e5a16a6",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -172575.89,
+        "y": 13800.335,
+        "z": 19500.0
+      },
+      "u": 0.33310758208955216,
+      "v": 0.3453138672738005,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1b5410139a0f222f",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -172481.83,
+        "y": 16523.453,
+        "z": 19500.0
+      },
+      "u": 0.3334599285923325,
+      "v": 0.35707064622649465,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1436b1b78a60d415",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -176241.77,
+        "y": 14761.65,
+        "z": 19105.0
+      },
+      "u": 0.3193752835820896,
+      "v": 0.3494642448773083,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ee07d66025743e8e",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -175241.77,
+        "y": 14761.65,
+        "z": 19105.0
+      },
+      "u": 0.3231212595844308,
+      "v": 0.3494642448773083,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_542d75487cd36707",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -230217.6,
+        "y": 98081.11,
+        "z": 738.46985
+      },
+      "u": 0.11718311969563942,
+      "v": 0.7091873540770721,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3caa75bfc0708253",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -229710.6,
+        "y": 101922.164,
+        "z": 2705.2827
+      },
+      "u": 0.11908232952882643,
+      "v": 0.7257707055232312,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_222632450bde06ca",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -230180.22,
+        "y": 101571.84,
+        "z": 1401.8735
+      },
+      "u": 0.11732314427860696,
+      "v": 0.7242582180622311,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_45c8b08c38c16339",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -229148.06,
+        "y": 100773.64,
+        "z": -127.83003
+      },
+      "u": 0.12118959086918352,
+      "v": 0.7208120725187621,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4d342cd0a91c9c36",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -230408.4,
+        "y": 103666.59,
+        "z": 3655.6086
+      },
+      "u": 0.11646838747439277,
+      "v": 0.7333020834809005,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0190d3811dfd0944",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -228133.3,
+        "y": 98523.945,
+        "z": 943.7533
+      },
+      "u": 0.12499085747731933,
+      "v": 0.7110992481659499,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_df887a4813b21e28",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -228315.75,
+        "y": 100872.46,
+        "z": 1584.1124
+      },
+      "u": 0.12430740415569212,
+      "v": 0.7212387175984485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_267dd4f2e7decaf3",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -233789.92,
+        "y": 99250.26,
+        "z": 629.4387
+      },
+      "u": 0.10380129470295575,
+      "v": 0.7142350376928915,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3664378582f09d7d",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -57320.52,
+        "y": -32807.895,
+        "z": -4613.1943
+      },
+      "u": 0.7648514322505121,
+      "v": 0.14408767821907417,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ca28caafa6a27c1",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -56840.52,
+        "y": -44577.895,
+        "z": -4473.1943
+      },
+      "u": 0.766649500731636,
+      "v": 0.09327192646934822,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_019d8fb313e02a25",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -52540.52,
+        "y": -38217.895,
+        "z": -4093.1946
+      },
+      "u": 0.7827571975417033,
+      "v": 0.1207305654776963,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_715d96c4060beda4",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -218263.08,
+        "y": 87862.04,
+        "z": 444.30667
+      },
+      "u": 0.16196446473514783,
+      "v": 0.6650675814149589,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7666c825ec174dd",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -214482.08,
+        "y": 89409.04,
+        "z": 322.30667
+      },
+      "u": 0.17612800000000003,
+      "v": 0.6717465931360148,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_698c0f3bdb617c60",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -212435.08,
+        "y": 85946.04,
+        "z": 466.30667
+      },
+      "u": 0.18379601287679256,
+      "v": 0.6567954505438907,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_baf58001d33d02a5",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -232039.92,
+        "y": 97550.26,
+        "z": 428.78616
+      },
+      "u": 0.11035675270705292,
+      "v": 0.7068954643730501,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4a4a2e6acdf921be",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -224122.97,
+        "y": 116465.914,
+        "z": 52.174305
+      },
+      "u": 0.1400134574187884,
+      "v": 0.7885618346234927,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8706f910a9e95f33",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -223428.36,
+        "y": 116476.6,
+        "z": 52.174305
+      },
+      "u": 0.1426154498097747,
+      "v": 0.788607970317902,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fbdd8aa04e324c71",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "map": "surface",
+      "world": {
+        "x": -219403.36,
+        "y": 112153.695,
+        "z": -689.29974
+      },
+      "u": 0.15769300321919816,
+      "v": 0.769944277257779,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Заблокировано прогрессом сюжета",
+  "immunities": [
+    "gas"
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Cockroach Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

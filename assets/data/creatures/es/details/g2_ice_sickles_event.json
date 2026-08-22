@@ -1,1 +1,87 @@
-{"id":"g2_ice_sickles_event","speciesKey":"g2_ice_sickles_event","collectionGroup":"other","name":"Defensa de las Ice Sickles","game":"g2","tier":3,"danger":"imposible_superior","isBoss":false,"order":289,"defaultGold":false,"cardNormal":"","cardGold":"","photo":"assets/g2/creatures/photos/Ice_Sickles_Defense.webp","weaknesses":[],"resistances":[],"temperament":"other","description":"Ficha de referencia para la defensa de las Ice Sickles dentro del camión de helados. Funciona como una defensa especial de arma: proteges las hoces congeladas hasta completar el evento y quedarte tanto con el arma como con la receta.","behavior":"El evento gira alrededor de scorpions del bioma helado: Northern Scorplings primero, Northern Scorpion Jrs después y Northern Scorpions en la parte más dura. Todas las oleadas quieren romper las hoces, no darte una pelea justa.","interactionWithPlayer":"Empieza al interactuar con las hoces congeladas. Si te alejas demasiado tiempo o dejas que reciban demasiado daño, el evento se corta y toca volver a prepararlo.","interactionWithCreatures":"Las oleadas presionan por número y por escalado. Los scorplings intentan colarse, los juniors castigan descuidos y los scorpions adultos convierten el tramo final en una verdadera defensa de élite.","strategy":"Se parece a la defensa de la Spicy Coaltana, pero en frío y con escorpiones. Mantenerte cerca del objetivo, cortar a los pequeños antes de que toquen las hoces y reservar recursos para el cierre con adultos suele decidir el éxito.","environments":["Camión de helados caído"],"loot":[{"section":"passive","item":"Entrega las Ice Sickles y su receta","minCount":0,"maxCount":0},{"section":"passive","item":"Puede contribuir al desbloqueo o mejora de Perro Guardián","minCount":0,"maxCount":0}],"combatStats":{"attackDamageSummary":"La presión real viene de oleadas de escorpiones y de no dejar que las hoces reciban demasiado daño."},"abilities":[{"name":"Defensa de arma","description":"No estás defendiendo un aparato MIX.R, sino el arma misma. Si las hoces caen, el intento termina.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Oleadas de escorpiones","description":"Las oleadas avanzan desde scorplings hasta northern scorpions adultos, así que el evento endurece de verdad conforme se acerca al final.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Receta y arma gratis","description":"A diferencia de la Spicy Coaltana de G1, aquí el éxito entrega tanto la receta como las hoces directamente.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Progreso de Perro Guardián","description":"Participar y completar este tipo de defensa ayuda a desbloquear o mejorar la mutación Perro Guardián.","blockable":false,"breaksGuard":false,"staggers":false}],"specialTraits":["Es el equivalente más claro en G2 a una defensa especial de arma.","No es una criatura única: resume el evento necesario para obtener las Ice Sickles.","Aphidex la trata también como entrada útil para seguir el progreso de Perro Guardián."],"listIconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","hasCreatureCard":false,"hasGoldCreatureCard":false,"hasSelectableCardVariants":false,"defaultCardVariant":null}
+{
+  "id": "g2_ice_sickles_event",
+  "speciesKey": "g2_ice_sickles_event",
+  "collectionGroup": "other",
+  "name": "Defensa de las Ice Sickles",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible_superior",
+  "isBoss": false,
+  "order": 289,
+  "defaultGold": false,
+  "cardNormal": "",
+  "cardGold": "",
+  "photo": "assets/g2/creatures/photos/Ice_Sickles_Defense.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "other",
+  "description": "Ficha de referencia para la defensa de las Ice Sickles dentro del camión de helados. Funciona como una defensa especial de arma: proteges las hoces congeladas hasta completar el evento y quedarte tanto con el arma como con la receta.",
+  "behavior": "El evento gira alrededor de scorpions del bioma helado: Northern Scorplings primero, Northern Scorpion Jrs después y Northern Scorpions en la parte más dura. Todas las oleadas quieren romper las hoces, no darte una pelea justa.",
+  "interactionWithPlayer": "Empieza al interactuar con las hoces congeladas. Si te alejas demasiado tiempo o dejas que reciban demasiado daño, el evento se corta y toca volver a prepararlo.",
+  "interactionWithCreatures": "Las oleadas presionan por número y por escalado. Los scorplings intentan colarse, los juniors castigan descuidos y los scorpions adultos convierten el tramo final en una verdadera defensa de élite.",
+  "strategy": "Se parece a la defensa de la Spicy Coaltana, pero en frío y con escorpiones. Mantenerte cerca del objetivo, cortar a los pequeños antes de que toquen las hoces y reservar recursos para el cierre con adultos suele decidir el éxito.",
+  "environments": [
+    "Camión de helados caído"
+  ],
+  "loot": [
+    {
+      "section": "passive",
+      "item": "Entrega las Ice Sickles y su receta",
+      "minCount": 0,
+      "maxCount": 0
+    },
+    {
+      "section": "passive",
+      "item": "Puede contribuir al desbloqueo o mejora de Perro Guardián",
+      "minCount": 0,
+      "maxCount": 0
+    }
+  ],
+  "combatStats": {
+    "attackDamageSummary": "La presión real viene de oleadas de escorpiones y de no dejar que las hoces reciban demasiado daño."
+  },
+  "abilities": [
+    {
+      "name": "Defensa de arma",
+      "description": "No estás defendiendo un aparato MIX.R, sino el arma misma. Si las hoces caen, el intento termina.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Oleadas de escorpiones",
+      "description": "Las oleadas avanzan desde scorplings hasta northern scorpions adultos, así que el evento endurece de verdad conforme se acerca al final.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Receta y arma gratis",
+      "description": "A diferencia de la Spicy Coaltana de G1, aquí el éxito entrega tanto la receta como las hoces directamente.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Progreso de Perro Guardián",
+      "description": "Participar y completar este tipo de defensa ayuda a desbloquear o mejorar la mutación Perro Guardián.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "specialTraits": [
+    "Es el equivalente más claro en G2 a una defensa especial de arma.",
+    "No es una criatura única: resume el evento necesario para obtener las Ice Sickles.",
+    "Aphidex la trata también como entrada útil para seguir el progreso de Perro Guardián."
+  ],
+  "listIconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+  "hasCreatureCard": false,
+  "hasGoldCreatureCard": false,
+  "hasSelectableCardVariants": false,
+  "defaultCardVariant": null,
+  "appearanceType": "no_natural_spawn",
+  "entityType": "defense",
+  "customAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+  "presentationOverrideProvenance": "historical_custom_entry"
+}

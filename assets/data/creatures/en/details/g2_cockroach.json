@@ -1,1 +1,1037 @@
-{"id":"g2_cockroach","speciesKey":"cockroach","collectionGroup":"neutral","name":"Cockroach","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":216,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_G.png","photo":"assets/g2/creatures/photos/Cockroach.webp","weaknesses":[],"resistances":["gas","fresh","spicy","venom"],"temperament":"neutral","health":{"value":1000,"rating":3},"description":"Tenacious and resourceful insects that scavenge through trash. Can drop roach chunks and roach head on death.","behavior":"It moves with an uneven cadence and rarely stays still for long. It does not sleep or stop to feed like many other creatures; it simply loops through its territory, always ready to react.","interactionWithPlayer":"It is usually neutral toward the player, but it turns hostile if you attack another cockroach, a nymph, or the nearby queen. Once the fight starts it stops being a nuisance and becomes a real threat, especially if it revives headless.","interactionWithCreatures":"It tends to ignore most creatures, but reacts immediately when a nearby nymph enters combat. In tighter spaces, that chain reaction can flood the area with enemies before you have time to reposition.","strategy":"Cut off its escape route and avoid fighting it where more cockroaches can join in. If it revives decapitated, treat it like an improvised second phase and do not drop your guard until it finally stays down.","environments":["Axl Fight","Cabbage Patch Cave","Entrance Area","Fire Pit","Greenhouse","Greenhouse Surroundings","Ice Cream Cart Surroundings","Pumpkin Patch","Snackbar Front Area","Toxic Anthill","Veggie Garden"],"loot":[{"section":"loot","item":"Roach Chunk","minCount":2,"maxCount":4},{"section":"loot","item":"Roach Head","minCount":0,"maxCount":1},{"section":"rare","item":"Apple Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Billy Hog Bite","minCount":0,"maxCount":1},{"section":"rare","item":"Cookie Sandwich Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Roach Chunk","minCount":0,"maxCount":4},{"section":"rare","item":"Rotten Food","minCount":0,"maxCount":1},{"section":"rare","item":"Spoiled Meat","minCount":0,"maxCount":1}],"combatStats":{"health":1000,"attackDamageSummary":"Bite: 30. 3-Hit Combo Bite: 25. Side Kick: 25. Headless Ram: 25."},"abilities":[{"name":"Bite","description":"A quick basic attack at close range."},{"name":"3-Hit Combo Bite","description":"It chains several short bites together if you stay in front of it for too long."},{"name":"Side Kick","description":"A quick side hit used to cover its flanks."},{"name":"Headless Ram","description":"Rushes forward with its whole body to knock you off balance."}],"resistancesV2":[{"type":"gas","bonusPct":90},{"type":"fresh","bonusPct":25},{"type":"spicy","bonusPct":25},{"type":"venom","bonusPct":25}],"bossPhases":[{"id":"phase1","label":"Phase 1","summary":"While it still has its head, the cockroach pressures with quick bites and side kicks to keep you pinned in front of its body.","startsAtHealthPct":100,"abilities":[{"name":"Bite","description":"A quick basic attack at close range."},{"name":"3-Hit Combo Bite","description":"It chains several short bites together if you stay in front of it for too long."},{"name":"Side Kick","description":"A quick side hit used to cover its flanks."}]},{"id":"phase2","label":"Phase 2","summary":"Once it goes headless it becomes clumsier, but also much more linear and dangerous if you let it charge through a corridor.","trigger":"Begins once the cockroach loses its head and enters its headless stretch.","abilities":[{"name":"Headless Ram","description":"Rushes forward with its whole body to knock you off balance."}]}],"groupId":null,"cardTier":2,"technicalId":"Cockroach","bestiaryId":"Cockroach","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Bite","technicalId":"CockroachBite","tags":["stabbing"],"notes":"Attack damage: 30"},{"name":"Bite Right","technicalId":"CockroachBiteRight","tags":["stabbing"],"notes":"Attack damage: 30"},{"name":"Bite Left","technicalId":"CockroachBiteLeft","tags":["stabbing"],"notes":"Attack damage: 30"},{"name":"Karate Kick Left","technicalId":"CockroachKarateKickLeft","tags":["stabbing"],"notes":"Attack damage: 35"},{"name":"Karate Kick Right","technicalId":"CockroachKarateKickRight","tags":["stabbing"],"notes":"Attack damage: 35"},{"name":"Combo 3","technicalId":"CockroachCombo3","tags":["stabbing"],"notes":"Attack damage: 25"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_cockroach",
+  "speciesKey": "cockroach",
+  "collectionGroup": "neutral",
+  "name": "Cockroach",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 216,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_G.png",
+  "photo": "assets/g2/creatures/photos/Cockroach.webp",
+  "weaknesses": [],
+  "resistances": [
+    "gas",
+    "fresh",
+    "spicy",
+    "venom"
+  ],
+  "temperament": "neutral",
+  "health": {
+    "rating": 3,
+    "value": 1000
+  },
+  "description": "Tenacious and resourceful insects that scavenge through trash. Can drop roach chunks and roach head on death.",
+  "behavior": "It moves with an uneven cadence and rarely stays still for long. It does not sleep or stop to feed like many other creatures; it simply loops through its territory, always ready to react.",
+  "interactionWithPlayer": "It is usually neutral toward the player, but it turns hostile if you attack another cockroach, a nymph, or the nearby queen. Once the fight starts it stops being a nuisance and becomes a real threat, especially if it revives headless.",
+  "interactionWithCreatures": "It tends to ignore most creatures, but reacts immediately when a nearby nymph enters combat. In tighter spaces, that chain reaction can flood the area with enemies before you have time to reposition.",
+  "strategy": "Cut off its escape route and avoid fighting it where more cockroaches can join in. If it revives decapitated, treat it like an improvised second phase and do not drop your guard until it finally stays down.",
+  "environments": [
+    "Axl Fight",
+    "Cabbage Patch Cave",
+    "Entrance Area",
+    "Fire Pit",
+    "Greenhouse",
+    "Greenhouse Surroundings",
+    "Ice Cream Cart Surroundings",
+    "Pumpkin Patch",
+    "Snackbar Front Area",
+    "Toxic Anthill",
+    "Veggie Garden"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Cockroach Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cockroach Part",
+      "minCount": 2,
+      "maxCount": 8
+    },
+    {
+      "section": "rare",
+      "item": "Food Apple",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Cookie Sandwich",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Hot Dog",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Rotten",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Spoiled Meat",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1000,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Bite",
+      "description": "A quick basic attack at close range."
+    },
+    {
+      "name": "3-Hit Combo Bite",
+      "description": "It chains several short bites together if you stay in front of it for too long."
+    },
+    {
+      "name": "Side Kick",
+      "description": "A quick side hit used to cover its flanks."
+    },
+    {
+      "name": "Headless Ram",
+      "description": "Rushes forward with its whole body to knock you off balance."
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "gas",
+      "bonusPct": 90
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 25
+    }
+  ],
+  "bossPhases": [
+    {
+      "id": "phase1",
+      "label": "Phase 1",
+      "summary": "While it still has its head, the cockroach pressures with quick bites and side kicks to keep you pinned in front of its body.",
+      "startsAtHealthPct": 100,
+      "abilities": [
+        {
+          "name": "Bite",
+          "description": "A quick basic attack at close range."
+        },
+        {
+          "name": "3-Hit Combo Bite",
+          "description": "It chains several short bites together if you stay in front of it for too long."
+        },
+        {
+          "name": "Side Kick",
+          "description": "A quick side hit used to cover its flanks."
+        }
+      ]
+    },
+    {
+      "id": "phase2",
+      "label": "Phase 2",
+      "summary": "Once it goes headless it becomes clumsier, but also much more linear and dangerous if you let it charge through a corridor.",
+      "trigger": "Begins once the cockroach loses its head and enters its headless stretch.",
+      "abilities": [
+        {
+          "name": "Headless Ram",
+          "description": "Rushes forward with its whole body to knock you off balance."
+        }
+      ]
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Cockroach",
+  "bestiaryId": "Cockroach",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "technicalId": "CockroachBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 1.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Right",
+      "technicalId": "CockroachBiteRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 1.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Left",
+      "technicalId": "CockroachBiteLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 1.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Karate Kick Left",
+      "technicalId": "CockroachKarateKickLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 35",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 5.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Karate Kick Right",
+      "technicalId": "CockroachKarateKickRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 35",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 5.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 3",
+      "technicalId": "CockroachCombo3",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 25",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 25.0,
+      "cooldownSeconds": 2.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_a5660093a508d00d",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -229828.67,
+        "y": 71645.02,
+        "z": -873.9685
+      },
+      "u": 0.11864004214222998,
+      "v": 0.5950522829918207,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fa31791512db1e7c",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -111052.04,
+        "y": -46797.887,
+        "z": 905.4898
+      },
+      "u": 0.563574447761194,
+      "v": 0.08368734173201783,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d8adefa986bb0d4",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -113819.19,
+        "y": -52685.176,
+        "z": 1427.2616
+      },
+      "u": 0.5532087702663154,
+      "v": 0.05826958333754954,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_978938de93eb6167",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -232187.92,
+        "y": 74100.125,
+        "z": -857.3805
+      },
+      "u": 0.10980234825870643,
+      "v": 0.6056519436714731,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_777494b049cbc6a4",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -231507.78,
+        "y": 72268.1,
+        "z": -873.9685
+      },
+      "u": 0.11235013637693884,
+      "v": 0.5977423661354246,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_67fe6705c58c2a72",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -98097.95,
+        "y": -49066.49,
+        "z": -4607.4717
+      },
+      "u": 0.6121001580333626,
+      "v": 0.07389288405430483,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ccd94d761d7faf97",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -231459.17,
+        "y": 106459.766,
+        "z": 390.27722
+      },
+      "u": 0.1125322282704126,
+      "v": 0.7453613305675015,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0893d9f4d87d75eb",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -235345.23,
+        "y": 103005.92,
+        "z": 418.0862
+      },
+      "u": 0.09797514076675443,
+      "v": 0.7304497094190067,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_70ec5133d20c3ce7",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -224445.19,
+        "y": 98571.766,
+        "z": -70.31183
+      },
+      "u": 0.13880642903131402,
+      "v": 0.7113057103634371,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b97bdb43b66b3a3b",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -115942.414,
+        "y": 89521.94,
+        "z": -4904.406
+      },
+      "u": 0.5452552241147206,
+      "v": 0.6722340271523738,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4244565edc619bb5",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -166092.05,
+        "y": -52130.367,
+        "z": 181.40718
+      },
+      "u": 0.3573958911325725,
+      "v": 0.06066491353402481,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d4269e9b6116f675",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -175910.92,
+        "y": 108943.59,
+        "z": -4375.0234
+      },
+      "u": 0.3206146397424641,
+      "v": 0.7560849825449025,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_16b51b9f80bde960",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -95651.14,
+        "y": 1298.4525,
+        "z": 1040.0527
+      },
+      "u": 0.6212658495756511,
+      "v": 0.2913382888945105,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7a7df68de38ed63",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -84844.51,
+        "y": 85680.74,
+        "z": -1340.7205
+      },
+      "u": 0.661747226221832,
+      "v": 0.6556500453663883,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e76c4f21df8a08f3",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -152159.86,
+        "y": 115215.95,
+        "z": -4829.6597
+      },
+      "u": 0.409585540532631,
+      "v": 0.7831652449616325,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5e9e34b35fd617d4",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -154306.98,
+        "y": 128536.08,
+        "z": -3521.2805
+      },
+      "u": 0.401542480538484,
+      "v": 0.8406735218821149,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_17c3fb857c1dcbdf",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -79803.12,
+        "y": 110608.914,
+        "z": -3261.929
+      },
+      "u": 0.6806321521802751,
+      "v": 0.7632748458386036,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b92f30b807961a76",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -100732.83,
+        "y": 158381.77,
+        "z": 1682.8308
+      },
+      "u": 0.6022299607843137,
+      "v": 0.9695291866093264,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_806c4c5b8663c985",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -92324.836,
+        "y": 134354.77,
+        "z": 1529.5309
+      },
+      "u": 0.6337261045361428,
+      "v": 0.8657951112235434,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a5ada3637167b8ea",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -85617.984,
+        "y": 107922.9,
+        "z": -3159.897
+      },
+      "u": 0.6588498111793971,
+      "v": 0.751678259549709,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d80a8f71fbe08df",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -95167.84,
+        "y": 137178.36,
+        "z": 1439.2737
+      },
+      "u": 0.6230762797775827,
+      "v": 0.8779856675942322,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_106c381d4c33dd92",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -159446.83,
+        "y": 148603.66,
+        "z": -1131.1737
+      },
+      "u": 0.3822887257828505,
+      "v": 0.9273132129184587,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cc48de51a1e00392",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -253181.95,
+        "y": 154045.98,
+        "z": 9559.0
+      },
+      "u": 0.03115921568627447,
+      "v": 0.9508098639008348,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b725dcd2bbc4a155",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -248900.33,
+        "y": 152255.86,
+        "z": 9559.0
+      },
+      "u": 0.04719806145741884,
+      "v": 0.9430812068471204,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2c8d247d36f48021",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -136647.78,
+        "y": 135001.4,
+        "z": 13940.0
+      },
+      "u": 0.46769341995902836,
+      "v": 0.8685868690446076,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a63262af16f4899",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -80358.19,
+        "y": 105554.91,
+        "z": -3266.6702
+      },
+      "u": 0.6785528732806555,
+      "v": 0.7414547088287378,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_361026a27a320b4e",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -225503.44,
+        "y": 104829.32,
+        "z": 367.81436
+      },
+      "u": 0.13484224992683638,
+      "v": 0.7383220494139473,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5342c5f52bd2a181",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -226895.19,
+        "y": 94591.766,
+        "z": -429.65057
+      },
+      "u": 0.129628787825578,
+      "v": 0.6941224740028671,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a57aac0baf9af555",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -33814.785,
+        "y": 48473.957,
+        "z": 17940.37
+      },
+      "u": 0.8529033514779046,
+      "v": 0.4950136266464288,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4fbb3cbe46075e8f",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -47757.137,
+        "y": 49888.555,
+        "z": 1742.3276
+      },
+      "u": 0.8006756354697103,
+      "v": 0.5011210064929589,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1f02a353a810dcf6",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -48514.664,
+        "y": 50323.586,
+        "z": 5372.8984
+      },
+      "u": 0.7978379575065847,
+      "v": 0.5029992076229025,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dfdda650d8d9dc79",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -207596.06,
+        "y": -41720.094,
+        "z": -45.484135
+      },
+      "u": 0.2019228656716418,
+      "v": 0.10561018527700482,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_90cc86fb952c4418",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -206750.23,
+        "y": -41401.44,
+        "z": -45.484135
+      },
+      "u": 0.20509132455370205,
+      "v": 0.10698594080445231,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_033e5e44120888b8",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -24756.846,
+        "y": 42178.887,
+        "z": -4541.874
+      },
+      "u": 0.8868341736025754,
+      "v": 0.46783531616493795,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7f1aa9e06c827e9",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -34555.69,
+        "y": 46560.535,
+        "z": -4092.3315
+      },
+      "u": 0.85012793912789,
+      "v": 0.4867526260224303,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fd4738cb759c5de2",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -197070.56,
+        "y": -28298.217,
+        "z": 966.80426
+      },
+      "u": 0.24135113608428446,
+      "v": 0.16355774429547176,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_505668dc7d35b25f",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -198714.14,
+        "y": -9797.266,
+        "z": 1061.3116
+      },
+      "u": 0.23519432484635638,
+      "v": 0.24343367744329197,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0bc97ac294c3d7b2",
+      "targetType": "creature",
+      "targetId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "map": "surface",
+      "world": {
+        "x": -199211.11,
+        "y": -54538.207,
+        "z": -3661.9597
+      },
+      "u": 0.233332687152473,
+      "v": 0.05026931457964419,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [
+    "gas"
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Cockroach Head",
+      "countLabel": "1",
+      "chancePct": 45,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Apple",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Cookie Sandwich",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Hot Dog",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Rotten",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spoiled Meat",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

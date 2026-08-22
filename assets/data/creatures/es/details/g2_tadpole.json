@@ -1,1 +1,1746 @@
-{"id":"g2_tadpole","speciesKey":"g1_tadpole","collectionGroup":"angry","game":"g2","danger":"unknown","order":301,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_tadpole.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"Renacuajo","tier":1,"cardTier":0,"technicalId":"Tadpole","bestiaryId":"Tadpole","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Tadpole.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Tadpole_G.png","weaknesses":[],"resistances":[],"elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":120,"rating":1},"combatStats":{"health":120},"description":"Una criatura dócil que nada en las aguas poco profundas del estanque de peces koi. Al morir, suelta carne cruda de renacuajo.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_tadpole",
+  "speciesKey": "g1_tadpole",
+  "collectionGroup": "harmless",
+  "game": "g2",
+  "danger": "baja",
+  "order": 301,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_tadpole.webp",
+  "temperament": "peaceful",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Algae",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Lilypad Wax",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Tadpole Meat",
+      "minCount": 1,
+      "maxCount": 2
+    }
+  ],
+  "abilities": [],
+  "behavior": "Lo puedes encontrar nadando tranquilamente en el estanque o en el Abismo. Si recibe daño, tratará de huir sin contraatacar.",
+  "interactionWithPlayer": "Es pacífico y nunca atacará al jugador, por lo que es una buena fuente de alimento.",
+  "interactionWithCreatures": "Es presa de varias criaturas de Grounded 2, como las arañas campana, las chinches mordedoras de dedos y los peces koi.",
+  "strategy": "No requiere realmente una estrategia. Se recomienda usar armas infusionadas con Picante para que, al eliminarlos, su carne salga cocinada.",
+  "groupId": null,
+  "name": "Renacuajo",
+  "tier": 1,
+  "cardTier": 0,
+  "technicalId": "Tadpole",
+  "bestiaryId": "Tadpole",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Tadpole.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Tadpole_G.png",
+  "weaknesses": [],
+  "resistances": [],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 1,
+    "value": 120
+  },
+  "combatStats": {
+    "health": 120,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "description": "Una criatura dócil que nada en las aguas poco profundas del estanque de peces koi. Al morir, suelta carne cruda de renacuajo.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_311bc9543ab303b7",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 193565.0,
+        "y": 178205.0,
+        "z": -11105.0
+      },
+      "u": 0.3039407011686143,
+      "v": 0.30219121535181237,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_b6b8dbb74a8e144a",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 189935.0,
+        "y": 182930.0,
+        "z": -10155.0
+      },
+      "u": 0.2542963606010017,
+      "v": 0.3434568869936034,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_086a09fb3fb91727",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 180500.0,
+        "y": 186280.0,
+        "z": -10155.0
+      },
+      "u": 0.1252621035058431,
+      "v": 0.37271402985074625,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_0178b7593d6d31a6",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 174760.0,
+        "y": 192765.0,
+        "z": -10155.0
+      },
+      "u": 0.046761135225375616,
+      "v": 0.42935061833688704,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_1adfbb5b28ef0fa6",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 185955.0,
+        "y": 192765.0,
+        "z": -10155.0
+      },
+      "u": 0.1998653756260434,
+      "v": 0.42935061833688704,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_850647ee836124aa",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 195210.0,
+        "y": 185110.0,
+        "z": -10115.0
+      },
+      "u": 0.3264379298831385,
+      "v": 0.36249586353944563,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_723bf58b58d1a00f",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 210465.0,
+        "y": 178600.0,
+        "z": -10615.0
+      },
+      "u": 0.5350672454090151,
+      "v": 0.30564093816631127,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_98c3cbf254372a2f",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 234469.44,
+        "y": 153417.77,
+        "z": 36216.24
+      },
+      "u": 0.8633550124874791,
+      "v": 0.08571254993603404,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_3c216a1746b68179",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 237523.0,
+        "y": 151794.25,
+        "z": 36272.305
+      },
+      "u": 0.9051158864774623,
+      "v": 0.07153357782515991,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_0eea9597474fa46e",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 237513.7,
+        "y": 146413.34,
+        "z": 36272.305
+      },
+      "u": 0.9049886984974959,
+      "v": 0.024539532281449866,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_1c9e87d624553e2f",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 234042.22,
+        "y": 150206.69,
+        "z": 20341.709
+      },
+      "u": 0.8575122975626044,
+      "v": 0.05766866149253734,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_088cb8978222fe62",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 239022.83,
+        "y": 153001.27,
+        "z": -9506.882
+      },
+      "u": 0.9256277518530883,
+      "v": 0.08207505739872059,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_a60db83209376f02",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 235199.72,
+        "y": 146294.92,
+        "z": -9440.637
+      },
+      "u": 0.87334241442404,
+      "v": 0.02350531411513871,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_65735352059682bc",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 178620.0,
+        "y": 185635.0,
+        "z": -10155.0
+      },
+      "u": 0.09955098497495829,
+      "v": 0.36708093816631127,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_b3a3e325cc88e13c",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -59441.242,
+        "y": -25786.973,
+        "z": -5525.169
+      },
+      "u": 0.7569072585308751,
+      "v": 0.17439977927312592,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eb0b63705a323af8",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -49583.97,
+        "y": -28061.902,
+        "z": -5134.635
+      },
+      "u": 0.7938323628914252,
+      "v": 0.1645780097478708,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_78c8c95a46405775",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -46279.06,
+        "y": -23462.914,
+        "z": -5513.06
+      },
+      "u": 0.8062124764413229,
+      "v": 0.18443366246732437,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ee18e4d5f6c6dfe3",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -32137.457,
+        "y": -17280.418,
+        "z": -5255.272
+      },
+      "u": 0.8591865819139596,
+      "v": 0.2111259464035753,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf305b1ca7b4edd0",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -27797.81,
+        "y": -19521.62,
+        "z": -5232.615
+      },
+      "u": 0.8754427954345917,
+      "v": 0.20144978969558985,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a9a5638c64c761a",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -64310.62,
+        "y": -22112.121,
+        "z": -6508.747
+      },
+      "u": 0.7386666853965467,
+      "v": 0.19026557085757653,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_df24bb0823cc433c",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -63634.793,
+        "y": -29365.154,
+        "z": -5793.038
+      },
+      "u": 0.741198317120281,
+      "v": 0.1589513546842061,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dabf9298a2efaab7",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -63070.508,
+        "y": -20233.186,
+        "z": -6672.0366
+      },
+      "u": 0.7433121151887621,
+      "v": 0.19837767744329204,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9fb360974b10a0ae",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 231922.06,
+        "y": 151360.38,
+        "z": -9245.873
+      },
+      "u": 0.8285167204006677,
+      "v": 0.06774438481876337,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_b731a99da581c19a",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 237831.23,
+        "y": 151330.62,
+        "z": 22327.732
+      },
+      "u": 0.9093312790651087,
+      "v": 0.0674844765884861,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_4180b17658b1a47c",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 236975.38,
+        "y": 155243.81,
+        "z": 35291.598
+      },
+      "u": 0.897626565876461,
+      "v": 0.10166022550106608,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_e27496345572cb2b",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 235362.16,
+        "y": 147076.47,
+        "z": 12292.433
+      },
+      "u": 0.8755639644741235,
+      "v": 0.03033096187633264,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_acd69b2885b4dede",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 219902.8,
+        "y": 221086.95,
+        "z": -12336.897
+      },
+      "u": 0.6641397956594322,
+      "v": 0.6766996742004265,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_89447dd736cedc2e",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "abyss",
+      "world": {
+        "x": 222678.25,
+        "y": 220012.69,
+        "z": -13176.001
+      },
+      "u": 0.7020972020033389,
+      "v": 0.6673176508315565,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_847ec3ca1fe43049",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -25402.424,
+        "y": 14367.427,
+        "z": -6741.5366
+      },
+      "u": 0.8844158539069359,
+      "v": 0.34776222804620965,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_51e8fb5b733b3d2a",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -23065.75,
+        "y": 16036.181,
+        "z": -6062.148
+      },
+      "u": 0.8931689786362306,
+      "v": 0.35496690000843245,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_39081f506c3e336a",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -29706.521,
+        "y": 7185.9136,
+        "z": -5660.7617
+      },
+      "u": 0.8682928098331869,
+      "v": 0.3167567903128426,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ac18382406971df3",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -31145.664,
+        "y": 7737.9766,
+        "z": -6381.439
+      },
+      "u": 0.8629018146912497,
+      "v": 0.3191402649397082,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5dc6c036ce707a91",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -30657.02,
+        "y": 5599.4756,
+        "z": -5506.212
+      },
+      "u": 0.8647322633889377,
+      "v": 0.30990750912555864,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0c92299a2db627c7",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -32637.887,
+        "y": 7124.501,
+        "z": -5506.212
+      },
+      "u": 0.857311983143108,
+      "v": 0.3164916477949236,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_af38eac5f3f72b96",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -34336.906,
+        "y": -7258.0806,
+        "z": -6079.894
+      },
+      "u": 0.8509474987415862,
+      "v": 0.2543963465115103,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f6b04b61557b449d",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -33460.973,
+        "y": -5676.6816,
+        "z": -5391.998
+      },
+      "u": 0.854228722739245,
+      "v": 0.2612238723399949,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_500fa6a9385053d7",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -33046.06,
+        "y": -8518.693,
+        "z": -5396.99
+      },
+      "u": 0.8557829768803044,
+      "v": 0.24895378348933297,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ae091ce93b05f574",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -50500.145,
+        "y": -9181.156,
+        "z": -5261.0293
+      },
+      "u": 0.7904003933274802,
+      "v": 0.2460936683362847,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_92de47ee6bae5292",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -50243.71,
+        "y": -11033.338,
+        "z": -5992.9976
+      },
+      "u": 0.7913609926836407,
+      "v": 0.23809706504764316,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_756faf6b715f1bc6",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -48390.066,
+        "y": -9895.888,
+        "z": -5472.408
+      },
+      "u": 0.7983046986245245,
+      "v": 0.2430078872080276,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3cdf7440c58aa0c6",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -51760.676,
+        "y": -11900.312,
+        "z": -5408.84
+      },
+      "u": 0.785678474451273,
+      "v": 0.23435399490682182,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d1215143fb1583e",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -65941.164,
+        "y": -11995.207,
+        "z": -5884.511
+      },
+      "u": 0.7325587067017852,
+      "v": 0.23394429560671223,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e97be4ed84aa3460",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -64239.62,
+        "y": -13162.133,
+        "z": -5798.708
+      },
+      "u": 0.7389326496927129,
+      "v": 0.22890621387975377,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cf5e27f2a76a4cc0",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -64527.96,
+        "y": -10532.793,
+        "z": -6694.779
+      },
+      "u": 0.7378525349721978,
+      "v": 0.24025811606374906,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bdc252a9462dd778",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -75416.266,
+        "y": -8774.682,
+        "z": -5728.0884
+      },
+      "u": 0.6970652019900497,
+      "v": 0.24784857758664303,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e24ebbb69bc53a5a",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -74696.44,
+        "y": -8368.644,
+        "z": -6724.9536
+      },
+      "u": 0.6997616529119111,
+      "v": 0.2496016044523147,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8bf0a80c52814746",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -74310.336,
+        "y": -10308.351,
+        "z": -6006.0645
+      },
+      "u": 0.701207989230319,
+      "v": 0.24122712107260313,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_410e6efc92dbe499",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -74670.07,
+        "y": -6854.8906,
+        "z": -5267.37
+      },
+      "u": 0.6998604342990927,
+      "v": 0.2561370774331731,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_83360609a64e643b",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -80489.63,
+        "y": -2067.8105,
+        "z": -5337.5356
+      },
+      "u": 0.6780605021949078,
+      "v": 0.2768047982460579,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ef893bc6998b986f",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -78960.67,
+        "y": -2169.4426,
+        "z": -5783.0054
+      },
+      "u": 0.6837879496634476,
+      "v": 0.2763660122168817,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a304a60b6a3c52a1",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -78328.375,
+        "y": -1017.361,
+        "z": -5426.1196
+      },
+      "u": 0.6861565115598478,
+      "v": 0.2813400047896113,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_89097d82e72f51f8",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -78629.55,
+        "y": -29.302807,
+        "z": -6176.478
+      },
+      "u": 0.6850283172373427,
+      "v": 0.28560584334948985,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_110e61b7c6042e7a",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -74156.9,
+        "y": 9506.157,
+        "z": -6040.272
+      },
+      "u": 0.7017827568042142,
+      "v": 0.32677420005059454,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_036d809f1278b2b2",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -75203.336,
+        "y": 11242.868,
+        "z": -5424.6567
+      },
+      "u": 0.6978628326602282,
+      "v": 0.33427226929757986,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1ab65fb8d525031a",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -73359.76,
+        "y": 11329.452,
+        "z": -6040.272
+      },
+      "u": 0.7047688241147205,
+      "v": 0.3346460867189476,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8494375ab182b668",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -70643.95,
+        "y": 25032.86,
+        "z": -5649.6016
+      },
+      "u": 0.7149421832016387,
+      "v": 0.3938091265705371,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_41ec05bfb54081b8",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -71690.74,
+        "y": 23626.42,
+        "z": -6447.659
+      },
+      "u": 0.7110209329821482,
+      "v": 0.3877369680411501,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1217999e78072053",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -69416.05,
+        "y": 23576.97,
+        "z": -6824.1475
+      },
+      "u": 0.7195418671349136,
+      "v": 0.38752347280546423,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d53a21b35af5b98",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -68007.016,
+        "y": 24581.873,
+        "z": -6128.364
+      },
+      "u": 0.7248200746853964,
+      "v": 0.3918620370688928,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c2bc9086639a1dd",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -55578.72,
+        "y": 24807.318,
+        "z": -5454.2456
+      },
+      "u": 0.7713761732513901,
+      "v": 0.3928353724260056,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1b400ba12af178c3",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -53673.8,
+        "y": 24711.691,
+        "z": -6210.8906
+      },
+      "u": 0.77851195785777,
+      "v": 0.3924225127919723,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fe166e567913cf2",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -55678.535,
+        "y": 22975.666,
+        "z": -6210.8906
+      },
+      "u": 0.7710022686567164,
+      "v": 0.3849274052786913,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f5dd3ffc1a2f9642",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -38459.01,
+        "y": 23560.066,
+        "z": -5692.327
+      },
+      "u": 0.8355061960784314,
+      "v": 0.3874504915422885,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fb1f1eefecb663f7",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -37066.113,
+        "y": 25817.166,
+        "z": -5503.163
+      },
+      "u": 0.8407239548141644,
+      "v": 0.39719528621300276,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f0855d1ba7542d79",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -34855.96,
+        "y": 24913.27,
+        "z": -6424.601
+      },
+      "u": 0.849003134913667,
+      "v": 0.3932928091744666,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_abf7af02390e3f71",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -35951.58,
+        "y": 23398.287,
+        "z": -6534.171
+      },
+      "u": 0.8448989686859818,
+      "v": 0.3867520275234,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f87c1070ab94118b",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -40575.996,
+        "y": 13294.18,
+        "z": -5726.8174
+      },
+      "u": 0.8275760173251391,
+      "v": 0.3431285956657391,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d0d678f23485107",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -42410.605,
+        "y": 13958.728,
+        "z": -6725.029
+      },
+      "u": 0.8207036160374597,
+      "v": 0.34599771258959444,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ab8048cb32096cdc",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -44251.17,
+        "y": 12380.841,
+        "z": -6012.4844
+      },
+      "u": 0.8138089037167106,
+      "v": 0.3391853494561094,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c3661e01ad3abc08",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -53512.312,
+        "y": 12087.897,
+        "z": -6146.8335
+      },
+      "u": 0.779116888030436,
+      "v": 0.3379205941816342,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6b67686ea91cc743",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -53257.887,
+        "y": 10003.896,
+        "z": -5491.5503
+      },
+      "u": 0.7800699579748318,
+      "v": 0.32892313645332666,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_10e0fbb46887884e",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -56710.67,
+        "y": 15066.029,
+        "z": -5677.191
+      },
+      "u": 0.76713591571554,
+      "v": 0.3507783695758496,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3a6391e6788c7487",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -58287.754,
+        "y": 15335.128,
+        "z": -5380.766
+      },
+      "u": 0.7612281968978636,
+      "v": 0.35194017654102366,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07b8bbc223638f8a",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -59909.176,
+        "y": 13292.563,
+        "z": -5735.5933
+      },
+      "u": 0.7551543889961954,
+      "v": 0.3431216144362931,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_34da313ea34bfd02",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -60723.98,
+        "y": 12358.516,
+        "z": -6300.0835
+      },
+      "u": 0.7521021527655838,
+      "v": 0.3390889635888355,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d63ec1da2792de9",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -59195.617,
+        "y": 8028.752,
+        "z": -5361.9526
+      },
+      "u": 0.7578273638864502,
+      "v": 0.32039565750906485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b99c4ff8a5387b52",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -58600.707,
+        "y": 6904.245,
+        "z": -6304.017
+      },
+      "u": 0.760055882470003,
+      "v": 0.31554071540602074,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2eda8987e4508029",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -44800.78,
+        "y": 1077.434,
+        "z": -6027.9634
+      },
+      "u": 0.8117500778460638,
+      "v": 0.2903840644911038,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8bc88617d43b63c9",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -46952.223,
+        "y": 830.2161,
+        "z": -5535.223
+      },
+      "u": 0.8036908239976588,
+      "v": 0.28931672690108773,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b31a0293232c050e",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -46429.883,
+        "y": 2274.6436,
+        "z": -6312.3647
+      },
+      "u": 0.8056474971027217,
+      "v": 0.2955528925137027,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_69cdc87f6b4fed4a",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -65096.277,
+        "y": 1102.8442,
+        "z": -5670.994
+      },
+      "u": 0.7357236331284752,
+      "v": 0.2904937703887343,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_94846a891f0a3085",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -64818.984,
+        "y": -434.45212,
+        "z": -6046.0664
+      },
+      "u": 0.7367623660520926,
+      "v": 0.2838566532975799,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e25b5cb6d9e1083e",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -66461.5,
+        "y": 510.16116,
+        "z": -6227.158
+      },
+      "u": 0.7306095405326309,
+      "v": 0.2879349229607892,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ea1ca33a03a0ec8",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -66010.46,
+        "y": 15324.918,
+        "z": -6640.2427
+      },
+      "u": 0.7322991255487269,
+      "v": 0.35189609592714394,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e263cfb143e6c6f0",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -64624.56,
+        "y": 16568.992,
+        "z": -5858.0366
+      },
+      "u": 0.7374906736903717,
+      "v": 0.3572672561261489,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2a35816aadfa491e",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -54604.82,
+        "y": -1318.8215,
+        "z": -6172.5796
+      },
+      "u": 0.7750243792800703,
+      "v": 0.28003848041150187,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95f08b527989ba5e",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -46903.21,
+        "y": 24582.322,
+        "z": -5728.342
+      },
+      "u": 0.8038744255194615,
+      "v": 0.3918639755797284,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b68c0ee2df2d64fa",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -65130.707,
+        "y": 32766.158,
+        "z": -6110.444
+      },
+      "u": 0.7355946591747147,
+      "v": 0.4271968369677038,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_518a3e7e01cf6a1c",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -72523.13,
+        "y": 2659.138,
+        "z": -5548.119
+      },
+      "u": 0.7079028200175592,
+      "v": 0.29721290712539,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0b1d4d7ee6eb1590",
+      "targetType": "creature",
+      "targetId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "map": "surface",
+      "world": {
+        "x": -24741.281,
+        "y": 14615.32,
+        "z": -5727.0557
+      },
+      "u": 0.8868924797190519,
+      "v": 0.34883248031031283,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [
+    "required_equipment"
+  ],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "confirmed_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Algae",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Lilypad Wax",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Tadpole Meat",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Tadpole Meat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

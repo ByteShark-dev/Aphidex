@@ -1,0 +1,113 @@
+{
+  "schema": "aphidex-g2-presentation-overrides-v1",
+  "version": "1.3.0",
+  "overrides": {
+    "g2_tadpole": {
+      "temperament": "peaceful",
+      "collectionGroup": "harmless",
+      "provenance": "confirmed_editorial"
+    },
+    "g2_water_boatman": {
+      "temperament": "peaceful",
+      "collectionGroup": "harmless",
+      "provenance": "confirmed_editorial"
+    },
+    "g2_koi_calico": {
+      "hideHealth": true,
+      "provenance": "presentation_rule"
+    },
+    "g2_koi_dagon": {
+      "hideHealth": true,
+      "provenance": "presentation_rule"
+    },
+    "g2_koi_oriole": {
+      "hideHealth": true,
+      "provenance": "presentation_rule"
+    },
+    "g2_koi_sunny": {
+      "hideHealth": true,
+      "provenance": "presentation_rule"
+    },
+    "g2_orc_broodmother": {
+      "appearanceSourceId": "subject_v_greenhouse",
+      "appearanceSourceTargetId": "g2_masked_fighter",
+      "provenance": "confirmed_editorial"
+    },
+    "g2_masked_stranger_orc_waves": {
+      "entityType": "special",
+      "customAsset": "assets/g2/defenses/Masked_Stranger_ORC_Waves_Icon.png",
+      "provenance": "user_provided_editorial_asset"
+    },
+    "g2_mixr_defenses": {
+      "entityType": "defense",
+      "customAsset": "assets/g2/defenses/MIXR_Entry_Icon.png",
+      "provenance": "user_provided_editorial_asset"
+    },
+    "g2_ice_sickles_event": {
+      "entityType": "defense",
+      "customAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "provenance": "historical_custom_entry"
+    }
+  },
+  "dangerOverrides": {
+    "provenance": "community_calibrated_2026_08_22",
+    "methodology": "Community encounter reports calibrated against extracted tier, health, attacks and existing Aphidex danger bands. Colossi are rated by encounter threat, not killability.",
+    "sources": [
+      "https://www.reddit.com/r/GroundedGame/comments/1vv5x86/are_there_boss_fights_and_where_are_they/",
+      "https://www.reddit.com/r/GroundedGame/comments/1vniv1l/thoughts_on_the_new_update/",
+      "https://www.reddit.com/r/GroundedGame/comments/1vqktks/how_do_i_beat_king_dozer/",
+      "https://grounded.wiki.gg/wiki/Creatures_(Grounded_2)"
+    ],
+    "values": {
+      "g2_tadpole": "baja",
+      "g2_water_boatman": "baja",
+      "g2_woolly_aphid": "baja",
+      "g2_buggy_toe_biter": "baja",
+      "g2_water_flea": "intermedia",
+      "g2_diving_bell_spider": "intermedia",
+      "g2_spiny_water_flea": "intermedia",
+      "g2_striped_bark_scorpling": "intermedia",
+      "g2_cku": "alta",
+      "g2_chop_r": "alta",
+      "g2_sauc_r": "alta",
+      "g2_tick": "alta",
+      "g2_tiger_mosquito": "alta",
+      "g2_toe_biter_nymph": "alta",
+      "g2_pond_jockey": "alta",
+      "g2_orc_striped_bark_scorpling": "alta",
+      "g2_striped_bark_scorpion_jr": "muy_alta",
+      "g2_orc_toe_biter_nymph": "muy_alta",
+      "g2_orc_tiger_mosquito": "muy_alta",
+      "g2_orc_striped_bark_scorpion_jr": "muy_alta",
+      "g2_ancient_pond_jockey": "muy_alta",
+      "g2_toe_biter": "muy_alta",
+      "g2_green_shield_bug": "muy_alta",
+      "g2_ogrr_tiger_mosquito": "imposible",
+      "g2_orc_toe_biter": "imposible",
+      "g2_orc_green_shield_bug": "imposible",
+      "g2_ogrr_green_shield_bug": "imposible",
+      "g2_ogrr_toe_biter": "imposible",
+      "g2_striped_bark_scorpion": "imposible",
+      "g2_toe_biter_leviathan": "imposible_superior",
+      "g2_papa_toe_biter": "imposible_superior",
+      "g2_orc_striped_bark_scorpion": "imposible_superior",
+      "g2_ogrr_striped_bark_scorpion": "imposible_superior",
+      "g2_orc_toe_biter_leviathan": "imposible_superior",
+      "g2_ogrr_toe_biter_leviathan": "extrema",
+      "g2_koi_calico": "alta",
+      "g2_koi_oriole": "alta",
+      "g2_koi_sunny": "alta",
+      "g2_koi_dagon": "muy_alta",
+      "g2_crow": "baja",
+      "g2_garter_snake": "intermedia",
+      "g2_masked_fighter": "alta",
+      "g2_masked_stranger": "muy_alta",
+      "g2_orc_broodmother": "muy_alta",
+      "g2_axl": "imposible_superior",
+      "g2_king_dozer": "imposible_superior"
+    },
+    "statusExclusions": {
+      "g2_orchid_mantis": "proximamente_playground_only"
+    }
+  }
+}

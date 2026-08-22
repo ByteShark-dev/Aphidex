@@ -1,1 +1,87 @@
-{"id":"g2_ice_sickles_event","speciesKey":"g2_ice_sickles_event","collectionGroup":"other","name":"Оборона Ice Sickles","game":"g2","tier":3,"danger":"imposible_superior","isBoss":false,"order":289,"defaultGold":false,"cardNormal":"","cardGold":"","photo":"assets/g2/creatures/photos/Ice_Sickles_Defense.webp","weaknesses":[],"resistances":[],"temperament":"other","description":"Системная запись о защите Ice Sickles внутри тележки с мороженым. Это особое событие защиты оружия: вы защищаете замёрзшие серпы до завершения этапа и получаете и оружие, и рецепт.","behavior":"Событие построено вокруг скорпионов холодного биома: сначала Northern Scorplings, затем Northern Scorpion Jrs, а на самой жёсткой части — полноценные Northern Scorpions. Все волны хотят сломать серпы, а не дать вам честную дуэль.","interactionWithPlayer":"Оно начинается при взаимодействии с замёрзшими серпами. Если слишком надолго уйти из зоны или дать им получить слишком много урона, событие провалится и его придётся готовить заново.","interactionWithCreatures":"Волны давят числом и эскалацией. Scorplings пытаются проскочить, младшие скорпионы наказывают за небрежность, а взрослые превращают финальный отрезок в настоящую элитную оборону.","strategy":"По ощущениям это как оборона Spicy Coaltana, только в холоде и против скорпионов. Держаться рядом с целью, убирать мелочь до касания серпов и сохранять ресурсы на финальные волны взрослых скорпионов обычно и решает исход.","environments":["Упавший грузовик с мороженым"],"loot":[{"section":"passive","item":"Даёт Ice Sickles и их рецепт","minCount":0,"maxCount":0},{"section":"passive","item":"Can contribute to unlocking or upgrading Guard Dog","minCount":0,"maxCount":0}],"combatStats":{"attackDamageSummary":"Реальное давление исходит от волн скорпионов и от необходимости не дать серпам получить слишком много урона."},"abilities":[{"name":"Защита оружия","description":"Вы защищаете не машину MIX.R, а само оружие. Если серпы падают, попытка заканчивается.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Волны скорпионов","description":"Волны нарастают от scorplings до взрослых northern scorpions, поэтому событие по-настоящему усложняется к финалу.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Рецепт и бесплатное оружие","description":"В отличие от события Spicy Coaltana из G1, успех здесь выдаёт и рецепт, и сами серпы напрямую.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Guard Dog Progress","description":"Winning this defense also contributes toward unlocking or advancing the Guard Dog mutation.","blockable":false,"breaksGuard":false,"staggers":false}],"specialTraits":["Это самый очевидный эквивалент особой обороны оружия в G2.","Это не одно существо: запись суммирует событие, необходимое для получения Ice Sickles.","Aphidex also treats it as a useful entry for tracking Guard Dog progress."],"listIconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","hasCreatureCard":false,"hasGoldCreatureCard":false,"hasSelectableCardVariants":false,"defaultCardVariant":null}
+{
+  "id": "g2_ice_sickles_event",
+  "speciesKey": "g2_ice_sickles_event",
+  "collectionGroup": "other",
+  "name": "Оборона Ice Sickles",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible_superior",
+  "isBoss": false,
+  "order": 289,
+  "defaultGold": false,
+  "cardNormal": "",
+  "cardGold": "",
+  "photo": "assets/g2/creatures/photos/Ice_Sickles_Defense.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "other",
+  "description": "Системная запись о защите Ice Sickles внутри тележки с мороженым. Это особое событие защиты оружия: вы защищаете замёрзшие серпы до завершения этапа и получаете и оружие, и рецепт.",
+  "behavior": "Событие построено вокруг скорпионов холодного биома: сначала Northern Scorplings, затем Northern Scorpion Jrs, а на самой жёсткой части — полноценные Northern Scorpions. Все волны хотят сломать серпы, а не дать вам честную дуэль.",
+  "interactionWithPlayer": "Оно начинается при взаимодействии с замёрзшими серпами. Если слишком надолго уйти из зоны или дать им получить слишком много урона, событие провалится и его придётся готовить заново.",
+  "interactionWithCreatures": "Волны давят числом и эскалацией. Scorplings пытаются проскочить, младшие скорпионы наказывают за небрежность, а взрослые превращают финальный отрезок в настоящую элитную оборону.",
+  "strategy": "По ощущениям это как оборона Spicy Coaltana, только в холоде и против скорпионов. Держаться рядом с целью, убирать мелочь до касания серпов и сохранять ресурсы на финальные волны взрослых скорпионов обычно и решает исход.",
+  "environments": [
+    "Упавший грузовик с мороженым"
+  ],
+  "loot": [
+    {
+      "section": "passive",
+      "item": "Даёт Ice Sickles и их рецепт",
+      "minCount": 0,
+      "maxCount": 0
+    },
+    {
+      "section": "passive",
+      "item": "Can contribute to unlocking or upgrading Guard Dog",
+      "minCount": 0,
+      "maxCount": 0
+    }
+  ],
+  "combatStats": {
+    "attackDamageSummary": "Реальное давление исходит от волн скорпионов и от необходимости не дать серпам получить слишком много урона."
+  },
+  "abilities": [
+    {
+      "name": "Защита оружия",
+      "description": "Вы защищаете не машину MIX.R, а само оружие. Если серпы падают, попытка заканчивается.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Волны скорпионов",
+      "description": "Волны нарастают от scorplings до взрослых northern scorpions, поэтому событие по-настоящему усложняется к финалу.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Рецепт и бесплатное оружие",
+      "description": "В отличие от события Spicy Coaltana из G1, успех здесь выдаёт и рецепт, и сами серпы напрямую.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Guard Dog Progress",
+      "description": "Winning this defense also contributes toward unlocking or advancing the Guard Dog mutation.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "specialTraits": [
+    "Это самый очевидный эквивалент особой обороны оружия в G2.",
+    "Это не одно существо: запись суммирует событие, необходимое для получения Ice Sickles.",
+    "Aphidex also treats it as a useful entry for tracking Guard Dog progress."
+  ],
+  "listIconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+  "hasCreatureCard": false,
+  "hasGoldCreatureCard": false,
+  "hasSelectableCardVariants": false,
+  "defaultCardVariant": null,
+  "appearanceType": "no_natural_spawn",
+  "entityType": "defense",
+  "customAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+  "presentationOverrideProvenance": "historical_custom_entry"
+}

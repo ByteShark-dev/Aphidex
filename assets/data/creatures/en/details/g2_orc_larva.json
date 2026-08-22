@@ -1,1 +1,911 @@
-{"id":"g2_orc_larva","speciesKey":"orc_larva","collectionGroup":"orc","name":"O.R.C. Larva","game":"g2","tier":1,"danger":"intermedia","isBoss":false,"order":250,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Larva_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Larva_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Larva.webp","weaknesses":["slashing"],"resistances":["generic"],"temperament":"aggressive","health":{"value":200,"rating":1},"description":"A hangry remote-controlled larva with special abilities. It can drop an O.R.C. Receiver on death as well as regular creature parts.","behavior":"It runs short O.R.C. patrol routes and almost always sprints once it detects a threat. It hides less than a normal larva and relies more on quickly closing distance.","interactionWithPlayer":"It becomes hostile on sight and often tries to surround you with other O.R.C. larvae. The main rule is not to expose your back or let several attack at once.","interactionWithCreatures":"It often accompanies O.R.C. waves and clashes with smaller creatures that cross its routes. Its role is to harass and finish targets already distracted by larger units.","strategy":"A single one dies quickly, but several together are still dangerous. Block the combo, sidestep the charged bite, and focus the ones already on top of you first.","environments":["Greenhouse MIX.R","Network Center","Picnic O.R.C. Waves","Snackbar Front Area","Statue Area"],"loot":[{"section":"loot","item":"Acid Gland","minCount":0,"maxCount":1},{"section":"loot","item":"Larva Spike","minCount":1,"maxCount":1},{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"rare","item":"Acid Gland","minCount":0,"maxCount":2},{"section":"rare","item":"Larva Spike","minCount":0,"maxCount":3}],"combatStats":{"health":200,"attackDamageSummary":"Bite: 43.75. Combo Bite: 37.5. Charged Bite: 50."},"abilities":[{"name":"Bite","description":"A quick opening attack used to keep you in close range.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo Bite","description":"It chains several fast bites to punish late repositioning.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Charged Bite","description":"It pulls back slightly before lunging forward with more force.","blockable":true,"breaksGuard":false,"staggers":false}],"resistancesV2":[{"type":"generic","bonusPct":25}],"groupId":null,"cardTier":1,"technicalId":"LarvaORC","bestiaryId":"LarvaORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"weakPoints":[],"attacks":[{"name":"Melee Left","technicalId":"LarvaMeleeLeft","tags":["chopping"],"notes":"Attack damage: 35"},{"name":"Lunge","technicalId":"LarvaLunge","tags":["chopping"],"notes":"Attack damage: 40"},{"name":"Double Bite","technicalId":"LarvaDoubleBite","tags":["chopping"],"notes":"Attack damage: 30"},{"name":"Triple Bite","technicalId":"LarvaTripleBite","tags":["chopping"],"notes":"Attack damage: 30"}],"encounterVariants":[{"id":"g2_wave_larva_orc_wave","characterRow":"Larva_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":200.0,"stun":{"max":25.0,"duration":2.0,"cooldown":5.0,"staggerThreshold":25}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"LarvaMeleeLeft","ability":"LarvaMelee","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LarvaLunge","ability":"LarvaLunge","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":40.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LarvaDoubleBite","ability":"LarvaDoubleBite","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LarvaTripleBite","ability":"LarvaTripleBite","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Chopping","hitStun":7,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_larva_orc_wave","nameEn":"O.R.C. Larva Raid/Wave","nameEsMX":"Larva C.R.O.  (Oleada)","nameRu":"O.R.C. Личинка Рейд/волна"}],"contextVariants":[{"id":"Larva_ORC_Wave","characterRow":"Larva_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":200.0,"stun":{"max":25.0,"duration":2.0,"cooldown":5.0,"staggerThreshold":25}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"LarvaMeleeLeft","ability":"LarvaMelee","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LarvaLunge","ability":"LarvaLunge","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":40.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LarvaDoubleBite","ability":"LarvaDoubleBite","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LarvaTripleBite","ability":"LarvaTripleBite","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Chopping","hitStun":7,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Larva C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_larva",
+  "speciesKey": "orc_larva",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Larva",
+  "game": "g2",
+  "tier": 1,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 250,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Larva_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Larva_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Larva.webp",
+  "weaknesses": [
+    "slashing"
+  ],
+  "resistances": [
+    "generic"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 1,
+    "value": 200
+  },
+  "description": "A hangry remote-controlled larva with special abilities. It can drop an O.R.C. Receiver on death as well as regular creature parts.",
+  "behavior": "It runs short O.R.C. patrol routes and almost always sprints once it detects a threat. It hides less than a normal larva and relies more on quickly closing distance.",
+  "interactionWithPlayer": "It becomes hostile on sight and often tries to surround you with other O.R.C. larvae. The main rule is not to expose your back or let several attack at once.",
+  "interactionWithCreatures": "It often accompanies O.R.C. waves and clashes with smaller creatures that cross its routes. Its role is to harass and finish targets already distracted by larger units.",
+  "strategy": "A single one dies quickly, but several together are still dangerous. Block the combo, sidestep the charged bite, and focus the ones already on top of you first.",
+  "environments": [
+    "Greenhouse MIX.R",
+    "Network Center",
+    "Picnic O.R.C. Waves",
+    "Snackbar Front Area",
+    "Statue Area"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Acid Gland",
+      "minCount": 0,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Larva Spike",
+      "minCount": 1,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 200,
+    "stunThreshold": 25,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Bite",
+      "description": "A quick opening attack used to keep you in close range.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo Bite",
+      "description": "It chains several fast bites to punish late repositioning.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Charged Bite",
+      "description": "It pulls back slightly before lunging forward with more force.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 1,
+  "technicalId": "LarvaORC",
+  "bestiaryId": "LarvaORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Melee Left",
+      "technicalId": "LarvaMeleeLeft",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 35",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 5.0,
+      "range": 175.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Lunge",
+      "technicalId": "LarvaLunge",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 40",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 5.0,
+      "range": 250.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Double Bite",
+      "technicalId": "LarvaDoubleBite",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 30",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 0.0,
+      "range": 175.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Triple Bite",
+      "technicalId": "LarvaTripleBite",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 30",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 0.0,
+      "range": 175.0,
+      "stun": 7,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_larva_orc_wave",
+      "characterRow": "Larva_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 200.0,
+        "stun": {
+          "max": 25.0,
+          "duration": 2.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 25
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "LarvaMeleeLeft",
+          "ability": "LarvaMelee",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LarvaLunge",
+          "ability": "LarvaLunge",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LarvaDoubleBite",
+          "ability": "LarvaDoubleBite",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LarvaTripleBite",
+          "ability": "LarvaTripleBite",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Chopping",
+            "hitStun": 7,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_larva_orc_wave",
+      "nameEn": "O.R.C. Larva Raid/Wave",
+      "nameEsMX": "Larva C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Личинка Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Larva_ORC_Wave",
+      "characterRow": "Larva_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 200.0,
+        "stun": {
+          "max": 25.0,
+          "duration": 2.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 25
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "LarvaMeleeLeft",
+          "ability": "LarvaMelee",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LarvaLunge",
+          "ability": "LarvaLunge",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LarvaDoubleBite",
+          "ability": "LarvaDoubleBite",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LarvaTripleBite",
+          "ability": "LarvaTripleBite",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Chopping",
+            "hitStun": 7,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Larva C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_70f84d9f54140050",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -184963.62,
+        "y": 46965.43,
+        "z": 1674.5448
+      },
+      "u": 0.2867034427860697,
+      "v": 0.48850071810439333,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5464b8045bdba23c",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -167189.55,
+        "y": 47024.516,
+        "z": 1684.7533
+      },
+      "u": 0.353284682470003,
+      "v": 0.4887558157686146,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_97774fe01aeb4d39",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -177221.64,
+        "y": 18340.842,
+        "z": 20600.0
+      },
+      "u": 0.3157047140766754,
+      "v": 0.3649170343536555,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_774864b698094faa",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -165362.69,
+        "y": 38152.246,
+        "z": 3974.842
+      },
+      "u": 0.36012805618964006,
+      "v": 0.45045071213424404,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_13de1865bd2e568e",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -191187.08,
+        "y": 37089.492,
+        "z": 3996.8435
+      },
+      "u": 0.26339051097453914,
+      "v": 0.44586238219074126,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_435dad4681c11130",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -197544.94,
+        "y": 33447.46,
+        "z": 4135.01
+      },
+      "u": 0.23957411998829384,
+      "v": 0.4301382875453241,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b6a68ce8213fd5c3",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -173015.0,
+        "y": 14524.034,
+        "z": 18300.0
+      },
+      "u": 0.33146268656716416,
+      "v": 0.34843836249262156,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_894f3cd61189ebcb",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -174415.39,
+        "y": 14936.484,
+        "z": 18300.0
+      },
+      "u": 0.3262168592332455,
+      "v": 0.35021907250189727,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5fe317c455610db1",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -169804.02,
+        "y": 47024.516,
+        "z": 1683.0748
+      },
+      "u": 0.34349094059116186,
+      "v": 0.4887558157686146,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b09fb2d7061da44e",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -183826.39,
+        "y": 46965.43,
+        "z": 1673.1418
+      },
+      "u": 0.29096347907521214,
+      "v": 0.48850071810439333,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6b53c4408028674f",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -173325.0,
+        "y": 18250.0,
+        "z": 20600.0
+      },
+      "u": 0.3303014340064384,
+      "v": 0.36452483345981956,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_edd4094e9685fcda",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -199473.8,
+        "y": 22929.832,
+        "z": 4090.0508
+      },
+      "u": 0.23234865671641797,
+      "v": 0.3847295217471962,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_386ba0f2411b0b08",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -174786.64,
+        "y": 18620.842,
+        "z": 20600.0
+      },
+      "u": 0.32482616564237626,
+      "v": 0.36612590525339406,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_72049e34971f777f",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -189377.25,
+        "y": 40699.586,
+        "z": 4064.655
+      },
+      "u": 0.2701700907228563,
+      "v": 0.4614485878404588,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cb5b330b9f1645bb",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -195467.4,
+        "y": 34674.11,
+        "z": 4138.579
+      },
+      "u": 0.24735653497219787,
+      "v": 0.4354342214351968,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_63787968b636c118",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -163315.33,
+        "y": 34197.395,
+        "z": 4094.81
+      },
+      "u": 0.36779741761779344,
+      "v": 0.43337605396745077,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b4c893ba477706b6",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -173982.94,
+        "y": 41293.836,
+        "z": 4048.2424
+      },
+      "u": 0.327836806555458,
+      "v": 0.46401420045535036,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0fcbc9200f4e5234",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -167246.67,
+        "y": 135400.45,
+        "z": -1775.852
+      },
+      "u": 0.35307071232074916,
+      "v": 0.8703097259465385,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b7cd80494e0b673e",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -164196.8,
+        "y": 138094.83,
+        "z": -1778.9277
+      },
+      "u": 0.3644954521510097,
+      "v": 0.8819424315709585,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_506bdc9ac2af5945",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -187110.52,
+        "y": -43787.895,
+        "z": 1546.8055
+      },
+      "u": 0.2786612069066433,
+      "v": 0.09668266936503923,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_79ce2f13f44caaca",
+      "targetType": "creature",
+      "targetId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "map": "surface",
+      "world": {
+        "x": -191490.52,
+        "y": -46517.895,
+        "z": 1526.8055
+      },
+      "u": 0.2622538320163887,
+      "v": 0.08489617809258794,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/ORC_Larva.webp",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Acid Gland",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Acid Gland",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Larva Spike",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Larva Spike",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

@@ -1,1 +1,805 @@
-{"id":"g2_spiny_water_flea","speciesKey":"g1_spiny_water_flea","collectionGroup":"angry","game":"g2","danger":"unknown","order":320,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_spiny_water_flea.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"Pulga de agua espinosa","tier":3,"cardTier":3,"technicalId":"WaterFleaSpiny","bestiaryId":"WaterFleaSpiny","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WaterFleaSpiny.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WaterFleaSpinyG.png","weaknesses":["sour","stabbing"],"resistances":["slashing","fresh"],"elementalWeaknesses":[{"type":"sour","bonusPct":30}],"damageWeaknesses":[{"type":"stabbing","bonusPct":15}],"resistancesV2":[{"type":"slashing","bonusPct":50},{"type":"fresh","bonusPct":25}],"weakPoints":[],"attacks":[{"name":"Mordida","technicalId":"WaterFleaSpiny_Bite","tags":["stabbing"],"notes":"Daño del ataque: 30"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":300,"rating":1},"combatStats":{"health":300},"description":"Una versión espinosa de esta espantosa criatura que vive en las aguas hostiles del patio superior. Puede soltar carne de pulga de agua y musgo de estanque.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_spiny_water_flea",
+  "speciesKey": "g1_spiny_water_flea",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "intermedia",
+  "order": 320,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_spiny_water_flea.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Algae",
+      "minCount": 0,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "Water Flea Chunk",
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ],
+  "abilities": [],
+  "behavior": "Nada rápidamente por las zonas donde habita, normalmente acompañada de otras pulgas de agua espinosas. Si detecta una amenaza, se acercará rápidamente para atacarla con mordidas.",
+  "interactionWithPlayer": "Es hostil hacia el jugador y bastante más peligrosa que una pulga de agua común debido a su mayor velocidad. Varias atacando al mismo tiempo pueden llegar a ser molestas.",
+  "interactionWithCreatures": "No suele tener interacciones destacables con otras criaturas y normalmente permanece junto a otras pulgas de agua espinosas. Si alguna criatura la ataca, intentará defenderse.",
+  "strategy": "Una lanza con infusión Ácida aprovecha sus dos debilidades y es una de las mejores opciones para eliminarla. Si no necesitas su botín, normalmente es mejor evitarlas, especialmente cuando se encuentran en grupo.",
+  "groupId": null,
+  "name": "Pulga de agua espinosa",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "WaterFleaSpiny",
+  "bestiaryId": "WaterFleaSpiny",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WaterFleaSpiny.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WaterFleaSpinyG.png",
+  "weaknesses": [
+    "sour",
+    "stabbing"
+  ],
+  "resistances": [
+    "slashing",
+    "fresh"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "sour",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "slashing",
+      "bonusPct": 50
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Mordida",
+      "technicalId": "WaterFleaSpiny_Bite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 0.0,
+      "range": 300.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 1,
+    "value": 300
+  },
+  "combatStats": {
+    "health": 300,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "description": "Una versión espinosa de esta espantosa criatura que vive en las aguas hostiles del patio superior. Puede soltar carne de pulga de agua y musgo de estanque.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_7a256135451f98e7",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -39805.977,
+        "y": 45132.31,
+        "z": -7715.8774
+      },
+      "u": 0.8304604900204857,
+      "v": 0.4805864130196475,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6c89f40ee95e0129",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -45593.133,
+        "y": 41274.734,
+        "z": -5732.631
+      },
+      "u": 0.8087819425226807,
+      "v": 0.4639317295556118,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_341e707493e85a6f",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -34247.496,
+        "y": 43701.9,
+        "z": -9073.885
+      },
+      "u": 0.8512824264559555,
+      "v": 0.47441076650645075,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c1af4f66b3f48d1d",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -41830.625,
+        "y": 41934.367,
+        "z": -5317.0093
+      },
+      "u": 0.8228762071992977,
+      "v": 0.46677962647778054,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b8157e267c0d3646",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -68220.74,
+        "y": 32284.113,
+        "z": -14198.296
+      },
+      "u": 0.7240194697102723,
+      "v": 0.4251156577789022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_167eae30c4af07b2",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -34990.36,
+        "y": 31408.707,
+        "z": -6621.229
+      },
+      "u": 0.8484996757389524,
+      "v": 0.4213361833544143,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f8bce4dd5c3210a9",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -30412.564,
+        "y": 16666.684,
+        "z": -9639.615
+      },
+      "u": 0.8656479896985659,
+      "v": 0.3576890311830677,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fe985c83a8d1311f",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -28483.617,
+        "y": 15575.125,
+        "z": -9156.596
+      },
+      "u": 0.8728737788703541,
+      "v": 0.3529763386457543,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60f3093999f31589",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -36179.77,
+        "y": 941.4664,
+        "z": -8916.67
+      },
+      "u": 0.8440441744220077,
+      "v": 0.2897970385091492,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bb0be4a3891e5b29",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -36321.203,
+        "y": 2829.285,
+        "z": -9687.136
+      },
+      "u": 0.8435143697980684,
+      "v": 0.2979474991145965,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0b7072dfd30294e6",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -45164.117,
+        "y": -12394.614,
+        "z": -6882.323
+      },
+      "u": 0.8103890261633012,
+      "v": 0.232219897394384,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d3ecbfc3c90c78f9",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -46425.227,
+        "y": -11599.112,
+        "z": -6798.6396
+      },
+      "u": 0.8056649383669885,
+      "v": 0.2356543946032549,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_06629e67970472db",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -57505.543,
+        "y": -7806.6826,
+        "z": -8964.104
+      },
+      "u": 0.764158340532631,
+      "v": 0.2520278143924446,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_46c7737370cd2059",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -59579.418,
+        "y": -7228.595,
+        "z": -10266.194
+      },
+      "u": 0.7563896545507754,
+      "v": 0.25452364752508644,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7bdd7379df85ca33",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -61154.434,
+        "y": -6984.281,
+        "z": -11159.496
+      },
+      "u": 0.7504896824114721,
+      "v": 0.2555784478286533,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_19ef9e323bc77d9f",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -73957.73,
+        "y": -9955.85,
+        "z": -9565.703
+      },
+      "u": 0.7025288428446007,
+      "v": 0.24274900750484862,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_819895d5897799df",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -74791.984,
+        "y": -7858.954,
+        "z": -9730.319
+      },
+      "u": 0.6994037473807434,
+      "v": 0.2518021380554853,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_902770cfc5c39c05",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -71018.914,
+        "y": 8047.6714,
+        "z": -8203.694
+      },
+      "u": 0.7135375770558969,
+      "v": 0.32047734005228096,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2bcf013862dd33a6",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -71052.086,
+        "y": 6106.3794,
+        "z": -8203.694
+      },
+      "u": 0.7134133155399474,
+      "v": 0.3120960135997976,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_109ee49d746375cc",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -68962.4,
+        "y": 25125.393,
+        "z": -10624.798
+      },
+      "u": 0.7212412291483759,
+      "v": 0.3942086281811283,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f796151d71af0c61",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -68580.08,
+        "y": 20923.316,
+        "z": -11071.259
+      },
+      "u": 0.7226733906935908,
+      "v": 0.37606659745341087,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eb7d7581ca106571",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -52230.836,
+        "y": 21148.453,
+        "z": -13428.386
+      },
+      "u": 0.7839172663740122,
+      "v": 0.377038603052534,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ab8fc6ec366392e",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -53341.125,
+        "y": 19740.668,
+        "z": -12823.607
+      },
+      "u": 0.7797581504243489,
+      "v": 0.3709606376254322,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e4c1a0089cdff986",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -55015.082,
+        "y": 10063.019,
+        "z": -15089.589
+      },
+      "u": 0.7734875476733977,
+      "v": 0.32917839386120246,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e4823472677e20cb",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -52927.992,
+        "y": 8827.922,
+        "z": -15089.589
+      },
+      "u": 0.7813057367281241,
+      "v": 0.3238459909267223,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2dc410261f9efc1f",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -68002.125,
+        "y": 13399.828,
+        "z": -19808.148
+      },
+      "u": 0.724838396254024,
+      "v": 0.34358471992579476,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a59b8e184fada2e5",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -68867.77,
+        "y": 15516.158,
+        "z": -18816.35
+      },
+      "u": 0.7215957108574773,
+      "v": 0.3527217547516654,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_12fd0133ca3c34e7",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -56661.32,
+        "y": 13133.132,
+        "z": -17511.785
+      },
+      "u": 0.7673207796312554,
+      "v": 0.3424332876633781,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5a3a9367eff60fb7",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -26296.664,
+        "y": 8438.728,
+        "z": -11373.513
+      },
+      "u": 0.8810660523266023,
+      "v": 0.3221656862804621,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_479f886a1dc6a0eb",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -27732.07,
+        "y": 6443.0996,
+        "z": -13031.369
+      },
+      "u": 0.8756890558969855,
+      "v": 0.31354976806813384,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2732ab6d2a968665",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -58770.78,
+        "y": 24526.406,
+        "z": -11338.897
+      },
+      "u": 0.7594187930933568,
+      "v": 0.3916225640610506,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_52855243a807db21",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -59881.07,
+        "y": 23118.623,
+        "z": -10734.119
+      },
+      "u": 0.7552596733977173,
+      "v": 0.385544607268741,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e8991577cf2cda16",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -37947.316,
+        "y": 15693.064,
+        "z": -8401.44
+      },
+      "u": 0.8374229895229734,
+      "v": 0.35348552802091243,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3352665d69536974",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -39057.605,
+        "y": 14285.28,
+        "z": -7796.6626
+      },
+      "u": 0.8332638735733099,
+      "v": 0.34740756691120667,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dfa7b628f6ffde00",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -51058.51,
+        "y": 1106.3342,
+        "z": -8401.44
+      },
+      "u": 0.788308771436933,
+      "v": 0.2905088381010204,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0267ff31f29dbd25",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -52168.8,
+        "y": -301.44955,
+        "z": -7796.6626
+      },
+      "u": 0.7841496517412935,
+      "v": 0.2844308780706637,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0e1e5321aa27452e",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -44411.965,
+        "y": 9631.356,
+        "z": -23133.25
+      },
+      "u": 0.8132065695054141,
+      "v": 0.3273147337212244,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_878dedcd808b245d",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -49222.57,
+        "y": 3432.439,
+        "z": -24250.988
+      },
+      "u": 0.7951861586186713,
+      "v": 0.30055155382409987,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1bc882df867d2600",
+      "targetType": "creature",
+      "targetId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "map": "surface",
+      "world": {
+        "x": -57118.957,
+        "y": 16787.89,
+        "z": -21976.744
+      },
+      "u": 0.765606482411472,
+      "v": 0.3582123254911882,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Algae",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Water Flea Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

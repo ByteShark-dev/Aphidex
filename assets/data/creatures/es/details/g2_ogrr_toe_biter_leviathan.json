@@ -1,1 +1,509 @@
-{"id":"g2_ogrr_toe_biter_leviathan","speciesKey":"ogrr_toe_biter_leviathan","collectionGroup":"ogrr","game":"g2","danger":"unknown","order":308,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_ogrr_toe_biter_leviathan.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"Leviatán mordedora de dedos I.R.G.O.","tier":4,"cardTier":4,"technicalId":"ToeBiterLeviathanOGRE","bestiaryId":"ToeBiterLeviathanOGRE","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier4_ToeBiter_Leviathan_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier4_ToeBiter_Leviathan_OGRR_G.png","weaknesses":[],"resistances":["water","venom","slashing"],"elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[{"type":"water","bonusPct":35},{"type":"venom","bonusPct":50},{"type":"slashing","bonusPct":50}],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Área ataque","technicalId":"ToeBiterLeviathanAOE","tags":["generic"],"notes":"Daño del ataque: 140"},{"name":"Toe Biter Leviathan Range","technicalId":"ToeBiterLeviathanRange","tags":["general_unblockable","ranged"],"notes":"Daño del ataque: 100"},{"name":"Combo 5 A","technicalId":"ToeBiterLeviathanCombo5A","tags":["slashing"],"notes":"Daño del ataque: 85"},{"name":"Combo 5 B","technicalId":"ToeBiterLeviathanCombo5B","tags":["slashing"],"notes":"Daño del ataque: 85"},{"name":"Potente ataque","technicalId":"ToeBiterLeviathanPowerAttack","tags":["slashing"],"notes":"Daño del ataque: 150"},{"name":"Bloqueo ofensivo","technicalId":"BlockOffensive","tags":["maine"],"notes":"Daño del ataque: 0"},{"name":"Gas","technicalId":"ToeBiterLeviathanGas","tags":["gas"],"notes":"Daño del ataque: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":3200,"rating":5},"combatStats":{"health":3200},"description":"Un leviatán mordedor de dedos abominable, incluso para los estándares de estos bichos. Es resistente a la esencia de su mutación. Al morir, suelta veneno de mordedor de dedos.","localizationStatus":"ru_automatic_pending_review","infusions":[{"id":"fresh","name":"Fresco","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Chill."],"recommendations":"No te quedes en daño Fresh como respuesta principal.","combatTips":["Cambia a daño picante o a un arma física consistente si tu build depende de Fresh."]},{"id":"sour","name":"Ácido","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Tang."],"recommendations":"Evita quedarte en armas ácidas como respuesta principal.","combatTips":["Picante es la respuesta elemental más limpia; si no, usa un arma física que no dependa de Tang."]},{"id":"spicy","name":"Picante","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Sizzle."],"recommendations":"No dependas de daño picante cuando esta infusión está activa.","combatTips":["Fresh es la respuesta elemental más limpia si la criatura te deja sostener el ritmo."]}],"listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_toe_biter_leviathan",
+  "speciesKey": "ogrr_toe_biter_leviathan",
+  "collectionGroup": "ogrr",
+  "game": "g2",
+  "danger": "extrema",
+  "order": 308,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_ogrr_toe_biter_leviathan.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Toenail",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Infused Ooze",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Claw",
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Shell",
+      "minCount": 3,
+      "maxCount": 10
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Venom",
+      "minCount": 1,
+      "maxCount": 4
+    }
+  ],
+  "abilities": [],
+  "behavior": "Permanece en la parte final del Abismo, protegiendo una sección importante para avanzar en la historia. Al entrar en combate utiliza el repertorio del leviatán normal, con combos, ataques en área, gas y ataques imbloqueables, mientras su infusión elemental añade efectos adicionales a sus golpes. Durante el enfrentamiento también puede invocar ninfas que se unen a la pelea.",
+  "interactionWithPlayer": "Funciona prácticamente como un minijefe y enfrentarlo directamente puede convertirse en una pelea extremadamente larga. Su enorme cantidad de vida, los efectos secundarios de su infusión y las ninfas que va generando hacen que los errores se acumulen rápidamente y que sea fácil terminar muriendo después de varios minutos de combate.",
+  "interactionWithCreatures": "El encuentro está principalmente centrado en el jugador y el propio leviatán. Durante la pelea puede apoyarse en ninfas invocadas, que aumentan progresivamente la presión y pueden limitar tu movimiento mientras intentas mantener la atención sobre el I.R.G.O.",
+  "strategy": "Una de las formas más efectivas de derrotarlo es preparar aproximadamente 10 bombas acuáticas antes del combate. Colócalas juntas cerca de una orilla sin acercarte lo suficiente para que te detecte y, cuando estés listo, atrae al leviatán hacia ellas para hacerlas detonar y causarle una enorme cantidad de daño de una sola vez. Si prefieres combatirlo directamente, prepárate para una pelea muy larga: lleva suficientes curaciones, controla las ninfas que vaya invocando y evita acumular los efectos de su infusión. Revisa siempre el elemento activo y utiliza Fresco → Ácido, Ácido → Picante y Picante → Fresco. Evita armas Cortantes y aprovecha su parte trasera siempre que tengas una apertura segura.",
+  "groupId": null,
+  "name": "Leviatán mordedora de dedos I.R.G.O.",
+  "tier": 4,
+  "cardTier": 4,
+  "technicalId": "ToeBiterLeviathanOGRE",
+  "bestiaryId": "ToeBiterLeviathanOGRE",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier4_ToeBiter_Leviathan_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier4_ToeBiter_Leviathan_OGRR_G.png",
+  "weaknesses": [],
+  "resistances": [
+    "water",
+    "venom",
+    "slashing"
+  ],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "water",
+      "bonusPct": 35
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "butt",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Área ataque",
+      "technicalId": "ToeBiterLeviathanAOE",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 140",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 140.0,
+      "cooldownSeconds": 12.0,
+      "range": 1200.0,
+      "stun": 20,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Toe Biter Leviathan Range",
+      "technicalId": "ToeBiterLeviathanRange",
+      "tags": [
+        "general",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Daño del ataque: 100",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 5.0,
+      "range": 200.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 5 A",
+      "technicalId": "ToeBiterLeviathanCombo5A",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Daño del ataque: 85",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 5.0,
+      "range": 650.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 5 B",
+      "technicalId": "ToeBiterLeviathanCombo5B",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Daño del ataque: 85",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 5.0,
+      "range": 650.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente ataque",
+      "technicalId": "ToeBiterLeviathanPowerAttack",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Daño del ataque: 150",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 150.0,
+      "cooldownSeconds": 8.0,
+      "range": 650.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bloqueo ofensivo",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Gas",
+      "technicalId": "ToeBiterLeviathanGas",
+      "tags": [
+        "gas",
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [
+        "gas"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 60.0,
+      "range": 1600.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 5,
+    "value": 3200
+  },
+  "combatStats": {
+    "health": 3200,
+    "stunThreshold": 120,
+    "stunCooldownSeconds": 60
+  },
+  "description": "Un leviatán mordedor de dedos abominable, incluso para los estándares de estos bichos. Es resistente a la esencia de su mutación. Al morir, suelta veneno de mordedor de dedos.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresco",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Chill."
+      ],
+      "recommendations": "No te quedes en daño Fresh como respuesta principal.",
+      "combatTips": [
+        "Cambia a daño picante o a un arma física consistente si tu build depende de Fresh."
+      ]
+    },
+    {
+      "id": "sour",
+      "name": "Ácido",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Tang."
+      ],
+      "recommendations": "Evita quedarte en armas ácidas como respuesta principal.",
+      "combatTips": [
+        "Picante es la respuesta elemental más limpia; si no, usa un arma física que no dependa de Tang."
+      ]
+    },
+    {
+      "id": "spicy",
+      "name": "Picante",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Sizzle."
+      ],
+      "recommendations": "No dependas de daño picante cuando esta infusión está activa.",
+      "combatTips": [
+        "Fresh es la respuesta elemental más limpia si la criatura te deja sostener el ritmo."
+      ]
+    }
+  ],
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_c2cc3b00d8cf0c74",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanOGRE",
+      "map": "abyss",
+      "world": {
+        "x": 221490.53,
+        "y": 236377.0,
+        "z": -16800.01
+      },
+      "u": 0.6858537925876461,
+      "v": 0.8102349509594883,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    }
+  ],
+  "environmentHazards": [
+    "required_equipment"
+  ],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "Los OGRR pueden liberarse desde el laboratorio del espantapájaros. Después de hacerlo pueden aparecer en distintas zonas, principalmente durante la noche.",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Toenail",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Infused Ooze",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Claw",
+      "countLabel": "1",
+      "chancePct": 20,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Claw",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Head",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "3",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "3",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Venom",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Venom",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Venom",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

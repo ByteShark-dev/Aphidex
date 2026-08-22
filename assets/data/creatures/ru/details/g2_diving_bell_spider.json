@@ -1,1 +1,2543 @@
-{"id":"g2_diving_bell_spider","speciesKey":"g1_diving_bell_spider","collectionGroup":"angry","game":"g2","danger":"unknown","order":280,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_diving_bell_spider.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Мы готовим эту информацию для вас.","interactionWithPlayer":"Мы готовим эту информацию для вас.","interactionWithCreatures":"Мы готовим эту информацию для вас.","strategy":"Мы готовим эту информацию для вас.","groupId":null,"name":"Паук-серебрянка","tier":2,"cardTier":2,"technicalId":"SpiderDivingBell","bestiaryId":"SpiderDivingBell","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_DivingBell.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_DivingBell_G.png","weaknesses":["slashing","salty"],"resistances":["stabbing","fresh"],"elementalWeaknesses":[{"type":"salty","bonusPct":30}],"damageWeaknesses":[{"type":"slashing","bonusPct":30}],"resistancesV2":[{"type":"stabbing","bonusPct":25},{"type":"fresh","bonusPct":25}],"weakPoints":[],"attacks":[{"name":"Bite","technicalId":"SpiderDivingBellBite_Augusta","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Lunge","technicalId":"SpiderDivingBellLunge_Augusta","tags":["stabbing"],"notes":"Урон атаки: 68"},{"name":"Spider Diving Bell Water Dodge","technicalId":"SpiderDivingBell_WaterDodge_Augusta","tags":[],"notes":"Урон атаки: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":200,"rating":1},"combatStats":{"health":200},"description":"Мы готовим эту информацию для вас.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_diving_bell_spider",
+  "speciesKey": "g1_diving_bell_spider",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "intermedia",
+  "order": 280,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_diving_bell_spider.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Diving Bell Spider Chunk",
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Web",
+      "minCount": 0,
+      "maxCount": 5
+    }
+  ],
+  "abilities": [],
+  "behavior": "Она плавает в стоячих или неглубоких участках пруда. Часто нападает на встреченных существ и быстро сокращает дистанцию, чтобы укусить.",
+  "interactionWithPlayer": "Она враждебна и атакует игрока сразу после обнаружения. Подвижность под водой и быстрые атаки могут сделать её опасной для тех, кто ещё не привык к подводным боям.",
+  "interactionWithCreatures": "В Grounded 2 она уже не только хищник. Водяные клопы также охотятся на неё, поэтому несколько мёртвых или ослабленных пауков-серебрянок могут указывать на присутствие более опасных врагов поблизости.",
+  "strategy": "Продолжайте двигаться и следите за окружением. Один паук-серебрянка обычно не является большой угрозой, но существа рядом с ним могут быть гораздо опаснее.",
+  "groupId": null,
+  "name": "Паук-серебрянка",
+  "tier": 2,
+  "cardTier": 2,
+  "technicalId": "SpiderDivingBell",
+  "bestiaryId": "SpiderDivingBell",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_DivingBell.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_DivingBell_G.png",
+  "weaknesses": [
+    "slashing",
+    "salty"
+  ],
+  "resistances": [
+    "stabbing",
+    "fresh"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "salty",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 30
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "technicalId": "SpiderDivingBellBite_Augusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 3.0,
+      "range": 400.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Small"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Small",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Lunge",
+      "technicalId": "SpiderDivingBellLunge_Augusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 68",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 68.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 12,
+      "statusEffects": [
+        "Venom Small"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Small",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spider Diving Bell Water Dodge",
+      "technicalId": "SpiderDivingBell_WaterDodge_Augusta",
+      "tags": [],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "movement_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 1,
+    "value": 200
+  },
+  "combatStats": {
+    "health": 200,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "description": "Мы готовим эту информацию для вас.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_517d7813ae897f4e",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 207778.81,
+        "y": 188870.9,
+        "z": -11562.848
+      },
+      "u": 0.4983305701502504,
+      "v": 0.39534159147121534,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_07c84a12f4424999",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 205502.17,
+        "y": 186865.88,
+        "z": -11562.848
+      },
+      "u": 0.46719495265442423,
+      "v": 0.3778307984648188,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_87fd17cbca41384d",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 200396.0,
+        "y": 176412.0,
+        "z": -13415.0
+      },
+      "u": 0.39736232387312187,
+      "v": 0.28653209381663114,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_8abcba311622c0df",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 198990.38,
+        "y": 174083.39,
+        "z": -13293.496
+      },
+      "u": 0.37813888641068455,
+      "v": 0.2661952354797443,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_73f7715650140d8e",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 193238.75,
+        "y": 179545.52,
+        "z": -11736.26
+      },
+      "u": 0.2994788647746243,
+      "v": 0.31389861390191887,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_c80c07937b26174b",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 190849.03,
+        "y": 181738.66,
+        "z": -14372.211
+      },
+      "u": 0.266796750851419,
+      "v": 0.33305234831556507,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_9ed4dd146e03f187",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 195123.62,
+        "y": 185166.27,
+        "z": -14331.564
+      },
+      "u": 0.3252565860434056,
+      "v": 0.3629872962046907,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_5ab0b470f9f9271c",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 188961.88,
+        "y": 187869.06,
+        "z": -14300.006
+      },
+      "u": 0.24098784801335568,
+      "v": 0.3865920463965885,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_dbd16e624c7096e8",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 177267.66,
+        "y": 171205.97,
+        "z": -8838.746
+      },
+      "u": 0.08105621155258771,
+      "v": 0.24106535846481877,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_a40d0b145048e4aa",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 193468.95,
+        "y": 199785.45,
+        "z": -11163.654
+      },
+      "u": 0.3026271091819701,
+      "v": 0.4906635462686568,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_166d4f93d51b6758",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 177637.47,
+        "y": 182698.19,
+        "z": -14363.957
+      },
+      "u": 0.08611378003338901,
+      "v": 0.3414323800426439,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_97af7ceaa50645a1",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 180080.66,
+        "y": 183981.88,
+        "z": -14267.773
+      },
+      "u": 0.119527156460768,
+      "v": 0.3526434551812367,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_3b95a7c42072acf3",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 180080.66,
+        "y": 186441.88,
+        "z": -14267.773
+      },
+      "u": 0.119527156460768,
+      "v": 0.3741278048614073,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_48fa11cd8e0f592f",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 202484.39,
+        "y": 178962.33,
+        "z": -11624.642
+      },
+      "u": 0.4259234104841404,
+      "v": 0.30880533833688684,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_914487a81c9d5c86",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 175532.33,
+        "y": 196973.84,
+        "z": -10771.196
+      },
+      "u": 0.05732361829716176,
+      "v": 0.46610841927505325,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_3cefbf74493c6a7c",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 177136.75,
+        "y": 199132.05,
+        "z": -10936.605
+      },
+      "u": 0.07926586978297162,
+      "v": 0.4849570933901918,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_74526e73dbd878d1",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "abyss",
+      "world": {
+        "x": 177776.45,
+        "y": 195470.72,
+        "z": -10502.693
+      },
+      "u": 0.08801448814691165,
+      "v": 0.45298095761194035,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_7b7cc464993a824f",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -33798.95,
+        "y": -50375.08,
+        "z": -5147.675
+      },
+      "u": 0.8529626690079016,
+      "v": 0.06824318273041574,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1b350f3cb3889168",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -36887.383,
+        "y": -44099.53,
+        "z": -5310.06
+      },
+      "u": 0.841393473105063,
+      "v": 0.0953372176406105,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7dd73bd3e6bd2f47",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -63466.574,
+        "y": -27178.262,
+        "z": -9769.127
+      },
+      "u": 0.7418284614574189,
+      "v": 0.168393033611603,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_05c4c3c7efd6de45",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -70250.94,
+        "y": -31460.393,
+        "z": -9036.45
+      },
+      "u": 0.716414389230319,
+      "v": 0.14990537805885826,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_599c3ac1d80b4524",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -45151.805,
+        "y": -23992.152,
+        "z": -9974.803
+      },
+      "u": 0.810435146619842,
+      "v": 0.18214873240576776,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bc9798dd14244f09",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -44704.848,
+        "y": -25151.709,
+        "z": -9128.748
+      },
+      "u": 0.8121094368159203,
+      "v": 0.17714246557045282,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8d17b543b69a2936",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -42212.06,
+        "y": -27299.188,
+        "z": -8575.72
+      },
+      "u": 0.8214473608428446,
+      "v": 0.1678709481743824,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8d269b3b34eac9b0",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -71900.42,
+        "y": -46076.28,
+        "z": -5618.365
+      },
+      "u": 0.7102354767339772,
+      "v": 0.08680280495825954,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8851b02f17895a80",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -76628.6,
+        "y": -45459.812,
+        "z": -5058.498
+      },
+      "u": 0.6925238279192274,
+      "v": 0.08946434147904546,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dac006c7916539aa",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -73530.02,
+        "y": -48972.156,
+        "z": -5372.041
+      },
+      "u": 0.7041310342405619,
+      "v": 0.0743001612952188,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b62e48af3666877c",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -70232.586,
+        "y": -50275.93,
+        "z": -5447.35
+      },
+      "u": 0.7164831428738659,
+      "v": 0.06867125255080536,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da2682dfc5768565",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -74553.82,
+        "y": -46582.266,
+        "z": -5382.8535
+      },
+      "u": 0.7002959040093648,
+      "v": 0.08461826299013409,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_65ac03a4f5149dd5",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -33353.29,
+        "y": -49502.656,
+        "z": -5265.1323
+      },
+      "u": 0.854632100673105,
+      "v": 0.07200978267982122,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5874a52ddc612f99",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -41614.516,
+        "y": -49364.754,
+        "z": -5435.037
+      },
+      "u": 0.8236857463271876,
+      "v": 0.0726051602327346,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2d6f3ec59e9245e6",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -42503.383,
+        "y": -45506.96,
+        "z": -5468.09
+      },
+      "u": 0.8203560718759145,
+      "v": 0.08926078488911375,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e0a7240606cec456",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -40406.93,
+        "y": -48497.703,
+        "z": -5460.1733
+      },
+      "u": 0.828209334503951,
+      "v": 0.07634856281305336,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3fd2117c7670010d",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -34087.758,
+        "y": -43835.027,
+        "z": -5310.06
+      },
+      "u": 0.8518808011706176,
+      "v": 0.09647918185344462,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_368231c2834f6f98",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -41840.87,
+        "y": -38381.027,
+        "z": -5544.931
+      },
+      "u": 0.8228378296751536,
+      "v": 0.12002626002192429,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d9dbc08280da067",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -39206.17,
+        "y": -35688.91,
+        "z": -5485.159
+      },
+      "u": 0.8327073526485221,
+      "v": 0.13164919537903705,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9988734bcef9e048",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -69816.57,
+        "y": -34178.26,
+        "z": -8584.87
+      },
+      "u": 0.7180415288264559,
+      "v": 0.1381712697529302,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_725385d51f3d5f17",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -69559.055,
+        "y": -34537.008,
+        "z": -7682.8677
+      },
+      "u": 0.719006173836699,
+      "v": 0.13662241254743232,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_be915103dadb277a",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -68853.305,
+        "y": -28970.932,
+        "z": -9103.396
+      },
+      "u": 0.7216498964003512,
+      "v": 0.1606533671979088,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_52fa7ac97dc43760",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -66803.305,
+        "y": -27020.932,
+        "z": -9103.396
+      },
+      "u": 0.7293291472051507,
+      "v": 0.16907228953537393,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2380ec1ec8a431a9",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -63466.574,
+        "y": -27178.262,
+        "z": -10920.121
+      },
+      "u": 0.7418284614574189,
+      "v": 0.168393033611603,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_55925e587e103143",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -45323.574,
+        "y": -41341.88,
+        "z": -5947.8257
+      },
+      "u": 0.8097917040678958,
+      "v": 0.10724308491441098,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d4d277fe3a0e4277",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -46747.14,
+        "y": -37464.516,
+        "z": -5625.486
+      },
+      "u": 0.8044590599941469,
+      "v": 0.12398320101188971,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_726a48c02eff61b2",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -36098.637,
+        "y": -37676.324,
+        "z": -5252.1436
+      },
+      "u": 0.8443480966930056,
+      "v": 0.12306874198499036,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_12bdd7831ed8732a",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -38972.375,
+        "y": -49617.81,
+        "z": -5734.7637
+      },
+      "u": 0.8335831431079894,
+      "v": 0.0715126172527195,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d591e9cb7e01d442",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -35150.484,
+        "y": -48226.86,
+        "z": -5420.069
+      },
+      "u": 0.8478998550775534,
+      "v": 0.07751789931697446,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9fdb05bc03cd177d",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -41917.06,
+        "y": -44217.14,
+        "z": -5723.0107
+      },
+      "u": 0.8225524237635353,
+      "v": 0.09482944868875957,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a6242bb786eb20ef",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -47959.2,
+        "y": 39907.945,
+        "z": -4857.068
+      },
+      "u": 0.7999187123207492,
+      "v": 0.45803076009781596,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9965b077e2551d07",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -43555.38,
+        "y": 41964.496,
+        "z": -5843.174
+      },
+      "u": 0.8164153163593796,
+      "v": 0.4669097053039884,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_89a600c5e6ede2cc",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -34196.023,
+        "y": 40436.277,
+        "z": -9252.663
+      },
+      "u": 0.851475243078724,
+      "v": 0.46031177859853273,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f7417e55ee31b470",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -38585.523,
+        "y": 42104.383,
+        "z": -7780.4976
+      },
+      "u": 0.8350322814164473,
+      "v": 0.46751365288810187,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_30548209c65a9f67",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -39283.164,
+        "y": 42333.95,
+        "z": -6350.99
+      },
+      "u": 0.8324189349721979,
+      "v": 0.46850478455181727,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_73199000fc1568f5",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -42642.414,
+        "y": 39943.535,
+        "z": -5639.769
+      },
+      "u": 0.8198352650863331,
+      "v": 0.4581844162239649,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cbdc10515fff06fe",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -42789.36,
+        "y": 40505.41,
+        "z": -5853.9565
+      },
+      "u": 0.8192848088966931,
+      "v": 0.4606102531410743,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ecec93492cd42898",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -44657.74,
+        "y": 37102.914,
+        "z": -5459.851
+      },
+      "u": 0.8122859022534388,
+      "v": 0.4459203302807993,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a08313fa746d448d",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -45321.207,
+        "y": 37269.652,
+        "z": -5536.3267
+      },
+      "u": 0.8098005707930933,
+      "v": 0.4466402042668016,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3e09164a8e6439a8",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -34657.867,
+        "y": 41226.72,
+        "z": -5713.299
+      },
+      "u": 0.8497451865378988,
+      "v": 0.46372443410068304,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a99d10c7d36752ab",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -32185.473,
+        "y": 42422.125,
+        "z": -5986.8364
+      },
+      "u": 0.8590067151302312,
+      "v": 0.46888547095033306,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3596960312233cc7",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -34825.168,
+        "y": 52592.12,
+        "z": 4035.2983
+      },
+      "u": 0.849118481006731,
+      "v": 0.5127933674002867,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a58399eb10f6a80e",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -31971.496,
+        "y": 40569.26,
+        "z": -8951.481
+      },
+      "u": 0.8598082678372843,
+      "v": 0.46088591888017544,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ec9d75e3eeb836c6",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -32837.047,
+        "y": 39291.094,
+        "z": -9451.654
+      },
+      "u": 0.8565659345624818,
+      "v": 0.45536757001433503,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_507a7088266d97a5",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -32805.34,
+        "y": 40345.31,
+        "z": -9733.211
+      },
+      "u": 0.856684708223588,
+      "v": 0.45991903803018813,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_345dcd5e22bc3f08",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -42259.094,
+        "y": 40924.22,
+        "z": -6328.3564
+      },
+      "u": 0.8212711726075506,
+      "v": 0.4624184217893583,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_03f598b9126ed293",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -37108.45,
+        "y": 44349.51,
+        "z": -6650.3457
+      },
+      "u": 0.8405653614281533,
+      "v": 0.47720675537566404,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_718014720c66206b",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -35125.094,
+        "y": 42862.64,
+        "z": -5267.38
+      },
+      "u": 0.8479949654082529,
+      "v": 0.4707873486803272,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ff288bba40c75e91",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -33825.15,
+        "y": 37286.582,
+        "z": -5267.38
+      },
+      "u": 0.8528645244366403,
+      "v": 0.446713297782275,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3c5c2e853d465866",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -34108.184,
+        "y": 35534.383,
+        "z": -6098.5005
+      },
+      "u": 0.8518042858647936,
+      "v": 0.43914836070494984,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2df9391d6a7024dd",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -51997.1,
+        "y": 42516.1,
+        "z": -6468.8594
+      },
+      "u": 0.7847928358208955,
+      "v": 0.4692911982460579,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5ec3730b493b61cd",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -51568.703,
+        "y": 43524.85,
+        "z": -5774.3965
+      },
+      "u": 0.7863976007023705,
+      "v": 0.4736463715321697,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c24ca604a3953c93",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -52243.195,
+        "y": 41851.723,
+        "z": -6453.417
+      },
+      "u": 0.7838709698565994,
+      "v": 0.46642281959693066,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0239c2b040a1407",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -33402.984,
+        "y": 52444.344,
+        "z": 4035.2983
+      },
+      "u": 0.8544459481416448,
+      "v": 0.5121553598785732,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2bbfa529452d9b31",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -22548.861,
+        "y": 60628.21,
+        "z": 1223.1921
+      },
+      "u": 0.8951052324261047,
+      "v": 0.5474883507884307,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a10d17806be10f8b",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -23965.102,
+        "y": 62677.66,
+        "z": 1154.1583
+      },
+      "u": 0.8898000276265731,
+      "v": 0.5563366381651066,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_163f05befedce49f",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -28800.74,
+        "y": 7737.301,
+        "z": -11530.327
+      },
+      "u": 0.8716858437225636,
+      "v": 0.319137348106923,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a4588bc23643d21a",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -43869.406,
+        "y": 26670.098,
+        "z": -10506.916
+      },
+      "u": 0.8152389824992683,
+      "v": 0.4008777314782022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4b50665544d65f56",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -36817.188,
+        "y": 20251.168,
+        "z": -14389.303
+      },
+      "u": 0.8416564218905472,
+      "v": 0.3731646683194199,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b06e2c15ddef0358",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -39179.97,
+        "y": 20956.496,
+        "z": -14371.663
+      },
+      "u": 0.8328054972197834,
+      "v": 0.3762098486550298,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1dea1e75c0777fbd",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -37025.613,
+        "y": 22740.455,
+        "z": -13074.697
+      },
+      "u": 0.8408756668422593,
+      "v": 0.3839119062315542,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f56140ff8de30975",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -36951.992,
+        "y": 7268.9663,
+        "z": -13008.662
+      },
+      "u": 0.8411514493415276,
+      "v": 0.3171153617134666,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f9acc2700a936077",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -35731.566,
+        "y": 8841.425,
+        "z": -12631.053
+      },
+      "u": 0.845723135850161,
+      "v": 0.3239042887258622,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3268ec4bab809918",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -37089.777,
+        "y": 10304.241,
+        "z": -13393.873
+      },
+      "u": 0.840635310038045,
+      "v": 0.3302198447761195,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ab17e99a40141e0",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -43885.11,
+        "y": -4034.7686,
+        "z": -10472.455
+      },
+      "u": 0.8151801556921277,
+      "v": 0.2683126610742895,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b2357658263c7aee",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -46692.242,
+        "y": -3889.1423,
+        "z": -11685.467
+      },
+      "u": 0.8046647065847234,
+      "v": 0.2689413874896702,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c482aa3c2fb2857f",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -43989.883,
+        "y": -937.91644,
+        "z": -11510.779
+      },
+      "u": 0.8147876785484343,
+      "v": 0.2816829984207775,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5cc806197baf9e98",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -60393.9,
+        "y": -1358.8579,
+        "z": -18602.047
+      },
+      "u": 0.7533386245244367,
+      "v": 0.27986562741546506,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c83a789f651659e",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -58773.395,
+        "y": 660.57214,
+        "z": -19689.406
+      },
+      "u": 0.7594089973661107,
+      "v": 0.28858430673480057,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_84c18da1b3cdbc21",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -60156.71,
+        "y": -156.0702,
+        "z": -17123.688
+      },
+      "u": 0.754227132572432,
+      "v": 0.28505853830508476,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6399271366a84840",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -77979.766,
+        "y": -2092.3862,
+        "z": -8026.2295
+      },
+      "u": 0.687462392508048,
+      "v": 0.27669869521544815,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d47cef6a5f47d510",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -76331.195,
+        "y": -4161.3213,
+        "z": -10033.944
+      },
+      "u": 0.6936378999122037,
+      "v": 0.267766282944599,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c1030690620f42e9",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -77528.83,
+        "y": -77.859856,
+        "z": -9216.006
+      },
+      "u": 0.6891515879426398,
+      "v": 0.2853962033369424,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d8b451a5f54ce865",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -76250.85,
+        "y": -2300.0068,
+        "z": -8128.717
+      },
+      "u": 0.6939388703541118,
+      "v": 0.2758023148528544,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e853ccc33fa9f7d9",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -75841.61,
+        "y": 16788.344,
+        "z": -9480.755
+      },
+      "u": 0.69547187357331,
+      "v": 0.35821428558900414,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e858180b0fb58a2d",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -74365.24,
+        "y": 12551.142,
+        "z": -9998.835
+      },
+      "u": 0.7010023201638864,
+      "v": 0.3399206063243106,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_08e14b6c6ad1cc47",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -73466.63,
+        "y": 15118.981,
+        "z": -11473.606
+      },
+      "u": 0.7043684916593503,
+      "v": 0.3510069843325744,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6f3021d46324d6a2",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -65536.14,
+        "y": 29974.004,
+        "z": -9980.059
+      },
+      "u": 0.7340759168861574,
+      "v": 0.41514200225988707,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_81ff53ec63dfa204",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -65191.977,
+        "y": 32605.45,
+        "z": -10839.031
+      },
+      "u": 0.7353651432250512,
+      "v": 0.4265029968800068,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_19ae03b5eedf9bfe",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -64005.79,
+        "y": 29360.71,
+        "z": -11621.954
+      },
+      "u": 0.7398085712613403,
+      "v": 0.4124941691542288,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cce20c65471036a8",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -46763.15,
+        "y": 24897.916,
+        "z": -9075.93
+      },
+      "u": 0.8043990869183495,
+      "v": 0.39322651987520024,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da49a3fadc9ba5b8",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -46032.777,
+        "y": 26646.484,
+        "z": -9018.127
+      },
+      "u": 0.8071350466491074,
+      "v": 0.4007757804873935,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ccd3c20090c529ec",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -52041.176,
+        "y": 15818.769,
+        "z": -15016.15
+      },
+      "u": 0.7846277281826164,
+      "v": 0.35402824629395396,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f8573bc8ed7ecfd0",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -66400.89,
+        "y": 16711.164,
+        "z": -14180.466
+      },
+      "u": 0.7308365841381328,
+      "v": 0.35788106896028327,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3270fe07ab368e40",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -52810.395,
+        "y": 14567.235,
+        "z": -14736.546
+      },
+      "u": 0.7817462522680715,
+      "v": 0.34862487832026307,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d8ec433b2e67aab",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -62106.027,
+        "y": 14512.513,
+        "z": -17500.014
+      },
+      "u": 0.7469250378694762,
+      "v": 0.34838862177249347,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ba77527c52d3ae02",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -63026.08,
+        "y": 16280.754,
+        "z": -18256.844
+      },
+      "u": 0.743478541410594,
+      "v": 0.3560228185175816,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_43ef615a4c446023",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -65113.37,
+        "y": 14428.955,
+        "z": -18137.287
+      },
+      "u": 0.7356596031606673,
+      "v": 0.348027868791635,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0d6e085b29cdab30",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -21836.031,
+        "y": 16279.654,
+        "z": -8174.5825
+      },
+      "u": 0.8977754764998538,
+      "v": 0.35601806938190406,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f068fab6910ec9c9",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -28698.479,
+        "y": 22412.744,
+        "z": -6330.61
+      },
+      "u": 0.8720689109745391,
+      "v": 0.3824970480478961,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_407746728cc20305",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -55264.652,
+        "y": 13476.615,
+        "z": -19744.527
+      },
+      "u": 0.7725526644424935,
+      "v": 0.3439162398178598,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_211ee5fe653a0626",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -54427.312,
+        "y": 12922.97,
+        "z": -19744.527
+      },
+      "u": 0.7756893199882938,
+      "v": 0.3415259350704107,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_98b19b4b5deb993b",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -56781.445,
+        "y": 1759.9819,
+        "z": -19689.406
+      },
+      "u": 0.7668707942639743,
+      "v": 0.29333089411248847,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_182fbac37b7a648f",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -62245.8,
+        "y": 3856.571,
+        "z": -10920.601
+      },
+      "u": 0.7464014515657009,
+      "v": 0.30238269965427095,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e55c5121245140e",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -73362.29,
+        "y": -5740.8677,
+        "z": -10187.314
+      },
+      "u": 0.7047593467954347,
+      "v": 0.2609467555240745,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_175a6f3fddc529e7",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -80729.484,
+        "y": -4519.5146,
+        "z": -6537.144
+      },
+      "u": 0.6771620148668424,
+      "v": 0.2662198205987015,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_522d7b2e73eb9324",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -55374.426,
+        "y": -14173.917,
+        "z": -7399.04
+      },
+      "u": 0.7721414536728124,
+      "v": 0.22453794161396406,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b564404ba75fe07",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -47463.23,
+        "y": 17060.979,
+        "z": -22210.56
+      },
+      "u": 0.8017766040386303,
+      "v": 0.3593913588666835,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ae4dd1abdcd438f",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -48477.27,
+        "y": 19154.35,
+        "z": -25536.398
+      },
+      "u": 0.7979780345332164,
+      "v": 0.3684292705961717,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_03ead022659aa4a9",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -35804.18,
+        "y": 24559.63,
+        "z": -11633.803
+      },
+      "u": 0.845451125548727,
+      "v": 0.3917660052280968,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b3297370381177aa",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -41287.02,
+        "y": -3947.6418,
+        "z": -9655.226
+      },
+      "u": 0.8249125384840503,
+      "v": 0.2686888219782443,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_188827c69c7db44f",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -74743.31,
+        "y": 15286.171,
+        "z": -9103.5625
+      },
+      "u": 0.6995860790166814,
+      "v": 0.3517288097816005,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_13a56253b06ebcee",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -66983.81,
+        "y": 26923.45,
+        "z": -10644.201
+      },
+      "u": 0.7286529798068481,
+      "v": 0.4019715524074543,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e4a28a0b80156a3e",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -58900.723,
+        "y": 16843.604,
+        "z": -10359.0205
+      },
+      "u": 0.7589320297336845,
+      "v": 0.35845286489585965,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f7728f6470487dce",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -60704.39,
+        "y": 16521.695,
+        "z": -9838.394
+      },
+      "u": 0.7521755364354697,
+      "v": 0.3570630562442027,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_089b366fdd6136ce",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -59846.56,
+        "y": 5225.9814,
+        "z": -17438.328
+      },
+      "u": 0.7553889470295582,
+      "v": 0.3082949867341259,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2073d24ef9443ebb",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -57631.176,
+        "y": -13021.609,
+        "z": -9154.65
+      },
+      "u": 0.7636877223295288,
+      "v": 0.22951291164516405,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3776f35968cdc42e",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -56596.8,
+        "y": -12010.625,
+        "z": -9154.65
+      },
+      "u": 0.7675624700029267,
+      "v": 0.23387772999409728,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f1c5add21db54c34",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -46280.53,
+        "y": 9225.23,
+        "z": -6022.8853
+      },
+      "u": 0.8062069698565995,
+      "v": 0.3255613269246986,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c5c4413fe5acaf47",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -45692.656,
+        "y": 11696.086,
+        "z": -6022.8853
+      },
+      "u": 0.8084091317529997,
+      "v": 0.3362289909098576,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c85951558020a330",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -45065.043,
+        "y": 11115.172,
+        "z": -7455.208
+      },
+      "u": 0.8107601549897571,
+      "v": 0.33372095508896193,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_932d3dc63bee6758",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -66266.5,
+        "y": 6369.7617,
+        "z": -13572.762
+      },
+      "u": 0.7313400058530874,
+      "v": 0.3132331393068556,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a89aa99db9551896",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -64476.66,
+        "y": -16630.002,
+        "z": -8131.8223
+      },
+      "u": 0.738044703541118,
+      "v": 0.21393404988616235,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fe86946fe8a25a63",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -24494.52,
+        "y": 15679.933,
+        "z": -6207.792
+      },
+      "u": 0.8878168405033656,
+      "v": 0.35342883629311067,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dbcc384ea6abc44d",
+      "targetType": "creature",
+      "targetId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "map": "surface",
+      "world": {
+        "x": -25308.135,
+        "y": 14256.491,
+        "z": -8096.84
+      },
+      "u": 0.8847690582382206,
+      "v": 0.3472832733957332,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [
+    "required_equipment"
+  ],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Diving Bell Spider Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Diving Bell Spider Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Web",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Web",
+      "countLabel": "3",
+      "chancePct": 80,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

@@ -1,1 +1,3227 @@
-{"id":"g2_orb_weaver","speciesKey":"orb_weaver","collectionGroup":"angry","name":"Araña tejedora","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":281,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_OrbWeaver.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaver_G.png","photo":"assets/g2/creatures/photos/Orb_Weaver.webp","weaknesses":["spicy"],"resistances":["fresh","stabbing","venom"],"temperament":"aggressive","health":{"value":730,"rating":3},"description":"Arácnido de color negro y amarillo intenso, que caza en el parque. Al morir, puede soltar trozos de araña, colmillos de araña y fibra de telaraña.","behavior":"Patrulla zonas concretas del suelo, teje telarañas y duerme en nidos acompañada de arañitas y tejedoras jóvenes. Si rompes telas cercanas o alteras el nido, se activa casi de inmediato.","interactionWithPlayer":"Es hostil con el jugador y mezcla combos frontales con disparos de telaraña para fijarte en el sitio. Si te atrapa con una red, rómpela al instante antes de que encadene el siguiente ataque.","interactionWithCreatures":"Comparte espacio con otras arañas y suele ignorar a la mayoría de criaturas hasta que invaden su red o su ruta. Las presas pequeñas atrapadas en tela sí suelen activar su agresión.","strategy":"Equipo de tier 1 o 2 basta si mantienes el ritmo. Respeta el combo, esquiva o bloquea el web shot y usa ataques cargados para castigar su postura defensiva cuando intente aguantar frente a ti.","environments":["Cueva de petardos","Área de ceremonia","Cancha de croquet","Zona de entrada","Pozo de fuego","Invernadero","Alrededores del invernadero","Alrededores del carrito de helados","Zona de la mesa de pícnic","Colina de pinos","Parche de calabazas","Huerto vegetal"],"respawnInfo":"1 día","loot":[{"section":"loot","item":"Trozo de tejedora de orbe","minCount":2,"maxCount":5},{"section":"loot","item":"Colmillo de tejedora de orbe","minCount":0,"maxCount":2},{"section":"loot","item":"Fibra de telaraña","minCount":0,"maxCount":4},{"section":"rare","item":"Trozo de tejedora de orbe","minCount":0,"maxCount":2},{"section":"rare","item":"Fibra de telaraña","minCount":0,"maxCount":1}],"advancedLootTable":[{"item":"Trozo de tejedora de orbe","countLabel":"x2","chancePct":100},{"item":"Trozo de tejedora de orbe","countLabel":"x2","chancePct":50},{"item":"Trozo de tejedora de orbe","countLabel":"x1","chancePct":25},{"item":"Trozo de tejedora de orbe","countLabel":"x2","chancePct":1},{"item":"Colmillo de tejedora de orbe","countLabel":"x1","chancePct":60},{"item":"Orb Weaver Fang","countLabel":"x1","chancePct":25},{"item":"Fibra de telaraña","countLabel":"x4","chancePct":50},{"item":"Fibra de telaraña","countLabel":"x1","chancePct":1}],"combatStats":{"health":730,"stunThreshold":75,"stunCooldownSeconds":5,"attackDamageSummary":"Mordisco: 50. Combo de 3 mordidas: 30. Mordisco cargado: 65. Disparo de telaraña: 40."},"inflictsEffects":["stabbing"],"inflicts":["Todos sus ataques directos hacen daño perforante. El disparo de telaraña inmoviliza o ralentiza hasta que rompes la red."],"abilities":[{"name":"Mordisco","description":"A basic blockable bite.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo de 3 mordidas","description":"Encadena tres mordidas bloqueables con muy poca pausa.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Mordisco cargado","description":"Ruge, se carga y se lanza adelante. Rompe la guardia si no bloqueas perfecto.","blockable":true,"breaksGuard":true,"staggers":false},{"name":"Disparo de telaraña","description":"Dispara una red que no puede bloquearse y que genera telarañas al impactar.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Postura defensiva","description":"Gira una tela frente a su cuerpo y anula ataques ligeros de frente hasta que la interrumpes con un golpe cargado."},{"name":"Amago","description":"It fakes the start of a bite before switching quickly into another attack."}],"elementalWeaknesses":[{"type":"spicy","bonusPct":30}],"resistancesV2":[{"type":"fresh","bonusPct":25},{"type":"stabbing","bonusPct":25},{"type":"venom","bonusPct":50}],"groupId":null,"cardTier":2,"technicalId":"SpiderOrb","bestiaryId":"SpiderOrb","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Spider","technicalId":"SpiderAugusta","tags":["stabbing"],"notes":"Daño del ataque: 50"},{"name":"Mordida","technicalId":"SpiderAugustaLeftBite","tags":["stabbing"],"notes":"Daño del ataque: 50"},{"name":"Triple mordida","technicalId":"SpiderAugustaTripleBite","tags":["stabbing"],"notes":"Daño del ataque: 30"},{"name":"Potente ataque","technicalId":"SpiderAugustaPowerAttack","tags":["stabbing"],"notes":"Daño del ataque: 65"},{"name":"Spider Web","technicalId":"SpiderAugustaWeb","tags":["general_ranged","ranged"],"notes":"Daño del ataque: 25"},{"name":"Spider Scripted Web Target","technicalId":"SpiderAugustaScriptedWebTarget","tags":["stabbing"],"notes":"Daño del ataque: 50"},{"name":"Bloqueo ofensivo","technicalId":"BlockOffensive","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[],"contextVariants":[{"id":"Spider_OrbWeaver_Augusta_Wave","characterRow":"Spider_OrbWeaver_Augusta_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":730.0,"stun":{"max":25.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":[],"resistances":[{"damageTypes":["Fresh"],"percent":25.0,"sourceId":"DamageResistFreshTiny"},{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Poison"],"percent":50.0,"sourceId":"DamageResistPoisonMedium"}],"weaknesses":[{"damageTypes":["Spicy"],"percent":15.0,"sourceId":"DamageResistDownSpicyTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"SpiderAugusta","ability":"SpiderAugustaBite1","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaLeftBite","ability":"SpiderAugustaBite2","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaTripleBite","ability":"SpiderAugustaTripleBite","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaPowerAttack","ability":"SpiderAugustaPower","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":65.0,"type":"Stabbing","hitStun":10,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaWeb","ability":"SpiderAugustaWeb","resolved":true,"cooldown":30.0,"priority":0,"targetType":"Enemy","damage":{"amount":25.0,"type":"GeneralRanged","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["WebSlow"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":1500.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaScriptedWebTarget","ability":"SpiderAugustaBiteScriptedWebTarget","resolved":true,"cooldown":0.0,"priority":99,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BlockOffensive","ability":"BlockOffensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":7,"unresolvedAttacks":0,"hiddenContextualModifiers":["DamageResistBurrTrapDown","DamageResistTurretDown"],"extractionWarnings":[]},"nameEsMX":"Araña tejedora  (Oleada)"},{"id":"Spider_OrbWeaver_Wave","characterRow":"Spider_OrbWeaver_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":550.0,"stun":{"max":70.0,"duration":2.0,"cooldown":15.0,"staggerThreshold":30}},"weakpoints":[],"resistances":[{"damageTypes":["Fresh"],"percent":25.0,"sourceId":"DamageResistFreshTiny"},{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"},{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["All"],"percent":25.0,"sourceId":"DamageResistAllBase"},{"damageTypes":["Poison"],"percent":50.0,"sourceId":"DamageResistPoisonMedium"}],"weaknesses":[{"damageTypes":["Spicy"],"percent":30.0,"sourceId":"DamageResistDownSpicyMedium"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"Spider","ability":"SpiderOrbBite1","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderOrbLeftBite","ability":"SpiderOrbBite2","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderOrbTripleBite","ability":"SpiderOrbTripleBite","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderOrbPowerAttack","ability":"SpiderOrbPower","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":65.0,"type":"Stabbing","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderWeb","ability":"SpiderWeb","resolved":true,"cooldown":7.99998,"priority":1,"targetType":"Enemy","damage":{"amount":40.0,"type":"GeneralRanged","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["WebSlow"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":1500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":5,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Araña tejedora  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orb_weaver",
+  "speciesKey": "orb_weaver",
+  "collectionGroup": "angry",
+  "name": "Araña tejedora",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 281,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_OrbWeaver.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaver_G.png",
+  "photo": "assets/g2/creatures/photos/Orb_Weaver.webp",
+  "weaknesses": [
+    "spicy"
+  ],
+  "resistances": [
+    "fresh",
+    "stabbing",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 3,
+    "value": 730
+  },
+  "description": "Arácnido de color negro y amarillo intenso, que caza en el parque. Al morir, puede soltar trozos de araña, colmillos de araña y fibra de telaraña.",
+  "behavior": "Patrulla zonas concretas del suelo, teje telarañas y duerme en nidos acompañada de arañitas y tejedoras jóvenes. Si rompes telas cercanas o alteras el nido, se activa casi de inmediato.",
+  "interactionWithPlayer": "Es hostil con el jugador y mezcla combos frontales con disparos de telaraña para fijarte en el sitio. Si te atrapa con una red, rómpela al instante antes de que encadene el siguiente ataque.",
+  "interactionWithCreatures": "Comparte espacio con otras arañas y suele ignorar a la mayoría de criaturas hasta que invaden su red o su ruta. Las presas pequeñas atrapadas en tela sí suelen activar su agresión.",
+  "strategy": "Equipo de tier 1 o 2 basta si mantienes el ritmo. Respeta el combo, esquiva o bloquea el web shot y usa ataques cargados para castigar su postura defensiva cuando intente aguantar frente a ti.",
+  "environments": [
+    "Cueva de petardos",
+    "Área de ceremonia",
+    "Cancha de croquet",
+    "Zona de entrada",
+    "Pozo de fuego",
+    "Invernadero",
+    "Alrededores del invernadero",
+    "Alrededores del carrito de helados",
+    "Zona de la mesa de pícnic",
+    "Colina de pinos",
+    "Parche de calabazas",
+    "Huerto vegetal"
+  ],
+  "respawnInfo": "1 día",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Spider Chunk",
+      "minCount": 2,
+      "maxCount": 7
+    },
+    {
+      "section": "loot",
+      "item": "Spider Fang",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Web",
+      "minCount": 0,
+      "maxCount": 5
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Spider Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Spider Chunk",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Chunk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Chunk",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Fang",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Fang",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Web",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Web",
+      "countLabel": "4",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 730,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "inflictsEffects": [
+    "stabbing"
+  ],
+  "inflicts": [
+    "Todos sus ataques directos hacen daño perforante. El disparo de telaraña inmoviliza o ralentiza hasta que rompes la red."
+  ],
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "A basic blockable bite.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo de 3 mordidas",
+      "description": "Encadena tres mordidas bloqueables con muy poca pausa.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Mordisco cargado",
+      "description": "Ruge, se carga y se lanza adelante. Rompe la guardia si no bloqueas perfecto.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": false
+    },
+    {
+      "name": "Disparo de telaraña",
+      "description": "Dispara una red que no puede bloquearse y que genera telarañas al impactar.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Postura defensiva",
+      "description": "Gira una tela frente a su cuerpo y anula ataques ligeros de frente hasta que la interrumpes con un golpe cargado."
+    },
+    {
+      "name": "Amago",
+      "description": "It fakes the start of a bite before switching quickly into another attack."
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 30
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 25
+    },
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "SpiderOrb",
+  "bestiaryId": "SpiderOrb",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Spider",
+      "technicalId": "SpiderAugusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 300.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mordida",
+      "technicalId": "SpiderAugustaLeftBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 300.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Triple mordida",
+      "technicalId": "SpiderAugustaTripleBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 3.0,
+      "range": 300.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente ataque",
+      "technicalId": "SpiderAugustaPowerAttack",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 65",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 65.0,
+      "cooldownSeconds": 3.0,
+      "range": 300.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spider Web",
+      "technicalId": "SpiderAugustaWeb",
+      "tags": [
+        "general",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Daño del ataque: 25",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 25.0,
+      "cooldownSeconds": 30.0,
+      "range": 1500.0,
+      "stun": 8,
+      "statusEffects": [
+        "Web Slow"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Web Slow",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "projectile",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spider Scripted Web Target",
+      "technicalId": "SpiderAugustaScriptedWebTarget",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 0.0,
+      "range": 300.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bloqueo ofensivo",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [
+    {
+      "id": "Spider_OrbWeaver_Augusta_Wave",
+      "characterRow": "Spider_OrbWeaver_Augusta_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 730.0,
+        "stun": {
+          "max": 25.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Poison"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistPoisonMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSpicyTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "SpiderAugusta",
+          "ability": "SpiderAugustaBite1",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaLeftBite",
+          "ability": "SpiderAugustaBite2",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaTripleBite",
+          "ability": "SpiderAugustaTripleBite",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaPowerAttack",
+          "ability": "SpiderAugustaPower",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 65.0,
+            "type": "Stabbing",
+            "hitStun": 10,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaWeb",
+          "ability": "SpiderAugustaWeb",
+          "resolved": true,
+          "cooldown": 30.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 25.0,
+            "type": "GeneralRanged",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "WebSlow"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 1500.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaScriptedWebTarget",
+          "ability": "SpiderAugustaBiteScriptedWebTarget",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 99,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BlockOffensive",
+          "ability": "BlockOffensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 7,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [
+          "DamageResistBurrTrapDown",
+          "DamageResistTurretDown"
+        ],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Araña tejedora  (Oleada)"
+    },
+    {
+      "id": "Spider_OrbWeaver_Wave",
+      "characterRow": "Spider_OrbWeaver_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 550.0,
+        "stun": {
+          "max": 70.0,
+          "duration": 2.0,
+          "cooldown": 15.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "All"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistAllBase"
+        },
+        {
+          "damageTypes": [
+            "Poison"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistPoisonMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownSpicyMedium"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "Spider",
+          "ability": "SpiderOrbBite1",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderOrbLeftBite",
+          "ability": "SpiderOrbBite2",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderOrbTripleBite",
+          "ability": "SpiderOrbTripleBite",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderOrbPowerAttack",
+          "ability": "SpiderOrbPower",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 65.0,
+            "type": "Stabbing",
+            "hitStun": 12,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderWeb",
+          "ability": "SpiderWeb",
+          "resolved": true,
+          "cooldown": 7.99998,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "GeneralRanged",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "WebSlow"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 1500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 5,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Araña tejedora  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_9fe8eae46ea2e541",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -201941.06,
+        "y": 40792.914,
+        "z": 3269.541
+      },
+      "u": 0.22310635996488146,
+      "v": 0.4618515217809258,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0332d732f6f2de4e",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -123647.94,
+        "y": -17858.688,
+        "z": 7830.409
+      },
+      "u": 0.516390508633304,
+      "v": 0.20862932577789026,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_947890acc84a5417",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -146754.02,
+        "y": -24817.336,
+        "z": 1643.6796
+      },
+      "u": 0.4298356874451274,
+      "v": 0.17858608624673242,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8508680a08a55cf0",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -146485.44,
+        "y": -54389.035,
+        "z": 1693.6555
+      },
+      "u": 0.4308417816798361,
+      "v": 0.050913349186272015,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c1a1b97b22cbaaf3",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -144258.27,
+        "y": -53943.867,
+        "z": 1733.5209
+      },
+      "u": 0.43918470705297047,
+      "v": 0.05283531576018214,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_22d6e18efe4d743e",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -130605.67,
+        "y": -21207.06,
+        "z": 11335.704
+      },
+      "u": 0.4903270190225344,
+      "v": 0.19417307766253478,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3d9f9d942015d542",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -209039.75,
+        "y": 149708.31,
+        "z": 5078.3926
+      },
+      "u": 0.19651483757682178,
+      "v": 0.9320824244877308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b3568021f41f908b",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -196435.16,
+        "y": 114588.54,
+        "z": 11297.84
+      },
+      "u": 0.24373132923617208,
+      "v": 0.7804564674930432,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7b082f2eb9a7cda5",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -190746.11,
+        "y": 116337.34,
+        "z": 7733.9927
+      },
+      "u": 0.2650423740122915,
+      "v": 0.7880067297411248,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_40abbbceea3c843e",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -185792.77,
+        "y": 111813.516,
+        "z": 1807.9678
+      },
+      "u": 0.2835974667837285,
+      "v": 0.768475589779914,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1298c629327245db",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -110769.87,
+        "y": 49924.508,
+        "z": 1153.2219
+      },
+      "u": 0.5646314498097746,
+      "v": 0.5012762298338814,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8f856cbb1c5b4b1a",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -115150.516,
+        "y": -1088.4688,
+        "z": 1170.0712
+      },
+      "u": 0.5482216550190225,
+      "v": 0.2810330042533097,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e0c716c31245601d",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -198497.47,
+        "y": 143254.72,
+        "z": -47.24653
+      },
+      "u": 0.23600596546678373,
+      "v": 0.9042197203811451,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_693829c45bd9ee1b",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -117387.76,
+        "y": 51589.098,
+        "z": -258.37888
+      },
+      "u": 0.5398409926836406,
+      "v": 0.5084629241588666,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3e33dba3e2ad0d6d",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -109529.12,
+        "y": 26264.906,
+        "z": 1518.2963
+      },
+      "u": 0.5692792695346796,
+      "v": 0.39912835712960615,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e29aca2e04090741",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -109030.8,
+        "y": -44789.11,
+        "z": 12944.099
+      },
+      "u": 0.5711459642961663,
+      "v": 0.09236002765831859,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_659aff79dff9f9f3",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -242641.86,
+        "y": 143705.17,
+        "z": 4157.993
+      },
+      "u": 0.0706421398887914,
+      "v": 0.9061644914410998,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6155ef4eb7cf9f87",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -157554.66,
+        "y": -7175.5625,
+        "z": 7000.136
+      },
+      "u": 0.3893767491952005,
+      "v": 0.25475260983219494,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cbb3268ca4c202ef",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -199532.25,
+        "y": 50294.73,
+        "z": 941.65826
+      },
+      "u": 0.23212970441908107,
+      "v": 0.5028746248418923,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_21e1965e633637fd",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -232106.9,
+        "y": 134977.73,
+        "z": 1093.6239
+      },
+      "u": 0.11010584723441617,
+      "v": 0.8684846762796188,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_754fcae967c860cb",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -175324.39,
+        "y": -28105.24,
+        "z": -1000.0
+      },
+      "u": 0.32281176704711734,
+      "v": 0.16439090243696766,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ee0de07fb860b57c",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -67146.14,
+        "y": -36647.363,
+        "z": -1654.1847
+      },
+      "u": 0.728044895522388,
+      "v": 0.12751117416308294,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5b972da3b3078fd2",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -55816.016,
+        "y": -33733.17,
+        "z": -2012.913
+      },
+      "u": 0.7704872681299385,
+      "v": 0.1400928995699469,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_343e1095f11c20e5",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -255313.17,
+        "y": 47554.742,
+        "z": 4953.582
+      },
+      "u": 0.023175716710564776,
+      "v": 0.4910450114174888,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cc2a144f9bfcf98f",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -256709.98,
+        "y": 57814.508,
+        "z": 5271.601
+      },
+      "u": 0.017943299970734523,
+      "v": 0.5353404848300868,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_47490b7273a096b4",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -257062.31,
+        "y": 53402.78,
+        "z": 9939.782
+      },
+      "u": 0.016623480245829683,
+      "v": 0.5162933076987941,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c0dba6fa31bc3816",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -257062.31,
+        "y": 51352.78,
+        "z": 9889.782
+      },
+      "u": 0.016623480245829683,
+      "v": 0.5074426457542794,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9c3ba0bd119fbe23",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -223080.69,
+        "y": 114362.95,
+        "z": 376.55615
+      },
+      "u": 0.14391781328650863,
+      "v": 0.7794825061135003,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4eac860f348d5c5c",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -116152.55,
+        "y": 6925.086,
+        "z": 21265.336
+      },
+      "u": 0.5444680597014926,
+      "v": 0.315630694257526,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_72d29a5fc952924f",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -109217.03,
+        "y": 25320.71,
+        "z": 18123.984
+      },
+      "u": 0.5704483511852503,
+      "v": 0.39505188902942906,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8ecd0175308012e6",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -133299.78,
+        "y": 1908.2385,
+        "z": 3938.2258
+      },
+      "u": 0.48023494761486685,
+      "v": 0.29397097657475335,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a5fe22608ed60ca8",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -135194.75,
+        "y": -4259.2,
+        "z": 4084.9868
+      },
+      "u": 0.47313643546971024,
+      "v": 0.26734370182983386,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_613591792c28677c",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -126915.45,
+        "y": -6688.0737,
+        "z": 6751.0117
+      },
+      "u": 0.504150494585894,
+      "v": 0.2568572920617253,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_16b346081ac5ca4f",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -184045.61,
+        "y": -36252.832,
+        "z": 3159.1543
+      },
+      "u": 0.290142286215979,
+      "v": 0.1292145207521714,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d3265411b59d84c",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -90916.79,
+        "y": 91325.34,
+        "z": -2133.177
+      },
+      "u": 0.6390006110623355,
+      "v": 0.6800200192259044,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ceb293e3e63c5e3",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -115247.75,
+        "y": 13088.699,
+        "z": 21265.191
+      },
+      "u": 0.5478574187884109,
+      "v": 0.3422414528037777,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4b9baa1f8dbb7343",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -168800.0,
+        "y": -35700.0,
+        "z": 4656.3975
+      },
+      "u": 0.3472519754170325,
+      "v": 0.13160131545661521,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d3a9f601bcbe8346",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -131061.37,
+        "y": -4400.7935,
+        "z": 1166.2621
+      },
+      "u": 0.48861997775826754,
+      "v": 0.2667323866093263,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b811a26e8f05bf95",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -79128.62,
+        "y": 75934.88,
+        "z": -2135.871
+      },
+      "u": 0.6831588129938544,
+      "v": 0.6135733076987943,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6004bcddc3791854",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -179443.72,
+        "y": -35059.316,
+        "z": 154.6568
+      },
+      "u": 0.30738085572139306,
+      "v": 0.13436740204064426,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3f48400cb93df915",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -183444.08,
+        "y": -36042.777,
+        "z": 243.62761
+      },
+      "u": 0.2923956031606673,
+      "v": 0.13012141138375913,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a80fb713a910dae",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -182565.62,
+        "y": -10359.98,
+        "z": 5631.7495
+      },
+      "u": 0.295686293239684,
+      "v": 0.2410042182308795,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7af67574e2cc56a0",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -183580.97,
+        "y": -13800.669,
+        "z": 3777.242
+      },
+      "u": 0.29188281650570674,
+      "v": 0.2261494010624842,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_82f83f2cbaef6562",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -171856.55,
+        "y": -37731.625,
+        "z": 6846.1157
+      },
+      "u": 0.3358022124670764,
+      "v": 0.12282998566489585,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4d19d809065f604a",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -116110.26,
+        "y": -1238.4465,
+        "z": 22889.588
+      },
+      "u": 0.5446264770266315,
+      "v": 0.2803854911206679,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a120291b6e30e89",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -116311.93,
+        "y": 20330.227,
+        "z": 6790.8706
+      },
+      "u": 0.5438710260462394,
+      "v": 0.37350599733535716,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d97b38d8b5996e8",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -131595.36,
+        "y": 13568.714,
+        "z": 2984.9714
+      },
+      "u": 0.48661966403277734,
+      "v": 0.34431386767855643,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6d718bdd0cfdda19",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -134705.36,
+        "y": -6366.2856,
+        "z": 345.4704
+      },
+      "u": 0.4749696786654961,
+      "v": 0.25824657874019735,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_38c960cd5e2d25cf",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -111149.02,
+        "y": 48919.812,
+        "z": -830.08093
+      },
+      "u": 0.563211163008487,
+      "v": 0.4969385592714394,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f2e0bdc2d87d6f8e",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -108052.445,
+        "y": 11716.439,
+        "z": 3724.7224
+      },
+      "u": 0.5748108586479368,
+      "v": 0.33631686287208035,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_32c1b65dcbbd7442",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -112155.336,
+        "y": 6374.412,
+        "z": 4020.0378
+      },
+      "u": 0.5594415274217149,
+      "v": 0.3132532164938023,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_272de52d67c051b8",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -113970.6,
+        "y": 5242.535,
+        "z": 1499.8784
+      },
+      "u": 0.5526415920398009,
+      "v": 0.3083664551817185,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fbb89de44b28b331",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -106405.07,
+        "y": 178.42453,
+        "z": 1395.6948
+      },
+      "u": 0.5809818858647937,
+      "v": 0.286502684537988,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d483321fbd73ec99",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -157954.83,
+        "y": 156288.9,
+        "z": 2039.7247
+      },
+      "u": 0.3878777219783436,
+      "v": 0.9604934378952694,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6e0907fddc6b08bb",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -127212.2,
+        "y": -11453.241,
+        "z": 1116.6313
+      },
+      "u": 0.5030388762071992,
+      "v": 0.23628417748545413,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6e28d9753bc26910",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -112513.72,
+        "y": 6925.086,
+        "z": 24471.639
+      },
+      "u": 0.5580990295580919,
+      "v": 0.315630694257526,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bd57b13d1663fe10",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -115398.82,
+        "y": -501.10455,
+        "z": 24374.21
+      },
+      "u": 0.5472915141937371,
+      "v": 0.283568888358209,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5325bad10c8f5e76",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -141119.08,
+        "y": 67571.984,
+        "z": -3655.7212
+      },
+      "u": 0.4509440374597601,
+      "v": 0.577467373370436,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d3c8d921315f7082",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -156787.22,
+        "y": 139053.52,
+        "z": -3022.548
+      },
+      "u": 0.3922515610184372,
+      "v": 0.8860814760097816,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_be8b0cb01744a37e",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -98871.86,
+        "y": 121750.445,
+        "z": -500.51816
+      },
+      "u": 0.6092011097453908,
+      "v": 0.8113772479973017,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a274908f0ce08276",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -167549.12,
+        "y": 54992.953,
+        "z": 1567.5746
+      },
+      "u": 0.35193774187884114,
+      "v": 0.5231587143604014,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da1fbb06791f5ea5",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -209948.22,
+        "y": 155778.34,
+        "z": 12548.075
+      },
+      "u": 0.19311173075797483,
+      "v": 0.9582891481575174,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9264bd0c5e94c3f4",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -156027.6,
+        "y": 40617.453,
+        "z": 2562.1895
+      },
+      "u": 0.39509707930933563,
+      "v": 0.4610939871490008,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1a6f9c42e8edd9fa",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -146135.19,
+        "y": 53101.37,
+        "z": -846.59106
+      },
+      "u": 0.4321538097746561,
+      "v": 0.5149920013491862,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_947fb4a9a852199c",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -144124.25,
+        "y": 52419.734,
+        "z": 676.20337
+      },
+      "u": 0.43968674275680425,
+      "v": 0.5120491087612783,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_26918e150c997800",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -86171.75,
+        "y": 158588.95,
+        "z": 1403.0577
+      },
+      "u": 0.6567754170324847,
+      "v": 0.9704236647272115,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_30a756a4cffc3ed0",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -115087.44,
+        "y": 157927.12,
+        "z": 1358.2506
+      },
+      "u": 0.5484579362013462,
+      "v": 0.9675662824858757,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ccd18efed863c8ef",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -148106.23,
+        "y": 90935.65,
+        "z": -6233.798
+      },
+      "u": 0.42477034123500146,
+      "v": 0.6783375731511931,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a08e86c979f581a8",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -171101.02,
+        "y": 115479.69,
+        "z": -3052.634
+      },
+      "u": 0.3386324097161253,
+      "v": 0.7843039150012648,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ec7a2b631298f177",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -78653.44,
+        "y": 124908.57,
+        "z": -13.629137
+      },
+      "u": 0.6849388258706467,
+      "v": 0.8250121244624335,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4279e9a1372ba6cf",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -75519.73,
+        "y": 150890.84,
+        "z": 104.576675
+      },
+      "u": 0.6966776283289436,
+      "v": 0.9371878748629732,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_69e18b0b90d2ae14",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -84244.516,
+        "y": 132946.53,
+        "z": 2293.0068
+      },
+      "u": 0.6639947893473808,
+      "v": 0.8597151813812296,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c41916aae3b6c7fd",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -146448.48,
+        "y": 2313.7888,
+        "z": 3061.6824
+      },
+      "u": 0.43098023295288257,
+      "v": 0.2957218978463615,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e9f5c73919e4d900",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -145228.08,
+        "y": 1521.4775,
+        "z": 2644.5068
+      },
+      "u": 0.43555182206613996,
+      "v": 0.2923011761531327,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_899775d390386945",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -62894.06,
+        "y": 86281.08,
+        "z": -2298.6782
+      },
+      "u": 0.7439730851624232,
+      "v": 0.6582419509233495,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2aa8224d63e4aaf8",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -64607.26,
+        "y": 72619.9,
+        "z": -888.3486
+      },
+      "u": 0.7375554790752122,
+      "v": 0.5992612260730247,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d960d0238b605536",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -130059.586,
+        "y": 37840.79,
+        "z": -266.36166
+      },
+      "u": 0.49237263658179686,
+      "v": 0.449106033223712,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ac4d4696cb96da2b",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -130654.66,
+        "y": 37969.535,
+        "z": -235.06299
+      },
+      "u": 0.49014350365817966,
+      "v": 0.4496618763808079,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_98764ba116c198e1",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -110917.98,
+        "y": 132492.52,
+        "z": 7312.781
+      },
+      "u": 0.564076633304068,
+      "v": 0.857755040391264,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_65c736dbfb964248",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -201118.69,
+        "y": 156279.19,
+        "z": 13054.781
+      },
+      "u": 0.22618693824992683,
+      "v": 0.9604515159794249,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3c4cc6f1e886b463",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -59393.21,
+        "y": 119464.75,
+        "z": -3879.4036
+      },
+      "u": 0.7570871852502196,
+      "v": 0.8015089973859516,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_930f47134ceb08e4",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -202970.94,
+        "y": 127187.73,
+        "z": 9125.994
+      },
+      "u": 0.21924845419959027,
+      "v": 0.8348521608904629,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fc01d67c8d66c2fd",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -34210.613,
+        "y": 55360.86,
+        "z": 33571.27
+      },
+      "u": 0.8514205892888498,
+      "v": 0.5247471145965089,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_115438e6516e440b",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -227490.92,
+        "y": 85827.82,
+        "z": 109.89719
+      },
+      "u": 0.1273971975417032,
+      "v": 0.6562850479804367,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a69dcfa6bc09939d",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -43212.26,
+        "y": 56381.273,
+        "z": 4292.4106
+      },
+      "u": 0.8177006356453029,
+      "v": 0.5291526416729909,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5c3985e5d93939dd",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -223316.31,
+        "y": -13792.235,
+        "z": 6287.187
+      },
+      "u": 0.143035186420837,
+      "v": 0.22618581398094273,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca1e88e2dd5bfdb1",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -193750.0,
+        "y": -12195.0,
+        "z": 6908.328
+      },
+      "u": 0.2537898741586187,
+      "v": 0.23308171009359985,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4721f731efdeea62",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -225834.03,
+        "y": -36020.766,
+        "z": 10499.529
+      },
+      "u": 0.13360386772022242,
+      "v": 0.1302164415886668,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_73c94ac29d4b0e43",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -224258.98,
+        "y": -36035.105,
+        "z": 10443.078
+      },
+      "u": 0.13950396722270994,
+      "v": 0.13015453444641195,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9dac6db47f3f3e5",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -37804.137,
+        "y": 15852.497,
+        "z": 30567.207
+      },
+      "u": 0.8379593346210126,
+      "v": 0.3541738634286196,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6ff9a2fc92e78256",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -214995.0,
+        "y": -6765.0,
+        "z": 5880.0
+      },
+      "u": 0.17420661398887913,
+      "v": 0.25652517075638753,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da90715eb557456d",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -208423.69,
+        "y": -50342.86,
+        "z": 3536.4265
+      },
+      "u": 0.1988225835528241,
+      "v": 0.06838228923180703,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_24aa583c8d23ab9c",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -226029.12,
+        "y": -12682.186,
+        "z": 6178.228
+      },
+      "u": 0.1328730652619257,
+      "v": 0.2309783351715996,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60bf09c4e481cc0d",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -213374.28,
+        "y": -5793.766,
+        "z": 5997.9746
+      },
+      "u": 0.1802777922153936,
+      "v": 0.26071837261151865,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a2b6872e73d20e7",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -79210.43,
+        "y": 21718.822,
+        "z": -3839.1216
+      },
+      "u": 0.6828523546971027,
+      "v": 0.3795011119318661,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_793c8c4258310539",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -31572.266,
+        "y": -11137.4375,
+        "z": -3279.0225
+      },
+      "u": 0.8613037738366989,
+      "v": 0.23764762627540265,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_70cc887dd82d95b3",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -35333.785,
+        "y": -4974.5947,
+        "z": -3353.9897
+      },
+      "u": 0.8472132139303482,
+      "v": 0.264255059563201,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2a91cf0524654ab3",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -13576.649,
+        "y": 8000.9175,
+        "z": -1510.9188
+      },
+      "u": 0.9287149232660228,
+      "v": 0.3202754849481407,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_854730a9a8d0ccdb",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -58809.223,
+        "y": 118497.0,
+        "z": -3864.095
+      },
+      "u": 0.7592747865378988,
+      "v": 0.7973308373387301,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c670bda70dfa1845",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -56839.855,
+        "y": 148984.6,
+        "z": -2246.9727
+      },
+      "u": 0.7666519918056774,
+      "v": 0.9289578817775529,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b18754b11e75b1cb",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -67704.78,
+        "y": 75568.414,
+        "z": -69.28486
+      },
+      "u": 0.7259522434884402,
+      "v": 0.6119911288304241,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0fd3a44e73a9e7a4",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -236835.56,
+        "y": 81610.47,
+        "z": 5304.1436
+      },
+      "u": 0.09239240035118526,
+      "v": 0.6380770776625347,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_21e4e341cf2c9223",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -237272.22,
+        "y": 85663.34,
+        "z": 4885.6035
+      },
+      "u": 0.09075668247000293,
+      "v": 0.6555749226747618,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_15291f5affbcc3bc",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -211081.86,
+        "y": -2742.4988,
+        "z": 5873.152
+      },
+      "u": 0.18886514252268077,
+      "v": 0.2738919016308289,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f610029c1caaa560",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -112559.914,
+        "y": 5088.306,
+        "z": 24451.664
+      },
+      "u": 0.5579259879426398,
+      "v": 0.3077005875031622,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_084ffd8697e4c8e9",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -127038.086,
+        "y": -11322.391,
+        "z": 7074.3394
+      },
+      "u": 0.5036911030728709,
+      "v": 0.23684910876127835,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_53fdb9eb86cdc853",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -135742.48,
+        "y": -2775.0134,
+        "z": 4030.7212
+      },
+      "u": 0.47108465203394784,
+      "v": 0.2737515232245552,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d43841e9b036ec0e",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -132602.25,
+        "y": 7277.405,
+        "z": 1202.1497
+      },
+      "u": 0.4828478782557799,
+      "v": 0.31715179492368667,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b1a746f8bc76e95a",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -112637.42,
+        "y": 608.11505,
+        "z": 11518.855
+      },
+      "u": 0.5576356523266024,
+      "v": 0.2883578287005649,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a18e637033d76989",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -192853.02,
+        "y": -2574.1794,
+        "z": 9046.664
+      },
+      "u": 0.25714993971319877,
+      "v": 0.27461860314697695,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b058ba5e32f405d1",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -164402.47,
+        "y": 67479.97,
+        "z": 2089.8403
+      },
+      "u": 0.3637250172666081,
+      "v": 0.5770701124884053,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_25322824e341b9b9",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -169455.45,
+        "y": 54438.28,
+        "z": 2837.9988
+      },
+      "u": 0.3447966754462979,
+      "v": 0.5207639713297917,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dacaf124c9207f96",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -224476.94,
+        "y": 112167.3,
+        "z": 1921.8365
+      },
+      "u": 0.13868749429323968,
+      "v": 0.770003015431318,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_00d1a81dfa584ec0",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -32937.49,
+        "y": 49390.14,
+        "z": 8465.505
+      },
+      "u": 0.8561896774948786,
+      "v": 0.4989691515304833,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6d4b1f4b22e2f973",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -31911.592,
+        "y": 61212.9,
+        "z": 4373.1963
+      },
+      "u": 0.8600326667837285,
+      "v": 0.5500126890968885,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_02f5a747cb7049f7",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -42498.492,
+        "y": 56804.977,
+        "z": 6491.5874
+      },
+      "u": 0.8203743934445421,
+      "v": 0.5309819396576441,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d199aca1b12e2873",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -178225.05,
+        "y": -21870.072,
+        "z": 11697.252
+      },
+      "u": 0.3119459642961663,
+      "v": 0.1913105922590438,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fd2cf5f7cc2c29fe",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -162823.77,
+        "y": -20796.416,
+        "z": 10582.861
+      },
+      "u": 0.3696387895815043,
+      "v": 0.1959459904545071,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a95dbb882acad09d",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -180557.02,
+        "y": -11030.592,
+        "z": 5309.8706
+      },
+      "u": 0.30321046063798657,
+      "v": 0.23810892061725267,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_72ebd2f826127754",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -186897.7,
+        "y": -12073.914,
+        "z": 4119.231
+      },
+      "u": 0.2794584255194615,
+      "v": 0.23360448631419178,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_124a04f8b57bfee5",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -188081.72,
+        "y": -13158.169,
+        "z": 3349.2788
+      },
+      "u": 0.27502311501316945,
+      "v": 0.22892332803777724,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5efd5a91f70f833b",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -181730.53,
+        "y": -14303.078,
+        "z": 3383.2026
+      },
+      "u": 0.2988145203394791,
+      "v": 0.22398030242010292,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_af4ed526b581d635",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -183058.42,
+        "y": -13169.438,
+        "z": 3864.6028
+      },
+      "u": 0.2938402762657301,
+      "v": 0.22887467530145886,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c77e464c5846a437",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -187605.28,
+        "y": -31708.324,
+        "z": 5425.2656
+      },
+      "u": 0.2768078478197249,
+      "v": 0.14883496173370442,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4697125d4121ae33",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -188142.0,
+        "y": -33380.33,
+        "z": 7730.794
+      },
+      "u": 0.2747973075797483,
+      "v": 0.1416162495994603,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_35a09424cba3f0d3",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -189397.9,
+        "y": -35733.004,
+        "z": 3582.8706
+      },
+      "u": 0.27009273631840797,
+      "v": 0.13145882411670465,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3b65840d2455e1f5",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -180510.86,
+        "y": -9861.009,
+        "z": 3108.8784
+      },
+      "u": 0.30338337489025463,
+      "v": 0.24315847366557042,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b8f1b4d02549957e",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -169821.17,
+        "y": -60891.598,
+        "z": 4936.917
+      },
+      "u": 0.3434266971027216,
+      "v": 0.022839209241925982,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0479866fd9fc41ac",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -169508.34,
+        "y": -60992.473,
+        "z": 7158.684
+      },
+      "u": 0.34459855077553414,
+      "v": 0.022403691913314795,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fbd82f9fa512577c",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -167930.69,
+        "y": -31567.46,
+        "z": 4338.9307
+      },
+      "u": 0.35050838981562776,
+      "v": 0.1494431274137786,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_10a1bbb8b32b820e",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -158722.39,
+        "y": -53410.36,
+        "z": 3831.9885
+      },
+      "u": 0.38500246063798643,
+      "v": 0.05513867678556368,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d6a26238fb0477e",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -137432.75,
+        "y": -53001.273,
+        "z": 4748.804
+      },
+      "u": 0.4647529411764706,
+      "v": 0.05690486739185428,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d55b98d7d21688b",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -124011.055,
+        "y": -52959.848,
+        "z": 6429.7173
+      },
+      "u": 0.515030288557214,
+      "v": 0.05708371552407452,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fcb1b5d243360f2d",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -109361.47,
+        "y": -23683.648,
+        "z": 3960.0317
+      },
+      "u": 0.569907282411472,
+      "v": 0.1834806663630998,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1f5db31cf53a5883",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -125732.23,
+        "y": -24198.979,
+        "z": 11421.451
+      },
+      "u": 0.5085828083113842,
+      "v": 0.18125577832869552,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_98fe5cf2a3e682d4",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -139088.9,
+        "y": -20040.164,
+        "z": 6861.7905
+      },
+      "u": 0.45854904302019317,
+      "v": 0.19921102986761105,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c6facab7aa5fd005",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -130595.63,
+        "y": -21046.377,
+        "z": 11331.338
+      },
+      "u": 0.4903646286215979,
+      "v": 0.1948668098153301,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1da137a366d40fa8",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -109018.82,
+        "y": -53127.664,
+        "z": 8151.2466
+      },
+      "u": 0.5711908410886742,
+      "v": 0.05635918738510843,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_722e17875c0accce",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -109774.58,
+        "y": -49493.797,
+        "z": 9254.623
+      },
+      "u": 0.5683597822651448,
+      "v": 0.07204803049160982,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0d749f1daeec3c8c",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -226618.58,
+        "y": -47592.086,
+        "z": 14745.772
+      },
+      "u": 0.13066496224758564,
+      "v": 0.08025847009022676,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a620e78b697848b",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -208452.31,
+        "y": -47747.023,
+        "z": 2343.8416
+      },
+      "u": 0.1987153737196371,
+      "v": 0.07958954569525252,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9c0ed28cd3f7d329",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -199822.06,
+        "y": -53023.51,
+        "z": 6348.9536
+      },
+      "u": 0.23104408311384256,
+      "v": 0.05680886145543462,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d4b7d8cfb84063f3",
+      "targetType": "creature",
+      "targetId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "map": "surface",
+      "world": {
+        "x": -226809.62,
+        "y": -45169.86,
+        "z": 11970.167
+      },
+      "u": 0.12994933099209835,
+      "v": 0.09071617910447764,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": []
+}

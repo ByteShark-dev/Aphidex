@@ -1,1 +1,2788 @@
-{"id":"g2_gnat","speciesKey":"gnat","collectionGroup":"harmless","name":"Gnat","game":"g2","tier":1,"danger":"baja","isBoss":false,"order":234,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Gnat.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Gnat_G.png","photo":"assets/g2/creatures/photos/Gnat.webp","weaknesses":[],"resistances":[],"temperament":"peaceful","health":{"value":20,"rating":1},"description":"An annoying but harmless flying pest found mainly around pools of water. Drops gnat fuzz and raw gnat meat on death.","behavior":"It buzzes around the player and nearby creatures in short, unpredictable paths. It rarely stays still and loves to exploit ongoing fights to become even more annoying.","interactionWithPlayer":"It does not always deal much damage, but it breaks rhythm during larger fights and forces you to look up at the worst possible time.","interactionWithCreatures":"It hovers around groups, food, and resources. Rather than controlling an area, its role is to make any nearby fight more irritating.","strategy":"If it starts interfering with an important fight, kill it immediately. Ignoring it usually costs free attention and avoidable mistakes.","environments":["Ceremony Area","Croquet Court","Entrance Area","Fire Pit","Greenhouse Surroundings","Ice Cream Cart Surroundings","Picnic Table Area","Pine Hill","Pumpkin Patch","Snackbar Front Area","Statue Area"],"respawnInfo":"1 day","loot":[{"section":"loot","item":"Gnat Fuzz","minCount":1,"maxCount":3},{"section":"loot","item":"Raw Gnat Meat","minCount":1,"maxCount":1},{"section":"rare","item":"Apple Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Billy Hog Bite","minCount":0,"maxCount":1},{"section":"rare","item":"Cookie Sandwich Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Gnat Fuzz","minCount":0,"maxCount":1},{"section":"rare","item":"Raw Gnat Meat","minCount":0,"maxCount":1}],"advancedLootTable":[{"item":"Apple Bits","countLabel":"x1","chancePct":1},{"item":"Billy Hog Bite","countLabel":"x1","chancePct":1},{"item":"Cookie Sandwich Bits","countLabel":"x1","chancePct":1},{"item":"Gnat Fuzz","countLabel":"x1","chancePct":100},{"item":"Gnat Fuzz","countLabel":"x2","chancePct":50},{"item":"Gnat Fuzz","countLabel":"x1","chancePct":1},{"item":"Raw Gnat Meat","countLabel":"x1","chancePct":100},{"item":"Raw Gnat Meat","countLabel":"x1","chancePct":1}],"combatStats":{"health":20},"abilities":[{"name":"Boop","description":"It drifts close and gives the player a small shove. More irritating than dangerous.","blockable":false,"breaksGuard":false,"staggers":false}],"lootTransformations":[{"id":"spicy_cooked_meat","effects":["spicy","burning"],"description":"If the creature is killed with spicy damage or a verified heat effect, compatible meat can become cooked meat."},{"id":"salty_jerky","effects":["salty"],"description":"If the creature is killed with salty damage, compatible meat can become jerky."}],"groupId":null,"cardTier":0,"technicalId":"Gnat","bestiaryId":"Gnat","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_gnat",
+  "speciesKey": "gnat",
+  "collectionGroup": "harmless",
+  "name": "Gnat",
+  "game": "g2",
+  "tier": 1,
+  "danger": "baja",
+  "isBoss": false,
+  "order": 234,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Gnat.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Gnat_G.png",
+  "photo": "assets/g2/creatures/photos/Gnat.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "peaceful",
+  "health": {
+    "rating": 1,
+    "value": 20
+  },
+  "description": "An annoying but harmless flying pest found mainly around pools of water. Drops gnat fuzz and raw gnat meat on death.",
+  "behavior": "It buzzes around the player and nearby creatures in short, unpredictable paths. It rarely stays still and loves to exploit ongoing fights to become even more annoying.",
+  "interactionWithPlayer": "It does not always deal much damage, but it breaks rhythm during larger fights and forces you to look up at the worst possible time.",
+  "interactionWithCreatures": "It hovers around groups, food, and resources. Rather than controlling an area, its role is to make any nearby fight more irritating.",
+  "strategy": "If it starts interfering with an important fight, kill it immediately. Ignoring it usually costs free attention and avoidable mistakes.",
+  "environments": [
+    "Ceremony Area",
+    "Croquet Court",
+    "Entrance Area",
+    "Fire Pit",
+    "Greenhouse Surroundings",
+    "Ice Cream Cart Surroundings",
+    "Picnic Table Area",
+    "Pine Hill",
+    "Pumpkin Patch",
+    "Snackbar Front Area",
+    "Statue Area"
+  ],
+  "respawnInfo": "1 day",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Food Apple",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Cookie Sandwich",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Hot Dog",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Fuzz Gnat",
+      "minCount": 1,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "Gnat Meat",
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Pet Tombstone Gnat",
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Food Apple",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Cookie Sandwich",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Hot Dog",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Fuzz Gnat",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Fuzz Gnat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Fuzz Gnat",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Gnat Meat",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Gnat Meat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pet Tombstone Gnat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 20,
+    "stunThreshold": null,
+    "stunCooldownSeconds": null
+  },
+  "abilities": [
+    {
+      "name": "Boop",
+      "description": "It drifts close and gives the player a small shove. More irritating than dangerous.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "lootTransformations": [
+    {
+      "id": "spicy_cooked_meat",
+      "effects": [
+        "spicy",
+        "burning"
+      ],
+      "description": "If the creature is killed with spicy damage or a verified heat effect, compatible meat can become cooked meat."
+    },
+    {
+      "id": "salty_jerky",
+      "effects": [
+        "salty"
+      ],
+      "description": "If the creature is killed with salty damage, compatible meat can become jerky."
+    }
+  ],
+  "groupId": null,
+  "cardTier": 0,
+  "technicalId": "Gnat",
+  "bestiaryId": "Gnat",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_9042b388e31b5d76",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -151548.64,
+        "y": 9609.71,
+        "z": 5663.6626
+      },
+      "u": 0.4118751559847819,
+      "v": 0.32722127936588247,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_88f564c5c77a2cd3",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -152703.92,
+        "y": 9978.451,
+        "z": 5713.6626
+      },
+      "u": 0.40754750482879715,
+      "v": 0.3288132803103128,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6f1016fd6b2c41d0",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -194214.72,
+        "y": 67798.68,
+        "z": 633.6624
+      },
+      "u": 0.25204904419081064,
+      "v": 0.5784461097900329,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_46299b57b8d8a41a",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -229034.98,
+        "y": 61176.875,
+        "z": -364.67612
+      },
+      "u": 0.1216131858355282,
+      "v": 0.5498571549034489,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7c42f412a7ad3dd7",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -231589.6,
+        "y": 58721.883,
+        "z": 73.21204
+      },
+      "u": 0.11204364062042725,
+      "v": 0.5392579820895522,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_43018ad567d503b7",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -239248.81,
+        "y": 48753.78,
+        "z": -364.67612
+      },
+      "u": 0.08335242376353527,
+      "v": 0.496221733367063,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_698b25ca27a06c25",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -239456.58,
+        "y": 46217.93,
+        "z": -364.67615
+      },
+      "u": 0.08257412232952888,
+      "v": 0.4852734645416983,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fb5cd131d207f628",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -221862.53,
+        "y": 19741.445,
+        "z": 325.24377
+      },
+      "u": 0.14848101141352063,
+      "v": 0.37096399224217896,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5213f91a7c22bd62",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -223510.61,
+        "y": 20479.617,
+        "z": 325.24374
+      },
+      "u": 0.14230734328358213,
+      "v": 0.3741509731343283,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2203cdf7ec579622",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -222656.12,
+        "y": 12679.992,
+        "z": 325.24377
+      },
+      "u": 0.14550824231782267,
+      "v": 0.340476902807994,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e3c245d817262f01",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -154573.89,
+        "y": -21721.863,
+        "z": 1044.0308
+      },
+      "u": 0.4005426420836991,
+      "v": 0.19195046921325576,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_028a7a67b6c560eb",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -153363.14,
+        "y": -27639.352,
+        "z": 767.10706
+      },
+      "u": 0.4050780825285338,
+      "v": 0.1664023254574585,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_62c9affa09fa0b10",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -155025.75,
+        "y": -20226.348,
+        "z": 1044.0308
+      },
+      "u": 0.3988499853672813,
+      "v": 0.19840719979762209,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5b69d6308f5b1407",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -155105.62,
+        "y": -28772.793,
+        "z": 871.53845
+      },
+      "u": 0.3985507942639743,
+      "v": 0.16150881173792053,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_521aaee570483d0a",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -130193.805,
+        "y": -41850.69,
+        "z": 181.45544
+      },
+      "u": 0.4918698554287387,
+      "v": 0.10504635061978244,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_84f7ac9bb443c530",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -128094.84,
+        "y": -43540.008,
+        "z": 318.031
+      },
+      "u": 0.4997325279484929,
+      "v": 0.09775289572476596,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e4090996d66848f5",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -153145.62,
+        "y": -39442.203,
+        "z": 3637.9045
+      },
+      "u": 0.4058929072285631,
+      "v": 0.11544474292942067,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_340c2335b28ed8dd",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -152228.3,
+        "y": -37948.91,
+        "z": 3774.0222
+      },
+      "u": 0.4093291659350308,
+      "v": 0.12189188025971831,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b017a6634c6ba7f",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -137926.38,
+        "y": -47824.16,
+        "z": 4273.829
+      },
+      "u": 0.4629038150424349,
+      "v": 0.07925651471456274,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_98425c20fad82437",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -137929.31,
+        "y": -49472.37,
+        "z": 4394.129
+      },
+      "u": 0.46289283933274805,
+      "v": 0.07214053933721223,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e77e47b0aa4128e2",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -120691.95,
+        "y": -36206.45,
+        "z": 3739.374
+      },
+      "u": 0.5274635762364647,
+      "v": 0.12941477021671305,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6f5234b9c17b5117",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -116013.57,
+        "y": -31908.355,
+        "z": -2081.437
+      },
+      "u": 0.5449886754462979,
+      "v": 0.1479713486803272,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_94daa2fc776cafd4",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -114744.3,
+        "y": -30355.52,
+        "z": -2165.642
+      },
+      "u": 0.5497433304067896,
+      "v": 0.1546755524074542,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9b157249b319c9e4",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -128873.09,
+        "y": -21973.705,
+        "z": 3297.1545
+      },
+      "u": 0.4968172221246708,
+      "v": 0.1908631675520701,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2dc0b0c9d08c7e43",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -128708.96,
+        "y": -20769.926,
+        "z": 3176.358
+      },
+      "u": 0.497432049165935,
+      "v": 0.19606035827641455,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aba3b1b397d61f44",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -131494.7,
+        "y": -21456.512,
+        "z": 3300.0012
+      },
+      "u": 0.4869967339771729,
+      "v": 0.19309609457795768,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_32167ebd4f270b86",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -221640.0,
+        "y": 135620.0,
+        "z": 90.0
+      },
+      "u": 0.14931460345332162,
+      "v": 0.8712576102538157,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_562f244a4cbdde0a",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -197419.08,
+        "y": 67783.27,
+        "z": 633.6624
+      },
+      "u": 0.24004558852794855,
+      "v": 0.5783795787165866,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_36fb5d25731775d5",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -220908.77,
+        "y": 50610.32,
+        "z": -382.0326
+      },
+      "u": 0.15205377348551366,
+      "v": 0.5042371518677797,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_028999c4864362cd",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -219532.12,
+        "y": 49521.516,
+        "z": -516.1909
+      },
+      "u": 0.1572106713491367,
+      "v": 0.4995363537566405,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2438eca4f7ab0380",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -221434.94,
+        "y": 49733.89,
+        "z": -516.1909
+      },
+      "u": 0.1500827532923617,
+      "v": 0.5004532564297159,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4f1bf35b0fed05ba",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -73468.26,
+        "y": -50188.004,
+        "z": -3054.3528
+      },
+      "u": 0.7043623857184664,
+      "v": 0.06905086391769961,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e7d263b17be7154",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -81106.23,
+        "y": -43112.06,
+        "z": -3054.3528
+      },
+      "u": 0.6757507333918643,
+      "v": 0.09960051673834218,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d9893ad356b04e76",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -218033.56,
+        "y": 15586.806,
+        "z": 1058.9369
+      },
+      "u": 0.16282424114720515,
+      "v": 0.3530267701492538,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8456d90173f63685",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -188623.47,
+        "y": 102216.62,
+        "z": 1753.6624
+      },
+      "u": 0.2729937325139011,
+      "v": 0.7270419887005649,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6545ed530808aa86",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -201976.02,
+        "y": 121296.445,
+        "z": 1227.3328
+      },
+      "u": 0.22297540064383967,
+      "v": 0.8094171501812969,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_53e8c6c8cc6420f3",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -174826.77,
+        "y": 144294.62,
+        "z": 1561.0334
+      },
+      "u": 0.3246758396254025,
+      "v": 0.9087093805548527,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6d154c8f60da69ff",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -197001.67,
+        "y": 123617.88,
+        "z": 11369.063
+      },
+      "u": 0.2416091963710857,
+      "v": 0.8194397045282064,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d6e0be62e3eae037",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -198035.61,
+        "y": 124383.3,
+        "z": 11369.063
+      },
+      "u": 0.2377360819432251,
+      "v": 0.8227443258284847,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a49c5c808cf10c09",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -116721.125,
+        "y": 33576.49,
+        "z": 211.50789
+      },
+      "u": 0.5423381913959614,
+      "v": 0.4306953611603001,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4a1adfdd12f94f8e",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -87151.83,
+        "y": 35406.496,
+        "z": 1039.8798
+      },
+      "u": 0.6531040608721099,
+      "v": 0.4385962218736824,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4618d782dfd66b24",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -175394.17,
+        "y": 149160.34,
+        "z": 1561.0334
+      },
+      "u": 0.322550372841674,
+      "v": 0.9297166209629816,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5ba447118e8166af",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -189314.19,
+        "y": 119100.27,
+        "z": 718.2453
+      },
+      "u": 0.27040631196956394,
+      "v": 0.7999353928661778,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ddedbe525d57628",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -202143.89,
+        "y": 119810.02,
+        "z": 2141.7368
+      },
+      "u": 0.22234656365232655,
+      "v": 0.8029996647272115,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_94283a85b1e88ca2",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -186465.94,
+        "y": 106030.15,
+        "z": 1753.6624
+      },
+      "u": 0.28107578811823236,
+      "v": 0.7435065081372796,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3c6d3db8b33834e1",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -99724.11,
+        "y": 47578.445,
+        "z": 384.42383
+      },
+      "u": 0.6060086016973955,
+      "v": 0.49114734665654786,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2132fd32820ecace",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -162071.61,
+        "y": -14901.985,
+        "z": 1433.8911
+      },
+      "u": 0.37245636289142525,
+      "v": 0.22139458369171094,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9a70cd4c5efe919c",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -160194.17,
+        "y": -14975.249,
+        "z": 1433.8911
+      },
+      "u": 0.3794892080772607,
+      "v": 0.2210782739860022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a427226c9c4a720f",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -160705.25,
+        "y": -13894.398,
+        "z": 797.94916
+      },
+      "u": 0.3775747146619842,
+      "v": 0.22574473584619276,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_63a2aaa9b5fd8693",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -139530.05,
+        "y": -5493.32,
+        "z": 994.0304
+      },
+      "u": 0.4568965057067603,
+      "v": 0.2620155169913146,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b0dffe4e1b3a539",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -143542.8,
+        "y": -8875.448,
+        "z": 994.0304
+      },
+      "u": 0.44186484050336555,
+      "v": 0.24741353085420353,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e1146b39f2176eaa",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -139878.0,
+        "y": -3227.0237,
+        "z": 640.9978
+      },
+      "u": 0.4555930933567457,
+      "v": 0.271800015731512,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1adfaa6560fa6c97",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -115349.28,
+        "y": 3951.6267,
+        "z": 2646.513
+      },
+      "u": 0.5474770898448932,
+      "v": 0.30279309275992916,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_784d9a323b4b32d8",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -137373.48,
+        "y": 7515.483,
+        "z": 1491.6539
+      },
+      "u": 0.46497496517412934,
+      "v": 0.31817967194535796,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3d2054d78e6b0844",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -117886.65,
+        "y": 3599.2678,
+        "z": 2432.36
+      },
+      "u": 0.5379721627158327,
+      "v": 0.3012718198296653,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7478d2f17881d35",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -191954.61,
+        "y": -43912.523,
+        "z": 1699.7451
+      },
+      "u": 0.26051536201346215,
+      "v": 0.09614460092756556,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_579ed208d9786b5f",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -191804.61,
+        "y": -42762.523,
+        "z": 1549.7451
+      },
+      "u": 0.26107725841381335,
+      "v": 0.10110960640863481,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b66848f16685225c",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -191804.61,
+        "y": -43412.523,
+        "z": 2249.745
+      },
+      "u": 0.26107725841381335,
+      "v": 0.09830329896281308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fa9682dc3d54b3dd",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -172187.4,
+        "y": -42567.227,
+        "z": -479.94797
+      },
+      "u": 0.3345628563067018,
+      "v": 0.10195277659161822,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f5fe69d0b1174bf3",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -172337.4,
+        "y": -41467.227,
+        "z": -279.94797
+      },
+      "u": 0.3340009599063506,
+      "v": 0.10670191226916265,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_841aee58c2bb9a8e",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -173087.4,
+        "y": -41867.227,
+        "z": -529.948
+      },
+      "u": 0.3311914779045947,
+      "v": 0.10497495384096471,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7fd1bef4ca8c2ced",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -105266.016,
+        "y": 2943.1245,
+        "z": 26794.139
+      },
+      "u": 0.5852487548141645,
+      "v": 0.2984389893245637,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_393c0cdbab444a5b",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -104029.22,
+        "y": 5123.3457,
+        "z": 26794.139
+      },
+      "u": 0.5898817629499561,
+      "v": 0.30785186776625345,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_35bae651244c4afd",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -106300.72,
+        "y": 4759.582,
+        "z": 27446.955
+      },
+      "u": 0.581372778460638,
+      "v": 0.3062813557972847,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5f9f3c2835d4d21b",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -103154.48,
+        "y": 2724.542,
+        "z": 27041.217
+      },
+      "u": 0.5931585179982442,
+      "v": 0.2974952820979846,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a7a3db532e90df7",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -102256.61,
+        "y": 5228.7812,
+        "z": 27178.092
+      },
+      "u": 0.5965219174714662,
+      "v": 0.3083070745796441,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8af8c2467e23a996",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -157854.61,
+        "y": -13712.523,
+        "z": 949.7451
+      },
+      "u": 0.3882531436932982,
+      "v": 0.22652996225651406,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c94b3a6b65680c99",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -159754.61,
+        "y": -12712.523,
+        "z": 949.7451
+      },
+      "u": 0.38113578928884995,
+      "v": 0.230847358327009,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8353de3709285709",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -160154.61,
+        "y": -14062.523,
+        "z": 949.7451
+      },
+      "u": 0.3796373988879134,
+      "v": 0.22501887363184078,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_708bcecbfbcddc38",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -160704.61,
+        "y": -15962.523,
+        "z": 949.7451
+      },
+      "u": 0.3775771120866257,
+      "v": 0.2168158210979003,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0cde6074aa634ccd",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -162504.61,
+        "y": -16412.523,
+        "z": 949.7451
+      },
+      "u": 0.37083435528241154,
+      "v": 0.21487299286617761,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2c77c91309761792",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -93620.0,
+        "y": 58430.0,
+        "z": -640.0
+      },
+      "u": 0.6288744512730465,
+      "v": 0.537997807572308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_76d61a2bfd525d06",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -84510.0,
+        "y": 35350.0,
+        "z": 470.0
+      },
+      "u": 0.6630002926543751,
+      "v": 0.4383523062652837,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_469cbc5683ae94b1",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -97838.35,
+        "y": 53334.707,
+        "z": 906.0411
+      },
+      "u": 0.6130726134035703,
+      "v": 0.5159994095960874,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf4e9573753298f5",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -116123.83,
+        "y": 36554.473,
+        "z": -170.0
+      },
+      "u": 0.5445756441322797,
+      "v": 0.44355249326250096,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a6dd226f9989433c",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -175187.4,
+        "y": -53267.227,
+        "z": 2520.052
+      },
+      "u": 0.32332492829967807,
+      "v": 0.05575663863732186,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e3d3e811edac81d5",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -172950.19,
+        "y": -52597.05,
+        "z": 3299.745
+      },
+      "u": 0.3317054632718759,
+      "v": 0.05865005818365799,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9eb8e6054d77ba1c",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -175354.61,
+        "y": -55462.523,
+        "z": 3299.745
+      },
+      "u": 0.32269856365232663,
+      "v": 0.046278676313348525,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2927d2657014c42a",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -174339.48,
+        "y": -54856.402,
+        "z": 4037.4614
+      },
+      "u": 0.32650121627158324,
+      "v": 0.04889554073699299,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca5e7d72f5a8cdaa",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -142289.8,
+        "y": -7610.724,
+        "z": 632.9078
+      },
+      "u": 0.44655854843429915,
+      "v": 0.2528738452820643,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa52bf609dadf184",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -175837.4,
+        "y": -53267.227,
+        "z": 120.05202
+      },
+      "u": 0.3208900438981563,
+      "v": 0.05575663863732186,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_973e473129876253",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -174187.4,
+        "y": -53267.227,
+        "z": 320.05203
+      },
+      "u": 0.32707090430201935,
+      "v": 0.05575663863732186,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_544a4bf7a8da77a1",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -84387.1,
+        "y": 27025.082,
+        "z": 1729.618
+      },
+      "u": 0.6634606731050628,
+      "v": 0.40241033800489073,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_246630ce05546b9c",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -82289.62,
+        "y": 27521.215,
+        "z": 1414.4314
+      },
+      "u": 0.6713177828504536,
+      "v": 0.4045523406695337,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d89d429aabe53975",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -83490.37,
+        "y": 26443.86,
+        "z": 1510.1721
+      },
+      "u": 0.6668198021656424,
+      "v": 0.3999009724260055,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d071a912f76f8b8c",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -84950.07,
+        "y": 21204.627,
+        "z": 1611.5635
+      },
+      "u": 0.6613518009950249,
+      "v": 0.37728112845939793,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_514883fc26019974",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -85023.06,
+        "y": 19192.957,
+        "z": 1425.3632
+      },
+      "u": 0.661078382206614,
+      "v": 0.3685959523062653,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c7b1d50fbe3e85f",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -83127.06,
+        "y": 20054.734,
+        "z": 1296.3768
+      },
+      "u": 0.668180752707053,
+      "v": 0.3723165849397082,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8edd05b388f939c2",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -105853.7,
+        "y": 146102.36,
+        "z": -190.74196
+      },
+      "u": 0.5830473046532045,
+      "v": 0.9165141101273294,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a406aec6084442ed",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -114320.305,
+        "y": 133461.48,
+        "z": -2110.0
+      },
+      "u": 0.5513316055019023,
+      "v": 0.8619384244877308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d5561a82db7c2a2",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -79674.36,
+        "y": 139955.89,
+        "z": 1288.2911
+      },
+      "u": 0.6811144840503366,
+      "v": 0.8899773647019142,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0fcf10bdc5fc939",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -79886.2,
+        "y": 142275.86,
+        "z": 866.14197
+      },
+      "u": 0.6803209364940005,
+      "v": 0.8999935940635803,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_28d16f87ba843035",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -80256.234,
+        "y": 140895.48,
+        "z": 780.5739
+      },
+      "u": 0.6789347980099502,
+      "v": 0.8940339468757904,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cd29df96100ed269",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -99472.03,
+        "y": 112844.516,
+        "z": -2142.5657
+      },
+      "u": 0.6069528873280655,
+      "v": 0.7729268251285943,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_53d247bda736f02c",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -98988.14,
+        "y": 111929.47,
+        "z": -2089.8027
+      },
+      "u": 0.6087655276558385,
+      "v": 0.7689762091238722,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1c4b8492000b2a3e",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -126374.66,
+        "y": 113745.5,
+        "z": -2820.5527
+      },
+      "u": 0.5061762809482002,
+      "v": 0.7768167299097731,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b5fd471950269737",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -122784.45,
+        "y": 110305.12,
+        "z": -2870.0
+      },
+      "u": 0.5196251214515657,
+      "v": 0.7619632468167636,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dcc468cda1a00e05",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -153313.78,
+        "y": 110285.38,
+        "z": -4588.9795
+      },
+      "u": 0.4052629839040094,
+      "v": 0.761878021418332,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c188af6a1eb76f4",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -157639.3,
+        "y": 55251.098,
+        "z": 461.95175
+      },
+      "u": 0.38905968978636235,
+      "v": 0.5242732285690194,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1964f784d526e45e",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -110424.89,
+        "y": 124597.84,
+        "z": -2529.127
+      },
+      "u": 0.5659237366110623,
+      "v": 0.8236705799814488,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_04d94d0cb5a344fd",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -109867.195,
+        "y": 125384.66,
+        "z": -2611.014
+      },
+      "u": 0.568012848697688,
+      "v": 0.8270675935576358,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ee1954a5e1d1bf09",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -125090.41,
+        "y": 94835.086,
+        "z": -4793.42
+      },
+      "u": 0.5109870506292069,
+      "v": 0.6951729828147399,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_62741ef237f72b18",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -113609.8,
+        "y": 102968.516,
+        "z": -3460.398
+      },
+      "u": 0.5539931401814457,
+      "v": 0.730288221536386,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_adcf1c4716a95fe9",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -111848.75,
+        "y": 103833.95,
+        "z": -3369.7412
+      },
+      "u": 0.5605899912203687,
+      "v": 0.7340246428872587,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cb4dd8e28323845f",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -147581.97,
+        "y": 136209.8,
+        "z": -2519.1926
+      },
+      "u": 0.42673420661398886,
+      "v": 0.8738040104561936,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ae36a65f8ddee69c",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -158767.75,
+        "y": 133467.14,
+        "z": -2789.4114
+      },
+      "u": 0.3848325431665203,
+      "v": 0.8619628609494899,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9b0b7666957dd411",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -159661.42,
+        "y": 133193.97,
+        "z": -2789.4114
+      },
+      "u": 0.38148487679250803,
+      "v": 0.8607834778649125,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_01c1ec8e7876d6f5",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -139987.77,
+        "y": 92060.47,
+        "z": -5102.4443
+      },
+      "u": 0.4551818975709687,
+      "v": 0.6831938665992073,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_178fbd4dd5ebed67",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -141092.12,
+        "y": 91899.65,
+        "z": -4676.6157
+      },
+      "u": 0.45104502897278315,
+      "v": 0.6824995429631504,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_347fce392b37e093",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -121818.73,
+        "y": 111290.375,
+        "z": -2870.0
+      },
+      "u": 0.5232426853965467,
+      "v": 0.7662169828821992,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_330364d5cdb2a9e5",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -120972.06,
+        "y": 109933.45,
+        "z": -2870.0
+      },
+      "u": 0.5264142908984489,
+      "v": 0.7603586002192427,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6f1f600bb5d47418",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -122131.82,
+        "y": 109310.49,
+        "z": -2603.777
+      },
+      "u": 0.5220698577699736,
+      "v": 0.7576690351631672,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_acb267b67a807e22",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -125072.016,
+        "y": 113668.24,
+        "z": -3030.1462
+      },
+      "u": 0.5110559541117939,
+      "v": 0.7764831678893667,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aaf83c073a19628e",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -123952.98,
+        "y": 113232.375,
+        "z": -3113.6938
+      },
+      "u": 0.51524783611355,
+      "v": 0.7746013660511003,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0c06c4a75e915e6",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -135398.55,
+        "y": 129239.46,
+        "z": -3261.1033
+      },
+      "u": 0.4723730055604332,
+      "v": 0.8437102919301798,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cb4c6a5b9a1d1b19",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -135612.14,
+        "y": 126915.72,
+        "z": -3098.7314
+      },
+      "u": 0.471572902546093,
+      "v": 0.8336777859853275,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_84b6e6fc77af36d5",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -98083.93,
+        "y": 113004.414,
+        "z": -2225.0
+      },
+      "u": 0.6121526766169154,
+      "v": 0.7736171681254743,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_04b2c50508be5c3f",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -170756.39,
+        "y": 90891.11,
+        "z": -1404.082
+      },
+      "u": 0.339923385425812,
+      "v": 0.6781452763302134,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5a2c8603c1e54b46",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -172021.22,
+        "y": 88741.766,
+        "z": -1332.2076
+      },
+      "u": 0.3351853625987708,
+      "v": 0.6688657069904713,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_486f235269a71aae",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -172291.62,
+        "y": 91685.875,
+        "z": -1676.62
+      },
+      "u": 0.3341724506877378,
+      "v": 0.6815765916181803,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ae61bf683d1f02f5",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -158237.27,
+        "y": 56910.668,
+        "z": -68.35282
+      },
+      "u": 0.38681970851624237,
+      "v": 0.5314382495657307,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60da209be544b2fa",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -130901.31,
+        "y": 58173.785,
+        "z": -2007.8708
+      },
+      "u": 0.48921955867720224,
+      "v": 0.5368916259381061,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1199d128be322aab",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -132282.42,
+        "y": 58714.613,
+        "z": -1680.653
+      },
+      "u": 0.48404595376060866,
+      "v": 0.5392265946201197,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_25c086c610042fcf",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -139229.52,
+        "y": 61473.812,
+        "z": -2322.9622
+      },
+      "u": 0.4580222838747439,
+      "v": 0.5511391495404335,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6b7807e0fa708eab",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -142063.28,
+        "y": 63537.26,
+        "z": -2075.8462
+      },
+      "u": 0.4474070869183494,
+      "v": 0.5600478718273042,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_32309258d35cc2ba",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -109921.48,
+        "y": 123662.67,
+        "z": -2400.0
+      },
+      "u": 0.5678094983904011,
+      "v": 0.8196330806982038,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2aaa7aa0e76e7903",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -113386.0,
+        "y": 140798.14,
+        "z": -790.2223
+      },
+      "u": 0.5548314896107697,
+      "v": 0.8936136915422886,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b0a129f3b452581",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -121857.76,
+        "y": 137789.69,
+        "z": -654.05054
+      },
+      "u": 0.5230964799531752,
+      "v": 0.880625021334008,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ed555e6b3be20db9",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -145368.95,
+        "y": 40256.25,
+        "z": 133.3447
+      },
+      "u": 0.4350241264266901,
+      "v": 0.45953453073614975,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e9f88c73c197ab3",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -143977.6,
+        "y": 39471.832,
+        "z": -127.61558
+      },
+      "u": 0.44023609013754755,
+      "v": 0.45614788754532426,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_258ae9335303353b",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -141129.33,
+        "y": 93155.57,
+        "z": -5102.4443
+      },
+      "u": 0.4509056412057361,
+      "v": 0.6879218470360065,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9229d6020275101e",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -173644.7,
+        "y": 90172.06,
+        "z": -1599.4181
+      },
+      "u": 0.3291038454784898,
+      "v": 0.6750408526857239,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b9d9ef6adf02bbf9",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -78673.59,
+        "y": 141295.89,
+        "z": 927.6008
+      },
+      "u": 0.6848633444541996,
+      "v": 0.8957626754363774,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0c97da28e58b85d0",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -81359.75,
+        "y": 77746.93,
+        "z": 934.31665
+      },
+      "u": 0.6748010535557507,
+      "v": 0.6213966452483346,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da72a4debe63f87e",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -138599.92,
+        "y": 8916.958,
+        "z": 1661.0989
+      },
+      "u": 0.46038075036581794,
+      "v": 0.3242303946032549,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_92ca46758a503173",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -146199.95,
+        "y": 135810.48,
+        "z": -2519.1926
+      },
+      "u": 0.43191122036874446,
+      "v": 0.8720799878573235,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4463f642627608cd",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -103987.484,
+        "y": 145314.88,
+        "z": 157.34692
+      },
+      "u": 0.5900381050043899,
+      "v": 0.9131142470697361,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_de54c61642a978c2",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -122656.89,
+        "y": 137058.31,
+        "z": -449.76285
+      },
+      "u": 0.5201029581504243,
+      "v": 0.8774673641959693,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fde424ad27448b76",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -113360.57,
+        "y": 134101.17,
+        "z": -2464.9502
+      },
+      "u": 0.5549267497805093,
+      "v": 0.8647002195800659,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8276f110027f9651",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -113625.08,
+        "y": 132627.72,
+        "z": -2464.9502
+      },
+      "u": 0.5539359016681299,
+      "v": 0.8583387523399949,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b86d1d1d9809ce1c",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -112698.836,
+        "y": 133332.39,
+        "z": -2038.1987
+      },
+      "u": 0.5574055894644424,
+      "v": 0.8613810918289908,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_75ad4cb9ddf20506",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -187916.33,
+        "y": 122133.99,
+        "z": 563.69354
+      },
+      "u": 0.2756426619841967,
+      "v": 0.8130331636731596,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e89be905c824e0df",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -134929.9,
+        "y": 127725.87,
+        "z": -3098.7314
+      },
+      "u": 0.4741285572139304,
+      "v": 0.8371755244118391,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9743eacc8b23f551",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -69172.78,
+        "y": 21369.35,
+        "z": -3194.8044
+      },
+      "u": 0.7204531507170032,
+      "v": 0.3779923028923181,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_13d535d9c96b140e",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -67794.086,
+        "y": 19155.393,
+        "z": -4232.34
+      },
+      "u": 0.725617705355575,
+      "v": 0.3684337736402733,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e35196bbb6c5218",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -70003.54,
+        "y": 18741.367,
+        "z": -3412.4192
+      },
+      "u": 0.7173411436932983,
+      "v": 0.36664625941479045,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e7867d8d26f11631",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -20990.523,
+        "y": 8153.33,
+        "z": -4112.18
+      },
+      "u": 0.9009427291776412,
+      "v": 0.3209335100767349,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2fe701da75615ead",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -24565.854,
+        "y": 3207.8364,
+        "z": -3795.3105
+      },
+      "u": 0.8875496250512146,
+      "v": 0.2995818554414369,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e02e1b0e551819eb",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -19976.799,
+        "y": 6293.554,
+        "z": -3835.701
+      },
+      "u": 0.9047401149546386,
+      "v": 0.31290412048233407,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9a4398cbd64374e3",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -23884.322,
+        "y": -238.62068,
+        "z": -4188.0986
+      },
+      "u": 0.8901026275680423,
+      "v": 0.28470213518711535,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_de2faa62c447f0ae",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -28276.096,
+        "y": -6394.48,
+        "z": -4360.5156
+      },
+      "u": 0.873651147556336,
+      "v": 0.2581248523484273,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_88ca1cf4552a7142",
+      "targetType": "creature",
+      "targetId": "g2_gnat",
+      "technicalId": "Gnat",
+      "map": "surface",
+      "world": {
+        "x": -21657.777,
+        "y": 2408.8198,
+        "z": -4077.7407
+      },
+      "u": 0.898443211706175,
+      "v": 0.2961321843123366,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Gnat.webp",
+  "immunities": []
+}

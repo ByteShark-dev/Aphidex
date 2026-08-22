@@ -1,1 +1,1018 @@
-{"id":"g2_stinkbug","speciesKey":"stinkbug","collectionGroup":"angry","name":"Stinkbug","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":290,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_StinkBug.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_StinkBug_G.png","photo":"assets/g2/creatures/photos/Stinkbug.webp","weaknesses":["fresh","stabbing"],"resistances":["generic","gas"],"temperament":"aggressive","health":{"value":800,"rating":3},"description":"An invasive species found around the park. Watch out for toxic clouds. Can drop stinkbug gas sack and stinkbug part on death.","behavior":"It patrols and sleeps in its spawn areas. In combat it alternates a simple bite, a leaping slam that leaves gas on impact, and a passive gas release that contaminates the area for several seconds.","interactionWithPlayer":"It becomes hostile as soon as it detects you and can quickly flood the area with gas. A Gas Mask or Gastro Goo makes the fight far more manageable.","interactionWithCreatures":"It is usually neutral toward other creatures, but its gas clouds often cause them to defend themselves and turn hostile toward it.","strategy":"You want Tier 2 gear or a direct answer to the gas. Its bite and leap are fairly blockable, but the real threat is staying inside the cloud. If you fight several at once, gas protection stops being optional.","environments":["Ceremony Area","Croquet Court","Entrance Area","Fire Pit","Greenhouse Surroundings","Ice Cream Cart Surroundings","Picnic Table Area","Pumpkin Patch","Snackbar Front Area","Veggie Garden"],"loot":[{"section":"loot","item":"Stinkbug Gas Sack","minCount":0,"maxCount":2},{"section":"loot","item":"Stinkbug Part","minCount":2,"maxCount":5},{"section":"rare","item":"Stinkbug Gas Sack","minCount":0,"maxCount":2},{"section":"rare","item":"Stinkbug Part","minCount":0,"maxCount":3}],"advancedLootTable":[{"item":"Stinkbug Part","countLabel":"x2","chancePct":100},{"item":"Stinkbug Part","countLabel":"x3","chancePct":25},{"item":"Stinkbug Part","countLabel":"x3","chancePct":1},{"item":"Stinkbug Gas Sack","countLabel":"x2","chancePct":50},{"item":"Stinkbug Gas Sack","countLabel":"x2","chancePct":1}],"combatStats":{"health":800,"stunThreshold":75,"stunCooldownSeconds":5,"attackDamageSummary":"Bite: 50. Gas Leap: 65. The cloud deals 7 damage per second."},"inflictsEffects":["chopping","busting","gas"],"inflicts":["Its bite deals chopping damage, the leap deals busting damage, and its clouds apply continuous gas hazard."],"specialTraits":["It is immune to woozy buildup."],"abilities":[{"name":"Bite","description":"It winds up a basic blockable bite.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Gas Leap","description":"It leans back, leaps forward, and leaves a gas cloud at the impact point.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Gas Release","description":"It creates a lingering gas cloud around itself."}],"elementalWeaknesses":[{"type":"fresh","bonusPct":15}],"damageWeaknesses":[{"type":"stabbing","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25},{"type":"gas","bonusPct":90}],"groupId":null,"cardTier":2,"technicalId":"Stinkbug","bestiaryId":"Stinkbug","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[],"attacks":[{"name":"Bite L","technicalId":"StinkBugBite_L","tags":["chopping"],"notes":"Attack damage: 50"},{"name":"Bite R","technicalId":"StinkBugBite_R","tags":["chopping"],"notes":"Attack damage: 50"},{"name":"Fart","technicalId":"StinkBugFart","tags":["general_unblockable"],"notes":"Attack damage: 0"},{"name":"Leap","technicalId":"StinkBugLeap","tags":["mining"],"notes":"Attack damage: 65"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_stinkbug",
+  "speciesKey": "stinkbug",
+  "collectionGroup": "angry",
+  "name": "Stinkbug",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 290,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_StinkBug.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_StinkBug_G.png",
+  "photo": "assets/g2/creatures/photos/Stinkbug.webp",
+  "weaknesses": [
+    "fresh",
+    "stabbing"
+  ],
+  "resistances": [
+    "generic",
+    "gas"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 3,
+    "value": 800
+  },
+  "description": "An invasive species found around the park. Watch out for toxic clouds. Can drop stinkbug gas sack and stinkbug part on death.",
+  "behavior": "It patrols and sleeps in its spawn areas. In combat it alternates a simple bite, a leaping slam that leaves gas on impact, and a passive gas release that contaminates the area for several seconds.",
+  "interactionWithPlayer": "It becomes hostile as soon as it detects you and can quickly flood the area with gas. A Gas Mask or Gastro Goo makes the fight far more manageable.",
+  "interactionWithCreatures": "It is usually neutral toward other creatures, but its gas clouds often cause them to defend themselves and turn hostile toward it.",
+  "strategy": "You want Tier 2 gear or a direct answer to the gas. Its bite and leap are fairly blockable, but the real threat is staying inside the cloud. If you fight several at once, gas protection stops being optional.",
+  "environments": [
+    "Ceremony Area",
+    "Croquet Court",
+    "Entrance Area",
+    "Fire Pit",
+    "Greenhouse Surroundings",
+    "Ice Cream Cart Surroundings",
+    "Picnic Table Area",
+    "Pumpkin Patch",
+    "Snackbar Front Area",
+    "Veggie Garden"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Stink Bug Feelers",
+      "minCount": 2,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "Stink Bug Gas Sack",
+      "minCount": 0,
+      "maxCount": 4
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Stink Bug Feelers",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Stink Bug Feelers",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stink Bug Feelers",
+      "countLabel": "3",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stink Bug Gas Sack",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Stink Bug Gas Sack",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 800,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "inflictsEffects": [
+    "chopping",
+    "busting",
+    "gas"
+  ],
+  "inflicts": [
+    "Its bite deals chopping damage, the leap deals busting damage, and its clouds apply continuous gas hazard."
+  ],
+  "specialTraits": [
+    "It is immune to woozy buildup."
+  ],
+  "abilities": [
+    {
+      "name": "Bite",
+      "description": "It winds up a basic blockable bite.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Gas Leap",
+      "description": "It leans back, leaps forward, and leaves a gas cloud at the impact point.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Gas Release",
+      "description": "It creates a lingering gas cloud around itself."
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    },
+    {
+      "type": "gas",
+      "bonusPct": 90
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Stinkbug",
+  "bestiaryId": "Stinkbug",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Bite L",
+      "technicalId": "StinkBugBite_L",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 50",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 0.0,
+      "range": 350.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite R",
+      "technicalId": "StinkBugBite_R",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 50",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 0.0,
+      "range": 350.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Fart",
+      "technicalId": "StinkBugFart",
+      "tags": [
+        "general",
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 25.0,
+      "range": 1000.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Leap",
+      "technicalId": "StinkBugLeap",
+      "tags": [
+        "projectile",
+        "smashing"
+      ],
+      "notes": "Attack damage: 65",
+      "damageTypes": [
+        "smashing"
+      ],
+      "damage": 65.0,
+      "cooldownSeconds": 10.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_3b683aa0a4c32fb8",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -109239.65,
+        "y": -24392.422,
+        "z": 510.01932
+      },
+      "u": 0.5703636172080773,
+      "v": 0.1804206082806308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d38ce201c5b06a4b",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -111953.016,
+        "y": -22372.105,
+        "z": 73.492836
+      },
+      "u": 0.5601994132865087,
+      "v": 0.18914311695758496,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_91aa5f9f3264b9e7",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -128631.65,
+        "y": -28158.184,
+        "z": 14363.741
+      },
+      "u": 0.4977216505706761,
+      "v": 0.16416232221941138,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ef5bffd5ef103c9d",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -131758.06,
+        "y": -27222.26,
+        "z": 14363.741
+      },
+      "u": 0.4860101937371964,
+      "v": 0.16820307681929333,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fab70cfac1d27df",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -223264.12,
+        "y": 128206.414,
+        "z": 914.31165
+      },
+      "u": 0.14323068890839918,
+      "v": 0.8392502231891391,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da1056ea9fe65e39",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -201558.97,
+        "y": 149909.38,
+        "z": 1013.58417
+      },
+      "u": 0.22453765993561603,
+      "v": 0.9329505233156252,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6124e92e36f49c73",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -231192.61,
+        "y": 72794.82,
+        "z": 5664.8037
+      },
+      "u": 0.11353075563359677,
+      "v": 0.6000164249936757,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7a995b0e9d69df5e",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -232648.19,
+        "y": 72411.88,
+        "z": 6701.3447
+      },
+      "u": 0.10807818788410886,
+      "v": 0.5983631213424404,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2bba4fbbb855d4d4",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -232774.1,
+        "y": 72165.62,
+        "z": 8663.298
+      },
+      "u": 0.10760653204565407,
+      "v": 0.5972999193861201,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e5fd5d4f5e7f4a68",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -232550.42,
+        "y": 71715.45,
+        "z": 7827.7856
+      },
+      "u": 0.10844443195785773,
+      "v": 0.5953563571970656,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_194852942047d0fa",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -214918.62,
+        "y": 7275.2593,
+        "z": 2170.4983
+      },
+      "u": 0.17449273163593798,
+      "v": 0.31714253108693824,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fd3ab9c021c423a",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -216068.62,
+        "y": 5925.2593,
+        "z": 2039.1742
+      },
+      "u": 0.17018485923324556,
+      "v": 0.31131404639177,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_396c134af06dea2d",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -233172.75,
+        "y": 65538.055,
+        "z": 4662.8403
+      },
+      "u": 0.10611319871232075,
+      "v": 0.5686860962981701,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_231cf2b7fbfc5403",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -217189.8,
+        "y": 103868.24,
+        "z": 1076.57
+      },
+      "u": 0.16598494585894064,
+      "v": 0.7341726863985159,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_877aaa9a235573e8",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -122465.54,
+        "y": 69335.17,
+        "z": -1765.1647
+      },
+      "u": 0.5208197506584724,
+      "v": 0.5850797456783876,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_33c3695ebcbc6399",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -139634.4,
+        "y": 32111.5,
+        "z": 2.9418833
+      },
+      "u": 0.45650561311091603,
+      "v": 0.4243704190909858,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e780f38401caf08c",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -138845.16,
+        "y": 32354.68,
+        "z": -119.862404
+      },
+      "u": 0.4594620872110038,
+      "v": 0.4254203234674087,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d95cd1f69108742",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -163643.48,
+        "y": -37829.95,
+        "z": 8932.982
+      },
+      "u": 0.36656817559262506,
+      "v": 0.12240547769626449,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b23f1b1fa4c8d9f2",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -175343.48,
+        "y": -9773.389,
+        "z": 3396.0103
+      },
+      "u": 0.3227402563652326,
+      "v": 0.2435367639092673,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9e9a3c32af0681f",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -162721.11,
+        "y": -25309.902,
+        "z": 475.75623
+      },
+      "u": 0.37002335147790466,
+      "v": 0.176459483733873,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c07a836e17f42bf1",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -101306.33,
+        "y": 14098.422,
+        "z": 1137.1093
+      },
+      "u": 0.6000816435469709,
+      "v": 0.3466008269162661,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bb53dadedf3f3ae7",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -111116.45,
+        "y": 12507.255,
+        "z": 1179.1367
+      },
+      "u": 0.5633331694468832,
+      "v": 0.33973112876296485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b9264c1a791b39e1",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -111520.695,
+        "y": 10792.179,
+        "z": 1164.8577
+      },
+      "u": 0.5618188773778168,
+      "v": 0.3323264663799646,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dcb707c9c615865f",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -131947.22,
+        "y": 24150.285,
+        "z": -193.0374
+      },
+      "u": 0.4853016049165935,
+      "v": 0.3899987007336201,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60f2a6c16773228d",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -134389.08,
+        "y": 23800.738,
+        "z": -172.0604
+      },
+      "u": 0.47615445595551664,
+      "v": 0.3884895678893667,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5658b045c31a0a2c",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -72251.64,
+        "y": 104176.83,
+        "z": -3675.2708
+      },
+      "u": 0.7089198150424348,
+      "v": 0.73550499165191,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_212a913255e982c1",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -153511.31,
+        "y": 48988.312,
+        "z": 512.7538
+      },
+      "u": 0.40452304126426686,
+      "v": 0.4972343009022683,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7c13a9722948d2ce",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -211327.94,
+        "y": 157634.47,
+        "z": 5306.605
+      },
+      "u": 0.18794333274802455,
+      "v": 0.9663027965258452,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_13a56e6e66a29174",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -108158.305,
+        "y": 155382.86,
+        "z": 989.9983
+      },
+      "u": 0.574414309628329,
+      "v": 0.9565817043595581,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_72cdeb9fe8ee91b3",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -167817.23,
+        "y": 100281.66,
+        "z": -2458.3406
+      },
+      "u": 0.3509334082528533,
+      "v": 0.718688,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f29f5e0b8fe3f1ce",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -69650.37,
+        "y": 130350.85,
+        "z": -2019.8434
+      },
+      "u": 0.7186641100380451,
+      "v": 0.848508602748967,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_632f87d223cc9d9a",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -137133.31,
+        "y": 76043.516,
+        "z": -5150.614
+      },
+      "u": 0.46587463623061165,
+      "v": 0.6140423323383084,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ac6fc6f489816943",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -164358.72,
+        "y": 86554.516,
+        "z": -2911.487
+      },
+      "u": 0.36388890371671057,
+      "v": 0.6594224824352812,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_293b64f846700207",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -63463.977,
+        "y": 80898.88,
+        "z": -1710.7623
+      },
+      "u": 0.7418381897570968,
+      "v": 0.6350048617927313,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f5f4415ae67a93af",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -120024.234,
+        "y": 98438.36,
+        "z": -4778.212
+      },
+      "u": 0.529964824348844,
+      "v": 0.7107297438232566,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5f11f29bed5afa1d",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -135023.02,
+        "y": 70234.195,
+        "z": -4116.6377
+      },
+      "u": 0.47377973192859235,
+      "v": 0.5889611926806646,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_375fcb917b89a0d4",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -167798.48,
+        "y": 79849.33,
+        "z": -1297.3807
+      },
+      "u": 0.35100364530289724,
+      "v": 0.6304735387469432,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ebaf0ffbfeda6f2d",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -228488.22,
+        "y": 128206.414,
+        "z": 1020.6661
+      },
+      "u": 0.12366133567456833,
+      "v": 0.8392502231891391,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f477b2b7931cc8d5",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -218750.17,
+        "y": 97358.24,
+        "z": 1269.9062
+      },
+      "u": 0.16013983728416734,
+      "v": 0.7060664379795936,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_be02861a607f8de7",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -192759.53,
+        "y": -4666.859,
+        "z": 2598.266
+      },
+      "u": 0.2575001510096576,
+      "v": 0.265583676465132,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f8e6224a2650677b",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -30948.06,
+        "y": 72488.336,
+        "z": 6996.8447
+      },
+      "u": 0.8636420345332163,
+      "v": 0.5986932121764061,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f57177ea44ed4ebb",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -222695.4,
+        "y": -6265.894,
+        "z": 8689.716
+      },
+      "u": 0.1453611003804507,
+      "v": 0.2586800090395481,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aefb2d6248c612ef",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -30316.3,
+        "y": 71688.52,
+        "z": 6946.425
+      },
+      "u": 0.8660085923324554,
+      "v": 0.5952400897208873,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8ae60d7457dc09c6",
+      "targetType": "creature",
+      "targetId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "map": "surface",
+      "world": {
+        "x": -31700.219,
+        "y": 73227.82,
+        "z": 6964.604
+      },
+      "u": 0.8608244649692713,
+      "v": 0.6018858574922,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": []
+}

@@ -1,1 +1,2157 @@
-{"id":"g2_cockroach_nymph","speciesKey":"cockroach_nymph","collectionGroup":"neutral","name":"Нимфа таракана","game":"g2","tier":2,"danger":"intermedia","isBoss":false,"order":218,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Nymph.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Nymph_G.png","photo":"assets/g2/creatures/photos/Cockroach_Nymph.webp","weaknesses":[],"resistances":["gas","fresh","spicy","venom"],"temperament":"neutral","health":{"value":400,"rating":2},"description":"Нимфа таракана — молодая форма таракана в Grounded 2. Чаще всего она встречается стаями возле мусора, объедков и захламлённых мест, где одна кажется безобидной, но целая группа быстро становится опасной.","behavior":"Она двигается быстро, резко меняет направление и почти не стоит на месте. Чаще всего бродит как часть стаи, будто весь рой делит одну и ту же нервную модель движения.","interactionWithPlayer":"Обычно она игнорирует игрока, пока тот не ударит её, другую нимфу или ближайшего таракана. Как только одна входит в бой, остальные быстро подтягиваются следом.","interactionWithCreatures":"Большинство существ их просто пропускает, хотя крупные хищники с радостью давят их при случае. Их настоящая сила не в контроле зоны, а в том, как они переполняют её числом.","strategy":"Разбивай стаю сразу после активации. Если позволить нескольким окружить тебя, даже простой бой превращается в постоянную потерю ритма, здоровья и пространства.","environments":["Битва с Axl","Площадка для крокета","Входная зона","Огненная яма","Теплица","Окрестности теплицы","Окрестности тележки с мороженым","Небольшие пещеры","Зона стола для пикника","Тыквенная грядка","Передняя зона снэк-бара","Токсичный муравейник"],"loot":[{"section":"loot","item":"Roach Chunk","minCount":1,"maxCount":3},{"section":"rare","item":"Roach Chunk","minCount":0,"maxCount":3}],"combatStats":{"health":400,"attackDamageSummary":"Bite: 15 Elemental Resistance Fresh(-25% Damage)-or- Spicy(-25% Damage) Buildup Effect Buildup Resistance Chill(-50% Buildup) Cockroach Nymph"},"abilities":[{"name":"Укус","description":"Быстрая базовая атака вблизи."}],"resistancesV2":[{"type":"gas","bonusPct":90},{"type":"fresh","bonusPct":25},{"type":"spicy","bonusPct":25},{"type":"venom","bonusPct":25}],"groupId":null,"cardTier":2,"technicalId":"Cockroach_Nymph","bestiaryId":"Cockroach_Nymph","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Bite","technicalId":"CockroachNymphBite","tags":["stabbing"],"notes":"Урон атаки: 15"},{"name":"Bite Left","technicalId":"CockroachNymphBiteLeft","tags":["stabbing"],"notes":"Урон атаки: 15"},{"name":"Bite Right","technicalId":"CockroachNymphBiteRight","tags":["stabbing"],"notes":"Урон атаки: 15"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_cockroach_nymph",
+  "speciesKey": "cockroach_nymph",
+  "collectionGroup": "neutral",
+  "name": "Нимфа таракана",
+  "game": "g2",
+  "tier": 2,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 218,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Nymph.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Nymph_G.png",
+  "photo": "assets/g2/creatures/photos/Cockroach_Nymph.webp",
+  "weaknesses": [],
+  "resistances": [
+    "gas",
+    "fresh",
+    "spicy",
+    "venom"
+  ],
+  "temperament": "neutral",
+  "health": {
+    "rating": 2,
+    "value": 400
+  },
+  "description": "Нимфа таракана — молодая форма таракана в Grounded 2. Чаще всего она встречается стаями возле мусора, объедков и захламлённых мест, где одна кажется безобидной, но целая группа быстро становится опасной.",
+  "behavior": "Она двигается быстро, резко меняет направление и почти не стоит на месте. Чаще всего бродит как часть стаи, будто весь рой делит одну и ту же нервную модель движения.",
+  "interactionWithPlayer": "Обычно она игнорирует игрока, пока тот не ударит её, другую нимфу или ближайшего таракана. Как только одна входит в бой, остальные быстро подтягиваются следом.",
+  "interactionWithCreatures": "Большинство существ их просто пропускает, хотя крупные хищники с радостью давят их при случае. Их настоящая сила не в контроле зоны, а в том, как они переполняют её числом.",
+  "strategy": "Разбивай стаю сразу после активации. Если позволить нескольким окружить тебя, даже простой бой превращается в постоянную потерю ритма, здоровья и пространства.",
+  "environments": [
+    "Битва с Axl",
+    "Площадка для крокета",
+    "Входная зона",
+    "Огненная яма",
+    "Теплица",
+    "Окрестности теплицы",
+    "Окрестности тележки с мороженым",
+    "Небольшие пещеры",
+    "Зона стола для пикника",
+    "Тыквенная грядка",
+    "Передняя зона снэк-бара",
+    "Токсичный муравейник"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Cockroach Part",
+      "minCount": 1,
+      "maxCount": 6
+    }
+  ],
+  "combatStats": {
+    "health": 400,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Быстрая базовая атака вблизи."
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "gas",
+      "bonusPct": 90
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Cockroach_Nymph",
+  "bestiaryId": "Cockroach_Nymph",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "technicalId": "CockroachNymphBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 15",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 15.0,
+      "cooldownSeconds": 2.0,
+      "range": 400.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Left",
+      "technicalId": "CockroachNymphBiteLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 15",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 15.0,
+      "cooldownSeconds": 2.0,
+      "range": 400.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Right",
+      "technicalId": "CockroachNymphBiteRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 15",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 15.0,
+      "cooldownSeconds": 2.0,
+      "range": 400.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_51d13e46f2306097",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -123432.22,
+        "y": -26170.121,
+        "z": 894.67224
+      },
+      "u": 0.5171985905765292,
+      "v": 0.1727455776035079,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_601f22a8aa6904e9",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -113183.37,
+        "y": -47441.273,
+        "z": 940.47876
+      },
+      "u": 0.5555905367281241,
+      "v": 0.08090958954380638,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_94451000227dad03",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -110183.7,
+        "y": -49275.926,
+        "z": 950.9596
+      },
+      "u": 0.566827228563067,
+      "v": 0.07298866589088454,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_944ad0d0ef921640",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -113523.1,
+        "y": -50391.375,
+        "z": 1371.5585
+      },
+      "u": 0.5543179163008487,
+      "v": 0.06817283076144699,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a2d49bcbb6816302",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -126348.49,
+        "y": -27115.066,
+        "z": -1339.2979
+      },
+      "u": 0.5062743131401815,
+      "v": 0.168665875773674,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa2d20eb0f39f3d5",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -124753.52,
+        "y": -30195.152,
+        "z": -1299.2411
+      },
+      "u": 0.5122490324846356,
+      "v": 0.15536792458048737,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_03217f4169e2f6db",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -160603.19,
+        "y": 149172.69,
+        "z": -947.96356
+      },
+      "u": 0.3779570289727831,
+      "v": 0.9297699408044523,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3a42ad3efa7cc2e9",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -93163.12,
+        "y": -46708.01,
+        "z": -4607.4717
+      },
+      "u": 0.6305859127889962,
+      "v": 0.08407537633864569,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f6e28a26dd3a6919",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -96486.36,
+        "y": -48665.19,
+        "z": 1350.1495
+      },
+      "u": 0.6181371354989758,
+      "v": 0.07562545509739438,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_314c7d595ae8cb04",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -97285.375,
+        "y": -49463.293,
+        "z": 1350.1495
+      },
+      "u": 0.615144044483465,
+      "v": 0.07217972834134412,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca5998ab3624320f",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -89775.55,
+        "y": -53340.855,
+        "z": -4607.4717
+      },
+      "u": 0.6432756687152473,
+      "v": 0.05543875739944342,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fac912d4221dda39",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -93546.54,
+        "y": -51405.29,
+        "z": -4607.4717
+      },
+      "u": 0.6291496306701786,
+      "v": 0.06379535812463105,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07fe78aabe0039f8",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -93541.65,
+        "y": -50359.46,
+        "z": -4607.4717
+      },
+      "u": 0.6291679484928301,
+      "v": 0.06831062045703687,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d37febe1febaf65e",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -96005.984,
+        "y": -46395.14,
+        "z": -4607.4717
+      },
+      "u": 0.6199366124670763,
+      "v": 0.08542616004722153,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a47c2d1dc761956f",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -96134.46,
+        "y": -50097.03,
+        "z": -4150.1274
+      },
+      "u": 0.6194553444541995,
+      "v": 0.06944363470781686,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_db5e11fa761897b3",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -76138.16,
+        "y": -53403.88,
+        "z": -3510.624
+      },
+      "u": 0.6943610043898156,
+      "v": 0.05516665351210052,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cdd04dd7d923f537",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -75768.516,
+        "y": -52920.273,
+        "z": -3483.0884
+      },
+      "u": 0.6957456819432251,
+      "v": 0.05725457647356438,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f7526a821352f2f1",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -245783.92,
+        "y": 58324.35,
+        "z": 2492.6196
+      },
+      "u": 0.05887205853087499,
+      "v": 0.5375416746774601,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d88980b14d85a030",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -249787.8,
+        "y": 62229.195,
+        "z": 2488.0908
+      },
+      "u": 0.04387362013462106,
+      "v": 0.5544004371363522,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4788d04a2933c5fd",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -248925.14,
+        "y": 65106.223,
+        "z": 2131.4453
+      },
+      "u": 0.04710512379280065,
+      "v": 0.5668217065182561,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cd8ef7aeb92010b7",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -244587.92,
+        "y": 64150.125,
+        "z": 2792.6196
+      },
+      "u": 0.06335224582967511,
+      "v": 0.562693852770048,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4751cbf187ba1e05",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -92929.72,
+        "y": 10821.714,
+        "z": 1222.1682
+      },
+      "u": 0.6314602235879425,
+      "v": 0.3324539806729067,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_21a1465617468d8e",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -92245.7,
+        "y": 12591.933,
+        "z": 1372.0859
+      },
+      "u": 0.6340225460930641,
+      "v": 0.34009671722742213,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cf239f86f3e49a2a",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -159094.77,
+        "y": 149945.38,
+        "z": -1086.71
+      },
+      "u": 0.38360753409423476,
+      "v": 0.9331059495741632,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b751e34bbb07ad66",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -222363.27,
+        "y": 100636.57,
+        "z": -96.5864
+      },
+      "u": 0.14660525139010833,
+      "v": 0.7202202870393793,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c41dfdfc52915432",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -187270.64,
+        "y": 108084.33,
+        "z": -4039.6746
+      },
+      "u": 0.27806140122914835,
+      "v": 0.7523752167973692,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_27faa8e179db0f85",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -170740.81,
+        "y": 104619.3,
+        "z": -4934.633
+      },
+      "u": 0.3399817477319286,
+      "v": 0.7374153098912217,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_006359fb03f1859d",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -171528.66,
+        "y": 101643.836,
+        "z": -4940.7236
+      },
+      "u": 0.33703048053848406,
+      "v": 0.7245690533097225,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2c49d2135bb57d3c",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -174868.66,
+        "y": 102093.836,
+        "z": -4780.6875
+      },
+      "u": 0.3245189206906643,
+      "v": 0.7265118815414453,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c71f8fa167abe15",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -185400.0,
+        "y": -31550.0,
+        "z": 6850.0
+      },
+      "u": 0.28506877377816797,
+      "v": 0.1495185091491694,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e0d51075a90d6fe4",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -185250.0,
+        "y": -22350.0,
+        "z": 6850.0
+      },
+      "u": 0.2856306701785192,
+      "v": 0.18923855299772321,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ef087e29badefa6e",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -169950.0,
+        "y": -9750.0,
+        "z": 442.54303
+      },
+      "u": 0.34294410301434003,
+      "v": 0.24363774348596007,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3da7bc6f6d2a7e41",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -158000.0,
+        "y": -10200.0,
+        "z": -1699.9739
+      },
+      "u": 0.38770851624231784,
+      "v": 0.2416949152542373,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_118b353e55bc7988",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -159029.84,
+        "y": -8202.644,
+        "z": -1687.7819
+      },
+      "u": 0.38385076031606674,
+      "v": 0.2503182922000169,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a9a4dfae1edd43b0",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -160931.72,
+        "y": -3396.9502,
+        "z": -2092.0247
+      },
+      "u": 0.376726363476734,
+      "v": 0.271066375728139,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_90a40217db554459",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -160676.6,
+        "y": -4656.199,
+        "z": -1520.4862
+      },
+      "u": 0.3776820368744513,
+      "v": 0.26562969990724344,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_78a7c4aaa2e39e05",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -164595.75,
+        "y": -52662.88,
+        "z": 100.7341
+      },
+      "u": 0.36300099502487565,
+      "v": 0.0583658440003373,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3b87c8b84089ba76",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -163644.4,
+        "y": -48412.14,
+        "z": 181.40717
+      },
+      "u": 0.366564729294703,
+      "v": 0.07671797217303317,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f73efdaebfd86fff",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -165661.36,
+        "y": -38573.16,
+        "z": -63.970245
+      },
+      "u": 0.35900924553702085,
+      "v": 0.11919674576271189,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a8431cef19d7a5d4",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -164841.3,
+        "y": -32938.395,
+        "z": -798.8873
+      },
+      "u": 0.3620811706175008,
+      "v": 0.14352425803187455,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b21a84c5ef448e06",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -167508.19,
+        "y": -36297.28,
+        "z": -1702.8926
+      },
+      "u": 0.35209106467661694,
+      "v": 0.12902262113162996,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8c7dfd6e5b677ac3",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -181887.66,
+        "y": 109230.03,
+        "z": -4037.4604
+      },
+      "u": 0.29822591513023117,
+      "v": 0.7573216574753351,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_69860bd1dd1e5683",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -173449.97,
+        "y": 101913.64,
+        "z": -4958.9097
+      },
+      "u": 0.32983329938542577,
+      "v": 0.7257339040391264,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e6c783b44bf8f47e",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -168715.5,
+        "y": 106274.33,
+        "z": -4506.7764
+      },
+      "u": 0.3475685103892303,
+      "v": 0.7445607299097733,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95e561e5ae1e0d0c",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -180224.75,
+        "y": 107539.37,
+        "z": -3921.4915
+      },
+      "u": 0.30445513608428443,
+      "v": 0.7500224086347922,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aca6706a000c9398",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -184418.48,
+        "y": 109929.15,
+        "z": -3932.042
+      },
+      "u": 0.2887455241439859,
+      "v": 0.7603400354161396,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_80e5a51372cc3a42",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -186303.66,
+        "y": 108740.6,
+        "z": -3996.1113
+      },
+      "u": 0.2816836851038923,
+      "v": 0.7552085943165529,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_89d5eea489997022",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -185204.81,
+        "y": 108019.67,
+        "z": -4039.6746
+      },
+      "u": 0.28579995083406495,
+      "v": 0.7520960539674508,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3473e37ee2b50040",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -186058.69,
+        "y": 109163.414,
+        "z": -2545.7773
+      },
+      "u": 0.28260133684518585,
+      "v": 0.757034049818703,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f246e77de7e2101e",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -187651.92,
+        "y": 108403.836,
+        "z": -2050.3242
+      },
+      "u": 0.27663313549897567,
+      "v": 0.7537546507462687,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dc46301b80cbf906",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -206587.56,
+        "y": 117715.46,
+        "z": 7781.452
+      },
+      "u": 0.20570068247000292,
+      "v": 0.7939566196137956,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a0a2917a0bd3baf",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -168860.77,
+        "y": 109696.625,
+        "z": -3098.843
+      },
+      "u": 0.3470243324553703,
+      "v": 0.7593361328948477,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_596def81b6f82dfa",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -86703.984,
+        "y": 86792.64,
+        "z": -1297.4651
+      },
+      "u": 0.6547816812408546,
+      "v": 0.6604505580571719,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8365101e0bedb7ba",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -163948.06,
+        "y": -40428.035,
+        "z": 133.71
+      },
+      "u": 0.365427226221832,
+      "v": 0.11118851572645247,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f059b9783984778a",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -93904.516,
+        "y": 12419.04,
+        "z": 1432.6533
+      },
+      "u": 0.6278086611647644,
+      "v": 0.3393502696686061,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0177543bc0055e1d",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -117440.12,
+        "y": 88761.34,
+        "z": -4623.5063
+      },
+      "u": 0.539644853380158,
+      "v": 0.6689502157011552,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f40c6af8ea664231",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -82350.86,
+        "y": 108743.2,
+        "z": -3294.6272
+      },
+      "u": 0.6710883792800703,
+      "v": 0.7552198195463361,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e1e22dfea2f82144",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -82124.75,
+        "y": 110478.695,
+        "z": -3408.1785
+      },
+      "u": 0.6719353819139596,
+      "v": 0.7627126388396999,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_844b398bc3d94a1c",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -83423.914,
+        "y": 110940.914,
+        "z": -3471.561
+      },
+      "u": 0.667068744746854,
+      "v": 0.764708221334008,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_36f474071025f694",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -80576.03,
+        "y": 110778.44,
+        "z": -3320.3357
+      },
+      "u": 0.6777368498683055,
+      "v": 0.7640067567248503,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7594e1bbfb5c60bd",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -80134.9,
+        "y": 113441.09,
+        "z": -3147.2607
+      },
+      "u": 0.6793893122622183,
+      "v": 0.7755024713719538,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c3cbd6ce0dac4097",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -83041.09,
+        "y": 112194.3,
+        "z": -3434.6606
+      },
+      "u": 0.6685027942639743,
+      "v": 0.7701195851252214,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fd5194871ca54eb7",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -83277.91,
+        "y": 114080.914,
+        "z": -3405.0308
+      },
+      "u": 0.6676156722270997,
+      "v": 0.7782648449953622,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8c9e8f7dcf4f3eae",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -81288.82,
+        "y": 105949.92,
+        "z": -3261.3447
+      },
+      "u": 0.6750667556335967,
+      "v": 0.7431601234505439,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2bd27dc68da82073",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -79263.07,
+        "y": 106223.61,
+        "z": -3292.8516
+      },
+      "u": 0.6826551665203394,
+      "v": 0.7443417515810775,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c8b9d50f11e6bef8",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -84532.9,
+        "y": 112664.3,
+        "z": 5777.371
+      },
+      "u": 0.6629145098039216,
+      "v": 0.772148761278354,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_68545635ce9e49fd",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -85058.63,
+        "y": 110501.24,
+        "z": 5742.6904
+      },
+      "u": 0.6609451378402107,
+      "v": 0.762809974534109,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_849f1bb9007782c6",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -81157.64,
+        "y": 113141.64,
+        "z": 5710.352
+      },
+      "u": 0.6755581527655837,
+      "v": 0.7742096271186442,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2319f319c6bdfd74",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -80679.9,
+        "y": 111783.97,
+        "z": 5693.1333
+      },
+      "u": 0.6773477553409424,
+      "v": 0.7683480279956151,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e17bfb9bd575db5",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -190500.47,
+        "y": 53002.75,
+        "z": 851.8025
+      },
+      "u": 0.2659625355575066,
+      "v": 0.514566219748714,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8ae7554115b3dc6a",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -145529.58,
+        "y": 133311.2,
+        "z": -2979.8481
+      },
+      "u": 0.4344224103014341,
+      "v": 0.8612896062062569,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_749e98391cc6d7a7",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -149019.72,
+        "y": 136108.92,
+        "z": -2715.1003
+      },
+      "u": 0.4213484296166228,
+      "v": 0.8733684715406022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_edd30483c6689b05",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -149681.7,
+        "y": 135437.6,
+        "z": -2775.6794
+      },
+      "u": 0.4188686684225929,
+      "v": 0.8704701172105573,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0d9f5c955dcbc710",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -151668.19,
+        "y": 127753.0,
+        "z": -3589.2407
+      },
+      "u": 0.41142732455370207,
+      "v": 0.8372926553672315,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6ce8c94dd3da795b",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -150652.38,
+        "y": 116082.18,
+        "z": -4762.9883
+      },
+      "u": 0.4152325244366403,
+      "v": 0.7869051029597774,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_06275bfbbc307d0b",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -85344.53,
+        "y": 108388.38,
+        "z": -3164.132
+      },
+      "u": 0.6598741633011415,
+      "v": 0.7536879210726031,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fbc3b21e7ea50422",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -82087.805,
+        "y": 110098.3,
+        "z": 5141.3936
+      },
+      "u": 0.6720737769973661,
+      "v": 0.7610703229614638,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d128862d8f2e4595",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -83597.59,
+        "y": 110851.664,
+        "z": 5108.7446
+      },
+      "u": 0.6664181586186714,
+      "v": 0.7643228937347162,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c4f503f4d0aec076",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -82171.06,
+        "y": 112554.8,
+        "z": 5268.992
+      },
+      "u": 0.6717619057652912,
+      "v": 0.7716760064086348,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9c63fea41a5ce19c",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -94698.336,
+        "y": 135258.08,
+        "z": 1722.566
+      },
+      "u": 0.6248350304945859,
+      "v": 0.8696950582679819,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa272308b6b41816",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -151534.42,
+        "y": 129598.84,
+        "z": -3430.8892
+      },
+      "u": 0.4119284237635352,
+      "v": 0.845261877729994,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fb1d6136f78bfd0",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -81729.99,
+        "y": 112216.664,
+        "z": 5268.992
+      },
+      "u": 0.6734141434006439,
+      "v": 0.7702161393709418,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e0e6d99a121aea55",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -82728.53,
+        "y": 109769.35,
+        "z": 5168.568
+      },
+      "u": 0.6696736365232661,
+      "v": 0.7596501155240746,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5b19b846aebf3458",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -84170.59,
+        "y": 109989.35,
+        "z": 5741.5947
+      },
+      "u": 0.6642717143693299,
+      "v": 0.7605999426595834,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ab508ef89e33d297",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -102031.81,
+        "y": 156930.34,
+        "z": 1453.7783
+      },
+      "u": 0.5973640128767925,
+      "v": 0.9632627884307277,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d8cd338487eaa211",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -99410.516,
+        "y": 156648.48,
+        "z": 1321.9143
+      },
+      "u": 0.6071833172958736,
+      "v": 0.962045887174298,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3f3a5e4d96468432",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -251527.17,
+        "y": 154589.95,
+        "z": 9559.0
+      },
+      "u": 0.03735798185542869,
+      "v": 0.953158397841302,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_55a95e930edc097c",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -249968.28,
+        "y": 154024.88,
+        "z": 9949.0
+      },
+      "u": 0.04319754638571847,
+      "v": 0.9507187668437473,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95fda3cb43f8ca10",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -206187.56,
+        "y": 117942.016,
+        "z": 7780.2485
+      },
+      "u": 0.20719907287093944,
+      "v": 0.7949347515979426,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2489a09c09147411",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -177420.5,
+        "y": 42023.293,
+        "z": 1565.5255
+      },
+      "u": 0.3149597892888499,
+      "v": 0.4671635552407455,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cf930157e990105b",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -136382.78,
+        "y": 134634.4,
+        "z": 13940.0
+      },
+      "u": 0.4686861035996488,
+      "v": 0.8670023846867358,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ab4e976897a27caf",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -139825.19,
+        "y": 135672.98,
+        "z": 15035.501
+      },
+      "u": 0.4557909183494293,
+      "v": 0.8714863458976305,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f19495559e24091c",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -146669.42,
+        "y": 134046.58,
+        "z": -3022.0354
+      },
+      "u": 0.4301525970149253,
+      "v": 0.8644645329285772,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_50d80f6158e44a4f",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -114565.99,
+        "y": 89606.484,
+        "z": -4782.5693
+      },
+      "u": 0.550411275387767,
+      "v": 0.6725990370857577,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e3a0323679868a0f",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -114011.49,
+        "y": 146589.47,
+        "z": -2444.7058
+      },
+      "u": 0.5524884190810653,
+      "v": 0.9186171569272281,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_450efce256158de0",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -226886.08,
+        "y": 105921.42,
+        "z": 447.38272
+      },
+      "u": 0.12966291366695937,
+      "v": 0.7430370776625348,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cabaf87da8aad9b5",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -224196.08,
+        "y": 104931.42,
+        "z": 423.35596
+      },
+      "u": 0.1397395891132573,
+      "v": 0.7387628555527448,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_66bf1b7416d065ed",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -228936.08,
+        "y": 106221.42,
+        "z": 447.37628
+      },
+      "u": 0.12198366286215982,
+      "v": 0.7443322964836833,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_323b9fb6651cebfe",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -221913.27,
+        "y": 102386.57,
+        "z": -262.11322
+      },
+      "u": 0.14829094059116188,
+      "v": 0.7277757301627455,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6df1e7d24382c305",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -220613.27,
+        "y": 100536.57,
+        "z": -447.2205
+      },
+      "u": 0.15316070939420548,
+      "v": 0.7197885474323299,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_231741bb1bfe313f",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -32234.213,
+        "y": 48053.1,
+        "z": 17839.0
+      },
+      "u": 0.8588241362598771,
+      "v": 0.4931966202883885,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9750e71494ad9405",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -34469.39,
+        "y": 47820.867,
+        "z": 18139.672
+      },
+      "u": 0.850451216856892,
+      "v": 0.4921939784467492,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6dc01533e3940ce2",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -46818.008,
+        "y": 50627.52,
+        "z": 1778.4454
+      },
+      "u": 0.8041935901668129,
+      "v": 0.5043114110801922,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_98d5076e45b09e77",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -49149.844,
+        "y": 50161.84,
+        "z": 5232.0527
+      },
+      "u": 0.7954585884694176,
+      "v": 0.5023008860780842,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_787771ba2dcf4cd4",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -198900.19,
+        "y": -5621.547,
+        "z": 1316.0778
+      },
+      "u": 0.23449738601112086,
+      "v": 0.2614619102453833,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d8cb681b34442983",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -200506.11,
+        "y": -54263.207,
+        "z": -4055.461
+      },
+      "u": 0.2284816482294411,
+      "v": 0.05145659849903028,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f20b9857a706c037",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -201131.11,
+        "y": -50668.207,
+        "z": -4443.2056
+      },
+      "u": 0.22614041322797782,
+      "v": 0.06697763737245972,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7a791cdda7d918c9",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -201466.11,
+        "y": -51998.207,
+        "z": -4443.2056
+      },
+      "u": 0.2248855112671935,
+      "v": 0.06123550059870139,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_40044416a0bc9703",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -198591.7,
+        "y": -4136.547,
+        "z": 1325.5651
+      },
+      "u": 0.23565298214808306,
+      "v": 0.26787324341006835,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3e9d56b87faeb198",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -23731.562,
+        "y": 43518.17,
+        "z": -4743.6143
+      },
+      "u": 0.8906748628621597,
+      "v": 0.47361753132641876,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d366415ed7c9afd8",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -35514.53,
+        "y": 46806.023,
+        "z": -4129.404
+      },
+      "u": 0.846536147497805,
+      "v": 0.48781249494898377,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fdcd113cb1cc5fbd",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -197457.75,
+        "y": -29089.0,
+        "z": 966.80426
+      },
+      "u": 0.23990073163593795,
+      "v": 0.1601436208786576,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bd58832cae75e0ad",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -200742.1,
+        "y": -10068.817,
+        "z": 1035.858
+      },
+      "u": 0.22759763535264851,
+      "v": 0.2422612842229531,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bd9a6184c0196cc2",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -198038.02,
+        "y": -28379.457,
+        "z": 966.80426
+      },
+      "u": 0.23772705414105946,
+      "v": 0.16320699903870475,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_68f67820a90ded5b",
+      "targetType": "creature",
+      "targetId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "map": "surface",
+      "world": {
+        "x": -46338.93,
+        "y": 49930.8,
+        "z": 1794.3185
+      },
+      "u": 0.8059882048580627,
+      "v": 0.5013033948899569,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [
+    "gas"
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Cockroach Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

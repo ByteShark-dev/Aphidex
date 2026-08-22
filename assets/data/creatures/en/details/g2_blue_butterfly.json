@@ -1,1 +1,971 @@
-{"id":"g2_blue_butterfly","speciesKey":"blue_butterfly","collectionGroup":"neutral","name":"Blue Butterfly","game":"g2","tier":2,"danger":"intermedia","isBoss":false,"order":210,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_BlueButterfly.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_BlueButterfly_G.png","photo":"assets/g2/creatures/photos/Blue_Butterfly.webp","weaknesses":["slashing","spicy"],"resistances":["generic","fresh"],"temperament":"neutral","health":{"value":500,"rating":2},"description":"Floats around flower beds and milkweeds. Can drop butterfly fuzz and scales on death.","behavior":"It flies without much urgency, sometimes hovering in place before settling down to rest or feed. Its pattern feels calm, which makes the shift very noticeable once one of them becomes aggressive and the nearby group follows along.","interactionWithPlayer":"It usually ignores the player until damaged. If you hit one too close to the group, several butterflies can pile in and turn a simple fight into a flurry of bodies that are harder to track than they first look.","interactionWithCreatures":"Their relationship with other creatures is passive and they rarely seek fights on their own. Most of the time they only react after another nearby butterfly has already entered combat.","strategy":"If you want their materials, the best approach is to break the group formation first. The real danger is not one butterfly, but letting several wake up at the same time and forcing yourself to read too many trajectories at once.","environments":["Croquet Court","Entrance Area","Fire Pit","Greenhouse Surroundings","Ice Cream Cart Surroundings","Snackbar Front Area","Veggie Garden"],"loot":[{"section":"loot","item":"Blue Butterfly Chunk","minCount":1,"maxCount":5},{"section":"loot","item":"Blue Butterfly Scales","minCount":0,"maxCount":2},{"section":"loot","item":"Blue Butterfly Wing","minCount":0,"maxCount":1},{"section":"rare","item":"Blue Butterfly Chunk","minCount":0,"maxCount":4},{"section":"rare","item":"Blue Butterfly Scales","minCount":0,"maxCount":1},{"section":"rare","item":"Shivering Scale","minCount":0,"maxCount":1}],"combatStats":{"health":500,"attackDamageSummary":"Divebomb Headbutt: 253-Combo Bite: 20Chilling Gust: 35"},"inflictsEffects":["busting"],"abilities":[{"name":"Divebomb Headbutt","description":"It dives from the air and slams head-first into the target."},{"name":"Combo Bite","description":"A short bite chain used to keep pressure up."},{"name":"Chilling Gust","description":"Releases a chilling gust that applies cold buildup."}],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25},{"type":"fresh","bonusPct":50}],"groupId":null,"cardTier":2,"technicalId":"BlueButterfly","bestiaryId":"BlueButterfly","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","damageWeaknesses":[{"type":"slashing","bonusPct":15}],"weakPoints":[],"attacks":[{"name":"Gust","technicalId":"BlueButterflyGust","tags":["general_unblockable","ranged"],"notes":"Attack damage: 35"},{"name":"Charge","technicalId":"BlueButterflyCharge","tags":["generic"],"notes":"Attack damage: 50"},{"name":"Triple Bite","technicalId":"BlueButterflyTripleBite","tags":["generic"],"notes":"Attack damage: 20"}],"encounterVariants":[],"contextVariants":[{"id":"Butterfly_Blue_Wave","characterRow":"Butterfly_Blue_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":500.0,"stun":{"max":30.0,"duration":4.0,"cooldown":12.0,"staggerThreshold":30}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"},{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"},{"damageTypes":["Spicy"],"percent":15.0,"sourceId":"DamageResistDownSpicyTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"BlueButterflyGust","ability":"BlueButterflyGust","resolved":true,"cooldown":20.0,"priority":1,"targetType":"Enemy","damage":{"amount":35.0,"type":"GeneralUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["BlueButterflyChillGust"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":1600.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"BlueButterflyCharge","ability":"BlueButterflyCharge","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"BlueButterflyTripleBite","ability":"BlueButterflyTripleBite","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":20.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":3,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Mariposa azul  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_blue_butterfly",
+  "speciesKey": "blue_butterfly",
+  "collectionGroup": "neutral",
+  "name": "Blue Butterfly",
+  "game": "g2",
+  "tier": 2,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 210,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_BlueButterfly.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_BlueButterfly_G.png",
+  "photo": "assets/g2/creatures/photos/Blue_Butterfly.webp",
+  "weaknesses": [
+    "slashing",
+    "spicy"
+  ],
+  "resistances": [
+    "generic",
+    "fresh"
+  ],
+  "temperament": "neutral",
+  "health": {
+    "rating": 2,
+    "value": 500
+  },
+  "description": "Floats around flower beds and milkweeds. Can drop butterfly fuzz and scales on death.",
+  "behavior": "It flies without much urgency, sometimes hovering in place before settling down to rest or feed. Its pattern feels calm, which makes the shift very noticeable once one of them becomes aggressive and the nearby group follows along.",
+  "interactionWithPlayer": "It usually ignores the player until damaged. If you hit one too close to the group, several butterflies can pile in and turn a simple fight into a flurry of bodies that are harder to track than they first look.",
+  "interactionWithCreatures": "Their relationship with other creatures is passive and they rarely seek fights on their own. Most of the time they only react after another nearby butterfly has already entered combat.",
+  "strategy": "If you want their materials, the best approach is to break the group formation first. The real danger is not one butterfly, but letting several wake up at the same time and forcing yourself to read too many trajectories at once.",
+  "environments": [
+    "Croquet Court",
+    "Entrance Area",
+    "Fire Pit",
+    "Greenhouse Surroundings",
+    "Ice Cream Cart Surroundings",
+    "Snackbar Front Area",
+    "Veggie Garden"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Charged Chill",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Butterfly Blue Chunk",
+      "minCount": 1,
+      "maxCount": 9
+    },
+    {
+      "section": "loot",
+      "item": "Butterfly Blue Scale",
+      "minCount": 0,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Butterfly Blue Wing",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 500,
+    "stunThreshold": 30,
+    "stunCooldownSeconds": 12
+  },
+  "inflictsEffects": [
+    "busting"
+  ],
+  "abilities": [
+    {
+      "name": "Divebomb Headbutt",
+      "description": "It dives from the air and slams head-first into the target."
+    },
+    {
+      "name": "Combo Bite",
+      "description": "A short bite chain used to keep pressure up."
+    },
+    {
+      "name": "Chilling Gust",
+      "description": "Releases a chilling gust that applies cold buildup."
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "BlueButterfly",
+  "bestiaryId": "BlueButterfly",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Gust",
+      "technicalId": "BlueButterflyGust",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Attack damage: 35",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 20.0,
+      "range": 1600.0,
+      "stun": 15,
+      "statusEffects": [
+        "Blue Butterfly Chill Gust"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Blue Butterfly Chill Gust",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Charge",
+      "technicalId": "BlueButterflyCharge",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 50",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Triple Bite",
+      "technicalId": "BlueButterflyTripleBite",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 20",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 20.0,
+      "cooldownSeconds": 10.0,
+      "range": 250.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [
+    {
+      "id": "Butterfly_Blue_Wave",
+      "characterRow": "Butterfly_Blue_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 500.0,
+        "stun": {
+          "max": 30.0,
+          "duration": 4.0,
+          "cooldown": 12.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSpicyTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "BlueButterflyGust",
+          "ability": "BlueButterflyGust",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "BlueButterflyChillGust"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 1600.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlueButterflyCharge",
+          "ability": "BlueButterflyCharge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "BlueButterflyTripleBite",
+          "ability": "BlueButterflyTripleBite",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 20.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 3,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Mariposa azul  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_6ef4bc7dde905c39",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -219084.36,
+        "y": 77294.09,
+        "z": 5660.6167
+      },
+      "u": 0.15888796956394502,
+      "v": 0.6194415556117716,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a3b8b57b7a75bd9",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -123376.78,
+        "y": -40343.16,
+        "z": 3826.463
+      },
+      "u": 0.5174062674860989,
+      "v": 0.11155495471793572,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0536b4a8358edd87",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -117404.336,
+        "y": -40828.78,
+        "z": 3826.463
+      },
+      "u": 0.5397788993854258,
+      "v": 0.10945834083818201,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_21daba1fe6a6377e",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -92694.734,
+        "y": -48389.906,
+        "z": 1936.3644
+      },
+      "u": 0.6323404755048287,
+      "v": 0.0768139651572645,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0fec460951efa6da",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -89253.734,
+        "y": -46338.62,
+        "z": 1936.3644
+      },
+      "u": 0.645230378928885,
+      "v": 0.0856701792731259,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_69c315093b68f838",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -91038.56,
+        "y": -24774.955,
+        "z": 1936.3644
+      },
+      "u": 0.6385444635645303,
+      "v": 0.17876906180959606,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c718ae2ef5b50963",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -86831.805,
+        "y": -16085.47,
+        "z": 1936.3644
+      },
+      "u": 0.6543028668422594,
+      "v": 0.21628501020322122,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a8bf1a269a5e5c73",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -183700.0,
+        "y": -11200.0,
+        "z": 7367.788
+      },
+      "u": 0.29143693298214807,
+      "v": 0.23737751918374228,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ce08629d576708db",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -159700.0,
+        "y": -13600.0,
+        "z": 9450.0
+      },
+      "u": 0.38134035703833774,
+      "v": 0.22701576861455436,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ef4a3f6a6235a6a7",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -169250.0,
+        "y": -13600.0,
+        "z": 8700.0
+      },
+      "u": 0.3455662862159789,
+      "v": 0.22701576861455436,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_28c4adf4bea9fe27",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -184900.0,
+        "y": -16800.0,
+        "z": 8117.788
+      },
+      "u": 0.2869417617793386,
+      "v": 0.21320010118897037,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6dcba99ed3cec845",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -175586.56,
+        "y": -13299.13,
+        "z": 8700.0
+      },
+      "u": 0.32182968451858357,
+      "v": 0.22831474357028417,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_baadb49e35ff6d0b",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -99093.83,
+        "y": 74244.64,
+        "z": 3462.3066
+      },
+      "u": 0.608369615452151,
+      "v": 0.6062758721646008,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e531c8e180499d88",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -111995.97,
+        "y": 57587.055,
+        "z": 3387.6667
+      },
+      "u": 0.5600385086333041,
+      "v": 0.5343584801416644,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_24e25aa145e49942",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -109858.45,
+        "y": 67002.37,
+        "z": 1986.604
+      },
+      "u": 0.5680456072578285,
+      "v": 0.575008124125137,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5ce71b0dc927dcf7",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -82402.04,
+        "y": 70867.77,
+        "z": 4619.501
+      },
+      "u": 0.6708966602282705,
+      "v": 0.5916965868960284,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b9633c56718f35f2",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -169060.88,
+        "y": 122841.38,
+        "z": 2151.5422
+      },
+      "u": 0.34627472519754166,
+      "v": 0.8160872464794671,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_93eeb639145c0665",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -166062.55,
+        "y": 105610.54,
+        "z": -420.3971
+      },
+      "u": 0.3575063974246416,
+      "v": 0.7416948855721393,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f0dddfd9d0b08f13",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -181366.36,
+        "y": 81142.266,
+        "z": 2296.4907
+      },
+      "u": 0.30017869242025175,
+      "v": 0.6360556555527448,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8f406c4744733bbb",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -165599.94,
+        "y": 102160.16,
+        "z": -420.3971
+      },
+      "u": 0.35923932338308456,
+      "v": 0.7267982285184249,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_94ed00052c1037e8",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -178658.38,
+        "y": 83297.98,
+        "z": 2296.4907
+      },
+      "u": 0.3103227205150717,
+      "v": 0.6453627267054557,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c8ac5cb064e09e4e",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -94007.4,
+        "y": 138740.88,
+        "z": 4058.8933
+      },
+      "u": 0.6274232601697395,
+      "v": 0.8847316853023022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9642826d8cab0cf1",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -97917.086,
+        "y": 134675.64,
+        "z": 4058.8933
+      },
+      "u": 0.61277767023705,
+      "v": 0.8671804341006831,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f924371297801c09",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -207394.45,
+        "y": -40889.37,
+        "z": 5723.165
+      },
+      "u": 0.20267809189347377,
+      "v": 0.10919674981027067,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3ab4e4419a80406f",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -32861.785,
+        "y": 43946.043,
+        "z": -3154.9404
+      },
+      "u": 0.8564732666081357,
+      "v": 0.4754648285352897,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e1d19ebf12c11525",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -14378.214,
+        "y": 46399.598,
+        "z": -2698.879
+      },
+      "u": 0.9257122800117061,
+      "v": 0.48605779725103293,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3361b4807e4cd752",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -43778.523,
+        "y": 42934.36,
+        "z": -3376.7283
+      },
+      "u": 0.8155794280362891,
+      "v": 0.47109699232650304,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0eff84ec629c4d06",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -210872.19,
+        "y": -30368.725,
+        "z": 6836.331
+      },
+      "u": 0.1896505613110916,
+      "v": 0.1546185411923433,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2247f6d2d8ae7298",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -31627.4,
+        "y": 36027.29,
+        "z": 33572.85
+      },
+      "u": 0.8610972431957857,
+      "v": 0.4412764354498694,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_658da09999983a3a",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -54592.676,
+        "y": 52044.2,
+        "z": 4811.0176
+      },
+      "u": 0.7750698704126426,
+      "v": 0.5104277797453411,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e3f1027479b20d9c",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -54187.836,
+        "y": 53327.207,
+        "z": 4943.065
+      },
+      "u": 0.7765863913374303,
+      "v": 0.5159670291255586,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eab52fe076cdc788",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -212337.19,
+        "y": -27768.725,
+        "z": 6835.3433
+      },
+      "u": 0.1841627064676617,
+      "v": 0.1658437709756303,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b7a31c0b6c9d83c2",
+      "targetType": "creature",
+      "targetId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "map": "surface",
+      "world": {
+        "x": -61352.99,
+        "y": 5569.024,
+        "z": -2403.377
+      },
+      "u": 0.7497458964003513,
+      "v": 0.30977603750737837,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Charged Chill",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Butterfly Blue Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Chunk",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Chunk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Scale",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Scale",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Scale",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Wing",
+      "countLabel": "1",
+      "chancePct": 40,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

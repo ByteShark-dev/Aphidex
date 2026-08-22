@@ -1,1 +1,1015 @@
-{"id":"g2_bombardier_beetle","speciesKey":"bombardier_beetle","collectionGroup":"angry","name":"Escarabajo bombardero","game":"g2","tier":2,"danger":"muy_alta","isBoss":false,"order":213,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bombardier.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bombardier_G.png","photo":"assets/g2/creatures/photos/Bombardier_Beetle.webp","weaknesses":["slashing","fresh"],"resistances":["stabbing","spicy"],"temperament":"aggressive","health":{"value":700,"rating":3},"weakPoint":{"part":"rump","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},"description":"Un escarabajo con un gran trasero explosivo que patrulla el parque. Al morir, puede soltar una glándula de ebullición muy volátil y una parte de escarabajo bombardero.","behavior":"Patrulla zonas concretas y en combate alterna mordida, rocío corto, disparo ácido a distancia y ráfagas altas para cubrir distintos ángulos. No te gana por velocidad bruta, sino por cómo va llenando el suelo de malas decisiones.","interactionWithPlayer":"Es hostil en cuanto te ve y te obliga a moverte durante casi todo el combate. Incluso al morir deja una explosión final y una amenaza breve de sizzle, así que precipitarse a saquearlo también puede costar caro.","interactionWithCreatures":"Es neutral con muchas criaturas, pero ciertas presas lentas o pesadas sí activan su agresión. Cuando se cruza con caracoles o cucarachas, la zona se convierte rápido en un pequeño desastre de ácido y cuerpos grandes.","strategy":"Necesitas daño constante y, sobre todo, colocación disciplinada. Sus ataques directos se leen, pero el castigo real aparece cuando aceptas pelear encima de las charcas. Mira el suelo tanto como al escarabajo.","environments":["Área de ceremonia","Cancha de croquet","Zona de entrada","Pozo de fuego","Alrededores del invernadero","Alrededores del carrito de helados","Parche de calabazas","Zona frontal del snack bar","Huerto vegetal"],"loot":[{"section":"loot","item":"Glándula hirviente","minCount":0,"maxCount":1},{"section":"loot","item":"Parte de bombardero","minCount":1,"maxCount":3},{"section":"rare","item":"Caldera abrasadora","minCount":0,"maxCount":1},{"section":"rare","item":"Glándula hirviente","minCount":0,"maxCount":1},{"section":"rare","item":"Parte de bombardero","minCount":0,"maxCount":6}],"advancedLootTable":[{"item":"Caldera abrasadora","countLabel":"x1","chancePct":4},{"item":"Glándula hirviente","countLabel":"x1","chancePct":70},{"item":"Glándula hirviente","countLabel":"x1","chancePct":1},{"item":"Parte de bombardero","countLabel":"x1","chancePct":100},{"item":"Parte de bombardero","countLabel":"x2","chancePct":80},{"item":"Parte de bombardero","countLabel":"x6","chancePct":1}],"combatStats":{"health":700,"stunThreshold":75,"stunCooldownSeconds":5,"attackDamageSummary":"Mordisco: 30. Spray cercano: 20. Disparo a distancia: 35. Triple disparo alto: 35."},"inflictsEffects":["stabbing","burning","sizzle"],"inflicts":["La mordida hace daño perforante. Todos sus ataques ácidos hacen daño de quemadura y dejan zonas con sizzle temporal."],"abilities":[{"name":"Mordisco","description":"A basic blockable bite at close range.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Rociada cercana","description":"It sprays acid in front of itself and creates a frontal sizzle zone. A shield blocks it reliably.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Disparo a distancia","description":"It raises its abdomen and lobs an acid glob at the player's location.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Triple disparo ascendente","description":"It fires three globs upward to coat the surrounding area with acid.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Postura defensiva","description":"Esconde la cabeza y avanza despacio, ignorando ataques ligeros frontales hasta recibir un golpe cargado."}],"elementalWeaknesses":[{"type":"fresh","bonusPct":30}],"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"resistancesV2":[{"type":"stabbing","bonusPct":25},{"type":"spicy","bonusPct":50}],"groupId":null,"cardTier":2,"technicalId":"Bombardier","bestiaryId":"Bombardier","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Cuerpo a cuerpo izquierda","technicalId":"BeetleMeleeLeft","tags":["stabbing"],"notes":"Daño del ataque: 30"},{"name":"Cuerpo a cuerpo derecha","technicalId":"BeetleMeleeRight","tags":["stabbing"],"notes":"Daño del ataque: 30"},{"name":"A distancia","technicalId":"BeetleRanged","tags":["sizzle","ranged"],"notes":"Daño del ataque: 35"},{"name":"Rocío","technicalId":"BeetleSpray","tags":["sizzle_direct_hit"],"notes":"Daño del ataque: 20"},{"name":"Área ataque","technicalId":"BeetleAOE","tags":[],"notes":"Sin identificar"},{"name":"Bloqueo defensivo","technicalId":"BlockDefensive","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_bombardier_beetle",
+  "speciesKey": "bombardier_beetle",
+  "collectionGroup": "angry",
+  "name": "Escarabajo bombardero",
+  "game": "g2",
+  "tier": 2,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 213,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bombardier.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bombardier_G.png",
+  "photo": "assets/g2/creatures/photos/Bombardier_Beetle.webp",
+  "weaknesses": [
+    "slashing",
+    "fresh"
+  ],
+  "resistances": [
+    "stabbing",
+    "spicy"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 3,
+    "value": 700
+  },
+  "weakPoint": {
+    "part": "rump",
+    "susceptibleDamage": "any",
+    "susceptibleDamageTypes": [
+      "any"
+    ]
+  },
+  "description": "Un escarabajo con un gran trasero explosivo que patrulla el parque. Al morir, puede soltar una glándula de ebullición muy volátil y una parte de escarabajo bombardero.",
+  "behavior": "Patrulla zonas concretas y en combate alterna mordida, rocío corto, disparo ácido a distancia y ráfagas altas para cubrir distintos ángulos. No te gana por velocidad bruta, sino por cómo va llenando el suelo de malas decisiones.",
+  "interactionWithPlayer": "Es hostil en cuanto te ve y te obliga a moverte durante casi todo el combate. Incluso al morir deja una explosión final y una amenaza breve de sizzle, así que precipitarse a saquearlo también puede costar caro.",
+  "interactionWithCreatures": "Es neutral con muchas criaturas, pero ciertas presas lentas o pesadas sí activan su agresión. Cuando se cruza con caracoles o cucarachas, la zona se convierte rápido en un pequeño desastre de ácido y cuerpos grandes.",
+  "strategy": "Necesitas daño constante y, sobre todo, colocación disciplinada. Sus ataques directos se leen, pero el castigo real aparece cuando aceptas pelear encima de las charcas. Mira el suelo tanto como al escarabajo.",
+  "environments": [
+    "Área de ceremonia",
+    "Cancha de croquet",
+    "Zona de entrada",
+    "Pozo de fuego",
+    "Alrededores del invernadero",
+    "Alrededores del carrito de helados",
+    "Parche de calabazas",
+    "Zona frontal del snack bar",
+    "Huerto vegetal"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Spicy Aftershock",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Bombardier Exp Gland",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Bombardier Part",
+      "minCount": 1,
+      "maxCount": 9
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Spicy Aftershock",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bombardier Exp Gland",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bombardier Exp Gland",
+      "countLabel": "1",
+      "chancePct": 70,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bombardier Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 6,
+      "notes": "6 independent rolls"
+    },
+    {
+      "item": "Bombardier Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bombardier Part",
+      "countLabel": "2",
+      "chancePct": 80,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 700,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": null
+  },
+  "inflictsEffects": [
+    "stabbing",
+    "burning",
+    "sizzle"
+  ],
+  "inflicts": [
+    "La mordida hace daño perforante. Todos sus ataques ácidos hacen daño de quemadura y dejan zonas con sizzle temporal."
+  ],
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "A basic blockable bite at close range.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Rociada cercana",
+      "description": "It sprays acid in front of itself and creates a frontal sizzle zone. A shield blocks it reliably.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Disparo a distancia",
+      "description": "It raises its abdomen and lobs an acid glob at the player's location.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Triple disparo ascendente",
+      "description": "It fires three globs upward to coat the surrounding area with acid.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Postura defensiva",
+      "description": "Esconde la cabeza y avanza despacio, ignorando ataques ligeros frontales hasta recibir un golpe cargado."
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 50
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Bombardier",
+  "bestiaryId": "Bombardier",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [
+    {
+      "part": "rump",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Cuerpo a cuerpo izquierda",
+      "technicalId": "BeetleMeleeLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 5.0,
+      "range": 300.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Cuerpo a cuerpo derecha",
+      "technicalId": "BeetleMeleeRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 5.0,
+      "range": 300.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "A distancia",
+      "technicalId": "BeetleRanged",
+      "tags": [
+        "projectile",
+        "ranged",
+        "sizzle"
+      ],
+      "notes": "Daño del ataque: 35",
+      "damageTypes": [
+        "sizzle"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 18.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Rocío",
+      "technicalId": "BeetleSpray",
+      "tags": [
+        "sizzle"
+      ],
+      "notes": "Daño del ataque: 20",
+      "damageTypes": [
+        "sizzle"
+      ],
+      "damage": 20.0,
+      "cooldownSeconds": 20.0,
+      "range": 750.0,
+      "stun": 20,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Área ataque",
+      "technicalId": "BeetleAOE",
+      "tags": [],
+      "notes": "Sin identificar"
+    },
+    {
+      "name": "Bloqueo defensivo",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_fbb7e1d2ed479a64",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -215517.1,
+        "y": 79090.21,
+        "z": 1473.5718
+      },
+      "u": 0.17225083991805676,
+      "v": 0.6271961170419091,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dfaab701c84a912b",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -133269.31,
+        "y": -15375.942,
+        "z": 7706.8027
+      },
+      "u": 0.48034908750365823,
+      "v": 0.21934832360232737,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a8e3d73575a62297",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -129084.92,
+        "y": -16049.951,
+        "z": 7707.851
+      },
+      "u": 0.49602371202809487,
+      "v": 0.21643835979424908,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2cd4ed3bf49d0eee",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -206858.9,
+        "y": 56850.094,
+        "z": 56.17039
+      },
+      "u": 0.20468424934152768,
+      "v": 0.5311767276161564,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a86f82fdc00508d4",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -205146.3,
+        "y": 59438.504,
+        "z": 56.17039
+      },
+      "u": 0.2110996078431373,
+      "v": 0.5423519187789865,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9590272f04ef910f",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -257250.0,
+        "y": 74050.0,
+        "z": 2500.0
+      },
+      "u": 0.015920398009950248,
+      "v": 0.6054355341934395,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2e7a4ab1d578e555",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -256600.0,
+        "y": 75650.0,
+        "z": 2350.0
+      },
+      "u": 0.01835528241147205,
+      "v": 0.6123433679062315,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c294876870b02151",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -230875.33,
+        "y": 91789.59,
+        "z": 736.22064
+      },
+      "u": 0.1147192788996196,
+      "v": 0.6820243703516317,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_331f1d4f491e9891",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -106105.766,
+        "y": 79983.67,
+        "z": -810.53503
+      },
+      "u": 0.5821030714661984,
+      "v": 0.6310535377350536,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f822e2a38d798ee2",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -231298.42,
+        "y": 109247.13,
+        "z": 853.2154
+      },
+      "u": 0.11313439391278894,
+      "v": 0.7573954849481407,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_51c48a8f64166fe0",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -174400.0,
+        "y": -29000.0,
+        "z": 11946.28
+      },
+      "u": 0.3262745098039216,
+      "v": 0.16052786912893163,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1add2f41bd1549df",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -169150.0,
+        "y": -28900.0,
+        "z": 12206.591
+      },
+      "u": 0.345940883816213,
+      "v": 0.1609596087359811,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd95058765c6b123",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -73814.2,
+        "y": 90031.05,
+        "z": -2083.8938
+      },
+      "u": 0.7030665027802165,
+      "v": 0.6744320566658234,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_34f705a953dc78f6",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -94663.41,
+        "y": 28953.76,
+        "z": 306.36697
+      },
+      "u": 0.6249658624524437,
+      "v": 0.4107372048233409,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd5f3d74dea00381",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -91910.0,
+        "y": 27000.678,
+        "z": 361.9591
+      },
+      "u": 0.63528007023705,
+      "v": 0.40230497627118655,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_306e8d083f9ece22",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -232431.33,
+        "y": 114037.53,
+        "z": 1820.2432
+      },
+      "u": 0.10889054023997663,
+      "v": 0.7780775390842398,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b64d9332661fe695",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -90388.11,
+        "y": 120651.17,
+        "z": 820.33453
+      },
+      "u": 0.6409810336552532,
+      "v": 0.8066312424319081,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_acbeb5eefd890210",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -87750.52,
+        "y": 141068.88,
+        "z": 1384.9927
+      },
+      "u": 0.6508613824992683,
+      "v": 0.8947825833544144,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0e1663f1f7c0dc1",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -176920.61,
+        "y": 56280.3,
+        "z": 1695.9246
+      },
+      "u": 0.31683236523266034,
+      "v": 0.5287167012395648,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b7aef67d21532deb",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -148948.11,
+        "y": 67244.11,
+        "z": -1702.0886
+      },
+      "u": 0.42161667895815047,
+      "v": 0.5760518114512184,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eadbd0c5f97e4b10",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -181602.36,
+        "y": 60418.793,
+        "z": 940.17444
+      },
+      "u": 0.2992946420836992,
+      "v": 0.5465842146555359,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b213bcda7107c51e",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -156029.69,
+        "y": 97207.4,
+        "z": -4476.1
+      },
+      "u": 0.39508925021949076,
+      "v": 0.70541520195632,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aebc5ff46765ea78",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -133234.53,
+        "y": 45162.414,
+        "z": -1020.7503
+      },
+      "u": 0.4804793725490196,
+      "v": 0.4807163839109537,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c47cae41a851177a",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -154426.67,
+        "y": 101397.14,
+        "z": -4304.5034
+      },
+      "u": 0.40109412467076383,
+      "v": 0.7235039689687157,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_64699e8ad22356ed",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -93757.85,
+        "y": 97538.11,
+        "z": -4057.6377
+      },
+      "u": 0.6283580684811237,
+      "v": 0.7068430080107935,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_222a80ef43b257b6",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -83863.28,
+        "y": 146500.75,
+        "z": 862.75653
+      },
+      "u": 0.6654228902546093,
+      "v": 0.918234117547854,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6d4da3f4b6ed5871",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -151844.84,
+        "y": 64856.16,
+        "z": -713.4896
+      },
+      "u": 0.4107655978928885,
+      "v": 0.56574208550468,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_793488b1ce39c131",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -161784.77,
+        "y": 123864.95,
+        "z": -3629.6746
+      },
+      "u": 0.37353085864793684,
+      "v": 0.8205064035753438,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9a0307eccf2f618",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -73747.17,
+        "y": 92882.32,
+        "z": -2564.7715
+      },
+      "u": 0.7033175955516536,
+      "v": 0.6867421185597437,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a43967d370f6a77a",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -136405.17,
+        "y": 40054.15,
+        "z": -602.67804
+      },
+      "u": 0.4686022311969563,
+      "v": 0.45866198499030275,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0e174915b1ed3af2",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -224817.36,
+        "y": 102737.49,
+        "z": 534.55334
+      },
+      "u": 0.13741228914252274,
+      "v": 0.7292907907918037,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_505c71b270e2d60c",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -141210.75,
+        "y": 131980.44,
+        "z": -697.04803
+      },
+      "u": 0.4506006438396254,
+      "v": 0.855544188211485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ac22eb8aaf2e88c",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -220395.64,
+        "y": 102743.47,
+        "z": -628.6531
+      },
+      "u": 0.1539759461515949,
+      "v": 0.7293166088203054,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3263e628e6b0a283",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -38024.176,
+        "y": 33488.418,
+        "z": -4560.3516
+      },
+      "u": 0.8371350738074333,
+      "v": 0.43031511945357953,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_088b83d32f8014be",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -208050.0,
+        "y": -26850.0,
+        "z": -1200.0
+      },
+      "u": 0.20022241732513898,
+      "v": 0.16981027068049584,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_697393414613d1ef",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -210015.73,
+        "y": -25242.453,
+        "z": -1200.0
+      },
+      "u": 0.19285883991805675,
+      "v": 0.17675068778143177,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5ce56eb3d750c691",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -24672.785,
+        "y": 24865.424,
+        "z": -4707.7207
+      },
+      "u": 0.8871490640913081,
+      "v": 0.39308623904207773,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eb10a3a88407f306",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -12829.3545,
+        "y": 47921.07,
+        "z": 3191.092
+      },
+      "u": 0.9315142705297045,
+      "v": 0.4926265944852011,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0bdd36f5c71ad032",
+      "targetType": "creature",
+      "targetId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "map": "surface",
+      "world": {
+        "x": -11222.386,
+        "y": 45831.527,
+        "z": 3160.9417
+      },
+      "u": 0.9375339359672228,
+      "v": 0.48360520974787075,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": []
+}

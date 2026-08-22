@@ -1,1 +1,3184 @@
-{"id":"g2_larva","speciesKey":"larva","collectionGroup":"angry","name":"Личинка","game":"g2","tier":1,"danger":"intermedia","isBoss":false,"order":249,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Larva.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Larva_G.png","photo":"assets/g2/creatures/photos/Larva.webp","weaknesses":["slashing"],"resistances":["generic"],"temperament":"aggressive","health":{"value":200,"rating":1},"description":"Агрессивный хищник 1-го тира, встречающийся по многим ранним зонам парка. Это по-прежнему один из первых врагов, который действительно способен жёстко наказать неподготовленного игрока.","behavior":"Она бродит без фиксированного маршрута, выходит из личиночных пещер, патрулирует, отдыхает и ищет еду. Здесь она менее ночная, чем на заднем дворе, но всё ещё умеет зарываться и маскироваться под куда более простую добычу, чем является на самом деле.","interactionWithPlayer":"Она сразу становится враждебной, кусает вблизи и использует выпады, чтобы быстро закрывать дистанцию. Если сильно её ранить, она может выйти из боя и убежать, так что одного выигранного размена бывает мало — иногда нужно ещё и быстро добивать.","interactionWithCreatures":"Обычно она игнорирует других существ, если её не спровоцировать. Самый неприятный трюк против игрока — зарыться и прикинуться лёгкой добычей, делая любой подземный сбор заметно напряжённее.","strategy":"Одна личинка падает почти от любого нормального оружия, но стаи — совсем другая история. Блокируй серии, избегай тесных проходов и не гонись за зарывшейся, если другая уже отрезает тебе выход.","environments":["Церемониальная зона","Площадка для крокета","Входная зона","Огненная яма","Окрестности тележки с мороженым","Небольшие пещеры","Зона стола для пикника","Сосновый холм","Тыквенная грядка","Передняя зона снэк-бара","Зона статуи"],"respawnInfo":"1 день","loot":[{"section":"loot","item":"Кислотная железа","minCount":0,"maxCount":1},{"section":"loot","item":"Larva Spike","minCount":1,"maxCount":1},{"section":"rare","item":"Кислотная железа","minCount":0,"maxCount":2},{"section":"rare","item":"Larva Spike","minCount":0,"maxCount":3}],"advancedLootTable":[{"item":"Кислотная железа","countLabel":"x1","chancePct":50},{"item":"Кислотная железа","countLabel":"x2","chancePct":1},{"item":"Larva Spike","countLabel":"x1","chancePct":100},{"item":"Larva Spike","countLabel":"x3","chancePct":1}],"combatStats":{"health":200,"stunThreshold":25,"stunCooldownSeconds":5,"attackDamageSummary":"Bite: 35. Combo Bite: 30. Charged Bite: 40."},"inflictsEffects":["chopping"],"inflicts":["All attacks deal chopping damage."],"abilities":[{"name":"Укус","description":"It leans to the side and performs a quick blockable bite.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 2 укусов","description":"It extends the basic bite with an immediate second hit.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 укусов","description":"It adds a third quick bite if you stay too close.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Заряженный укус","description":"It winds up and lunges with a stronger bite that also covers a lot of distance.","blockable":true,"breaksGuard":false,"staggers":false}],"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25}],"groupId":null,"cardTier":1,"technicalId":"Larva","bestiaryId":"Larva","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Melee Left","technicalId":"LarvaMeleeLeft","tags":["chopping"],"notes":"Урон атаки: 35"},{"name":"Lunge","technicalId":"LarvaLunge","tags":["chopping"],"notes":"Урон атаки: 40"},{"name":"Double Bite","technicalId":"LarvaDoubleBite","tags":["chopping"],"notes":"Урон атаки: 30"},{"name":"Triple Bite","technicalId":"LarvaTripleBite","tags":["chopping"],"notes":"Урон атаки: 30"}],"encounterVariants":[],"contextVariants":[{"id":"Larva_Wave","characterRow":"Larva_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":200.0,"stun":{"max":25.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":25}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"LarvaMeleeLeft","ability":"LarvaMelee","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LarvaLunge","ability":"LarvaLunge","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":40.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LarvaDoubleBite","ability":"LarvaDoubleBite","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"LarvaTripleBite","ability":"LarvaTripleBite","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Chopping","hitStun":7,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Larva  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_larva",
+  "speciesKey": "larva",
+  "collectionGroup": "angry",
+  "name": "Личинка",
+  "game": "g2",
+  "tier": 1,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 249,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Larva.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Larva_G.png",
+  "photo": "assets/g2/creatures/photos/Larva.webp",
+  "weaknesses": [
+    "slashing"
+  ],
+  "resistances": [
+    "generic"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 1,
+    "value": 200
+  },
+  "description": "Агрессивный хищник 1-го тира, встречающийся по многим ранним зонам парка. Это по-прежнему один из первых врагов, который действительно способен жёстко наказать неподготовленного игрока.",
+  "behavior": "Она бродит без фиксированного маршрута, выходит из личиночных пещер, патрулирует, отдыхает и ищет еду. Здесь она менее ночная, чем на заднем дворе, но всё ещё умеет зарываться и маскироваться под куда более простую добычу, чем является на самом деле.",
+  "interactionWithPlayer": "Она сразу становится враждебной, кусает вблизи и использует выпады, чтобы быстро закрывать дистанцию. Если сильно её ранить, она может выйти из боя и убежать, так что одного выигранного размена бывает мало — иногда нужно ещё и быстро добивать.",
+  "interactionWithCreatures": "Обычно она игнорирует других существ, если её не спровоцировать. Самый неприятный трюк против игрока — зарыться и прикинуться лёгкой добычей, делая любой подземный сбор заметно напряжённее.",
+  "strategy": "Одна личинка падает почти от любого нормального оружия, но стаи — совсем другая история. Блокируй серии, избегай тесных проходов и не гонись за зарывшейся, если другая уже отрезает тебе выход.",
+  "environments": [
+    "Церемониальная зона",
+    "Площадка для крокета",
+    "Входная зона",
+    "Огненная яма",
+    "Окрестности тележки с мороженым",
+    "Небольшие пещеры",
+    "Зона стола для пикника",
+    "Сосновый холм",
+    "Тыквенная грядка",
+    "Передняя зона снэк-бара",
+    "Зона статуи"
+  ],
+  "respawnInfo": "1 день",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Acid Gland",
+      "minCount": 0,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Larva Spike",
+      "minCount": 1,
+      "maxCount": 4
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Acid Gland",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Acid Gland",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Larva Spike",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Larva Spike",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 200,
+    "stunThreshold": 25,
+    "stunCooldownSeconds": 5
+  },
+  "inflictsEffects": [
+    "chopping"
+  ],
+  "inflicts": [
+    "All attacks deal chopping damage."
+  ],
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "It leans to the side and performs a quick blockable bite.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Комбо из 2 укусов",
+      "description": "It extends the basic bite with an immediate second hit.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Комбо из 3 укусов",
+      "description": "It adds a third quick bite if you stay too close.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Заряженный укус",
+      "description": "It winds up and lunges with a stronger bite that also covers a lot of distance.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 1,
+  "technicalId": "Larva",
+  "bestiaryId": "Larva",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Melee Left",
+      "technicalId": "LarvaMeleeLeft",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 35",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 5.0,
+      "range": 175.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Lunge",
+      "technicalId": "LarvaLunge",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 40",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 5.0,
+      "range": 250.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Double Bite",
+      "technicalId": "LarvaDoubleBite",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 0.0,
+      "range": 175.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Triple Bite",
+      "technicalId": "LarvaTripleBite",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 0.0,
+      "range": 175.0,
+      "stun": 7,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [
+    {
+      "id": "Larva_Wave",
+      "characterRow": "Larva_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 200.0,
+        "stun": {
+          "max": 25.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 25
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "LarvaMeleeLeft",
+          "ability": "LarvaMelee",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LarvaLunge",
+          "ability": "LarvaLunge",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LarvaDoubleBite",
+          "ability": "LarvaDoubleBite",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "LarvaTripleBite",
+          "ability": "LarvaTripleBite",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Chopping",
+            "hitStun": 7,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Larva  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_d969c0895ecf8933",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -192030.72,
+        "y": 11227.881,
+        "z": 5161.794
+      },
+      "u": 0.2602302557799239,
+      "v": 0.3342075644826714,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0dfd4136f7454883",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -240317.97,
+        "y": 68622.42,
+        "z": 977.75104
+      },
+      "u": 0.0793473760608721,
+      "v": 0.5820025216291423,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a5089c2946db5b21",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -192323.73,
+        "y": 71720.76,
+        "z": -663.1187
+      },
+      "u": 0.25913264735147784,
+      "v": 0.5953792825701999,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fa74a6d7666ca18",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -209642.83,
+        "y": 48099.008,
+        "z": 56.17039
+      },
+      "u": 0.19425571436932987,
+      "v": 0.4933948233071928,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c6efe60aae1d22f0",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -155788.73,
+        "y": -33415.383,
+        "z": -1484.871
+      },
+      "u": 0.39599188059701484,
+      "v": 0.1414649119150013,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0cbea9dbeab4ed5a",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -118341.28,
+        "y": -25938.225,
+        "z": 411.64606
+      },
+      "u": 0.5362691296458882,
+      "v": 0.17374676448267135,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf0f06dc8234ea76",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -119050.26,
+        "y": -28017.066,
+        "z": 401.7753
+      },
+      "u": 0.5336133075797482,
+      "v": 0.16477158451808754,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cf47272d314f5b86",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -118602.41,
+        "y": -26777.691,
+        "z": 289.48825
+      },
+      "u": 0.5352909429323969,
+      "v": 0.17012245727295727,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4dce080b5c66b3b5",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -108264.67,
+        "y": -40751.24,
+        "z": 627.1107
+      },
+      "u": 0.57401586889084,
+      "v": 0.10979311172948818,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fa19cbd916b5f014",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -107801.414,
+        "y": -40310.727,
+        "z": 685.5866
+      },
+      "u": 0.5757512147497805,
+      "v": 0.11169498082469013,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f2f023eeed1125aa",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -155965.27,
+        "y": -30715.355,
+        "z": -1666.0602
+      },
+      "u": 0.39533056599356164,
+      "v": 0.1531220021924277,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_89169de72b7cf1b4",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -152637.64,
+        "y": -31077.258,
+        "z": -1446.7029
+      },
+      "u": 0.40779578811823236,
+      "v": 0.15155952360232736,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3f2ca9dc07b15de0",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -136994.11,
+        "y": -35696.37,
+        "z": 586.53687
+      },
+      "u": 0.4663960760901376,
+      "v": 0.13161698760435117,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_94cd0f9714d3335e",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -137375.94,
+        "y": -35361.38,
+        "z": 581.75525
+      },
+      "u": 0.46496575007316354,
+      "v": 0.1330632721140062,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7359d7cfd4059584",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -130346.164,
+        "y": -52214.617,
+        "z": 720.7787
+      },
+      "u": 0.49129912227099803,
+      "v": 0.060301172915085605,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_80feb7b82344aae4",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -130096.69,
+        "y": -52746.695,
+        "z": 751.6479
+      },
+      "u": 0.492233645888206,
+      "v": 0.05800398144868873,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b4503591c043b13a",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -221182.8,
+        "y": 92026.03,
+        "z": 1127.3815
+      },
+      "u": 0.15102726368159208,
+      "v": 0.6830451754785395,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ca4827dffda29cf",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -123737.14,
+        "y": 10564.815,
+        "z": 1015.58777
+      },
+      "u": 0.5160563675738952,
+      "v": 0.3313448459397925,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dea79e001f4086dd",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -197126.61,
+        "y": 151595.05,
+        "z": 4706.3496
+      },
+      "u": 0.2411411741293533,
+      "v": 0.9402282283497765,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60de95865904af89",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -198716.1,
+        "y": 154901.22,
+        "z": 4409.9214
+      },
+      "u": 0.23518698273339184,
+      "v": 0.9545022737161648,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_22a042e9b43a179f",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -231150.34,
+        "y": 46523.54,
+        "z": 269.34113
+      },
+      "u": 0.1136890980392157,
+      "v": 0.4865929039548023,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_31a0d43f0d6c53c8",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -210719.58,
+        "y": 40728.37,
+        "z": -677.4826
+      },
+      "u": 0.19022223470880895,
+      "v": 0.4615728597689518,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca9c4523a6db7914",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -251389.47,
+        "y": 126571.94,
+        "z": 3278.9607
+      },
+      "u": 0.03787380275095112,
+      "v": 0.8321935515642128,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fc394387a9493010",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -258676.64,
+        "y": 114984.484,
+        "z": 7555.147
+      },
+      "u": 0.010576238805970096,
+      "v": 0.7821659145627793,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fcdb751c42eb5043",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -258279.31,
+        "y": 123181.41,
+        "z": 12609.232
+      },
+      "u": 0.0120646274509804,
+      "v": 0.8175552906653175,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0bab484f113d3611",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -256787.86,
+        "y": 108962.31,
+        "z": 10593.387
+      },
+      "u": 0.01765156335967228,
+      "v": 0.7561658041993423,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b2932846476a9e63",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -256387.38,
+        "y": 118861.13,
+        "z": 4976.3403
+      },
+      "u": 0.01915175182908983,
+      "v": 0.7989029307698795,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cf93bb85df686572",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -257667.33,
+        "y": 117293.234,
+        "z": 11050.865
+      },
+      "u": 0.01435708984489323,
+      "v": 0.7921337027405346,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a11ee3d78d34de9f",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -256053.36,
+        "y": 120660.31,
+        "z": 4868.096
+      },
+      "u": 0.020402982733391913,
+      "v": 0.8066707034319925,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3436ffcd648e8c0a",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -256633.2,
+        "y": 116644.875,
+        "z": 7555.147
+      },
+      "u": 0.01823091600819428,
+      "v": 0.7893344801416646,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b9a4edb6c83b44b",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -257973.4,
+        "y": 114899.016,
+        "z": 10880.57
+      },
+      "u": 0.013210558969856621,
+      "v": 0.7817969153554263,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_523b28738539ac27",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -256037.34,
+        "y": 114661.85,
+        "z": 11761.08
+      },
+      "u": 0.020462993268949382,
+      "v": 0.7807729757989713,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f24c089736a17839",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -257307.98,
+        "y": 121433.21,
+        "z": 13175.352
+      },
+      "u": 0.015703206321334463,
+      "v": 0.8100076188548783,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_614848fd09a4978a",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -250742.5,
+        "y": 129433.195,
+        "z": 3278.9607
+      },
+      "u": 0.040297336845185834,
+      "v": 0.844546722657897,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e35fbcb14959e168",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -213314.47,
+        "y": 46350.555,
+        "z": 163.2675
+      },
+      "u": 0.18050183904009365,
+      "v": 0.4858460591955477,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_39f8698010b1a3c1",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -100746.47,
+        "y": -37590.16,
+        "z": -4987.538
+      },
+      "u": 0.6021788656716418,
+      "v": 0.12344074610000844,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ec5df9a25390a439",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -100146.9,
+        "y": -35533.914,
+        "z": -4319.3
+      },
+      "u": 0.6044248405033655,
+      "v": 0.13231837450037948,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a0b0860c5f162a8",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -101220.28,
+        "y": -37839.72,
+        "z": -4975.284
+      },
+      "u": 0.6004039847819724,
+      "v": 0.12236329673665566,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bb97d8fa7dca2c15",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -218796.53,
+        "y": 120163.195,
+        "z": 578.11865
+      },
+      "u": 0.15996617383669887,
+      "v": 0.8045244610844086,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_611dd87d1d7443b0",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -171791.98,
+        "y": 154644.89,
+        "z": 2733.844
+      },
+      "u": 0.3360440901375475,
+      "v": 0.9533955955814151,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ea22a693811db558",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -89692.57,
+        "y": 81584.86,
+        "z": -464.31433
+      },
+      "u": 0.6435865098039215,
+      "v": 0.6379665091491694,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_28eb5b7429eb3746",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -88401.695,
+        "y": 84364.67,
+        "z": -873.5246
+      },
+      "u": 0.6484220965759437,
+      "v": 0.649968049919892,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5ecbc9c4fb31580b",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -113086.55,
+        "y": 80737.914,
+        "z": -2069.6184
+      },
+      "u": 0.5559532221246708,
+      "v": 0.6343099078168478,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_40ee90cacc5f6fad",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -108884.8,
+        "y": 86108.47,
+        "z": -2024.1938
+      },
+      "u": 0.571692876792508,
+      "v": 0.6574967251876213,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f0f1df81d66cf540",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -107035.18,
+        "y": 86995.26,
+        "z": -2024.1938
+      },
+      "u": 0.5786215089259584,
+      "v": 0.6613253488489754,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2d5a9746f150d87c",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -85148.44,
+        "y": 22812.307,
+        "z": 704.5089
+      },
+      "u": 0.6606087117354404,
+      "v": 0.3842221197740113,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9dafb2c153319782",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -114498.13,
+        "y": 23702.78,
+        "z": -820.47345
+      },
+      "u": 0.550665477319286,
+      "v": 0.3880666444050932,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8fbcf05e3c3a84ee",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -209268.95,
+        "y": 108969.24,
+        "z": 597.7857
+      },
+      "u": 0.1956562598770851,
+      "v": 0.7561957237541108,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3efbba8b27f71e15",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -112797.42,
+        "y": 73152.54,
+        "z": -2721.8003
+      },
+      "u": 0.5570362961662277,
+      "v": 0.6015608439160129,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_23b917fa56acd9b8",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -109789.18,
+        "y": 44569.902,
+        "z": 355.3369
+      },
+      "u": 0.5683050910155107,
+      "v": 0.47815827493043267,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_25411dfe1ac071cd",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -117194.375,
+        "y": 22025.787,
+        "z": -2044.9581
+      },
+      "u": 0.5405654082528534,
+      "v": 0.38082640141664564,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_441d5230f8151607",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -117129.67,
+        "y": 20476.707,
+        "z": -1915.1346
+      },
+      "u": 0.5408077916300849,
+      "v": 0.3741384095117632,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_990e0dba68da5e0b",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -117006.41,
+        "y": 22722.75,
+        "z": -1915.1346
+      },
+      "u": 0.5412695206321335,
+      "v": 0.383835466734126,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ca438ffe9f5f62f",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -114460.3,
+        "y": 21308.49,
+        "z": -1040.9937
+      },
+      "u": 0.5508071875914545,
+      "v": 0.37772954616746773,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f5037d454b47c2d8",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -115257.734,
+        "y": 20246.467,
+        "z": -1581.7019
+      },
+      "u": 0.5478200189640036,
+      "v": 0.37314437224049246,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_87d2148080abe358",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -93261.54,
+        "y": 73037.56,
+        "z": -1840.1973
+      },
+      "u": 0.6302172338308458,
+      "v": 0.6010644297158276,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bb37b1db17ed4ebc",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -93554.555,
+        "y": 72462.81,
+        "z": -1840.1973
+      },
+      "u": 0.6291196066725198,
+      "v": 0.5985830063243107,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eec9d61411023808",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -94832.91,
+        "y": 73787.6,
+        "z": -1933.0962
+      },
+      "u": 0.6243309195200468,
+      "v": 0.6043026494645418,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_09c48d24ac08aae0",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -110848.21,
+        "y": 45770.176,
+        "z": 531.3283
+      },
+      "u": 0.5643379900497512,
+      "v": 0.4833403331815499,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dfe261a2db7f8a19",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -109173.5,
+        "y": 42146.344,
+        "z": 155.8356
+      },
+      "u": 0.5706114135206322,
+      "v": 0.46769481514461575,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a9552737a93936ea",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -103969.18,
+        "y": 82099.91,
+        "z": -3053.4417
+      },
+      "u": 0.5901066713491366,
+      "v": 0.6401901839952779,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_85f25caf00d330fa",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -166552.6,
+        "y": -58076.22,
+        "z": 488.6485
+      },
+      "u": 0.3556706818846942,
+      "v": 0.03499431115608399,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c1f98c85b4da29fa",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -186935.94,
+        "y": -48125.6,
+        "z": 1646.657
+      },
+      "u": 0.27931517939713196,
+      "v": 0.07795507884307275,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fb0ff71ba9cccad",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -187145.22,
+        "y": -53692.62,
+        "z": -440.51343
+      },
+      "u": 0.278531221539362,
+      "v": 0.053920048570705814,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_189cd1738a23ba0e",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -184987.61,
+        "y": -54231.49,
+        "z": -1045.5087
+      },
+      "u": 0.2866135768217735,
+      "v": 0.0515935333501982,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b03803434dd015fd",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -198004.12,
+        "y": 153192.62,
+        "z": 4266.2617
+      },
+      "u": 0.2378540427275388,
+      "v": 0.9471255707901172,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d99c0b166bd9018",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -183256.72,
+        "y": 126662.63,
+        "z": 9.119952
+      },
+      "u": 0.2930974492244659,
+      "v": 0.832585096213846,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5faeb077cada17f2",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -183539.58,
+        "y": 133182.33,
+        "z": -640.7523
+      },
+      "u": 0.29203786245244373,
+      "v": 0.860733223374652,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a684ca5fab2b520f",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -195190.28,
+        "y": 132239.88,
+        "z": 1542.4606
+      },
+      "u": 0.24839461984196665,
+      "v": 0.8566642934480141,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2bbe350d73cddd08",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -170140.81,
+        "y": 154612.52,
+        "z": 2240.5774
+      },
+      "u": 0.34222933333333333,
+      "v": 0.953255841470613,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_de7e6e46e3f7eb7d",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -84394.18,
+        "y": 54869.902,
+        "z": -1055.3718
+      },
+      "u": 0.6634341515949663,
+      "v": 0.5226274544565309,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_78512e023fa97a05",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -162515.72,
+        "y": -59622.445,
+        "z": 1924.4688
+      },
+      "u": 0.37079273748902547,
+      "v": 0.02831864541698286,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_15d4b928a266ce75",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -171950.0,
+        "y": -57500.0,
+        "z": 999.5969
+      },
+      "u": 0.3354521510096576,
+      "v": 0.0374820811198246,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0dff343f6dc2f64e",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -88163.32,
+        "y": 27395.99,
+        "z": 332.43402
+      },
+      "u": 0.6493150436055019,
+      "v": 0.4040116947466059,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_74b3bf0e14eb19fc",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -86438.1,
+        "y": 26667.93,
+        "z": 308.73682
+      },
+      "u": 0.6557776763242611,
+      "v": 0.4008683713635213,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fcdf4a4560ba89af",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -88406.25,
+        "y": 28557.469,
+        "z": 309.17902
+      },
+      "u": 0.6484050336552531,
+      "v": 0.40902625961716843,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a2b4babcc9741b7",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -213929.28,
+        "y": 111615.13,
+        "z": 671.734
+      },
+      "u": 0.17819877553409422,
+      "v": 0.7676190788430728,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9d79da26f94af48b",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -117961.1,
+        "y": 18667.63,
+        "z": -1588.637
+      },
+      "u": 0.5376932748024582,
+      "v": 0.3663279075807404,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2e1bfa7802f49f32",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -119942.47,
+        "y": 20803.643,
+        "z": -547.9524
+      },
+      "u": 0.5302711103306994,
+      "v": 0.3755499217134666,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f76b0508bf085f85",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -83052.695,
+        "y": 23804.879,
+        "z": 941.52795
+      },
+      "u": 0.6684593222124671,
+      "v": 0.3885074462264947,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0d88bc42870e7562",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -94954.484,
+        "y": 72306.766,
+        "z": -1903.5842
+      },
+      "u": 0.6238755062335382,
+      "v": 0.5979093025718862,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_34673c7aefd42a17",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -85599.72,
+        "y": 24456.943,
+        "z": 440.792
+      },
+      "u": 0.6589182276851039,
+      "v": 0.39132266477780586,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b6b9865681e66d0c",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -88507.914,
+        "y": 102074.53,
+        "z": -4282.7188
+      },
+      "u": 0.6480242027509512,
+      "v": 0.7264285298929083,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f8186444b0e49c64",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -66337.6,
+        "y": 137107.86,
+        "z": -2457.9478
+      },
+      "u": 0.7310736669593211,
+      "v": 0.8776812911712623,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_05612f1fb9cdec66",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -141390.0,
+        "y": 85922.71,
+        "z": -6052.3667
+      },
+      "u": 0.44992917764120577,
+      "v": 0.6566947256935662,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bdaca12d9d043729",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -66274.016,
+        "y": 147256.42,
+        "z": -3296.5024
+      },
+      "u": 0.7313118510974539,
+      "v": 0.9214966442364451,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fc48cca04980aa15",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -67674.99,
+        "y": 145293.03,
+        "z": -3025.9668
+      },
+      "u": 0.72606383611355,
+      "v": 0.913019911965596,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d164b5d8cb04cde2",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -65679.57,
+        "y": 134704.88,
+        "z": -2618.6846
+      },
+      "u": 0.7335386315481417,
+      "v": 0.8673066747617842,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_286e106b4712bd3b",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -67743.58,
+        "y": 135063.3,
+        "z": -2428.2476
+      },
+      "u": 0.7258068996195494,
+      "v": 0.8688541158613711,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4cbb1f51bb3aba29",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -73416.35,
+        "y": 123119.31,
+        "z": -1353.585
+      },
+      "u": 0.7045568393327479,
+      "v": 0.8172871803693398,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5eb9c5f90e693989",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -85092.53,
+        "y": 122880.94,
+        "z": 1473.1882
+      },
+      "u": 0.6608181492537313,
+      "v": 0.8162580426680158,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_399a0a42428f474d",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -98249.48,
+        "y": 126775.83,
+        "z": 1290.1631
+      },
+      "u": 0.6115325302897279,
+      "v": 0.8330738254490261,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c317a6e763a99c72",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -64045.582,
+        "y": 94456.86,
+        "z": -2556.9692
+      },
+      "u": 0.7396595113842552,
+      "v": 0.6935400313685808,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_04f55bd1a227ac4a",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -136343.19,
+        "y": 33893.094,
+        "z": -676.9478
+      },
+      "u": 0.4688344067895815,
+      "v": 0.4320622660258031,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_32a5844b471e68dc",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -124252.91,
+        "y": 107148.625,
+        "z": -4024.3499
+      },
+      "u": 0.5141243055311676,
+      "v": 0.7483354077072266,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_34c5e62419e1230a",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -120363.4,
+        "y": 134074.22,
+        "z": 179.40337
+      },
+      "u": 0.5286943166520339,
+      "v": 0.8645838657559659,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_87f53a0aeb14de41",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -167765.12,
+        "y": 61594.266,
+        "z": 363.5939
+      },
+      "u": 0.3511286110623354,
+      "v": 0.5516591971667089,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c68080c43a49b072",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -105416.22,
+        "y": 103735.57,
+        "z": -4171.6533
+      },
+      "u": 0.5846860942347089,
+      "v": 0.7335998974618433,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9bca5247f02df279",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -169235.11,
+        "y": 131369.42,
+        "z": -1945.5304
+      },
+      "u": 0.34562206379865384,
+      "v": 0.8529061728644912,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_762d8c7afc27c816",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -124229.836,
+        "y": 105178.766,
+        "z": -3781.2417
+      },
+      "u": 0.5142107401814456,
+      "v": 0.7398307462011975,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_307a8eeb3570e0a3",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -101536.164,
+        "y": 90209.28,
+        "z": -5250.026
+      },
+      "u": 0.599220690898449,
+      "v": 0.6752015461674677,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_424a58a7ace6e821",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -156407.6,
+        "y": 78415.08,
+        "z": -3205.9834
+      },
+      "u": 0.393673608428446,
+      "v": 0.624281313432836,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8979288911526ccd",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -156813.69,
+        "y": 75793.43,
+        "z": -2600.7107
+      },
+      "u": 0.3921524050336552,
+      "v": 0.6129626120246225,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d75d26aa42796a2",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -131667.5,
+        "y": 113430.61,
+        "z": -4381.9775
+      },
+      "u": 0.4863494293239684,
+      "v": 0.775457225061135,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0f5bf0edc39b40cb",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -134528.53,
+        "y": 111820.29,
+        "z": -3623.6335
+      },
+      "u": 0.4756320796019901,
+      "v": 0.7685048358208953,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_76bbed46b3dd8d7d",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -145391.56,
+        "y": 122625.53,
+        "z": -3253.8716
+      },
+      "u": 0.43493942990927714,
+      "v": 0.8151553365376507,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_71af3a5b0e6df336",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -141611.72,
+        "y": 103183.48,
+        "z": -4336.0576
+      },
+      "u": 0.44909861984196664,
+      "v": 0.7312163062652837,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_22feaea7ae202073",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -140051.2,
+        "y": 103519.22,
+        "z": -4101.909
+      },
+      "u": 0.45494429031314015,
+      "v": 0.7326658288219918,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_64053509ae595466",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -138690.73,
+        "y": 88760.88,
+        "z": -6041.042
+      },
+      "u": 0.4600405782850453,
+      "v": 0.6689482296989627,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7490c0540b3c7f56",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -170892.97,
+        "y": 131046.54,
+        "z": -1669.4563
+      },
+      "u": 0.33941176002341233,
+      "v": 0.8515121720212496,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b4d424929664a3d8",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -118462.55,
+        "y": 78724.68,
+        "z": -2925.3823
+      },
+      "u": 0.5358148551360844,
+      "v": 0.6256179792562611,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2319a7cb99bf0522",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -175330.22,
+        "y": 80795.57,
+        "z": -171.86922
+      },
+      "u": 0.32278992800702366,
+      "v": 0.6345588316046885,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7eb9d3e742801dbd",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -176826.31,
+        "y": 79805.42,
+        "z": 110.61243
+      },
+      "u": 0.317185610769681,
+      "v": 0.6302839618854879,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b7aa1c4ea8141ea7",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -176674.64,
+        "y": 72997.26,
+        "z": 255.15878
+      },
+      "u": 0.3177537629499561,
+      "v": 0.6008904386541867,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ae605ec9923a2337",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -173844.62,
+        "y": 72974.95,
+        "z": 341.75046
+      },
+      "u": 0.32835494995610187,
+      "v": 0.600794117547854,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_774854d946b930e7",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -144157.84,
+        "y": 59458.438,
+        "z": -4558.6797
+      },
+      "u": 0.4395609154228856,
+      "v": 0.5424379817522555,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d1c093001d81c8ef",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -169146.9,
+        "y": 60539.42,
+        "z": 489.81772
+      },
+      "u": 0.3459524963418203,
+      "v": 0.5471050091913314,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5033dcf48b6a412f",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -171192.31,
+        "y": 61169.5,
+        "z": 334.6952
+      },
+      "u": 0.33829043956687155,
+      "v": 0.549825314107429,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e60f9932c7083b2e",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -151487.47,
+        "y": 53195.824,
+        "z": -928.9037
+      },
+      "u": 0.41210429733684517,
+      "v": 0.5153997966776288,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a8428bd86896e6e3",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -139183.14,
+        "y": 35539.24,
+        "z": 145.02692
+      },
+      "u": 0.45819602224173245,
+      "v": 0.43916933029766414,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_158acd9dc6261ed6",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -139206.97,
+        "y": 38851.14,
+        "z": -914.3241
+      },
+      "u": 0.45810675563359676,
+      "v": 0.45346811434353657,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ce132ccb9eca944",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -99953.266,
+        "y": 90324.64,
+        "z": -5249.8193
+      },
+      "u": 0.6051501888206029,
+      "v": 0.6756996009781602,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7a49f075f9b99169",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -132569.84,
+        "y": 110863.914,
+        "z": -3912.5256
+      },
+      "u": 0.4829692853380158,
+      "v": 0.7643757818365798,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bc806bdcbc49cdbc",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -143479.81,
+        "y": 45080.793,
+        "z": -2194.8484
+      },
+      "u": 0.44210079953175296,
+      "v": 0.48036399372628386,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9ee9e4f548f120ae",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -86419.57,
+        "y": 147022.95,
+        "z": -1249.4877
+      },
+      "u": 0.6558470892595845,
+      "v": 0.9204886617758664,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e635d08056d9476a",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -95065.12,
+        "y": 157620.89,
+        "z": 1664.8506
+      },
+      "u": 0.6234610664325432,
+      "v": 0.9662441662872081,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7a0e0fcc35e99503",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -138506.77,
+        "y": 37777.22,
+        "z": -734.9777
+      },
+      "u": 0.46072968803043607,
+      "v": 0.4488315763555105,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_135a7fae0c6e9b29",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -142815.47,
+        "y": 60584.81,
+        "z": -4549.6177
+      },
+      "u": 0.4445894012291484,
+      "v": 0.5473009757989713,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_10d496b227caaaa3",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -144872.03,
+        "y": 63405.24,
+        "z": -4555.877
+      },
+      "u": 0.4368855768217735,
+      "v": 0.5594778891980773,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a7f9bc8634e63d4e",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -178572.5,
+        "y": 60409.22,
+        "z": -1300.6562
+      },
+      "u": 0.3106444249341528,
+      "v": 0.546542884222953,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_370496db1052393a",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -141673.52,
+        "y": 42591.8,
+        "z": -2129.7732
+      },
+      "u": 0.448867118525022,
+      "v": 0.46961802512859424,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7cec39fe45199937",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -141155.64,
+        "y": 44490.285,
+        "z": -2189.342
+      },
+      "u": 0.4508070845771144,
+      "v": 0.477814536807488,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5fdfbe31714e5be0",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -107771.0,
+        "y": 87825.0,
+        "z": -2270.0
+      },
+      "u": 0.5758651448639157,
+      "v": 0.6649076650645079,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cbf88349c5fc666a",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -84929.9,
+        "y": 120731.586,
+        "z": 602.49603
+      },
+      "u": 0.6614273573309921,
+      "v": 0.8069784301543133,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cfc5398c2e02d099",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -85302.97,
+        "y": 150207.2,
+        "z": 580.3599
+      },
+      "u": 0.6600298460637987,
+      "v": 0.9342363302133401,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f6190592f5ae5441",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -107377.03,
+        "y": 102943.77,
+        "z": -4181.5713
+      },
+      "u": 0.5773409470295581,
+      "v": 0.7301813832532255,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a7c7f11caa36e90a",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -88379.11,
+        "y": 82883.33,
+        "z": -470.41367
+      },
+      "u": 0.6485066994439568,
+      "v": 0.6435725184248251,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7aa3121b2db21538",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -64029.17,
+        "y": 92882.375,
+        "z": -2366.6372
+      },
+      "u": 0.7397209903424057,
+      "v": 0.6867423560165274,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_794dd0fc3677e3e4",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -144654.17,
+        "y": 120808.46,
+        "z": -3505.6846
+      },
+      "u": 0.4377016751536435,
+      "v": 0.8073103256598365,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f135400c09a2d85b",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -108790.38,
+        "y": 135566.86,
+        "z": -622.681
+      },
+      "u": 0.5720465718466491,
+      "v": 0.8710281838266294,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_195dffca3dd4ddef",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -119557.445,
+        "y": 135528.2,
+        "z": 204.09383
+      },
+      "u": 0.5317134047410008,
+      "v": 0.8708612732945443,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_32d6e15ca37739c2",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -106594.2,
+        "y": 136965.5,
+        "z": -1181.659
+      },
+      "u": 0.5802734094234708,
+      "v": 0.8770666666666667,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_08b6791ea2d83223",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -98538.56,
+        "y": 128998.09,
+        "z": 1573.3286
+      },
+      "u": 0.610449643546971,
+      "v": 0.8426682020406442,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da93a4e225c0fdea",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -174703.31,
+        "y": 71629.586,
+        "z": 268.37885
+      },
+      "u": 0.32513831782265146,
+      "v": 0.5949856483008686,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6e3c8f3ec814f477",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -149990.3,
+        "y": 49854.906,
+        "z": -865.89557
+      },
+      "u": 0.41771266022827047,
+      "v": 0.5009757304325829,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_631c50bf70e8c477",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -136599.66,
+        "y": 5177.0273,
+        "z": 867.9867
+      },
+      "u": 0.467873676324261,
+      "v": 0.30808363249515125,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_11a101110513b1aa",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -126242.66,
+        "y": 31769.99,
+        "z": -47.826355
+      },
+      "u": 0.5066707497805092,
+      "v": 0.422895985158951,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_20ae011ffc9dc0c4",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -177796.64,
+        "y": 60112.52,
+        "z": -1267.1505
+      },
+      "u": 0.3135507778753292,
+      "v": 0.5452619128088371,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_76c48a1ea92a97f7",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -180226.9,
+        "y": 60472.6,
+        "z": -1275.2942
+      },
+      "u": 0.30444708223587946,
+      "v": 0.546816520785901,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9471bf3f1dc9c372",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -158487.69,
+        "y": 78137.766,
+        "z": -2515.314
+      },
+      "u": 0.385881641205736,
+      "v": 0.6230840390589426,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0276387f741ca069",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -125571.55,
+        "y": 133255.05,
+        "z": -953.1718
+      },
+      "u": 0.5091847117354404,
+      "v": 0.8610471844168985,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f4f4211b2230a316",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -71428.99,
+        "y": 122212.984,
+        "z": -2107.6191
+      },
+      "u": 0.7120014422007609,
+      "v": 0.8133742120583523,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e5053de438843976",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -87866.62,
+        "y": 152085.81,
+        "z": 106.3347
+      },
+      "u": 0.6504264746853966,
+      "v": 0.9423470336453326,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cc9fb4452e79fdec",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -84825.34,
+        "y": 152798.03,
+        "z": -133.66982
+      },
+      "u": 0.661819036581797,
+      "v": 0.9454219694746607,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_76045ff2694b6633",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -96315.56,
+        "y": 155959.97,
+        "z": 1421.3871
+      },
+      "u": 0.6187769482001756,
+      "v": 0.9590733168058014,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dde5570557f383db",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -86110.6,
+        "y": 148189.8,
+        "z": -1239.861
+      },
+      "u": 0.6570044834650277,
+      "v": 0.9255264153807236,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_195d693a2b75d969",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -131461.3,
+        "y": 87487.945,
+        "z": -5811.7363
+      },
+      "u": 0.4871218495756512,
+      "v": 0.6634524651319673,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7bba00199d59d41",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -194582.12,
+        "y": -46400.0,
+        "z": 367.8999
+      },
+      "u": 0.2506727726075505,
+      "v": 0.08540517750231895,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f223642a391e0768",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -17129.842,
+        "y": -9909.744,
+        "z": -1647.787
+      },
+      "u": 0.9154047475563359,
+      "v": 0.24294806536807487,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1b18e2c3f84b1e28",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -17980.498,
+        "y": -9429.895,
+        "z": -2017.6466
+      },
+      "u": 0.9122182105940885,
+      "v": 0.2450197635551058,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fc6bf9bac0ef7d21",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -17015.408,
+        "y": -8995.775,
+        "z": -1477.4902
+      },
+      "u": 0.915833414574188,
+      "v": 0.24689403153722914,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_248f116b42829ef8",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -16239.451,
+        "y": 7939.7812,
+        "z": -3536.0542
+      },
+      "u": 0.9187401308750366,
+      "v": 0.3200115353267561,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fd688e7076d88432",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -16997.234,
+        "y": 7984.3506,
+        "z": -3673.0098
+      },
+      "u": 0.9159014939420544,
+      "v": 0.3202039590791804,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7bc77af8896024f",
+      "targetType": "creature",
+      "targetId": "g2_larva",
+      "technicalId": "Larva",
+      "map": "surface",
+      "world": {
+        "x": -17071.365,
+        "y": 8629.75,
+        "z": -3914.084
+      },
+      "u": 0.9156238009950248,
+      "v": 0.3229904039126402,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Larva.webp",
+  "immunities": []
+}

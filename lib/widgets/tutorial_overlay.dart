@@ -120,6 +120,10 @@ class _TutorialHostState extends State<TutorialHost>
         return 'sort';
       case TutorialStep.settings:
         return 'settings';
+      case TutorialStep.equipmentLibrary:
+        return 'equipmentLibrary';
+      case TutorialStep.map:
+        return 'map';
       case TutorialStep.codex:
         return 'codex';
       case TutorialStep.detailSummary:

@@ -1,0 +1,1060 @@
+{
+  "creatures": [
+    {
+      "publicId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockeyAncient",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_ancient_pond_jockey.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_ancient_pond_jockey.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_aphid",
+      "technicalId": "Aphid",
+      "expectedAsset": "assets/g2/creatures/photos/Aphid.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Aphid.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_axl",
+      "technicalId": "Tarantula",
+      "expectedAsset": "assets/g2/creatures/photos/Axl.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Axl.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_baby_garden_snail",
+      "technicalId": "SnailSmall",
+      "expectedAsset": "assets/g2/creatures/photos/Baby_Garden_Snail.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Baby_Garden_Snail.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_bee",
+      "technicalId": "Bee",
+      "expectedAsset": "assets/g2/creatures/photos/Bee.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Bee.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldier",
+      "expectedAsset": "assets/g2/creatures/photos/Black_Soldier_Ant.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Black_Soldier_Ant.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "expectedAsset": "assets/g2/creatures/photos/Black_Worker_Ant.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Black_Worker_Ant.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_blue_butterfly",
+      "technicalId": "BlueButterfly",
+      "expectedAsset": "assets/g2/creatures/photos/Blue_Butterfly.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Blue_Butterfly.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_bombardier_beetle",
+      "technicalId": "Bombardier",
+      "expectedAsset": "assets/g2/creatures/photos/Bombardier_Beetle.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Bombardier_Beetle.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_buggy_black_soldier_ant",
+      "technicalId": null,
+      "expectedAsset": "assets/g2/creatures/photos/Buggy_Black_Soldier_Ant.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Buggy_Black_Soldier_Ant.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_buggy_ladybug",
+      "technicalId": null,
+      "expectedAsset": "assets/g2/creatures/photos/Ladybuggy.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Ladybuggy.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_buggy_orb_weaver",
+      "technicalId": null,
+      "expectedAsset": "assets/g2/creatures/photos/Buggy_Orb_Weaver.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Buggy_Orb_Weaver.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_buggy_red_soldier_ant",
+      "technicalId": null,
+      "expectedAsset": "assets/g2/creatures/photos/Buggy_Red_Soldier_Ant.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Buggy_Red_Soldier_Ant.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_buggy_toe_biter",
+      "technicalId": "ToeBiterNymph",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_buggy_toe_biter.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_buggy_toe_biter.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "expectedAsset": "assets/g2/creatures/photos/Caterpillar.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Caterpillar.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_chop_r",
+      "technicalId": "SphereBotChopR",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_chop_r.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_chop_r.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_cku",
+      "technicalId": "SphereBotCKU",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_cku.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_cku.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_cockroach",
+      "technicalId": "Cockroach",
+      "expectedAsset": "assets/g2/creatures/photos/Cockroach.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Cockroach.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_cockroach_nymph",
+      "technicalId": "Cockroach_Nymph",
+      "expectedAsset": "assets/g2/creatures/photos/Cockroach_Nymph.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Cockroach_Nymph.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_cockroach_queen",
+      "technicalId": "Cockroach_Queen",
+      "expectedAsset": "assets/g2/creatures/photos/Cockroach_Queen.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Cockroach_Queen.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_cricket",
+      "technicalId": "Cricket",
+      "expectedAsset": "assets/g2/creatures/photos/Cricket.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Cricket.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_crow",
+      "technicalId": "CrowDummy",
+      "expectedAsset": "assets/g2/creatures/photos/Crow.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Crow.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_diving_bell_spider.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_diving_bell_spider.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_firefly",
+      "technicalId": "Firefly",
+      "expectedAsset": "assets/g2/creatures/photos/Firefly.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Firefly.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "expectedAsset": "assets/g2/creatures/photos/Garden_Snail.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Garden_Snail.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_garter_snake",
+      "technicalId": "SnakeDummy",
+      "expectedAsset": "assets/g2/creatures/photos/Garter_Snake.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Garter_Snake.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_gnat",
+      "technicalId": "Gnat",
+      "expectedAsset": "assets/g2/creatures/photos/Gnat.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Gnat.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_green_shield_bug.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_green_shield_bug.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_grub",
+      "technicalId": "Grub",
+      "expectedAsset": "assets/g2/creatures/photos/Grub.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Grub.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ice_sickles_event",
+      "technicalId": null,
+      "expectedAsset": "assets/g2/creatures/photos/Ice_Sickles_Defense.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Ice_Sickles_Defense.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_king_dozer",
+      "technicalId": "Lizard",
+      "expectedAsset": "assets/g2/creatures/photos/King_Dozer.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/King_Dozer.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_koi_calico",
+      "technicalId": "KoiB",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_koi_calico.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_koi_calico.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_koi_dagon",
+      "technicalId": "KoiD",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_koi_dagon.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_koi_dagon.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_koi_oriole",
+      "technicalId": "KoiC",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_koi_oriole.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_koi_oriole.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_koi_sunny",
+      "technicalId": "KoiA",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_koi_sunny.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_koi_sunny.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ladybug",
+      "technicalId": "Ladybug",
+      "expectedAsset": "assets/g2/creatures/photos/Ladybug.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Ladybug.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_larva",
+      "technicalId": "Larva",
+      "expectedAsset": "assets/g2/creatures/photos/Larva.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Larva.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "expectedAsset": "assets/g2/creatures/photos/Lawn_Mite.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Lawn_Mite.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_masked_fighter",
+      "technicalId": "SubjectVGarden",
+      "expectedAsset": "assets/g2/creatures/photos/Masked_Fighter.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Masked_Fighter.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_masked_stranger",
+      "technicalId": "SubjectV",
+      "expectedAsset": "assets/g2/creatures/photos/Masked_Stranger.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Masked_Stranger.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_masked_stranger_orc_waves",
+      "technicalId": null,
+      "expectedAsset": "assets/g2/creatures/photos/Masked_Stranger_ORC_Waves.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Masked_Stranger_ORC_Waves.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_mixr_defenses",
+      "technicalId": null,
+      "expectedAsset": "assets/g2/creatures/photos/MIXR_Defenses_G2.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/MIXR_Defenses_G2.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_mosquito",
+      "technicalId": "Mosquito",
+      "expectedAsset": "assets/g2/creatures/photos/Mosquito.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Mosquito.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "expectedAsset": "assets/g2/creatures/photos/Northern_Scorpion.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Northern_Scorpion.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJr",
+      "expectedAsset": "assets/g2/creatures/photos/Northern_Scorpion_Jr.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Northern_Scorpion_Jr.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "expectedAsset": "assets/g2/creatures/photos/Northern_Scorpling.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Northern_Scorpling.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_blue_butterfly",
+      "technicalId": "BlueButterflyOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Blue_Butterfly.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Blue_Butterfly.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_cricket",
+      "technicalId": "CricketOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Cricket.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Cricket.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_green_shield_bug",
+      "technicalId": "GreenShieldBugOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Green_Shield_Bug.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Green_Shield_Bug.webp",
+      "source": "provided_capture_explicit_review",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_ladybug",
+      "technicalId": "LadybugOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Ladybug.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Ladybug.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_northern_scorpion",
+      "technicalId": "NorthernScorpionOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Northern_Scorpion.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Northern_Scorpion.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_pincher_earwig",
+      "technicalId": "EarwigOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Pincher_Earwig.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Pincher_Earwig.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_praying_mantis_nymph",
+      "technicalId": "GreenMantisOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Praying_Mantis_Nymph.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Praying_Mantis_Nymph.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "RustBeetleOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Rust_Beetle.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Rust_Beetle.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_striped_bark_scorpion",
+      "technicalId": "StripedBarkScorpionAdultOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Striped_Bark_Scorpion.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Striped_Bark_Scorpion.webp",
+      "source": "provided_capture_explicit_review",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_tiger_mosquito",
+      "technicalId": "MosquitoTigerOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Tiger_Mosquito.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Tiger_Mosquito.webp",
+      "source": "provided_capture_explicit_review",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter",
+      "technicalId": "ToeBiterAdultOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Toe_Biter.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Toe_Biter.webp",
+      "source": "provided_capture_explicit_review",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_ogrr_toe_biter_leviathan.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_ogrr_toe_biter_leviathan.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_wasp",
+      "technicalId": "WaspOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Wasp.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Wasp.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_wasp_drone",
+      "technicalId": "WaspDroneOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Wasp_Drone.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Wasp_Drone.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_whipper_earwig",
+      "technicalId": "EarwigRangeOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Whipper_Earwig.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Whipper_Earwig.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_ogrr_wolf_spider",
+      "technicalId": "SpiderWolfOGRE",
+      "expectedAsset": "assets/g2/creatures/photos/OGRR_Wolf_Spider.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/OGRR_Wolf_Spider.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orb_weaver",
+      "technicalId": "SpiderOrb",
+      "expectedAsset": "assets/g2/creatures/photos/Orb_Weaver.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Orb_Weaver.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orb_weaver_jr",
+      "technicalId": "SpiderOrbJr",
+      "expectedAsset": "assets/g2/creatures/photos/Orb_Weaver_Jr.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Orb_Weaver_Jr.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_bee",
+      "technicalId": "BeeORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Bee.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Bee.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_black_soldier_ant",
+      "technicalId": "AntBlackSoldierORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Black_Soldier_Ant.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Black_Soldier_Ant.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_blue_butterfly",
+      "technicalId": "BlueButterflyORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Blue_Butterfly.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Blue_Butterfly.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Bombardier_Beetle.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Bombardier_Beetle.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_broodmother",
+      "technicalId": "SpiderBossBroodmother",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Broodmother.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Broodmother.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_cockroach",
+      "technicalId": "CockroachORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Cockroach.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Cockroach.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_cockroach_nymph",
+      "technicalId": "Cockroach_NymphORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Cockroach_Nymph.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Cockroach_Nymph.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_cockroach_queen",
+      "technicalId": "Cockroach_QueenORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Cockroach_Queen.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Cockroach_Queen.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_cricket",
+      "technicalId": "CricketORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Cricket.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Cricket.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_firefly",
+      "technicalId": "FireflyOrc",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Firefly.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Firefly.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_green_shield_bug",
+      "technicalId": "GreenShieldBugORC",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_orc_green_shield_bug.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_orc_green_shield_bug.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_ladybug",
+      "technicalId": "LadybugORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Ladybug.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Ladybug.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_larva",
+      "technicalId": "LarvaORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Larva.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Larva.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_mosquito",
+      "technicalId": "MosquitoORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Mosquito.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Mosquito.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_northern_scorpion",
+      "technicalId": "NorthernScorpionORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Northern_Scorpion.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Northern_Scorpion.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Northern_Scorpion_Jr.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Northern_Scorpion_Jr.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Northern_Scorpling.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Northern_Scorpling.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_pincher_earwig",
+      "technicalId": "EarwigORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Pincher_Earwig.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Pincher_Earwig.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBeetleORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Potato_Beetle.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Potato_Beetle.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_praying_mantis_nymph",
+      "technicalId": "GreenMantisORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Praying_Mantis_Nymph.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Praying_Mantis_Nymph.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_red_soldier_ant",
+      "technicalId": "AntRedSoldierORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Red_Soldier_Ant.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Red_Soldier_Ant.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Rust_Beetle.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Rust_Beetle.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_spiderling",
+      "technicalId": "SpiderlingORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Spiderling.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Spiderling.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_stinkbug",
+      "technicalId": "StinkbugORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Stinkbug.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Stinkbug.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion",
+      "technicalId": "StripedBarkScorpionAdultORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Striped_Bark_Scorpion.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Striped_Bark_Scorpion.webp",
+      "source": "provided_capture_explicit_review",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJrORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Striped_Bark_Scorpion_Jr.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Striped_Bark_Scorpion_Jr.webp",
+      "source": "provided_capture_explicit_review",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorplingORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Striped_Bark_Scorpling.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Striped_Bark_Scorpling.webp",
+      "source": "provided_capture_explicit_review",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_tiger_mosquito",
+      "technicalId": "MosquitoTigerORC",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_orc_tiger_mosquito.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_orc_tiger_mosquito.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_toe_biter",
+      "technicalId": "ToeBiterAdultORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Toe_Biter.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Toe_Biter.webp",
+      "source": "provided_capture_explicit_review",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanORC",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_orc_toe_biter_leviathan.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_orc_toe_biter_leviathan.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_toe_biter_nymph",
+      "technicalId": "ToeBiterNymphORC",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_orc_toe_biter_nymph.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_orc_toe_biter_nymph.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_wasp",
+      "technicalId": "WaspORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Wasp.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Wasp.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_wasp_drone",
+      "technicalId": "WaspDroneORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Wasp_Drone.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Wasp_Drone.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_weaver",
+      "technicalId": "SpiderOrbORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Orb_Weaver.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Orb_Weaver.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderOrbJrORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Orb_Weaver_Jr.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Orb_Weaver_Jr.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Weevil.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Weevil.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_whipper_earwig",
+      "technicalId": "EarwigRangeORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Whipper_Earwig.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Whipper_Earwig.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orc_wolf_spider",
+      "technicalId": "SpiderWolfORC",
+      "expectedAsset": "assets/g2/creatures/photos/ORC_Wolf_Spider.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/ORC_Wolf_Spider.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_orchid_mantis",
+      "technicalId": null,
+      "expectedAsset": "assets/g1/creatures/photos/Mantis.webp",
+      "resolvedAsset": "assets/g1/creatures/photos/Mantis.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_papa_toe_biter",
+      "technicalId": "ToeBiterLeviathanEggs",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_papa_toe_biter.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_papa_toe_biter.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_pincher_earwig",
+      "technicalId": "Earwig",
+      "expectedAsset": "assets/g2/creatures/photos/Pincher_Earwig.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Pincher_Earwig.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_pond_jockey.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_pond_jockey.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_potato_beetle",
+      "technicalId": "PotatoBeetle",
+      "expectedAsset": "assets/g2/creatures/photos/Potato_Beetle.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Potato_Beetle.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_praying_mantis_nymph",
+      "technicalId": "GreenMantis",
+      "expectedAsset": "assets/g2/creatures/photos/Praying_Mantis_Nymph.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Praying_Mantis_Nymph.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldier",
+      "expectedAsset": "assets/g2/creatures/photos/Red_Soldier_Ant.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Red_Soldier_Ant.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_red_worker_ant",
+      "technicalId": "AntRedWorker",
+      "expectedAsset": "assets/g2/creatures/photos/Red_Worker_Ant.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Red_Worker_Ant.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "expectedAsset": "assets/g2/creatures/photos/Rust_Beetle.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Rust_Beetle.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_sauc_r",
+      "technicalId": "SphereBotSaucR",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_sauc_r.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_sauc_r.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "expectedAsset": "assets/g2/creatures/photos/Spiderling.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Spiderling.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_spiny_water_flea.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_spiny_water_flea.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_stinkbug",
+      "technicalId": "Stinkbug",
+      "expectedAsset": "assets/g2/creatures/photos/Stinkbug.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Stinkbug.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion",
+      "technicalId": "StripedBarkScorpionAdult",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_striped_bark_scorpion.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_striped_bark_scorpion.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "StripedBarkScorpionJr",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_striped_bark_scorpion_jr.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_striped_bark_scorpion_jr.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_striped_bark_scorpling.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_striped_bark_scorpling.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_tadpole",
+      "technicalId": "Tadpole",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_tadpole.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_tadpole.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_tick",
+      "technicalId": "MiteTick",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_tick.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_tick.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_tiger_mosquito.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_tiger_mosquito.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_toe_biter.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_toe_biter.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathan",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_toe_biter_leviathan.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_toe_biter_leviathan.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_toe_biter_nymph.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_toe_biter_nymph.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_wasp",
+      "technicalId": "Wasp",
+      "expectedAsset": "assets/g2/creatures/photos/Wasp.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Wasp.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_wasp_drone",
+      "technicalId": "WaspDrone",
+      "expectedAsset": "assets/g2/creatures/photos/Wasp_Drone.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Wasp_Drone.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_water_boatman.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_water_boatman.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "expectedAsset": "assets/g2/creatures/photos/v4_4_g2_water_flea.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/v4_4_g2_water_flea.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_weevil",
+      "technicalId": "Weevil",
+      "expectedAsset": "assets/g2/creatures/photos/Weevil.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Weevil.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_whipper_earwig",
+      "technicalId": "EarwigRange",
+      "expectedAsset": "assets/g2/creatures/photos/Whipper_Earwig.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Whipper_Earwig.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "expectedAsset": "assets/g2/creatures/photos/Wolf_Spider.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Wolf_Spider.webp",
+      "source": "provided_capture_exact_name",
+      "fallbackUsed": false
+    },
+    {
+      "publicId": "g2_woolly_aphid",
+      "technicalId": "WoollyAphid",
+      "expectedAsset": "assets/g2/creatures/photos/Woolly_Aphid.webp",
+      "resolvedAsset": "assets/g2/creatures/photos/Woolly_Aphid.webp",
+      "source": "historical_asset",
+      "fallbackUsed": false
+    }
+  ]
+}

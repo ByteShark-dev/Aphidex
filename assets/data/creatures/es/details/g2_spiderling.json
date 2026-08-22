@@ -1,1 +1,4020 @@
-{"id":"g2_spiderling","speciesKey":"spiderling","collectionGroup":"angry","name":"Cría de araña","game":"g2","tier":1,"danger":"intermedia","isBoss":false,"order":288,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Spiderling.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Spiderling_G.png","photo":"assets/g2/creatures/photos/Spiderling.webp","weaknesses":["spicy"],"resistances":["fresh","stabbing","venom"],"temperament":"aggressive","health":{"value":100,"rating":1},"description":"Pequeña cría de araña furiosa que se encuentra dondequiera que vayan las adultas. Al morir, suelta fibra de telaraña.","behavior":"Se quedan cerca de sus nidos, alternando entre patrullar, trepar por telarañas y dormir. Se mueven con soltura por puentes de tela y suelen reaccionar en cadena si molestas la zona.","interactionWithPlayer":"Son hostiles en cuanto te detectan y corren o saltan para cerrar distancia. Romper un saco de telaraña puede soltar varias a la vez, aunque también se distraen con Spider Bait.","interactionWithCreatures":"Son neutrales con la mayoría de criaturas, pero no dañan a otros enemigos tipo araña y comparten nidos con las tejedoras. En el hormiguero de la guarida de arañas suelen terminar peleando con hormigas rojas.","strategy":"Mueren rápido con casi cualquier arma, pero no las pelees mirando solo al suelo. Si rompes sacos o entras en un nido, controla primero si hay arañas grandes cerca antes de limpiar a las pequeñas.","environments":["Área de ceremonia","Cancha de croquet","Zona de entrada","Pozo de fuego","Alrededores del carrito de helados","Zona de la mesa de pícnic","Colina de pinos","Parche de calabazas","Zona frontal del snack bar","Hormiguero de la guarida de arañas"],"respawnInfo":"1 día","loot":[{"section":"loot","item":"Fibra de telaraña","minCount":1,"maxCount":1},{"section":"rare","item":"Trozo de tejedora de orbe","minCount":0,"maxCount":1},{"section":"rare","item":"Fibra de telaraña","minCount":0,"maxCount":2}],"advancedLootTable":[{"item":"Trozo de tejedora de orbe","countLabel":"x1","chancePct":1},{"item":"Fibra de telaraña","countLabel":"x1","chancePct":100},{"item":"Fibra de telaraña","countLabel":"x2","chancePct":1}],"combatStats":{"health":100,"stunThreshold":20,"stunCooldownSeconds":5,"attackDamageSummary":"Mordisco: 25."},"inflictsEffects":["stabbing"],"inflicts":["Todos sus ataques hacen daño perforante."],"abilities":[{"name":"Mordisco","description":"Se yergue y realiza un mordisco simple y bloqueable.","blockable":true,"breaksGuard":false,"staggers":false}],"elementalWeaknesses":[{"type":"spicy","bonusPct":30}],"resistancesV2":[{"type":"fresh","bonusPct":25},{"type":"stabbing","bonusPct":25},{"type":"venom","bonusPct":50}],"groupId":null,"cardTier":1,"technicalId":"Spiderling","bestiaryId":"Spiderling","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Spiderling","technicalId":"Spiderling","tags":["stabbing"],"notes":"Daño del ataque: 25"},{"name":"Derecha golpe","technicalId":"SpiderlingRight","tags":["stabbing"],"notes":"Daño del ataque: 25"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_spiderling",
+  "speciesKey": "spiderling",
+  "collectionGroup": "angry",
+  "name": "Cría de araña",
+  "game": "g2",
+  "tier": 1,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 288,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Spiderling.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Spiderling_G.png",
+  "photo": "assets/g2/creatures/photos/Spiderling.webp",
+  "weaknesses": [
+    "spicy"
+  ],
+  "resistances": [
+    "fresh",
+    "stabbing",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 1,
+    "value": 100
+  },
+  "description": "Pequeña cría de araña furiosa que se encuentra dondequiera que vayan las adultas. Al morir, suelta fibra de telaraña.",
+  "behavior": "Se quedan cerca de sus nidos, alternando entre patrullar, trepar por telarañas y dormir. Se mueven con soltura por puentes de tela y suelen reaccionar en cadena si molestas la zona.",
+  "interactionWithPlayer": "Son hostiles en cuanto te detectan y corren o saltan para cerrar distancia. Romper un saco de telaraña puede soltar varias a la vez, aunque también se distraen con Spider Bait.",
+  "interactionWithCreatures": "Son neutrales con la mayoría de criaturas, pero no dañan a otros enemigos tipo araña y comparten nidos con las tejedoras. En el hormiguero de la guarida de arañas suelen terminar peleando con hormigas rojas.",
+  "strategy": "Mueren rápido con casi cualquier arma, pero no las pelees mirando solo al suelo. Si rompes sacos o entras en un nido, controla primero si hay arañas grandes cerca antes de limpiar a las pequeñas.",
+  "environments": [
+    "Área de ceremonia",
+    "Cancha de croquet",
+    "Zona de entrada",
+    "Pozo de fuego",
+    "Alrededores del carrito de helados",
+    "Zona de la mesa de pícnic",
+    "Colina de pinos",
+    "Parche de calabazas",
+    "Zona frontal del snack bar",
+    "Hormiguero de la guarida de arañas"
+  ],
+  "respawnInfo": "1 día",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Spider Chunk",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Web",
+      "minCount": 1,
+      "maxCount": 3
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Spider Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Web",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Web",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 100,
+    "stunThreshold": 20,
+    "stunCooldownSeconds": 5
+  },
+  "inflictsEffects": [
+    "stabbing"
+  ],
+  "inflicts": [
+    "Todos sus ataques hacen daño perforante."
+  ],
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "Se yergue y realiza un mordisco simple y bloqueable.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 30
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 25
+    },
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "groupId": null,
+  "cardTier": 1,
+  "technicalId": "Spiderling",
+  "bestiaryId": "Spiderling",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Spiderling",
+      "technicalId": "Spiderling",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 25",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 25.0,
+      "cooldownSeconds": 0.0,
+      "range": 150.0,
+      "stun": 2,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Derecha golpe",
+      "technicalId": "SpiderlingRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 25",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 25.0,
+      "cooldownSeconds": 0.0,
+      "range": 150.0,
+      "stun": 2,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_32266c1401832280",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -248651.95,
+        "y": 111952.125,
+        "z": 4571.2954
+      },
+      "u": 0.04812848697688026,
+      "v": 0.7690740197318492,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a450ba8954e976e7",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -224208.42,
+        "y": 138450.2,
+        "z": 1865.1117
+      },
+      "u": 0.13969336376938832,
+      "v": 0.8834767046125306,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_05562f06b0736e06",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -226461.88,
+        "y": 137336.34,
+        "z": 1907.539
+      },
+      "u": 0.13125195668715248,
+      "v": 0.8786677298254488,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ff592773f49d1286",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -229155.92,
+        "y": 139044.89,
+        "z": 2242.953
+      },
+      "u": 0.12116014749780504,
+      "v": 0.8860442168816932,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_577e9cfe020e06df",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -219465.7,
+        "y": 137766.45,
+        "z": 1784.3993
+      },
+      "u": 0.15745947907521213,
+      "v": 0.8805246850493296,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b134fd4d5658c399",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -219954.7,
+        "y": 136901.0,
+        "z": 1531.9729
+      },
+      "u": 0.15562769681006727,
+      "v": 0.8767881946201198,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_04f1c3c70233ebb0",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -197339.27,
+        "y": 77410.914,
+        "z": -989.97736
+      },
+      "u": 0.2403445548726954,
+      "v": 0.6199459310903112,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c4fc2a58032c1598",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -201351.72,
+        "y": 39597.594,
+        "z": 3343.1257
+      },
+      "u": 0.22531401346210125,
+      "v": 0.45669085190994174,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_23790d181bca73df",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -197677.19,
+        "y": 42531.85,
+        "z": 2923.3022
+      },
+      "u": 0.2390787146619842,
+      "v": 0.4693591972341681,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7fbd35db0f3b6b4f",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -204501.33,
+        "y": 41504.07,
+        "z": 1322.2429
+      },
+      "u": 0.21351564998536732,
+      "v": 0.46492186390083484,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7b572be064d7673b",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -204690.02,
+        "y": 45704.008,
+        "z": -40.359455
+      },
+      "u": 0.21280882177348556,
+      "v": 0.4830546597183574,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a9f54eea601b0e78",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -131612.27,
+        "y": -21964.08,
+        "z": 10646.582
+      },
+      "u": 0.48655631957857776,
+      "v": 0.1909047224892487,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e1478507f290399e",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -131941.4,
+        "y": -20249.705,
+        "z": 10603.851
+      },
+      "u": 0.4853234064969271,
+      "v": 0.19830635837760346,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9972f13624c0adc3",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -115675.43,
+        "y": -31997.0,
+        "z": 2131.8015
+      },
+      "u": 0.5462553397717297,
+      "v": 0.14758863310565815,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b2a74cc1f73709a3",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -112921.266,
+        "y": -27504.002,
+        "z": 834.5679
+      },
+      "u": 0.5565723720222417,
+      "v": 0.16698668501559993,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c6a88bf79200202c",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -117325.914,
+        "y": -34147.758,
+        "z": 732.03357
+      },
+      "u": 0.5400726663154815,
+      "v": 0.1383029589678725,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0518a720deba483f",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -121278.87,
+        "y": -17551.486,
+        "z": 7842.048
+      },
+      "u": 0.5252649880011706,
+      "v": 0.20995563848553836,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0855c253ce4f9504",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -122294.016,
+        "y": -14756.211,
+        "z": 7845.8203
+      },
+      "u": 0.521462275446298,
+      "v": 0.22202394778649126,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_208fca0880518302",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -150933.1,
+        "y": -38563.207,
+        "z": 742.0518
+      },
+      "u": 0.4141809540532631,
+      "v": 0.11923971680580149,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_707c1a9172246c96",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -149703.88,
+        "y": -38165.766,
+        "z": 764.01917
+      },
+      "u": 0.418785582674861,
+      "v": 0.12095562701745512,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d134a8dc19319976",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -125245.22,
+        "y": -37909.855,
+        "z": 422.60693
+      },
+      "u": 0.5104071360842845,
+      "v": 0.12206049616325149,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7dc4338f59775a80",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -127002.805,
+        "y": -37239.34,
+        "z": 198.074
+      },
+      "u": 0.5038232648522095,
+      "v": 0.12495537498945951,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_77f58708fec6ed55",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -142236.58,
+        "y": -54692.324,
+        "z": 2027.0326
+      },
+      "u": 0.4467579092771437,
+      "v": 0.04960393044944769,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4fe1c86a40d8ae46",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -144016.11,
+        "y": -52610.855,
+        "z": 1641.9646
+      },
+      "u": 0.44009183260169743,
+      "v": 0.05859045653090476,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_01a97c8b4de8e28a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -120514.12,
+        "y": -53179.137,
+        "z": 1499.4286
+      },
+      "u": 0.5281297231489611,
+      "v": 0.056136958057171754,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1696ca9df7570166",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -119253.24,
+        "y": -54148.656,
+        "z": 1540.5421
+      },
+      "u": 0.5328529493707931,
+      "v": 0.05195116053630154,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_05d1add193a9ddd3",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -205444.1,
+        "y": 152373.31,
+        "z": 5176.854
+      },
+      "u": 0.20998405618964,
+      "v": 0.9435882850156,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_48294f070597becc",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -160216.1,
+        "y": 158607.7,
+        "z": 1524.8224
+      },
+      "u": 0.37940705882352943,
+      "v": 0.9705046159035332,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a1bc4ff8a093f73d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -220804.33,
+        "y": 138570.92,
+        "z": 1508.1243
+      },
+      "u": 0.15244500321919818,
+      "v": 0.8839979006661609,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_628bc64e2269540e",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -228409.33,
+        "y": 139277.66,
+        "z": 2102.507
+      },
+      "u": 0.12395685572139309,
+      "v": 0.8870491771650224,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d6932ea22a5e2ff8",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -109535.8,
+        "y": -44929.11,
+        "z": 12944.099
+      },
+      "u": 0.569254246414984,
+      "v": 0.09175559220844931,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_71215ae85270c9ff",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -247788.6,
+        "y": 120091.336,
+        "z": 2615.993
+      },
+      "u": 0.05136257535850159,
+      "v": 0.8042142173201788,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f64acf7ad98d9140",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -193849.28,
+        "y": 156896.69,
+        "z": 13587.523
+      },
+      "u": 0.25341797366110624,
+      "v": 0.9631175080529557,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca52c555f2b60f45",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -197236.6,
+        "y": 156341.2,
+        "z": 4120.9756
+      },
+      "u": 0.2407291542288557,
+      "v": 0.9607192377097563,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_38e1b141f382b8fc",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -183571.77,
+        "y": 158069.62,
+        "z": 2374.1416
+      },
+      "u": 0.29191727948492835,
+      "v": 0.9681815114259212,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_50e88c8e65c28417",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -191012.06,
+        "y": 157190.11,
+        "z": 13175.838
+      },
+      "u": 0.26404613169446883,
+      "v": 0.9643843184079601,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1cc5968bce569484",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -195510.39,
+        "y": 155762.22,
+        "z": 13356.063
+      },
+      "u": 0.24719549546385713,
+      "v": 0.958219551732861,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_25c6f3f3caa1edc8",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -213979.06,
+        "y": 158711.44,
+        "z": 10670.214
+      },
+      "u": 0.17801230084869768,
+      "v": 0.9709525025718864,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_736cefaa0220b44f",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -212724.61,
+        "y": 157867.39,
+        "z": 13890.976
+      },
+      "u": 0.1827114404448347,
+      "v": 0.9673084044185851,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_db91635512ae35bc",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -247696.3,
+        "y": 122234.13,
+        "z": 1581.7991
+      },
+      "u": 0.05170832894351775,
+      "v": 0.813465507715659,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e0d96ae81d1b672f",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -248138.48,
+        "y": 141409.4,
+        "z": 4814.21
+      },
+      "u": 0.05005193327480242,
+      "v": 0.8962527430643394,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e9a017dabfa1bdaf",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -238501.9,
+        "y": 128527.74,
+        "z": 488.62393
+      },
+      "u": 0.08615033069944399,
+      "v": 0.8406375147988868,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_19fad28662353e29",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -240631.9,
+        "y": 128037.74,
+        "z": 188.62392
+      },
+      "u": 0.07817140181445714,
+      "v": 0.8385219907243444,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7fd090d6eedef3b5",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -251121.9,
+        "y": 115727.74,
+        "z": 4018.624
+      },
+      "u": 0.03887611354989759,
+      "v": 0.7853748450965511,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_847664aba68325fc",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -248598.6,
+        "y": 119601.336,
+        "z": 1955.9929
+      },
+      "u": 0.048328334796605185,
+      "v": 0.8020986932456362,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4b65c5ee8b8c91ae",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -247040.44,
+        "y": 144773.14,
+        "z": 4141.543
+      },
+      "u": 0.05416516476441322,
+      "v": 0.9107753409225062,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_083d315cd217afc0",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -249318.0,
+        "y": 109827.5,
+        "z": 4626.723
+      },
+      "u": 0.04563347966052092,
+      "v": 0.7599011721055738,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a5d136f0f111da25",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -244329.66,
+        "y": 140060.44,
+        "z": 4753.302
+      },
+      "u": 0.06431968159203978,
+      "v": 0.8904287484610844,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9dd6edf5feb4e04d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -246996.94,
+        "y": 139426.31,
+        "z": 4466.8057
+      },
+      "u": 0.05432811472051506,
+      "v": 0.8876909580909015,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_13bdec360fbd513a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -246016.25,
+        "y": 141926.64,
+        "z": 4507.3857
+      },
+      "u": 0.0580017559262511,
+      "v": 0.8984858730078422,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_03099adf9da4f15e",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -248632.9,
+        "y": 144288.4,
+        "z": 4414.096
+      },
+      "u": 0.04819984781972493,
+      "v": 0.9086825263512945,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_62285c39c3ee80f4",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -234514.34,
+        "y": 136892.83,
+        "z": 1078.6239
+      },
+      "u": 0.10108763476733978,
+      "v": 0.8767529214942237,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f09a8e79c0cc28da",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -229956.84,
+        "y": 133887.08,
+        "z": 1351.4806
+      },
+      "u": 0.11815992039800997,
+      "v": 0.8637759082553332,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_01a72a3286966c73",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -199064.56,
+        "y": 49081.547,
+        "z": 1211.3109
+      },
+      "u": 0.23388165993561602,
+      "v": 0.4976368333249009,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_744acc99d0ef8dd3",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -256717.02,
+        "y": 52750.29,
+        "z": 15509.305
+      },
+      "u": 0.01791692829967812,
+      "v": 0.5134762499367569,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d4e51fbcae48da6e",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -257027.19,
+        "y": 47642.367,
+        "z": 15749.464
+      },
+      "u": 0.01675503892303189,
+      "v": 0.49142332324816596,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5c5043603a32a5e9",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -198008.56,
+        "y": 115147.42,
+        "z": 10768.681
+      },
+      "u": 0.2378374105940884,
+      "v": 0.7828693738089214,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ef8d7f3d0ac499d4",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -186524.4,
+        "y": 94213.664,
+        "z": 1681.0416
+      },
+      "u": 0.28085679836113553,
+      "v": 0.6924900579138207,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1617802b99da085d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -243948.62,
+        "y": 99983.79,
+        "z": 4882.7373
+      },
+      "u": 0.06574704828797193,
+      "v": 0.7174019772324816,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d779894d9916996a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -202296.38,
+        "y": 97234.86,
+        "z": 703.29126
+      },
+      "u": 0.22177533977172956,
+      "v": 0.7055337576524158,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_db9ac9aa5caacdd8",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -188858.23,
+        "y": 117700.766,
+        "z": 7733.993
+      },
+      "u": 0.27211432718759143,
+      "v": 0.7938931797959357,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ec7b63f4f2750650",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -181292.1,
+        "y": 91336.13,
+        "z": 1800.3102
+      },
+      "u": 0.30045686859818554,
+      "v": 0.6800666039295051,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1bac743055618d0c",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -112270.42,
+        "y": 51908.28,
+        "z": 671.39935
+      },
+      "u": 0.5590104255194616,
+      "v": 0.5098409592714395,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bd2685c5e0d25bc0",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -196620.0,
+        "y": 112850.05,
+        "z": 11325.894
+      },
+      "u": 0.2430389230318993,
+      "v": 0.7729507175984485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fce827065957acb",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -179113.34,
+        "y": 153168.02,
+        "z": 1464.5787
+      },
+      "u": 0.30861845127304655,
+      "v": 0.9470193628467831,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_70994e06b282131a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -196247.0,
+        "y": 94173.51,
+        "z": 755.4333
+      },
+      "u": 0.24443617208077262,
+      "v": 0.6923166971920061,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_59c5b90c2173a730",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -195425.08,
+        "y": 92181.42,
+        "z": 581.4201
+      },
+      "u": 0.24751506467661696,
+      "v": 0.6837160556539337,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf3ca57d04af7e8c",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -190529.88,
+        "y": 118712.22,
+        "z": 7733.993
+      },
+      "u": 0.2658523664032777,
+      "v": 0.798260027321022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b5808b54fe9ea12c",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -200351.73,
+        "y": 142741.22,
+        "z": 1190.5251
+      },
+      "u": 0.22905995200468243,
+      "v": 0.9020027374989458,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_66280cf381868b91",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -212220.11,
+        "y": 130062.96,
+        "z": 1375.9161
+      },
+      "u": 0.18460128533801587,
+      "v": 0.8472656675942323,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ff47c853d546a4b7",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -226826.39,
+        "y": 87956.87,
+        "z": 308.99106
+      },
+      "u": 0.12988651097453902,
+      "v": 0.6654770000843241,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_417f67c90e0da3ef",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -184496.9,
+        "y": 93948.79,
+        "z": 1279.8787
+      },
+      "u": 0.28845176470588235,
+      "v": 0.6913464919470443,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_38d07a8f0b6fa0ef",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -182144.86,
+        "y": 95082.4,
+        "z": 1213.5159
+      },
+      "u": 0.2972624501024291,
+      "v": 0.6962407353065183,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2c45d045a6db796d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -201131.08,
+        "y": 123767.71,
+        "z": 10898.525
+      },
+      "u": 0.2261405256072579,
+      "v": 0.8200865799814487,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2d6106e70ba0eb8c",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -196921.33,
+        "y": 113347.37,
+        "z": 10853.569
+      },
+      "u": 0.24191014808311387,
+      "v": 0.7750978450122269,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0ebd0878b036fe4a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -182266.8,
+        "y": 90475.48,
+        "z": 1844.4889
+      },
+      "u": 0.2968056657887036,
+      "v": 0.6763508370014334,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9091e1758fd1c4bb",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -188004.83,
+        "y": 125756.51,
+        "z": 1206.6124
+      },
+      "u": 0.27531114310798954,
+      "v": 0.828673017286449,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c830fa115cfa46e",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -183474.89,
+        "y": 92358.33,
+        "z": 1082.0253
+      },
+      "u": 0.29228018964003505,
+      "v": 0.6844798461927651,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5b5d540f8d726a7b",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -132572.33,
+        "y": 25461.342,
+        "z": 1097.456
+      },
+      "u": 0.48295995785777,
+      "v": 0.395659053073615,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d94f7dffe0d0835f",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -135631.81,
+        "y": 21969.953,
+        "z": 1423.8843
+      },
+      "u": 0.47149921919812704,
+      "v": 0.3805853439244456,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4a32e16f2c8e7afe",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -130863.336,
+        "y": 24834.285,
+        "z": 1146.1648
+      },
+      "u": 0.48936180836991516,
+      "v": 0.3929517996458386,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_28017d91de689cc2",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -246555.3,
+        "y": 97763.19,
+        "z": 1145.866
+      },
+      "u": 0.0559824875621891,
+      "v": 0.7078147675183406,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_06793cd7aec4612c",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -186253.92,
+        "y": 159026.61,
+        "z": 2403.261
+      },
+      "u": 0.2818700099502487,
+      "v": 0.9723132162914242,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_902aeea3efedfce4",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -187725.33,
+        "y": 157175.66,
+        "z": 2386.7253
+      },
+      "u": 0.2763581434006439,
+      "v": 0.9643219320347416,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2055fb2b89283243",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -195570.67,
+        "y": 155752.8,
+        "z": 3824.3708
+      },
+      "u": 0.246969688030436,
+      "v": 0.9581788818618769,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6f876c90e9de3603",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -190706.08,
+        "y": 125085.38,
+        "z": 402.16855
+      },
+      "u": 0.26519232543166527,
+      "v": 0.8257754832616578,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e546fd12d81a8b2d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -180151.48,
+        "y": 153114.02,
+        "z": 1306.1343
+      },
+      "u": 0.30472960374597596,
+      "v": 0.9467862234589765,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f5e3691db43365ea",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -109619.16,
+        "y": 48804.207,
+        "z": 903.8458
+      },
+      "u": 0.5689419818554288,
+      "v": 0.4964394466987099,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5f4edbabe72bfd67",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -112664.1,
+        "y": 10333.444,
+        "z": 24631.535
+      },
+      "u": 0.5575357096868597,
+      "v": 0.330345925693566,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a49ef4121a6b52b",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -109749.58,
+        "y": 2585.511,
+        "z": 25064.393
+      },
+      "u": 0.5684534316652033,
+      "v": 0.29689503020490765,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5642322d320a6268",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -111643.07,
+        "y": 421.15884,
+        "z": 23606.395
+      },
+      "u": 0.5613604635645303,
+      "v": 0.28755066469415624,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_282c609ca69c38bf",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -108805.12,
+        "y": -1064.0984,
+        "z": 22068.785
+      },
+      "u": 0.5719913561603746,
+      "v": 0.2811382209225062,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ec0c4c3a27e85777",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -116059.445,
+        "y": 13952.87,
+        "z": 23932.283
+      },
+      "u": 0.5448168287971905,
+      "v": 0.34597242128341343,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ea463fa3649443d7",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -112509.61,
+        "y": 16705.752,
+        "z": 24383.424
+      },
+      "u": 0.5581144255194616,
+      "v": 0.35785770321274984,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_616cfb2422a87dc5",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -111841.125,
+        "y": 26379.865,
+        "z": 19911.842
+      },
+      "u": 0.5606185542873866,
+      "v": 0.3996246806644742,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b904f4a4f335cd96",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -102579.734,
+        "y": 2651.7148,
+        "z": 950.5022
+      },
+      "u": 0.5953115027216858,
+      "v": 0.2971808582308795,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a2265301ced6549a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -104028.2,
+        "y": 3367.3708,
+        "z": 1060.8301
+      },
+      "u": 0.5898855838454784,
+      "v": 0.30027062863310566,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f6a38736cd369123",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -102898.1,
+        "y": 195.94388,
+        "z": 1076.8123
+      },
+      "u": 0.5941189113257244,
+      "v": 0.2865783225108357,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9920c11ae732b96f",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -104868.57,
+        "y": 23830.566,
+        "z": 1573.2858
+      },
+      "u": 0.586737577992391,
+      "v": 0.3886183471793574,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aea4569961c9c491",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -104774.32,
+        "y": 24253.68,
+        "z": 1573.2858
+      },
+      "u": 0.5870906362306116,
+      "v": 0.39044509790032883,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a24d5c5156f47c0",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -105010.92,
+        "y": 24702.744,
+        "z": 1473.6572
+      },
+      "u": 0.5862043383084578,
+      "v": 0.3923838850493297,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e3be86a217f12f1",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -114737.28,
+        "y": -12787.04,
+        "z": 2166.7986
+      },
+      "u": 0.549769627158326,
+      "v": 0.23052563892402392,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1cd3e285df06a43b",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -115652.91,
+        "y": -12728.889,
+        "z": 2166.7986
+      },
+      "u": 0.5463396991513023,
+      "v": 0.2307766998229193,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7fb315a39076cde0",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -114142.06,
+        "y": -12888.461,
+        "z": 2166.7986
+      },
+      "u": 0.5519993069944396,
+      "v": 0.2300877642971583,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ad6e5836713f3af",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -210409.36,
+        "y": 129108.04,
+        "z": 1380.7295
+      },
+      "u": 0.19138431138425527,
+      "v": 0.8431428997385951,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d1fda08dfe012d6",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -159017.58,
+        "y": 158086.38,
+        "z": 2068.9844
+      },
+      "u": 0.38389668598185545,
+      "v": 0.9682538709840628,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_224c577cd178b1fd",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -104419.88,
+        "y": 116893.38,
+        "z": -2220.786
+      },
+      "u": 0.5884183599648815,
+      "v": 0.7904073746521628,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_396465fcff5b6a69",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -105452.53,
+        "y": 128826.26,
+        "z": -1454.6145
+      },
+      "u": 0.5845500778460638,
+      "v": 0.841926343873851,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6ae115f6b0f897f2",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -138662.12,
+        "y": 68111.29,
+        "z": -3069.7302
+      },
+      "u": 0.46014775065847235,
+      "v": 0.5797957709756303,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2352a008dacb12b6",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -83455.66,
+        "y": 142713.44,
+        "z": 1408.9172
+      },
+      "u": 0.6669498249926836,
+      "v": 0.9018828002361076,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_198156465d904c96",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -83851.36,
+        "y": 141577.02,
+        "z": 1318.1438
+      },
+      "u": 0.6654675422885572,
+      "v": 0.8969764249936758,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e56058446daa5500",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -83875.22,
+        "y": 131256.58,
+        "z": 2079.5815
+      },
+      "u": 0.6653781633011414,
+      "v": 0.8524189978918963,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_11cdf032f5c6548d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -76354.95,
+        "y": 125638.32,
+        "z": -452.72308
+      },
+      "u": 0.693548914252268,
+      "v": 0.8281627442448773,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7c98b881677dfadc",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -99979.86,
+        "y": 123174.78,
+        "z": -681.60614
+      },
+      "u": 0.6050505683347966,
+      "v": 0.8175266663293701,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d992fad8605de073",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -106439.86,
+        "y": 126327.73,
+        "z": -1654.798
+      },
+      "u": 0.5808515633596723,
+      "v": 0.8311392002698372,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b478e36de70a81d6",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -62568.957,
+        "y": 86184.24,
+        "z": -216.92688
+      },
+      "u": 0.7451909131987123,
+      "v": 0.6578238542878826,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07804b4ca7f63e41",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -64890.402,
+        "y": 84638.195,
+        "z": -217.07967
+      },
+      "u": 0.7364948359379573,
+      "v": 0.6511489656800743,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f859ca646857abe5",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -65134.055,
+        "y": 84739.09,
+        "z": -2587.6592
+      },
+      "u": 0.7355821176470588,
+      "v": 0.6515845693566068,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b2f93cf06f792aa1",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -131380.19,
+        "y": 132736.4,
+        "z": -2590.3494
+      },
+      "u": 0.487425685689201,
+      "v": 0.8588079669449364,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da9830a9f61f3e3a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -97996.01,
+        "y": 121079.664,
+        "z": -432.78934
+      },
+      "u": 0.6124820228270412,
+      "v": 0.808481220743739,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_383a601d7d56e2ea",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -123904.87,
+        "y": 110696.695,
+        "z": -3173.7349
+      },
+      "u": 0.5154280550190226,
+      "v": 0.7636538311830677,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_15f3201a9b9ab061",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -126997.13,
+        "y": 121460.086,
+        "z": -3788.4302
+      },
+      "u": 0.5038445232660228,
+      "v": 0.8101236531916688,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9ff751f5c5f0786",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -129591.41,
+        "y": 122236.96,
+        "z": -3418.7854
+      },
+      "u": 0.494126412642669,
+      "v": 0.8134777259465387,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf4fcbd1079fe190",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -138352.62,
+        "y": 114721.04,
+        "z": -2660.1406
+      },
+      "u": 0.46130713023119696,
+      "v": 0.7810285224723837,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_26235c92bf8f7a60",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -138364.31,
+        "y": 112593.9,
+        "z": -2968.3772
+      },
+      "u": 0.4612633397717296,
+      "v": 0.771844816594991,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1c6a0e88b96f547c",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -155269.66,
+        "y": 93047.55,
+        "z": -5015.9487
+      },
+      "u": 0.39793630436055016,
+      "v": 0.6874554819124714,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2a394a4e05d8e342",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -149768.77,
+        "y": 91198.37,
+        "z": -6218.4126
+      },
+      "u": 0.4185425062920691,
+      "v": 0.6794718394468335,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e3deb4ee4c5a187",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -150271.64,
+        "y": 94979.23,
+        "z": -5072.5195
+      },
+      "u": 0.41665876733977164,
+      "v": 0.6957953095539253,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_37c539b543a1e236",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -160683.4,
+        "y": 69170.76,
+        "z": 366.9538
+      },
+      "u": 0.3776565642376354,
+      "v": 0.5843699225904376,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a7b5cdd6c7d6fe23",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -169972.22,
+        "y": 55778.805,
+        "z": 1756.6736
+      },
+      "u": 0.342860867427568,
+      "v": 0.526551548697192,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7226e91692c9b5de",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -211540.03,
+        "y": 155782.22,
+        "z": 10963.127
+      },
+      "u": 0.18714884869768803,
+      "v": 0.9583058996542709,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e55345f80cf09d02",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -211975.03,
+        "y": 156836.61,
+        "z": 8569.47
+      },
+      "u": 0.18551934913666962,
+      "v": 0.9628581188970402,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_19aab43e62e6b663",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -211830.14,
+        "y": 157875.5,
+        "z": 11664.245
+      },
+      "u": 0.18606210359964878,
+      "v": 0.9673434185007167,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c43bc884097b6621",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -209509.69,
+        "y": 158017.31,
+        "z": 13381.555
+      },
+      "u": 0.1947544536142815,
+      "v": 0.9679556684374736,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2fdb7ddbcc390c52",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -115225.234,
+        "y": 99253.05,
+        "z": -4672.1885
+      },
+      "u": 0.5479417631840796,
+      "v": 0.7142470832279281,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_370aec4d78fb5f84",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -110497.59,
+        "y": 99794.1,
+        "z": -3662.6729
+      },
+      "u": 0.5656514041556922,
+      "v": 0.7165830103718694,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_30bfef7bc94f4e41",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -161827.92,
+        "y": 104666.71,
+        "z": -2928.3635
+      },
+      "u": 0.37336921978343574,
+      "v": 0.7376199976389242,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_53a794d3b051b36f",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -112143.63,
+        "y": 114827.28,
+        "z": -3263.9985
+      },
+      "u": 0.5594853778167983,
+      "v": 0.7814872026309133,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3caa86a9e2ec209b",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -84586.58,
+        "y": 156667.0,
+        "z": 1136.9886
+      },
+      "u": 0.6627134258121158,
+      "v": 0.9621258453495236,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aeb2a0673086783c",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -113410.99,
+        "y": 158606.34,
+        "z": 1679.2058
+      },
+      "u": 0.5547378776704712,
+      "v": 0.9704987442448771,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95a8c10de66ad38a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -123074.21,
+        "y": 138427.9,
+        "z": -886.8946
+      },
+      "u": 0.5185396874451272,
+      "v": 0.8833804266801586,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e645130cc14b12a6",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -159527.72,
+        "y": 106125.74,
+        "z": -3028.37
+      },
+      "u": 0.3819857137840211,
+      "v": 0.7439192080276582,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6ecc3cf871cef635",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -131253.78,
+        "y": 51174.613,
+        "z": -1647.6781
+      },
+      "u": 0.48789921451565704,
+      "v": 0.5066734282485876,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1a2685aedc9b297a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -130917.58,
+        "y": 54277.742,
+        "z": -2217.2637
+      },
+      "u": 0.4891586116476441,
+      "v": 0.5200708651994266,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f8882ec5b2ab06d0",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -169557.39,
+        "y": 116759.57,
+        "z": -2840.5789
+      },
+      "u": 0.3444148106526192,
+      "v": 0.7898296638839699,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d6f7c404db51d144",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -99022.16,
+        "y": 135811.23,
+        "z": 1057.9319
+      },
+      "u": 0.6086380895522387,
+      "v": 0.8720832259043763,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_76e11898bce769b4",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -108938.49,
+        "y": 128992.75,
+        "z": -2619.1494
+      },
+      "u": 0.5714917553409423,
+      "v": 0.8426451471456279,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_10f3ea95c98f2cb7",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -128154.13,
+        "y": 123366.91,
+        "z": -3564.3655
+      },
+      "u": 0.49951042903131404,
+      "v": 0.8183561676363943,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5847655ab5af1b3d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -144273.81,
+        "y": 22694.44,
+        "z": 2098.6243
+      },
+      "u": 0.4391264945858941,
+      "v": 0.3837132412513703,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4131069bab972cfc",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -79788.21,
+        "y": 122895.42,
+        "z": 373.76517
+      },
+      "u": 0.6806880046824699,
+      "v": 0.8163205585631165,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ded757886dcf1e45",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -146074.36,
+        "y": 786.41797,
+        "z": 2900.3545
+      },
+      "u": 0.4323816774948786,
+      "v": 0.2891276330267308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5329cb18092a33cf",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -75311.26,
+        "y": 80831.336,
+        "z": -1491.3756
+      },
+      "u": 0.6974585519461516,
+      "v": 0.6347132475925459,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f9a9a9db440bdb59",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -131575.88,
+        "y": 36745.113,
+        "z": -688.73566
+      },
+      "u": 0.48669263564530285,
+      "v": 0.44437556164938025,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cfc8795f4a97b692",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -98204.17,
+        "y": 138990.58,
+        "z": 258.45956
+      },
+      "u": 0.611702260462394,
+      "v": 0.8858097391011045,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_43b78c4a16388b6d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -86847.516,
+        "y": 156667.25,
+        "z": 1081.4635
+      },
+      "u": 0.6542440138132865,
+      "v": 0.9621269246985411,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bb85b8be80b8cde8",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -158045.52,
+        "y": 138282.39,
+        "z": -2595.066
+      },
+      "u": 0.3875379994146913,
+      "v": 0.8827522023779409,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8bae38b60d0ff955",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -108897.25,
+        "y": 127937.61,
+        "z": -2556.308
+      },
+      "u": 0.5716462393912789,
+      "v": 0.8380896898558056,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8ef290c6ac054774",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -110054.46,
+        "y": 129074.77,
+        "z": -2528.9739
+      },
+      "u": 0.5673113585016095,
+      "v": 0.8429992599713299,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7c093f4243f7ff41",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -103173.12,
+        "y": 109911.586,
+        "z": -2818.2705
+      },
+      "u": 0.5930886930055604,
+      "v": 0.7602642046715574,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0ade1a48ad2d286c",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -131396.16,
+        "y": 102535.82,
+        "z": -3636.37
+      },
+      "u": 0.4873658624524437,
+      "v": 0.728420101526267,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9b8e59ed48ee8309",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -191619.95,
+        "y": 158973.33,
+        "z": 10959.858
+      },
+      "u": 0.2617689903424056,
+      "v": 0.9720831854287881,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b1e3e841c4e2f730",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -203344.0,
+        "y": 123925.76,
+        "z": 10861.69
+      },
+      "u": 0.21785098039215686,
+      "v": 0.8207689444303905,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_90d3ade40ddf7dec",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -192737.75,
+        "y": 115294.945,
+        "z": 10881.976
+      },
+      "u": 0.2575817383669886,
+      "v": 0.7835062976642213,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3cd45856a7e8a614",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -58353.21,
+        "y": 114534.75,
+        "z": -3879.4036
+      },
+      "u": 0.7609830002926544,
+      "v": 0.7802242347584113,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9753234e68f57893",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -62118.21,
+        "y": 117514.75,
+        "z": -3534.4036
+      },
+      "u": 0.7468794006438397,
+      "v": 0.7930900750484863,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d79f9283add2940f",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -257246.56,
+        "y": 47623.23,
+        "z": 13243.572
+      },
+      "u": 0.01593328416739831,
+      "v": 0.49134070123956497,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6638dcacccdf0311",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -257640.25,
+        "y": 52096.508,
+        "z": 13536.039
+      },
+      "u": 0.014458530875036582,
+      "v": 0.5106536140989966,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_85016e2bbe08307d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -141741.0,
+        "y": 124159.86,
+        "z": -3528.623
+      },
+      "u": 0.44861434006438394,
+      "v": 0.8217796468504932,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3394ec2c1e581fe7",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -242738.62,
+        "y": 98603.79,
+        "z": 4842.548
+      },
+      "u": 0.07027967925080482,
+      "v": 0.7114439706551985,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3a60f9297727f7f6",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -247488.62,
+        "y": 104163.79,
+        "z": 4163.538
+      },
+      "u": 0.05248629323968395,
+      "v": 0.7354486928071505,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7e6787d03c89ca59",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -223071.03,
+        "y": 119879.41,
+        "z": 1507.1927
+      },
+      "u": 0.14395399941469125,
+      "v": 0.803299248840543,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4d2e674fc69bab39",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -225438.3,
+        "y": 113564.44,
+        "z": 1465.2521
+      },
+      "u": 0.13508626280362895,
+      "v": 0.7760350221772493,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ead43568fa479035",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -226226.39,
+        "y": 81356.87,
+        "z": 155.46169
+      },
+      "u": 0.13213409657594374,
+      "v": 0.6369821860190573,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b95dffc4252dcd49",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -78074.21,
+        "y": 24586.732,
+        "z": -4419.0894
+      },
+      "u": 0.6871086075504828,
+      "v": 0.3918830152963993,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ade5ad979251a0f",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -77618.68,
+        "y": 22742.715,
+        "z": -4359.0503
+      },
+      "u": 0.6888150119988294,
+      "v": 0.3839216635466734,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d7f38ddf7f9d0b81",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -32526.229,
+        "y": -9111.654,
+        "z": -3151.5764
+      },
+      "u": 0.8577302513315774,
+      "v": 0.2463937359979762,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3f27e3dc208860a8",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -32793.94,
+        "y": -4822.7954,
+        "z": -2747.9094
+      },
+      "u": 0.8567274123500146,
+      "v": 0.26491043726452485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b544876955b9c25d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -30394.32,
+        "y": -6351.501,
+        "z": -752.8172
+      },
+      "u": 0.8657163312847527,
+      "v": 0.2583104097141412,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_57d30b4b25eb78a9",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -14148.281,
+        "y": 9039.371,
+        "z": -1712.5653
+      },
+      "u": 0.9265736035118525,
+      "v": 0.3247589000084323,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_42be2b818f1f2c57",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -13173.333,
+        "y": 8734.3545,
+        "z": -1310.8729
+      },
+      "u": 0.930225735323383,
+      "v": 0.3234420229698962,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3fb75e557eec3819",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -103665.6,
+        "y": 138976.12,
+        "z": 3985.5269
+      },
+      "u": 0.5912438747439274,
+      "v": 0.8857473095539252,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8643f6c7f59e1b8e",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -100230.26,
+        "y": 137349.56,
+        "z": 1801.5314
+      },
+      "u": 0.6041125759438103,
+      "v": 0.8787248058015009,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9350e333772a262",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -107391.016,
+        "y": 144896.3,
+        "z": 6241.0547
+      },
+      "u": 0.5772885558091894,
+      "v": 0.9113070714225482,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_73384c89947cdcb7",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -109247.27,
+        "y": 137453.3,
+        "z": 6273.837
+      },
+      "u": 0.5703350728709393,
+      "v": 0.879172692469854,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d43b7ffa2b30aa91",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -105586.125,
+        "y": 114643.016,
+        "z": -2550.2744
+      },
+      "u": 0.584049634182031,
+      "v": 0.7806916619613796,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3706b2645432c94d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -60697.66,
+        "y": 116790.32,
+        "z": -3209.7737
+      },
+      "u": 0.7522007468539654,
+      "v": 0.7899624238131377,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_32d3f64bfed2303a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -95051.81,
+        "y": 147841.2,
+        "z": 552.7622
+      },
+      "u": 0.6235109253731344,
+      "v": 0.924021371110549,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bcadfe0da9872883",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -71794.6,
+        "y": 121217.39,
+        "z": -848.31366
+      },
+      "u": 0.7106318759145449,
+      "v": 0.8090758384349439,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_34b7fa1533dd70a2",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -83900.25,
+        "y": 129108.08,
+        "z": 2132.814
+      },
+      "u": 0.6652844015218028,
+      "v": 0.8431430724344381,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5f61f0bf07409b3a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -101914.21,
+        "y": 106954.33,
+        "z": -3218.9314
+      },
+      "u": 0.5978045396546677,
+      "v": 0.7474965592377097,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_10bd0d7c26099a32",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -72784.555,
+        "y": 119568.03,
+        "z": -1517.6259
+      },
+      "u": 0.7069235282411472,
+      "v": 0.8019548980521123,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b4e92e9565c35b63",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -135261.48,
+        "y": 133854.19,
+        "z": -1476.3654
+      },
+      "u": 0.472886466491074,
+      "v": 0.863633909098575,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b72a99e52f72c873",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -255078.7,
+        "y": 53943.133,
+        "z": 7906.8496
+      },
+      "u": 0.024054035703833732,
+      "v": 0.5186262256176744,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_22851630171f09f0",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -256950.53,
+        "y": 48227.082,
+        "z": 8793.133
+      },
+      "u": 0.017042205443371383,
+      "v": 0.49394776949152536,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3124ed3c1dcaf57b",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -137608.84,
+        "y": 297.1628,
+        "z": 6586.901
+      },
+      "u": 0.4640933122622184,
+      "v": 0.2870153246783033,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e699e5d6704487a8",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -138698.75,
+        "y": -3877.5552,
+        "z": 5051.8477
+      },
+      "u": 0.4600105355575066,
+      "v": 0.2689914135896787,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6eb3c2e520d8e7c3",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -127188.914,
+        "y": -4904.129,
+        "z": 5900.3345
+      },
+      "u": 0.5031261050043899,
+      "v": 0.26455928789948563,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_690875352ee2abbf",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -111123.81,
+        "y": -3120.938,
+        "z": 10010.486
+      },
+      "u": 0.563305599063506,
+      "v": 0.2722580297158277,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_97db8b866f2d6a14",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -113263.4,
+        "y": -3546.641,
+        "z": 8272.149
+      },
+      "u": 0.5552907462686567,
+      "v": 0.2704201012564297,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0514008636ce322e",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -108177.61,
+        "y": 23857.441,
+        "z": 12673.149
+      },
+      "u": 0.5743419935616039,
+      "v": 0.388734377198752,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_043b32c2c78a0ef0",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -132616.78,
+        "y": 25219.852,
+        "z": 1086.614
+      },
+      "u": 0.48279344922446593,
+      "v": 0.3946164450965512,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d42452ebd31ab2b4",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -196869.0,
+        "y": 158730.48,
+        "z": 11551.026
+      },
+      "u": 0.24210617500731638,
+      "v": 0.9710347057930685,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_88bb779854dd596d",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -196121.81,
+        "y": 115672.83,
+        "z": 11051.772
+      },
+      "u": 0.24490513081650572,
+      "v": 0.7851377768783203,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d795e17f8b41a25f",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -245227.31,
+        "y": 101726.984,
+        "z": 4513.41
+      },
+      "u": 0.06095710623353821,
+      "v": 0.7249280361581921,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6e4620d7aabdfcba",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -191046.94,
+        "y": 116658.36,
+        "z": 8992.739
+      },
+      "u": 0.26391547205150717,
+      "v": 0.7893927002276752,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8cd70a85edf74b5f",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -200241.33,
+        "y": 126664.89,
+        "z": 8461.342
+      },
+      "u": 0.229473507755341,
+      "v": 0.8325948535289653,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_03c02e71aa75656a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -186198.62,
+        "y": 118496.5,
+        "z": 6254.7686
+      },
+      "u": 0.28207716242317826,
+      "v": 0.7973286786406948,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e341ddcf189c0bf",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -200182.98,
+        "y": 142827.89,
+        "z": 2310.2676
+      },
+      "u": 0.22969208545507752,
+      "v": 0.9023769262163758,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3cfdfd8b5ff97d6b",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -192547.3,
+        "y": 107949.43,
+        "z": 2699.339
+      },
+      "u": 0.2582951594966345,
+      "v": 0.7517928000674593,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_490647bf40ef82ba",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -210094.67,
+        "y": 128634.5,
+        "z": 2073.207
+      },
+      "u": 0.1925631325724319,
+      "v": 0.841098440003373,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ce53e7a07808f4c6",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -179984.88,
+        "y": 92933.23,
+        "z": 3247.5977
+      },
+      "u": 0.30535368334796603,
+      "v": 0.6869619171936924,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_318d0c6c2491b405",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -159043.02,
+        "y": 157896.44,
+        "z": 2029.7021
+      },
+      "u": 0.38380138835235594,
+      "v": 0.967433824774433,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d6c44f7589683697",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -228606.12,
+        "y": 137806.56,
+        "z": 2367.191
+      },
+      "u": 0.12321968510389232,
+      "v": 0.8806978558057171,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_86ab2b28431c1537",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -249011.8,
+        "y": 105687.47,
+        "z": 4267.505
+      },
+      "u": 0.04678049751243785,
+      "v": 0.7420270228518424,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0307d75abefd3fd7",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -231896.3,
+        "y": 135003.84,
+        "z": 3415.4824
+      },
+      "u": 0.11089474978050926,
+      "v": 0.8685974034910193,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1db95fe572bf692b",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -124820.36,
+        "y": 136321.81,
+        "z": 578.8111
+      },
+      "u": 0.5119986514486392,
+      "v": 0.8742876019900497,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8092c2ab9b52aac3",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -123447.49,
+        "y": 140700.27,
+        "z": -184.14359
+      },
+      "u": 0.5171413895229734,
+      "v": 0.8931911479888692,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_626bee04692c21fe",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -237817.83,
+        "y": 157106.36,
+        "z": 5573.505
+      },
+      "u": 0.08871284050336557,
+      "v": 0.9640227364870563,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f72e63151b7f7e91",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -243359.64,
+        "y": 156240.03,
+        "z": 5449.254
+      },
+      "u": 0.0679533532338308,
+      "v": 0.9602824467493045,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_772ef482ac88fefd",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -251199.34,
+        "y": 146037.06,
+        "z": 6096.7163
+      },
+      "u": 0.03858602516827628,
+      "v": 0.9162321841639262,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5302e9f583ab05b8",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -254526.33,
+        "y": 148470.84,
+        "z": 5547.0605
+      },
+      "u": 0.026123200468247048,
+      "v": 0.9267397763723753,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_52cf8f5b3a6f0c77",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -255426.64,
+        "y": 154606.45,
+        "z": 5572.856
+      },
+      "u": 0.022750660813579113,
+      "v": 0.9532296348764653,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3fe44f40aaf03d2a",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -249425.45,
+        "y": 156604.89,
+        "z": 5331.7646
+      },
+      "u": 0.04523097453906932,
+      "v": 0.9618576918795851,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d776155e81617ea4",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -247762.4,
+        "y": 150173.39,
+        "z": 5453.905
+      },
+      "u": 0.05146071992976297,
+      "v": 0.9340903590521966,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_63293441f0784711",
+      "targetType": "creature",
+      "targetId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "map": "surface",
+      "world": {
+        "x": -106116.66,
+        "y": 141652.28,
+        "z": 3767.2498
+      },
+      "u": 0.5820622628036289,
+      "v": 0.8973013522219413,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Spiderling.webp",
+  "immunities": []
+}

@@ -1,1 +1,1401 @@
-{"id":"g2_pond_jockey","speciesKey":"pond_jockey","collectionGroup":"angry","game":"g2","danger":"unknown","order":264,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_pond_jockey.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"We're preparing this information for you.","interactionWithPlayer":"We're preparing this information for you.","interactionWithCreatures":"We're preparing this information for you.","strategy":"We're preparing this information for you.","groupId":null,"name":"Pond Jockey Swarm","tier":3,"cardTier":3,"technicalId":"PondJockey","bestiaryId":"PondJockey","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PondJockey.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PondJockey_G.png","weaknesses":["salty"],"resistances":[],"elementalWeaknesses":[{"type":"salty","bonusPct":15}],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[{"name":"Pond Jockey Homing Projectile 5 Projectile","technicalId":"PondJockey_HomingProjectile_5Projectile","tags":["buff","ranged"],"notes":"Attack damage: 0"},{"name":"Pond Jockey Homing Projectile 5 Projectile Burst","technicalId":"PondJockey_HomingProjectile_5Projectile_Burst","tags":["buff","ranged"],"notes":"Attack damage: 0"},{"name":"Pond Jockey Homing Projectile 3 Projectile","technicalId":"PondJockey_HomingProjectile_3Projectile","tags":["buff","ranged"],"notes":"Attack damage: 0"},{"name":"Pond Jockey Homing Projectile 3 Projectile Burst","technicalId":"PondJockey_HomingProjectile_3Projectile_Burst","tags":["buff","ranged"],"notes":"Attack damage: 0"},{"name":"Pond Jockey Homing Projectile 1 Projectile","technicalId":"PondJockey_HomingProjectile_1Projectile","tags":["buff","ranged"],"notes":"Attack damage: 0"},{"name":"Pond Jockey Homing Projectile 1 Projectile Burst","technicalId":"PondJockey_HomingProjectile_1Projectile_Burst","tags":["buff","ranged"],"notes":"Attack damage: 0"},{"name":"Pond Jockey Water Dodge","technicalId":"PondJockey_WaterDodge","tags":[],"notes":"Attack damage: 0"},{"name":"Melee","technicalId":"PondJockey_Melee","tags":["generic"],"notes":"Attack damage: 120"},{"name":"Melee W Swarm","technicalId":"PondJockey_Melee_W_Swarm","tags":["generic"],"notes":"Attack damage: 100"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":1000,"rating":3},"combatStats":{"health":1000},"description":"Teens regularly dump boxes of these freshwater shrimp into Skunk Pond as a prank, and now they dominate the ecosystem. They drop pond jockey meat on death.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_pond_jockey",
+  "speciesKey": "pond_jockey",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "alta",
+  "order": 264,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_pond_jockey.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Algae",
+      "minCount": 0,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Pond Jockey Meat",
+      "minCount": 1,
+      "maxCount": 5
+    }
+  ],
+  "abilities": [],
+  "behavior": "They move together as a swarm and patrol the aquatic areas they inhabit. Once in combat, they try to maintain pressure on their target from multiple directions.",
+  "interactionWithPlayer": "They are hostile and have much more health than their size suggests. In groups they can greatly extend a fight, especially underwater.",
+  "interactionWithCreatures": "They usually stay together and may fight other creatures that enter their area. Their numbers and durability make them difficult prey in the pond.",
+  "strategy": "Use Salty damage if you decide to fight them and avoid being surrounded. However, killing them is usually not worth it: they have a lot of health and their loot does not justify the time or resources required.",
+  "groupId": null,
+  "name": "Pond Jockey Swarm",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "PondJockey",
+  "bestiaryId": "PondJockey",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PondJockey.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PondJockey_G.png",
+  "weaknesses": [
+    "salty"
+  ],
+  "resistances": [],
+  "elementalWeaknesses": [
+    {
+      "type": "salty",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Pond Jockey Homing Projectile 5 Projectile",
+      "technicalId": "PondJockey_HomingProjectile_5Projectile",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 5 Projectile Passive Attack"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 5 Projectile Passive Attack",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Homing Projectile 5 Projectile Burst",
+      "technicalId": "PondJockey_HomingProjectile_5Projectile_Burst",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 15.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 5 Projectile Passive Attack Burst"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 5 Projectile Passive Attack Burst",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Homing Projectile 3 Projectile",
+      "technicalId": "PondJockey_HomingProjectile_3Projectile",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 3 Projectile Passive Attack"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 3 Projectile Passive Attack",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Homing Projectile 3 Projectile Burst",
+      "technicalId": "PondJockey_HomingProjectile_3Projectile_Burst",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 15.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 3 Projectile Passive Attack Burst"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 3 Projectile Passive Attack Burst",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Homing Projectile 1 Projectile",
+      "technicalId": "PondJockey_HomingProjectile_1Projectile",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 5.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 1 Projectile Passive Attack"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 1 Projectile Passive Attack",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Homing Projectile 1 Projectile Burst",
+      "technicalId": "PondJockey_HomingProjectile_1Projectile_Burst",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 15.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [
+        "Pond Jockey Homing Proctile 1 Projectile Passive Attack Burst"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Pond Jockey Homing Proctile 1 Projectile Passive Attack Burst",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Pond Jockey Water Dodge",
+      "technicalId": "PondJockey_WaterDodge",
+      "tags": [],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "movement_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Melee",
+      "technicalId": "PondJockey_Melee",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 120",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 5.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Melee W Swarm",
+      "technicalId": "PondJockey_Melee_W_Swarm",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 100",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 5.0,
+      "range": 600.0,
+      "stun": 4,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 3,
+    "value": 1000
+  },
+  "combatStats": {
+    "health": 1000,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "description": "Teens regularly dump boxes of these freshwater shrimp into Skunk Pond as a prank, and now they dominate the ecosystem. They drop pond jockey meat on death.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_be30f192451827cd",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -40369.062,
+        "y": -22608.025,
+        "z": -5653.5146
+      },
+      "u": 0.8283511871232074,
+      "v": 0.18812455687663376,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_079a0ad8a6173c30",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -53881.164,
+        "y": -22654.291,
+        "z": -5313.775
+      },
+      "u": 0.7777351772900205,
+      "v": 0.18792480823003627,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf9aea0deaafac14",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -43157.707,
+        "y": -29821.346,
+        "z": -5547.018
+      },
+      "u": 0.8179049898741586,
+      "v": 0.15698179313601482,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c0e69fc8340fa85c",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -77265.06,
+        "y": -19066.566,
+        "z": -5373.496
+      },
+      "u": 0.6901396640327774,
+      "v": 0.20341443804705292,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0f393f3f74f3d582",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -70651.2,
+        "y": -20156.477,
+        "z": -5373.496
+      },
+      "u": 0.7149150248756219,
+      "v": 0.19870886057846365,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f6f8822082285743",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -63188.387,
+        "y": -24859.502,
+        "z": -6389.3945
+      },
+      "u": 0.7428705432835822,
+      "v": 0.17840403892402393,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0b39f4edf5521c60",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -62640.113,
+        "y": -40065.16,
+        "z": -5653.5146
+      },
+      "u": 0.7449243645302897,
+      "v": 0.11275519082553337,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_063c924202434cb6",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -71127.42,
+        "y": -34113.4,
+        "z": -5197.989
+      },
+      "u": 0.713131116183787,
+      "v": 0.13845129606206255,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c78b52903c201ee",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -30938.893,
+        "y": 47020.574,
+        "z": -9784.716
+      },
+      "u": 0.8636763738952297,
+      "v": 0.48873879659330466,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca9db30282aad77c",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -30521.49,
+        "y": 42843.547,
+        "z": -12375.343
+      },
+      "u": 0.865239955516535,
+      "v": 0.4707049166371531,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_073c0016a130f9e6",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -31691.838,
+        "y": 3739.0286,
+        "z": -6805.1465
+      },
+      "u": 0.860855859994147,
+      "v": 0.3018752225583944,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8145124fd1dfd6ed",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -35387.645,
+        "y": 12946.339,
+        "z": -7705.0312
+      },
+      "u": 0.8470114556628622,
+      "v": 0.34162682829918206,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_725872d2e9cf2e5f",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -26262.36,
+        "y": 21031.68,
+        "z": -7126.4404
+      },
+      "u": 0.8811945542873867,
+      "v": 0.37653444776119405,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da601a573962e9ea",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -41691.027,
+        "y": 23497.564,
+        "z": -8030.0825
+      },
+      "u": 0.8233991379572725,
+      "v": 0.3871806456530905,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2d695aa0e989aa0a",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -45714.293,
+        "y": 16206.287,
+        "z": -9815.921
+      },
+      "u": 0.808328080070237,
+      "v": 0.3557013149844001,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9baaa96d7fc8b59f",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -55560.605,
+        "y": 25604.832,
+        "z": -9323.349
+      },
+      "u": 0.7714440316066725,
+      "v": 0.39627855623577024,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_984df98ac92a5108",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -56105.3,
+        "y": 17052.572,
+        "z": -7778.826
+      },
+      "u": 0.7694036172080773,
+      "v": 0.3593550625179188,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_46910671fd555e72",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -64660.918,
+        "y": 19793.824,
+        "z": -11908.939
+      },
+      "u": 0.7373544774948786,
+      "v": 0.3711901331309554,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3757ba29b905c63d",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -70415.21,
+        "y": 33903.543,
+        "z": -6170.93
+      },
+      "u": 0.7157990377524143,
+      "v": 0.4321073784973439,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c3b3cdb7634626bc",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -66132.28,
+        "y": 8471.71,
+        "z": -13455.941
+      },
+      "u": 0.7318427907521218,
+      "v": 0.32230808263765914,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9fbf3f0ea8e39019",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -78271.17,
+        "y": 1711.6888,
+        "z": -6511.267
+      },
+      "u": 0.6863708001170619,
+      "v": 0.2931223936723164,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c4dc0ce63fecc809",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -81583.86,
+        "y": -8199.177,
+        "z": -6029.5083
+      },
+      "u": 0.673961542873866,
+      "v": 0.2503332606121933,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9f1221c4de736692",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -67544.91,
+        "y": -3803.6213,
+        "z": -12526.616
+      },
+      "u": 0.7265511126719345,
+      "v": 0.2693106155190151,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f7a25f54cae3c11b",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -57294.97,
+        "y": -211.9041,
+        "z": -16292.519
+      },
+      "u": 0.7649471419373719,
+      "v": 0.2848174812446243,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4f8637ec6827c5e3",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -69453.99,
+        "y": -10138.981,
+        "z": -7072.521
+      },
+      "u": 0.7193997448053848,
+      "v": 0.2419583584450628,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca70c4f49d9c4468",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -63767.062,
+        "y": -19654.783,
+        "z": -7681.813
+      },
+      "u": 0.7407028406204272,
+      "v": 0.20087487228265452,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07d5947834297657",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -43384.973,
+        "y": -12628.117,
+        "z": -6565.241
+      },
+      "u": 0.8170536568920105,
+      "v": 0.23121177245973523,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_52679590ba7d08a6",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -37587.727,
+        "y": -4136.2935,
+        "z": -7262.5073
+      },
+      "u": 0.8387700012876792,
+      "v": 0.26787433786997217,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a378798e691d891b",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -51656.7,
+        "y": 2208.3489,
+        "z": -7173.903
+      },
+      "u": 0.7860679660520924,
+      "v": 0.29526667203642804,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d7957d4dede70b6b",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -46533.074,
+        "y": 8064.0903,
+        "z": -18672.47
+      },
+      "u": 0.8052609460930641,
+      "v": 0.3205482269466228,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ce36734fa19b6a2a",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -44641.59,
+        "y": 19933.072,
+        "z": -18693.066
+      },
+      "u": 0.8123463997658765,
+      "v": 0.3717913218989796,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e14f08f706129b9d",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -55064.56,
+        "y": 13115.259,
+        "z": -21553.54
+      },
+      "u": 0.7733022042727539,
+      "v": 0.34235612284341005,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e3a74e84399b1d29",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -63593.086,
+        "y": 18178.701,
+        "z": -17158.504
+      },
+      "u": 0.7413545505414106,
+      "v": 0.36421700743738933,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a64b5fecde745e8d",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -64571.24,
+        "y": 3962.3457,
+        "z": -19263.582
+      },
+      "u": 0.7376904091308165,
+      "v": 0.30283937092840885,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_029f061a81157a11",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -58312.57,
+        "y": 8077.0273,
+        "z": -16718.336
+      },
+      "u": 0.7611352367573895,
+      "v": 0.32060408109958677,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f43bd4b34efa2089",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -47275.72,
+        "y": 8460.991,
+        "z": -24784.549
+      },
+      "u": 0.8024790119988294,
+      "v": 0.32226180446917957,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b2134447e48a2ad6",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -58780.945,
+        "y": 12236.3545,
+        "z": -7099.4995
+      },
+      "u": 0.7593807152472929,
+      "v": 0.3385615440087697,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ad57d57b2595f2c9",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -36951.79,
+        "y": -5864.3228,
+        "z": -6707.5073
+      },
+      "u": 0.8411522060286801,
+      "v": 0.260413750960452,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0bec185c5b04d6da",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -57980.98,
+        "y": 16564.824,
+        "z": -20701.354
+      },
+      "u": 0.7623773649400057,
+      "v": 0.3572492612193271,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3fa7c9f7cd6e55f4",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -59414.957,
+        "y": 11366.092,
+        "z": -20350.66
+      },
+      "u": 0.7570057215100965,
+      "v": 0.3348042761109706,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca6bcda7d568416e",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -52058.137,
+        "y": 16851.986,
+        "z": -10049.925
+      },
+      "u": 0.7845641926836407,
+      "v": 0.3584890533097226,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_653ae624180e614e",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -66911.95,
+        "y": 15239.668,
+        "z": -8821.154
+      },
+      "u": 0.7289221656423763,
+      "v": 0.3515280379121343,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_44838b19f0c596ca",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -53943.22,
+        "y": 1572.3446,
+        "z": -9744.695
+      },
+      "u": 0.7775027170032193,
+      "v": 0.29252078957079014,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dc795e5a03238046",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -27425.436,
+        "y": 6306.4414,
+        "z": -5590.2847
+      },
+      "u": 0.8768376995024876,
+      "v": 0.312959760492453,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_153d071b3bc0355f",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -24080.691,
+        "y": 14648.047,
+        "z": -6438.704
+      },
+      "u": 0.8893670340064384,
+      "v": 0.3489737757315119,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b7c2d4e323f3bcd0",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -36500.47,
+        "y": 11314.861,
+        "z": -7228.1826
+      },
+      "u": 0.8428428399180568,
+      "v": 0.334583091592883,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5a813d4f900b29fc",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -60997.043,
+        "y": 16623.715,
+        "z": -16247.298
+      },
+      "u": 0.7510792653204565,
+      "v": 0.3575035169913146,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_883e02bb10e8dbda",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -51961.3,
+        "y": 3693.3777,
+        "z": -20069.754
+      },
+      "u": 0.7849269417617794,
+      "v": 0.30167812954212,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e10873cd9e80f5c0",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -58458.61,
+        "y": -14931.898,
+        "z": -12112.531
+      },
+      "u": 0.7605881744220077,
+      "v": 0.2212654374230542,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2f0f868787bbb1b3",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -46308.547,
+        "y": 16566.342,
+        "z": -18680.9
+      },
+      "u": 0.8061020188469418,
+      "v": 0.3572558150265621,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_67cd1696ef837c42",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -46415.324,
+        "y": 15908.542,
+        "z": -16299.434
+      },
+      "u": 0.8057020347673398,
+      "v": 0.3544158318913905,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d930e96937369cd4",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -43907.37,
+        "y": 13976.913,
+        "z": -15619.806
+      },
+      "u": 0.8150967702663156,
+      "v": 0.34607622443713637,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0e2974bc4e588a9c",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -65006.617,
+        "y": 8638.691,
+        "z": -18827.293
+      },
+      "u": 0.7360594973368452,
+      "v": 0.32302900575090643,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bd268a6db85afae3",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -65733.69,
+        "y": 6445.6885,
+        "z": -18979.959
+      },
+      "u": 0.7333358993268949,
+      "v": 0.31356094537482077,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cf6b49a699a6f8f8",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -52159.28,
+        "y": -12061.174,
+        "z": -7169.825
+      },
+      "u": 0.7841853134328357,
+      "v": 0.23365948994012983,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cee242b99adf0df9",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -52018.715,
+        "y": -14135.923,
+        "z": -6745.7764
+      },
+      "u": 0.7847118665496049,
+      "v": 0.2247019767602665,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c9e4a6783904636",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -51302.312,
+        "y": -12206.219,
+        "z": -6431.2134
+      },
+      "u": 0.7873954949956101,
+      "v": 0.23303327322708495,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9fb6dd3a21256721",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -64903.797,
+        "y": 27871.922,
+        "z": -7728.287
+      },
+      "u": 0.7364446585894059,
+      "v": 0.40606648169322873,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1268be1989aba873",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -65713.04,
+        "y": 29985.068,
+        "z": -6879.252
+      },
+      "u": 0.7334132537313434,
+      "v": 0.41518976993001094,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b6c54b153130144c",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -66462.67,
+        "y": 28481.965,
+        "z": -7680.3315
+      },
+      "u": 0.7306051577407083,
+      "v": 0.40870027894426175,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_21e7eabe318844ee",
+      "targetType": "creature",
+      "targetId": "g2_pond_jockey",
+      "technicalId": "PondJockey",
+      "map": "surface",
+      "world": {
+        "x": -68732.29,
+        "y": 32084.537,
+        "z": -17344.803
+      },
+      "u": 0.7221032156862747,
+      "v": 0.424254009140737,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Algae",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Algae",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pond Jockey Meat",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Pond Jockey Meat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

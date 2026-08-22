@@ -22,6 +22,8 @@ const String tutorialAnchorListSort = 'tutorial-list-sort';
 const String tutorialAnchorListSettings = 'tutorial-list-settings';
 const String tutorialAnchorListCodex = 'tutorial-list-codex';
 const String tutorialAnchorListProfile = 'tutorial-list-profile';
+const String tutorialAnchorPrimaryEquipment = 'tutorial-primary-equipment';
+const String tutorialAnchorPrimaryMap = 'tutorial-primary-map';
 const String tutorialAnchorDetailSummary = 'tutorial-detail-summary';
 const String tutorialAnchorDetailVariant = 'tutorial-detail-variant';
 const String tutorialAnchorDetailEffects = 'tutorial-detail-effects';
@@ -42,6 +44,8 @@ enum TutorialStep {
   filters,
   sort,
   settings,
+  equipmentLibrary,
+  map,
   codex,
   detailSummary,
   detailVariant,
@@ -464,6 +468,12 @@ class TutorialController extends ChangeNotifier {
           await _goToStep(TutorialStep.settings);
           return;
         case TutorialStep.settings:
+          await _goToStep(TutorialStep.equipmentLibrary);
+          return;
+        case TutorialStep.equipmentLibrary:
+          await _goToStep(TutorialStep.map);
+          return;
+        case TutorialStep.map:
           await _goToStep(TutorialStep.codex);
           return;
         case TutorialStep.codex:
@@ -520,8 +530,14 @@ class TutorialController extends ChangeNotifier {
         case TutorialStep.settings:
           await _goToStep(TutorialStep.sort);
           return;
-        case TutorialStep.codex:
+        case TutorialStep.equipmentLibrary:
           await _goToStep(TutorialStep.settings);
+          return;
+        case TutorialStep.map:
+          await _goToStep(TutorialStep.equipmentLibrary);
+          return;
+        case TutorialStep.codex:
+          await _goToStep(TutorialStep.map);
           return;
         case TutorialStep.detailSummary:
           await _closeDemoEnemyPresentation();
@@ -841,6 +857,10 @@ class TutorialController extends ChangeNotifier {
         return tutorialAnchorListSort;
       case TutorialStep.settings:
         return tutorialAnchorListSettings;
+      case TutorialStep.equipmentLibrary:
+        return tutorialAnchorPrimaryEquipment;
+      case TutorialStep.map:
+        return tutorialAnchorPrimaryMap;
       case TutorialStep.codex:
         return tutorialAnchorListCodex;
       case TutorialStep.detailSummary:
@@ -871,6 +891,12 @@ class TutorialController extends ChangeNotifier {
     }
 
     switch (step) {
+      case TutorialStep.equipmentLibrary:
+        await _goToStep(TutorialStep.map);
+        return;
+      case TutorialStep.map:
+        await _goToStep(TutorialStep.codex);
+        return;
       case TutorialStep.detailVariant:
         await _goToStep(TutorialStep.detailEffects);
         return;
@@ -919,6 +945,8 @@ class TutorialController extends ChangeNotifier {
       case TutorialStep.filters:
       case TutorialStep.sort:
       case TutorialStep.settings:
+      case TutorialStep.equipmentLibrary:
+      case TutorialStep.map:
       case TutorialStep.codex:
       case null:
         return TutorialTargetScope.list;

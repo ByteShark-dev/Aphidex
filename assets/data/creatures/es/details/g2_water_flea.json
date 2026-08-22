@@ -1,1 +1,703 @@
-{"id":"g2_water_flea","speciesKey":"g1_water_flea","collectionGroup":"angry","game":"g2","danger":"unknown","order":319,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_water_flea.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"Pulga de agua","tier":1,"cardTier":0,"technicalId":"WaterFlea","bestiaryId":"WaterFlea","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_WaterFlea.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_WaterFlea_G.png","weaknesses":["salty","stabbing"],"resistances":["slashing","fresh"],"elementalWeaknesses":[{"type":"salty","bonusPct":30}],"damageWeaknesses":[{"type":"stabbing","bonusPct":30}],"resistancesV2":[{"type":"slashing","bonusPct":50},{"type":"fresh","bonusPct":25}],"weakPoints":[],"attacks":[{"name":"Mordida","technicalId":"WaterFlea_Bite","tags":["stabbing"],"notes":"Daño del ataque: 20"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":200,"rating":1},"combatStats":{"health":200},"description":"Una macabra criatura que flota sobre el agua en busca de presas. Al morir, suelta carne de pulga de agua.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_water_flea",
+  "speciesKey": "g1_water_flea",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "intermedia",
+  "order": 319,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_water_flea.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Algae",
+      "minCount": 0,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "Water Flea Chunk",
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ],
+  "abilities": [],
+  "behavior": "Nada de forma aleatoria por las zonas donde habita. Si detecta una amenaza, intentará acercarse para atacarla, aunque su baja velocidad limita bastante su capacidad para perseguirla.",
+  "interactionWithPlayer": "Es hostil hacia el jugador, pero por sí sola no representa una amenaza importante.",
+  "interactionWithCreatures": "Es presa de las arañas campana y de otras criaturas acuáticas. Intentará defenderse si es atacada, pero debido a su poca fuerza normalmente perderá el enfrentamiento.",
+  "strategy": "Una lanza con infusión Salada o Picante es una buena opción contra este enemigo. Si muere por daño Salado, su carne se convertirá en carne seca; si muere por daño Picante, saldrá cocinada. En general, no vale mucho la pena enfrentarlas y normalmente puedes simplemente pasar de largo.",
+  "groupId": null,
+  "name": "Pulga de agua",
+  "tier": 1,
+  "cardTier": 0,
+  "technicalId": "WaterFlea",
+  "bestiaryId": "WaterFlea",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_WaterFlea.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_WaterFlea_G.png",
+  "weaknesses": [
+    "salty",
+    "stabbing"
+  ],
+  "resistances": [
+    "slashing",
+    "fresh"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "salty",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 30
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "slashing",
+      "bonusPct": 50
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Mordida",
+      "technicalId": "WaterFlea_Bite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 20",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 20.0,
+      "cooldownSeconds": 0.0,
+      "range": 300.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 1,
+    "value": 200
+  },
+  "combatStats": {
+    "health": 200,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "description": "Una macabra criatura que flota sobre el agua en busca de presas. Al morir, suelta carne de pulga de agua.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_fcaf32c73e161596",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -63869.926,
+        "y": -28040.127,
+        "z": -6624.0806
+      },
+      "u": 0.7403175145449225,
+      "v": 0.1646720210473058,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4a25e8d4cb463aec",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -63517.293,
+        "y": -34468.848,
+        "z": -6371.6577
+      },
+      "u": 0.7416384693005561,
+      "v": 0.13691668626359726,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_42ff35c89975d73a",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -62869.46,
+        "y": -39951.38,
+        "z": -6271.1807
+      },
+      "u": 0.7440652361720809,
+      "v": 0.11324642415043422,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cdccbe2713f2a418",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -72605.25,
+        "y": -46274.402,
+        "z": -5566.0513
+      },
+      "u": 0.7075952004682471,
+      "v": 0.08594743381398096,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6b8e9cf5317a9dc3",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -73810.04,
+        "y": -48516.81,
+        "z": -5168.5864
+      },
+      "u": 0.7030820860403864,
+      "v": 0.07626607032633444,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a466c0125d7b165",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -48647.91,
+        "y": -23116.957,
+        "z": -5407.3945
+      },
+      "u": 0.7973388211881768,
+      "v": 0.18592729585968462,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b5c7b32b84bc2f52",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -47443.125,
+        "y": -21966.793,
+        "z": -5579.648
+      },
+      "u": 0.8018519168861574,
+      "v": 0.19089300939370935,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c3b5082dc8ac0abf",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -41656.848,
+        "y": -22676.2,
+        "z": -5887.609
+      },
+      "u": 0.8235271716710565,
+      "v": 0.18783021839952782,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1da31ba7a127ea7f",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -33056.17,
+        "y": -18312.484,
+        "z": -5615.6797
+      },
+      "u": 0.8557451050629208,
+      "v": 0.20667010871068392,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_022bfea8e708a017",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -29353.484,
+        "y": -14880.133,
+        "z": -5440.545
+      },
+      "u": 0.8696152779631255,
+      "v": 0.22148892743064338,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0b899576f7666a26",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -54027.68,
+        "y": -24339.44,
+        "z": -5441.0
+      },
+      "u": 0.7771863318700615,
+      "v": 0.18064935255923767,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_807f976c3077ba93",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -46020.15,
+        "y": 41488.7,
+        "z": -6213.9893
+      },
+      "u": 0.807182347088089,
+      "v": 0.4648555055232313,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c6bf57231d703b62",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -47163.848,
+        "y": 42235.062,
+        "z": -7032.349
+      },
+      "u": 0.8028980818261633,
+      "v": 0.4680778458891981,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9da8d699406d2ad6",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -39358.992,
+        "y": 45778.824,
+        "z": -7909.442
+      },
+      "u": 0.8321348851038923,
+      "v": 0.48337767002276755,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_028974ca88d37937",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -68352.77,
+        "y": 34676.742,
+        "z": -16369.764
+      },
+      "u": 0.723524888498683,
+      "v": 0.43544558482165446,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2a498490fd663386",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -30293.055,
+        "y": 6548.4707,
+        "z": -11853.186
+      },
+      "u": 0.8660956675446299,
+      "v": 0.3140046968412177,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b9c7f20a49d9c3cd",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -34927.676,
+        "y": 32675.186,
+        "z": -7034.572
+      },
+      "u": 0.848734488498683,
+      "v": 0.42680407481237875,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0002b05c3a72b5be",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -28316.676,
+        "y": 17077.746,
+        "z": -8741.208
+      },
+      "u": 0.8734991358501609,
+      "v": 0.35946374864659747,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_67402dd46627b86a",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -37912.87,
+        "y": 2263.5244,
+        "z": -8982.247
+      },
+      "u": 0.83755202341235,
+      "v": 0.2955048865233156,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1ce1bea94abc4170",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -34947.35,
+        "y": 2749.8774,
+        "z": -7578.556
+      },
+      "u": 0.848660790166813,
+      "v": 0.29760466505438904,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e283c599d6d523a9",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -46620.145,
+        "y": -13206.295,
+        "z": -6867.2983
+      },
+      "u": 0.8049347802165643,
+      "v": 0.22871554903448857,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4080248f28d9be68",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -59996.71,
+        "y": -8289.269,
+        "z": -10618.19
+      },
+      "u": 0.7548264887328066,
+      "v": 0.24994429776541022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_09996d2ff47bf527",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -72328.89,
+        "y": -8853.112,
+        "z": -9686.312
+      },
+      "u": 0.708630438396254,
+      "v": 0.2475099642128342,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f91b52d08bccdce8",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -72868.24,
+        "y": 6825.8086,
+        "z": -7881.7515
+      },
+      "u": 0.7066100462393914,
+      "v": 0.3152020744008769,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ab67dacafe0248f6",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -71306.61,
+        "y": 24072.447,
+        "z": -8823.702
+      },
+      "u": 0.7124598747439275,
+      "v": 0.3896626432582848,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6d082342727cf274",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -67138.73,
+        "y": 23063.984,
+        "z": -11397.568
+      },
+      "u": 0.7280726532045655,
+      "v": 0.38530870906484527,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b564c823622124ea",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -52065.0,
+        "y": 17840.959,
+        "z": -14407.943
+      },
+      "u": 0.7845384840503365,
+      "v": 0.3627588414537482,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_852bd4f6fe0ad923",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -54684.684,
+        "y": 8901.158,
+        "z": -16909.998
+      },
+      "u": 0.7747252106526193,
+      "v": 0.3241621797453411,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b172ef00e29f734c",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -54684.684,
+        "y": 8901.158,
+        "z": -14300.302
+      },
+      "u": 0.7747252106526193,
+      "v": 0.3241621797453411,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7af15f40b8db4dbe",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -68183.19,
+        "y": 14984.455,
+        "z": -21028.387
+      },
+      "u": 0.7241601311091601,
+      "v": 0.35042618230879496,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa54511c20744d03",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -55817.785,
+        "y": 14123.071,
+        "z": -17663.12
+      },
+      "u": 0.7704806414983905,
+      "v": 0.34670724641200773,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9573b19b64da11d6",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -49201.812,
+        "y": 7065.273,
+        "z": -24625.334
+      },
+      "u": 0.795263917588528,
+      "v": 0.3162359370604604,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2bbe923ba4d32971",
+      "targetType": "creature",
+      "targetId": "g2_water_flea",
+      "technicalId": "WaterFlea",
+      "map": "surface",
+      "world": {
+        "x": -56175.42,
+        "y": 18955.707,
+        "z": -21362.375
+      },
+      "u": 0.7691409493707931,
+      "v": 0.3675716500885403,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Algae",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Water Flea Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

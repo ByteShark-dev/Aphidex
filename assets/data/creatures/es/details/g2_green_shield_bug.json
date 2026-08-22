@@ -1,1 +1,590 @@
-{"id":"g2_green_shield_bug","speciesKey":"g1_green_shield_bug","collectionGroup":"angry","game":"g2","danger":"unknown","order":238,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_green_shield_bug.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"Chinche verde","tier":3,"cardTier":3,"technicalId":"GreenShieldBug","bestiaryId":"GreenShieldBug","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_GreenShield.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_GreenShield_G.png","weaknesses":["fresh","stabbing"],"resistances":["generic","spicy","gas"],"elementalWeaknesses":[{"type":"fresh","bonusPct":15}],"damageWeaknesses":[{"type":"stabbing","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25},{"type":"spicy","bonusPct":75},{"type":"gas","bonusPct":90}],"weakPoints":[],"attacks":[{"name":"Mordida L","technicalId":"GreenShieldBug_BiteL_Augusta","tags":["generic"],"notes":"Daño del ataque: 100"},{"name":"Mordida R","technicalId":"GreenShieldBug_BiteR_Augusta","tags":["generic"],"notes":"Daño del ataque: 100"},{"name":"Nube de gas","technicalId":"GreenShieldBug_Fart_Augusta","tags":["gas"],"notes":"Daño del ataque: 0"},{"name":"Salto","technicalId":"GreenShieldBug_Leap_Augusta","tags":["generic"],"notes":"Daño del ataque: 125"},{"name":"Salto Dodge","technicalId":"GreenShieldBug_LeapDodge_Augusta","tags":["generic"],"notes":"Daño del ataque: 45"},{"name":"Carga","technicalId":"GreenShieldBug_Charge_Augusta","tags":["generic"],"notes":"Daño del ataque: 125"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":2000,"rating":5},"combatStats":{"health":2000},"description":"Una enorme bestia maloliente que patrulla la zona que rodea el cobertizo. Al morir, puede soltar suciedad dura, parte de chinche apestosa y la todopoderosa glándula superapestosa.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_green_shield_bug",
+  "speciesKey": "g1_green_shield_bug",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "muy_alta",
+  "order": 238,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_green_shield_bug.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Stink Bug Gas Sack",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Stink Bug Gas Sack Super",
+      "minCount": 2,
+      "maxCount": 5
+    },
+    {
+      "section": "loot",
+      "item": "Stinkbug Part Green Shield",
+      "minCount": 2,
+      "maxCount": 6
+    }
+  ],
+  "abilities": [],
+  "behavior": "Patrulla las zonas donde habita y ataca utilizando mordidas, cargas, saltos y grandes nubes de gas. A diferencia de Grounded, donde era común encontrarlas solas, en Grounded 2 pueden aparecer en grandes cantidades e incluso reunirse en grupos de tres.",
+  "interactionWithPlayer": "Es hostil y bastante resistente. Una sola puede controlarse con relativa facilidad si vas preparado, pero varias liberando gas y atacando al mismo tiempo pueden convertir rápidamente toda la zona en un espacio peligroso.",
+  "interactionWithCreatures": "Sus nubes de gas pueden alcanzar a otras criaturas cercanas y provocar que terminen involucrándose en el combate. Debido a que varias chinches verdes pueden compartir la misma zona, también es común que un enfrentamiento termine atrayendo a más de una.",
+  "strategy": "Utiliza un arma Perforante con infusión Fresca y lleva protección contra el gas. La zona donde habitan ya contiene numerosas nubes tóxicas, por lo que probablemente tendrás esta protección equipada antes de encontrarlas; esa misma protección funciona contra el gas de las chinches verdes. Si aparecen varias, evita luchar en medio de sus nubes y trata de separarlas para no enfrentarte a las tres simultáneamente.",
+  "groupId": null,
+  "name": "Chinche verde",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "GreenShieldBug",
+  "bestiaryId": "GreenShieldBug",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_GreenShield.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_GreenShield_G.png",
+  "weaknesses": [
+    "fresh",
+    "stabbing"
+  ],
+  "resistances": [
+    "generic",
+    "spicy",
+    "gas"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 75
+    },
+    {
+      "type": "gas",
+      "bonusPct": 90
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Mordida L",
+      "technicalId": "GreenShieldBug_BiteL_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 100",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 0.0,
+      "range": 500.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mordida R",
+      "technicalId": "GreenShieldBug_BiteR_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 100",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 0.0,
+      "range": 500.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Nube de gas",
+      "technicalId": "GreenShieldBug_Fart_Augusta",
+      "tags": [
+        "gas",
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [
+        "gas"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 25.0,
+      "range": 1000.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Salto",
+      "technicalId": "GreenShieldBug_Leap_Augusta",
+      "tags": [
+        "general",
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 125",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 125.0,
+      "cooldownSeconds": 30.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Salto Dodge",
+      "technicalId": "GreenShieldBug_LeapDodge_Augusta",
+      "tags": [
+        "general",
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 45",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 20.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "movement_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Carga",
+      "technicalId": "GreenShieldBug_Charge_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 125",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 125.0,
+      "cooldownSeconds": 30.0,
+      "range": 500.0,
+      "stun": 20,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 5,
+    "value": 2000
+  },
+  "combatStats": {
+    "health": 2000,
+    "stunThreshold": 120,
+    "stunCooldownSeconds": 60
+  },
+  "description": "Una enorme bestia maloliente que patrulla la zona que rodea el cobertizo. Al morir, puede soltar suciedad dura, parte de chinche apestosa y la todopoderosa glándula superapestosa.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_29ed094a90da63b6",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -46938.02,
+        "y": -35355.17,
+        "z": -4333.5957
+      },
+      "u": 0.80374402809482,
+      "v": 0.13309008314360404,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95c4d03847327398",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -39357.688,
+        "y": -38543.254,
+        "z": -4458.608
+      },
+      "u": 0.8321397698565993,
+      "v": 0.11932586180959605,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a358e3174a0aa709",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -35130.832,
+        "y": -34756.12,
+        "z": -4348.3154
+      },
+      "u": 0.8479734709979514,
+      "v": 0.13567641925963403,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7624cd2a1dfb0377",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -33023.81,
+        "y": -36220.875,
+        "z": -4639.2075
+      },
+      "u": 0.8558663248463565,
+      "v": 0.12935249177839614,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5a7a1264039360bd",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -30261.898,
+        "y": -36008.67,
+        "z": -4639.2075
+      },
+      "u": 0.8662123809189348,
+      "v": 0.1302686648115356,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_881116f479d4c3c8",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -35931.094,
+        "y": -53031.38,
+        "z": -3564.6619
+      },
+      "u": 0.8449757087503659,
+      "v": 0.05677488354835992,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_63926a439d1b69e1",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -36079.97,
+        "y": -24008.188,
+        "z": -3907.8042
+      },
+      "u": 0.8444180228270411,
+      "v": 0.18207949864238132,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2ac137072ce50ab9",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -35108.75,
+        "y": -24098.625,
+        "z": -1724.2458
+      },
+      "u": 0.8480561896400352,
+      "v": 0.181689046293954,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d58316e792188165",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -31107.746,
+        "y": -23558.846,
+        "z": -3644.025
+      },
+      "u": 0.8630438546093065,
+      "v": 0.18401948602748963,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_acff4e1a47289b6f",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -51777.332,
+        "y": -19005.31,
+        "z": -4484.774
+      },
+      "u": 0.7856160814749781,
+      "v": 0.20367890446074713,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2877f40e767b65d8",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -48068.273,
+        "y": -22064.965,
+        "z": -3116.5908
+      },
+      "u": 0.7995101274802459,
+      "v": 0.19046916198667677,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1feedecefcc394b8",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -85175.805,
+        "y": -38929.094,
+        "z": -4238.3765
+      },
+      "u": 0.6605062031021364,
+      "v": 0.11766003770975632,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da87288465a601a4",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -78287.21,
+        "y": -34189.387,
+        "z": -4238.3765
+      },
+      "u": 0.6863107146619841,
+      "v": 0.13812323008685384,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_05850f47792337b5",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -19332.736,
+        "y": 74378.375,
+        "z": -968.8912
+      },
+      "u": 0.9071527594966344,
+      "v": 0.6068532591280884,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e88367d1bf61d119",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -28247.66,
+        "y": 69960.555,
+        "z": 2036.3859
+      },
+      "u": 0.8737576681299385,
+      "v": 0.5877797804199342,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b48f5a2031a508c",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -56871.203,
+        "y": 34543.805,
+        "z": -4694.834
+      },
+      "u": 0.766534562949956,
+      "v": 0.4348716431402311,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fb6e7b88086c61e2",
+      "targetType": "creature",
+      "targetId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug",
+      "map": "surface",
+      "world": {
+        "x": -13935.914,
+        "y": 51519.88,
+        "z": 1447.3759
+      },
+      "u": 0.9273691251975418,
+      "v": 0.5081640826376591,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Stink Bug Gas Sack",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stink Bug Gas Sack Super",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Stink Bug Gas Sack Super",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stink Bug Gas Sack Super",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stinkbug Part Green Shield",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Stinkbug Part Green Shield",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stinkbug Part Green Shield",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

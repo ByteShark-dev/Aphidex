@@ -1,1 +1,427 @@
-{"id":"g2_ogrr_pincher_earwig","speciesKey":"ogrr_pincher_earwig","collectionGroup":"ogrr","name":"O.G.R.R. Pincher Earwig","game":"g2","tier":3,"danger":"imposible","isBoss":false,"order":227,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigM_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigM_OGRR_G.png","photo":"assets/g2/creatures/photos/OGRR_Pincher_Earwig.webp","weaknesses":[],"resistances":[],"temperament":"aggressive","health":{"value":1600,"rating":4},"description":"A pincher earwig genetically modified to be extra dangerous. They are resistant to the flavor of their mutation.","behavior":"Both O.G.R.R. earwigs share the same locations: inside the scarecrow pumpkin and in the cave between the statue shrubs and the greenhouse. The cave route is tied to releasing the lab and the nighttime cycle, but the scarecrow spawn itself is not night-only.","interactionWithPlayer":"It forces much tighter blocking and side movement. A small mistake rarely stays as a single hit; more often it gets followed by another near-immediate entry.","interactionWithCreatures":"Inside an O.G.R.R. wave it usually fills the close pursuer role, pinning you from the front while other variants cut off longer routes or punish from behind.","strategy":"Do not stay in front of it any longer than absolutely necessary, and punish the short recoveries after the heavy attack. Sour still works well, but here protecting your frontal space matters more than the element itself.","environments":["After releasing the O.G.R.Rs. in the Scarecrow Lab","Inside the Scarecrow Pumpkin","Cave between the Statue Shrubs and the Greenhouse"],"loot":[{"section":"loot","item":"Earwig Head","minCount":0,"maxCount":1},{"section":"loot","item":"Earwig Part","minCount":2,"maxCount":4},{"section":"loot","item":"Earwig Pincer","minCount":0,"maxCount":2},{"section":"rare","item":"Earwig Part","minCount":0,"maxCount":4},{"section":"rare","item":"Earwig Pincer","minCount":0,"maxCount":1},{"section":"rare","item":"Pincer Pincher","minCount":0,"maxCount":1}],"combatStats":{"health":1600,"attackDamageSummary":"3-Hit Combo: 68.755-Hit Combo: 68.75Charged Pinch: 112.5"},"abilities":[{"name":"3-Hit Combo","description":"A three-hit series with very little downtime between swings."},{"name":"5-Hit Combo","description":"A long sequence that keeps pressure going unless you break the rhythm."},{"name":"Charged Pinch","description":"A heavy pinch attack that punishes weak defense."}],"elementalWeaknesses":[],"resistancesV2":[],"infusions":[{"id":"fresh","name":"Fresh","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["All direct hits also apply 20 Chill buildup."],"recommendations":"Do not stay on fresh damage as your main answer.","combatTips":["Swap to spicy damage or a reliable physical weapon if your build depends on fresh."],"imageAsset":"assets/g2/creatures/photos/OGRR_Pincher_Earwig_Fresh.webp"},{"id":"sour","name":"Sour","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["All direct hits also apply 20 Tang buildup."],"recommendations":"Avoid staying on sour weapons as your main answer.","combatTips":["Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."],"imageAsset":"assets/g2/creatures/photos/OGRR_Pincher_Earwig_Sour.webp"},{"id":"spicy","name":"Spicy","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["All direct hits also apply 20 Sizzle buildup."],"recommendations":"Do not depend on spicy damage while this infusion is active.","combatTips":["Fresh is the cleanest elemental answer if the creature lets you hold the tempo."],"imageAsset":"assets/g2/creatures/photos/OGRR_Pincher_Earwig_Spicy.webp"}],"lesserMutationsDescription":"Besides the main infusion, it can also spawn with a random lesser mutation. That roll is independent from the active flavor and stays separate from the selector.","lesserMutations":["Attack Up: increases attack damage by 33%.","The Quickness: increases movement speed by 200%.","Damage Resist: reduces all incoming damage by 25%.","Life Steal: heals for 150% of the damage it deals.","Blastwave: on hit, it has a 33% chance to trigger an unblockable extra blast for 50 explosive damage and a long stun.","Shockwave: on hit, it has a 75% chance to fire an extra wave for 50 shock damage. Weapons do not block it, but shields do.","Summon Ally: on hit, it has a 75% chance to summon a faction ally: Spiderling (25 HP) if it is a spider, Northern Scorpling (200 HP) if it is a scorpion, or Mini Larva (75 HP) otherwise."],"inflictsEffects":["chopping"],"inflicts":["Chopping damage."],"specialTraits":["Its combat affinities depend on the active infusion. Select the flavor to review the current immunities, weaknesses, and applied effects."],"groupId":null,"cardTier":3,"technicalId":"EarwigOGRE","bestiaryId":"EarwigOGRE","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Combo 3 X","technicalId":"EarwigCombo3X","tags":["chopping"],"notes":"Attack damage: 55"},{"name":"Combo 5 X","technicalId":"EarwigCombo5X","tags":["chopping"],"notes":"Attack damage: 55"},{"name":"Power Attack","technicalId":"EarwigPowerAttack","tags":["chopping"],"notes":"Attack damage: 90"},{"name":"Block Defensive","technicalId":"BlockDefensive","tags":["maine"],"notes":"Attack damage: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_pincher_earwig",
+  "speciesKey": "ogrr_pincher_earwig",
+  "collectionGroup": "ogrr",
+  "name": "O.G.R.R. Pincher Earwig",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible",
+  "isBoss": false,
+  "order": 227,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_EarwigM_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_EarwigM_OGRR_G.png",
+  "photo": "assets/g2/creatures/photos/OGRR_Pincher_Earwig.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 4,
+    "value": 1600
+  },
+  "description": "A pincher earwig genetically modified to be extra dangerous. They are resistant to the flavor of their mutation.",
+  "behavior": "Both O.G.R.R. earwigs share the same locations: inside the scarecrow pumpkin and in the cave between the statue shrubs and the greenhouse. The cave route is tied to releasing the lab and the nighttime cycle, but the scarecrow spawn itself is not night-only.",
+  "interactionWithPlayer": "It forces much tighter blocking and side movement. A small mistake rarely stays as a single hit; more often it gets followed by another near-immediate entry.",
+  "interactionWithCreatures": "Inside an O.G.R.R. wave it usually fills the close pursuer role, pinning you from the front while other variants cut off longer routes or punish from behind.",
+  "strategy": "Do not stay in front of it any longer than absolutely necessary, and punish the short recoveries after the heavy attack. Sour still works well, but here protecting your frontal space matters more than the element itself.",
+  "environments": [
+    "After releasing the O.G.R.Rs. in the Scarecrow Lab",
+    "Inside the Scarecrow Pumpkin",
+    "Cave between the Statue Shrubs and the Greenhouse"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Earwig",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Earwig Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Earwig Part",
+      "minCount": 2,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "Earwig Pincer",
+      "minCount": 0,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1600,
+    "stunThreshold": 90,
+    "stunCooldownSeconds": 15
+  },
+  "abilities": [
+    {
+      "name": "3-Hit Combo",
+      "description": "A three-hit series with very little downtime between swings."
+    },
+    {
+      "name": "5-Hit Combo",
+      "description": "A long sequence that keeps pressure going unless you break the rhythm."
+    },
+    {
+      "name": "Charged Pinch",
+      "description": "A heavy pinch attack that punishes weak defense."
+    }
+  ],
+  "elementalWeaknesses": [],
+  "resistancesV2": [],
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresh",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Chill buildup."
+      ],
+      "recommendations": "Do not stay on fresh damage as your main answer.",
+      "combatTips": [
+        "Swap to spicy damage or a reliable physical weapon if your build depends on fresh."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Pincher_Earwig_Fresh.webp"
+    },
+    {
+      "id": "sour",
+      "name": "Sour",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Tang buildup."
+      ],
+      "recommendations": "Avoid staying on sour weapons as your main answer.",
+      "combatTips": [
+        "Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Pincher_Earwig_Sour.webp"
+    },
+    {
+      "id": "spicy",
+      "name": "Spicy",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Sizzle buildup."
+      ],
+      "recommendations": "Do not depend on spicy damage while this infusion is active.",
+      "combatTips": [
+        "Fresh is the cleanest elemental answer if the creature lets you hold the tempo."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Pincher_Earwig_Spicy.webp"
+    }
+  ],
+  "lesserMutationsDescription": "Besides the main infusion, it can also spawn with a random lesser mutation. That roll is independent from the active flavor and stays separate from the selector.",
+  "lesserMutations": [
+    "Attack Up: increases attack damage by 33%.",
+    "The Quickness: increases movement speed by 200%.",
+    "Damage Resist: reduces all incoming damage by 25%.",
+    "Life Steal: heals for 150% of the damage it deals.",
+    "Blastwave: on hit, it has a 33% chance to trigger an unblockable extra blast for 50 explosive damage and a long stun.",
+    "Shockwave: on hit, it has a 75% chance to fire an extra wave for 50 shock damage. Weapons do not block it, but shields do.",
+    "Summon Ally: on hit, it has a 75% chance to summon a faction ally: Spiderling (25 HP) if it is a spider, Northern Scorpling (200 HP) if it is a scorpion, or Mini Larva (75 HP) otherwise."
+  ],
+  "inflictsEffects": [
+    "chopping"
+  ],
+  "inflicts": [
+    "Chopping damage."
+  ],
+  "specialTraits": [
+    "Its combat affinities depend on the active infusion. Select the flavor to review the current immunities, weaknesses, and applied effects."
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "EarwigOGRE",
+  "bestiaryId": "EarwigOGRE",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Combo 3 X",
+      "technicalId": "EarwigCombo3X",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 55",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 5 X",
+      "technicalId": "EarwigCombo5X",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 55",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power Attack",
+      "technicalId": "EarwigPowerAttack",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 90",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 90.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 12,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Defensive",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 7.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_60bac83680ba2d48",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_pincher_earwig",
+      "technicalId": "EarwigOGRE",
+      "map": "surface",
+      "world": {
+        "x": -144205.05,
+        "y": -34175.14,
+        "z": 17635.125
+      },
+      "u": 0.4393840678958151,
+      "v": 0.13818474002867023,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7d952621d3a8e36",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_pincher_earwig",
+      "technicalId": "EarwigOGRE",
+      "map": "surface",
+      "world": {
+        "x": -172611.34,
+        "y": -8047.818,
+        "z": -2392.6409
+      },
+      "u": 0.3329747872402693,
+      "v": 0.2509867373640273,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "OGRR creatures can be released from the scarecrow laboratory. Afterwards they may appear in different areas, mainly at night.",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Earwig",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Earwig Part",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Part",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Pincer",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Pincer",
+      "countLabel": "1",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Earwig Pincer",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}
