@@ -1,0 +1,101 @@
+{
+  "datasetMarkers": 4469,
+  "policy": {
+    "far": "clusters_only",
+    "medium": "culled_compact_pointers",
+    "near": "culled_anchored_cards",
+    "viewportOverscan": {
+      "default": 0.02,
+      "cards": 0.035
+    },
+    "minimumTouchTargetLogicalPixels": 48,
+    "coordinateTransformChanged": false
+  },
+  "layers": {
+    "surface": [
+      {
+        "mode": "clusters",
+        "normalizedViewport": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1.0,
+          "bottom": 1.0
+        },
+        "datasetMarkers": 4302,
+        "visibleMarkers": 4302,
+        "renderedMarkerWidgets": 235,
+        "cellSize": 0.06
+      },
+      {
+        "mode": "pointers",
+        "normalizedViewport": {
+          "left": 0.3,
+          "top": 0.3,
+          "right": 0.7,
+          "bottom": 0.7
+        },
+        "datasetMarkers": 4302,
+        "visibleMarkers": 757,
+        "renderedMarkerWidgets": 472,
+        "cellSize": 0.012
+      },
+      {
+        "mode": "cards",
+        "normalizedViewport": {
+          "left": 0.43,
+          "top": 0.43,
+          "right": 0.57,
+          "bottom": 0.57
+        },
+        "datasetMarkers": 4302,
+        "visibleMarkers": 91,
+        "renderedMarkerWidgets": 86,
+        "cellSize": 0.00275
+      }
+    ],
+    "abyss": [
+      {
+        "mode": "clusters",
+        "normalizedViewport": {
+          "left": 0.0,
+          "top": 0.0,
+          "right": 1.0,
+          "bottom": 1.0
+        },
+        "datasetMarkers": 167,
+        "visibleMarkers": 167,
+        "renderedMarkerWidgets": 73,
+        "cellSize": 0.06
+      },
+      {
+        "mode": "pointers",
+        "normalizedViewport": {
+          "left": 0.3,
+          "top": 0.3,
+          "right": 0.7,
+          "bottom": 0.7
+        },
+        "datasetMarkers": 167,
+        "visibleMarkers": 35,
+        "renderedMarkerWidgets": 31,
+        "cellSize": 0.012
+      },
+      {
+        "mode": "cards",
+        "normalizedViewport": {
+          "left": 0.43,
+          "top": 0.43,
+          "right": 0.57,
+          "bottom": 0.57
+        },
+        "datasetMarkers": 167,
+        "visibleMarkers": 1,
+        "renderedMarkerWidgets": 1,
+        "cellSize": 0.00275
+      }
+    ]
+  },
+  "estimatedMaximumRenderedMarkerWidgets": 472,
+  "widgetBudget": 500,
+  "withinWidgetBudget": true
+}

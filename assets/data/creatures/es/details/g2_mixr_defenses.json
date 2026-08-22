@@ -1,1 +1,83 @@
-{"id":"g2_mixr_defenses","speciesKey":"mixr_defenses","collectionGroup":"other","name":"Defensas MIX.R","game":"g2","tier":3,"danger":"imposible","isBoss":false,"order":288,"defaultGold":false,"cardNormal":"","cardGold":"","photo":"assets/g2/creatures/photos/MIXR_Defenses_G2.webp","weaknesses":[],"resistances":[],"temperament":"other","description":"Los eventos MIX.R de Grounded 2 son defensas de objetivo ligadas a progresion y a reducir oleadas O.R.C. en zonas concretas del parque.","behavior":"Funcionan como defensas por oleadas donde el MIX.R importa más que los kills individuales. Las criaturas intentan romper el objetivo, y la mezcla de O.R.C. variantes cambia mucho de una arena a otra.","interactionWithPlayer":"A diferencia de las factional raids clásicas de G1, aquí lo importante es empujar la historia y desactivar focos de control O.R.C. concretos. Fallar no te mata la run, pero sí te obliga a reparar y repetir.","interactionWithCreatures":"Las oleadas mezclan escarabajos, arañas, hormigas, escorpiones y otras variantes O.R.C. según el sitio. La amenaza real casi siempre es dejar pasar algo pequeño mientras te enredas con el tanque de la oleada.","strategy":"Construir líneas limpias, cortar rutas cortas y usar daño de limpieza rápida suele rendir mejor que perseguir objetivos lejos del MIX.R. En Brookhollow, un fallo de posicionamiento cuesta más que un fallo de DPS.","environments":["Cancha de croquet MIX.R","Invernadero MIX.R"],"loot":[{"section":"passive","item":"Puede contribuir al desbloqueo o mejora de Perro Guardian.","minCount":0,"maxCount":0}],"combatStats":{"attackDamageSummary":"Variable según el MIX.R, las O.R.C. waves activas y la composición de cada oleada."},"abilities":[{"name":"MIX.R Overdrive","description":"La defensa termina cuando la barra del MIX.R se llena o cuando el objetivo se destruye antes.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"O.R.C. Waves locales","description":"Cada MIX.R apaga un conjunto concreto de oleadas O.R.C., así que además de la recompensa hay impacto real sobre el mapa.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Reinicio con reparación","description":"Si fallas, el dispositivo puede repararse para volver a intentarlo en vez de quedar consumido definitivamente.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Progreso de Perro Guardián","description":"Participar y completar este tipo de defensa ayuda a desbloquear o mejorar la mutación Perro Guardián.","blockable":false,"breaksGuard":false,"staggers":false}],"specialTraits":["Grounded 2 mantiene la defensa de objetivo, pero suma presión O.R.C. por zona.","No es una criatura: resume defensas MIX.R y control de oleadas."],"favoriteKey":"mixr_defenses","isKillable":false,"listIconAsset":"assets/global/effects_damage/Summon_HP.webp","hasCreatureCard":false,"hasGoldCreatureCard":false,"hasSelectableCardVariants":false,"defaultCardVariant":null}
+{
+  "id": "g2_mixr_defenses",
+  "speciesKey": "mixr_defenses",
+  "collectionGroup": "other",
+  "name": "Defensas MIX.R",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible",
+  "isBoss": false,
+  "order": 288,
+  "defaultGold": false,
+  "cardNormal": "",
+  "cardGold": "",
+  "photo": "assets/g2/creatures/photos/MIXR_Defenses_G2.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "other",
+  "description": "Los eventos MIX.R de Grounded 2 son defensas de objetivo ligadas a progresion y a reducir oleadas O.R.C. en zonas concretas del parque.",
+  "behavior": "Funcionan como defensas por oleadas donde el MIX.R importa más que los kills individuales. Las criaturas intentan romper el objetivo, y la mezcla de O.R.C. variantes cambia mucho de una arena a otra.",
+  "interactionWithPlayer": "A diferencia de las factional raids clásicas de G1, aquí lo importante es empujar la historia y desactivar focos de control O.R.C. concretos. Fallar no te mata la run, pero sí te obliga a reparar y repetir.",
+  "interactionWithCreatures": "Las oleadas mezclan escarabajos, arañas, hormigas, escorpiones y otras variantes O.R.C. según el sitio. La amenaza real casi siempre es dejar pasar algo pequeño mientras te enredas con el tanque de la oleada.",
+  "strategy": "Construir líneas limpias, cortar rutas cortas y usar daño de limpieza rápida suele rendir mejor que perseguir objetivos lejos del MIX.R. En Brookhollow, un fallo de posicionamiento cuesta más que un fallo de DPS.",
+  "environments": [
+    "Cancha de croquet MIX.R",
+    "Invernadero MIX.R"
+  ],
+  "loot": [
+    {
+      "section": "passive",
+      "item": "Puede contribuir al desbloqueo o mejora de Perro Guardian.",
+      "minCount": 0,
+      "maxCount": 0
+    }
+  ],
+  "combatStats": {
+    "attackDamageSummary": "Variable según el MIX.R, las O.R.C. waves activas y la composición de cada oleada."
+  },
+  "abilities": [
+    {
+      "name": "MIX.R Overdrive",
+      "description": "La defensa termina cuando la barra del MIX.R se llena o cuando el objetivo se destruye antes.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "O.R.C. Waves locales",
+      "description": "Cada MIX.R apaga un conjunto concreto de oleadas O.R.C., así que además de la recompensa hay impacto real sobre el mapa.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Reinicio con reparación",
+      "description": "Si fallas, el dispositivo puede repararse para volver a intentarlo en vez de quedar consumido definitivamente.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Progreso de Perro Guardián",
+      "description": "Participar y completar este tipo de defensa ayuda a desbloquear o mejorar la mutación Perro Guardián.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "specialTraits": [
+    "Grounded 2 mantiene la defensa de objetivo, pero suma presión O.R.C. por zona.",
+    "No es una criatura: resume defensas MIX.R y control de oleadas."
+  ],
+  "favoriteKey": "mixr_defenses",
+  "isKillable": false,
+  "listIconAsset": "assets/global/effects_damage/Summon_HP.webp",
+  "hasCreatureCard": false,
+  "hasGoldCreatureCard": false,
+  "hasSelectableCardVariants": false,
+  "defaultCardVariant": null,
+  "appearanceType": "no_natural_spawn",
+  "entityType": "defense",
+  "customAsset": "assets/g2/defenses/MIXR_Entry_Icon.png",
+  "presentationOverrideProvenance": "user_provided_editorial_asset"
+}

@@ -1,1 +1,368 @@
-{"id":"g2_ogrr_tiger_mosquito","speciesKey":"ogrr_tiger_mosquito","collectionGroup":"ogrr","game":"g2","danger":"unknown","order":257,"defaultGold":false,"photo":"assets/global/Proximamente.png","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Мы готовим эту информацию для вас.","interactionWithPlayer":"Мы готовим эту информацию для вас.","interactionWithCreatures":"Мы готовим эту информацию для вас.","strategy":"Мы готовим эту информацию для вас.","groupId":null,"name":"Тигровый комар O.G.R.R.","tier":3,"cardTier":3,"technicalId":"MosquitoTigerOGRE","bestiaryId":"MosquitoTigerOGRE","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_MosquitoTiger_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_MosquitoTiger_OGRR_G.png","weaknesses":["slashing"],"resistances":["generic"],"elementalWeaknesses":[],"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25}],"weakPoints":[],"attacks":[{"name":"Bite","technicalId":"MosquitoTigerBite_Augusta","tags":["stabbing"],"notes":"Урон атаки: 75"},{"name":"Combo Stab","technicalId":"MosquitoTigerComboStab_Augusta","tags":["stabbing"],"notes":"Урон атаки: 75"},{"name":"Dive Bomb","technicalId":"MosquitoTigerDiveBomb_Augusta","tags":["stabbing"],"notes":"Урон атаки: 120"},{"name":"Mosquito Tiger Dodge","technicalId":"MosquitoTigerDodge","tags":[],"notes":"Урон атаки: 0"},{"name":"Combo","technicalId":"MosquitoTiger_2Hit_SideCombo","tags":["stabbing"],"notes":"Урон атаки: 75"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":1600,"rating":4},"combatStats":{"health":1600},"description":"Мы готовим эту информацию для вас.","localizationStatus":"ru_automatic_pending_review","infusions":[{"id":"fresh","name":"Fresh","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["All direct hits also apply 20 Chill buildup."],"recommendations":"Do not stay on fresh damage as your main answer.","combatTips":["Swap to spicy damage or a reliable physical weapon if your build depends on fresh."]},{"id":"sour","name":"Sour","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["All direct hits also apply 20 Tang buildup."],"recommendations":"Avoid staying on sour weapons as your main answer.","combatTips":["Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."]},{"id":"spicy","name":"Spicy","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["All direct hits also apply 20 Sizzle buildup."],"recommendations":"Do not depend on spicy damage while this infusion is active.","combatTips":["Fresh is the cleanest elemental answer if the creature lets you hold the tempo."]}],"listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_tiger_mosquito",
+  "speciesKey": "ogrr_tiger_mosquito",
+  "collectionGroup": "ogrr",
+  "game": "g2",
+  "danger": "imposible",
+  "order": 257,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/OGRR_Tiger_Mosquito.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Mosquito Beak Tiger",
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Mosquito Blood Sack",
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ],
+  "abilities": [],
+  "behavior": "Он появляется посреди озера в окружении других комаров и сохраняет агрессивный стиль тигрового комара: выпады, серии атак и быстрые пикирования с постоянным перемещением вокруг игрока.",
+  "interactionWithPlayer": "Это значительно более живучая и опасная версия тигрового комара. Его атаки могут активировать эффекты в зависимости от текущей инфузии, поэтому серия полученных ударов быстро усложняет бой.",
+  "interactionWithCreatures": "Обычно его сопровождают другие комары, которые постоянно вмешиваются в сражение и мешают сосредоточиться на варианте O.G.R.R.",
+  "strategy": "Перед боем сначала уничтожьте окружающих комаров, чтобы максимально очистить арену. Если требуется укрытие, можно прятаться под листьями кувшинок, чтобы избежать части атак. Лучше всего сражаться один на один и заранее изучить поведение тигрового комара на обычных версиях. Всегда проверяйте активную инфузию и не используйте против него тот же элемент. Главное — стараться не получать урон, чтобы эффекты не срабатывали и не накапливались. Идеальные блоки всё ещё дают отличную возможность сбить его и нанести большой урон в момент уязвимости.",
+  "groupId": null,
+  "name": "Тигровый комар O.G.R.R.",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "MosquitoTigerOGRE",
+  "bestiaryId": "MosquitoTigerOGRE",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_MosquitoTiger_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_MosquitoTiger_OGRR_G.png",
+  "weaknesses": [
+    "slashing"
+  ],
+  "resistances": [
+    "generic"
+  ],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "technicalId": "MosquitoTigerBite_Augusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 75",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 0.0,
+      "range": 250.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo Stab",
+      "technicalId": "MosquitoTigerComboStab_Augusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 75",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Dive Bomb",
+      "technicalId": "MosquitoTigerDiveBomb_Augusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 120",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mosquito Tiger Dodge",
+      "technicalId": "MosquitoTigerDodge",
+      "tags": [],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "movement_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo",
+      "technicalId": "MosquitoTiger_2Hit_SideCombo",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 75",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 15.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 4,
+    "value": 1600
+  },
+  "combatStats": {
+    "health": 1600,
+    "stunThreshold": 30,
+    "stunCooldownSeconds": 20
+  },
+  "description": "Мы готовим эту информацию для вас.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresh",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Chill buildup."
+      ],
+      "recommendations": "Do not stay on fresh damage as your main answer.",
+      "combatTips": [
+        "Swap to spicy damage or a reliable physical weapon if your build depends on fresh."
+      ]
+    },
+    {
+      "id": "sour",
+      "name": "Sour",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Tang buildup."
+      ],
+      "recommendations": "Avoid staying on sour weapons as your main answer.",
+      "combatTips": [
+        "Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."
+      ]
+    },
+    {
+      "id": "spicy",
+      "name": "Spicy",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Sizzle buildup."
+      ],
+      "recommendations": "Do not depend on spicy damage while this infusion is active.",
+      "combatTips": [
+        "Fresh is the cleanest elemental answer if the creature lets you hold the tempo."
+      ]
+    }
+  ],
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_00b4b4227f0c10bf",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_tiger_mosquito",
+      "technicalId": "MosquitoTigerOGRE",
+      "map": "surface",
+      "world": {
+        "x": -44640.81,
+        "y": 10626.318,
+        "z": -3543.9412
+      },
+      "u": 0.8123493216271583,
+      "v": 0.3316103787503162,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "Существ OGRR можно освободить из лаборатории у пугала. После этого они могут появляться в разных местах, преимущественно ночью.",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/OGRR_Tiger_Mosquito.webp",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Mosquito Beak Tiger",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Mosquito Beak Tiger",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mosquito Blood Sack",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mosquito Blood Sack",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

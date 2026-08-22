@@ -1,1 +1,852 @@
-{"id":"g2_orc_wasp","speciesKey":"orc_wasp","collectionGroup":"orc","name":"O.R.C. Оса","game":"g2","tier":3,"danger":"muy_alta","isBoss":false,"order":317,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Wasp_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Wasp_ORC_Gold.png","photo":"assets/g2/creatures/photos/ORC_Wasp.webp","weaknesses":["salty"],"resistances":["stabbing","explosive","all","slashing","poison","gas"],"temperament":"aggressive","description":"O.R.C. Оса — милитаризованная версия обычной осы и фактически воздушная артиллерия постоянного давления. Она сохраняет скорость и точность, но теперь оставляет игроку куда меньше пространства для передышки.","behavior":"Она патрулирует высоко над зонами O.R.C. и очень быстро врывается в бой, заметив цель. Она смешивает агрессивные входы с выстрелами, из-за чего кажется, будто безопасную дистанцию вернуть вообще нельзя.","interactionWithPlayer":"Она атакует сразу после обнаружения и очень жёстко наказывает за уязвимую вертикальную позицию. Ошибка на первом заходе приводит к тому, что выстрел жалом продолжает душить даже во время лечения или перестроения.","interactionWithCreatures":"Обычно она сопровождает волны O.R.C. как воздушная поддержка, добивая или прессуя цели, уже зафиксированные наземными бойцами.","strategy":"Соль по-прежнему лучший ответ. Наказывайте после заряженного укола и не гонитесь вслепую, пока у неё всё ещё есть чистая линия для выстрела вне ближней дистанции.","environments":["Волны O.R.C. в саду","Теплица MIX.R","Тыквенная грядка"],"loot":[{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"loot","item":"Pollen","minCount":0,"maxCount":4},{"section":"loot","item":"Wasp Leg","minCount":0,"maxCount":2},{"section":"loot","item":"Wasp Shell","minCount":1,"maxCount":5},{"section":"rare","item":"Pollen","minCount":0,"maxCount":1},{"section":"rare","item":"Wasp Leg","minCount":0,"maxCount":2},{"section":"rare","item":"Wasp Shell","minCount":0,"maxCount":1}],"combatStats":{"attackDamageSummary":"Укол жалом: 50. Заряженный укол жалом: 87.5. Выстрел жалом: 62.5.","health":1075},"abilities":[{"name":"Укол жалом","description":"Быстрый укол жалом, когда она уже достаточно сократила дистанцию.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Заряженное жало","description":"Она на мгновение отходит назад, а затем вонзает жало с заметно большей силой.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Выстрел жалом","description":"Она стреляет с средней дистанции, чтобы сохранять давление даже тогда, когда не может сразу войти в ближний бой.","blockable":false,"breaksGuard":false,"staggers":false}],"elementalWeaknesses":[{"type":"salty","bonusPct":15}],"healthDisplay":"normal","health":{"value":1075,"rating":3},"groupId":null,"cardTier":3,"technicalId":"WaspORC","bestiaryId":"WaspORC","bossCardStyle":null,"isKillable":true,"damageWeaknesses":[],"resistancesV2":[{"type":"stabbing","bonusPct":50},{"type":"explosive","bonusPct":50},{"type":"all","bonusPct":25},{"type":"slashing","bonusPct":25},{"type":"poison","bonusPct":75},{"type":"gas","bonusPct":50}],"weakPoints":[],"attacks":[{"name":"Sting","technicalId":"WaspStingAugusta","tags":["stabbing"],"notes":"Урон атаки: 40"},{"name":"Sting Charged","technicalId":"WaspStingChargedAugusta","tags":["stabbing"],"notes":"Урон атаки: 70"},{"name":"Wasp Stinger Shot","technicalId":"WaspStingerShotAugusta","tags":["general_ranged","ranged"],"notes":"Урон атаки: 50"}],"encounterVariants":[{"id":"Wasp_Augusta_ORC_A_Named","characterRow":"Wasp_Augusta_ORC_A_Named","role":"named_or_miniboss","variantMarkers":["named"],"sharedBestiaryEntry":true,"stats":{"health":1375.0,"stun":{"max":100.0,"duration":3.0,"cooldown":20.0,"staggerThreshold":25}},"weakpoints":[],"resistances":[{"damageTypes":["Stabbing"],"percent":50.0,"sourceId":"DamageResistStabbingMedium"},{"damageTypes":["Explosive"],"percent":50.0,"sourceId":"DamageResistExplosiveMedium"},{"damageTypes":["All"],"percent":25.0,"sourceId":"DamageResistAllBase"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Poison"],"percent":75.0,"sourceId":"DamageResistPoisonLarge"},{"damageTypes":["Gas"],"percent":50.0,"sourceId":"DamageResistGasMedium"}],"weaknesses":[{"damageTypes":["Salty"],"percent":15.0,"sourceId":"DamageResistDownSaltyTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"WaspStingAugusta","ability":"WaspStingAugusta","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":40.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomTiny"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"WaspStingChargedAugusta","ability":"WaspStingChargedAugusta","resolved":true,"cooldown":10.0,"priority":2,"targetType":"Enemy","damage":{"amount":70.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomTiny"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":200.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"WaspStingerShotAugusta","ability":"WaspStingerShotAugusta","resolved":true,"cooldown":15.0,"priority":1,"targetType":"Enemy","damage":{"amount":50.0,"type":"GeneralRanged","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomTiny"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":3,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"parentBestiaryId":"WaspORC","parentAphidexId":"g2_orc_wasp","technicalCharacterRow":"Wasp_Augusta_ORC_A_Named","variantKey":"Wasp_Augusta_ORC_A_Named","nameEn":"Sergeant Stinger","nameEsMX":"Aguijón de sargento","nameBindingConfidence":"high","topLevelAphidexId":null,"killFavoriteStateOwner":"g2_orc_wasp","policy":"CHILD_VARIANT_NO_TOP_LEVEL_ID"},{"id":"g2_wave_wasp_augusta_orc_wave","characterRow":"Wasp_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1075.0,"stun":{"max":100.0,"duration":3.0,"cooldown":20.0,"staggerThreshold":25}},"weakpoints":[],"resistances":[{"damageTypes":["Stabbing"],"percent":50.0,"sourceId":"DamageResistStabbingMedium"},{"damageTypes":["Explosive"],"percent":50.0,"sourceId":"DamageResistExplosiveMedium"},{"damageTypes":["All"],"percent":25.0,"sourceId":"DamageResistAllBase"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Poison"],"percent":75.0,"sourceId":"DamageResistPoisonLarge"},{"damageTypes":["Gas"],"percent":50.0,"sourceId":"DamageResistGasMedium"}],"weaknesses":[{"damageTypes":["Salty"],"percent":15.0,"sourceId":"DamageResistDownSaltyTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"WaspStingAugusta","ability":"WaspStingAugusta","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":40.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomTiny"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"WaspStingChargedAugusta","ability":"WaspStingChargedAugusta","resolved":true,"cooldown":10.0,"priority":2,"targetType":"Enemy","damage":{"amount":70.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomTiny"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":200.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"WaspStingerShotAugusta","ability":"WaspStingerShotAugusta","resolved":true,"cooldown":15.0,"priority":1,"targetType":"Enemy","damage":{"amount":50.0,"type":"GeneralRanged","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomTiny"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":3,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_wasp_augusta_orc_wave","nameEn":"O.R.C. Wasp Raid/Wave","nameEsMX":"Avispa C.R.O.  (Oleada)","nameRu":"O.R.C. Оса Рейд/волна"}],"contextVariants":[{"id":"Wasp_Augusta_ORC_Wave","characterRow":"Wasp_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1075.0,"stun":{"max":100.0,"duration":3.0,"cooldown":20.0,"staggerThreshold":25}},"weakpoints":[],"resistances":[{"damageTypes":["Stabbing"],"percent":50.0,"sourceId":"DamageResistStabbingMedium"},{"damageTypes":["Explosive"],"percent":50.0,"sourceId":"DamageResistExplosiveMedium"},{"damageTypes":["All"],"percent":25.0,"sourceId":"DamageResistAllBase"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Poison"],"percent":75.0,"sourceId":"DamageResistPoisonLarge"},{"damageTypes":["Gas"],"percent":50.0,"sourceId":"DamageResistGasMedium"}],"weaknesses":[{"damageTypes":["Salty"],"percent":15.0,"sourceId":"DamageResistDownSaltyTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"WaspStingAugusta","ability":"WaspStingAugusta","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":40.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomTiny"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"WaspStingChargedAugusta","ability":"WaspStingChargedAugusta","resolved":true,"cooldown":10.0,"priority":2,"targetType":"Enemy","damage":{"amount":70.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomTiny"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":200.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"WaspStingerShotAugusta","ability":"WaspStingerShotAugusta","resolved":true,"cooldown":15.0,"priority":1,"targetType":"Enemy","damage":{"amount":50.0,"type":"GeneralRanged","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomTiny"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":3,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Avispa C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_wasp",
+  "speciesKey": "orc_wasp",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Оса",
+  "game": "g2",
+  "tier": 3,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 317,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Wasp_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Wasp_ORC_Gold.png",
+  "photo": "assets/g2/creatures/photos/ORC_Wasp.webp",
+  "weaknesses": [
+    "salty"
+  ],
+  "resistances": [
+    "stabbing",
+    "explosive",
+    "all",
+    "slashing",
+    "poison",
+    "gas"
+  ],
+  "temperament": "aggressive",
+  "description": "O.R.C. Оса — милитаризованная версия обычной осы и фактически воздушная артиллерия постоянного давления. Она сохраняет скорость и точность, но теперь оставляет игроку куда меньше пространства для передышки.",
+  "behavior": "Она патрулирует высоко над зонами O.R.C. и очень быстро врывается в бой, заметив цель. Она смешивает агрессивные входы с выстрелами, из-за чего кажется, будто безопасную дистанцию вернуть вообще нельзя.",
+  "interactionWithPlayer": "Она атакует сразу после обнаружения и очень жёстко наказывает за уязвимую вертикальную позицию. Ошибка на первом заходе приводит к тому, что выстрел жалом продолжает душить даже во время лечения или перестроения.",
+  "interactionWithCreatures": "Обычно она сопровождает волны O.R.C. как воздушная поддержка, добивая или прессуя цели, уже зафиксированные наземными бойцами.",
+  "strategy": "Соль по-прежнему лучший ответ. Наказывайте после заряженного укола и не гонитесь вслепую, пока у неё всё ещё есть чистая линия для выстрела вне ближней дистанции.",
+  "environments": [
+    "Волны O.R.C. в саду",
+    "Теплица MIX.R",
+    "Тыквенная грядка"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Pollen",
+      "minCount": 0,
+      "maxCount": 5
+    },
+    {
+      "section": "loot",
+      "item": "Wasp Leg",
+      "minCount": 0,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "Wasp Part",
+      "minCount": 1,
+      "maxCount": 6
+    }
+  ],
+  "combatStats": {
+    "health": 1075,
+    "stunThreshold": 100,
+    "stunCooldownSeconds": 20
+  },
+  "abilities": [
+    {
+      "name": "Укол жалом",
+      "description": "Быстрый укол жалом, когда она уже достаточно сократила дистанцию.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Заряженное жало",
+      "description": "Она на мгновение отходит назад, а затем вонзает жало с заметно большей силой.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Выстрел жалом",
+      "description": "Она стреляет с средней дистанции, чтобы сохранять давление даже тогда, когда не может сразу войти в ближний бой.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "salty",
+      "bonusPct": 15
+    }
+  ],
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 3,
+    "value": 1075
+  },
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "WaspORC",
+  "bestiaryId": "WaspORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    },
+    {
+      "type": "explosive",
+      "bonusPct": 50
+    },
+    {
+      "type": "all",
+      "bonusPct": 25
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "poison",
+      "bonusPct": 75
+    },
+    {
+      "type": "gas",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Sting",
+      "technicalId": "WaspStingAugusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 40",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 5.0,
+      "range": 400.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Tiny"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Tiny",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Sting Charged",
+      "technicalId": "WaspStingChargedAugusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 70",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 70.0,
+      "cooldownSeconds": 10.0,
+      "range": 200.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Tiny"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Tiny",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Wasp Stinger Shot",
+      "technicalId": "WaspStingerShotAugusta",
+      "tags": [
+        "general",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 15.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Tiny"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Tiny",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "Wasp_Augusta_ORC_A_Named",
+      "characterRow": "Wasp_Augusta_ORC_A_Named",
+      "role": "named_or_miniboss",
+      "variantMarkers": [
+        "named"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1375.0,
+        "stun": {
+          "max": 100.0,
+          "duration": 3.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 25
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistStabbingMedium"
+        },
+        {
+          "damageTypes": [
+            "Explosive"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistExplosiveMedium"
+        },
+        {
+          "damageTypes": [
+            "All"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistAllBase"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Poison"
+          ],
+          "percent": 75.0,
+          "sourceId": "DamageResistPoisonLarge"
+        },
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistGasMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Salty"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSaltyTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "WaspStingAugusta",
+          "ability": "WaspStingAugusta",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomTiny"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "WaspStingChargedAugusta",
+          "ability": "WaspStingChargedAugusta",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 70.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomTiny"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 200.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "WaspStingerShotAugusta",
+          "ability": "WaspStingerShotAugusta",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "GeneralRanged",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomTiny"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 3,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "parentBestiaryId": "WaspORC",
+      "parentAphidexId": "g2_orc_wasp",
+      "technicalCharacterRow": "Wasp_Augusta_ORC_A_Named",
+      "variantKey": "Wasp_Augusta_ORC_A_Named",
+      "nameEn": "Sergeant Stinger",
+      "nameEsMX": "Aguijón de sargento",
+      "nameBindingConfidence": "high",
+      "topLevelAphidexId": null,
+      "killFavoriteStateOwner": "g2_orc_wasp",
+      "policy": "CHILD_VARIANT_NO_TOP_LEVEL_ID"
+    },
+    {
+      "id": "g2_wave_wasp_augusta_orc_wave",
+      "characterRow": "Wasp_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1075.0,
+        "stun": {
+          "max": 100.0,
+          "duration": 3.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 25
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistStabbingMedium"
+        },
+        {
+          "damageTypes": [
+            "Explosive"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistExplosiveMedium"
+        },
+        {
+          "damageTypes": [
+            "All"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistAllBase"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Poison"
+          ],
+          "percent": 75.0,
+          "sourceId": "DamageResistPoisonLarge"
+        },
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistGasMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Salty"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSaltyTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "WaspStingAugusta",
+          "ability": "WaspStingAugusta",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomTiny"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "WaspStingChargedAugusta",
+          "ability": "WaspStingChargedAugusta",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 70.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomTiny"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 200.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "WaspStingerShotAugusta",
+          "ability": "WaspStingerShotAugusta",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "GeneralRanged",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomTiny"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 3,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_wasp_augusta_orc_wave",
+      "nameEn": "O.R.C. Wasp Raid/Wave",
+      "nameEsMX": "Avispa C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Оса Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Wasp_Augusta_ORC_Wave",
+      "characterRow": "Wasp_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1075.0,
+        "stun": {
+          "max": 100.0,
+          "duration": 3.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 25
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistStabbingMedium"
+        },
+        {
+          "damageTypes": [
+            "Explosive"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistExplosiveMedium"
+        },
+        {
+          "damageTypes": [
+            "All"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistAllBase"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Poison"
+          ],
+          "percent": 75.0,
+          "sourceId": "DamageResistPoisonLarge"
+        },
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistGasMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Salty"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSaltyTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "WaspStingAugusta",
+          "ability": "WaspStingAugusta",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomTiny"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "WaspStingChargedAugusta",
+          "ability": "WaspStingChargedAugusta",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 70.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomTiny"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 200.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "WaspStingerShotAugusta",
+          "ability": "WaspStingerShotAugusta",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "GeneralRanged",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomTiny"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 3,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Avispa C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_282567a6b7549986",
+      "targetType": "creature",
+      "targetId": "g2_orc_wasp",
+      "technicalId": "WaspORC",
+      "map": "surface",
+      "world": {
+        "x": -109443.695,
+        "y": -27079.117,
+        "z": 14275.161
+      },
+      "u": 0.5695992695346795,
+      "v": 0.1688210818450122,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cda497e8ce1e3c9d",
+      "targetType": "creature",
+      "targetId": "g2_orc_wasp",
+      "technicalId": "WaspORC",
+      "map": "surface",
+      "world": {
+        "x": -33384.414,
+        "y": 44578.07,
+        "z": 36619.35
+      },
+      "u": 0.8545155109160082,
+      "v": 0.4781935394215365,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pollen",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pollen",
+      "countLabel": "4",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Leg",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Wasp Leg",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Part",
+      "countLabel": "4",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

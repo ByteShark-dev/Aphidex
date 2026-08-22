@@ -1,1 +1,390 @@
-{"id":"g2_king_dozer","speciesKey":"king_dozer","collectionGroup":"angry","name":"King Dozer","game":"g2","tier":5,"danger":"extrema","isBoss":true,"order":251,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Boss_Lizard.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Boss_Lizard_G.png","photo":"assets/g2/creatures/photos/King_Dozer.webp","weaknesses":[],"resistances":["spicy","water","explosive","slashing"],"temperament":"aggressive","health":{"value":7500,"rating":5},"weakPoint":{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},"description":"Огромная необязательная ящерица, спрятанная в северо-восточной пещере Greenhouse Surroundings. С виду она кажется спокойной, пока бой не начинается и вся арена не превращается в шторм из топотов, хвоста и spicy-огня.","behavior":"Он начинает с укусов, топотов и взмахов когтями, чтобы сразу подчинить переднюю дугу. По мере потери здоровья добавляет удары хвостом и spicy-выстрелы глазами, а под конец ещё сильнее запирает пространство огнём.","interactionWithPlayer":"Это босс, построенный вокруг непрерывного фронтального давления. Слишком долго стоять перед ним — значит ловить укусы и взмахи, но играть только от спины тоже не выйдет, потому что хвост наказывает куда сильнее, чем кажется сначала.","interactionWithCreatures":"Бой проходит внутри его логова и почти полностью вращается вокруг самого King Dozer. Всё на арене подчинено тому контролю пространства, который создают его крупные атаки.","strategy":"Держись у передних флангов, чтобы лучше читать укусы и взмахи когтями, но уходи с задней линии сразу, как только хвост начинает заряжаться. Глаза — самое стабильное слабое место, а взрывной урон заметно ускоряет самые нервные фазы.","environments":["Окрестности теплицы","Логово King Dozer","Лабораторная пещера"],"loot":[{"section":"loot","item":"Рог ящера","minCount":2,"maxCount":2},{"section":"loot","item":"Чешуя ящера","minCount":3,"maxCount":5},{"section":"loot","item":"Жгучий камень","minCount":1,"maxCount":1},{"section":"rare","item":"Рог ящера","minCount":0,"maxCount":5},{"section":"rare","item":"Чешуя ящера","minCount":0,"maxCount":9},{"section":"rare","item":"Свет King Dozer","minCount":0,"maxCount":1},{"section":"rare","item":"Жгучий камень","minCount":0,"maxCount":3}],"combatStats":{"health":7500,"stunThreshold":275,"stunCooldownSeconds":120,"attackDamageSummary":"Укус: 100. Комбо из 3 укусов: 100. Взмах когтем: 140. Топот: 100. Удар хвостом: 70. Spicy-выстрел глазом: 15. Лизок языком: 143. Добивание когтем: 145. Огненное дыхание: 15."},"inflictsEffects":["busting","burning","spicy"],"inflicts":["Его физические атаки наносят дробящий урон. Выстрелы глазами и дыхание добавляют spicy-огонь и горение."],"specialTraits":["Он невосприимчив к накоплению окружающего жара."],"abilities":[{"name":"Укус","description":"Быстрый блокируемый укус для начала коротких серий.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 укусов","description":"Три связанных укуса, поддерживающих постоянное давление спереди.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Взмах когтем","description":"Длинный тяжёлый взмах, который ломает блок без идеального парирования.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Топот","description":"Он поднимается и бьёт по земле, а затем сверху сыпятся камни, наказывая за неподвижность.","blockable":false,"breaksGuard":true,"staggers":true},{"name":"Удар хвостом","description":"Ответ по целям позади него; удар хвостом может попасть несколько раз.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Spicy-выстрел глазом","description":"Быстрый выстрел из глаз, накладывающий spicy-огонь.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Огненное дыхание","description":"Атака дыханием по области, которой он перекрывает пространство на финальной фазе.","blockable":false,"breaksGuard":true,"staggers":true}],"resistancesV2":[{"type":"spicy","bonusPct":50},{"type":"water","bonusPct":35},{"type":"explosive","bonusPct":50},{"type":"slashing","bonusPct":25}],"bossPhases":[{"id":"phase1","label":"Фаза 1","startsAtHealthPct":100,"trigger":"Начинается, когда он падает с потолка и врезается в арену.","summary":"King Dozer начинает с укусов, топотов и взмахов когтем. Давление в основном идёт спереди, а лучше всего читать бой по голове и глазам.","aggressionChange":"После комбо укусов или полного топота ещё остаются короткие окна для наказания.","newPatterns":["Топоты вызывают падающие камни, наказывая за неподвижность.","Самое стабильное слабое место — глаза."],"abilities":[{"name":"Укус","description":"Быстрый укус для начала фронтального давления.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 укусов","description":"Читаемая серия, но очень болезненная, если принять её полностью.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Топот","description":"Тяжёлый удар по области, который ещё и вызывает камни сверху.","blockable":false,"breaksGuard":true,"staggers":true}],"inflictsEffects":["busting"]},{"id":"phase2","label":"Фаза 2","startsAtHealthPct":66,"trigger":"На 66% он начинает гораздо активнее смешивать коготь и хвост, чтобы наказывать фланги и спину.","summary":"Во второй фазе небрежные блоки наказываются сильнее. Взмахи когтем и удары хвостом занимают куда больше пространства и мешают держать удобную позицию.","aggressionChange":"Атаки, ломающие блок, становятся заметно чаще и сильнее наказывают за жадную ближнюю игру.","newPatterns":["Взмах когтем становится одной из главных угроз без идеального блока.","Хвост закрывает задний угол и не даёт безопасно играть у него за спиной."],"abilities":[{"name":"Взмах когтем","description":"Длинная атака, которая ломает блок и подбрасывает, если принять её плохо.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Удар хвостом","description":"Используется по игрокам сзади и может попасть несколько раз.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Лизок языком","description":"Короткое наказание на средней дистанции, если держаться прямо вне головы.","blockable":false,"breaksGuard":false,"staggers":true}],"inflictsEffects":["busting"]},{"id":"phase3","label":"Фаза 3","startsAtHealthPct":33,"trigger":"На последней трети он заметно сильнее полагается на spicy-огонь и куда чаще перекрывает арену.","summary":"Финальная фаза смешивает все его тяжёлые удары ближнего боя со spicy-выстрелами и огненным дыханием. Контроль пространства здесь важнее всего.","aggressionChange":"Максимальное давление, меньше передышек и куда более жёсткое наказание, если неправильно прокладывать пути отхода.","newPatterns":["Выстрелы глазами и дыхание добавляют горение и заставляют постоянно двигаться.","Взрывной урон остаётся одним из лучших способов держать темп на этой фазе."],"abilities":[{"name":"Spicy-выстрел глазом","description":"Быстрый выстрел из глаз, вынуждающий двигаться в сторону.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Огненное дыхание","description":"Атака дыханием по области, которая перекрывает пространство и добивает уже зажатых игроков.","blockable":false,"breaksGuard":true,"staggers":true}],"inflictsEffects":["busting","burning","spicy"],"specialTraits":["Даже на финальной фазе он остаётся невосприимчив к окружающему sizzle."]}],"groupId":null,"cardTier":3,"technicalId":"Lizard","bestiaryId":"Lizard","bossCardStyle":"red","isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_king_dozer",
+  "speciesKey": "king_dozer",
+  "collectionGroup": "angry",
+  "name": "King Dozer",
+  "game": "g2",
+  "tier": 5,
+  "danger": "imposible_superior",
+  "isBoss": true,
+  "order": 251,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Boss_Lizard.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Boss_Lizard_G.png",
+  "photo": "assets/g2/creatures/photos/King_Dozer.webp",
+  "weaknesses": [],
+  "resistances": [
+    "spicy",
+    "water",
+    "explosive",
+    "slashing"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 5,
+    "value": 7500
+  },
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "any",
+    "susceptibleDamageTypes": [
+      "any"
+    ]
+  },
+  "description": "Огромная необязательная ящерица, спрятанная в северо-восточной пещере Greenhouse Surroundings. С виду она кажется спокойной, пока бой не начинается и вся арена не превращается в шторм из топотов, хвоста и spicy-огня.",
+  "behavior": "Он начинает с укусов, топотов и взмахов когтями, чтобы сразу подчинить переднюю дугу. По мере потери здоровья добавляет удары хвостом и spicy-выстрелы глазами, а под конец ещё сильнее запирает пространство огнём.",
+  "interactionWithPlayer": "Это босс, построенный вокруг непрерывного фронтального давления. Слишком долго стоять перед ним — значит ловить укусы и взмахи, но играть только от спины тоже не выйдет, потому что хвост наказывает куда сильнее, чем кажется сначала.",
+  "interactionWithCreatures": "Бой проходит внутри его логова и почти полностью вращается вокруг самого King Dozer. Всё на арене подчинено тому контролю пространства, который создают его крупные атаки.",
+  "strategy": "Держись у передних флангов, чтобы лучше читать укусы и взмахи когтями, но уходи с задней линии сразу, как только хвост начинает заряжаться. Глаза — самое стабильное слабое место, а взрывной урон заметно ускоряет самые нервные фазы.",
+  "environments": [
+    "Окрестности теплицы",
+    "Логово King Dozer",
+    "Лабораторная пещера"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Lizard Spicy",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Lizard Horn",
+      "minCount": 2,
+      "maxCount": 7
+    },
+    {
+      "section": "loot",
+      "item": "Lizard Scale",
+      "minCount": 3,
+      "maxCount": 14
+    },
+    {
+      "section": "loot",
+      "item": "Lizard Stone",
+      "minCount": 1,
+      "maxCount": 4
+    }
+  ],
+  "combatStats": {
+    "health": 7500,
+    "stunThreshold": 275,
+    "stunCooldownSeconds": 120
+  },
+  "inflictsEffects": [
+    "busting",
+    "burning",
+    "spicy"
+  ],
+  "inflicts": [
+    "Его физические атаки наносят дробящий урон. Выстрелы глазами и дыхание добавляют spicy-огонь и горение."
+  ],
+  "specialTraits": [
+    "Он невосприимчив к накоплению окружающего жара."
+  ],
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Быстрый блокируемый укус для начала коротких серий.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Комбо из 3 укусов",
+      "description": "Три связанных укуса, поддерживающих постоянное давление спереди.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Взмах когтем",
+      "description": "Длинный тяжёлый взмах, который ломает блок без идеального парирования.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Топот",
+      "description": "Он поднимается и бьёт по земле, а затем сверху сыпятся камни, наказывая за неподвижность.",
+      "blockable": false,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Удар хвостом",
+      "description": "Ответ по целям позади него; удар хвостом может попасть несколько раз.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Spicy-выстрел глазом",
+      "description": "Быстрый выстрел из глаз, накладывающий spicy-огонь.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Огненное дыхание",
+      "description": "Атака дыханием по области, которой он перекрывает пространство на финальной фазе.",
+      "blockable": false,
+      "breaksGuard": true,
+      "staggers": true
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "spicy",
+      "bonusPct": 50
+    },
+    {
+      "type": "water",
+      "bonusPct": 35
+    },
+    {
+      "type": "explosive",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    }
+  ],
+  "bossPhases": [
+    {
+      "id": "phase1",
+      "label": "Фаза 1",
+      "startsAtHealthPct": 100,
+      "trigger": "Начинается, когда он падает с потолка и врезается в арену.",
+      "summary": "King Dozer начинает с укусов, топотов и взмахов когтем. Давление в основном идёт спереди, а лучше всего читать бой по голове и глазам.",
+      "aggressionChange": "После комбо укусов или полного топота ещё остаются короткие окна для наказания.",
+      "newPatterns": [
+        "Топоты вызывают падающие камни, наказывая за неподвижность.",
+        "Самое стабильное слабое место — глаза."
+      ],
+      "abilities": [
+        {
+          "name": "Укус",
+          "description": "Быстрый укус для начала фронтального давления.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Комбо из 3 укусов",
+          "description": "Читаемая серия, но очень болезненная, если принять её полностью.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Топот",
+          "description": "Тяжёлый удар по области, который ещё и вызывает камни сверху.",
+          "blockable": false,
+          "breaksGuard": true,
+          "staggers": true
+        }
+      ],
+      "inflictsEffects": [
+        "busting"
+      ]
+    },
+    {
+      "id": "phase2",
+      "label": "Фаза 2",
+      "startsAtHealthPct": 66,
+      "trigger": "На 66% он начинает гораздо активнее смешивать коготь и хвост, чтобы наказывать фланги и спину.",
+      "summary": "Во второй фазе небрежные блоки наказываются сильнее. Взмахи когтем и удары хвостом занимают куда больше пространства и мешают держать удобную позицию.",
+      "aggressionChange": "Атаки, ломающие блок, становятся заметно чаще и сильнее наказывают за жадную ближнюю игру.",
+      "newPatterns": [
+        "Взмах когтем становится одной из главных угроз без идеального блока.",
+        "Хвост закрывает задний угол и не даёт безопасно играть у него за спиной."
+      ],
+      "abilities": [
+        {
+          "name": "Взмах когтем",
+          "description": "Длинная атака, которая ломает блок и подбрасывает, если принять её плохо.",
+          "blockable": true,
+          "breaksGuard": true,
+          "staggers": true
+        },
+        {
+          "name": "Удар хвостом",
+          "description": "Используется по игрокам сзади и может попасть несколько раз.",
+          "blockable": true,
+          "breaksGuard": true,
+          "staggers": true
+        },
+        {
+          "name": "Лизок языком",
+          "description": "Короткое наказание на средней дистанции, если держаться прямо вне головы.",
+          "blockable": false,
+          "breaksGuard": false,
+          "staggers": true
+        }
+      ],
+      "inflictsEffects": [
+        "busting"
+      ]
+    },
+    {
+      "id": "phase3",
+      "label": "Фаза 3",
+      "startsAtHealthPct": 33,
+      "trigger": "На последней трети он заметно сильнее полагается на spicy-огонь и куда чаще перекрывает арену.",
+      "summary": "Финальная фаза смешивает все его тяжёлые удары ближнего боя со spicy-выстрелами и огненным дыханием. Контроль пространства здесь важнее всего.",
+      "aggressionChange": "Максимальное давление, меньше передышек и куда более жёсткое наказание, если неправильно прокладывать пути отхода.",
+      "newPatterns": [
+        "Выстрелы глазами и дыхание добавляют горение и заставляют постоянно двигаться.",
+        "Взрывной урон остаётся одним из лучших способов держать темп на этой фазе."
+      ],
+      "abilities": [
+        {
+          "name": "Spicy-выстрел глазом",
+          "description": "Быстрый выстрел из глаз, вынуждающий двигаться в сторону.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Огненное дыхание",
+          "description": "Атака дыханием по области, которая перекрывает пространство и добивает уже зажатых игроков.",
+          "blockable": false,
+          "breaksGuard": true,
+          "staggers": true
+        }
+      ],
+      "inflictsEffects": [
+        "busting",
+        "burning",
+        "spicy"
+      ],
+      "specialTraits": [
+        "Даже на финальной фазе он остаётся невосприимчив к окружающему sizzle."
+      ]
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "Lizard",
+  "bestiaryId": "Lizard",
+  "bossCardStyle": "red",
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_94c1001498d593ad",
+      "targetType": "creature",
+      "targetId": "g2_king_dozer",
+      "technicalId": "Lizard",
+      "map": "surface",
+      "world": {
+        "x": -207440.0,
+        "y": -61705.0,
+        "z": -2800.0
+      },
+      "u": 0.20250746268656716,
+      "v": 0.019327430643393203,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "fixed_encounter",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Lizard Spicy",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Lizard Horn",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 5,
+      "notes": "5 independent rolls"
+    },
+    {
+      "item": "Lizard Horn",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Lizard Scale",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 9,
+      "notes": "9 independent rolls"
+    },
+    {
+      "item": "Lizard Scale",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Lizard Scale",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Lizard Scale",
+      "countLabel": "3",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Lizard Stone",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Lizard Stone",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

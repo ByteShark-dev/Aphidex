@@ -1,1 +1,1216 @@
-{"id":"g2_rust_beetle","speciesKey":"rust_beetle","collectionGroup":"angry","name":"Rust Beetle","game":"g2","tier":3,"danger":"muy_alta","isBoss":false,"order":268,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_RustBeetle.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_RustBeetle_G.png","photo":"assets/g2/creatures/photos/Rust_Beetle.webp","weaknesses":["slashing","water"],"resistances":["stabbing","sour"],"temperament":"aggressive","health":{"value":938,"rating":3},"description":"A relative of the bombardier beetle with a pyromaniac bent. Can drop rust beetle parts and the highly volatile boiling gland on death.","behavior":"It holds its position and punishes any target that tries to get too close.","interactionWithPlayer":"It attacks the player on sight and uses its spray to cover the front.","interactionWithCreatures":"It usually ignores other enemies unless they get trapped inside its zone.","strategy":"Attack it from the flanks or after its frontal spray. Do not walk straight into its acid.","environments":["Greenhouse","Greenhouse Surroundings","Minor Caves","Pumpkin Patch","Wither Sting Cave"],"loot":[{"section":"loot","item":"Boiling Gland","minCount":0,"maxCount":1},{"section":"loot","item":"Rust Beetle Parts","minCount":1,"maxCount":3},{"section":"rare","item":"Boiling Gland","minCount":0,"maxCount":1},{"section":"rare","item":"Rust Beetle Parts","minCount":0,"maxCount":6}],"combatStats":{"health":938,"attackDamageSummary":"Bite: 40. Close-Range Spray: 30. Ranged Shot: 45. Upwards Shot: 45."},"abilities":[{"name":"Bite","description":"A direct bite used to punish players who stay too close.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Close-Range Spray","description":"It unloads acid in front of itself to cover the nearby ground with lingering damage.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Ranged Shot","description":"It spits a corrosive projectile to stop you from getting comfortable at mid-range.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Upwards Shot","description":"It fires acid upward at an angle to hit elevated paths or platforms.","blockable":true,"breaksGuard":false,"staggers":false}],"damageWeaknesses":[{"type":"slashing","bonusPct":15},{"type":"water","bonusPct":100}],"resistancesV2":[{"type":"stabbing","bonusPct":25},{"type":"sour","bonusPct":75}],"weakPoint":{"part":"rump","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},"groupId":null,"cardTier":3,"technicalId":"RustBeetle","bestiaryId":"RustBeetle","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Melee Right","technicalId":"RustBeetleMeleeRight","tags":["stabbing"],"notes":"Attack damage: 40"},{"name":"Melee Left","technicalId":"RustBeetleMeleeLeft","tags":["stabbing"],"notes":"Attack damage: 40"},{"name":"Ranged","technicalId":"RustBeetleRanged","tags":["sour_direct_hit","ranged"],"notes":"Attack damage: 45"},{"name":"Spray","technicalId":"RustBeetleSpray","tags":["sour_direct_hit"],"notes":"Attack damage: 30"},{"name":"Area Attack","technicalId":"RustBeetleAOE","tags":["sour_direct_hit"],"notes":"Attack damage: 45"},{"name":"Block Defensive","technicalId":"BlockDefensive","tags":["maine"],"notes":"Attack damage: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_rust_beetle",
+  "speciesKey": "rust_beetle",
+  "collectionGroup": "angry",
+  "name": "Rust Beetle",
+  "game": "g2",
+  "tier": 3,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 268,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_RustBeetle.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_RustBeetle_G.png",
+  "photo": "assets/g2/creatures/photos/Rust_Beetle.webp",
+  "weaknesses": [
+    "slashing",
+    "water"
+  ],
+  "resistances": [
+    "stabbing",
+    "sour"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 3,
+    "value": 938
+  },
+  "description": "A relative of the bombardier beetle with a pyromaniac bent. Can drop rust beetle parts and the highly volatile boiling gland on death.",
+  "behavior": "It holds its position and punishes any target that tries to get too close.",
+  "interactionWithPlayer": "It attacks the player on sight and uses its spray to cover the front.",
+  "interactionWithCreatures": "It usually ignores other enemies unless they get trapped inside its zone.",
+  "strategy": "Attack it from the flanks or after its frontal spray. Do not walk straight into its acid.",
+  "environments": [
+    "Greenhouse",
+    "Greenhouse Surroundings",
+    "Minor Caves",
+    "Pumpkin Patch",
+    "Wither Sting Cave"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Bombardier Exp Gland",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Rust Beetle Part",
+      "minCount": 1,
+      "maxCount": 9
+    }
+  ],
+  "combatStats": {
+    "health": 938,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Bite",
+      "description": "A direct bite used to punish players who stay too close.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Close-Range Spray",
+      "description": "It unloads acid in front of itself to cover the nearby ground with lingering damage.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Ranged Shot",
+      "description": "It spits a corrosive projectile to stop you from getting comfortable at mid-range.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Upwards Shot",
+      "description": "It fires acid upward at an angle to hit elevated paths or platforms.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    },
+    {
+      "type": "water",
+      "bonusPct": 100
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "sour",
+      "bonusPct": 75
+    }
+  ],
+  "weakPoint": {
+    "part": "rump",
+    "susceptibleDamage": "any",
+    "susceptibleDamageTypes": [
+      "any"
+    ]
+  },
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "RustBeetle",
+  "bestiaryId": "RustBeetle",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "weakPoints": [
+    {
+      "part": "rump",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Melee Right",
+      "technicalId": "RustBeetleMeleeRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 40",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 5.0,
+      "range": 300.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Melee Left",
+      "technicalId": "RustBeetleMeleeLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 40",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 5.0,
+      "range": 300.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Ranged",
+      "technicalId": "RustBeetleRanged",
+      "tags": [
+        "projectile",
+        "ranged",
+        "sour"
+      ],
+      "notes": "Attack damage: 45",
+      "damageTypes": [
+        "sour"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 18.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Corrosion Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Corrosion Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spray",
+      "technicalId": "RustBeetleSpray",
+      "tags": [
+        "sour"
+      ],
+      "notes": "Attack damage: 30",
+      "damageTypes": [
+        "sour"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 20.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [
+        "Corrosion Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Corrosion Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Area Attack",
+      "technicalId": "RustBeetleAOE",
+      "tags": [
+        "projectile",
+        "sour"
+      ],
+      "notes": "Attack damage: 45",
+      "damageTypes": [
+        "sour"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 30.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Corrosion Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Corrosion Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Defensive",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_ff5e318b5d9847be",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -150401.69,
+        "y": -41988.29,
+        "z": 887.6085
+      },
+      "u": 0.4161716031606672,
+      "v": 0.10445227692048231,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_01b26094088c9438",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -141105.53,
+        "y": -44245.793,
+        "z": -58.821747
+      },
+      "u": 0.45099479543459176,
+      "v": 0.09470574233915166,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bca55fc2e05c34aa",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -120250.164,
+        "y": -43184.402,
+        "z": 578.56714
+      },
+      "u": 0.5291184959906351,
+      "v": 0.09928818767181041,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6b652931e45a16f3",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -125306.26,
+        "y": -45193.43,
+        "z": 691.3933
+      },
+      "u": 0.5101784817091015,
+      "v": 0.09061441807909607,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1c2b0b0136d69233",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -131330.39,
+        "y": -35124.16,
+        "z": 807.09595
+      },
+      "u": 0.4876122352941176,
+      "v": 0.13408744480984908,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da4d7894a273212f",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -132250.9,
+        "y": -37658.242,
+        "z": 885.0424
+      },
+      "u": 0.4841640269242025,
+      "v": 0.12314680914073699,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1ef00300bf5b3f57",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -157447.0,
+        "y": -33930.637,
+        "z": -1653.7211
+      },
+      "u": 0.3897800409716125,
+      "v": 0.13924035632009446,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_146bda433848fc5d",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -130973.82,
+        "y": -21186.479,
+        "z": 10583.89
+      },
+      "u": 0.4889479379572724,
+      "v": 0.1942619339910617,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e16c52816353368f",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -127462.43,
+        "y": -24059.941,
+        "z": 7931.889
+      },
+      "u": 0.5021015206321334,
+      "v": 0.18185606044354502,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a7bd3db9a5a5a598",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -128158.83,
+        "y": -23240.498,
+        "z": 7945.812
+      },
+      "u": 0.49949282294410297,
+      "v": 0.18539392043173966,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_958a8c81cc6235dc",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -235287.92,
+        "y": 81500.125,
+        "z": -1857.3805
+      },
+      "u": 0.0981898226514486,
+      "v": 0.6376006745931361,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7bc450c4099d914d",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -236337.92,
+        "y": 82650.125,
+        "z": -2807.3804
+      },
+      "u": 0.0942565478489903,
+      "v": 0.6425656800742052,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_16a0cb052d4913ba",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -237337.92,
+        "y": 84200.125,
+        "z": -2807.3804
+      },
+      "u": 0.09051057184664905,
+      "v": 0.6492576439834724,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8117c88716b02989",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -169330.05,
+        "y": -7697.9517,
+        "z": 7662.052
+      },
+      "u": 0.34526642083699155,
+      "v": 0.2524972487528459,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c642cbff170b5b0",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -171610.1,
+        "y": -8022.93,
+        "z": 7662.052
+      },
+      "u": 0.3367254082528534,
+      "v": 0.2510941887174298,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9986776fe37e3515",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -171850.0,
+        "y": -12800.0,
+        "z": -2350.0
+      },
+      "u": 0.33582674860989176,
+      "v": 0.23046968547095031,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_05fe0c1a0f70c94e",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -183363.22,
+        "y": -20270.102,
+        "z": 1018.94
+      },
+      "u": 0.29269850278021653,
+      "v": 0.19821829644995365,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5cb23a361e471af1",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -163352.58,
+        "y": -29189.822,
+        "z": 565.40436
+      },
+      "u": 0.36765788001170624,
+      "v": 0.1597083323720381,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eb4f17266849ac60",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -137049.67,
+        "y": -14352.226,
+        "z": -7451.8535
+      },
+      "u": 0.4661879496634474,
+      "v": 0.2237681110380302,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e8d97370dd9a51b6",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -135492.5,
+        "y": -11662.471,
+        "z": -7102.9053
+      },
+      "u": 0.4720210711150132,
+      "v": 0.23538084870562442,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5b6256083cfb4660",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -178280.6,
+        "y": -22243.242,
+        "z": 1018.94
+      },
+      "u": 0.31173787532923614,
+      "v": 0.18969946956741715,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d161c16519cc71d6",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -178431.72,
+        "y": -22328.137,
+        "z": 1018.94
+      },
+      "u": 0.31117178343576235,
+      "v": 0.1893329442280125,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b12160bb3f2c74f0",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -57725.695,
+        "y": 106572.58,
+        "z": -2954.111
+      },
+      "u": 0.7633336564237635,
+      "v": 0.7458483932877984,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0e80cbcc6640d53d",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -190344.17,
+        "y": -5165.922,
+        "z": 547.39154
+      },
+      "u": 0.26654803160667245,
+      "v": 0.26342902383000255,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_056202bb444e45a1",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -34072.656,
+        "y": 45512.797,
+        "z": 22077.6
+      },
+      "u": 0.8519373729002048,
+      "v": 0.4822291260983219,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8c1a9fff26016090",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -193496.83,
+        "y": -6264.503,
+        "z": 595.07385
+      },
+      "u": 0.25473824290313146,
+      "v": 0.2586860145374821,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c61d308234b9cfc1",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -192134.81,
+        "y": -15399.607,
+        "z": 579.2518
+      },
+      "u": 0.2598403371378402,
+      "v": 0.21924615242431902,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e4f71d3d12faaa3",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -208757.28,
+        "y": -23480.459,
+        "z": -1157.6672
+      },
+      "u": 0.1975729634182031,
+      "v": 0.18435791375326752,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b2957e3e8ed04af",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -195884.95,
+        "y": -23904.46,
+        "z": 501.59384
+      },
+      "u": 0.2457924026924202,
+      "v": 0.18252733350198166,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_847bba0daaf3dbb1",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -33435.547,
+        "y": 46818.34,
+        "z": -4296.1284
+      },
+      "u": 0.8543239679250805,
+      "v": 0.4878656723163842,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c01c499b03856875",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -29600.951,
+        "y": 27636.42,
+        "z": -3638.3042
+      },
+      "u": 0.8686882725197542,
+      "v": 0.405049726283835,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_85c51ef811baf9cf",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -10864.112,
+        "y": 67216.06,
+        "z": -755.95416
+      },
+      "u": 0.9388760217734856,
+      "v": 0.575930708491441,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5de8a4ef6090ab59",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -11330.052,
+        "y": 68733.19,
+        "z": -1005.70807
+      },
+      "u": 0.9371306217149546,
+      "v": 0.5824807595918712,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0dcf3b49e2f9f251",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -190513.42,
+        "y": -19588.861,
+        "z": 501.59384
+      },
+      "u": 0.2659140251682762,
+      "v": 0.20115948366641365,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b3e981a380ad4a80",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -33158.895,
+        "y": 45797.58,
+        "z": -4376.832
+      },
+      "u": 0.8553602996780802,
+      "v": 0.48345864710346576,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cd269027a53f5dc0",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -213185.0,
+        "y": -16220.0,
+        "z": -2085.0
+      },
+      "u": 0.1809868305531168,
+      "v": 0.21570419090985749,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_713e6b9e2d9bdf13",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -217218.06,
+        "y": -15649.987,
+        "z": -2124.0752
+      },
+      "u": 0.16587908457711445,
+      "v": 0.21816516279618856,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5e6c61f569726abb",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -209085.0,
+        "y": -11650.0,
+        "z": -1145.0
+      },
+      "u": 0.19634533216271582,
+      "v": 0.23543469095201958,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0172008d552aca65",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -33709.496,
+        "y": 44785.06,
+        "z": 21940.076
+      },
+      "u": 0.8532977615452152,
+      "v": 0.4790871972341681,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a20fc562b0782652",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -33175.23,
+        "y": 46048.39,
+        "z": 22246.2
+      },
+      "u": 0.8552991091600819,
+      "v": 0.48454149321190665,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_54e5bf49ac10e3c8",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -60819.117,
+        "y": 62172.574,
+        "z": 185.69891
+      },
+      "u": 0.7517457718466491,
+      "v": 0.5541559818534446,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5f8900cc60e89e60",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -46190.504,
+        "y": 46570.44,
+        "z": 6628.493
+      },
+      "u": 0.8065442050921862,
+      "v": 0.4867953898305084,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_546975619c672dc1",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -44671.727,
+        "y": 52639.895,
+        "z": 7087.753
+      },
+      "u": 0.8122335072870939,
+      "v": 0.5129996309975545,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7a4171fdd26ed221",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -61603.355,
+        "y": 60517.14,
+        "z": 85.92716
+      },
+      "u": 0.748808035118525,
+      "v": 0.5470088176068809,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a3165aa22af1c8bc",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -4743.6826,
+        "y": 48213.203,
+        "z": -164.1537
+      },
+      "u": 0.9618030034299093,
+      "v": 0.49388784835146304,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_53e9c9e89d098032",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -5406.3945,
+        "y": 49310.93,
+        "z": -279.1629
+      },
+      "u": 0.9593205005560432,
+      "v": 0.49862717058773925,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f9761b89141a1c10",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -28800.396,
+        "y": 27337.975,
+        "z": -4100.1445
+      },
+      "u": 0.8716871323383084,
+      "v": 0.4037612210135762,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7e8ef63279def86f",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -52025.64,
+        "y": 34983.527,
+        "z": -4603.662
+      },
+      "u": 0.7846859256657887,
+      "v": 0.43677009717514126,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa6d3a4597fcce01",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -39375.254,
+        "y": 32026.646,
+        "z": -4688.7686
+      },
+      "u": 0.8320739680421422,
+      "v": 0.42400407076482,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fbe2b94df79a74aa",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -227495.84,
+        "y": -35525.074,
+        "z": 15911.298
+      },
+      "u": 0.12737876733977174,
+      "v": 0.13235654028164268,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fe86c9639dc4b94",
+      "targetType": "creature",
+      "targetId": "g2_rust_beetle",
+      "technicalId": "RustBeetle",
+      "map": "surface",
+      "world": {
+        "x": -227663.47,
+        "y": -37111.04,
+        "z": 15911.298
+      },
+      "u": 0.12675082938249926,
+      "v": 0.12550929690530394,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [
+    "acid"
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Bombardier Exp Gland",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bombardier Exp Gland",
+      "countLabel": "1",
+      "chancePct": 70,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Rust Beetle Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 6,
+      "notes": "6 independent rolls"
+    },
+    {
+      "item": "Rust Beetle Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Rust Beetle Part",
+      "countLabel": "2",
+      "chancePct": 80,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

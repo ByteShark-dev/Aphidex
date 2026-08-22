@@ -37,10 +37,41 @@ String canonicalEffectId(String id) {
     case 'stabbing_bows_and_spears':
     case 'stabbing_arrows':
     case 'stabbing_arrrows':
+    case 'projectile_piercing':
       return 'stabbing';
     default:
       return normalized;
   }
+}
+
+String normalizedTechnicalEffectId(String id) {
+  final canonical = canonicalEffectId(id);
+  if (effectCatalogEntries.any((entry) => entry.id == canonical)) {
+    return canonical;
+  }
+  final value = canonical.replaceAll(RegExp(r'[^a-z0-9]+'), ' ');
+  if (value.contains('venom')) return 'venom';
+  if (value.contains('poison') || value.contains('toxin')) return 'poison';
+  if (value.contains('corrosion') || value.contains('tang')) {
+    return 'tang_buildup';
+  }
+  if (value.contains('acid')) return 'acid';
+  if (value.contains('chill') ||
+      value.contains('frost') ||
+      value.contains('freeze')) {
+    return 'chill';
+  }
+  if (value.contains('sizzle')) return 'sizzle';
+  if (value.contains('burn') || value.contains('fire')) return 'burning';
+  if (value.contains('bleed')) return 'bleed';
+  if (value.contains('gas')) return 'gas';
+  if (value.contains('shock') || value.contains('electric')) return 'shock';
+  if (value.contains('infection')) return 'infection';
+  if (value.contains('spicy')) return 'spicy';
+  if (value.contains('fresh') || value.contains('mint')) return 'fresh';
+  if (value.contains('sour')) return 'sour';
+  if (value.contains('salty') || value.contains('salt')) return 'salty';
+  return canonical;
 }
 
 EffectCatalogEntry? effectCatalogEntryById(String id) {
@@ -180,6 +211,16 @@ const effectCatalogEntries = <EffectCatalogEntry>[
       es: 'Elemento ácido o eléctrico que descarga energía inestable.',
       en: 'Acidic or electric element that releases unstable energy.',
       ru: 'Кислотная или электрическая стихия с нестабильным зарядом.',
+    ),
+  ),
+  EffectCatalogEntry(
+    id: 'acid',
+    category: EffectCategory.status,
+    name: LocalizedText(es: 'Ácido', en: 'Acid', ru: 'Кислота'),
+    description: LocalizedText(
+      es: 'Efecto corrosivo que desgasta al objetivo.',
+      en: 'A corrosive effect that wears the target down.',
+      ru: 'Коррозионный эффект, постепенно ослабляющий цель.',
     ),
   ),
   EffectCatalogEntry(

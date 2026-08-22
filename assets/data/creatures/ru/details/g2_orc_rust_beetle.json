@@ -1,1 +1,1095 @@
-{"id":"g2_orc_rust_beetle","speciesKey":"orc_rust_beetle","collectionGroup":"orc","name":"O.R.C. Ржавый жук","game":"g2","tier":3,"danger":"muy_alta","isBoss":false,"order":270,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_RustBeetle_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_RustBeetle_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Rust_Beetle.webp","weaknesses":["slashing"],"resistances":["stabbing","sour"],"temperament":"aggressive","description":"O.R.C. Ржавый жук — артиллерийская версия обычного ржавого жука. Он сохраняет едкую слюну и игру на средней дистанции, но теперь давит куда дисциплинированнее и почти не оставляет пауз между выстрелами.","behavior":"Он патрулирует зоны O.R.C. и края теплицы, выискивая открытые линии для обстрела со средней дистанции. Если не заставлять его смещаться, он способен очень долго держать харасс.","interactionWithPlayer":"Он атакует сразу после обнаружения и сильно наказывает тех, кто не сокращает дистанцию решительно. Главная угроза — не один удар, а то, как хорошо он связывает коррозию и снаряды.","interactionWithCreatures":"Внутри групп O.R.C. он выступает поддержкой коррозией, ослабляя цели, чтобы бойцы первой линии могли добить их.","strategy":"Водный урон остаётся его главной слабостью. Давите после ближнего распыла и не деритесь с ним на слишком большой дистанции, потому что именно средняя дистанция для него самая выгодная.","environments":["Волны O.R.C. в саду","Теплица MIX.R","Окрестности теплицы","Огород"],"loot":[{"section":"loot","item":"Boiling Gland","minCount":0,"maxCount":1},{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"loot","item":"Rust Beetle Parts","minCount":1,"maxCount":3},{"section":"rare","item":"Boiling Gland","minCount":0,"maxCount":1},{"section":"rare","item":"Rust Beetle Parts","minCount":0,"maxCount":6}],"combatStats":{"attackDamageSummary":"Укус: 50. Ближний распыл: 37.5. Едкий выстрел: 56.25. Выстрел вверх: 56.25.","health":938},"inflictsEffects":["sour","tang_buildup"],"abilities":[{"name":"Укус","description":"Короткий укус, которым он наказывает, если уже слишком надолго прижал вас к себе.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Ближний распыл","description":"Он выпускает едкое облако вблизи, чтобы не дать спокойно наказать его в лоб.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Едкий выстрел","description":"Он плюётся едким снарядом со средней дистанции, продолжая наносить урон во время перестроения.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Выстрел вверх","description":"Он выпускает выстрел по высокой дуге, чтобы продолжать мешать даже тогда, когда игрок пытается держать высоту.","blockable":false,"breaksGuard":false,"staggers":false}],"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"resistancesV2":[{"type":"stabbing","bonusPct":25},{"type":"sour","bonusPct":50}],"weakPoint":{"part":"rump","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},"healthDisplay":"normal","health":{"value":938,"rating":3},"groupId":null,"cardTier":3,"technicalId":"RustBeetleORC","bestiaryId":"RustBeetleORC","bossCardStyle":null,"isKillable":true,"elementalWeaknesses":[],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Melee Right","technicalId":"RustBeetleMeleeRight","tags":["stabbing"],"notes":"Урон атаки: 40"},{"name":"Melee Left","technicalId":"RustBeetleMeleeLeft","tags":["stabbing"],"notes":"Урон атаки: 40"},{"name":"Ranged","technicalId":"RustBeetleRanged","tags":["sour_direct_hit","ranged"],"notes":"Урон атаки: 45"},{"name":"Spray","technicalId":"RustBeetleSpray","tags":["sour_direct_hit"],"notes":"Урон атаки: 30"},{"name":"Area Attack","technicalId":"RustBeetleAOE","tags":["sour_direct_hit"],"notes":"Урон атаки: 45"},{"name":"Block Defensive","technicalId":"BlockDefensive","tags":["maine"],"notes":"Урон атаки: 0"}],"encounterVariants":[{"id":"RustBeetle_Augusta_ORC_A_Named","characterRow":"RustBeetle_Augusta_ORC_A_Named","role":"named_or_miniboss","variantMarkers":["named"],"sharedBestiaryEntry":true,"stats":{"health":1338.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":30}},"weakpoints":["Butt"],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Sour"],"percent":50.0,"sourceId":"DamageResistSourMedium"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"RustBeetleMeleeRight","ability":"RustBeetleMeleeRight","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":40.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"RustBeetleMeleeLeft","ability":"RustBeetleMeleeLeft","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":40.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"RustBeetleRanged","ability":"RustBeetleRange","resolved":true,"cooldown":18.0,"priority":0,"targetType":"Enemy","damage":{"amount":45.0,"type":"SourDirectHit","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["CorrosionMedium"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":300.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"RustBeetleSpray","ability":"RustBeetleSpray","resolved":true,"cooldown":20.0,"priority":1,"targetType":"Enemy","damage":{"amount":30.0,"type":"SourDirectHit","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["CorrosionMedium"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"RustBeetleAOE","ability":"RustBeetleAOE","resolved":true,"cooldown":30.0,"priority":1,"targetType":"Enemy","damage":{"amount":45.0,"type":"SourDirectHit","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["CorrosionMedium"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"parentBestiaryId":"RustBeetleORC","parentAphidexId":"g2_orc_rust_beetle","technicalCharacterRow":"RustBeetle_Augusta_ORC_A_Named","variantKey":"RustBeetle_Augusta_ORC_A_Named","nameEn":"The Red Baron","nameEsMX":"El barón rojo","nameBindingConfidence":"high","topLevelAphidexId":null,"killFavoriteStateOwner":"g2_orc_rust_beetle","policy":"CHILD_VARIANT_NO_TOP_LEVEL_ID"},{"id":"g2_wave_rust_beetle_augusta_orc_wave","characterRow":"RustBeetle_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":938.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":30}},"weakpoints":["Butt"],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Sour"],"percent":50.0,"sourceId":"DamageResistSourMedium"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"RustBeetleMeleeRight","ability":"RustBeetleMeleeRight","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":40.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"RustBeetleMeleeLeft","ability":"RustBeetleMeleeLeft","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":40.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"RustBeetleRanged","ability":"RustBeetleRange","resolved":true,"cooldown":18.0,"priority":0,"targetType":"Enemy","damage":{"amount":45.0,"type":"SourDirectHit","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["CorrosionMedium"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":300.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"RustBeetleSpray","ability":"RustBeetleSpray","resolved":true,"cooldown":20.0,"priority":1,"targetType":"Enemy","damage":{"amount":30.0,"type":"SourDirectHit","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["CorrosionMedium"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"RustBeetleAOE","ability":"RustBeetleAOE","resolved":true,"cooldown":30.0,"priority":1,"targetType":"Enemy","damage":{"amount":45.0,"type":"SourDirectHit","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["CorrosionMedium"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_rust_beetle_augusta_orc_wave","nameEn":"O.R.C. Rust Beetle Raid/Wave","nameEsMX":"Escarabajo oxidado C.R.O.  (Oleada)","nameRu":"O.R.C. Ржавый жук Рейд/волна"}],"contextVariants":[{"id":"RustBeetle_Augusta_ORC_Wave","characterRow":"RustBeetle_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":938.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":30}},"weakpoints":["Butt"],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Sour"],"percent":50.0,"sourceId":"DamageResistSourMedium"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"RustBeetleMeleeRight","ability":"RustBeetleMeleeRight","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":40.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"RustBeetleMeleeLeft","ability":"RustBeetleMeleeLeft","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":40.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"RustBeetleRanged","ability":"RustBeetleRange","resolved":true,"cooldown":18.0,"priority":0,"targetType":"Enemy","damage":{"amount":45.0,"type":"SourDirectHit","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["CorrosionMedium"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":300.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"RustBeetleSpray","ability":"RustBeetleSpray","resolved":true,"cooldown":20.0,"priority":1,"targetType":"Enemy","damage":{"amount":30.0,"type":"SourDirectHit","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["CorrosionMedium"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"RustBeetleAOE","ability":"RustBeetleAOE","resolved":true,"cooldown":30.0,"priority":1,"targetType":"Enemy","damage":{"amount":45.0,"type":"SourDirectHit","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["CorrosionMedium"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Escarabajo oxidado C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_rust_beetle",
+  "speciesKey": "orc_rust_beetle",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Ржавый жук",
+  "game": "g2",
+  "tier": 3,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 270,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_RustBeetle_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_RustBeetle_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Rust_Beetle.webp",
+  "weaknesses": [
+    "slashing"
+  ],
+  "resistances": [
+    "stabbing",
+    "sour"
+  ],
+  "temperament": "aggressive",
+  "description": "O.R.C. Ржавый жук — артиллерийская версия обычного ржавого жука. Он сохраняет едкую слюну и игру на средней дистанции, но теперь давит куда дисциплинированнее и почти не оставляет пауз между выстрелами.",
+  "behavior": "Он патрулирует зоны O.R.C. и края теплицы, выискивая открытые линии для обстрела со средней дистанции. Если не заставлять его смещаться, он способен очень долго держать харасс.",
+  "interactionWithPlayer": "Он атакует сразу после обнаружения и сильно наказывает тех, кто не сокращает дистанцию решительно. Главная угроза — не один удар, а то, как хорошо он связывает коррозию и снаряды.",
+  "interactionWithCreatures": "Внутри групп O.R.C. он выступает поддержкой коррозией, ослабляя цели, чтобы бойцы первой линии могли добить их.",
+  "strategy": "Водный урон остаётся его главной слабостью. Давите после ближнего распыла и не деритесь с ним на слишком большой дистанции, потому что именно средняя дистанция для него самая выгодная.",
+  "environments": [
+    "Волны O.R.C. в саду",
+    "Теплица MIX.R",
+    "Окрестности теплицы",
+    "Огород"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Bombardier Exp Gland",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Rust Beetle Part",
+      "minCount": 1,
+      "maxCount": 9
+    }
+  ],
+  "combatStats": {
+    "health": 938,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "inflictsEffects": [
+    "sour",
+    "tang_buildup"
+  ],
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Короткий укус, которым он наказывает, если уже слишком надолго прижал вас к себе.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Ближний распыл",
+      "description": "Он выпускает едкое облако вблизи, чтобы не дать спокойно наказать его в лоб.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Едкий выстрел",
+      "description": "Он плюётся едким снарядом со средней дистанции, продолжая наносить урон во время перестроения.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Выстрел вверх",
+      "description": "Он выпускает выстрел по высокой дуге, чтобы продолжать мешать даже тогда, когда игрок пытается держать высоту.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "sour",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoint": {
+    "part": "rump",
+    "susceptibleDamage": "any",
+    "susceptibleDamageTypes": [
+      "any"
+    ]
+  },
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 3,
+    "value": 938
+  },
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "RustBeetleORC",
+  "bestiaryId": "RustBeetleORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "elementalWeaknesses": [],
+  "weakPoints": [
+    {
+      "part": "rump",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Melee Right",
+      "technicalId": "RustBeetleMeleeRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 40",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 5.0,
+      "range": 300.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Melee Left",
+      "technicalId": "RustBeetleMeleeLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 40",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 5.0,
+      "range": 300.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Ranged",
+      "technicalId": "RustBeetleRanged",
+      "tags": [
+        "projectile",
+        "ranged",
+        "sour"
+      ],
+      "notes": "Урон атаки: 45",
+      "damageTypes": [
+        "sour"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 18.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Corrosion Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Corrosion Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spray",
+      "technicalId": "RustBeetleSpray",
+      "tags": [
+        "sour"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "sour"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 20.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [
+        "Corrosion Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Corrosion Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Area Attack",
+      "technicalId": "RustBeetleAOE",
+      "tags": [
+        "projectile",
+        "sour"
+      ],
+      "notes": "Урон атаки: 45",
+      "damageTypes": [
+        "sour"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 30.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Corrosion Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Corrosion Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Defensive",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "RustBeetle_Augusta_ORC_A_Named",
+      "characterRow": "RustBeetle_Augusta_ORC_A_Named",
+      "role": "named_or_miniboss",
+      "variantMarkers": [
+        "named"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1338.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [
+        "Butt"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Sour"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistSourMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "RustBeetleMeleeRight",
+          "ability": "RustBeetleMeleeRight",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Stabbing",
+            "hitStun": 6,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "RustBeetleMeleeLeft",
+          "ability": "RustBeetleMeleeLeft",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Stabbing",
+            "hitStun": 6,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "RustBeetleRanged",
+          "ability": "RustBeetleRange",
+          "resolved": true,
+          "cooldown": 18.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 45.0,
+            "type": "SourDirectHit",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "CorrosionMedium"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "RustBeetleSpray",
+          "ability": "RustBeetleSpray",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "SourDirectHit",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "CorrosionMedium"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "RustBeetleAOE",
+          "ability": "RustBeetleAOE",
+          "resolved": true,
+          "cooldown": 30.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 45.0,
+            "type": "SourDirectHit",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "CorrosionMedium"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "parentBestiaryId": "RustBeetleORC",
+      "parentAphidexId": "g2_orc_rust_beetle",
+      "technicalCharacterRow": "RustBeetle_Augusta_ORC_A_Named",
+      "variantKey": "RustBeetle_Augusta_ORC_A_Named",
+      "nameEn": "The Red Baron",
+      "nameEsMX": "El barón rojo",
+      "nameBindingConfidence": "high",
+      "topLevelAphidexId": null,
+      "killFavoriteStateOwner": "g2_orc_rust_beetle",
+      "policy": "CHILD_VARIANT_NO_TOP_LEVEL_ID"
+    },
+    {
+      "id": "g2_wave_rust_beetle_augusta_orc_wave",
+      "characterRow": "RustBeetle_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 938.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [
+        "Butt"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Sour"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistSourMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "RustBeetleMeleeRight",
+          "ability": "RustBeetleMeleeRight",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Stabbing",
+            "hitStun": 6,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "RustBeetleMeleeLeft",
+          "ability": "RustBeetleMeleeLeft",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Stabbing",
+            "hitStun": 6,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "RustBeetleRanged",
+          "ability": "RustBeetleRange",
+          "resolved": true,
+          "cooldown": 18.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 45.0,
+            "type": "SourDirectHit",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "CorrosionMedium"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "RustBeetleSpray",
+          "ability": "RustBeetleSpray",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "SourDirectHit",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "CorrosionMedium"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "RustBeetleAOE",
+          "ability": "RustBeetleAOE",
+          "resolved": true,
+          "cooldown": 30.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 45.0,
+            "type": "SourDirectHit",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "CorrosionMedium"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_rust_beetle_augusta_orc_wave",
+      "nameEn": "O.R.C. Rust Beetle Raid/Wave",
+      "nameEsMX": "Escarabajo oxidado C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Ржавый жук Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "RustBeetle_Augusta_ORC_Wave",
+      "characterRow": "RustBeetle_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 938.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [
+        "Butt"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Sour"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistSourMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "RustBeetleMeleeRight",
+          "ability": "RustBeetleMeleeRight",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Stabbing",
+            "hitStun": 6,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "RustBeetleMeleeLeft",
+          "ability": "RustBeetleMeleeLeft",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 40.0,
+            "type": "Stabbing",
+            "hitStun": 6,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "RustBeetleRanged",
+          "ability": "RustBeetleRange",
+          "resolved": true,
+          "cooldown": 18.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 45.0,
+            "type": "SourDirectHit",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "CorrosionMedium"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "RustBeetleSpray",
+          "ability": "RustBeetleSpray",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "SourDirectHit",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "CorrosionMedium"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "RustBeetleAOE",
+          "ability": "RustBeetleAOE",
+          "resolved": true,
+          "cooldown": 30.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 45.0,
+            "type": "SourDirectHit",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "CorrosionMedium"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Escarabajo oxidado C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_7a7eb0fed13886d1",
+      "targetType": "creature",
+      "targetId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleORC",
+      "map": "surface",
+      "world": {
+        "x": -186828.98,
+        "y": -48933.12,
+        "z": 2707.63
+      },
+      "u": 0.27971584899034235,
+      "v": 0.07446869516822664,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8ae4b7ff3bade672",
+      "targetType": "creature",
+      "targetId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleORC",
+      "map": "surface",
+      "world": {
+        "x": -56230.52,
+        "y": -44727.895,
+        "z": -4513.1943
+      },
+      "u": 0.7689345460930642,
+      "v": 0.09262431705877398,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_29e3c469234351d6",
+      "targetType": "creature",
+      "targetId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleORC",
+      "map": "surface",
+      "world": {
+        "x": -54400.52,
+        "y": -35537.895,
+        "z": -4518.155
+      },
+      "u": 0.7757896821773487,
+      "v": 0.13230118694662285,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a67dcfbbee81d8b3",
+      "targetType": "creature",
+      "targetId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleORC",
+      "map": "surface",
+      "world": {
+        "x": -52420.52,
+        "y": -38267.895,
+        "z": -4213.1943
+      },
+      "u": 0.7832067146619842,
+      "v": 0.12051469567417154,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b4656c6edefe6b8",
+      "targetType": "creature",
+      "targetId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleORC",
+      "map": "surface",
+      "world": {
+        "x": -187210.52,
+        "y": -44127.895,
+        "z": 1616.8055
+      },
+      "u": 0.2782866093064092,
+      "v": 0.09521475470107099,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8fafaa442c32fb64",
+      "targetType": "creature",
+      "targetId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleORC",
+      "map": "surface",
+      "world": {
+        "x": -207602.17,
+        "y": -27015.268,
+        "z": 1224.3677
+      },
+      "u": 0.20189997775826746,
+      "v": 0.1690967432667173,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/ORC_Rust_Beetle.webp",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Bombardier Exp Gland",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bombardier Exp Gland",
+      "countLabel": "1",
+      "chancePct": 70,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Rust Beetle Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 6,
+      "notes": "6 independent rolls"
+    },
+    {
+      "item": "Rust Beetle Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Rust Beetle Part",
+      "countLabel": "2",
+      "chancePct": 80,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

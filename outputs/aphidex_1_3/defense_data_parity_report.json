@@ -1,0 +1,62 @@
+{
+  "variants": [
+    {
+      "defenseId": "g2_mixr_defenses",
+      "variantId": "mixr_greenhouse",
+      "scheduledGroups": 32,
+      "representedAnchorCount": 55,
+      "declaredScheduledTotal": 72,
+      "declaredTotal": 72,
+      "sourceCountersMatch": true,
+      "partialCompositionGroups": 10,
+      "attackerReferencesResolved": true,
+      "rewardDataSeparateFromLoot": true,
+      "imageStatus": "verified"
+    },
+    {
+      "defenseId": "g2_mixr_defenses",
+      "variantId": "mixr_picnic",
+      "scheduledGroups": 7,
+      "representedAnchorCount": 26,
+      "declaredScheduledTotal": 38,
+      "declaredTotal": 38,
+      "sourceCountersMatch": true,
+      "partialCompositionGroups": 4,
+      "attackerReferencesResolved": true,
+      "rewardDataSeparateFromLoot": true,
+      "imageStatus": "known_pending_assets"
+    },
+    {
+      "defenseId": "g2_mixr_defenses",
+      "variantId": "mixr_resting",
+      "scheduledGroups": 28,
+      "representedAnchorCount": 43,
+      "declaredScheduledTotal": 61,
+      "declaredTotal": 61,
+      "sourceCountersMatch": true,
+      "partialCompositionGroups": 10,
+      "attackerReferencesResolved": true,
+      "rewardDataSeparateFromLoot": true,
+      "imageStatus": "known_pending_assets"
+    },
+    {
+      "defenseId": "g2_ice_sickles_event",
+      "variantId": "ice_sickles",
+      "scheduledGroups": 29,
+      "representedAnchorCount": 31,
+      "declaredScheduledTotal": 31,
+      "declaredTotal": 31,
+      "sourceCountersMatch": true,
+      "partialCompositionGroups": 0,
+      "attackerReferencesResolved": true,
+      "rewardDataSeparateFromLoot": true,
+      "imageStatus": "verified_historical"
+    }
+  ],
+  "summary": {
+    "entries": 2,
+    "variants": 4,
+    "totalMismatches": 0,
+    "unresolvedAttackers": 0
+  }
+}

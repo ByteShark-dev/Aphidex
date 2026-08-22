@@ -38,9 +38,15 @@ class EnemyRepository {
     }
   }
 
-  static Future<Enemy> loadDetail(String id, String languageCode) {
+  static Future<Enemy> loadDetail(String game, String id, String languageCode) {
+    if (game != 'g1' && game != 'g2') {
+      throw ArgumentError.value(game, 'game', 'Expected g1 or g2');
+    }
+    if (!id.startsWith('${game}_')) {
+      throw StateError('Enemy ID $id does not belong to $game');
+    }
     final language = _normalizedLanguageCode(languageCode);
-    final cacheKey = '$language/$id';
+    final cacheKey = '$language/$game/$id';
     final cached = _detailCache[cacheKey];
     if (cached != null) {
       return SynchronousFuture(cached);
@@ -52,6 +58,12 @@ class EnemyRepository {
         final raw = await rootBundle.loadString(path);
         final decoded = await compute(_decodeEnemyDetailJsonMap, raw);
         final enemy = Enemy.fromJson(decoded);
+        if (enemy.game != game || enemy.id != id) {
+          throw StateError(
+            'Enemy detail identity mismatch: requested $game/$id, '
+            'loaded ${enemy.game}/${enemy.id}',
+          );
+        }
         _detailCache[cacheKey] = enemy;
         return enemy;
       } catch (error) {

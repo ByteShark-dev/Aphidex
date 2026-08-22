@@ -1,1 +1,811 @@
-{"id":"g2_wolf_spider","speciesKey":"wolf_spider","collectionGroup":"angry","name":"Araña lobo","game":"g2","tier":3,"danger":"muy_alta","isBoss":false,"order":285,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WolfSpider.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WolfSpider_G.png","photo":"assets/g2/creatures/photos/Wolf_Spider.webp","weaknesses":["spicy"],"resistances":["fresh","generic","stabbing","venom"],"temperament":"aggressive","health":{"value":1500,"rating":4},"description":"Una cazadora feroz que merodea por el parque en las noches. Al morir, puede soltar trozos de araña lobo, colmillo de araña lobo y veneno de araña.","behavior":"No aparece físicamente durante los tres primeros días de la partida. Después patrulla al anochecer, de noche y al amanecer, mientras duerme la mayor parte del día con un ronquido muy fácil de reconocer. Cuando sale a cazar puede acercarse a tu posición incluso antes de tener contacto visual directo.","interactionWithPlayer":"Es hostil en cuanto te percibe y, además, puede acercarse pasivamente si permaneces dentro de su territorio. También roba Stinkbug Parts del almacenamiento del jugador, y Spider Bait es una de las pocas formas limpias de distraerla.","interactionWithCreatures":"Es pasiva con todos los enemigos tipo araña y jamás los atacará. Frente al resto de criaturas suele mantenerse neutral hasta que algo le golpea o invade demasiado su ruta.","strategy":"Necesitas buen equipo y, sobre todo, bloqueo perfecto consistente. El combo largo y el riposte son la parte más letal del kit. El daño spicy sigue siendo excelente, pero hay que vigilar el sizzle porque su respuesta se activa con casi cualquier fuente de daño residual.","environments":["Área de ceremonia","Pozo de fuego","Invernadero","Alrededores del invernadero","Alrededores del carrito de helados","Zona de la mesa de pícnic","Colina de pinos","Parche de calabazas","Huerto vegetal"],"loot":[{"section":"loot","item":"Veneno de araña","minCount":0,"maxCount":4},{"section":"loot","item":"Trozo de araña lobo","minCount":3,"maxCount":6},{"section":"loot","item":"Colmillo de araña lobo","minCount":0,"maxCount":2},{"section":"rare","item":"Trozo de araña lobo","minCount":0,"maxCount":1}],"advancedLootTable":[{"item":"Veneno de araña","countLabel":"x2","chancePct":75},{"item":"Veneno de araña","countLabel":"x1","chancePct":25},{"item":"Trozo de araña lobo","countLabel":"x3","chancePct":100},{"item":"Trozo de araña lobo","countLabel":"x3","chancePct":50},{"item":"Trozo de araña lobo","countLabel":"x1","chancePct":1},{"item":"Colmillo de araña lobo","countLabel":"x1","chancePct":75},{"item":"Colmillo de araña lobo","countLabel":"x1","chancePct":25}],"combatStats":{"health":1500,"stunThreshold":90,"stunCooldownSeconds":20,"attackDamageSummary":"Mordisco: 65. Mordisco cargado: 80. Ataque de salto: 95. Riposte: 65."},"inflictsEffects":["poison"],"inflicts":["Todos sus ataques aplican veneno; sus movimientos más fuertes dejan una acumulación muy peligrosa si fallas el bloqueo."],"abilities":[{"name":"Mordisco","description":"Un mordisco básico pero muy dañino.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo de 5 mordidas","description":"Encadena una larga serie de mordidas rápidas. Cada impacto añade 20 de acumulación de veneno.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Mordisco cargado","description":"Ruge, se inclina y se lanza con un golpe fuerte que rompe la guardia si no lo bloqueas perfecto.","blockable":true,"breaksGuard":true,"staggers":false},{"name":"Ataque en salto","description":"Salta y cae encima del jugador. Incluso bloqueado, tambalea al objetivo.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Riposte","description":"Adopta una postura defensiva y, si recibe cualquier daño, responde con una mordida instantánea que tambalea y arrastra al jugador hacia ella.","blockable":true,"breaksGuard":false,"staggers":true}],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"damageWeaknesses":[],"resistancesV2":[{"type":"fresh","bonusPct":50},{"type":"generic","bonusPct":50},{"type":"stabbing","bonusPct":50},{"type":"venom","bonusPct":90}],"groupId":null,"cardTier":3,"technicalId":"SpiderWolf","bestiaryId":"SpiderWolf","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[],"attacks":[{"name":"Spider Wolf","technicalId":"SpiderWolf","tags":["generic"],"notes":"Daño del ataque: 65"},{"name":"Mordida","technicalId":"SpiderWolfLeftBite","tags":["generic"],"notes":"Daño del ataque: 65"},{"name":"Spider Wolf Flurry","technicalId":"SpiderWolfFlurry","tags":["generic"],"notes":"Daño del ataque: 50"},{"name":"Potente ataque","technicalId":"SpiderWolfPowerAttack","tags":["generic"],"notes":"Daño del ataque: 80"},{"name":"Spider salto ataque","technicalId":"SpiderJumpAttack","tags":["generic"],"notes":"Daño del ataque: 95"},{"name":"Spider Wolf Riposte Stance","technicalId":"SpiderWolfRiposteStance","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_wolf_spider",
+  "speciesKey": "wolf_spider",
+  "collectionGroup": "angry",
+  "name": "Araña lobo",
+  "game": "g2",
+  "tier": 3,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 285,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_WolfSpider.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_WolfSpider_G.png",
+  "photo": "assets/g2/creatures/photos/Wolf_Spider.webp",
+  "weaknesses": [
+    "spicy"
+  ],
+  "resistances": [
+    "fresh",
+    "generic",
+    "stabbing",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 4,
+    "value": 1500
+  },
+  "description": "Una cazadora feroz que merodea por el parque en las noches. Al morir, puede soltar trozos de araña lobo, colmillo de araña lobo y veneno de araña.",
+  "behavior": "No aparece físicamente durante los tres primeros días de la partida. Después patrulla al anochecer, de noche y al amanecer, mientras duerme la mayor parte del día con un ronquido muy fácil de reconocer. Cuando sale a cazar puede acercarse a tu posición incluso antes de tener contacto visual directo.",
+  "interactionWithPlayer": "Es hostil en cuanto te percibe y, además, puede acercarse pasivamente si permaneces dentro de su territorio. También roba Stinkbug Parts del almacenamiento del jugador, y Spider Bait es una de las pocas formas limpias de distraerla.",
+  "interactionWithCreatures": "Es pasiva con todos los enemigos tipo araña y jamás los atacará. Frente al resto de criaturas suele mantenerse neutral hasta que algo le golpea o invade demasiado su ruta.",
+  "strategy": "Necesitas buen equipo y, sobre todo, bloqueo perfecto consistente. El combo largo y el riposte son la parte más letal del kit. El daño spicy sigue siendo excelente, pero hay que vigilar el sizzle porque su respuesta se activa con casi cualquier fuente de daño residual.",
+  "environments": [
+    "Área de ceremonia",
+    "Pozo de fuego",
+    "Invernadero",
+    "Alrededores del invernadero",
+    "Alrededores del carrito de helados",
+    "Zona de la mesa de pícnic",
+    "Colina de pinos",
+    "Parche de calabazas",
+    "Huerto vegetal"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Spider Venom",
+      "minCount": 0,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Spider Wolf Chunk",
+      "minCount": 3,
+      "maxCount": 7
+    },
+    {
+      "section": "loot",
+      "item": "Spider Wolf Fang",
+      "minCount": 0,
+      "maxCount": 2
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Spider Venom",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Venom",
+      "countLabel": "2",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Wolf Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Wolf Chunk",
+      "countLabel": "3",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Wolf Chunk",
+      "countLabel": "3",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Wolf Fang",
+      "countLabel": "1",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Wolf Fang",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 1500,
+    "stunThreshold": 90,
+    "stunCooldownSeconds": 20
+  },
+  "inflictsEffects": [
+    "poison"
+  ],
+  "inflicts": [
+    "Todos sus ataques aplican veneno; sus movimientos más fuertes dejan una acumulación muy peligrosa si fallas el bloqueo."
+  ],
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "Un mordisco básico pero muy dañino.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo de 5 mordidas",
+      "description": "Encadena una larga serie de mordidas rápidas. Cada impacto añade 20 de acumulación de veneno.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Mordisco cargado",
+      "description": "Ruge, se inclina y se lanza con un golpe fuerte que rompe la guardia si no lo bloqueas perfecto.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": false
+    },
+    {
+      "name": "Ataque en salto",
+      "description": "Salta y cae encima del jugador. Incluso bloqueado, tambalea al objetivo.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Riposte",
+      "description": "Adopta una postura defensiva y, si recibe cualquier daño, responde con una mordida instantánea que tambalea y arrastra al jugador hacia ella.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "general",
+      "bonusPct": 50
+    },
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    },
+    {
+      "type": "venom",
+      "bonusPct": 90
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "SpiderWolf",
+  "bestiaryId": "SpiderWolf",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Spider Wolf",
+      "technicalId": "SpiderWolf",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 65",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 65.0,
+      "cooldownSeconds": 2.0,
+      "range": 700.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mordida",
+      "technicalId": "SpiderWolfLeftBite",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 65",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 65.0,
+      "cooldownSeconds": 2.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spider Wolf Flurry",
+      "technicalId": "SpiderWolfFlurry",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 3.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente ataque",
+      "technicalId": "SpiderWolfPowerAttack",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 80",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 80.0,
+      "cooldownSeconds": 3.0,
+      "range": 300.0,
+      "stun": 20,
+      "statusEffects": [
+        "Venom Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spider salto ataque",
+      "technicalId": "SpiderJumpAttack",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 95",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 95.0,
+      "cooldownSeconds": 5.0,
+      "range": 600.0,
+      "stun": 15,
+      "statusEffects": [
+        "Venom Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spider Wolf Riposte Stance",
+      "technicalId": "SpiderWolfRiposteStance",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 10.0,
+      "range": 700.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "projectile",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_0f3471e3c87768b8",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -114510.26,
+        "y": -25206.701,
+        "z": -956.97125
+      },
+      "u": 0.5506200386303776,
+      "v": 0.1769050433257442,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_03b173ca6f446aef",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -114958.39,
+        "y": -33868.285,
+        "z": -411.36057
+      },
+      "u": 0.5489413544044482,
+      "v": 0.1395095545998819,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9e220ea0dfad899",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -249704.81,
+        "y": 113111.67,
+        "z": 4662.131
+      },
+      "u": 0.04418449868305532,
+      "v": 0.7740802347584113,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_afec16b7701be12c",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -190639.47,
+        "y": -6569.5996,
+        "z": 8702.241
+      },
+      "u": 0.2654418448931811,
+      "v": 0.2573687916755207,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5e11621845a77e47",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -255713.45,
+        "y": 55398.223,
+        "z": 1778.488
+      },
+      "u": 0.02167627743634763,
+      "v": 0.5249084254658909,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_db6585065a22fe1b",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -116945.16,
+        "y": 6542.0737,
+        "z": 11154.695
+      },
+      "u": 0.5414989616622768,
+      "v": 0.31397707845855466,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e0d7008b8717c913",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -181364.31,
+        "y": 94080.445,
+        "z": 1070.2985
+      },
+      "u": 0.3001863716710565,
+      "v": 0.6919148987267054,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fbfe239be026177d",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -178052.39,
+        "y": -20702.33,
+        "z": 11239.988
+      },
+      "u": 0.3125927445127304,
+      "v": 0.19635219698119571,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ef0cae634f909e0b",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -172330.81,
+        "y": -40918.45,
+        "z": 7555.427
+      },
+      "u": 0.33402564588820605,
+      "v": 0.10907119993254066,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9514027a413fc9fc",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -145574.11,
+        "y": 14619.223,
+        "z": 2830.8508
+      },
+      "u": 0.4342556019900498,
+      "v": 0.3488493311071759,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ddef229d2b5c560d",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -132949.27,
+        "y": -5845.347,
+        "z": 5477.197
+      },
+      "u": 0.48154794966344755,
+      "v": 0.26049567700480647,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3c0e0d5ca70e3b27",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -87718.82,
+        "y": 13108.478,
+        "z": 1127.8652
+      },
+      "u": 0.6509801299385426,
+      "v": 0.34232684658065604,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4f7db62d96b15c67",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -130333.86,
+        "y": 52610.06,
+        "z": -1893.056
+      },
+      "u": 0.4913452127597308,
+      "v": 0.5128708214857913,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_96a8e65bb58a2be0",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -58527.78,
+        "y": 152760.3,
+        "z": -1105.4026
+      },
+      "u": 0.7603290652619257,
+      "v": 0.9452590741209208,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_44fb522b1c04b00c",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -161565.98,
+        "y": 70103.55,
+        "z": 372.09006
+      },
+      "u": 0.374350440737489,
+      "v": 0.5883971464710346,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_be9f0c359a9592fc",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -57880.977,
+        "y": 128892.61,
+        "z": -4032.3174
+      },
+      "u": 0.762751973778168,
+      "v": 0.8422128031031284,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e0aa2d55ef4f6e9f",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -257401.06,
+        "y": 50212.277,
+        "z": 15709.129
+      },
+      "u": 0.015354530875036592,
+      "v": 0.5025186425836916,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3b75e541d8bbe45d",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -29430.48,
+        "y": 45514.22,
+        "z": 7185.6274
+      },
+      "u": 0.8693268527948493,
+      "v": 0.48223526975293035,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf358228d2016dfb",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -29192.031,
+        "y": 49244.746,
+        "z": 7504.077
+      },
+      "u": 0.8702200770266316,
+      "v": 0.4983414280462095,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0c1095201259e67c",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -226482.89,
+        "y": -49689.58,
+        "z": 4584.8228
+      },
+      "u": 0.13117325373134323,
+      "v": 0.07120275773674006,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7cc7165895dcfdc3",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -48751.273,
+        "y": 44648.45,
+        "z": -3347.0122
+      },
+      "u": 0.7969516258706468,
+      "v": 0.47849739775697786,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4162565d1971a1a8",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -34086.355,
+        "y": 21700.393,
+        "z": 35627.645
+      },
+      "u": 0.8518860567749487,
+      "v": 0.379421546639683,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4447fbffc4efca39",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -257001.22,
+        "y": 52411.07,
+        "z": 9946.158
+      },
+      "u": 0.016852321919812698,
+      "v": 0.5120117028417236,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ec006f1bb5552b95",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -131957.75,
+        "y": -4498.2627,
+        "z": 1203.371
+      },
+      "u": 0.4852621597892888,
+      "v": 0.266311573468252,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b771ceb76e8f07bf",
+      "targetType": "creature",
+      "targetId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "map": "surface",
+      "world": {
+        "x": -31366.893,
+        "y": 58428.09,
+        "z": 5370.711
+      },
+      "u": 0.8620730961662276,
+      "v": 0.5379895613458133,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Wolf_Spider.webp",
+  "immunities": []
+}

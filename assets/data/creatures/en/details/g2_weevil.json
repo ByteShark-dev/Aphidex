@@ -1,1 +1,3319 @@
-{"id":"g2_weevil","speciesKey":"weevil","collectionGroup":"harmless","name":"Weevil","game":"g2","tier":1,"danger":"baja","isBoss":false,"order":321,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Weevil.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Weevil_G.png","photo":"assets/g2/creatures/photos/Weevil.webp","weaknesses":[],"resistances":[],"temperament":"peaceful","health":{"value":50,"rating":1},"description":"A tiny creature that lumbers around grassy areas. Can drop raw weevil meat and a weevil nose on death.","behavior":"It walks slowly while searching for food and only really speeds up when startled. Its rhythm reads as clumsy more than nervous, which is why it almost always feels like an opportunity rather than a problem.","interactionWithPlayer":"It normally flees from the player and only comes close through curiosity or an unlucky route overlap. On its own it is rarely a meaningful threat.","interactionWithCreatures":"It serves as prey for small and medium predators, so it almost never dominates an area. Its place in the ecosystem is to be a resource, a distraction, or meat on legs.","strategy":"There is not much mystery here: get close, kill it quickly, and do not turn an easy hunt into a pointless chase if hostile enemies are already nearby.","environments":["Ceremony Area","Croquet Court","Entrance Area","Fire Pit","Greenhouse Surroundings","Ice Cream Cart Surroundings","Picnic Table Area","Pine Hill","Pumpkin Patch","Snackbar Front Area","Statue Area"],"respawnInfo":"1 day","loot":[{"section":"loot","item":"Raw Weevil Meat","minCount":1,"maxCount":1},{"section":"loot","item":"Weevil Nose","minCount":0,"maxCount":1},{"section":"rare","item":"Mushroom Chunk","minCount":0,"maxCount":1},{"section":"rare","item":"Raw Weevil Meat","minCount":0,"maxCount":1}],"combatStats":{"health":50},"specialTraits":["Can be tamed with Mushroom Slurry."],"lootTransformations":[{"id":"spicy_cooked_meat","effects":["spicy","burning"],"description":"If the creature is killed with spicy damage or a verified heat effect, compatible meat can become cooked meat."},{"id":"salty_jerky","effects":["salty"],"description":"If the creature is killed with salty damage, compatible meat can become jerky."}],"groupId":null,"cardTier":0,"technicalId":"Weevil","bestiaryId":"Weevil","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_weevil",
+  "speciesKey": "weevil",
+  "collectionGroup": "harmless",
+  "name": "Weevil",
+  "game": "g2",
+  "tier": 1,
+  "danger": "baja",
+  "isBoss": false,
+  "order": 321,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Weevil.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Weevil_G.png",
+  "photo": "assets/g2/creatures/photos/Weevil.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "peaceful",
+  "health": {
+    "rating": 1,
+    "value": 50
+  },
+  "description": "A tiny creature that lumbers around grassy areas. Can drop raw weevil meat and a weevil nose on death.",
+  "behavior": "It walks slowly while searching for food and only really speeds up when startled. Its rhythm reads as clumsy more than nervous, which is why it almost always feels like an opportunity rather than a problem.",
+  "interactionWithPlayer": "It normally flees from the player and only comes close through curiosity or an unlucky route overlap. On its own it is rarely a meaningful threat.",
+  "interactionWithCreatures": "It serves as prey for small and medium predators, so it almost never dominates an area. Its place in the ecosystem is to be a resource, a distraction, or meat on legs.",
+  "strategy": "There is not much mystery here: get close, kill it quickly, and do not turn an easy hunt into a pointless chase if hostile enemies are already nearby.",
+  "environments": [
+    "Ceremony Area",
+    "Croquet Court",
+    "Entrance Area",
+    "Fire Pit",
+    "Greenhouse Surroundings",
+    "Ice Cream Cart Surroundings",
+    "Picnic Table Area",
+    "Pine Hill",
+    "Pumpkin Patch",
+    "Snackbar Front Area",
+    "Statue Area"
+  ],
+  "respawnInfo": "1 day",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Mushroom Chunk",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Pet Tombstone Weevil",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Weevil Meat",
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Weevil Nose",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 50,
+    "stunThreshold": null,
+    "stunCooldownSeconds": null
+  },
+  "specialTraits": [
+    "Can be tamed with Mushroom Slurry."
+  ],
+  "lootTransformations": [
+    {
+      "id": "spicy_cooked_meat",
+      "effects": [
+        "spicy",
+        "burning"
+      ],
+      "description": "If the creature is killed with spicy damage or a verified heat effect, compatible meat can become cooked meat."
+    },
+    {
+      "id": "salty_jerky",
+      "effects": [
+        "salty"
+      ],
+      "description": "If the creature is killed with salty damage, compatible meat can become jerky."
+    }
+  ],
+  "groupId": null,
+  "cardTier": 0,
+  "technicalId": "Weevil",
+  "bestiaryId": "Weevil",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_a1b328828f7dd6f4",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -168134.28,
+        "y": 32128.92,
+        "z": 4843.1855
+      },
+      "u": 0.34974574656131113,
+      "v": 0.4244456281305337,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_deec96ebb84f0008",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -194850.0,
+        "y": 34350.0,
+        "z": 4150.0
+      },
+      "u": 0.24966930055604333,
+      "v": 0.43403491019478885,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3ea7a824ab4ff41c",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -180504.5,
+        "y": 43550.293,
+        "z": 4052.5254
+      },
+      "u": 0.3034071992976295,
+      "v": 0.4737562190403913,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8fc687a2b5206b44",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -165987.42,
+        "y": 36979.168,
+        "z": 4021.7026
+      },
+      "u": 0.35778783260169733,
+      "v": 0.44538606978665995,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_48bbc9ad81ddd495",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -198105.66,
+        "y": 6626.6006,
+        "z": 4990.403
+      },
+      "u": 0.23747367632426103,
+      "v": 0.31434201456446587,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_73abf6bbbf5bbbe0",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -200884.11,
+        "y": 5469.6353,
+        "z": 5185.775
+      },
+      "u": 0.22706566930055608,
+      "v": 0.30934693712454675,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4180149f993bc984",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -218255.73,
+        "y": 11895.159,
+        "z": 778.9839
+      },
+      "u": 0.16199199765876496,
+      "v": 0.33708846789779906,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a1ce5fae7f3d0133",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -222312.19,
+        "y": 33051.09,
+        "z": -87.2952
+      },
+      "u": 0.14679659584430788,
+      "v": 0.4284270012648621,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_82c544ebcbd44e62",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -249474.73,
+        "y": 70030.12,
+        "z": 2446.99
+      },
+      "u": 0.04504637284167395,
+      "v": 0.5880801200775783,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d38b19bc811cc6f6",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -207305.97,
+        "y": 54124.793,
+        "z": 74.426094
+      },
+      "u": 0.20300953585016096,
+      "v": 0.5194105237878405,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_127541e6ae7f3874",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -220010.8,
+        "y": 70544.21,
+        "z": -1135.5739
+      },
+      "u": 0.15541754755633602,
+      "v": 0.5902996502234591,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8863f7454d77ddfb",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -200567.05,
+        "y": 65934.0,
+        "z": 163.17993
+      },
+      "u": 0.2282533684518584,
+      "v": 0.5703955476853022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_65624142ddaa1f14",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -191963.64,
+        "y": 78803.484,
+        "z": -276.51773
+      },
+      "u": 0.26048153585016093,
+      "v": 0.6259582073362002,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b5c11aa154fd4706",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -216161.42,
+        "y": 4505.62,
+        "z": 1961.4152
+      },
+      "u": 0.1698372326602282,
+      "v": 0.3051849012564297,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fb6537bcb70bd38",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -232915.27,
+        "y": 65483.19,
+        "z": 543.37335
+      },
+      "u": 0.10707771261340361,
+      "v": 0.5684492223627624,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_222cbabf1e6bcc1b",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -159565.2,
+        "y": 10281.809,
+        "z": 5181.415
+      },
+      "u": 0.3818453146034533,
+      "v": 0.3301229969474661,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ea269f69682826a8",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -221167.66,
+        "y": 55931.45,
+        "z": -465.5739
+      },
+      "u": 0.15108397775826748,
+      "v": 0.5272105776203727,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_994f2cc48958c545",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -246633.72,
+        "y": 43625.098,
+        "z": 148.18619
+      },
+      "u": 0.05568872812408545,
+      "v": 0.4740791818534447,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6b77e788770e9287",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -205564.95,
+        "y": 78750.3,
+        "z": -543.0605
+      },
+      "u": 0.20953135498975706,
+      "v": 0.6257285909435871,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_33edf851c8e63dd7",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -216240.16,
+        "y": 39965.39,
+        "z": 421.4152
+      },
+      "u": 0.16954227450980391,
+      "v": 0.4582787729150856,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fc04c38eca9ef352",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -256119.9,
+        "y": 58318.367,
+        "z": 1719.152
+      },
+      "u": 0.020153725490196103,
+      "v": 0.5375158436967704,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_22fdf7ed4c730233",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -148117.81,
+        "y": -25502.328,
+        "z": 990.4416
+      },
+      "u": 0.42472696283289435,
+      "v": 0.17562870447761186,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_19f505c267cce36a",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -146124.6,
+        "y": -37293.188,
+        "z": 432.1004
+      },
+      "u": 0.43219347966052085,
+      "v": 0.12472289184585546,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_042a48a86a84268c",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -154767.95,
+        "y": -50165.6,
+        "z": 810.75226
+      },
+      "u": 0.3998156979806848,
+      "v": 0.06914759085926298,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e0088172eacb0c5f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -139033.17,
+        "y": -50310.074,
+        "z": 1506.5085
+      },
+      "u": 0.4587578062628036,
+      "v": 0.06852383937937434,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_be95ca6882db5f0a",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -134324.23,
+        "y": -35733.348,
+        "z": 547.1094
+      },
+      "u": 0.4763973824992684,
+      "v": 0.13145733893245637,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f3772a4ddc86fdf2",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -121415.164,
+        "y": -38221.9,
+        "z": 632.793
+      },
+      "u": 0.5247544339479076,
+      "v": 0.12071327430643397,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a3e89a6e20ac2621",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -125188.89,
+        "y": -53390.094,
+        "z": 1414.0564
+      },
+      "u": 0.5106181469124963,
+      "v": 0.05522617313432835,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1b5f8edb25df4f6f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -112811.195,
+        "y": -47714.8,
+        "z": 940.94495
+      },
+      "u": 0.5569846953467954,
+      "v": 0.07972866514883212,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6c7adbb63c09bb2a",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -108922.65,
+        "y": -29824.002,
+        "z": 426.15564
+      },
+      "u": 0.5715510916008194,
+      "v": 0.15697032613205159,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd873360e3969f87",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -118868.31,
+        "y": -25093.916,
+        "z": 594.1931
+      },
+      "u": 0.5342948879133743,
+      "v": 0.1773919808415549,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b247a43a1527fb7f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -116029.45,
+        "y": -29281.574,
+        "z": -1994.7373
+      },
+      "u": 0.5449291893473807,
+      "v": 0.15931220264777807,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4abd53d5f4483919",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -127070.375,
+        "y": -23458.77,
+        "z": 2982.5244
+      },
+      "u": 0.5035701492537313,
+      "v": 0.18445155375664046,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_caf86c66a75d4642",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -137901.77,
+        "y": -26776.436,
+        "z": 3043.059
+      },
+      "u": 0.4629960035118525,
+      "v": 0.1701278756050257,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ee1e759bca9d71a6",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -88172.99,
+        "y": 21615.865,
+        "z": 1488.8545
+      },
+      "u": 0.6492788200175593,
+      "v": 0.37905660578463607,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7478678b047a6a91",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -119591.19,
+        "y": 12775.912,
+        "z": 950.1799
+      },
+      "u": 0.5315869967808018,
+      "v": 0.34089102743907584,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_88005aa3fee07a74",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -123570.45,
+        "y": 6158.151,
+        "z": 1174.8348
+      },
+      "u": 0.5166807843137254,
+      "v": 0.3123195321022009,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8251e5b8b5264ba4",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -212433.84,
+        "y": 150040.95,
+        "z": 5510.759
+      },
+      "u": 0.18380065788703542,
+      "v": 0.9335185631166204,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d63eda3c921ac9b",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -233014.75,
+        "y": 143366.25,
+        "z": 5540.071
+      },
+      "u": 0.10670506292069067,
+      "v": 0.9047012395648873,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7fe2e84816242e20",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -117622.35,
+        "y": 71434.47,
+        "z": -1741.9154
+      },
+      "u": 0.5389622241732513,
+      "v": 0.5941432552491779,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_82969d9234f88eee",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -109246.27,
+        "y": 37275.695,
+        "z": -120.09087
+      },
+      "u": 0.5703388188469417,
+      "v": 0.4466662942912557,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3dda4fc307591470",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -92784.61,
+        "y": 79481.234,
+        "z": -1594.9496
+      },
+      "u": 0.6320038021656424,
+      "v": 0.6288843225229782,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_81d49209bc87c037",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -85434.97,
+        "y": 66245.04,
+        "z": -328.13864
+      },
+      "u": 0.6595353772314896,
+      "v": 0.5717384305590689,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_37e949a8958aefb7",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -83960.77,
+        "y": 51585.715,
+        "z": -542.31256
+      },
+      "u": 0.665057695054141,
+      "v": 0.5084483184079601,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3a9c4a6bbd45fe8d",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -91474.71,
+        "y": 49963.67,
+        "z": 870.289
+      },
+      "u": 0.6369106561311091,
+      "v": 0.5014453076987941,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8ce789bcb414f4a7",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -93381.08,
+        "y": 52131.418,
+        "z": 274.0849
+      },
+      "u": 0.6297694398595258,
+      "v": 0.5108043343958175,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_85f655210b837786",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -101169.71,
+        "y": 34683.67,
+        "z": -438.6575
+      },
+      "u": 0.6005934187884108,
+      "v": 0.4354754957416308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_85946c2aafe6d07b",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -90773.57,
+        "y": 36952.055,
+        "z": 11.859643
+      },
+      "u": 0.6395371097453907,
+      "v": 0.4452690122270006,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07b4e531b166bd8f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -132389.72,
+        "y": -2256.3271,
+        "z": -43.415817
+      },
+      "u": 0.4836440105355575,
+      "v": 0.2759908974179948,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6b9d827a30f3994e",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -110733.14,
+        "y": 24312.309,
+        "z": 1173.2137
+      },
+      "u": 0.5647690395083406,
+      "v": 0.39069822251454595,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da611ef1049e6645",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -183546.52,
+        "y": 155464.0,
+        "z": 2890.9
+      },
+      "u": 0.29201186537898743,
+      "v": 0.956932017876718,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1127f1f880e9a720",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -245736.0,
+        "y": 136694.58,
+        "z": 5001.877
+      },
+      "u": 0.05905156570090723,
+      "v": 0.875896997723248,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_572eb9218ddd96ac",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -247446.31,
+        "y": 123961.57,
+        "z": 5422.8726
+      },
+      "u": 0.052644785484342996,
+      "v": 0.8209235503836749,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf7c6ac8d0f15227",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -101181.414,
+        "y": -32815.082,
+        "z": -428.3062
+      },
+      "u": 0.6005495758852796,
+      "v": 0.14405664909351545,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2ad00fbf70a53428",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -90181.414,
+        "y": -22007.076,
+        "z": -2829.5134
+      },
+      "u": 0.6417553119110331,
+      "v": 0.19071909172780163,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a9057233e3ca84d",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -81442.14,
+        "y": -51523.59,
+        "z": -3782.0745
+      },
+      "u": 0.6744924225929176,
+      "v": 0.06328461016949151,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f43132914a1ed59e",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -68879.23,
+        "y": -45685.246,
+        "z": -4281.8164
+      },
+      "u": 0.7215527819724906,
+      "v": 0.08849105361328952,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b22be5621fd0d90",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -51894.22,
+        "y": -52558.305,
+        "z": -3396.3894
+      },
+      "u": 0.7851782218320164,
+      "v": 0.05881733569440936,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1143eeb3addd2faf",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -25867.705,
+        "y": -46631.387,
+        "z": -2102.8528
+      },
+      "u": 0.8826729224465906,
+      "v": 0.08440618817775532,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_947e65ef5dd539a5",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -21367.111,
+        "y": -27322.35,
+        "z": -1884.8789
+      },
+      "u": 0.8995320395668714,
+      "v": 0.1677709486465975,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_acacd6be73df441e",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -46226.44,
+        "y": -16927.766,
+        "z": -4326.459
+      },
+      "u": 0.806409589698566,
+      "v": 0.21264848476262757,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_71952b4e1224e9d5",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -29736.254,
+        "y": -19475.418,
+        "z": -4499.714
+      },
+      "u": 0.8681814307287092,
+      "v": 0.20164926202883884,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3b3c9be56de9bdce",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -194411.98,
+        "y": 101513.164,
+        "z": 1176.5297
+      },
+      "u": 0.25131011296458877,
+      "v": 0.7240048905303988,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d8232c6a9fb229d3",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -178770.16,
+        "y": 146937.86,
+        "z": 523.6251
+      },
+      "u": 0.30990399531753,
+      "v": 0.920121294544228,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_75018c68ede0932e",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -191813.61,
+        "y": 142562.5,
+        "z": 2153.0137
+      },
+      "u": 0.2610435446297923,
+      "v": 0.9012311324732271,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_29ff39962f1fb8b3",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -205308.02,
+        "y": 139995.94,
+        "z": 1351.0435
+      },
+      "u": 0.21049380860403868,
+      "v": 0.8901502764145374,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_da3cb5e06fcabcd1",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -217100.0,
+        "y": 128100.0,
+        "z": 574.9564
+      },
+      "u": 0.1663213345039508,
+      "v": 0.8387907918036934,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bab370c8bef2fcbb",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -233214.19,
+        "y": 80942.83,
+        "z": 810.3587
+      },
+      "u": 0.10595796546678372,
+      "v": 0.6351946113500295,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_48bff738df87432f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -194900.0,
+        "y": 87500.0,
+        "z": -433.6441
+      },
+      "u": 0.24948200175592625,
+      "v": 0.6635045113415972,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c89a013e010e6478",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -176255.83,
+        "y": 131422.11,
+        "z": -56.471115
+      },
+      "u": 0.31932261515949667,
+      "v": 0.8531336564634454,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_47bbb54b28bfc204",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -179040.2,
+        "y": 136469.1,
+        "z": 479.65518
+      },
+      "u": 0.3088924319578577,
+      "v": 0.8749235112572729,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b3a1a971b242492f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -177310.75,
+        "y": 113402.21,
+        "z": 759.6521
+      },
+      "u": 0.3153709101551068,
+      "v": 0.775334611012733,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5a73800e58cb5b72",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -219281.08,
+        "y": 125342.336,
+        "z": 1127.7606
+      },
+      "u": 0.15815106116476446,
+      "v": 0.826884864086348,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d22d7e1db673d8d5",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -191101.95,
+        "y": 127155.484,
+        "z": 950.0718
+      },
+      "u": 0.26370940591161834,
+      "v": 0.8347129421367738,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8babfd99e7caaafb",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -179118.03,
+        "y": 101407.46,
+        "z": 1449.7152
+      },
+      "u": 0.30860088264559554,
+      "v": 0.7235485244961632,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f5ed6162959fd7f3",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -171499.75,
+        "y": -24481.979,
+        "z": 1078.8214
+      },
+      "u": 0.3371387767047117,
+      "v": 0.18003395524074545,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b3beba270e47dcc7",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -186248.23,
+        "y": -20200.889,
+        "z": 1148.484
+      },
+      "u": 0.281891324553702,
+      "v": 0.19851711638418085,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f41f22bfee655891",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -165721.06,
+        "y": -29532.686,
+        "z": 603.8884
+      },
+      "u": 0.358785610769681,
+      "v": 0.15822805268572396,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6dd911ae871e0d9f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -161135.38,
+        "y": -36445.88,
+        "z": 923.89276
+      },
+      "u": 0.37596345800409714,
+      "v": 0.1283810560755544,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4f8cd68fe7eae40a",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -180670.0,
+        "y": -60751.688,
+        "z": 293.41882
+      },
+      "u": 0.30278724026924203,
+      "v": 0.023443256126148945,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_137a96f9757e9c35",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -161988.14,
+        "y": -32009.447,
+        "z": 645.0238
+      },
+      "u": 0.3727690395083406,
+      "v": 0.1475348944767687,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c8337bce7204dc22",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -252636.89,
+        "y": 95874.26,
+        "z": 2698.3616
+      },
+      "u": 0.033200997366110575,
+      "v": 0.6996595085589004,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f6b9bdc4c5c3a2b1",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -183800.0,
+        "y": -41050.0,
+        "z": 1055.0284
+      },
+      "u": 0.29106233538191395,
+      "v": 0.10850324647946705,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c1ae12a4e8573543",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -166004.1,
+        "y": -40727.57,
+        "z": -668.0844
+      },
+      "u": 0.35772534972197834,
+      "v": 0.10989530449447674,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b8ad737e1d3c3a0f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -171000.0,
+        "y": -54150.0,
+        "z": -602.3678
+      },
+      "u": 0.3390108282118818,
+      "v": 0.051945357955982804,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_051a66c55807ab05",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -156000.0,
+        "y": -15500.0,
+        "z": 741.3877
+      },
+      "u": 0.3952004682470003,
+      "v": 0.21881271608061387,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9f7afe7a03b0176f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -185931.55,
+        "y": -13402.057,
+        "z": 508.56427
+      },
+      "u": 0.28307760023412354,
+      "v": 0.22787036694493637,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a1489acf5766df9f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -175359.23,
+        "y": -19468.988,
+        "z": 987.67786
+      },
+      "u": 0.32268125724319574,
+      "v": 0.2016770228855721,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ba3028cb0fff0ba0",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -167300.0,
+        "y": -9850.0,
+        "z": 3178.0967
+      },
+      "u": 0.3528709394205443,
+      "v": 0.2432060038789105,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_50e1b753defc460e",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -192384.44,
+        "y": 153182.4,
+        "z": 3847.657
+      },
+      "u": 0.25890522914837577,
+      "v": 0.9470814470022768,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c37eed2f9202d2b2",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -206313.19,
+        "y": 97395.71,
+        "z": 911.3581
+      },
+      "u": 0.20672846590576527,
+      "v": 0.7062282108103551,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd8544e61c8aa8ff",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -167342.03,
+        "y": 74083.234,
+        "z": -671.28406
+      },
+      "u": 0.35271349604916596,
+      "v": 0.6055790185344463,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0db82ad0f89629d5",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -118340.59,
+        "y": 134715.34,
+        "z": -3016.315
+      },
+      "u": 0.5362717143693299,
+      "v": 0.8673518347246816,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_52c5abb76ea3e79a",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -113774.59,
+        "y": 135553.02,
+        "z": -2626.274
+      },
+      "u": 0.55337584079602,
+      "v": 0.8709684310650141,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6c994dce705f82c9",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -119188.94,
+        "y": 128181.65,
+        "z": -3448.2883
+      },
+      "u": 0.5330938156277436,
+      "v": 0.8391433071928494,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a4a72e85da467f9",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -112643.72,
+        "y": 120899.99,
+        "z": -2559.4155
+      },
+      "u": 0.5576120526777876,
+      "v": 0.8077054969221688,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f0b057ce94fbd0bf",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -100867.89,
+        "y": 132489.83,
+        "z": 1487.057
+      },
+      "u": 0.6017240292654374,
+      "v": 0.8577434265958341,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_987266625762ca0d",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -80026.11,
+        "y": 119965.63,
+        "z": 66.3244
+      },
+      "u": 0.679796836991513,
+      "v": 0.8036714947297412,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_14f08a91a3654649",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -103668.38,
+        "y": 119732.984,
+        "z": -1085.125
+      },
+      "u": 0.5912334609306409,
+      "v": 0.8026670698035246,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a038d142ed5975da",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -129344.76,
+        "y": 118077.086,
+        "z": -3523.3518
+      },
+      "u": 0.4950503576236464,
+      "v": 0.7955179022851844,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_61cb3998544dde7c",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -66529.555,
+        "y": 96330.81,
+        "z": -2564.3594
+      },
+      "u": 0.7303546081357917,
+      "v": 0.7016306157348848,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1ecc346b00681dc3",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -106115.125,
+        "y": 106131.99,
+        "z": -3317.3098
+      },
+      "u": 0.5820680128767924,
+      "v": 0.743946191753099,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_09a7f5723e113ed6",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -136555.73,
+        "y": 124980.26,
+        "z": -3551.2373
+      },
+      "u": 0.4680382370500439,
+      "v": 0.8253216385867275,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_88693d7750a99ed0",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -140172.95,
+        "y": 111031.39,
+        "z": -3016.3447
+      },
+      "u": 0.45448821773485504,
+      "v": 0.7650988420608821,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_976b312cc1518536",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -94354.836,
+        "y": 112252.38,
+        "z": -1587.9779
+      },
+      "u": 0.6261217732513901,
+      "v": 0.7703703394889958,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b51c4f8b2922c029",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -121158.59,
+        "y": 106932.05,
+        "z": -3281.896
+      },
+      "u": 0.5257155539947322,
+      "v": 0.747400367653259,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9acb5d0259805b5a",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -168724.38,
+        "y": 62647.26,
+        "z": 475.23456
+      },
+      "u": 0.3475352461223295,
+      "v": 0.5562053893245636,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_198db9367258e3b9",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -181298.06,
+        "y": 76714.21,
+        "z": -66.12107
+      },
+      "u": 0.3004345425812116,
+      "v": 0.6169379839784132,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c2370e4164818f61",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -177708.19,
+        "y": 57710.254,
+        "z": 1471.5822
+      },
+      "u": 0.3138821094527363,
+      "v": 0.5348903790201535,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95dde53ec752e7dd",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -162324.67,
+        "y": 48607.375,
+        "z": 1429.4801
+      },
+      "u": 0.3715084062042727,
+      "v": 0.49558964499536223,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cd85a4477d994048",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -125650.65,
+        "y": 46242.984,
+        "z": -1656.6313
+      },
+      "u": 0.5088884050336553,
+      "v": 0.4853816325828485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ea061a32688ebb5f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -138023.86,
+        "y": 59062.363,
+        "z": -2393.1091
+      },
+      "u": 0.4625386573017267,
+      "v": 0.5407279691036345,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_05a01fb44c0e6567",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -139887.47,
+        "y": 48043.043,
+        "z": -675.64484
+      },
+      "u": 0.4555576189640035,
+      "v": 0.4931532002361077,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ef16027cc973992f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -151678.08,
+        "y": 46604.66,
+        "z": 307.48047
+      },
+      "u": 0.41139027685103896,
+      "v": 0.48694313112404086,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_df905d4061aa9ed7",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -175468.6,
+        "y": 84967.92,
+        "z": -939.7159
+      },
+      "u": 0.3222715598478197,
+      "v": 0.6525725190994182,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_21fb6916a5125c94",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -76652.984,
+        "y": 65712.1,
+        "z": -972.7256
+      },
+      "u": 0.6924324860403863,
+      "v": 0.5694375174972596,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a95c1a4c022b2867",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -145658.66,
+        "y": 130884.555,
+        "z": -2769.0369
+      },
+      "u": 0.43393887971905176,
+      "v": 0.8508128186187705,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ce25cf75b1e48c54",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -157565.9,
+        "y": 129784.57,
+        "z": -2883.824
+      },
+      "u": 0.38933464442493415,
+      "v": 0.8460637477021672,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_865a6cb2720a17a5",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -162213.5,
+        "y": 140080.42,
+        "z": -1724.9435
+      },
+      "u": 0.371924846356453,
+      "v": 0.8905150100345731,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e31318feb5ebae46",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -105270.07,
+        "y": 96510.266,
+        "z": -4211.7705
+      },
+      "u": 0.585233568627451,
+      "v": 0.7024053983641118,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_42249f99bdf6d696",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -117208.05,
+        "y": 93535.34,
+        "z": -4424.647
+      },
+      "u": 0.5405141820310214,
+      "v": 0.6895614645416983,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ccab8159dfb5fbc",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -137097.33,
+        "y": 39970.496,
+        "z": -433.606
+      },
+      "u": 0.4660094164471759,
+      "v": 0.45830081753942153,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_78014bb5a22809c7",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -157344.05,
+        "y": 65867.91,
+        "z": -311.5102
+      },
+      "u": 0.3901656892010536,
+      "v": 0.5701102109790034,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fcb34d2070ba21c4",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -76990.63,
+        "y": 157901.88,
+        "z": 1581.4133
+      },
+      "u": 0.6911676722270997,
+      "v": 0.9674573114090564,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e154435c8bf3b09",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -91127.945,
+        "y": 153505.52,
+        "z": 362.3306
+      },
+      "u": 0.6382096294995611,
+      "v": 0.9484764840205752,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4952c5df9942c77f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -107246.414,
+        "y": 158168.8,
+        "z": 1580.1462
+      },
+      "u": 0.5778302314310799,
+      "v": 0.9686097107681928,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5b420db0f933eca1",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -123131.09,
+        "y": 134798.62,
+        "z": -522.5162
+      },
+      "u": 0.5183266163301141,
+      "v": 0.8677113874694324,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_44c558afba1e3236",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -114853.3,
+        "y": 84794.28,
+        "z": -2920.2617
+      },
+      "u": 0.5493350190225345,
+      "v": 0.6518228464457374,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8f3f5f05353459e3",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -132288.42,
+        "y": 93313.89,
+        "z": -5296.857
+      },
+      "u": 0.4840234779045946,
+      "v": 0.6886053771818872,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dca7724c7562c3e3",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -139616.3,
+        "y": 97915.74,
+        "z": -4752.3228
+      },
+      "u": 0.4565734152765584,
+      "v": 0.7084733862888944,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e8801d6d188b6bae",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -143596.55,
+        "y": 87798.164,
+        "z": -5238.633
+      },
+      "u": 0.44166349429323976,
+      "v": 0.6647918034235601,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3c3cf9838aa54e6f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -129443.914,
+        "y": 80206.67,
+        "z": -4039.6885
+      },
+      "u": 0.4946789291191104,
+      "v": 0.6320163170587738,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5a0056dc1f33dffc",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -150852.22,
+        "y": 104851.59,
+        "z": -4379.293
+      },
+      "u": 0.41448392859233246,
+      "v": 0.7384181978244371,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8355668bf0d011cd",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -165971.11,
+        "y": 130686.36,
+        "z": -2487.436
+      },
+      "u": 0.3578489294702956,
+      "v": 0.8499571323045788,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_764e61cbe3440140",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -164182.97,
+        "y": 110914.195,
+        "z": -2999.2566
+      },
+      "u": 0.36454725899912205,
+      "v": 0.7645928648284004,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_98d6e380f8754a49",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -162114.84,
+        "y": 100302.65,
+        "z": -2860.3418
+      },
+      "u": 0.372294424348844,
+      "v": 0.7187786221435197,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f17fa746eb33709e",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -155572.58,
+        "y": 80568.414,
+        "z": -3754.2844
+      },
+      "u": 0.39680157330992105,
+      "v": 0.633578109182899,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7f30c094ba0ef9f8",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -91350.16,
+        "y": 126450.27,
+        "z": 1867.564
+      },
+      "u": 0.6373772174422008,
+      "v": 0.8316682539843158,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_51ffb45fe42018a3",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -99954.08,
+        "y": 143968.34,
+        "z": 245.89552
+      },
+      "u": 0.6051471395961369,
+      "v": 0.9073007005649717,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_42fae2dababc7afe",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -88243.58,
+        "y": 144908.69,
+        "z": 1249.3932
+      },
+      "u": 0.6490143915715539,
+      "v": 0.9113605639598616,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b2fdce333ddfa1cd",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -71033.99,
+        "y": 141882.47,
+        "z": -1782.0723
+      },
+      "u": 0.7134811027216857,
+      "v": 0.8982951736234084,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a39ac8c3410c8afe",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -79570.49,
+        "y": 130348.516,
+        "z": 994.66547
+      },
+      "u": 0.6815035785776997,
+      "v": 0.8484985259465385,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5723491788101272",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -68557.66,
+        "y": 114321.375,
+        "z": -2743.0125
+      },
+      "u": 0.7227573754755634,
+      "v": 0.7793030103718694,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_86fb5669f97b8aee",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -80653.15,
+        "y": 99507.56,
+        "z": -3226.2112
+      },
+      "u": 0.677447960199005,
+      "v": 0.7153459037018298,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_786176889b939187",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -99952.18,
+        "y": 89076.34,
+        "z": -2683.0059
+      },
+      "u": 0.6051542569505414,
+      "v": 0.6703101954633611,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_66170f68b450e9b0",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -96906.52,
+        "y": 80563.82,
+        "z": -1704.7091
+      },
+      "u": 0.616563226221832,
+      "v": 0.6335582750653513,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_575658e9837b1a8a",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -80504.25,
+        "y": 73116.28,
+        "z": 634.1765
+      },
+      "u": 0.6780057360257535,
+      "v": 0.6014042951344971,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_40702924f1c1d9e1",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -72449.375,
+        "y": 58567.902,
+        "z": -866.8006
+      },
+      "u": 0.708179104477612,
+      "v": 0.5385931851252214,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_620f124057c98cd4",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -72497.22,
+        "y": 89775.37,
+        "z": -2157.0154
+      },
+      "u": 0.7079998782557799,
+      "v": 0.6733281848385193,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_33280749ade289ac",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -62686.39,
+        "y": 78222.34,
+        "z": -1378.4222
+      },
+      "u": 0.7447510119988293,
+      "v": 0.6234491785142086,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c35b378477d3cd06",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -142361.31,
+        "y": 13983.833,
+        "z": 1989.6389
+      },
+      "u": 0.44629067369037173,
+      "v": 0.3461061008179442,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_159a91bc1c7e285b",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -137625.53,
+        "y": 3700.816,
+        "z": 590.52313
+      },
+      "u": 0.46403079192273927,
+      "v": 0.30171024362931104,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dc3c70f7ff0fed74",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -146658.69,
+        "y": -5014.5356,
+        "z": 1918.0951
+      },
+      "u": 0.43019279133743044,
+      "v": 0.2640826188784889,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b491aca76ccbef8f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -146523.42,
+        "y": 33063.72,
+        "z": 1675.8419
+      },
+      "u": 0.4306995095112671,
+      "v": 0.42848152997723254,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9c909972ea9961ed",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -138880.23,
+        "y": 22312.521,
+        "z": 1073.0154
+      },
+      "u": 0.4593307158326017,
+      "v": 0.382064345661523,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f02f0070ce7765b2",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -129617.38,
+        "y": 30736.215,
+        "z": 63.434395
+      },
+      "u": 0.49402912964588824,
+      "v": 0.41843276903617505,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6272cfc9f7528a9f",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -117592.92,
+        "y": 32712.227,
+        "z": -522.60626
+      },
+      "u": 0.5390724682470004,
+      "v": 0.426963995480226,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b4d283708acfde40",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -146473.36,
+        "y": 68486.57,
+        "z": -2659.8176
+      },
+      "u": 0.43088703306994447,
+      "v": 0.5814160033729657,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3d6a993f13979511",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -116160.11,
+        "y": 140349.3,
+        "z": -831.6857
+      },
+      "u": 0.544439740122915,
+      "v": 0.8916758714900076,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dc3560ae8f15b0bd",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -167361.34,
+        "y": 149464.84,
+        "z": 847.68
+      },
+      "u": 0.35264116125256073,
+      "v": 0.9310312680664473,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9f74d49d63b50e49",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -171372.1,
+        "y": -24481.979,
+        "z": 1078.8214
+      },
+      "u": 0.33761695054141055,
+      "v": 0.18003395524074545,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_28b651ab1bd76dcf",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -165500.66,
+        "y": -29532.686,
+        "z": 603.8884
+      },
+      "u": 0.359611223880597,
+      "v": 0.15822805268572396,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_57b7c6499ac231ee",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -175172.33,
+        "y": -19468.988,
+        "z": 987.67786
+      },
+      "u": 0.3233813801580334,
+      "v": 0.2016770228855721,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_38667b70400612bb",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -162090.83,
+        "y": -31839.076,
+        "z": 645.02374
+      },
+      "u": 0.3723843652326603,
+      "v": 0.14827045356269497,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_94ca63c6fc2bbf9d",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -161135.38,
+        "y": -36291.707,
+        "z": 923.89276
+      },
+      "u": 0.37596345800409714,
+      "v": 0.12904668197993088,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cfe8ae2603f2dcdd",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -124575.414,
+        "y": 124287.32,
+        "z": -2937.1362
+      },
+      "u": 0.5129162132865087,
+      "v": 0.8223299421536386,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_06a082777d15dbbd",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -18045.027,
+        "y": 28951.814,
+        "z": -926.72766
+      },
+      "u": 0.9119764865086333,
+      "v": 0.4107288031705878,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_715b47a9c7aa4c39",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -15991.596,
+        "y": 33863.78,
+        "z": 2031.2963
+      },
+      "u": 0.919668589757097,
+      "v": 0.4319357058773928,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5a58ff93314e4146",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -6330.788,
+        "y": 42113.566,
+        "z": 984.74725
+      },
+      "u": 0.9558577446883231,
+      "v": 0.46755329953621727,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_df4a0ac2211fbb58",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -1464.4529,
+        "y": 45521.664,
+        "z": -807.51196
+      },
+      "u": 0.974086919192274,
+      "v": 0.48226740844927896,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_efe24c74c95d7680",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -5924.845,
+        "y": 56976.883,
+        "z": -971.1281
+      },
+      "u": 0.9573783974246415,
+      "v": 0.5317241259465386,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f54db0f7ab617710",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -16484.234,
+        "y": 70610.95,
+        "z": -386.67715
+      },
+      "u": 0.9178231796312555,
+      "v": 0.5905877932372039,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_110e28f81fc07823",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -21776.623,
+        "y": 63085.473,
+        "z": 4103.7603
+      },
+      "u": 0.8979980174422009,
+      "v": 0.5580973284088036,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f50e67e86aa259ab",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -42924.13,
+        "y": 65521.58,
+        "z": 4089.8613
+      },
+      "u": 0.8187799637108575,
+      "v": 0.5686149671979088,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_748ffff02e419ccd",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -47431.54,
+        "y": 77481.39,
+        "z": -1724.0623
+      },
+      "u": 0.8018953140181445,
+      "v": 0.6202502038957753,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_575be78fe77d62be",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -59569.67,
+        "y": 74055.18,
+        "z": -1110.6616
+      },
+      "u": 0.7564261703248465,
+      "v": 0.6054578983050847,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3551cd65fdc15712",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -55618.77,
+        "y": 58244.11,
+        "z": 2212.7947
+      },
+      "u": 0.7712261469124964,
+      "v": 0.5371952468167636,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3d7915983922069a",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -58493.305,
+        "y": 50727.03,
+        "z": 2331.3538
+      },
+      "u": 0.7604582077846064,
+      "v": 0.5047410351631673,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6412af5610c9e308",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -60803.47,
+        "y": 41563.043,
+        "z": -2390.541
+      },
+      "u": 0.7518043851331577,
+      "v": 0.46517647369930015,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_df11722aaf302bdd",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -55836.137,
+        "y": 45407.777,
+        "z": 4338.031
+      },
+      "u": 0.7704118953467954,
+      "v": 0.4817757131629986,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4d038724a6a11bbb",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -49575.613,
+        "y": 55792.902,
+        "z": 5627.1626
+      },
+      "u": 0.7938636680128768,
+      "v": 0.5266124110295978,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3f64313e3cbfcf8c",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -66521.195,
+        "y": 54779.402,
+        "z": -938.3841
+      },
+      "u": 0.7303859244951711,
+      "v": 0.5222367301121511,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_23d2db9f88dffb3a",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -23756.986,
+        "y": -19167.924,
+        "z": -3045.226
+      },
+      "u": 0.8905796251682762,
+      "v": 0.20297683541613964,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ed6cd817cb835727",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -76847.7,
+        "y": 22601.213,
+        "z": -4323.357
+      },
+      "u": 0.6917030845771144,
+      "v": 0.38331074336790616,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cef3641e91b3b116",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -14450.201,
+        "y": 10497.952,
+        "z": -2082.2627
+      },
+      "u": 0.9254426184372256,
+      "v": 0.331056171886331,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7e76fa92bd53e46a",
+      "targetType": "creature",
+      "targetId": "g2_weevil",
+      "technicalId": "Weevil",
+      "map": "surface",
+      "world": {
+        "x": -17287.484,
+        "y": -13722.122,
+        "z": -1284.9453
+      },
+      "u": 0.9148142244073748,
+      "v": 0.22648851957163335,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Mushroom Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pet Tombstone Weevil",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Weevil Meat",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Weevil Meat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Weevil Nose",
+      "countLabel": "1",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

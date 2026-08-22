@@ -1,1 +1,736 @@
-{"id":"g2_orc_bee","speciesKey":"orc_bee","collectionGroup":"orc","name":"Abeja C.R.O.","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":209,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bee_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bee_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Bee.webp","weaknesses":["sour","slashing"],"resistances":["generic"],"temperament":"aggressive","health":{"value":500,"rating":2},"description":"Una abeja a control remoto. Al morir, puede soltar un receptor C.R.O. y partes de criatura.","behavior":"Patrulla alto alrededor de calabazas, estatua y zonas de oleadas O.R.C., pero baja más rápido al combate que una abeja normal. Cuando toma línea contigo, suele encadenar picados y aguijonazos sin soltar la presión.","interactionWithPlayer":"Ataca en cuanto entra en rango y otras abejas O.R.C. cercanas pueden sumarse enseguida. Si te quedas quieto después del primer bloqueo, la nube de polen te quita la mejor posición del combate.","interactionWithCreatures":"Suele orbitar sobre patrullas O.R.C. terrestres y entrar cuando otra unidad ya te fijó en el suelo.","strategy":"Lo más seguro sigue siendo abrir con daño a distancia y castigar cuando baja de altura. Los disparos a los ojos y salir rápido de la nube de polen son la diferencia entre un combate limpio y uno caótico.","environments":["Oleadas O.R.C. del jardín","Alrededores del carrito de helados","Zona de la estatua","Oleadas O.R.C. del picnic","Parche de calabazas"],"loot":[{"section":"loot","item":"Bee Fuzz","minCount":1,"maxCount":3},{"section":"loot","item":"Bee Stinger","minCount":0,"maxCount":1},{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"rare","item":"Bee Fuzz","minCount":0,"maxCount":3},{"section":"rare","item":"Bee Stinger","minCount":0,"maxCount":1},{"section":"rare","item":"Pollen","minCount":0,"maxCount":1}],"combatStats":{"health":500,"attackDamageSummary":"Mordisco: 62.5. Combo de aguijonazos: 75. Aguijonazo cargado: 100. Nube de polen: 31.25."},"abilities":[{"name":"Mordisco","description":"Un contacto rápido de corto alcance cuando ya está encima de ti.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo de aguijonazos","description":"Encadena varios pinchazos mientras se mantiene a tu altura.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Aguijonazo cargado","description":"Se aparta un instante antes de clavar el aguijón con mucha más fuerza.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Nube de polen","description":"Sacude las patas y deja una nube de polen que complica seguir peleando debajo de ella.","blockable":false,"breaksGuard":false,"staggers":false}],"elementalWeaknesses":[{"type":"sour","bonusPct":15}],"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25}],"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_arrows_only","susceptibleDamageTypes":["stabbingArrowsOnly"]},"groupId":null,"cardTier":2,"technicalId":"BeeORC","bestiaryId":"BeeORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Aguijonazo","technicalId":"BeeSting","tags":["stabbing"],"notes":"Daño del ataque: 60"},{"name":"Aguijonazo cargado","technicalId":"BeeStingCharged","tags":["stabbing"],"notes":"Daño del ataque: 80"},{"name":"Mordida","technicalId":"BeeBite","tags":["stabbing"],"notes":"Daño del ataque: 50"},{"name":"Polen nube","technicalId":"BeePollenCloud","tags":["general_unblockable","ranged"],"notes":"Daño del ataque: 25"}],"encounterVariants":[{"id":"g2_wave_bee_orc_wave","characterRow":"Bee_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":500.0,"stun":{"max":50.0,"duration":4.0,"cooldown":20.0,"staggerThreshold":30}},"weakpoints":["Eyes"],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"}],"weaknesses":[{"damageTypes":["Sour"],"percent":15.0,"sourceId":"DamageResistDownSourTiny"},{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"BeeSting","ability":"BeeSting","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BeeStingCharged","ability":"BeeStingCharge","resolved":true,"cooldown":15.0,"priority":2,"targetType":"Enemy","damage":{"amount":80.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":200.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"BeeBite","ability":"BeeBite","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":450.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BeePollenCloud","ability":"BeePollenCloud","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":25.0,"type":"GeneralUnblockable","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":700.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_bee_orc_wave","nameEn":"O.R.C. Bee Raid/Wave","nameEsMX":"Abeja C.R.O.  (Oleada)","nameRu":"O.R.C. Пчела Рейд/волна"}],"contextVariants":[{"id":"Bee_ORC_Wave","characterRow":"Bee_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":500.0,"stun":{"max":50.0,"duration":4.0,"cooldown":20.0,"staggerThreshold":30}},"weakpoints":["Eyes"],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"}],"weaknesses":[{"damageTypes":["Sour"],"percent":15.0,"sourceId":"DamageResistDownSourTiny"},{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"BeeSting","ability":"BeeSting","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BeeStingCharged","ability":"BeeStingCharge","resolved":true,"cooldown":15.0,"priority":2,"targetType":"Enemy","damage":{"amount":80.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":200.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"BeeBite","ability":"BeeBite","resolved":true,"cooldown":5.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":450.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BeePollenCloud","ability":"BeePollenCloud","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":25.0,"type":"GeneralUnblockable","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":700.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Abeja C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_bee",
+  "speciesKey": "orc_bee",
+  "collectionGroup": "orc",
+  "name": "Abeja C.R.O.",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 209,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bee_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bee_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Bee.webp",
+  "weaknesses": [
+    "sour",
+    "slashing"
+  ],
+  "resistances": [
+    "generic"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 2,
+    "value": 500
+  },
+  "description": "Una abeja a control remoto. Al morir, puede soltar un receptor C.R.O. y partes de criatura.",
+  "behavior": "Patrulla alto alrededor de calabazas, estatua y zonas de oleadas O.R.C., pero baja más rápido al combate que una abeja normal. Cuando toma línea contigo, suele encadenar picados y aguijonazos sin soltar la presión.",
+  "interactionWithPlayer": "Ataca en cuanto entra en rango y otras abejas O.R.C. cercanas pueden sumarse enseguida. Si te quedas quieto después del primer bloqueo, la nube de polen te quita la mejor posición del combate.",
+  "interactionWithCreatures": "Suele orbitar sobre patrullas O.R.C. terrestres y entrar cuando otra unidad ya te fijó en el suelo.",
+  "strategy": "Lo más seguro sigue siendo abrir con daño a distancia y castigar cuando baja de altura. Los disparos a los ojos y salir rápido de la nube de polen son la diferencia entre un combate limpio y uno caótico.",
+  "environments": [
+    "Oleadas O.R.C. del jardín",
+    "Alrededores del carrito de helados",
+    "Zona de la estatua",
+    "Oleadas O.R.C. del picnic",
+    "Parche de calabazas"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Bee Fuzz",
+      "minCount": 2,
+      "maxCount": 7
+    },
+    {
+      "section": "loot",
+      "item": "Bee Stinger",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Pollen",
+      "minCount": 2,
+      "maxCount": 3
+    }
+  ],
+  "combatStats": {
+    "health": 500,
+    "stunThreshold": 50,
+    "stunCooldownSeconds": 20
+  },
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "Un contacto rápido de corto alcance cuando ya está encima de ti.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo de aguijonazos",
+      "description": "Encadena varios pinchazos mientras se mantiene a tu altura.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Aguijonazo cargado",
+      "description": "Se aparta un instante antes de clavar el aguijón con mucha más fuerza.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Nube de polen",
+      "description": "Sacude las patas y deja una nube de polen que complica seguir peleando debajo de ella.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "sour",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_arrows_only",
+    "susceptibleDamageTypes": [
+      "stabbingArrowsOnly"
+    ]
+  },
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "BeeORC",
+  "bestiaryId": "BeeORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only",
+      "susceptibleDamageTypes": [
+        "stabbingArrowsOnly"
+      ],
+      "weaponFamilies": [
+        "bow",
+        "crossbow"
+      ],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Aguijonazo",
+      "technicalId": "BeeSting",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 60",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 60.0,
+      "cooldownSeconds": 5.0,
+      "range": 400.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Aguijonazo cargado",
+      "technicalId": "BeeStingCharged",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 80",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 80.0,
+      "cooldownSeconds": 15.0,
+      "range": 200.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mordida",
+      "technicalId": "BeeBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 5.0,
+      "range": 450.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Polen nube",
+      "technicalId": "BeePollenCloud",
+      "tags": [
+        "general",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Daño del ataque: 25",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 25.0,
+      "cooldownSeconds": 20.0,
+      "range": 700.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_bee_orc_wave",
+      "characterRow": "Bee_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 500.0,
+        "stun": {
+          "max": 50.0,
+          "duration": 4.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [
+        "Eyes"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Sour"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSourTiny"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "BeeSting",
+          "ability": "BeeSting",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BeeStingCharged",
+          "ability": "BeeStingCharge",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 80.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 200.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "BeeBite",
+          "ability": "BeeBite",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 450.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BeePollenCloud",
+          "ability": "BeePollenCloud",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 25.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 700.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_bee_orc_wave",
+      "nameEn": "O.R.C. Bee Raid/Wave",
+      "nameEsMX": "Abeja C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Пчела Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Bee_ORC_Wave",
+      "characterRow": "Bee_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 500.0,
+        "stun": {
+          "max": 50.0,
+          "duration": 4.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [
+        "Eyes"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Sour"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSourTiny"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "BeeSting",
+          "ability": "BeeSting",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BeeStingCharged",
+          "ability": "BeeStingCharge",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 80.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 200.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "BeeBite",
+          "ability": "BeeBite",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 450.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BeePollenCloud",
+          "ability": "BeePollenCloud",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 25.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 700.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Abeja C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_ad6fbd9a367b0051",
+      "targetType": "creature",
+      "targetId": "g2_orc_bee",
+      "technicalId": "BeeORC",
+      "map": "surface",
+      "world": {
+        "x": -201400.0,
+        "y": 6900.0,
+        "z": 8700.0
+      },
+      "u": 0.22513315774070825,
+      "v": 0.3155223880597015,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_33271da4c9095d8d",
+      "targetType": "creature",
+      "targetId": "g2_orc_bee",
+      "technicalId": "BeeORC",
+      "map": "surface",
+      "world": {
+        "x": -158119.52,
+        "y": 5840.1226,
+        "z": 4805.912
+      },
+      "u": 0.38726079719051804,
+      "v": 0.310946477537735,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d7590c158c656fb5",
+      "targetType": "creature",
+      "targetId": "g2_orc_bee",
+      "technicalId": "BeeORC",
+      "map": "surface",
+      "world": {
+        "x": -71996.125,
+        "y": 59343.688,
+        "z": -1008.92017
+      },
+      "u": 0.709876968100673,
+      "v": 0.5419425605531664,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9ff44fe977ed5c6c",
+      "targetType": "creature",
+      "targetId": "g2_orc_bee",
+      "technicalId": "BeeORC",
+      "map": "surface",
+      "world": {
+        "x": -106422.61,
+        "y": 30407.303,
+        "z": 660.0683
+      },
+      "u": 0.5809161814457127,
+      "v": 0.4170127256598365,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0be4ccc659051b80",
+      "targetType": "creature",
+      "targetId": "g2_orc_bee",
+      "technicalId": "BeeORC",
+      "map": "surface",
+      "world": {
+        "x": -108392.85,
+        "y": -26227.729,
+        "z": 14217.128
+      },
+      "u": 0.5735357096868599,
+      "v": 0.17249686105067882,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b7ab27c08492ac1b",
+      "targetType": "creature",
+      "targetId": "g2_orc_bee",
+      "technicalId": "BeeORC",
+      "map": "surface",
+      "world": {
+        "x": -70341.49,
+        "y": 58403.65,
+        "z": -1120.2091
+      },
+      "u": 0.716075191103307,
+      "v": 0.5378840441858503,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Bloqueado por progreso de historia",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Bee Fuzz",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Bee Fuzz",
+      "countLabel": "2",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bee Fuzz",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bee Stinger",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bee Stinger",
+      "countLabel": "1",
+      "chancePct": 40,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pollen",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pollen",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

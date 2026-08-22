@@ -1,1 +1,367 @@
-{"id":"g2_masked_stranger","speciesKey":"masked_stranger","collectionGroup":"angry","name":"Extraña enmascarada","game":"g2","tier":5,"danger":"imposible","isBoss":true,"order":299,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Boss_V_Armor_1.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Boss_V_Armor_1_G.png","photo":"assets/g2/creatures/photos/Masked_Stranger.webp","weaknesses":["fresh"],"resistances":["spicy","venom"],"temperament":"aggressive","health":{"value":1875,"rating":4},"description":"Una figura enigmática que probará tu temple en combate.","behavior":"Se mueve de forma deliberada y castiga los errores con cambios bruscos de ritmo.","interactionWithPlayer":"Ataca de frente y cambia de patrón para castigar al jugador desprevenido o demasiado confiado.","interactionWithCreatures":"No suele interactuar mucho con otras criaturas, salvo en combates cercanos.","strategy":"Observa sus cambios de ritmo y no respondas tarde a la presión. El mejor castigo aparece entre transiciones, no durante sus cadenas largas.","combatStats":{"health":1875,"attackDamageSummary":"Ataque básico: 40. Combo de 2 golpes: 40. Combo de 3 golpes: 40. Ataque cargado: 100. Ataque en salto: 45. Estallido spicy: 100. Giro de 4 golpes: 40. Combo de 5 golpes: 33."},"inflictsEffects":["spicy","sizzle"],"abilities":[{"name":"Ataque básico","description":"Una entrada rápida para comprobar tu primer bloqueo y fijarte delante de él.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo de 2 golpes","description":"Una cadena corta para impedir que respondas demasiado pronto.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo de 3 golpes","description":"Extiende la presión con una tercera entrada para castigar respuestas automáticas.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Ataque cargado","description":"Retrasa el golpe un instante y luego descarga un impacto que castiga bloqueos imprecisos.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Ataque en salto","description":"Se lanza desde media distancia para retomar el control si logras abrir espacio.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Estallido spicy","description":"Libera una explosión spicy para forzarte a moverte y romper el ritmo del duelo.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Giro de 4 golpes","description":"Una cadena giratoria para atrapar a quien intenta salir por los costados.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Combo de 5 golpes","description":"La cadena más larga del encuentro, pensada para rematar errores cuando ya estás bajo presión.","blockable":true,"breaksGuard":false,"staggers":false}],"resistancesV2":[{"type":"spicy","bonusPct":25},{"type":"venom","bonusPct":50}],"bossPhases":[{"id":"phase1","label":"Fase 1","startsAtHealthPct":100,"trigger":"Comienza el encuentro.","summary":"Empieza con presión principalmente física: ataques rápidos, cadenas cortas y un salto para recuperar distancia cuando te separas.","aggressionChange":"Ritmo alto, pero todavía con pausas claras entre una cadena y la siguiente."},{"id":"phase2","label":"Fase 2","startsAtHealthPct":66,"trigger":"La vida baja aproximadamente a dos tercios.","summary":"Empieza a mezclar el estallido spicy con cadenas giratorias para forzar movimiento y castigar respuestas previsibles.","aggressionChange":"Más frecuencia de ataques y ventanas de castigo más cortas.","newPatterns":["Alterna área spicy y giro para castigar tanto el bloqueo fijo como la huida lateral."]},{"id":"phase3","label":"Fase 3","startsAtHealthPct":33,"trigger":"La vida entra en el tercio final.","summary":"La fase final junta sus combos largos, el salto y las explosiones spicy con el menor margen de respiro de toda la pelea.","aggressionChange":"Agresión máxima y castigos pensados para rematar cualquier error tardío.","newPatterns":["Sus cadenas largas aparecen más seguidas después del salto o del estallido spicy."]}],"groupId":null,"cardTier":3,"technicalId":"SubjectV","bestiaryId":"SubjectV","bossCardStyle":"red","isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[{"type":"fresh","bonusPct":10}],"damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Derecha golpe","technicalId":"SubjectV_2H_Right","tags":["spicy_slashing"],"notes":"Daño del ataque: 40"},{"name":"Combo 3 Hits","technicalId":"SubjectV_2H_Combo_3Hits","tags":["spicy_slashing"],"notes":"Daño del ataque: 40"},{"name":"Potente","technicalId":"SubjectV_2H_Power","tags":["spicy_slashing"],"notes":"Daño del ataque: 100"},{"name":"Salto","technicalId":"SubjectV_Leap","tags":["spicy_slashing","ranged"],"notes":"Daño del ataque: 45"},{"name":"Área ataque Transition","technicalId":"SubjectV_AOE_Transition","tags":["explosive_enemy"],"notes":"Daño del ataque: 0"},{"name":"Bloqueo ofensivo","technicalId":"BlockOffensive","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_masked_stranger",
+  "speciesKey": "masked_stranger",
+  "collectionGroup": "angry",
+  "name": "Extraña enmascarada",
+  "game": "g2",
+  "tier": 5,
+  "danger": "muy_alta",
+  "isBoss": true,
+  "order": 299,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Boss_V_Armor_1.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Boss_V_Armor_1_G.png",
+  "photo": "assets/g2/creatures/photos/Masked_Stranger.webp",
+  "weaknesses": [
+    "fresh"
+  ],
+  "resistances": [
+    "spicy",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 4,
+    "value": 1875
+  },
+  "description": "Una figura enigmática que probará tu temple en combate.",
+  "behavior": "Se mueve de forma deliberada y castiga los errores con cambios bruscos de ritmo.",
+  "interactionWithPlayer": "Ataca de frente y cambia de patrón para castigar al jugador desprevenido o demasiado confiado.",
+  "interactionWithCreatures": "No suele interactuar mucho con otras criaturas, salvo en combates cercanos.",
+  "strategy": "Observa sus cambios de ritmo y no respondas tarde a la presión. El mejor castigo aparece entre transiciones, no durante sus cadenas largas.",
+  "combatStats": {
+    "health": 1875,
+    "stunThreshold": 90,
+    "stunCooldownSeconds": 20
+  },
+  "inflictsEffects": [
+    "spicy",
+    "sizzle"
+  ],
+  "abilities": [
+    {
+      "name": "Ataque básico",
+      "description": "Una entrada rápida para comprobar tu primer bloqueo y fijarte delante de él.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo de 2 golpes",
+      "description": "Una cadena corta para impedir que respondas demasiado pronto.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo de 3 golpes",
+      "description": "Extiende la presión con una tercera entrada para castigar respuestas automáticas.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Ataque cargado",
+      "description": "Retrasa el golpe un instante y luego descarga un impacto que castiga bloqueos imprecisos.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Ataque en salto",
+      "description": "Se lanza desde media distancia para retomar el control si logras abrir espacio.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Estallido spicy",
+      "description": "Libera una explosión spicy para forzarte a moverte y romper el ritmo del duelo.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Giro de 4 golpes",
+      "description": "Una cadena giratoria para atrapar a quien intenta salir por los costados.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Combo de 5 golpes",
+      "description": "La cadena más larga del encuentro, pensada para rematar errores cuando ya estás bajo presión.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "bossPhases": [
+    {
+      "id": "phase1",
+      "label": "Fase 1",
+      "startsAtHealthPct": 100,
+      "trigger": "Comienza el encuentro.",
+      "summary": "Empieza con presión principalmente física: ataques rápidos, cadenas cortas y un salto para recuperar distancia cuando te separas.",
+      "aggressionChange": "Ritmo alto, pero todavía con pausas claras entre una cadena y la siguiente."
+    },
+    {
+      "id": "phase2",
+      "label": "Fase 2",
+      "startsAtHealthPct": 66,
+      "trigger": "La vida baja aproximadamente a dos tercios.",
+      "summary": "Empieza a mezclar el estallido spicy con cadenas giratorias para forzar movimiento y castigar respuestas previsibles.",
+      "aggressionChange": "Más frecuencia de ataques y ventanas de castigo más cortas.",
+      "newPatterns": [
+        "Alterna área spicy y giro para castigar tanto el bloqueo fijo como la huida lateral."
+      ]
+    },
+    {
+      "id": "phase3",
+      "label": "Fase 3",
+      "startsAtHealthPct": 33,
+      "trigger": "La vida entra en el tercio final.",
+      "summary": "La fase final junta sus combos largos, el salto y las explosiones spicy con el menor margen de respiro de toda la pelea.",
+      "aggressionChange": "Agresión máxima y castigos pensados para rematar cualquier error tardío.",
+      "newPatterns": [
+        "Sus cadenas largas aparecen más seguidas después del salto o del estallido spicy."
+      ]
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "SubjectV",
+  "bestiaryId": "SubjectV",
+  "bossCardStyle": "red",
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 10
+    }
+  ],
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Derecha golpe",
+      "technicalId": "SubjectV_2H_Right",
+      "tags": [
+        "slashing",
+        "spicy"
+      ],
+      "notes": "Daño del ataque: 40",
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 3.0,
+      "range": 275.0,
+      "stun": 8,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 3 Hits",
+      "technicalId": "SubjectV_2H_Combo_3Hits",
+      "tags": [
+        "slashing",
+        "spicy"
+      ],
+      "notes": "Daño del ataque: 40",
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 16.0,
+      "range": 275.0,
+      "stun": 8,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente",
+      "technicalId": "SubjectV_2H_Power",
+      "tags": [
+        "slashing",
+        "spicy"
+      ],
+      "notes": "Daño del ataque: 100",
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 18.0,
+      "range": 325.0,
+      "stun": 20,
+      "statusEffects": [
+        "Sizzle Large Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Large Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Salto",
+      "technicalId": "SubjectV_Leap",
+      "tags": [
+        "ranged",
+        "slashing",
+        "spicy"
+      ],
+      "notes": "Daño del ataque: 45",
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 12.0,
+      "range": 325.0,
+      "stun": 10,
+      "statusEffects": [
+        "Sizzle Large Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Large Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Área ataque Transition",
+      "technicalId": "SubjectV_AOE_Transition",
+      "tags": [
+        "explosive"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [
+        "explosive"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 0.0,
+      "range": 0.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bloqueo ofensivo",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_a52706efcc1aff48",
+      "targetType": "creature",
+      "targetId": "g2_masked_stranger",
+      "technicalId": "SubjectV",
+      "map": "surface",
+      "world": {
+        "x": -175400.11,
+        "y": 16551.723,
+        "z": 23254.525
+      },
+      "u": 0.32252812174422013,
+      "v": 0.35719269901340756,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Bloqueado por progreso de historia",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "loot": [],
+  "advancedLootTable": []
+}

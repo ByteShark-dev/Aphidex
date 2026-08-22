@@ -1,1 +1,694 @@
-{"id":"g2_cricket","speciesKey":"cricket","collectionGroup":"neutral","name":"Cricket","game":"g2","tier":3,"danger":"muy_alta","isBoss":false,"order":222,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Cricket.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Cricket_G.png","photo":"assets/g2/creatures/photos/Cricket.webp","weaknesses":["fresh"],"resistances":["stabbing","spicy"],"temperament":"neutral","health":{"value":1400,"rating":4},"description":"These chirping insects put on a show at night but are lazy during the day. Can drop their powerful drumstick legs, head and cricket parts on death.","behavior":"Crickets move with short jumps and use their speed to keep pressure on targets. They do not stay still for long and do not behave erratically.","interactionWithPlayer":"It usually ignores the player until damaged. If given space, it can chain attacks quickly.","interactionWithCreatures":"It usually avoids long fights with other creatures, but may react if the area becomes crowded with combat.","strategy":"Block its short combos and punish it when it lands. Do not give it room to chain Leap of Faith or Charged Headbutt.","environments":["Greenhouse","Greenhouse Surroundings","Pumpkin Patch","Veggie Garden"],"loot":[{"section":"loot","item":"Cricket Drumstick","minCount":0,"maxCount":2},{"section":"loot","item":"Cricket Head","minCount":0,"maxCount":1},{"section":"loot","item":"Cricket Part","minCount":1,"maxCount":5},{"section":"rare","item":"Fabulous Femur","minCount":0,"maxCount":1},{"section":"rare","item":"Cricket Part","minCount":0,"maxCount":4}],"advancedLootTable":[{"item":"Cricket Drumstick","countLabel":"x1","chancePct":60},{"item":"Cricket Drumstick","countLabel":"x1","chancePct":30},{"item":"Cricket Head","countLabel":"x1","chancePct":50},{"item":"Cricket Part","countLabel":"x1","chancePct":100},{"item":"Cricket Part","countLabel":"x4","chancePct":50},{"item":"Cricket Part","countLabel":"x4","chancePct":1},{"item":"Fabulous Femur","countLabel":"x1","chancePct":4}],"combatStats":{"health":1400,"stunThreshold":75,"stunCooldownSeconds":5,"attackDamageSummary":"3-Bite Combo: 88. Charged Headbutt: 112. Back Kick: 95. Leap of Faith: 120."},"inflictsEffects":["stabbing"],"inflicts":["Stabbing damage"],"abilities":[{"name":"3-Bite Combo","description":"A quick string of bites that pressures stamina if you block late.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Charged Headbutt","description":"It lunges forward and can break guard if you mistime the block.","blockable":true,"breaksGuard":true,"staggers":false},{"name":"Back Kick","description":"It lashes out with its rear legs and can stagger you.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Leap of Faith","description":"It leaps onto the target; dodging is safer than trying to block.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Screech","description":"A sharp cry that accompanies its tempo changes and pressure."},{"name":"Blocking Stance","description":"It resets before going back on offense and punishes rushed approaches."}],"elementalWeaknesses":[{"type":"fresh","bonusPct":15}],"damageWeaknesses":[],"resistancesV2":[{"type":"stabbing","bonusPct":25},{"type":"spicy","bonusPct":25}],"groupId":null,"cardTier":3,"technicalId":"Cricket","bestiaryId":"Cricket","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[],"attacks":[{"name":"Combo 3 X","technicalId":"CricketAttackCombo3X","tags":["stabbing"],"notes":"Attack damage: 88"},{"name":"Power Attack","technicalId":"CricketAttackPowerAttack","tags":["stabbing"],"notes":"Attack damage: 112"},{"name":"Back Kick","technicalId":"CricketAttackBackKick","tags":["stabbing"],"notes":"Attack damage: 95"},{"name":"Leap Of Faith","technicalId":"CricketAttackLeapOfFaith","tags":["cricket_leap_of_faith"],"notes":"Attack damage: 120"},{"name":"Sonic Screech","technicalId":"CricketAttackSonicScreech","tags":["general_unblockable"],"notes":"Attack damage: 0"},{"name":"Block Defensive","technicalId":"BlockDefensive","tags":["maine"],"notes":"Attack damage: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_cricket",
+  "speciesKey": "cricket",
+  "collectionGroup": "neutral",
+  "name": "Cricket",
+  "game": "g2",
+  "tier": 3,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 222,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Cricket.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Cricket_G.png",
+  "photo": "assets/g2/creatures/photos/Cricket.webp",
+  "weaknesses": [
+    "fresh"
+  ],
+  "resistances": [
+    "stabbing",
+    "spicy"
+  ],
+  "temperament": "neutral",
+  "health": {
+    "rating": 4,
+    "value": 1400
+  },
+  "description": "These chirping insects put on a show at night but are lazy during the day. Can drop their powerful drumstick legs, head and cricket parts on death.",
+  "behavior": "Crickets move with short jumps and use their speed to keep pressure on targets. They do not stay still for long and do not behave erratically.",
+  "interactionWithPlayer": "It usually ignores the player until damaged. If given space, it can chain attacks quickly.",
+  "interactionWithCreatures": "It usually avoids long fights with other creatures, but may react if the area becomes crowded with combat.",
+  "strategy": "Block its short combos and punish it when it lands. Do not give it room to chain Leap of Faith or Charged Headbutt.",
+  "environments": [
+    "Greenhouse",
+    "Greenhouse Surroundings",
+    "Pumpkin Patch",
+    "Veggie Garden"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Cricket",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cricket Drumstick",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Cricket Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cricket Part",
+      "minCount": 1,
+      "maxCount": 9
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Cricket",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Drumstick",
+      "countLabel": "1",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Drumstick",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Cricket Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Part",
+      "countLabel": "4",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 1400,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 10
+  },
+  "inflictsEffects": [
+    "stabbing"
+  ],
+  "inflicts": [
+    "Stabbing damage"
+  ],
+  "abilities": [
+    {
+      "name": "3-Bite Combo",
+      "description": "A quick string of bites that pressures stamina if you block late.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Charged Headbutt",
+      "description": "It lunges forward and can break guard if you mistime the block.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": false
+    },
+    {
+      "name": "Back Kick",
+      "description": "It lashes out with its rear legs and can stagger you.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Leap of Faith",
+      "description": "It leaps onto the target; dodging is safer than trying to block.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Screech",
+      "description": "A sharp cry that accompanies its tempo changes and pressure."
+    },
+    {
+      "name": "Blocking Stance",
+      "description": "It resets before going back on offense and punishes rushed approaches."
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "Cricket",
+  "bestiaryId": "Cricket",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Combo 3 X",
+      "technicalId": "CricketAttackCombo3X",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 88",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 88.0,
+      "cooldownSeconds": 2.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power Attack",
+      "technicalId": "CricketAttackPowerAttack",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 112",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 112.0,
+      "cooldownSeconds": 8.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Back Kick",
+      "technicalId": "CricketAttackBackKick",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 95",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 95.0,
+      "cooldownSeconds": 2.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Leap Of Faith",
+      "technicalId": "CricketAttackLeapOfFaith",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 120",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 10.0,
+      "range": 400.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Sonic Screech",
+      "technicalId": "CricketAttackSonicScreech",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 15.0,
+      "range": 2000.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Defensive",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_9f4b5b1a0ccce0b5",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -119121.35,
+        "y": -48408.152,
+        "z": 2963.6106
+      },
+      "u": 0.5333470061457418,
+      "v": 0.07673518994856224,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a40b8a360e9a452a",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -147863.3,
+        "y": -27184.764,
+        "z": 2127.8894
+      },
+      "u": 0.4256803511852502,
+      "v": 0.1683649619023527,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d7182c240043c7e",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -145811.23,
+        "y": -50815.684,
+        "z": 3815.6748
+      },
+      "u": 0.4333673561603746,
+      "v": 0.06634092075217134,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3388ae6bcb454033",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -123772.76,
+        "y": -38634.414,
+        "z": 2052.9219
+      },
+      "u": 0.5159229359086918,
+      "v": 0.11893228798380985,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8d8c474a2c4a2fc2",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -166828.11,
+        "y": -15131.277,
+        "z": 299.11066
+      },
+      "u": 0.35463862803628915,
+      "v": 0.22040463931191498,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9f6f73940a8fd226",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -183920.0,
+        "y": -12980.0,
+        "z": 407.00165
+      },
+      "u": 0.290612818261633,
+      "v": 0.22969255417826123,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_296e3cabce59eced",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -167409.94,
+        "y": -28867.928,
+        "z": 875.1589
+      },
+      "u": 0.3524591068188469,
+      "v": 0.16109807626275402,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cebad625b9623723",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -90135.586,
+        "y": 24928.752,
+        "z": 961.366
+      },
+      "u": 0.6419269824992683,
+      "v": 0.3933596511004301,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1f14920f35156689",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -91112.79,
+        "y": 44457.7,
+        "z": 169.17966
+      },
+      "u": 0.6382663997658765,
+      "v": 0.47767385445653104,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0ced09d1726c2bad",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -89669.664,
+        "y": 33981.418,
+        "z": 181.40671
+      },
+      "u": 0.6436723151302313,
+      "v": 0.43244359571633356,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dab313995f16b6e8",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -174596.2,
+        "y": -48127.152,
+        "z": -587.4049
+      },
+      "u": 0.3255395493122622,
+      "v": 0.0779483782443714,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e8e472f6e07423c8",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -89038.625,
+        "y": 19727.79,
+        "z": 1389.5032
+      },
+      "u": 0.6460361720807726,
+      "v": 0.37090503819883636,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_73bb4cb6ba36ec58",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -89815.78,
+        "y": 3253.725,
+        "z": 1089.47
+      },
+      "u": 0.6431249681006731,
+      "v": 0.2997799747027574,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5b0d2028373f2201",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -96953.1,
+        "y": -2644.3596,
+        "z": 1523.5142
+      },
+      "u": 0.6163887386596429,
+      "v": 0.27431560742727046,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_97f174fcd29bf9dc",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -167537.34,
+        "y": -28867.928,
+        "z": 875.1589
+      },
+      "u": 0.35198186947614873,
+      "v": 0.16109807626275402,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0de893a8c2af538",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -204318.45,
+        "y": -40044.13,
+        "z": 5134.175
+      },
+      "u": 0.21420071407667543,
+      "v": 0.11284598566489586,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_937a61197c6db4e9",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -59997.277,
+        "y": 49649.793,
+        "z": 2569.9019
+      },
+      "u": 0.7548243647644132,
+      "v": 0.5000901763723754,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_237f0d804685cbb1",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -43742.207,
+        "y": 65463.7,
+        "z": 4029.3208
+      },
+      "u": 0.8157154669007902,
+      "v": 0.5683650763133485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c4ae676b662f34e0",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -7104.555,
+        "y": 42251.99,
+        "z": 1072.0002
+      },
+      "u": 0.9529592320749195,
+      "v": 0.4681509307698793,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4963e27e38066eef",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -218651.33,
+        "y": -29382.006,
+        "z": 1121.6927
+      },
+      "u": 0.16051008955223886,
+      "v": 0.1588785979256261,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b39513b8b4bc2ce",
+      "targetType": "creature",
+      "targetId": "g2_cricket",
+      "technicalId": "Cricket",
+      "map": "surface",
+      "world": {
+        "x": -204940.0,
+        "y": -12225.0,
+        "z": 1047.0726
+      },
+      "u": 0.21187240269242025,
+      "v": 0.23295218821148492,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": []
+}

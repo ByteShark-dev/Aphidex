@@ -1,4 +1,5 @@
 import 'creature_card_support.dart';
+import 'catalog_entry_kind.dart';
 import 'enemy.dart';
 
 class EnemyIndexEntry implements CreatureCardCarrier {
@@ -6,6 +7,7 @@ class EnemyIndexEntry implements CreatureCardCarrier {
   final String id;
   final String speciesKey;
   final String? collectionGroup;
+  final String? technicalId;
   final String? groupId;
   final String name;
   final int? order;
@@ -28,6 +30,10 @@ class EnemyIndexEntry implements CreatureCardCarrier {
   final String cardNormal;
   final String cardGold;
   final String listIconAsset;
+  final String mapMarkerAsset;
+  final String customAsset;
+  final CatalogEntryKind entryKind;
+  final bool hideHealth;
   final bool? hasCreatureCardFlag;
   final bool? hasGoldCreatureCardFlag;
   final bool? hasSelectableCardVariantsFlag;
@@ -38,6 +44,7 @@ class EnemyIndexEntry implements CreatureCardCarrier {
     required this.id,
     required this.speciesKey,
     this.collectionGroup,
+    this.technicalId,
     this.groupId,
     required this.name,
     required this.order,
@@ -57,6 +64,10 @@ class EnemyIndexEntry implements CreatureCardCarrier {
     required this.cardNormal,
     required this.cardGold,
     this.listIconAsset = '',
+    this.mapMarkerAsset = '',
+    this.customAsset = '',
+    this.entryKind = CatalogEntryKind.creature,
+    this.hideHealth = false,
     this.hasCreatureCardFlag,
     this.hasGoldCreatureCardFlag,
     this.hasSelectableCardVariantsFlag,
@@ -70,6 +81,7 @@ class EnemyIndexEntry implements CreatureCardCarrier {
     id: json['id'] as String,
     speciesKey: (json['speciesKey'] as String?) ?? (json['id'] as String),
     collectionGroup: json['collectionGroup'] as String?,
+    technicalId: json['technicalId'] as String?,
     groupId: json['groupId'] as String?,
     name: (json['name'] ?? '').toString(),
     order: json['order'] as int?,
@@ -89,6 +101,10 @@ class EnemyIndexEntry implements CreatureCardCarrier {
     cardNormal: (json['cardNormal'] as String? ?? '').trim(),
     cardGold: (json['cardGold'] as String? ?? '').trim(),
     listIconAsset: (json['listIconAsset'] as String? ?? '').trim(),
+    mapMarkerAsset: (json['mapMarkerAsset'] as String? ?? '').trim(),
+    customAsset: (json['customAsset'] as String? ?? '').trim(),
+    entryKind: CatalogEntryKind.fromJson(json['entityType']),
+    hideHealth: json['hideHealth'] == true,
     hasCreatureCardFlag: json['hasCreatureCard'] as bool?,
     hasGoldCreatureCardFlag: json['hasGoldCreatureCard'] as bool?,
     hasSelectableCardVariantsFlag: json['hasSelectableCardVariants'] as bool?,
@@ -103,6 +119,7 @@ class EnemyIndexEntry implements CreatureCardCarrier {
         id: enemy.id,
         speciesKey: enemy.speciesKey,
         collectionGroup: enemy.collectionGroup,
+        technicalId: enemy.technicalId,
         groupId: enemy.groupId,
         name: enemy.name.resolve(languageCode),
         order: enemy.order,
@@ -122,6 +139,10 @@ class EnemyIndexEntry implements CreatureCardCarrier {
         cardNormal: enemy.cardNormal,
         cardGold: enemy.cardGold,
         listIconAsset: enemy.listIconAsset,
+        mapMarkerAsset: enemy.mapMarkerAsset,
+        customAsset: enemy.customAsset,
+        entryKind: enemy.entryKind,
+        hideHealth: enemy.hideHealth,
         hasCreatureCardFlag: enemy.hasCreatureCard,
         hasGoldCreatureCardFlag: enemy.hasGoldCreatureCard,
         hasSelectableCardVariantsFlag: enemy.hasSelectableCardVariants,

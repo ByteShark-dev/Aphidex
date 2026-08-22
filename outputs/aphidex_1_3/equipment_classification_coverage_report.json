@@ -1,0 +1,3352 @@
+{
+  "items": [
+    {
+      "id": "BowTarantula",
+      "displayName": "Bow Tarantula",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "SpearTarantula",
+      "displayName": "Spear Tarantula",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "Spear",
+      "displayName": "Spear",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "SpearTier2",
+      "displayName": "Spear Tier2",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "Bow",
+      "displayName": "Bow",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "BowSpiderOrb",
+      "displayName": "Bow Spider Orb",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AntClub",
+      "displayName": "Ant Club",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "RapierMosquito",
+      "displayName": "Rapier Mosquito",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "KatanaSpicy",
+      "displayName": "Katana Spicy",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "UnqiueTazTArm",
+      "displayName": "Unqiue Taz T Arm",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "RomanCandle",
+      "displayName": "Roman Candle",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "WarhammerPebblet",
+      "displayName": "Warhammer Pebblet",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "FistsMitey",
+      "displayName": "Fists Mitey",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "FistsNorthern",
+      "displayName": "Fists Northern",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "StaffSpicyTier2",
+      "displayName": "Staff Spicy Tier2",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "StaffMintTier2",
+      "displayName": "Staff Mint Tier2",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "Popsickle",
+      "displayName": "Popsickle",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "DaggersWeaverFang",
+      "displayName": "Daggers Weaver Fang",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "DaggersWolfFang",
+      "displayName": "Daggers Wolf Fang",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "SwordAntRed",
+      "displayName": "Sword Ant Red",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "SpearLarva",
+      "displayName": "Spear Larva",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "BowSpiderWolf",
+      "displayName": "Bow Spider Wolf",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "CockroachClub",
+      "displayName": "Cockroach Club",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "MantisBlade",
+      "displayName": "Mantis Blade",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "SwordAntRedUnique",
+      "displayName": "Sword Ant Red Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "BowSpiderOrbUnique",
+      "displayName": "Bow Spider Orb Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "StaffSpicyTier2Unique",
+      "displayName": "Staff Spicy Tier2 Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "SpearLarvaUnique",
+      "displayName": "Spear Larva Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "SwordAntBlack",
+      "displayName": "Sword Ant Black",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "SpearTier3",
+      "displayName": "Spear Tier3",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "BombSour",
+      "displayName": "Bomb Sour",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "BombSourUnique",
+      "displayName": "Bomb Sour Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "StaffSourTier3",
+      "displayName": "Staff Sour Tier3",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "KatangaSour",
+      "displayName": "Katanga Sour",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "BowCricket",
+      "displayName": "Bow Cricket",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "EarwigSickles",
+      "displayName": "Earwig Sickles",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "StaffSourTier3Unique",
+      "displayName": "Staff Sour Tier3 Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "EarwigSicklesUnique",
+      "displayName": "Earwig Sickles Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "BowCricketUnique",
+      "displayName": "Bow Cricket Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "WarhammerSpicyUnique",
+      "displayName": "Warhammer Spicy Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "BombGas",
+      "displayName": "Bomb Gas",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "FistsWoolly",
+      "displayName": "Fists Woolly",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "FistsWoollyUnique",
+      "displayName": "Fists Woolly Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ClubLizard",
+      "displayName": "Club Lizard",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "Harpoon",
+      "displayName": "Harpoon",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "TridentBone",
+      "displayName": "Trident Bone",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "RapierMosquitoTiger",
+      "displayName": "Rapier Mosquito Tiger",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ScytheToeBiter",
+      "displayName": "Scythe Toe Biter",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "TickClub",
+      "displayName": "Tick Club",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "TaztTaser",
+      "displayName": "Tazt Taser",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "SwordToenail",
+      "displayName": "Sword Toenail",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "SwordToenailUnique",
+      "displayName": "Sword Toenail Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "StaffMintTier3Unique",
+      "displayName": "Staff Mint Tier3 Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "TickClubUnique",
+      "displayName": "Tick Club Unique",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "FistsScorpionStriped",
+      "displayName": "Fists Scorpion Striped",
+      "normalizedType": "weapon",
+      "localizedTypeES": "Arma",
+      "localizedTypeEN": "Weapon",
+      "localizedTypeRU": "Оружие",
+      "normalizedSubtype": "weapon",
+      "localizedSubtype": {
+        "en": "Weapon",
+        "es": "Arma",
+        "ru": "Оружие"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ShieldWeevil",
+      "displayName": "Shield Weevil",
+      "normalizedType": "shield",
+      "localizedTypeES": "Escudo",
+      "localizedTypeEN": "Shield",
+      "localizedTypeRU": "Щит",
+      "normalizedSubtype": "shield",
+      "localizedSubtype": {
+        "en": "Shield",
+        "es": "Escudo",
+        "ru": "Щит"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ShieldAntRed",
+      "displayName": "Shield Ant Red",
+      "normalizedType": "shield",
+      "localizedTypeES": "Escudo",
+      "localizedTypeEN": "Shield",
+      "localizedTypeRU": "Щит",
+      "normalizedSubtype": "shield",
+      "localizedSubtype": {
+        "en": "Shield",
+        "es": "Escudo",
+        "ru": "Щит"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ShieldBombardier",
+      "displayName": "Shield Bombardier",
+      "normalizedType": "shield",
+      "localizedTypeES": "Escudo",
+      "localizedTypeEN": "Shield",
+      "localizedTypeRU": "Щит",
+      "normalizedSubtype": "shield",
+      "localizedSubtype": {
+        "en": "Shield",
+        "es": "Escudo",
+        "ru": "Щит"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ShieldLadybug",
+      "displayName": "Shield Ladybug",
+      "normalizedType": "shield",
+      "localizedTypeES": "Escudo",
+      "localizedTypeEN": "Shield",
+      "localizedTypeRU": "Щит",
+      "normalizedSubtype": "shield",
+      "localizedSubtype": {
+        "en": "Shield",
+        "es": "Escudo",
+        "ru": "Щит"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ShieldLadybugUnique",
+      "displayName": "Shield Ladybug Unique",
+      "normalizedType": "shield",
+      "localizedTypeES": "Escudo",
+      "localizedTypeEN": "Shield",
+      "localizedTypeRU": "Щит",
+      "normalizedSubtype": "shield",
+      "localizedSubtype": {
+        "en": "Shield",
+        "es": "Escudo",
+        "ru": "Щит"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ShieldShellShocker",
+      "displayName": "Shield Shell Shocker",
+      "normalizedType": "shield",
+      "localizedTypeES": "Escudo",
+      "localizedTypeEN": "Shield",
+      "localizedTypeRU": "Щит",
+      "normalizedSubtype": "shield",
+      "localizedSubtype": {
+        "en": "Shield",
+        "es": "Escudo",
+        "ru": "Щит"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ShieldAntBlack",
+      "displayName": "Shield Ant Black",
+      "normalizedType": "shield",
+      "localizedTypeES": "Escudo",
+      "localizedTypeEN": "Shield",
+      "localizedTypeRU": "Щит",
+      "normalizedSubtype": "shield",
+      "localizedSubtype": {
+        "en": "Shield",
+        "es": "Escudo",
+        "ru": "Щит"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ShieldLizard",
+      "displayName": "Shield Lizard",
+      "normalizedType": "shield",
+      "localizedTypeES": "Escudo",
+      "localizedTypeEN": "Shield",
+      "localizedTypeRU": "Щит",
+      "normalizedSubtype": "shield",
+      "localizedSubtype": {
+        "en": "Shield",
+        "es": "Escudo",
+        "ru": "Щит"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ShieldKoi",
+      "displayName": "Shield Koi",
+      "normalizedType": "shield",
+      "localizedTypeES": "Escudo",
+      "localizedTypeEN": "Shield",
+      "localizedTypeRU": "Щит",
+      "normalizedSubtype": "shield",
+      "localizedSubtype": {
+        "en": "Shield",
+        "es": "Escudo",
+        "ru": "Щит"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadMite",
+      "displayName": "Head Mite",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadEyepatch",
+      "displayName": "Head Eyepatch",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "GasMask",
+      "displayName": "Gas Mask",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadAnt",
+      "displayName": "Head Ant",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestAnt",
+      "displayName": "Chest Ant",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsAnt",
+      "displayName": "Legs Ant",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadAcorn",
+      "displayName": "Head Acorn",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestAcorn",
+      "displayName": "Chest Acorn",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsAcorn",
+      "displayName": "Legs Acorn",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadGrub",
+      "displayName": "Head Grub",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestGrub",
+      "displayName": "Chest Grub",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsGrub",
+      "displayName": "Legs Grub",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsAphid",
+      "displayName": "Legs Aphid",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadLadybug",
+      "displayName": "Head Ladybug",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestLadybug",
+      "displayName": "Chest Ladybug",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsLadybug",
+      "displayName": "Legs Ladybug",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadBee",
+      "displayName": "Head Bee",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestBee",
+      "displayName": "Chest Bee",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsBee",
+      "displayName": "Legs Bee",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadSpider",
+      "displayName": "Head Spider",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestSpider",
+      "displayName": "Chest Spider",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsSpider",
+      "displayName": "Legs Spider",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadClover",
+      "displayName": "Head Clover",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestClover",
+      "displayName": "Chest Clover",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsClover",
+      "displayName": "Legs Clover",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadFirefly",
+      "displayName": "Head Firefly",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadCrowArcher",
+      "displayName": "Head Crow Archer",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadSpiderWolf",
+      "displayName": "Head Spider Wolf",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestSpiderWolf",
+      "displayName": "Chest Spider Wolf",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsSpiderWolf",
+      "displayName": "Legs Spider Wolf",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadFuzzy",
+      "displayName": "Head Fuzzy",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestFuzzyParka",
+      "displayName": "Chest Fuzzy Parka",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsFuzzyMukluks",
+      "displayName": "Legs Fuzzy Mukluks",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadBombardier",
+      "displayName": "Head Bombardier",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestBombardier",
+      "displayName": "Chest Bombardier",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsBombardier",
+      "displayName": "Legs Bombardier",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadScorpionNorthern",
+      "displayName": "Head Scorpion Northern",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestScorpionNorthern",
+      "displayName": "Chest Scorpion Northern",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsScorpionNorthern",
+      "displayName": "Legs Scorpion Northern",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadButterflyBlue",
+      "displayName": "Head Butterfly Blue",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestButterflyBlue",
+      "displayName": "Chest Butterfly Blue",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsButterflyBlue",
+      "displayName": "Legs Butterfly Blue",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadCockroach",
+      "displayName": "Head Cockroach",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestCockroach",
+      "displayName": "Chest Cockroach",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsCockroach",
+      "displayName": "Legs Cockroach",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadSnail",
+      "displayName": "Head Snail",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestSnail",
+      "displayName": "Chest Snail",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsSnail",
+      "displayName": "Legs Snail",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadPrayingMantis",
+      "displayName": "Head Praying Mantis",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestPrayingMantis",
+      "displayName": "Chest Praying Mantis",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsPrayingMantis",
+      "displayName": "Legs Praying Mantis",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadTarantula",
+      "displayName": "Head Tarantula",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestTarantula",
+      "displayName": "Chest Tarantula",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsTarantula",
+      "displayName": "Legs Tarantula",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadAntBlack",
+      "displayName": "Head Ant Black",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestAntBlack",
+      "displayName": "Chest Ant Black",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsAntBlack",
+      "displayName": "Legs Ant Black",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadRustBeetle",
+      "displayName": "Head Rust Beetle",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestRustBeetle",
+      "displayName": "Chest Rust Beetle",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsRustBeetle",
+      "displayName": "Legs Rust Beetle",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadPotatoBug",
+      "displayName": "Head Potato Bug",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestPotatoBug",
+      "displayName": "Chest Potato Bug",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsPotatoBug",
+      "displayName": "Legs Potato Bug",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadWasp",
+      "displayName": "Head Wasp",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestWasp",
+      "displayName": "Chest Wasp",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsWasp",
+      "displayName": "Legs Wasp",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadEarwig",
+      "displayName": "Head Earwig",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestEarwig",
+      "displayName": "Chest Earwig",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsEarwig",
+      "displayName": "Legs Earwig",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadCricket",
+      "displayName": "Head Cricket",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestCricket",
+      "displayName": "Chest Cricket",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsCricket",
+      "displayName": "Legs Cricket",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadSnake",
+      "displayName": "Head Snake",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestSnake",
+      "displayName": "Chest Snake",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsSnake",
+      "displayName": "Legs Snake",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadScorpionStriped",
+      "displayName": "Head Scorpion Striped",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestScorpionStriped",
+      "displayName": "Chest Scorpion Striped",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsScorpionStriped",
+      "displayName": "Legs Scorpion Striped",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "Flippers",
+      "displayName": "Flippers",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "Rebreather",
+      "displayName": "Rebreather",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadKoi",
+      "displayName": "Head Koi",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestKoi",
+      "displayName": "Chest Koi",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsKoi",
+      "displayName": "Legs Koi",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadDivingSuit",
+      "displayName": "Head Diving Suit",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestDivingSuit",
+      "displayName": "Chest Diving Suit",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsDivingSuit",
+      "displayName": "Legs Diving Suit",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadToeBiter",
+      "displayName": "Head Toe Biter",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestToeBiter",
+      "displayName": "Chest Toe Biter",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsToeBiter",
+      "displayName": "Legs Toe Biter",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadSnailShocker",
+      "displayName": "Head Snail Shocker",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestSnailShocker",
+      "displayName": "Chest Snail Shocker",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsSnailShocker",
+      "displayName": "Legs Snail Shocker",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadFoilHat",
+      "displayName": "Head Foil Hat",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadLizard",
+      "displayName": "Head Lizard",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "ChestLizard",
+      "displayName": "Chest Lizard",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "chest",
+      "localizedSubtype": {
+        "en": "Chest",
+        "es": "Pechera",
+        "ru": "Нагрудник"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "LegsLizard",
+      "displayName": "Legs Lizard",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "legs",
+      "localizedSubtype": {
+        "en": "Legs",
+        "es": "Piernas",
+        "ru": "Ноги"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "HeadLuckyHat",
+      "displayName": "Head Lucky Hat",
+      "normalizedType": "armor",
+      "localizedTypeES": "Armadura",
+      "localizedTypeEN": "Armor",
+      "localizedTypeRU": "Броня",
+      "normalizedSubtype": "head",
+      "localizedSubtype": {
+        "en": "Head",
+        "es": "Cabeza",
+        "ru": "Голова"
+      },
+      "source": "extractor_slot",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryTarantulaLeech",
+      "displayName": "Accessory Tarantula Leech",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryTarantulaVenom",
+      "displayName": "Accessory Tarantula Venom",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryEarwig",
+      "displayName": "Accessory Earwig",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryCricket",
+      "displayName": "Accessory Cricket",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessorySnake",
+      "displayName": "Accessory Snake",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryQuartzShard",
+      "displayName": "Accessory Quartz Shard",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryToenail",
+      "displayName": "Accessory Toenail",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryTickFang",
+      "displayName": "Accessory Tick Fang",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryFrozenDroplet",
+      "displayName": "Accessory Frozen Droplet",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryReflexGuard",
+      "displayName": "Accessory Reflex Guard",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryLizardSpicy",
+      "displayName": "Accessory Lizard Spicy",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryBroodmother",
+      "displayName": "Accessory Broodmother",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "OminentEcoExploitation",
+      "displayName": "Ominent Eco Exploitation",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "badge",
+      "localizedSubtype": {
+        "en": "Badge / medallion",
+        "es": "Insignia / medallón",
+        "ru": "Знак / медальон"
+      },
+      "source": "technical_prefix",
+      "fallbackUsed": false
+    },
+    {
+      "id": "OminentMyrmecologist",
+      "displayName": "Ominent Myrmecologist",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "badge",
+      "localizedSubtype": {
+        "en": "Badge / medallion",
+        "es": "Insignia / medallón",
+        "ru": "Знак / медальон"
+      },
+      "source": "technical_prefix",
+      "fallbackUsed": false
+    },
+    {
+      "id": "OminentBioMedical",
+      "displayName": "Ominent Bio Medical",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "badge",
+      "localizedSubtype": {
+        "en": "Badge / medallion",
+        "es": "Insignia / medallón",
+        "ru": "Знак / медальон"
+      },
+      "source": "technical_prefix",
+      "fallbackUsed": false
+    },
+    {
+      "id": "OminentBadgeOfficeSupplies",
+      "displayName": "Ominent Badge Office Supplies",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "badge",
+      "localizedSubtype": {
+        "en": "Badge / medallion",
+        "es": "Insignia / medallón",
+        "ru": "Знак / медальон"
+      },
+      "source": "technical_prefix",
+      "fallbackUsed": false
+    },
+    {
+      "id": "OminentToxicology",
+      "displayName": "Ominent Toxicology",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "badge",
+      "localizedSubtype": {
+        "en": "Badge / medallion",
+        "es": "Insignia / medallón",
+        "ru": "Знак / медальон"
+      },
+      "source": "technical_prefix",
+      "fallbackUsed": false
+    },
+    {
+      "id": "OminentBadgeCustomerSatisfaction",
+      "displayName": "Ominent Badge Customer Satisfaction",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "badge",
+      "localizedSubtype": {
+        "en": "Badge / medallion",
+        "es": "Insignia / medallón",
+        "ru": "Знак / медальон"
+      },
+      "source": "technical_prefix",
+      "fallbackUsed": false
+    },
+    {
+      "id": "OminentBadgeMouthFeel",
+      "displayName": "Ominent Badge Mouth Feel",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "badge",
+      "localizedSubtype": {
+        "en": "Badge / medallion",
+        "es": "Insignia / medallón",
+        "ru": "Знак / медальон"
+      },
+      "source": "technical_prefix",
+      "fallbackUsed": false
+    },
+    {
+      "id": "OminentBadgeLegal",
+      "displayName": "Ominent Badge Legal",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "badge",
+      "localizedSubtype": {
+        "en": "Badge / medallion",
+        "es": "Insignia / medallón",
+        "ru": "Знак / медальон"
+      },
+      "source": "technical_prefix",
+      "fallbackUsed": false
+    },
+    {
+      "id": "OminentBadgeWaspDen",
+      "displayName": "Ominent Badge Wasp Den",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "badge",
+      "localizedSubtype": {
+        "en": "Badge / medallion",
+        "es": "Insignia / medallón",
+        "ru": "Знак / медальон"
+      },
+      "source": "technical_prefix",
+      "fallbackUsed": false
+    },
+    {
+      "id": "OminentRanger",
+      "displayName": "Ominent Ranger",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "badge",
+      "localizedSubtype": {
+        "en": "Badge / medallion",
+        "es": "Insignia / medallón",
+        "ru": "Знак / медальон"
+      },
+      "source": "technical_prefix",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryHedgeWeb",
+      "displayName": "Accessory Hedge Web",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryBillyHog",
+      "displayName": "Accessory Billy Hog",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessorySpicy",
+      "displayName": "Accessory Spicy",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryFresh",
+      "displayName": "Accessory Fresh",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessorySalty",
+      "displayName": "Accessory Salty",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessorySour",
+      "displayName": "Accessory Sour",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryBlockStrength",
+      "displayName": "Accessory Block Strength",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryLarva",
+      "displayName": "Accessory Larva",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryMantis",
+      "displayName": "Accessory Mantis",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryWaspQueen",
+      "displayName": "Accessory Wasp Queen",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryWidowling",
+      "displayName": "Accessory Widowling",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryBowQuickCharge",
+      "displayName": "Accessory Bow Quick Charge",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessorySteal",
+      "displayName": "Accessory Steal",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessorySpeed",
+      "displayName": "Accessory Speed",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryAcorn",
+      "displayName": "Accessory Acorn",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryThistle",
+      "displayName": "Accessory Thistle",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryAcidGland",
+      "displayName": "Accessory Acid Gland",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryTazT",
+      "displayName": "Accessory Taz T",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessorySpicyAftershock",
+      "displayName": "Accessory Spicy Aftershock",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryChargedChill",
+      "displayName": "Accessory Charged Chill",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryMantisLowLifeCrit",
+      "displayName": "Accessory Mantis Low Life Crit",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryScorpionFinaleVenom",
+      "displayName": "Accessory Scorpion Finale Venom",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryAttackDownORC",
+      "displayName": "Accessory Attack Down ORC",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryShockAoeORC",
+      "displayName": "Accessory Shock Aoe ORC",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryRoachHead",
+      "displayName": "Accessory Roach Head",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    },
+    {
+      "id": "AccessoryLips",
+      "displayName": "Accessory Lips",
+      "normalizedType": "trinket",
+      "localizedTypeES": "Amuleto",
+      "localizedTypeEN": "Trinket",
+      "localizedTypeRU": "Талисман",
+      "normalizedSubtype": "accessory",
+      "localizedSubtype": {
+        "en": "Accessory",
+        "es": "Accesorio",
+        "ru": "Аксессуар"
+      },
+      "source": "extractor_domain",
+      "fallbackUsed": false
+    }
+  ],
+  "summary": {
+    "total": 209,
+    "unclassified": 0
+  }
+}

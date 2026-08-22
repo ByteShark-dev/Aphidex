@@ -1,1 +1,1206 @@
-{"id":"g2_black_worker_ant","speciesKey":"black_worker_ant","name":"Hormiga obrera negra","game":"g2","tier":3,"danger":"intermedia","isBoss":false,"order":203,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_BlackAnt.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_BlackAnt_G.png","photo":"assets/g2/creatures/photos/Black_Worker_Ant.webp","weaknesses":["stabbing","spicy","water"],"resistances":["sour"],"temperament":"neutral","health":{"value":470,"rating":2},"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_arrows_only","susceptibleDamageTypes":["stabbingArrowsOnly"]},"description":"Una hormiga más robusta que patrulla los confines exteriores del patio y vive en el hormiguero negro. Al morir, puede soltar cabeza de hormiga negra y parte de hormiga negra.","behavior":"Patrulla rutas del hormiguero y del jardín normalmente acompañada por otras hormigas negras. No destaca por movimientos complejos, sino por la constancia con la que se suma a cualquier pelea cercana.","interactionWithPlayer":"Se mantiene neutral mientras no la provoques ni presiones demasiado el nido. En cuanto la pelea empieza, entra con rapidez y deja claro que el mayor problema rara vez es una sola hormiga negra.","interactionWithCreatures":"Depende mucho de las otras hormigas negras y responde en cadena cuando una compañera detecta una amenaza. Esa coordinación es precisamente lo que hace que un encuentro simple escale muy deprisa.","strategy":"Las armas spicy y perforantes siguen siendo la respuesta más limpia. Aun así, más que el daño bruto importa no dejar que varias hormigas negras te rodeen o te corten la retirada.","environments":["Alrededores del invernadero","Parche de calabazas","Huerto vegetal","Hormiguero en guerra"],"respawnInfo":"1 día","loot":[{"section":"loot","item":"Cabeza de hormiga negra","minCount":0,"maxCount":1},{"section":"loot","item":"Parte de hormiga negra","minCount":1,"maxCount":2},{"section":"rare","item":"Huevo de hormiga negra","minCount":0,"maxCount":2},{"section":"rare","item":"Parte de hormiga negra","minCount":0,"maxCount":5}],"advancedLootTable":[{"item":"Huevo de hormiga negra","countLabel":"x2","chancePct":1},{"item":"Cabeza de hormiga negra","countLabel":"x1","chancePct":30},{"item":"Parte de hormiga negra","countLabel":"x1","chancePct":100},{"item":"Parte de hormiga negra","countLabel":"x1","chancePct":50},{"item":"Parte de hormiga negra","countLabel":"x5","chancePct":1}],"combatStats":{"health":470,"stunThreshold":25,"stunCooldownSeconds":15,"attackDamageSummary":"Mordisco: 48. Mordisco cargado: 55."},"inflictsEffects":["chopping"],"inflicts":["Daño cortante"],"abilities":[{"name":"Mordisco","description":"Un mordisco directo y rápido con daño estable.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Mordisco cargado","description":"Hace una pausa corta antes de lanzar un golpe más fuerte.","blockable":true,"breaksGuard":false,"staggers":false}],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"damageWeaknesses":[{"type":"stabbing","bonusPct":15},{"type":"water","bonusPct":100}],"resistancesV2":[{"type":"sour","bonusPct":75}],"groupId":null,"cardTier":3,"technicalId":"AntBlackWorker","bestiaryId":"AntBlackWorker","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Mordida","technicalId":"AntWorkerBite","tags":["chopping"],"notes":"Daño del ataque: 48"},{"name":"Arremetida","technicalId":"AntWorkerLunge","tags":["chopping"],"notes":"Daño del ataque: 55"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_black_worker_ant",
+  "speciesKey": "black_worker_ant",
+  "name": "Hormiga obrera negra",
+  "game": "g2",
+  "tier": 3,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 203,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_BlackAnt.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_BlackAnt_G.png",
+  "photo": "assets/g2/creatures/photos/Black_Worker_Ant.webp",
+  "weaknesses": [
+    "stabbing",
+    "spicy",
+    "water"
+  ],
+  "resistances": [
+    "sour"
+  ],
+  "temperament": "neutral",
+  "health": {
+    "rating": 2,
+    "value": 470
+  },
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_arrows_only",
+    "susceptibleDamageTypes": [
+      "stabbingArrowsOnly"
+    ]
+  },
+  "description": "Una hormiga más robusta que patrulla los confines exteriores del patio y vive en el hormiguero negro. Al morir, puede soltar cabeza de hormiga negra y parte de hormiga negra.",
+  "behavior": "Patrulla rutas del hormiguero y del jardín normalmente acompañada por otras hormigas negras. No destaca por movimientos complejos, sino por la constancia con la que se suma a cualquier pelea cercana.",
+  "interactionWithPlayer": "Se mantiene neutral mientras no la provoques ni presiones demasiado el nido. En cuanto la pelea empieza, entra con rapidez y deja claro que el mayor problema rara vez es una sola hormiga negra.",
+  "interactionWithCreatures": "Depende mucho de las otras hormigas negras y responde en cadena cuando una compañera detecta una amenaza. Esa coordinación es precisamente lo que hace que un encuentro simple escale muy deprisa.",
+  "strategy": "Las armas spicy y perforantes siguen siendo la respuesta más limpia. Aun así, más que el daño bruto importa no dejar que varias hormigas negras te rodeen o te corten la retirada.",
+  "environments": [
+    "Alrededores del invernadero",
+    "Parche de calabazas",
+    "Huerto vegetal",
+    "Hormiguero en guerra"
+  ],
+  "respawnInfo": "1 día",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Ant Egg Black",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Ant Head Black",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Ant Part Black",
+      "minCount": 1,
+      "maxCount": 7
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Ant Egg Black",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Ant Head Black",
+      "countLabel": "1",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Part Black",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 5,
+      "notes": "5 independent rolls"
+    },
+    {
+      "item": "Ant Part Black",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ant Part Black",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 470,
+    "stunThreshold": 25,
+    "stunCooldownSeconds": 5
+  },
+  "inflictsEffects": [
+    "chopping"
+  ],
+  "inflicts": [
+    "Daño cortante"
+  ],
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "Un mordisco directo y rápido con daño estable.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Mordisco cargado",
+      "description": "Hace una pausa corta antes de lanzar un golpe más fuerte.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 15
+    },
+    {
+      "type": "water",
+      "bonusPct": 100
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "sour",
+      "bonusPct": 75
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "AntBlackWorker",
+  "bestiaryId": "AntBlackWorker",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only",
+      "susceptibleDamageTypes": [
+        "stabbingArrowsOnly"
+      ],
+      "weaponFamilies": [
+        "bow",
+        "crossbow"
+      ],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Mordida",
+      "technicalId": "AntWorkerBite",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 48",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 48.0,
+      "cooldownSeconds": 0.0,
+      "range": 150.0,
+      "stun": 4,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Arremetida",
+      "technicalId": "AntWorkerLunge",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 55",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 10.0,
+      "range": 175.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_7c6cd8c8e7234629",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -147076.67,
+        "y": -21357.508,
+        "z": 834.18243
+      },
+      "u": 0.4286270482879718,
+      "v": 0.19352353405852096,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_024d9c5a8760df05",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -145316.12,
+        "y": -29595.957,
+        "z": 71.105446
+      },
+      "u": 0.4352220263388938,
+      "v": 0.15795488671894767,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ef3df6fb4915634d",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -141486.64,
+        "y": -21716.3,
+        "z": 755.5194
+      },
+      "u": 0.44956716652033946,
+      "v": 0.1919744868875959,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fae388ebbb97ee83",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -129019.9,
+        "y": -29844.385,
+        "z": 2994.576
+      },
+      "u": 0.4962672753877671,
+      "v": 0.1568823246479467,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8b7f95509bd167fe",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -137677.86,
+        "y": -22380.305,
+        "z": 2938.5618
+      },
+      "u": 0.4638347649985368,
+      "v": 0.18910771430980688,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_330169c175adc522",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -128430.7,
+        "y": -25935.953,
+        "z": 2931.4963
+      },
+      "u": 0.49847440444834645,
+      "v": 0.1737565736065435,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_884f3dbe27d0a4ba",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -221374.53,
+        "y": -7031.729,
+        "z": -2000.4371
+      },
+      "u": 0.15030904770266315,
+      "v": 0.2553735960199005,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa4493995791bba0",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -221610.31,
+        "y": -9786.45,
+        "z": -769.4234
+      },
+      "u": 0.14942582148083114,
+      "v": 0.24348037439919049,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7cdc00b78430be1c",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -223575.44,
+        "y": -12055.437,
+        "z": -519.4234
+      },
+      "u": 0.1420644916593503,
+      "v": 0.23368425884138624,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c5afd2bbc2823c86",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -226665.94,
+        "y": -14655.688,
+        "z": 230.5766
+      },
+      "u": 0.1304875528241147,
+      "v": 0.22245794539168567,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0e5e5da2a2ba864d",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -226476.25,
+        "y": -10212.533,
+        "z": -519.4234
+      },
+      "u": 0.13119812701199884,
+      "v": 0.2416408053292858,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5c64e959bc9da5fc",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -225093.36,
+        "y": -8974.642,
+        "z": -519.4234
+      },
+      "u": 0.13637839976587657,
+      "v": 0.2469852710683869,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_28000f85906ba3e3",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -132911.5,
+        "y": -25325.094,
+        "z": 2367.59
+      },
+      "u": 0.48168943517705587,
+      "v": 0.17639389385277005,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a2949229aaeb7c15",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -120307.08,
+        "y": -6069.2793,
+        "z": -18.252708
+      },
+      "u": 0.5289052900204857,
+      "v": 0.25952887257272955,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2d1b4ec06cbfd473",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -130410.27,
+        "y": -33225.93,
+        "z": 326.18243
+      },
+      "u": 0.49105898273339177,
+      "v": 0.14228285555274475,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cff4e28ab8c7d0b4",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -131410.28,
+        "y": -34275.93,
+        "z": 426.97903
+      },
+      "u": 0.48731296927129064,
+      "v": 0.13774958967872508,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_660d502bee5c5b67",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -127410.27,
+        "y": -33425.93,
+        "z": 311.2519
+      },
+      "u": 0.5022969107404155,
+      "v": 0.1414193763386458,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ab3dd9cd319f9584",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -132432.75,
+        "y": -28454.486,
+        "z": -2140.0369
+      },
+      "u": 0.48348282118817676,
+      "v": 0.1628830691289316,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e27a98cbae34a55f",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -116330.33,
+        "y": 21362.953,
+        "z": 1316.9425
+      },
+      "u": 0.5438021000877963,
+      "v": 0.37796468450965515,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e265255be1c35ec8",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -111338.61,
+        "y": 22213.857,
+        "z": 1355.0415
+      },
+      "u": 0.5625009634182031,
+      "v": 0.38163837409562357,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aebb60091dd7607b",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -113063.016,
+        "y": 23956.041,
+        "z": 794.01556
+      },
+      "u": 0.5560413799239099,
+      "v": 0.3891600724513028,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c11a0869c06c31f0",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -108237.36,
+        "y": 27104.01,
+        "z": 1356.638
+      },
+      "u": 0.574118171495464,
+      "v": 0.40275110144194287,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_af09e891af12c99b",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -108431.61,
+        "y": 23582.033,
+        "z": 1102.3915
+      },
+      "u": 0.5733905156570092,
+      "v": 0.3875453317817691,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_10643436f74e460b",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -102806.234,
+        "y": -5002.092,
+        "z": 474.41745
+      },
+      "u": 0.5944630391571554,
+      "v": 0.26413634282823173,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ef9f98789076204",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -100871.79,
+        "y": -6229.159,
+        "z": 546.6492
+      },
+      "u": 0.6017094199590285,
+      "v": 0.2588386085841977,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_353a3995be2ae035",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -105442.266,
+        "y": -5675.749,
+        "z": 345.85327
+      },
+      "u": 0.5845885265437518,
+      "v": 0.2612278987435703,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4305a261ed2ec651",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -122020.61,
+        "y": -9765.422,
+        "z": -2574.488
+      },
+      "u": 0.5224864477611941,
+      "v": 0.24357116060376083,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fd572a293dbb165f",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -131287.67,
+        "y": -26813.29,
+        "z": -293.36447
+      },
+      "u": 0.4877722633889376,
+      "v": 0.16996876229024366,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ee2126c33b0990cb",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -132060.28,
+        "y": -26325.93,
+        "z": 2762.119
+      },
+      "u": 0.48487808486976886,
+      "v": 0.17207288843916013,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f2343073808635f9",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -124598.555,
+        "y": -11782.409,
+        "z": -6368.66
+      },
+      "u": 0.5128295276558386,
+      "v": 0.23486302885572138,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_72cafbcd13a7ab5e",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -123582.75,
+        "y": -14154.487,
+        "z": -3905.0735
+      },
+      "u": 0.5166347088088967,
+      "v": 0.2246218286196138,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9e59e7764f75228b",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -110856.29,
+        "y": -4012.3555,
+        "z": 209.88333
+      },
+      "u": 0.5643077225636525,
+      "v": 0.2684094273041571,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_47c19423deb38340",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -109857.91,
+        "y": 402.92606,
+        "z": 748.239
+      },
+      "u": 0.5680476300848698,
+      "v": 0.2874719465614301,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_930e0b6d43dd89d2",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -128882.75,
+        "y": -27204.486,
+        "z": 867.72076
+      },
+      "u": 0.49678103599648815,
+      "v": 0.16827981421705035,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6bce4135cf00c343",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -128782.75,
+        "y": -27604.486,
+        "z": 867.72076
+      },
+      "u": 0.49715563359672227,
+      "v": 0.16655285578885232,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_715bb55c74aedcef",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -131232.75,
+        "y": -30054.486,
+        "z": -1139.0765
+      },
+      "u": 0.48797799239098627,
+      "v": 0.15597523541613964,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3c12bb90b77cb1f6",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -124226.625,
+        "y": -24704.271,
+        "z": -4031.5872
+      },
+      "u": 0.5142227685103893,
+      "v": 0.17907423263344294,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1c94bd7225c7ef17",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -124232.75,
+        "y": -23654.486,
+        "z": -7449.097
+      },
+      "u": 0.5141998244073749,
+      "v": 0.1836065702673075,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b1e57475d5e195c2",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -124712.555,
+        "y": -13743.734,
+        "z": -7145.609
+      },
+      "u": 0.5124024863915716,
+      "v": 0.22639521200775783,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6aa6a132cfd24088",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -126532.75,
+        "y": -15954.487,
+        "z": -5636.976
+      },
+      "u": 0.50558407960199,
+      "v": 0.21685051569272287,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9e59264dc322ba94",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -125732.75,
+        "y": -12054.487,
+        "z": -5948.109
+      },
+      "u": 0.5085808604038631,
+      "v": 0.23368836036765325,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a4ef2915f2aa330c",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -131358.22,
+        "y": -28693.217,
+        "z": 1457.7966
+      },
+      "u": 0.4875079847819725,
+      "v": 0.16185237284762624,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_38a1da4d890a9880",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -226052.1,
+        "y": -13844.08,
+        "z": 2303.9817
+      },
+      "u": 0.13278698273339185,
+      "v": 0.22596197858166792,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bed40ce36989a6a7",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -224845.44,
+        "y": -9896.761,
+        "z": 2797.4534
+      },
+      "u": 0.13730710213637692,
+      "v": 0.2430041181212581,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8710ccaf4d58e91c",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -180806.02,
+        "y": -42225.36,
+        "z": 696.95575
+      },
+      "u": 0.3022777126134036,
+      "v": 0.10342875183405009,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0a1bb461d265cef7",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -122731.37,
+        "y": -16077.436,
+        "z": -7145.609
+      },
+      "u": 0.51982395785777,
+      "v": 0.21631969616325156,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a3eb0fa5d9ef1d00",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -222614.52,
+        "y": -16146.879,
+        "z": 2693.9817
+      },
+      "u": 0.14566407491952008,
+      "v": 0.21601988322792814,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f4876a1b0e426ef2",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -225901.8,
+        "y": -16551.48,
+        "z": 2303.9817
+      },
+      "u": 0.13335000292654378,
+      "v": 0.21427306046040984,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60a7a003d475707c",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -44153.15,
+        "y": 50991.75,
+        "z": 3498.9314
+      },
+      "u": 0.8141760842844601,
+      "v": 0.5058839362509486,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0f9cd03b855b4236",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -43684.867,
+        "y": 51481.832,
+        "z": 3551.1392
+      },
+      "u": 0.8159302611647644,
+      "v": 0.507999814351969,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_74914c1d80876d2a",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -52742.64,
+        "y": 50310.875,
+        "z": 2161.7295
+      },
+      "u": 0.78200006087211,
+      "v": 0.5029443292014504,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3b0f3db594529538",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -44324.73,
+        "y": 48294.895,
+        "z": 3498.9314
+      },
+      "u": 0.8135333497219783,
+      "v": 0.49424054507125376,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_57205368df6adf78",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -44899.742,
+        "y": 47201.68,
+        "z": 3498.9314
+      },
+      "u": 0.8113793685689201,
+      "v": 0.48952070292604777,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8c9148b8a3b3d1ac",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -44701.555,
+        "y": 57327.19,
+        "z": 3947.6658
+      },
+      "u": 0.8121217723148962,
+      "v": 0.5332365400118053,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6709224b5dc43694",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -46099.812,
+        "y": 57208.12,
+        "z": 3976.3447
+      },
+      "u": 0.8068839351477904,
+      "v": 0.5327224676616916,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f976f893ba19c7cf",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -46537.57,
+        "y": 58075.863,
+        "z": 3971.281
+      },
+      "u": 0.8052441041849575,
+      "v": 0.5364688578800911,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e024597fc9bfe8ef",
+      "targetType": "creature",
+      "targetId": "g2_black_worker_ant",
+      "technicalId": "AntBlackWorker",
+      "map": "surface",
+      "world": {
+        "x": -47824.5,
+        "y": 67087.06,
+        "z": 3906.1223
+      },
+      "u": 0.8004232952882645,
+      "v": 0.5753737643983472,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [
+    "acid"
+  ]
+}

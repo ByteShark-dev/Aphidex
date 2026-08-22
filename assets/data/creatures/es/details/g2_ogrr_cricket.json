@@ -1,1 +1,485 @@
-{"id":"g2_ogrr_cricket","speciesKey":"ogrr_cricket","collectionGroup":"ogrr","name":"Grillo I.R.G.O.","game":"g2","tier":3,"danger":"imposible","isBoss":false,"order":223,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Cricket_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Cricket_OGRR_G.png","photo":"assets/g2/creatures/photos/OGRR_Cricket.webp","weaknesses":["busting"],"resistances":["stabbing"],"temperament":"aggressive","description":"Un grillo con modificaciones genéticas que tiene un poder inusual. Es resistente a la esencia de su mutación.","behavior":"Su spawn nocturno solo se habilita tras liberar a los I.R.G.O. en el laboratorio del espantapájaros. Después aparece de noche sobre el panel solar que domina el parche de calabazas y desde esa altura cae con saltos y entradas rápidas para que nunca encuentres un ritmo cómodo.","interactionWithPlayer":"Si te dejas encerrar por su movilidad, la pelea se vuelve mucho más dura que con el grillo normal. No te gana por vida o defensa, sino por cómo te obliga a reaccionar tarde una y otra vez.","interactionWithCreatures":"Trabaja muy bien rematando huecos abiertos por variantes más lentas. En grupos suele ser la pieza que entra justo cuando otra criatura ya te obligó a bloquear o a mirar a otro lado.","strategy":"Mantén espacio suficiente para leer el salto y no regales castigos impulsivos tras cada cabezazo. Fresh y stabbing siguen castigándolo bien, pero aquí pesa más mantener la calma que intentar correrle la carrera.","environments":["Tras liberar a los I.R.G.O. en el laboratorio del espantapájaros","Panel solar sobre el parche de calabazas"],"loot":[{"section":"loot","item":"Buffin' Gland","minCount":1,"maxCount":1},{"section":"loot","item":"Cricket Drumstick","minCount":0,"maxCount":2},{"section":"loot","item":"Cricket Head","minCount":0,"maxCount":1},{"section":"loot","item":"Cricket Part","minCount":1,"maxCount":5},{"section":"rare","item":"Fabulous Femur","minCount":0,"maxCount":1},{"section":"rare","item":"Cricket Part","minCount":0,"maxCount":4}],"combatStats":{"attackDamageSummary":"3-Hit Combo Bite: 110Charged Headbutt: 140Back Kick: 119Leap of Faith: 150","health":1800},"abilities":[{"name":"Combo de 3 mordidas","description":"Tres golpes seguidos que premian bloquear con ritmo."},{"name":"Cabezazo cargado","description":"Carga hacia delante y rompe guardia si no llevas bien el timing."},{"name":"Patada trasera","description":"Patada reactiva para castigar a quien se quede detrás."},{"name":"Salto de fe","description":"Salta una gran distancia para caer encima del objetivo."}],"elementalWeaknesses":[],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"stabbing","bonusPct":25}],"infusions":[{"id":"fresh","name":"Fresco","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Chill."],"recommendations":"No te quedes en daño Fresh como respuesta principal.","combatTips":["Cambia a daño picante o a un arma física consistente si tu build depende de Fresh."],"imageAsset":"assets/g2/creatures/photos/OGRR_Cricket_Fresh.webp"},{"id":"sour","name":"Ácido","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Tang."],"recommendations":"Evita quedarte en armas ácidas como respuesta principal.","combatTips":["Picante es la respuesta elemental más limpia; si no, usa un arma física que no dependa de Tang."],"imageAsset":"assets/g2/creatures/photos/OGRR_Cricket_Sour.webp"},{"id":"spicy","name":"Picante","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Sizzle."],"recommendations":"No dependas de daño picante cuando esta infusión está activa.","combatTips":["Fresh es la respuesta elemental más limpia si la criatura te deja sostener el ritmo."],"imageAsset":"assets/g2/creatures/photos/OGRR_Cricket_Spicy.webp"}],"lesserMutationsDescription":"Además de la infusión principal, puede aparecer con una mutación menor aleatoria. Esa tirada es independiente del sabor activo y se mantiene aparte del selector.","lesserMutations":["Attack Up: aumenta su daño de ataque en un 33%.","The Quickness: aumenta su velocidad de movimiento en un 200%.","Damage Resist: reduce en un 25% todo el daño recibido.","Life Steal: se cura por el 150% del daño que inflige.","Blastwave: tiene un 33% de probabilidad al golpear de disparar una explosión adicional imbloqueable de 50 de daño explosivo y un aturdimiento largo.","Shockwave: tiene un 75% de probabilidad al golpear de lanzar una onda extra de 50 de daño eléctrico. Las armas no la bloquean, pero el escudo s?.","Summon Ally: tiene un 75% de probabilidad al golpear de invocar un aliado de su facción: Spiderling (25 HP) si es araña, Northern Scorpling (200 HP) si es escorpión o Mini Larva (75 HP) en el resto de casos."],"inflictsEffects":["stabbing"],"inflicts":["Daño perforante"],"specialTraits":["Sus afinidades de combate dependen de la infusión activa. Selecciona el sabor para revisar inmunidades, debilidades y efectos del perfil actual."],"healthDisplay":"normal","health":{"value":1800,"rating":4},"groupId":null,"cardTier":3,"technicalId":"CricketOGRE","bestiaryId":"CricketOGRE","bossCardStyle":null,"isKillable":true,"weakPoints":[],"attacks":[{"name":"Combo 3 X","technicalId":"CricketAttackCombo3X","tags":["stabbing"],"notes":"Daño del ataque: 88"},{"name":"Potente ataque","technicalId":"CricketAttackPowerAttack","tags":["stabbing"],"notes":"Daño del ataque: 112"},{"name":"Trasera patada","technicalId":"CricketAttackBackKick","tags":["stabbing"],"notes":"Daño del ataque: 95"},{"name":"Salto Of Faith","technicalId":"CricketAttackLeapOfFaith","tags":["cricket_leap_of_faith"],"notes":"Daño del ataque: 120"},{"name":"Sónico Screech","technicalId":"CricketAttackSonicScreech","tags":["general_unblockable"],"notes":"Daño del ataque: 0"},{"name":"Bloqueo defensivo","technicalId":"BlockDefensive","tags":["maine"],"notes":"Daño del ataque: 0"},{"name":"Bloqueo ofensivo","technicalId":"BlockOffensive","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_cricket",
+  "speciesKey": "ogrr_cricket",
+  "collectionGroup": "ogrr",
+  "name": "Grillo I.R.G.O.",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible",
+  "isBoss": false,
+  "order": 223,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Cricket_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Cricket_OGRR_G.png",
+  "photo": "assets/g2/creatures/photos/OGRR_Cricket.webp",
+  "weaknesses": [
+    "busting"
+  ],
+  "resistances": [
+    "stabbing"
+  ],
+  "temperament": "aggressive",
+  "description": "Un grillo con modificaciones genéticas que tiene un poder inusual. Es resistente a la esencia de su mutación.",
+  "behavior": "Su spawn nocturno solo se habilita tras liberar a los I.R.G.O. en el laboratorio del espantapájaros. Después aparece de noche sobre el panel solar que domina el parche de calabazas y desde esa altura cae con saltos y entradas rápidas para que nunca encuentres un ritmo cómodo.",
+  "interactionWithPlayer": "Si te dejas encerrar por su movilidad, la pelea se vuelve mucho más dura que con el grillo normal. No te gana por vida o defensa, sino por cómo te obliga a reaccionar tarde una y otra vez.",
+  "interactionWithCreatures": "Trabaja muy bien rematando huecos abiertos por variantes más lentas. En grupos suele ser la pieza que entra justo cuando otra criatura ya te obligó a bloquear o a mirar a otro lado.",
+  "strategy": "Mantén espacio suficiente para leer el salto y no regales castigos impulsivos tras cada cabezazo. Fresh y stabbing siguen castigándolo bien, pero aquí pesa más mantener la calma que intentar correrle la carrera.",
+  "environments": [
+    "Tras liberar a los I.R.G.O. en el laboratorio del espantapájaros",
+    "Panel solar sobre el parche de calabazas"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Cricket",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cricket Drumstick",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Cricket Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cricket Part",
+      "minCount": 1,
+      "maxCount": 9
+    },
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1800,
+    "stunThreshold": 100,
+    "stunCooldownSeconds": 20
+  },
+  "abilities": [
+    {
+      "name": "Combo de 3 mordidas",
+      "description": "Tres golpes seguidos que premian bloquear con ritmo."
+    },
+    {
+      "name": "Cabezazo cargado",
+      "description": "Carga hacia delante y rompe guardia si no llevas bien el timing."
+    },
+    {
+      "name": "Patada trasera",
+      "description": "Patada reactiva para castigar a quien se quede detrás."
+    },
+    {
+      "name": "Salto de fe",
+      "description": "Salta una gran distancia para caer encima del objetivo."
+    }
+  ],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    }
+  ],
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresco",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Chill."
+      ],
+      "recommendations": "No te quedes en daño Fresh como respuesta principal.",
+      "combatTips": [
+        "Cambia a daño picante o a un arma física consistente si tu build depende de Fresh."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Cricket_Fresh.webp"
+    },
+    {
+      "id": "sour",
+      "name": "Ácido",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Tang."
+      ],
+      "recommendations": "Evita quedarte en armas ácidas como respuesta principal.",
+      "combatTips": [
+        "Picante es la respuesta elemental más limpia; si no, usa un arma física que no dependa de Tang."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Cricket_Sour.webp"
+    },
+    {
+      "id": "spicy",
+      "name": "Picante",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Sizzle."
+      ],
+      "recommendations": "No dependas de daño picante cuando esta infusión está activa.",
+      "combatTips": [
+        "Fresh es la respuesta elemental más limpia si la criatura te deja sostener el ritmo."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Cricket_Spicy.webp"
+    }
+  ],
+  "lesserMutationsDescription": "Además de la infusión principal, puede aparecer con una mutación menor aleatoria. Esa tirada es independiente del sabor activo y se mantiene aparte del selector.",
+  "lesserMutations": [
+    "Attack Up: aumenta su daño de ataque en un 33%.",
+    "The Quickness: aumenta su velocidad de movimiento en un 200%.",
+    "Damage Resist: reduce en un 25% todo el daño recibido.",
+    "Life Steal: se cura por el 150% del daño que inflige.",
+    "Blastwave: tiene un 33% de probabilidad al golpear de disparar una explosión adicional imbloqueable de 50 de daño explosivo y un aturdimiento largo.",
+    "Shockwave: tiene un 75% de probabilidad al golpear de lanzar una onda extra de 50 de daño eléctrico. Las armas no la bloquean, pero el escudo s?.",
+    "Summon Ally: tiene un 75% de probabilidad al golpear de invocar un aliado de su facción: Spiderling (25 HP) si es araña, Northern Scorpling (200 HP) si es escorpión o Mini Larva (75 HP) en el resto de casos."
+  ],
+  "inflictsEffects": [
+    "stabbing"
+  ],
+  "inflicts": [
+    "Daño perforante"
+  ],
+  "specialTraits": [
+    "Sus afinidades de combate dependen de la infusión activa. Selecciona el sabor para revisar inmunidades, debilidades y efectos del perfil actual."
+  ],
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 4,
+    "value": 1800
+  },
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "CricketOGRE",
+  "bestiaryId": "CricketOGRE",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Combo 3 X",
+      "technicalId": "CricketAttackCombo3X",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 88",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 88.0,
+      "cooldownSeconds": 2.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente ataque",
+      "technicalId": "CricketAttackPowerAttack",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 112",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 112.0,
+      "cooldownSeconds": 8.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Trasera patada",
+      "technicalId": "CricketAttackBackKick",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 95",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 95.0,
+      "cooldownSeconds": 2.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Salto Of Faith",
+      "technicalId": "CricketAttackLeapOfFaith",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Daño del ataque: 120",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 10.0,
+      "range": 400.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Sónico Screech",
+      "technicalId": "CricketAttackSonicScreech",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 15.0,
+      "range": 2000.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bloqueo defensivo",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 7.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bloqueo ofensivo",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 9.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_c148d198aa75e52d",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_cricket",
+      "technicalId": "CricketOGRE",
+      "map": "surface",
+      "world": {
+        "x": -130070.87,
+        "y": -22786.254,
+        "z": 14340.161
+      },
+      "u": 0.49233036698858645,
+      "v": 0.1873550716923855,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "Los OGRR pueden liberarse desde el laboratorio del espantapájaros. Después de hacerlo pueden aparecer en distintas zonas, principalmente durante la noche.",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/OGRR_Cricket.webp",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Cricket",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Drumstick",
+      "countLabel": "1",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Drumstick",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Cricket Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Part",
+      "countLabel": "4",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

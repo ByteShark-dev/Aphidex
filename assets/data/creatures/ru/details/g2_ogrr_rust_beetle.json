@@ -1,1 +1,706 @@
-{"id":"g2_ogrr_rust_beetle","speciesKey":"ogrr_rust_beetle","collectionGroup":"ogrr","name":"O.G.R.R. Ржавый жук","game":"g2","tier":3,"danger":"imposible","isBoss":false,"order":269,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_RustBeetle_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_RustBeetle_OGRR_G.png","photo":"assets/g2/creatures/photos/OGRR_Rust_Beetle.webp","weaknesses":["slashing"],"resistances":["stabbing"],"temperament":"aggressive","health":{"value":1600,"rating":4},"description":"O.G.R.R. Ржавый жук ещё сильнее уходит в коррозионную сторону вида. Он не просто контролирует зоны кислотой — он превращает сам пол в ловушку, которая постепенно наклоняет бой в его пользу.","behavior":"Охраняет лабораторию сладостей и не зависит от ночи для появления. Предпочитает разрывать дистанцию, заливать землю кислотой и наказывать за попытки вернуть пространство.","interactionWithPlayer":"Он особенно неприятен, когда на арене уже есть другие враги, потому что заставляет выбирать между кислотой под ногами и давлением, приходящим спереди или с флангов.","interactionWithCreatures":"Лучше всего он работает как контролёр зоны, позволяющий другим вариантам добивать цели внутри коррозионных луж. Ему даже не нужно хорошо преследовать, если арена уже дерётся на его стороне.","strategy":"Не отдавай пространство бесплатно. Сближайся после выстрелов и не позволяй коррозии диктовать весь темп боя. Если слишком долго играешь на удобной для него дистанции, ты уже проигрываешь.","environments":["После высвобождения O.G.R.R.","Лаборатория сладостей"],"loot":[{"section":"loot","item":"Boiling Gland","minCount":0,"maxCount":1},{"section":"loot","item":"Rust Beetle Parts","minCount":1,"maxCount":3},{"section":"rare","item":"Boiling Gland","minCount":0,"maxCount":1},{"section":"rare","item":"Rust Beetle Parts","minCount":0,"maxCount":6}],"combatStats":{"health":1600,"attackDamageSummary":"Bite: 50Close-Range Spray: 37.5Ranged Shot: 56.253 Upwards Shot: 56.25 Elemental Resistance Sour(-75% Damage)"},"abilities":[{"name":"Укус","description":"Быстрая базовая атака вблизи."},{"name":"Ближний распыл","description":"Распыление вблизи, наказывающее за прямой заход."},{"name":"Дальний выстрел","description":"Базовый дальний выстрел, чтобы угрожать вне ближнего боя."},{"name":"Выстрел вверх","description":"Стреляет под углом вверх, перекрывая воздушное пространство."}],"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"resistancesV2":[{"type":"stabbing","bonusPct":25}],"weakPoint":{"part":"rump","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},"infusions":[{"id":"fresh","name":"Fresh","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["All direct hits also apply 20 Chill buildup."],"recommendations":"Do not stay on fresh damage as your main answer.","combatTips":["Swap to spicy damage or a reliable physical weapon if your build depends on fresh."],"imageAsset":"assets/g2/creatures/photos/OGRR_Rust_Beetle_Fresh.webp"},{"id":"sour","name":"Sour","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["All direct hits also apply 20 Tang buildup."],"recommendations":"Avoid staying on sour weapons as your main answer.","combatTips":["Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."],"imageAsset":"assets/g2/creatures/photos/OGRR_Rust_Beetle_Sour.webp"},{"id":"spicy","name":"Spicy","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["All direct hits also apply 20 Sizzle buildup."],"recommendations":"Do not depend on spicy damage while this infusion is active.","combatTips":["Fresh is the cleanest elemental answer if the creature lets you hold the tempo."],"imageAsset":"assets/g2/creatures/photos/OGRR_Rust_Beetle_Spicy.webp"}],"lesserMutationsDescription":"Besides the main infusion, it can also spawn with a random lesser mutation. That roll is independent from the active flavor and stays separate from the selector.","lesserMutations":["Attack Up: increases attack damage by 33%.","The Quickness: increases movement speed by 200%.","Damage Resist: reduces all incoming damage by 25%.","Life Steal: heals for 150% of the damage it deals.","Blastwave: on hit, it has a 33% chance to trigger an unblockable extra blast for 50 explosive damage and a long stun.","Shockwave: on hit, it has a 75% chance to fire an extra wave for 50 shock damage. Weapons do not block it, but shields do.","Summon Ally: on hit, it has a 75% chance to summon a faction ally: Spiderling (25 HP) if it is a spider, Northern Scorpling (200 HP) if it is a scorpion, or Mini Larva (75 HP) otherwise."],"inflictsEffects":["sour"],"inflicts":["Acid bite and corrosive projectiles. Direct shots can also add the active infusion buildup."],"specialTraits":["Close-Range Spray, Ranged Shot, and 3 Upwards Shot add 20 buildup of the active element when the direct hit lands unblocked.","Its combat affinities depend on the active infusion. Select the flavor to review the current immunities, weaknesses, and applied effects."],"groupId":null,"cardTier":3,"technicalId":"RustBeetleOGRE","bestiaryId":"RustBeetleOGRE","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Melee Right","technicalId":"RustBeetleMeleeRight","tags":["stabbing"],"notes":"Урон атаки: 40"},{"name":"Melee Left","technicalId":"RustBeetleMeleeLeft","tags":["stabbing"],"notes":"Урон атаки: 40"},{"name":"Area Attack Mint","technicalId":"OGRE_RustBeetleAOE_Mint","tags":["fresh_direct_hit"],"notes":"Урон атаки: 45"},{"name":"Area Attack Sour","technicalId":"OGRE_RustBeetleAOE_Sour","tags":["sour_direct_hit"],"notes":"Урон атаки: 45"},{"name":"Area Attack Spicy","technicalId":"OGRE_RustBeetleAOE_Spicy","tags":["sizzle"],"notes":"Урон атаки: 45"},{"name":"Ranged Mint","technicalId":"OGRE_RustBeetleRanged_Mint","tags":["fresh_direct_hit","ranged"],"notes":"Урон атаки: 45"},{"name":"Ranged Sour","technicalId":"OGRE_RustBeetleRanged_Sour","tags":["sour_direct_hit","ranged"],"notes":"Урон атаки: 45"},{"name":"Ranged Spicy","technicalId":"OGRE_RustBeetleRanged_Spicy","tags":["sizzle","ranged"],"notes":"Урон атаки: 45"},{"name":"Spray Mint","technicalId":"OGRE_RustBeetleSpray_Mint","tags":["fresh_direct_hit"],"notes":"Урон атаки: 30"},{"name":"Spray Sour","technicalId":"OGRE_RustBeetleSpray_Sour","tags":["sour_direct_hit"],"notes":"Урон атаки: 30"},{"name":"Spray Spicy","technicalId":"OGRE_RustBeetleSpray_Spicy","tags":["sizzle_direct_hit"],"notes":"Урон атаки: 30"},{"name":"Block Defensive","technicalId":"BlockDefensive","tags":["maine"],"notes":"Урон атаки: 0"},{"name":"Block Offensive","technicalId":"BlockOffensive","tags":["maine"],"notes":"Урон атаки: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_rust_beetle",
+  "speciesKey": "ogrr_rust_beetle",
+  "collectionGroup": "ogrr",
+  "name": "O.G.R.R. Ржавый жук",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible",
+  "isBoss": false,
+  "order": 269,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_RustBeetle_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_RustBeetle_OGRR_G.png",
+  "photo": "assets/g2/creatures/photos/OGRR_Rust_Beetle.webp",
+  "weaknesses": [
+    "slashing"
+  ],
+  "resistances": [
+    "stabbing"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 4,
+    "value": 1600
+  },
+  "description": "O.G.R.R. Ржавый жук ещё сильнее уходит в коррозионную сторону вида. Он не просто контролирует зоны кислотой — он превращает сам пол в ловушку, которая постепенно наклоняет бой в его пользу.",
+  "behavior": "Охраняет лабораторию сладостей и не зависит от ночи для появления. Предпочитает разрывать дистанцию, заливать землю кислотой и наказывать за попытки вернуть пространство.",
+  "interactionWithPlayer": "Он особенно неприятен, когда на арене уже есть другие враги, потому что заставляет выбирать между кислотой под ногами и давлением, приходящим спереди или с флангов.",
+  "interactionWithCreatures": "Лучше всего он работает как контролёр зоны, позволяющий другим вариантам добивать цели внутри коррозионных луж. Ему даже не нужно хорошо преследовать, если арена уже дерётся на его стороне.",
+  "strategy": "Не отдавай пространство бесплатно. Сближайся после выстрелов и не позволяй коррозии диктовать весь темп боя. Если слишком долго играешь на удобной для него дистанции, ты уже проигрываешь.",
+  "environments": [
+    "После высвобождения O.G.R.R.",
+    "Лаборатория сладостей"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Bombardier Exp Gland",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Rust Beetle Part",
+      "minCount": 1,
+      "maxCount": 9
+    }
+  ],
+  "combatStats": {
+    "health": 1600,
+    "stunThreshold": 90,
+    "stunCooldownSeconds": 15
+  },
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Быстрая базовая атака вблизи."
+    },
+    {
+      "name": "Ближний распыл",
+      "description": "Распыление вблизи, наказывающее за прямой заход."
+    },
+    {
+      "name": "Дальний выстрел",
+      "description": "Базовый дальний выстрел, чтобы угрожать вне ближнего боя."
+    },
+    {
+      "name": "Выстрел вверх",
+      "description": "Стреляет под углом вверх, перекрывая воздушное пространство."
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoint": {
+    "part": "rump",
+    "susceptibleDamage": "any",
+    "susceptibleDamageTypes": [
+      "any"
+    ]
+  },
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresh",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Chill buildup."
+      ],
+      "recommendations": "Do not stay on fresh damage as your main answer.",
+      "combatTips": [
+        "Swap to spicy damage or a reliable physical weapon if your build depends on fresh."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Rust_Beetle_Fresh.webp"
+    },
+    {
+      "id": "sour",
+      "name": "Sour",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Tang buildup."
+      ],
+      "recommendations": "Avoid staying on sour weapons as your main answer.",
+      "combatTips": [
+        "Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Rust_Beetle_Sour.webp"
+    },
+    {
+      "id": "spicy",
+      "name": "Spicy",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Sizzle buildup."
+      ],
+      "recommendations": "Do not depend on spicy damage while this infusion is active.",
+      "combatTips": [
+        "Fresh is the cleanest elemental answer if the creature lets you hold the tempo."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Rust_Beetle_Spicy.webp"
+    }
+  ],
+  "lesserMutationsDescription": "Besides the main infusion, it can also spawn with a random lesser mutation. That roll is independent from the active flavor and stays separate from the selector.",
+  "lesserMutations": [
+    "Attack Up: increases attack damage by 33%.",
+    "The Quickness: increases movement speed by 200%.",
+    "Damage Resist: reduces all incoming damage by 25%.",
+    "Life Steal: heals for 150% of the damage it deals.",
+    "Blastwave: on hit, it has a 33% chance to trigger an unblockable extra blast for 50 explosive damage and a long stun.",
+    "Shockwave: on hit, it has a 75% chance to fire an extra wave for 50 shock damage. Weapons do not block it, but shields do.",
+    "Summon Ally: on hit, it has a 75% chance to summon a faction ally: Spiderling (25 HP) if it is a spider, Northern Scorpling (200 HP) if it is a scorpion, or Mini Larva (75 HP) otherwise."
+  ],
+  "inflictsEffects": [
+    "sour"
+  ],
+  "inflicts": [
+    "Acid bite and corrosive projectiles. Direct shots can also add the active infusion buildup."
+  ],
+  "specialTraits": [
+    "Close-Range Spray, Ranged Shot, and 3 Upwards Shot add 20 buildup of the active element when the direct hit lands unblocked.",
+    "Its combat affinities depend on the active infusion. Select the flavor to review the current immunities, weaknesses, and applied effects."
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "RustBeetleOGRE",
+  "bestiaryId": "RustBeetleOGRE",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "weakPoints": [
+    {
+      "part": "rump",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Melee Right",
+      "technicalId": "RustBeetleMeleeRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 40",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 5.0,
+      "range": 300.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Melee Left",
+      "technicalId": "RustBeetleMeleeLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 40",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 5.0,
+      "range": 300.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Area Attack Mint",
+      "technicalId": "OGRE_RustBeetleAOE_Mint",
+      "tags": [
+        "fresh",
+        "projectile"
+      ],
+      "notes": "Урон атаки: 45",
+      "damageTypes": [
+        "fresh"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 17.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Chill Large"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Chill Large",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Area Attack Sour",
+      "technicalId": "OGRE_RustBeetleAOE_Sour",
+      "tags": [
+        "projectile",
+        "sour"
+      ],
+      "notes": "Урон атаки: 45",
+      "damageTypes": [
+        "sour"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 17.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Corrosion Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Corrosion Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Area Attack Spicy",
+      "technicalId": "OGRE_RustBeetleAOE_Spicy",
+      "tags": [
+        "projectile",
+        "sizzle"
+      ],
+      "notes": "Урон атаки: 45",
+      "damageTypes": [
+        "sizzle"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 17.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Ranged Mint",
+      "technicalId": "OGRE_RustBeetleRanged_Mint",
+      "tags": [
+        "fresh",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Урон атаки: 45",
+      "damageTypes": [
+        "fresh"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 8.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Chill Large"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Chill Large",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Ranged Sour",
+      "technicalId": "OGRE_RustBeetleRanged_Sour",
+      "tags": [
+        "projectile",
+        "ranged",
+        "sour"
+      ],
+      "notes": "Урон атаки: 45",
+      "damageTypes": [
+        "sour"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 8.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Corrosion Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Corrosion Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Ranged Spicy",
+      "technicalId": "OGRE_RustBeetleRanged_Spicy",
+      "tags": [
+        "projectile",
+        "ranged",
+        "sizzle"
+      ],
+      "notes": "Урон атаки: 45",
+      "damageTypes": [
+        "sizzle"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 8.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spray Mint",
+      "technicalId": "OGRE_RustBeetleSpray_Mint",
+      "tags": [
+        "fresh"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "fresh"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 10.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [
+        "Chill Large"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Chill Large",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spray Sour",
+      "technicalId": "OGRE_RustBeetleSpray_Sour",
+      "tags": [
+        "sour"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "sour"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 10.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [
+        "Corrosion Medium"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Corrosion Medium",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spray Spicy",
+      "technicalId": "OGRE_RustBeetleSpray_Spicy",
+      "tags": [
+        "sizzle"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "sizzle"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 10.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Defensive",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 7.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Offensive",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 9.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_45426c824a1f1146",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_rust_beetle",
+      "technicalId": "RustBeetleOGRE",
+      "map": "surface",
+      "world": {
+        "x": -220950.0,
+        "y": -49000.0,
+        "z": 1700.0
+      },
+      "u": 0.15189932689493707,
+      "v": 0.07417994771903197,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c224d27aa29134d5",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_rust_beetle",
+      "technicalId": "RustBeetleOGRE",
+      "map": "surface",
+      "world": {
+        "x": -203253.53,
+        "y": -23178.533,
+        "z": 3945.451
+      },
+      "u": 0.2181898788410887,
+      "v": 0.18566144787924788,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "Существ OGRR можно освободить из лаборатории у пугала. После этого они могут появляться в разных местах, преимущественно ночью.",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Bombardier Exp Gland",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bombardier Exp Gland",
+      "countLabel": "1",
+      "chancePct": 70,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Rust Beetle Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 6,
+      "notes": "6 independent rolls"
+    },
+    {
+      "item": "Rust Beetle Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Rust Beetle Part",
+      "countLabel": "2",
+      "chancePct": 80,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

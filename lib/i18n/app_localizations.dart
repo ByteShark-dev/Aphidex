@@ -76,8 +76,8 @@ class AppLocalizations {
   String get russianLanguage => _t('russianLanguage');
   String get creditsTitle => _t('creditsTitle');
   String get creditsSubtitle => _t('creditsSubtitle');
-  String get donateTitle => _t('donateTitle');
-  String get donateSubtitle => _t('donateSubtitle');
+  String get websiteTitle => _t('websiteTitle');
+  String get websiteSubtitle => _t('websiteSubtitle');
   String get wipeDataTitle => _t('wipeDataTitle');
   String get wipeDataSubtitle => _t('wipeDataSubtitle');
   String get openLinkError => _t('openLinkError');
@@ -1383,6 +1383,7 @@ class AppLocalizations {
         return _t('damageChoppingAndSlashing');
       case 'stabbing_arrows_only':
       case 'stabbing_arrrows':
+      case 'projectile_piercing':
         return _t('damageStabbingArrowsOnly');
       case 'stabbing_bows_and_spears':
         return _t('damageStabbingBowsAndSpears');
@@ -1527,8 +1528,8 @@ class AppLocalizations {
       'russianLanguage': 'Ruso',
       'creditsTitle': 'Créditos',
       'creditsSubtitle': 'Licencias, donadores y avisos legales',
-      'donateTitle': 'Donar',
-      'donateSubtitle': 'Apoya el desarrollo de Aphidex',
+      'websiteTitle': 'Web de Aphidex',
+      'websiteSubtitle': 'Noticias, información y novedades de Aphidex',
       'wipeDataTitle': 'Borrar datos',
       'wipeDataSubtitle': 'Reinicia favoritos, doradas y configuración',
       'openLinkError': 'No se pudo abrir el enlace.',
@@ -1708,7 +1709,7 @@ class AppLocalizations {
           'Repite la gu\u00EDa inicial de Aphidex cuando quieras.',
       'tutorialPromptTitle': '\u00BFQuieres ver un tutorial introductorio?',
       'tutorialPromptBody':
-          'Aphidex ahora tiene m\u00E1s funciones. Si quieres, te mostramos c\u00F3mo moverte entre juegos, filtrar, ordenar y consultar la enciclopedia.',
+          'Aphidex ahora tiene m\u00E1s funciones. Te mostramos criaturas, variantes, armas y equipo, el nuevo mapa, filtros y la enciclopedia.',
       'tutorialPromptStartAction': 'Ver tutorial',
       'tutorialPromptSkipAction': 'Omitir',
       'tutorial_search_title': 'Busca enemigos r\u00E1pido',
@@ -1729,15 +1730,21 @@ class AppLocalizations {
       'tutorial_settings_title': 'Abre ajustes',
       'tutorial_settings_body':
           'Desde configuraci\u00F3n puedes cambiar tema, idioma, borrar datos y volver a abrir este tutorial.',
+      'tutorial_equipmentLibrary_title': 'Armas y equipo de Grounded 2',
+      'tutorial_equipmentLibrary_body':
+          'La nueva secci\u00F3n Equipo re\u00FAne armas, armaduras y amuletos con sus datos disponibles, agrupaciones y accesos relacionados.',
+      'tutorial_map_title': 'Explora el mapa',
+      'tutorial_map_body':
+          'Aqu\u00ED puedes explorar Surface y Abyss sin cargar miles de puntos. Para ver ubicaciones, abre una criatura y toca Ver en mapa: solo aparecer\u00E1n sus marcadores.',
       'tutorial_codex_title': 'Consulta la enciclopedia',
       'tutorial_codex_body':
           'Este acceso abre la enciclopedia de efectos con explicaciones para da\u00F1os, elementos y estados.',
       'tutorial_detailSummary_title': 'Ficha del enemigo',
       'tutorial_detailSummary_body':
           'La ficha re\u00FAne foto, peligro, tier real, favorita, tarjeta dorada y secciones desplegables como entorno, loot y habilidades.',
-      'tutorial_detailVariant_title': 'Cambia entre G1 y G2',
+      'tutorial_detailVariant_title': 'Cambia de variante',
       'tutorial_detailVariant_body':
-          'Si una criatura existe en ambos juegos, aqu\u00ED eliges qu\u00E9 versi\u00F3n quieres ver. La ficha cambia sus datos seg\u00FAn la edici\u00F3n seleccionada.',
+          'Cuando una entrada tiene varias versiones, aqu\u00ED eliges la variante que quieres consultar. La ficha cambia sus datos y conserva tu selecci\u00F3n al navegar.',
       'tutorial_detailEffects_title': 'Debilidades y resistencias',
       'tutorial_detailEffects_body':
           'Aqu\u00ED ver\u00E1s debilidades, resistencias y el da\u00F1o o estado que puede infligir el enemigo.',
@@ -1749,7 +1756,7 @@ class AppLocalizations {
           'La enciclopedia resume qu\u00E9 hace cada efecto para que entiendas r\u00E1pido su funci\u00F3n.',
       'tutorial_codexEquipment_title': 'Equipo relacionado',
       'tutorial_codexEquipment_body':
-          'M\u00E1s adelante aqu\u00ED aparecer\u00E1n las armas y armaduras que aplican este efecto.',
+          'Aqu\u00ED aparecen las armas y armaduras disponibles que aplican este efecto.',
       'autoLanguageDescription': 'Detectado automáticamente: {language}',
       'weakPointBack': 'Espalda',
       'weakPointEyes': 'Ojos',
@@ -1785,8 +1792,8 @@ class AppLocalizations {
       'russianLanguage': 'Russian',
       'creditsTitle': 'Credits',
       'creditsSubtitle': 'Licenses, donors, and legal notices',
-      'donateTitle': 'Donate',
-      'donateSubtitle': 'Support Aphidex development',
+      'websiteTitle': 'Aphidex website',
+      'websiteSubtitle': 'News, information, and Aphidex updates',
       'wipeDataTitle': 'Erase data',
       'wipeDataSubtitle': 'Reset favorites, gold cards, and settings',
       'openLinkError': 'The link could not be opened.',
@@ -1963,7 +1970,7 @@ class AppLocalizations {
           'Replay the Aphidex quick guide whenever you want.',
       'tutorialPromptTitle': 'Would you like a quick intro tutorial?',
       'tutorialPromptBody':
-          'Aphidex has grown quite a bit. If you want, we can walk you through games, filters, sorting, and the effect codex.',
+          'Aphidex has grown quite a bit. We can walk you through creatures, variants, weapons and gear, the new map, filters, and the effect codex.',
       'tutorialPromptStartAction': 'Start tutorial',
       'tutorialPromptSkipAction': 'Skip',
       'tutorial_search_title': 'Search enemies fast',
@@ -1983,15 +1990,21 @@ class AppLocalizations {
       'tutorial_settings_title': 'Open settings',
       'tutorial_settings_body':
           'Settings lets you change theme, language, erase data, and launch this tutorial again.',
+      'tutorial_equipmentLibrary_title': 'Grounded 2 weapons and gear',
+      'tutorial_equipmentLibrary_body':
+          'The new Equipment section brings together weapons, armor, and trinkets with their available data, groups, and related links.',
+      'tutorial_map_title': 'Explore the map',
+      'tutorial_map_body':
+          'Explore Surface and Abyss here without loading thousands of points. To see locations, open a creature and tap View on map: only its markers will appear.',
       'tutorial_codex_title': 'Open the codex',
       'tutorial_codex_body':
           'This button opens the effect codex with explanations for damage, elements, and statuses.',
       'tutorial_detailSummary_title': 'Enemy sheet',
       'tutorial_detailSummary_body':
           'The sheet gathers photo, danger, real tier, favorite state, gold card state, and collapsible sections like environment, loot, and abilities.',
-      'tutorial_detailVariant_title': 'Switch between G1 and G2',
+      'tutorial_detailVariant_title': 'Switch variants',
       'tutorial_detailVariant_body':
-          'If a creature exists in both games, you can choose which version to inspect here. The sheet updates its data for the selected edition.',
+          'When an entry has multiple versions, choose the variant you want to inspect here. The sheet updates its data and keeps your selection while navigating.',
       'tutorial_detailEffects_title': 'Weaknesses and resistances',
       'tutorial_detailEffects_body':
           'Here you can review weaknesses, resistances, and the damage or status that the creature can inflict.',
@@ -2003,7 +2016,7 @@ class AppLocalizations {
           'The codex summarizes what each effect does so you can understand it quickly.',
       'tutorial_codexEquipment_title': 'Related gear',
       'tutorial_codexEquipment_body':
-          'Weapons and armor that use this effect will appear here later.',
+          'Available weapons and armor that use this effect appear here.',
       'autoLanguageDescription': 'Detected automatically: {language}',
       'weakPointBack': 'Back',
       'weakPointEyes': 'Eyes',
@@ -2039,8 +2052,8 @@ class AppLocalizations {
       'russianLanguage': 'Русский',
       'creditsTitle': 'Благодарности',
       'creditsSubtitle': 'Лицензии, донаты и правовая информация',
-      'donateTitle': 'Поддержать',
-      'donateSubtitle': 'Поддержать развитие Aphidex',
+      'websiteTitle': 'Сайт Aphidex',
+      'websiteSubtitle': 'Новости, информация и обновления Aphidex',
       'wipeDataTitle': 'Удалить данные',
       'wipeDataSubtitle': 'Сбросить избранное, золотые карточки и настройки',
       'openLinkError': 'Не удалось открыть ссылку.',
@@ -2173,7 +2186,7 @@ class AppLocalizations {
       'tutorialPromptTitle':
           '\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u043a\u0440\u0430\u0442\u043a\u043e\u0435 \u043e\u0431\u0443\u0447\u0435\u043d\u0438\u0435?',
       'tutorialPromptBody':
-          '\u0412 Aphidex \u043f\u043e\u044f\u0432\u0438\u043b\u043e\u0441\u044c \u0431\u043e\u043b\u044c\u0448\u0435 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0435\u0439. \u0415\u0441\u043b\u0438 \u0445\u043e\u0447\u0435\u0448\u044c, \u043c\u044b \u0431\u044b\u0441\u0442\u0440\u043e \u043f\u043e\u043a\u0430\u0436\u0435\u043c \u0438\u0433\u0440\u044b, \u0444\u0438\u043b\u044c\u0442\u0440\u044b, \u0441\u043e\u0440\u0442\u0438\u0440\u043e\u0432\u043a\u0443 \u0438 \u044d\u043d\u0446\u0438\u043a\u043b\u043e\u043f\u0435\u0434\u0438\u044e \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u0432.',
+          'В Aphidex появилось много нового. Мы покажем существ, варианты, оружие и снаряжение, новую карту, фильтры и энциклопедию эффектов.',
       'tutorialPromptStartAction': '\u041d\u0430\u0447\u0430\u0442\u044c',
       'tutorialPromptSkipAction':
           '\u041f\u0440\u043e\u043f\u0443\u0441\u0442\u0438\u0442\u044c',
@@ -2201,6 +2214,12 @@ class AppLocalizations {
           '\u041E\u0442\u043A\u0440\u043E\u0439 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438',
       'tutorial_settings_body':
           '\u0412 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430\u0445 \u043c\u043e\u0436\u043d\u043e \u043f\u043e\u043c\u0435\u043d\u044f\u0442\u044c \u0442\u0435\u043c\u0443, \u044f\u0437\u044b\u043a, \u0441\u0431\u0440\u043e\u0441\u0438\u0442\u044c \u0434\u0430\u043d\u043d\u044b\u0435 \u0438 \u0437\u0430\u043f\u0443\u0441\u0442\u0438\u0442\u044c \u044d\u0442\u043e \u043e\u0431\u0443\u0447\u0435\u043d\u0438\u0435 \u0441\u043d\u043e\u0432\u0430.',
+      'tutorial_equipmentLibrary_title': 'Оружие и снаряжение Grounded 2',
+      'tutorial_equipmentLibrary_body':
+          'В новом разделе «Снаряжение» собраны оружие, броня и амулеты с доступными данными, группами и связанными переходами.',
+      'tutorial_map_title': 'Исследуйте карту',
+      'tutorial_map_body':
+          'Исследуйте Поверхность и Бездну без загрузки тысяч точек. Чтобы увидеть места, откройте существо и нажмите «Показать на карте»: появятся только его маркеры.',
       'tutorial_codex_title':
           '\u041E\u0442\u043A\u0440\u043E\u0439 \u044D\u043D\u0446\u0438\u043A\u043B\u043E\u043F\u0435\u0434\u0438\u044E',
       'tutorial_codex_body':
@@ -2209,10 +2228,9 @@ class AppLocalizations {
           '\u041A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 \u0432\u0440\u0430\u0433\u0430',
       'tutorial_detailSummary_body':
           '\u0412 \u043a\u0430\u0440\u0442\u043e\u0447\u043a\u0435 \u0435\u0441\u0442\u044c \u0444\u043e\u0442\u043e, \u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u044c, \u0440\u0435\u0430\u043b\u044c\u043d\u044b\u0439 \u0442\u0438\u0440, \u0441\u0442\u0430\u0442\u0443\u0441 \u0438\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0433\u043e, \u0437\u043e\u043b\u043e\u0442\u043e\u0439 \u043a\u0430\u0440\u0442\u044b \u0438 \u0441\u0432\u043e\u0440\u0430\u0447\u0438\u0432\u0430\u0435\u043c\u044b\u0435 \u0440\u0430\u0437\u0434\u0435\u043b\u044b \u0441 loot, \u0441\u0440\u0435\u0434\u043e\u0439 \u0438 \u0441\u043f\u043e\u0441\u043e\u0431\u043d\u043e\u0441\u0442\u044f\u043c\u0438.',
-      'tutorial_detailVariant_title':
-          '\u041f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043c\u0435\u0436\u0434\u0443 G1 \u0438 G2',
+      'tutorial_detailVariant_title': 'Переключение вариантов',
       'tutorial_detailVariant_body':
-          '\u0415\u0441\u043b\u0438 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u0435\u0441\u0442\u044c \u0432 \u043e\u0431\u0435\u0438\u0445 \u0438\u0433\u0440\u0430\u0445, \u0437\u0434\u0435\u0441\u044c \u043c\u043e\u0436\u043d\u043e \u0432\u044b\u0431\u0440\u0430\u0442\u044c \u043d\u0443\u0436\u043d\u0443\u044e \u0432\u0435\u0440\u0441\u0438\u044e. \u041a\u0430\u0440\u0442\u043e\u0447\u043a\u0430 \u043e\u0431\u043d\u043e\u0432\u0438\u0442 \u0434\u0430\u043d\u043d\u044b\u0435 \u043f\u043e\u0434 \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u043e\u0435 \u0438\u0437\u0434\u0430\u043d\u0438\u0435.',
+          'Если у записи есть несколько версий, здесь можно выбрать нужный вариант. Карточка обновит данные и сохранит выбор при навигации.',
       'tutorial_detailEffects_title':
           '\u0421\u043B\u0430\u0431\u043E\u0441\u0442\u0438 \u0438 \u0441\u043E\u043F\u0440\u043E\u0442\u0438\u0432\u043B\u0435\u043D\u0438\u044F',
       'tutorial_detailEffects_body':
@@ -2228,7 +2246,7 @@ class AppLocalizations {
       'tutorial_codexEquipment_title':
           '\u0421\u0432\u044F\u0437\u0430\u043D\u043D\u043E\u0435 \u0441\u043D\u0430\u0440\u044F\u0436\u0435\u043D\u0438\u0435',
       'tutorial_codexEquipment_body':
-          '\u041f\u043e\u0437\u0436\u0435 \u0437\u0434\u0435\u0441\u044c \u043f\u043e\u044f\u0432\u044f\u0442\u0441\u044f \u043e\u0440\u0443\u0436\u0438\u0435 \u0438 \u0431\u0440\u043e\u043d\u044f, \u0441\u0432\u044f\u0437\u0430\u043d\u043d\u044b\u0435 \u0441 \u044d\u0442\u0438\u043c \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u043c.',
+          'Здесь показаны доступные оружие и броня, связанные с этим эффектом.',
       'autoLanguageDescription': 'Автоматически определён язык: {language}',
       'weakPointBack': 'Спина',
       'weakPointEyes': 'Глаза',

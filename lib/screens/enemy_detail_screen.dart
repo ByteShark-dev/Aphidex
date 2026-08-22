@@ -8,21 +8,26 @@ import '../controllers/tutorial_controller.dart';
 import '../data/creature_card_state.dart';
 import '../data/creature_kill_tracking.dart';
 import '../data/enemy_repository.dart';
+import '../data/entity_asset_resolver.dart';
 import '../data/effect_catalog.dart';
 import '../data/local_storage.dart';
 import '../data/tier_summary.dart';
 import '../data/ui_mapper.dart';
+import '../data/weakpoint_resolver.dart';
 import '../i18n/app_localizations.dart';
 import '../layout/app_breakpoints.dart';
 import '../models/enemy.dart';
 import '../models/enemy_index_entry.dart';
 import '../models/game_pick.dart';
+import '../models/location.dart';
 import '../widgets/fallback_asset_image.dart';
 import '../widgets/icon_badge.dart';
 import '../widgets/inline_banner_ad_card.dart';
 import '../widgets/overflow_marquee_text.dart';
 import '../widgets/state_panels.dart';
+import 'defense_detail_screen.dart';
 import 'effect_codex_screen.dart';
+import 'map_screen.dart';
 
 String? _visibleText(LocalizedText? text, String languageCode) {
   final value = text?.resolve(languageCode).trim();
@@ -44,6 +49,13 @@ bool _hasVisibleLocalizedList(
   Iterable<LocalizedText> values,
   String languageCode,
 ) => _visibleLocalizedValues(values, languageCode).isNotEmpty;
+
+/// Single navigation guard shared by the detail UI and isolation tests.
+bool canOpenCreatureMap(Enemy enemy) {
+  if (enemy.game != 'g2') return false;
+  if (enemy.locations.isNotEmpty) return true;
+  return enemy.eventAppearances.isNotEmpty;
+}
 
 Future<void> _openTutorialAwareEffectDetails(
   BuildContext context,
@@ -161,6 +173,12 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
           ? _summaryVariants![_selectedIndex].id
           : _legacyVariants![_selectedIndex].id);
 
+  String get _currentGame => _groupSelectedId != null
+      ? 'g2'
+      : _usesLazyDetails
+      ? _summaryVariants![_selectedIndex].game
+      : _legacyVariants![_selectedIndex].game;
+
   String get _currentSpeciesKey => _usesLazyDetails
       ? _summaryVariants![_selectedIndex].speciesKey
       : _legacyVariants![_selectedIndex].speciesKey;
@@ -199,7 +217,11 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
       return;
     }
     _loadedLanguageCode = languageCode;
-    _enemyFuture = EnemyRepository.loadDetail(_currentId, languageCode);
+    _enemyFuture = EnemyRepository.loadDetail(
+      _currentGame,
+      _currentId,
+      languageCode,
+    );
     _groupSummariesFuture = _loadGroupSummaries(
       languageCode,
       index: _selectedIndex,
@@ -226,6 +248,7 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
 
   Future<Enemy> _loadCurrentDetail() {
     return EnemyRepository.loadDetail(
+      _currentGame,
       _currentId,
       _loadedLanguageCode ?? context.l10n.languageCode,
     );
@@ -300,6 +323,7 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
       enemy.elementalWeaknesses.isNotEmpty ||
       enemy.damageWeaknesses.isNotEmpty ||
       enemy.resistancesV2.isNotEmpty ||
+      enemy.immunities.isNotEmpty ||
       enemy.infusions.isNotEmpty ||
       enemy.resolvedWeakPoints.isNotEmpty ||
       enemy.attacks.isNotEmpty;
@@ -376,7 +400,11 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
       _groupSelectedId = null;
       _groupSummariesFuture = nextGroupSummaries;
       if (_usesLazyDetails) {
-        _enemyFuture = EnemyRepository.loadDetail(_currentId, languageCode);
+        _enemyFuture = EnemyRepository.loadDetail(
+          _currentGame,
+          _currentId,
+          languageCode,
+        );
       }
     });
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -392,6 +420,7 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
       _selectedInfusionIndex = 0;
       _selectedEncounterIndex = 0;
       _enemyFuture = EnemyRepository.loadDetail(
+        'g2',
         id,
         _loadedLanguageCode ?? context.l10n.languageCode,
       );
@@ -500,8 +529,14 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
             0,
             enemy.infusions.length - 1,
           )];
-    final visiblePhotoAsset =
-        selectedInfusion?.resolvedImageAsset(enemy.photo) ?? enemy.photo;
+    final visiblePhotoAsset = EntityAssetResolver.resolveCreature(
+      game: enemy.game,
+      usage: selectedInfusion == null
+          ? EntityAssetUsage.cover
+          : EntityAssetUsage.variant,
+      coverAsset: enemy.photo,
+      variantAsset: selectedInfusion?.resolvedImageAsset(enemy.photo),
+    ).asset;
     final weaknessesV1 = enemy.weaknesses
         .where((item) => item.trim().isNotEmpty)
         .toList();
@@ -745,7 +780,7 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
               _TextSection(title: l10n.descriptionTitle, value: description),
               const SizedBox(height: 18),
             ],
-            if (enemy.healthDisplay.shouldRender) ...[
+            if (enemy.healthDisplay.shouldRender && !enemy.hideHealth) ...[
               _HealthBar(
                 health: effectiveHealth,
                 displayMode: enemy.healthDisplay,
@@ -827,6 +862,38 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
                           ),
                         ],
                       ),
+                    ),
+                    const SizedBox(height: 16),
+                  ],
+                  if (enemy.immunities.isNotEmpty) ...[
+                    Text(
+                      languageCode == 'es'
+                          ? 'Inmunidades'
+                          : languageCode == 'ru'
+                          ? 'Иммунитеты'
+                          : 'Immunities',
+                      style: const TextStyle(fontWeight: FontWeight.w800),
+                    ),
+                    const SizedBox(height: 8),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: enemy.immunities.map((value) {
+                        final effectId = normalizedTechnicalEffectId(value);
+                        final effectName =
+                            effectCatalogEntryById(
+                              effectId,
+                            )?.name.resolve(languageCode) ??
+                            _humanizedEffectFallback(value);
+                        return Chip(
+                          avatar: IconBadge.asset(
+                            assetName: UiMapper.effectIcon(effectId),
+                            size: 18,
+                            padding: EdgeInsets.zero,
+                          ),
+                          label: Text('$effectName — ${l10n.immuneLabel}'),
+                        );
+                      }).toList(),
                     ),
                     const SizedBox(height: 16),
                   ],
@@ -996,6 +1063,8 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
               _CombatStatsSection(
                 stats: enemy.combatStats!,
                 fallbackHealth: effectiveHealth?.value,
+                showHealth:
+                    !enemy.healthDisplay.shouldRender && !enemy.hideHealth,
                 l10n: l10n,
                 languageCode: languageCode,
               ),
@@ -1016,15 +1085,13 @@ class _EnemyDetailScreenState extends State<EnemyDetailScreen> {
               const SizedBox(height: 18),
             ],
             if (_hasVisibleLocalizedList(enemy.environments, languageCode) ||
-                _hasLocalizedText(enemy.respawnInfo, languageCode)) ...[
-              _CollapsibleCardSection(
-                title: l10n.environmentRespawnTitle,
-                child: _EnvironmentRespawnSection(
-                  enemy: enemy,
-                  l10n: l10n,
-                  languageCode: languageCode,
-                  embedded: true,
-                ),
+                _hasLocalizedText(enemy.respawnInfo, languageCode) ||
+                enemy.locations.isNotEmpty ||
+                enemy.eventAppearances.isNotEmpty ||
+                enemy.appearanceType != 'unknown') ...[
+              _CreatureAppearanceSection(
+                enemy: enemy,
+                languageCode: languageCode,
               ),
               const SizedBox(height: 18),
             ],
@@ -1575,8 +1642,12 @@ class _CreatureCardSection extends StatelessWidget {
     final canToggle = shouldTrackCreatureCardProgress(enemy);
     final current = normalizeCreatureCardProgress(enemy, progress);
     final next = nextCreatureCardProgress(enemy, current);
-    final cardAsset =
-        resolveCreatureCardAsset(enemy, current) ?? enemy.defaultCardAsset;
+    final cardAsset = EntityAssetResolver.resolveEnemy(
+      enemy,
+      EntityAssetUsage.card,
+      selectedCardAsset:
+          resolveCreatureCardAsset(enemy, current) ?? enemy.defaultCardAsset,
+    ).asset;
     final accentColor = switch (current) {
       CreatureCardProgress.gold => const Color(0xFFFFD54F),
       CreatureCardProgress.obtained => Theme.of(context).colorScheme.primary,
@@ -1599,7 +1670,7 @@ class _CreatureCardSection extends StatelessWidget {
           canToggle: canToggle,
           accentColor: accentColor,
         ),
-        if (showViewer && cardAsset != null && cardAsset.trim().isNotEmpty) ...[
+        if (showViewer && cardAsset.trim().isNotEmpty) ...[
           const SizedBox(height: 10),
           _CreatureCardViewer(
             assetName: cardAsset,
@@ -2334,77 +2405,247 @@ class _RewardUnlocksSection extends StatelessWidget {
   }
 }
 
-class _EnvironmentRespawnSection extends StatelessWidget {
-  final Enemy enemy;
-  final AppLocalizations l10n;
-  final String languageCode;
-  final bool embedded;
-
-  const _EnvironmentRespawnSection({
+class _CreatureAppearanceSection extends StatelessWidget {
+  const _CreatureAppearanceSection({
     required this.enemy,
-    required this.l10n,
     required this.languageCode,
-    this.embedded = false,
   });
+
+  final Enemy enemy;
+  final String languageCode;
+
+  String _t(String en, String es, String ru) => switch (languageCode) {
+    'es' => es,
+    'ru' => ru,
+    _ => en,
+  };
 
   @override
   Widget build(BuildContext context) {
+    final surface = enemy.locations
+        .where((location) => location.layer == MapLayer.surface)
+        .length;
+    final abyss = enemy.locations.length - surface;
+    final hasStoryRoute = enemy.locations.any(
+      (location) => location.type == 'story_locked',
+    );
+    final isOgrr =
+        enemy.collectionGroup == 'ogrr' ||
+        (enemy.technicalId ?? '').toLowerCase().contains('ogre');
+    final eventOnly =
+        enemy.locations.isEmpty && enemy.eventAppearances.isNotEmpty;
+    final isGroundedTwo = enemy.game == 'g2';
+    final canOpenMap = canOpenCreatureMap(enemy);
     final environments = _visibleLocalizedValues(
       enemy.environments,
       languageCode,
     );
-    final respawn = _visibleText(enemy.respawnInfo, languageCode);
-    if (environments.isEmpty && respawn == null) {
-      return const SizedBox.shrink();
-    }
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        if (!embedded) ...[
-          Text(
-            l10n.environmentRespawnTitle,
-            style: const TextStyle(fontWeight: FontWeight.w800),
-          ),
-          const SizedBox(height: 8),
-        ],
-        Container(
-          width: double.infinity,
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(14),
-            border: Border.all(color: Colors.black12),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              if (environments.isNotEmpty) ...[
-                Text(
-                  l10n.environmentsTitle,
+    final respawn =
+        const {
+          'summoned_boss',
+          'fixed_encounter',
+          'event_only',
+          'no_natural_spawn',
+        }.contains(enemy.appearanceType)
+        ? null
+        : _visibleText(enemy.respawnInfo, languageCode);
+    final appearanceCondition = _visibleText(
+      enemy.appearanceCondition,
+      languageCode,
+    );
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(14),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              _t('Appearance', 'Aparición', 'Появление'),
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            const SizedBox(height: 8),
+            Text(
+              '${_t('Appearance', 'Aparición', 'Появление')}: ${_appearanceTypeLabel(enemy.appearanceType)}',
+              style: const TextStyle(fontWeight: FontWeight.w700),
+            ),
+            if (environments.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              ExpansionTile(
+                tilePadding: EdgeInsets.zero,
+                initiallyExpanded: false,
+                title: Text(
+                  _t('Environment names', 'Nombres de zonas', 'Названия зон'),
                   style: const TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const SizedBox(height: 8),
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: environments
-                      .map((environment) => Chip(label: Text(environment)))
-                      .toList(),
-                ),
-              ],
-              if (respawn != null) ...[
-                if (environments.isNotEmpty) const SizedBox(height: 12),
-                Text(
-                  l10n.respawnTitle,
-                  style: const TextStyle(fontWeight: FontWeight.w700),
-                ),
-                const SizedBox(height: 4),
-                Text(respawn),
-              ],
+                children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Wrap(
+                      spacing: 6,
+                      runSpacing: 6,
+                      children: environments
+                          .map((value) => Chip(label: Text(value)))
+                          .toList(),
+                    ),
+                  ),
+                ],
+              ),
             ],
-          ),
+            if (respawn != null) ...[
+              const SizedBox(height: 8),
+              Text('${_t('Respawn', 'Reaparición', 'Возрождение')}: $respawn'),
+            ],
+            if (enemy.appearanceType == 'summoned_boss')
+              Text(
+                _t(
+                  'Requires summoning to start the encounter.',
+                  'Requiere invocación para iniciar el encuentro.',
+                  'Для начала встречи требуется призыв.',
+                ),
+              ),
+            if (eventOnly)
+              Text(
+                _t(
+                  'Event appearance. This creature has no natural map marker.',
+                  'Aparición por evento. Esta criatura no tiene marcador natural.',
+                  'Появление в событии. У существа нет естественной метки на карте.',
+                ),
+              ),
+            if (isOgrr && enemy.locations.isNotEmpty)
+              Text(
+                appearanceCondition ??
+                    _t(
+                      'OGRR creatures can be released from the scarecrow laboratory. Afterwards they may appear in different areas, mainly at night.',
+                      'Los OGRR pueden liberarse desde el laboratorio del espantapájaros. Después de hacerlo pueden aparecer en distintas zonas, principalmente durante la noche.',
+                      'Существ OGRR можно освободить из лаборатории у пугала. После этого они могут появляться в разных местах, преимущественно ночью.',
+                    ),
+              ),
+            if (!eventOnly && !isOgrr)
+              Text(
+                [
+                  if (surface > 0) 'Surface: $surface',
+                  if (abyss > 0) 'Abyss: $abyss',
+                ].join(' · '),
+              ),
+            if (hasStoryRoute)
+              Padding(
+                padding: const EdgeInsets.only(top: 6),
+                child: Text(
+                  _t(
+                    'Locked by story progress.',
+                    'Bloqueado por progreso de historia.',
+                    'Заблокировано прогрессом сюжета.',
+                  ),
+                ),
+              ),
+            if (abyss > 0)
+              Padding(
+                padding: const EdgeInsets.only(top: 6),
+                child: Text(
+                  _t(
+                    'Diving equipment required.',
+                    'Traje de buceo requerido.',
+                    'Требуется водолазное снаряжение.',
+                  ),
+                ),
+              ),
+            if (isGroundedTwo && eventOnly) ...[
+              const SizedBox(height: 10),
+              OutlinedButton.icon(
+                onPressed: () => _openMixr(context),
+                icon: const Icon(Icons.shield),
+                label: Text(_t('View MIX.R', 'Ver MIX.R', 'Показать MIX.R')),
+              ),
+            ],
+            if (canOpenMap) ...[
+              const SizedBox(height: 10),
+              FilledButton.icon(
+                onPressed: () {
+                  if (eventOnly) {
+                    MapNavigation.open(
+                      context,
+                      MapOpenRequest(
+                        target: MapTarget(
+                          MapTargetType.defense,
+                          enemy.eventAppearances.first,
+                        ),
+                        filter: MapFilter(
+                          type: MapTargetType.defense,
+                          targetId: enemy.eventAppearances.first,
+                        ),
+                        focus: const MapFocus(),
+                      ),
+                    );
+                    return;
+                  }
+                  MapNavigation.open(
+                    context,
+                    MapOpenRequest(
+                      target: MapTarget(MapTargetType.creature, enemy.id),
+                      filter: MapFilter(
+                        type: MapTargetType.creature,
+                        targetId: enemy.id,
+                      ),
+                      focus: MapFocus(
+                        preferredLayer: enemy.locations.first.layer,
+                      ),
+                    ),
+                  );
+                },
+                icon: const Icon(Icons.map),
+                label: Text(_t('Open map', 'Abrir mapa', 'Открыть карту')),
+              ),
+            ],
+          ],
         ),
-      ],
+      ),
+    );
+  }
+
+  String _appearanceTypeLabel(String value) => switch (value) {
+    'natural' => _t('Natural', 'Natural', 'Естественное'),
+    'fixed_encounter' => _t(
+      'Fixed encounter',
+      'Encuentro fijo',
+      'Фиксированная встреча',
+    ),
+    'summoned_boss' => _t(
+      'Summoned boss',
+      'Jefe por invocación',
+      'Призываемый босс',
+    ),
+    'event_only' => _t('Event only', 'Aparición por evento', 'Только событие'),
+    'ogrr_released' => 'OGRR',
+    'story_related' => _t(
+      'Story-related',
+      'Relacionado con historia',
+      'Сюжетное',
+    ),
+    'no_natural_spawn' => _t(
+      'No natural spawn',
+      'Sin aparición natural',
+      'Нет естественного появления',
+    ),
+    _ => _t('Conditional', 'Condicional', 'Условное'),
+  };
+
+  Future<void> _openMixr(BuildContext context) async {
+    final eventId = enemy.eventAppearances.first;
+    final variant = switch (eventId) {
+      'mixr_picnic' => 1,
+      'mixr_resting' => 2,
+      _ => 0,
+    };
+    await LocalStorage.setInt(
+      'defense_g2_mixr_defenses_selected_variant_v1',
+      variant,
+    );
+    if (!context.mounted) return;
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) =>
+            const DefenseDetailScreen(defenseId: 'g2_mixr_defenses'),
+      ),
     );
   }
 }
@@ -2414,19 +2655,21 @@ class _CombatStatsSection extends StatelessWidget {
   final int? fallbackHealth;
   final AppLocalizations l10n;
   final String languageCode;
+  final bool showHealth;
 
   const _CombatStatsSection({
     required this.stats,
     required this.fallbackHealth,
     required this.l10n,
     required this.languageCode,
+    required this.showHealth,
   });
 
   @override
   Widget build(BuildContext context) {
     final rows = <MapEntry<String, String>>[];
     final healthValue = stats.health ?? fallbackHealth;
-    if (healthValue != null) {
+    if (showHealth && healthValue != null) {
       rows.add(MapEntry(l10n.healthTitle, '$healthValue HP'));
     }
     if (stats.stunThreshold != null) {
@@ -2559,7 +2802,9 @@ class _LootSection extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(
-                                child: Text(entry.item.resolve(languageCode)),
+                                child: _LootItemLabel(
+                                  label: entry.item.resolve(languageCode),
+                                ),
                               ),
                               const SizedBox(width: 12),
                               Text('${entry.minCount}-${entry.maxCount}'),
@@ -2587,10 +2832,16 @@ class _LootSection extends StatelessWidget {
                         Row(
                           children: [
                             Expanded(
-                              child: Text(entry.item.resolve(languageCode)),
+                              child: _LootItemLabel(
+                                label: entry.item.resolve(languageCode),
+                              ),
                             ),
                             const SizedBox(width: 8),
                             Text(entry.countLabel),
+                            if (entry.rollCount > 1) ...[
+                              const SizedBox(width: 6),
+                              Text('× ${entry.rollCount} rolls'),
+                            ],
                             const SizedBox(width: 12),
                             Text('${entry.chancePct}%'),
                           ],
@@ -2654,6 +2905,33 @@ class _LootSection extends StatelessWidget {
             ],
           ),
         ),
+      ],
+    );
+  }
+}
+
+class _LootItemLabel extends StatelessWidget {
+  const _LootItemLabel({required this.label});
+
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    final isRawScience = UiMapper.isRawScienceLabel(label);
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        if (isRawScience) ...[
+          Image.asset(
+            UiMapper.rewardIcon('raw_science'),
+            key: const ValueKey('raw-science-loot-icon'),
+            width: 24,
+            height: 24,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(width: 8),
+        ],
+        Flexible(child: Text(label)),
       ],
     );
   }
@@ -3096,9 +3374,10 @@ class _WeakPointCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
-    final partIcon = UiMapper.weakPointIcon(info.part);
+    final presentation = const AphidexWeakpointResolver().resolve(info);
+    final partIcon = presentation.iconAsset;
     final damageIds = UiMapper.susceptibleDamageEffectIds(
-      info.susceptibleDamage,
+      presentation.effectiveDamage,
     );
 
     return Container(
@@ -3115,7 +3394,7 @@ class _WeakPointCard extends StatelessWidget {
               Image.asset(partIcon, width: 28, height: 28),
               const SizedBox(width: 10),
               Text(
-                l10n.weakPointPartLabel(info.part),
+                l10n.weakPointPartLabel(presentation.region),
                 style: const TextStyle(fontWeight: FontWeight.w800),
               ),
             ],
@@ -3152,7 +3431,7 @@ class _WeakPointCard extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               Text(
-                l10n.susceptibleDamageLabel(info.susceptibleDamage),
+                l10n.susceptibleDamageLabel(presentation.effectiveDamage),
                 style: const TextStyle(fontWeight: FontWeight.w700),
               ),
             ],
@@ -3182,7 +3461,11 @@ class _AttackTile extends StatelessWidget {
     final languageCode = l10n.languageCode;
     final tell = _resolve(attack.tell, languageCode);
     final howToAvoid = _resolve(attack.howToAvoid, languageCode);
-    final notes = _resolve(attack.notes, languageCode);
+    final rawNotes = _resolve(attack.notes, languageCode);
+    final notes = _isRedundantDamageNote(rawNotes, attack.damage)
+        ? null
+        : rawNotes;
+    final tacticalTags = _tacticalAttackTags(attack);
 
     return Container(
       margin: const EdgeInsets.only(bottom: 10),
@@ -3195,17 +3478,123 @@ class _AttackTile extends StatelessWidget {
           attack.name.resolve(languageCode),
           style: const TextStyle(fontWeight: FontWeight.w800),
         ),
-        subtitle: attack.tags.isEmpty
+        subtitle: tacticalTags.isEmpty
             ? null
-            : Text(attack.tags.map(l10n.attackTagLabel).join(' \u2022 ')),
+            : Padding(
+                padding: const EdgeInsets.only(top: 6),
+                child: Wrap(
+                  spacing: 6,
+                  runSpacing: 6,
+                  children: tacticalTags
+                      .map(
+                        (tag) => _TacticalTagChip(
+                          tag: tag,
+                          languageCode: languageCode,
+                        ),
+                      )
+                      .toList(),
+                ),
+              ),
         childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 14),
         children: [
+          if (attack.actionType.isOffensive &&
+              attack.damage != null &&
+              attack.damage != 0)
+            _kv(
+              languageCode == 'es'
+                  ? 'Daño'
+                  : languageCode == 'ru'
+                  ? 'Урон'
+                  : 'Damage',
+              _number(attack.damage!),
+            ),
+          if (attack.cooldownSeconds != null)
+            _kv(
+              languageCode == 'es'
+                  ? 'Recarga'
+                  : languageCode == 'ru'
+                  ? 'Перезарядка'
+                  : 'Cooldown',
+              '${_number(attack.cooldownSeconds!)} s',
+            ),
+          if (attack.actionType.isOffensive && attack.range != null)
+            _kv(
+              languageCode == 'es'
+                  ? 'Alcance'
+                  : languageCode == 'ru'
+                  ? 'Дальность'
+                  : 'Range',
+              _number(attack.range!),
+            ),
+          if (attack.actionType.isOffensive && attack.stun != null)
+            _kv('Stun', _number(attack.stun!)),
+          if (attack.actionType.isOffensive &&
+              attack.damageTypes.isNotEmpty) ...[
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: attack.damageTypes
+                    .map(
+                      (type) => _AttackEffectChip(
+                        technicalEffect: type,
+                        languageCode: languageCode,
+                      ),
+                    )
+                    .toList(),
+              ),
+            ),
+            const SizedBox(height: 8),
+          ],
+          if (attack.statusEffects.isNotEmpty) ...[
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                languageCode == 'es'
+                    ? 'Efectos'
+                    : languageCode == 'ru'
+                    ? 'Эффекты'
+                    : 'Effects',
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
+            ),
+            const SizedBox(height: 6),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: attack.statusEffects
+                    .map(
+                      (effect) => _AttackEffectChip(
+                        technicalEffect: effect,
+                        languageCode: languageCode,
+                      ),
+                    )
+                    .toList(),
+              ),
+            ),
+            const SizedBox(height: 8),
+          ],
           if (tell != null) _kv(l10n.attackTell, tell),
           if (howToAvoid != null) _kv(l10n.attackAvoid, howToAvoid),
           if (notes != null) _kv(l10n.attackNotes, notes),
         ],
       ),
     );
+  }
+
+  String _number(double value) =>
+      value == value.roundToDouble() ? '${value.round()}' : value.toString();
+
+  bool _isRedundantDamageNote(String? note, double? damage) {
+    if (note == null || damage == null) return false;
+    final value = note.toLowerCase().trim();
+    if (!value.contains(RegExp(r'attack damage|daño del ataque|урон атаки'))) {
+      return false;
+    }
+    return value.contains(_number(damage));
   }
 
   Widget _kv(String label, String value) => Padding(
@@ -3225,6 +3614,169 @@ class _AttackTile extends StatelessWidget {
       ],
     ),
   );
+}
+
+List<String> _tacticalAttackTags(EnemyAttack attack) {
+  final raw = attack.tags.map((tag) => tag.toLowerCase()).toList();
+  if (!attack.actionType.isOffensive) {
+    return [
+      switch (attack.actionType) {
+        ActionType.defensiveAction => 'defensive',
+        ActionType.movementAction => 'movement',
+        ActionType.summonAction => 'summon',
+        _ => 'utility',
+      },
+    ];
+  }
+  final unblockable =
+      attack.blockability == AttackBlockability.unblockable ||
+      raw.any((tag) => tag.contains('unblockable'));
+  final ranged = attack.ranged || raw.any((tag) => tag.contains('ranged'));
+  final area =
+      attack.hitResolutionType?.toLowerCase() == 'aoe' ||
+      raw.any((tag) => tag == 'aoe' || tag.contains('explosive'));
+  return [
+    if (attack.blockability != AttackBlockability.unknown)
+      unblockable ? 'unblockable' : 'blockable',
+    if (ranged) 'ranged' else 'melee',
+    if (attack.projectile) 'projectile',
+    if (area) 'aoe',
+  ];
+}
+
+String _humanizedEffectFallback(String value) {
+  final spaced = value
+      .replaceAll('_', ' ')
+      .replaceAllMapped(RegExp(r'(?<=[a-z0-9])(?=[A-Z])'), (_) => ' ')
+      .trim();
+  return spaced.isEmpty ? 'Effect' : spaced;
+}
+
+class _TacticalTagChip extends StatelessWidget {
+  final String tag;
+  final String languageCode;
+
+  const _TacticalTagChip({required this.tag, required this.languageCode});
+
+  @override
+  Widget build(BuildContext context) {
+    final (icon, label) = switch (tag) {
+      'unblockable' => (
+        Icons.block,
+        _t('Unblockable', 'No bloqueable', 'Неблокируемая'),
+      ),
+      'blockable' => (
+        Icons.shield_outlined,
+        _t('Blockable', 'Bloqueable', 'Блокируемая'),
+      ),
+      'ranged' => (Icons.my_location, _t('Ranged', 'A distancia', 'Дальняя')),
+      'projectile' => (
+        Icons.arrow_forward,
+        _t('Projectile', 'Proyectil', 'Снаряд'),
+      ),
+      'aoe' => (Icons.blur_circular, _t('Area', 'Área', 'Область')),
+      'utility' => (Icons.auto_awesome, _t('Utility', 'Utilidad', 'Поддержка')),
+      'defensive' => (
+        Icons.shield_outlined,
+        _t('Defensive', 'Defensiva', 'Защита'),
+      ),
+      'movement' => (
+        Icons.directions_run,
+        _t('Movement', 'Movimiento', 'Движение'),
+      ),
+      'summon' => (
+        Icons.group_add_outlined,
+        _t('Summon', 'Invocación', 'Призыв'),
+      ),
+      _ => (
+        Icons.sports_martial_arts,
+        _t('Melee', 'Cuerpo a cuerpo', 'Ближняя'),
+      ),
+    };
+    return Chip(
+      visualDensity: VisualDensity.compact,
+      avatar: Icon(icon, size: 16),
+      label: Text(label),
+    );
+  }
+
+  String _t(String en, String es, String ru) => switch (languageCode) {
+    'es' => es,
+    'ru' => ru,
+    _ => en,
+  };
+}
+
+class _AttackEffectChip extends StatelessWidget {
+  final String technicalEffect;
+  final String languageCode;
+
+  const _AttackEffectChip({
+    required this.technicalEffect,
+    required this.languageCode,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final effectId = normalizedTechnicalEffectId(technicalEffect);
+    final catalog = effectCatalogEntryById(effectId);
+    final name =
+        catalog?.name.resolve(languageCode) ??
+        _localizedEffectFallback(technicalEffect, languageCode);
+    final magnitude = _effectMagnitude(technicalEffect, languageCode);
+    return Chip(
+      avatar: IconBadge.asset(
+        assetName: UiMapper.effectIcon(effectId),
+        size: 18,
+        padding: EdgeInsets.zero,
+      ),
+      label: Text(magnitude == null ? name : '$name · $magnitude'),
+    );
+  }
+}
+
+String _localizedEffectFallback(String value, String languageCode) {
+  final humanized = _humanizedEffectFallback(value);
+  if (humanized.toLowerCase().contains('full heal')) {
+    return switch (languageCode) {
+      'es' => 'Curación total',
+      'ru' => 'Полное исцеление',
+      _ => 'Full heal',
+    };
+  }
+  return humanized;
+}
+
+String? _effectMagnitude(String value, String languageCode) {
+  final lower = value.toLowerCase();
+  final key = lower.contains('very large')
+      ? 'very_large'
+      : lower.contains('tiny')
+      ? 'tiny'
+      : lower.contains('small')
+      ? 'small'
+      : lower.contains('medium')
+      ? 'medium'
+      : lower.contains('huge')
+      ? 'huge'
+      : lower.contains('large')
+      ? 'large'
+      : null;
+  if (key == null) return null;
+  const labels = {
+    'tiny': ['Tiny', 'Mínimo', 'Очень слабый'],
+    'small': ['Small', 'Bajo', 'Слабый'],
+    'medium': ['Medium', 'Medio', 'Средний'],
+    'large': ['Large', 'Alto', 'Сильный'],
+    'very_large': ['Very large', 'Muy alto', 'Очень сильный'],
+    'huge': ['Huge', 'Extremo', 'Огромный'],
+  };
+  final values = labels[key]!;
+  return languageCode == 'es'
+      ? values[1]
+      : languageCode == 'ru'
+      ? values[2]
+      : values[0];
 }
 
 String _variantPreferenceKey(String speciesKey) =>

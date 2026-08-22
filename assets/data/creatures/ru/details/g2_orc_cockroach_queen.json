@@ -1,1 +1,1387 @@
-{"id":"g2_orc_cockroach_queen","speciesKey":"orc_cockroach_queen","collectionGroup":"orc","name":"O.R.C. Королева тараканов","game":"g2","tier":2,"danger":"muy_alta","isBoss":false,"order":221,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Queen_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Queen_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Cockroach_Queen.webp","weaknesses":[],"resistances":["gas","fresh","spicy","venom"],"temperament":"aggressive","description":"O.R.C. Королева тараканов — обязательная элитная схватка, уже стоящая рядом с территорией боссов, даже если Aphidex не считает её формальным боссом. Она берёт за основу обычную королеву и усиливает её лучшим контролем пространства, большим давлением и ещё более тяжёлой безголовой фазой.","behavior":"Она захватывает арену как центральный элемент схватки. Ей не нужно много двигаться, чтобы контролировать пространство: тело, кислота и переход в безголовую фазу почти всё время заставляют играть вокруг неё.","interactionWithPlayer":"Она атакует в ту же секунду, как вы входите в радиус, и почти не даёт бою продохнуть. Классическая ошибка — считать, что финальный отрезок будет просто уставшей версией первой фазы, хотя именно безголовая часть окончательно оправдывает её экстремальный ранг.","interactionWithCreatures":"Ближайшие тараканы и нимфы O.R.C. вращаются вокруг неё как поддержка, но именно королева остаётся настоящим ядром угрозы.","strategy":"Если арена позволяет, сначала убирайте поддержку и не тратьте все ресурсы на первое добивание. Fresh и Spicy помогают, но исход боя по-настоящему решает то, входите ли вы в безголовый сброс с пространством и лечением, потому что именно там встреча действительно выигрывается или проигрывается.","environments":["Волны O.R.C. в саду","Сетевой центр"],"loot":[{"section":"loot","item":"Everlasting Hogstopper","minCount":0,"maxCount":1},{"section":"loot","item":"O.R.C. Receiver","minCount":2,"maxCount":2},{"section":"loot","item":"Roach Chunk","minCount":4,"maxCount":9},{"section":"rare","item":"Apple Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Billy Hog Bite","minCount":0,"maxCount":1},{"section":"rare","item":"Cookie Sandwich Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Fresh Apple Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Fresh Billy Hog Bite","minCount":0,"maxCount":1},{"section":"rare","item":"Roach Chunk","minCount":0,"maxCount":3},{"section":"rare","item":"Roach Milk","minCount":0,"maxCount":1}],"combatStats":{"attackDamageSummary":"Укус: 50. Комбо из 3 укусов: 50. Боковой пинок: 45. Удар корпусом: 60. Кислотный распыл: 50. Безголовый таран: 45. Безголовый кислотный распыл: 30.","health":1650},"inflictsEffects":["burning","busting"],"inflicts":["Кислотный распыл накладывает горение, а самые тяжёлые атаки корпусом считаются дробящим уроном."],"abilities":[{"name":"Укус","description":"Прямой укус, которым она начинает давление, если вы слишком долго стоите перед ней.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 укусов","description":"Она связывает несколько коротких укусов подряд, если видит, что вы всё ещё зажаты перед ней.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Боковой удар","description":"Она разворачивает корпус в сторону, чтобы поймать тех, кто пытается обойти её или бить с фланга.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Удар корпусом","description":"Она обрушивает или вталкивает в игрока всё тело, чтобы раздавить цель и сломать ближнюю дистанцию.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Кислотный распыл","description":"Она выплёвывает кислоту, перекрывая пути отхода и покрывая пол остаточным уроном.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Безголовый таран","description":"После возрождения она бросается вперёд ещё яростнее в прямом безголовом таране.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Безголовый кислотный распыл","description":"В безголовом отрезке тело выпускает более жестокий кислотный распыл, который всё ещё накладывает горение и сильнее наказывает медленное лечение.","blockable":false,"breaksGuard":false,"staggers":false}],"resistancesV2":[{"type":"gas","bonusPct":90},{"type":"fresh","bonusPct":50},{"type":"spicy","bonusPct":50},{"type":"venom","bonusPct":50}],"bossPhases":[{"id":"phase1","label":"Фаза 1","summary":"Версия O.R.C. начинает как усиленная королева, используя то же ядро укусов, тела и кислоты, но с большим давлением и меньшим числом окон для передышки.","startsAtHealthPct":100,"abilities":[{"name":"Укус","description":"Прямой укус, которым она начинает давление, если вы слишком долго стоите перед ней.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 укусов","description":"Она связывает несколько коротких укусов подряд, если видит, что вы всё ещё зажаты перед ней.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Боковой удар","description":"Она разворачивает корпус в сторону, чтобы поймать тех, кто пытается обойти её или бить с фланга.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Удар корпусом","description":"Она обрушивает или вталкивает в игрока всё тело, чтобы раздавить цель и сломать ближнюю дистанцию.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Кислотный распыл","description":"Она выплёвывает кислоту, перекрывая пути отхода и покрывая пол остаточным уроном.","blockable":false,"breaksGuard":false,"staggers":false}]},{"id":"phase2","label":"Фаза 2","summary":"После обезглавливания она продолжает наступать как вышедшая из-под контроля машина O.R.C., сохраняя телесное давление и переходя к безголовым рывкам и более грязной кислоте.","trigger":"Начинается, когда версия O.R.C. теряет голову, но остаётся активной в финальном отрезке.","abilities":[{"name":"Удар корпусом","description":"Она обрушивает или вталкивает в игрока всё тело, чтобы раздавить цель и сломать ближнюю дистанцию.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Безголовый таран","description":"После возрождения она бросается вперёд ещё яростнее в прямом безголовом таране.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Безголовый кислотный распыл","description":"В безголовом отрезке тело выпускает более жестокий кислотный распыл, который всё ещё накладывает горение и сильнее наказывает медленное лечение.","blockable":false,"breaksGuard":false,"staggers":false}]}],"healthDisplay":"normal","health":{"value":1650,"rating":4},"groupId":null,"cardTier":2,"technicalId":"Cockroach_QueenORC","bestiaryId":"Cockroach_QueenORC","bossCardStyle":null,"isKillable":true,"elementalWeaknesses":[],"damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Bite","technicalId":"CockroachQueenBite","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Bite Right","technicalId":"CockroachQueenBiteRight","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Bite Left","technicalId":"CockroachQueenBiteLeft","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Karate Kick Left","technicalId":"CockroachQueenKarateKickLeft","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Karate Kick Right","technicalId":"CockroachQueenKarateKickRight","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Combo 3","technicalId":"CockroachQueenCombo3","tags":["stabbing"],"notes":"Урон атаки: 45"},{"name":"Slam","technicalId":"CockroachQueen_Slam","tags":["generic"],"notes":"Урон атаки: 60"},{"name":"Spray","technicalId":"CockroachQueenSpray","tags":["sizzle_direct_hit"],"notes":"Урон атаки: 50"}],"encounterVariants":[{"id":"Cockroach_Queen_ORC_Named","characterRow":"Cockroach_Queen_ORC_Named","role":"named_or_miniboss","variantMarkers":["named"],"sharedBestiaryEntry":true,"stats":{"health":1950.0,"stun":{"max":90.0,"duration":3.0,"cooldown":20.0,"staggerThreshold":50}},"weakpoints":[],"resistances":[{"damageTypes":["Gas"],"percent":90.0,"sourceId":"DamageResistGasLarge"},{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Spicy"],"percent":50.0,"sourceId":"DamageResistSpicyMedium"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[],"specialCombatModifiers":[],"immunities":[{"damageTypes":["Gas"],"sourceId":"GasImmunity"}],"attacks":[{"id":"CockroachQueenBite_Named","ability":"CockroachQueenBite_Named","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenBiteRight_Named","ability":"CockroachQueenBiteRight_Named","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenBiteLeft_Named","ability":"CockroachQueenBiteLeft_Named","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenKarateKickLeft_Named","ability":"CockroachQueenKarateKickLeft_Named","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenKarateKickRight_Named","ability":"CockroachQueenKarateKickRight_Named","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenCombo3_Named","ability":"CockroachQueenCombo3_Named","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":55.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueen_Slam_Named","ability":"CockroachQueen_Slam_Named","resolved":true,"cooldown":8.0,"priority":0,"targetType":"Enemy","damage":{"amount":70.0,"type":"General","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":700.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"CockroachQueenSpray_Named","ability":"CockroachQueenSpray_Named","resolved":true,"cooldown":14.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"SizzleDirectHit","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["SizzleLargeIncrease"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":8,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"parentBestiaryId":"Cockroach_QueenORC","parentAphidexId":"g2_orc_cockroach_queen","technicalCharacterRow":"Cockroach_Queen_ORC_Named","variantKey":"Cockroach_Queen_ORC_Named","nameEn":"General Berserker","nameEsMX":"General Berserker","nameBindingConfidence":"high","topLevelAphidexId":null,"killFavoriteStateOwner":"g2_orc_cockroach_queen","policy":"CHILD_VARIANT_NO_TOP_LEVEL_ID"},{"id":"g2_wave_cockroach_queen_orc_wave","characterRow":"Cockroach_Queen_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1650.0,"stun":{"max":90.0,"duration":3.0,"cooldown":20.0,"staggerThreshold":50}},"weakpoints":[],"resistances":[{"damageTypes":["Gas"],"percent":90.0,"sourceId":"DamageResistGasLarge"},{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Spicy"],"percent":50.0,"sourceId":"DamageResistSpicyMedium"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[],"specialCombatModifiers":[],"immunities":[{"damageTypes":["Gas"],"sourceId":"GasImmunity"}],"attacks":[{"id":"CockroachQueenBite","ability":"CockroachQueenBite","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenBiteRight","ability":"CockroachQueenBiteRight","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenBiteLeft","ability":"CockroachQueenBiteLeft","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenKarateKickLeft","ability":"CockroachQueenKarateKickLeft","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenKarateKickRight","ability":"CockroachQueenKarateKickRight","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenCombo3","ability":"CockroachQueenCombo3","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":45.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueen_Slam","ability":"CockroachQueen_Slam","resolved":true,"cooldown":8.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"General","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":700.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"CockroachQueenSpray","ability":"CockroachQueenSpray","resolved":true,"cooldown":14.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"SizzleDirectHit","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["SizzleSmallIncrease"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":8,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_cockroach_queen_orc_wave","nameEn":"O.R.C. Cockroach Queen Raid/Wave","nameEsMX":"Cucaracha reina C.R.O.  (Oleada)","nameRu":"O.R.C. Королева тараканов Рейд/волна"}],"contextVariants":[{"id":"Cockroach_Queen_ORC_Wave","characterRow":"Cockroach_Queen_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1650.0,"stun":{"max":90.0,"duration":3.0,"cooldown":20.0,"staggerThreshold":50}},"weakpoints":[],"resistances":[{"damageTypes":["Gas"],"percent":90.0,"sourceId":"DamageResistGasLarge"},{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Spicy"],"percent":50.0,"sourceId":"DamageResistSpicyMedium"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[],"specialCombatModifiers":[],"immunities":[{"damageTypes":["Gas"],"sourceId":"GasImmunity"}],"attacks":[{"id":"CockroachQueenBite","ability":"CockroachQueenBite","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenBiteRight","ability":"CockroachQueenBiteRight","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenBiteLeft","ability":"CockroachQueenBiteLeft","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenKarateKickLeft","ability":"CockroachQueenKarateKickLeft","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenKarateKickRight","ability":"CockroachQueenKarateKickRight","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueenCombo3","ability":"CockroachQueenCombo3","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":45.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":600.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachQueen_Slam","ability":"CockroachQueen_Slam","resolved":true,"cooldown":8.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"General","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":700.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"CockroachQueenSpray","ability":"CockroachQueenSpray","resolved":true,"cooldown":14.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"SizzleDirectHit","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["SizzleSmallIncrease"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":750.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":8,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Cucaracha reina C.R.O.  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_cockroach_queen",
+  "speciesKey": "orc_cockroach_queen",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Королева тараканов",
+  "game": "g2",
+  "tier": 2,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 221,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_Queen_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_Queen_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Cockroach_Queen.webp",
+  "weaknesses": [],
+  "resistances": [
+    "gas",
+    "fresh",
+    "spicy",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "description": "O.R.C. Королева тараканов — обязательная элитная схватка, уже стоящая рядом с территорией боссов, даже если Aphidex не считает её формальным боссом. Она берёт за основу обычную королеву и усиливает её лучшим контролем пространства, большим давлением и ещё более тяжёлой безголовой фазой.",
+  "behavior": "Она захватывает арену как центральный элемент схватки. Ей не нужно много двигаться, чтобы контролировать пространство: тело, кислота и переход в безголовую фазу почти всё время заставляют играть вокруг неё.",
+  "interactionWithPlayer": "Она атакует в ту же секунду, как вы входите в радиус, и почти не даёт бою продохнуть. Классическая ошибка — считать, что финальный отрезок будет просто уставшей версией первой фазы, хотя именно безголовая часть окончательно оправдывает её экстремальный ранг.",
+  "interactionWithCreatures": "Ближайшие тараканы и нимфы O.R.C. вращаются вокруг неё как поддержка, но именно королева остаётся настоящим ядром угрозы.",
+  "strategy": "Если арена позволяет, сначала убирайте поддержку и не тратьте все ресурсы на первое добивание. Fresh и Spicy помогают, но исход боя по-настоящему решает то, входите ли вы в безголовый сброс с пространством и лечением, потому что именно там встреча действительно выигрывается или проигрывается.",
+  "environments": [
+    "Волны O.R.C. в саду",
+    "Сетевой центр"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Billy Hog",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cockroach Head",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cockroach Milk",
+      "minCount": 2,
+      "maxCount": 5
+    },
+    {
+      "section": "loot",
+      "item": "Cockroach Part",
+      "minCount": 4,
+      "maxCount": 12
+    },
+    {
+      "section": "rare",
+      "item": "Food Apple",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Apple Pristine",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Cookie Sandwich",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Cookie Sandwich Pristine",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Hot Dog",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Hot Dog Pristine",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Rotten",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 2,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Spoiled Meat",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1650,
+    "stunThreshold": 90,
+    "stunCooldownSeconds": 20
+  },
+  "inflictsEffects": [
+    "burning",
+    "busting"
+  ],
+  "inflicts": [
+    "Кислотный распыл накладывает горение, а самые тяжёлые атаки корпусом считаются дробящим уроном."
+  ],
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Прямой укус, которым она начинает давление, если вы слишком долго стоите перед ней.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Комбо из 3 укусов",
+      "description": "Она связывает несколько коротких укусов подряд, если видит, что вы всё ещё зажаты перед ней.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Боковой удар",
+      "description": "Она разворачивает корпус в сторону, чтобы поймать тех, кто пытается обойти её или бить с фланга.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Удар корпусом",
+      "description": "Она обрушивает или вталкивает в игрока всё тело, чтобы раздавить цель и сломать ближнюю дистанцию.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Кислотный распыл",
+      "description": "Она выплёвывает кислоту, перекрывая пути отхода и покрывая пол остаточным уроном.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Безголовый таран",
+      "description": "После возрождения она бросается вперёд ещё яростнее в прямом безголовом таране.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Безголовый кислотный распыл",
+      "description": "В безголовом отрезке тело выпускает более жестокий кислотный распыл, который всё ещё накладывает горение и сильнее наказывает медленное лечение.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "gas",
+      "bonusPct": 90
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 50
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "bossPhases": [
+    {
+      "id": "phase1",
+      "label": "Фаза 1",
+      "summary": "Версия O.R.C. начинает как усиленная королева, используя то же ядро укусов, тела и кислоты, но с большим давлением и меньшим числом окон для передышки.",
+      "startsAtHealthPct": 100,
+      "abilities": [
+        {
+          "name": "Укус",
+          "description": "Прямой укус, которым она начинает давление, если вы слишком долго стоите перед ней.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Комбо из 3 укусов",
+          "description": "Она связывает несколько коротких укусов подряд, если видит, что вы всё ещё зажаты перед ней.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Боковой удар",
+          "description": "Она разворачивает корпус в сторону, чтобы поймать тех, кто пытается обойти её или бить с фланга.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": true
+        },
+        {
+          "name": "Удар корпусом",
+          "description": "Она обрушивает или вталкивает в игрока всё тело, чтобы раздавить цель и сломать ближнюю дистанцию.",
+          "blockable": true,
+          "breaksGuard": true,
+          "staggers": true
+        },
+        {
+          "name": "Кислотный распыл",
+          "description": "Она выплёвывает кислоту, перекрывая пути отхода и покрывая пол остаточным уроном.",
+          "blockable": false,
+          "breaksGuard": false,
+          "staggers": false
+        }
+      ]
+    },
+    {
+      "id": "phase2",
+      "label": "Фаза 2",
+      "summary": "После обезглавливания она продолжает наступать как вышедшая из-под контроля машина O.R.C., сохраняя телесное давление и переходя к безголовым рывкам и более грязной кислоте.",
+      "trigger": "Начинается, когда версия O.R.C. теряет голову, но остаётся активной в финальном отрезке.",
+      "abilities": [
+        {
+          "name": "Удар корпусом",
+          "description": "Она обрушивает или вталкивает в игрока всё тело, чтобы раздавить цель и сломать ближнюю дистанцию.",
+          "blockable": true,
+          "breaksGuard": true,
+          "staggers": true
+        },
+        {
+          "name": "Безголовый таран",
+          "description": "После возрождения она бросается вперёд ещё яростнее в прямом безголовом таране.",
+          "blockable": true,
+          "breaksGuard": true,
+          "staggers": true
+        },
+        {
+          "name": "Безголовый кислотный распыл",
+          "description": "В безголовом отрезке тело выпускает более жестокий кислотный распыл, который всё ещё накладывает горение и сильнее наказывает медленное лечение.",
+          "blockable": false,
+          "breaksGuard": false,
+          "staggers": false
+        }
+      ]
+    }
+  ],
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 4,
+    "value": 1650
+  },
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Cockroach_QueenORC",
+  "bestiaryId": "Cockroach_QueenORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "technicalId": "CockroachQueenBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Right",
+      "technicalId": "CockroachQueenBiteRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Left",
+      "technicalId": "CockroachQueenBiteLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Karate Kick Left",
+      "technicalId": "CockroachQueenKarateKickLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 5.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Karate Kick Right",
+      "technicalId": "CockroachQueenKarateKickRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 5.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 3",
+      "technicalId": "CockroachQueenCombo3",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 45",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 3.0,
+      "range": 600.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Slam",
+      "technicalId": "CockroachQueen_Slam",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 60",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 60.0,
+      "cooldownSeconds": 8.0,
+      "range": 700.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spray",
+      "technicalId": "CockroachQueenSpray",
+      "tags": [
+        "sizzle"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "sizzle"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 14.0,
+      "range": 750.0,
+      "stun": 15,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "Cockroach_Queen_ORC_Named",
+      "characterRow": "Cockroach_Queen_ORC_Named",
+      "role": "named_or_miniboss",
+      "variantMarkers": [
+        "named"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1950.0,
+        "stun": {
+          "max": 90.0,
+          "duration": 3.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 50
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 90.0,
+          "sourceId": "DamageResistGasLarge"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistSpicyMedium"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [],
+      "specialCombatModifiers": [],
+      "immunities": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "sourceId": "GasImmunity"
+        }
+      ],
+      "attacks": [
+        {
+          "id": "CockroachQueenBite_Named",
+          "ability": "CockroachQueenBite_Named",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenBiteRight_Named",
+          "ability": "CockroachQueenBiteRight_Named",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenBiteLeft_Named",
+          "ability": "CockroachQueenBiteLeft_Named",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenKarateKickLeft_Named",
+          "ability": "CockroachQueenKarateKickLeft_Named",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenKarateKickRight_Named",
+          "ability": "CockroachQueenKarateKickRight_Named",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenCombo3_Named",
+          "ability": "CockroachQueenCombo3_Named",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueen_Slam_Named",
+          "ability": "CockroachQueen_Slam_Named",
+          "resolved": true,
+          "cooldown": 8.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 70.0,
+            "type": "General",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 700.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "CockroachQueenSpray_Named",
+          "ability": "CockroachQueenSpray_Named",
+          "resolved": true,
+          "cooldown": 14.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "SizzleDirectHit",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "SizzleLargeIncrease"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 8,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "parentBestiaryId": "Cockroach_QueenORC",
+      "parentAphidexId": "g2_orc_cockroach_queen",
+      "technicalCharacterRow": "Cockroach_Queen_ORC_Named",
+      "variantKey": "Cockroach_Queen_ORC_Named",
+      "nameEn": "General Berserker",
+      "nameEsMX": "General Berserker",
+      "nameBindingConfidence": "high",
+      "topLevelAphidexId": null,
+      "killFavoriteStateOwner": "g2_orc_cockroach_queen",
+      "policy": "CHILD_VARIANT_NO_TOP_LEVEL_ID"
+    },
+    {
+      "id": "g2_wave_cockroach_queen_orc_wave",
+      "characterRow": "Cockroach_Queen_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1650.0,
+        "stun": {
+          "max": 90.0,
+          "duration": 3.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 50
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 90.0,
+          "sourceId": "DamageResistGasLarge"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistSpicyMedium"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [],
+      "specialCombatModifiers": [],
+      "immunities": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "sourceId": "GasImmunity"
+        }
+      ],
+      "attacks": [
+        {
+          "id": "CockroachQueenBite",
+          "ability": "CockroachQueenBite",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenBiteRight",
+          "ability": "CockroachQueenBiteRight",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenBiteLeft",
+          "ability": "CockroachQueenBiteLeft",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenKarateKickLeft",
+          "ability": "CockroachQueenKarateKickLeft",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenKarateKickRight",
+          "ability": "CockroachQueenKarateKickRight",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenCombo3",
+          "ability": "CockroachQueenCombo3",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 45.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueen_Slam",
+          "ability": "CockroachQueen_Slam",
+          "resolved": true,
+          "cooldown": 8.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "General",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 700.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "CockroachQueenSpray",
+          "ability": "CockroachQueenSpray",
+          "resolved": true,
+          "cooldown": 14.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "SizzleDirectHit",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "SizzleSmallIncrease"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 8,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_cockroach_queen_orc_wave",
+      "nameEn": "O.R.C. Cockroach Queen Raid/Wave",
+      "nameEsMX": "Cucaracha reina C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Королева тараканов Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Cockroach_Queen_ORC_Wave",
+      "characterRow": "Cockroach_Queen_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1650.0,
+        "stun": {
+          "max": 90.0,
+          "duration": 3.0,
+          "cooldown": 20.0,
+          "staggerThreshold": 50
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 90.0,
+          "sourceId": "DamageResistGasLarge"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistSpicyMedium"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [],
+      "specialCombatModifiers": [],
+      "immunities": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "sourceId": "GasImmunity"
+        }
+      ],
+      "attacks": [
+        {
+          "id": "CockroachQueenBite",
+          "ability": "CockroachQueenBite",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenBiteRight",
+          "ability": "CockroachQueenBiteRight",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenBiteLeft",
+          "ability": "CockroachQueenBiteLeft",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenKarateKickLeft",
+          "ability": "CockroachQueenKarateKickLeft",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenKarateKickRight",
+          "ability": "CockroachQueenKarateKickRight",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueenCombo3",
+          "ability": "CockroachQueenCombo3",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 45.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 600.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachQueen_Slam",
+          "ability": "CockroachQueen_Slam",
+          "resolved": true,
+          "cooldown": 8.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "General",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 700.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "CockroachQueenSpray",
+          "ability": "CockroachQueenSpray",
+          "resolved": true,
+          "cooldown": 14.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "SizzleDirectHit",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "SizzleSmallIncrease"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 750.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 8,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Cucaracha reina C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_fbd5a08cfa9b90d7",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach_queen",
+      "technicalId": "Cockroach_QueenORC",
+      "map": "surface",
+      "world": {
+        "x": -175701.0,
+        "y": 15480.0,
+        "z": 19100.0
+      },
+      "u": 0.3214009950248756,
+      "v": 0.35256564634454846,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Заблокировано прогрессом сюжета",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/ORC_Cockroach_Queen.webp",
+  "immunities": [
+    "gas"
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Billy Hog",
+      "countLabel": "1",
+      "chancePct": 3,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Head",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Milk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Milk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Milk",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "3",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "4",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Apple",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Apple Pristine",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Cookie Sandwich",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Cookie Sandwich Pristine",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Hot Dog",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Hot Dog Pristine",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Rotten",
+      "countLabel": "1",
+      "chancePct": 15,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spoiled Meat",
+      "countLabel": "1",
+      "chancePct": 15,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

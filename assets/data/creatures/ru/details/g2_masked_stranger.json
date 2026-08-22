@@ -1,1 +1,367 @@
-{"id":"g2_masked_stranger","speciesKey":"masked_stranger","collectionGroup":"angry","name":"Замаскированный незнакомец","game":"g2","tier":5,"danger":"imposible","isBoss":true,"order":299,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Boss_V_Armor_1.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Boss_V_Armor_1_G.png","photo":"assets/g2/creatures/photos/Masked_Stranger.webp","weaknesses":["fresh"],"resistances":["spicy","venom"],"temperament":"aggressive","health":{"value":1875,"rating":4},"description":"Гуманоидный босс Grounded 2, который смешивает давление в ближнем бою, смену темпа и острые атаки, полностью ломая ритм дуэли.","behavior":"Он двигается расчётливо и наказывает за ошибки резкими сменами темпа.","interactionWithPlayer":"Он атакует в лоб и меняет рисунок боя, чтобы наказывать неподготовленного или слишком самоуверенного игрока.","interactionWithCreatures":"Он почти не взаимодействует с другими существами, кроме тех случаев, когда бой происходит совсем рядом.","strategy":"Следите за его сменой темпа и не отвечайте слишком поздно на давление. Лучшие окна наказания приходят между переходами, а не во время длинных серий.","combatStats":{"health":1875,"attackDamageSummary":"Базовая атака: 40. Комбо из 2 ударов: 40. Комбо из 3 ударов: 40. Заряженная атака: 100. Атака в прыжке: 45. Острый взрыв: 100. Крутящийся комбо-удар из 4 ударов: 40. Комбо из 5 ударов: 33."},"inflictsEffects":["spicy","sizzle"],"abilities":[{"name":"Базовая атака","description":"Быстрый вход в бой, которым он проверяет первый блок и удерживает игрока перед собой.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 2 ударов","description":"Короткая серия, не позволяющая слишком рано перехватить инициативу.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 ударов","description":"Он продолжает давление третьим ударом, наказывая за слишком шаблонные ответы.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Заряженная атака","description":"Он на миг задерживает удар, а затем обрушивает атаку, которая наказывает за неточный блок.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Атака в прыжке","description":"Он прыгает со средней дистанции, возвращая себе контроль, если игрок сумел открыть пространство.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Острый взрыв","description":"Он выпускает острый взрыв, вынуждая игрока двигаться и ломая темп дуэли.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Крутящийся комбо-удар из 4 ударов","description":"Вращающаяся серия, созданная для того, чтобы ловить тех, кто уходит в стороны.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Комбо из 5 ударов","description":"Самая длинная серия боя, предназначенная для добивания ошибок, когда игрок уже находится под давлением.","blockable":true,"breaksGuard":false,"staggers":false}],"resistancesV2":[{"type":"spicy","bonusPct":25},{"type":"venom","bonusPct":50}],"bossPhases":[{"id":"phase1","label":"Фаза 1","startsAtHealthPct":100,"trigger":"Начало боя.","summary":"Он начинает бой в основном физическим давлением: быстрыми атаками, короткими сериями и прыжком, чтобы снова закрыть дистанцию.","aggressionChange":"Темп уже высокий, но между сериями ещё остаются понятные паузы."},{"id":"phase2","label":"Фаза 2","startsAtHealthPct":66,"trigger":"Его здоровье опускается примерно до двух третей.","summary":"Он начинает вплетать острый взрыв в крутящиеся серии, вынуждая двигаться и наказывая за предсказуемые ответы.","aggressionChange":"Более высокая частота атак и более короткие окна для наказания.","newPatterns":["Он чередует острое давление по площади и вращения, наказывая и за стоящий блок, и за уходы в сторону."]},{"id":"phase3","label":"Фаза 3","startsAtHealthPct":33,"trigger":"Его здоровье падает до последней трети.","summary":"Финальная фаза объединяет его длинные серии, прыжковое давление и острые взрывы, оставляя меньше всего передышки за весь бой.","aggressionChange":"Максимальная агрессия и добивающие паттерны, рассчитанные на любое позднее ошибочное действие.","newPatterns":["Длинные серии чаще начинаются сразу после прыжка или острого взрыва."]}],"groupId":null,"cardTier":3,"technicalId":"SubjectV","bestiaryId":"SubjectV","bossCardStyle":"red","isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[{"type":"fresh","bonusPct":10}],"damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Right Strike","technicalId":"SubjectV_2H_Right","tags":["spicy_slashing"],"notes":"Урон атаки: 40"},{"name":"Combo 3 Hits","technicalId":"SubjectV_2H_Combo_3Hits","tags":["spicy_slashing"],"notes":"Урон атаки: 40"},{"name":"Power","technicalId":"SubjectV_2H_Power","tags":["spicy_slashing"],"notes":"Урон атаки: 100"},{"name":"Leap","technicalId":"SubjectV_Leap","tags":["spicy_slashing","ranged"],"notes":"Урон атаки: 45"},{"name":"Area Attack Transition","technicalId":"SubjectV_AOE_Transition","tags":["explosive_enemy"],"notes":"Урон атаки: 0"},{"name":"Block Offensive","technicalId":"BlockOffensive","tags":["maine"],"notes":"Урон атаки: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_masked_stranger",
+  "speciesKey": "masked_stranger",
+  "collectionGroup": "angry",
+  "name": "Замаскированный незнакомец",
+  "game": "g2",
+  "tier": 5,
+  "danger": "muy_alta",
+  "isBoss": true,
+  "order": 299,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Boss_V_Armor_1.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Boss_V_Armor_1_G.png",
+  "photo": "assets/g2/creatures/photos/Masked_Stranger.webp",
+  "weaknesses": [
+    "fresh"
+  ],
+  "resistances": [
+    "spicy",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 4,
+    "value": 1875
+  },
+  "description": "Гуманоидный босс Grounded 2, который смешивает давление в ближнем бою, смену темпа и острые атаки, полностью ломая ритм дуэли.",
+  "behavior": "Он двигается расчётливо и наказывает за ошибки резкими сменами темпа.",
+  "interactionWithPlayer": "Он атакует в лоб и меняет рисунок боя, чтобы наказывать неподготовленного или слишком самоуверенного игрока.",
+  "interactionWithCreatures": "Он почти не взаимодействует с другими существами, кроме тех случаев, когда бой происходит совсем рядом.",
+  "strategy": "Следите за его сменой темпа и не отвечайте слишком поздно на давление. Лучшие окна наказания приходят между переходами, а не во время длинных серий.",
+  "combatStats": {
+    "health": 1875,
+    "stunThreshold": 90,
+    "stunCooldownSeconds": 20
+  },
+  "inflictsEffects": [
+    "spicy",
+    "sizzle"
+  ],
+  "abilities": [
+    {
+      "name": "Базовая атака",
+      "description": "Быстрый вход в бой, которым он проверяет первый блок и удерживает игрока перед собой.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Комбо из 2 ударов",
+      "description": "Короткая серия, не позволяющая слишком рано перехватить инициативу.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Комбо из 3 ударов",
+      "description": "Он продолжает давление третьим ударом, наказывая за слишком шаблонные ответы.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Заряженная атака",
+      "description": "Он на миг задерживает удар, а затем обрушивает атаку, которая наказывает за неточный блок.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Атака в прыжке",
+      "description": "Он прыгает со средней дистанции, возвращая себе контроль, если игрок сумел открыть пространство.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Острый взрыв",
+      "description": "Он выпускает острый взрыв, вынуждая игрока двигаться и ломая темп дуэли.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Крутящийся комбо-удар из 4 ударов",
+      "description": "Вращающаяся серия, созданная для того, чтобы ловить тех, кто уходит в стороны.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Комбо из 5 ударов",
+      "description": "Самая длинная серия боя, предназначенная для добивания ошибок, когда игрок уже находится под давлением.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "bossPhases": [
+    {
+      "id": "phase1",
+      "label": "Фаза 1",
+      "startsAtHealthPct": 100,
+      "trigger": "Начало боя.",
+      "summary": "Он начинает бой в основном физическим давлением: быстрыми атаками, короткими сериями и прыжком, чтобы снова закрыть дистанцию.",
+      "aggressionChange": "Темп уже высокий, но между сериями ещё остаются понятные паузы."
+    },
+    {
+      "id": "phase2",
+      "label": "Фаза 2",
+      "startsAtHealthPct": 66,
+      "trigger": "Его здоровье опускается примерно до двух третей.",
+      "summary": "Он начинает вплетать острый взрыв в крутящиеся серии, вынуждая двигаться и наказывая за предсказуемые ответы.",
+      "aggressionChange": "Более высокая частота атак и более короткие окна для наказания.",
+      "newPatterns": [
+        "Он чередует острое давление по площади и вращения, наказывая и за стоящий блок, и за уходы в сторону."
+      ]
+    },
+    {
+      "id": "phase3",
+      "label": "Фаза 3",
+      "startsAtHealthPct": 33,
+      "trigger": "Его здоровье падает до последней трети.",
+      "summary": "Финальная фаза объединяет его длинные серии, прыжковое давление и острые взрывы, оставляя меньше всего передышки за весь бой.",
+      "aggressionChange": "Максимальная агрессия и добивающие паттерны, рассчитанные на любое позднее ошибочное действие.",
+      "newPatterns": [
+        "Длинные серии чаще начинаются сразу после прыжка или острого взрыва."
+      ]
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "SubjectV",
+  "bestiaryId": "SubjectV",
+  "bossCardStyle": "red",
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 10
+    }
+  ],
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Right Strike",
+      "technicalId": "SubjectV_2H_Right",
+      "tags": [
+        "slashing",
+        "spicy"
+      ],
+      "notes": "Урон атаки: 40",
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 3.0,
+      "range": 275.0,
+      "stun": 8,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 3 Hits",
+      "technicalId": "SubjectV_2H_Combo_3Hits",
+      "tags": [
+        "slashing",
+        "spicy"
+      ],
+      "notes": "Урон атаки: 40",
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 16.0,
+      "range": 275.0,
+      "stun": 8,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power",
+      "technicalId": "SubjectV_2H_Power",
+      "tags": [
+        "slashing",
+        "spicy"
+      ],
+      "notes": "Урон атаки: 100",
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 18.0,
+      "range": 325.0,
+      "stun": 20,
+      "statusEffects": [
+        "Sizzle Large Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Large Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Leap",
+      "technicalId": "SubjectV_Leap",
+      "tags": [
+        "ranged",
+        "slashing",
+        "spicy"
+      ],
+      "notes": "Урон атаки: 45",
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 12.0,
+      "range": 325.0,
+      "stun": 10,
+      "statusEffects": [
+        "Sizzle Large Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Large Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "ranged",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Area Attack Transition",
+      "technicalId": "SubjectV_AOE_Transition",
+      "tags": [
+        "explosive"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [
+        "explosive"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 0.0,
+      "range": 0.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Offensive",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_a52706efcc1aff48",
+      "targetType": "creature",
+      "targetId": "g2_masked_stranger",
+      "technicalId": "SubjectV",
+      "map": "surface",
+      "world": {
+        "x": -175400.11,
+        "y": 16551.723,
+        "z": 23254.525
+      },
+      "u": 0.32252812174422013,
+      "v": 0.35719269901340756,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Заблокировано прогрессом сюжета",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "loot": [],
+  "advancedLootTable": []
+}

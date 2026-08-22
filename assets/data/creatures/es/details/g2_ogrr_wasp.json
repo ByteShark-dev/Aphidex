@@ -1,1 +1,437 @@
-{"id":"g2_ogrr_wasp","speciesKey":"ogrr_wasp","collectionGroup":"ogrr","name":"Avispa I.R.G.O.","game":"g2","tier":3,"danger":"imposible","isBoss":false,"order":316,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Wasp_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Wasp_OGRR_G.png","photo":"assets/g2/creatures/photos/OGRR_Wasp.webp","weaknesses":[],"resistances":["stabbing","explosive","all","slashing","poison","gas"],"temperament":"aggressive","description":"Una avispa extrafuerte y extraña. Es resistente a la esencia de su mutación.","behavior":"Su spawn nocturno solo se habilita tras liberar a los I.R.G.O. en el laboratorio del espantapájaros. Después aparece de noche sobre los estantes con frascos vacíos, cerca del Rey Dozer, y mantiene la altura exacta desde la que puede castigarte sin regalar ventanas fáciles.","interactionWithPlayer":"Si no la bajas rápido, el combate se desordena enseguida. Su presión aérea castiga muchísimo más cualquier intento de concentrarte solo en objetivos terrestres.","interactionWithCreatures":"Se combina especialmente bien con variantes terrestres lentas, porque obliga a mirar arriba mientras el resto te va cerrando abajo. Ella no necesita rematar si ya consiguió que pierdas el control de la arena.","strategy":"Sal sigue siendo tu respuesta más limpia. No la dejes viva si ya hay más enemigos activos, porque su presión aérea multiplica el peligro de toda la ola de forma ridícula.","environments":["Tras liberar a los I.R.G.O. en el laboratorio del espantapájaros","Estantes con frascos vacíos, cerca del Rey Dozer"],"loot":[{"section":"loot","item":"Pollen","minCount":0,"maxCount":4},{"section":"loot","item":"Wasp Leg","minCount":0,"maxCount":2},{"section":"loot","item":"Wasp Shell","minCount":1,"maxCount":5},{"section":"rare","item":"Pollen","minCount":0,"maxCount":1},{"section":"rare","item":"Wasp Leg","minCount":0,"maxCount":2},{"section":"rare","item":"Wasp Shell","minCount":0,"maxCount":1}],"combatStats":{"attackDamageSummary":"Sting: 50Charged Sting: 87.5Stinger Shot: 62.5 Elemental Weakness Salty(+50% Damage) Resistance Slashing(-25% Damage)-or- Explosive(-50% Damage)-or- Stabbing(-50% Damage) I.R.G.O. Wasp","health":1600},"abilities":[{"name":"Aguijonazo","description":"Golpe directo con el aguijón para añadir presión y veneno."},{"name":"Aguijonazo cargado","description":"Ataque de aguijón más lento y pesado, con mejor castigo."},{"name":"Disparo de aguijón","description":"Lanza un proyectil venenoso desde el aguijón."}],"elementalWeaknesses":[],"infusions":[{"id":"fresh","name":"Fresco","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Chill."],"recommendations":"No te quedes en daño Fresh como respuesta principal.","combatTips":["Cambia a daño picante o a un arma física consistente si tu build depende de Fresh."],"imageAsset":"assets/g2/creatures/photos/OGRR_Wasp_Fresh.webp"},{"id":"sour","name":"Ácido","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Tang."],"recommendations":"Evita quedarte en armas ácidas como respuesta principal.","combatTips":["Picante es la respuesta elemental más limpia; si no, usa un arma física que no dependa de Tang."],"imageAsset":"assets/g2/creatures/photos/OGRR_Wasp_Sour.webp"},{"id":"spicy","name":"Picante","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Sizzle."],"recommendations":"No dependas de daño picante cuando esta infusión está activa.","combatTips":["Fresh es la respuesta elemental más limpia si la criatura te deja sostener el ritmo."],"imageAsset":"assets/g2/creatures/photos/OGRR_Wasp_Spicy.webp"}],"lesserMutationsDescription":"Además de la infusión principal, puede aparecer con una mutación menor aleatoria. Esa tirada es independiente del sabor activo y se mantiene aparte del selector.","lesserMutations":["Attack Up: aumenta su daño de ataque en un 33%.","The Quickness: aumenta su velocidad de movimiento en un 200%.","Damage Resist: reduce en un 25% todo el daño recibido.","Life Steal: se cura por el 150% del daño que inflige.","Blastwave: tiene un 33% de probabilidad al golpear de disparar una explosión adicional imbloqueable de 50 de daño explosivo y un aturdimiento largo.","Shockwave: tiene un 75% de probabilidad al golpear de lanzar una onda extra de 50 de daño eléctrico. Las armas no la bloquean, pero el escudo s?.","Summon Ally: tiene un 75% de probabilidad al golpear de invocar un aliado de su facción: Spiderling (25 HP) si es araña, Northern Scorpling (200 HP) si es escorpión o Mini Larva (75 HP) en el resto de casos."],"resistancesV2":[{"type":"stabbing","bonusPct":50},{"type":"explosive","bonusPct":50},{"type":"all","bonusPct":25},{"type":"slashing","bonusPct":25},{"type":"poison","bonusPct":75},{"type":"gas","bonusPct":50}],"inflictsEffects":["stabbing","busting","venom"],"inflicts":["Sus aguijonazos hacen daño perforante con acumulación de veneno; el disparo de aguijón hace daño demoledor y también puede acumular veneno."],"specialTraits":["Reduce a la mitad todo el daño recibido, ignora por completo el daño por caída y sus Sting y Charged Sting siguen añadiendo 10 de Venom antes de contar la infusión activa.","Sus afinidades de combate dependen de la infusión activa. Selecciona el sabor para revisar inmunidades, debilidades y efectos del perfil actual."],"healthDisplay":"normal","health":{"value":1600,"rating":4},"groupId":null,"cardTier":3,"technicalId":"WaspOGRE","bestiaryId":"WaspOGRE","bossCardStyle":null,"isKillable":true,"damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Aguijonazo","technicalId":"WaspStingAugusta","tags":["stabbing"],"notes":"Daño del ataque: 40"},{"name":"Aguijonazo cargado","technicalId":"WaspStingChargedAugusta","tags":["stabbing"],"notes":"Daño del ataque: 70"},{"name":"Wasp Stinger Shot","technicalId":"WaspStingerShotAugusta","tags":["general_ranged","ranged"],"notes":"Daño del ataque: 50"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_wasp",
+  "speciesKey": "ogrr_wasp",
+  "collectionGroup": "ogrr",
+  "name": "Avispa I.R.G.O.",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible",
+  "isBoss": false,
+  "order": 316,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Wasp_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Wasp_OGRR_G.png",
+  "photo": "assets/g2/creatures/photos/OGRR_Wasp.webp",
+  "weaknesses": [],
+  "resistances": [
+    "stabbing",
+    "explosive",
+    "all",
+    "slashing",
+    "poison",
+    "gas"
+  ],
+  "temperament": "aggressive",
+  "description": "Una avispa extrafuerte y extraña. Es resistente a la esencia de su mutación.",
+  "behavior": "Su spawn nocturno solo se habilita tras liberar a los I.R.G.O. en el laboratorio del espantapájaros. Después aparece de noche sobre los estantes con frascos vacíos, cerca del Rey Dozer, y mantiene la altura exacta desde la que puede castigarte sin regalar ventanas fáciles.",
+  "interactionWithPlayer": "Si no la bajas rápido, el combate se desordena enseguida. Su presión aérea castiga muchísimo más cualquier intento de concentrarte solo en objetivos terrestres.",
+  "interactionWithCreatures": "Se combina especialmente bien con variantes terrestres lentas, porque obliga a mirar arriba mientras el resto te va cerrando abajo. Ella no necesita rematar si ya consiguió que pierdas el control de la arena.",
+  "strategy": "Sal sigue siendo tu respuesta más limpia. No la dejes viva si ya hay más enemigos activos, porque su presión aérea multiplica el peligro de toda la ola de forma ridícula.",
+  "environments": [
+    "Tras liberar a los I.R.G.O. en el laboratorio del espantapájaros",
+    "Estantes con frascos vacíos, cerca del Rey Dozer"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Pollen",
+      "minCount": 0,
+      "maxCount": 5
+    },
+    {
+      "section": "loot",
+      "item": "Wasp Leg",
+      "minCount": 0,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "Wasp Part",
+      "minCount": 1,
+      "maxCount": 6
+    }
+  ],
+  "combatStats": {
+    "health": 1600,
+    "stunThreshold": 100,
+    "stunCooldownSeconds": 20
+  },
+  "abilities": [
+    {
+      "name": "Aguijonazo",
+      "description": "Golpe directo con el aguijón para añadir presión y veneno."
+    },
+    {
+      "name": "Aguijonazo cargado",
+      "description": "Ataque de aguijón más lento y pesado, con mejor castigo."
+    },
+    {
+      "name": "Disparo de aguijón",
+      "description": "Lanza un proyectil venenoso desde el aguijón."
+    }
+  ],
+  "elementalWeaknesses": [],
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresco",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Chill."
+      ],
+      "recommendations": "No te quedes en daño Fresh como respuesta principal.",
+      "combatTips": [
+        "Cambia a daño picante o a un arma física consistente si tu build depende de Fresh."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Wasp_Fresh.webp"
+    },
+    {
+      "id": "sour",
+      "name": "Ácido",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Tang."
+      ],
+      "recommendations": "Evita quedarte en armas ácidas como respuesta principal.",
+      "combatTips": [
+        "Picante es la respuesta elemental más limpia; si no, usa un arma física que no dependa de Tang."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Wasp_Sour.webp"
+    },
+    {
+      "id": "spicy",
+      "name": "Picante",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Sizzle."
+      ],
+      "recommendations": "No dependas de daño picante cuando esta infusión está activa.",
+      "combatTips": [
+        "Fresh es la respuesta elemental más limpia si la criatura te deja sostener el ritmo."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Wasp_Spicy.webp"
+    }
+  ],
+  "lesserMutationsDescription": "Además de la infusión principal, puede aparecer con una mutación menor aleatoria. Esa tirada es independiente del sabor activo y se mantiene aparte del selector.",
+  "lesserMutations": [
+    "Attack Up: aumenta su daño de ataque en un 33%.",
+    "The Quickness: aumenta su velocidad de movimiento en un 200%.",
+    "Damage Resist: reduce en un 25% todo el daño recibido.",
+    "Life Steal: se cura por el 150% del daño que inflige.",
+    "Blastwave: tiene un 33% de probabilidad al golpear de disparar una explosión adicional imbloqueable de 50 de daño explosivo y un aturdimiento largo.",
+    "Shockwave: tiene un 75% de probabilidad al golpear de lanzar una onda extra de 50 de daño eléctrico. Las armas no la bloquean, pero el escudo s?.",
+    "Summon Ally: tiene un 75% de probabilidad al golpear de invocar un aliado de su facción: Spiderling (25 HP) si es araña, Northern Scorpling (200 HP) si es escorpión o Mini Larva (75 HP) en el resto de casos."
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    },
+    {
+      "type": "explosive",
+      "bonusPct": 50
+    },
+    {
+      "type": "all",
+      "bonusPct": 25
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "poison",
+      "bonusPct": 75
+    },
+    {
+      "type": "gas",
+      "bonusPct": 50
+    }
+  ],
+  "inflictsEffects": [
+    "stabbing",
+    "busting",
+    "venom"
+  ],
+  "inflicts": [
+    "Sus aguijonazos hacen daño perforante con acumulación de veneno; el disparo de aguijón hace daño demoledor y también puede acumular veneno."
+  ],
+  "specialTraits": [
+    "Reduce a la mitad todo el daño recibido, ignora por completo el daño por caída y sus Sting y Charged Sting siguen añadiendo 10 de Venom antes de contar la infusión activa.",
+    "Sus afinidades de combate dependen de la infusión activa. Selecciona el sabor para revisar inmunidades, debilidades y efectos del perfil actual."
+  ],
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 4,
+    "value": 1600
+  },
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "WaspOGRE",
+  "bestiaryId": "WaspOGRE",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Aguijonazo",
+      "technicalId": "WaspStingAugusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 40",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 40.0,
+      "cooldownSeconds": 5.0,
+      "range": 400.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Tiny"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Tiny",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Aguijonazo cargado",
+      "technicalId": "WaspStingChargedAugusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 70",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 70.0,
+      "cooldownSeconds": 10.0,
+      "range": 200.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Tiny"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Tiny",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Wasp Stinger Shot",
+      "technicalId": "WaspStingerShotAugusta",
+      "tags": [
+        "general",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Daño del ataque: 50",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 15.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Tiny"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Tiny",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_1a7a197874edafa9",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_wasp",
+      "technicalId": "WaspOGRE",
+      "map": "surface",
+      "world": {
+        "x": -170249.56,
+        "y": -60112.094,
+        "z": 14307.891
+      },
+      "u": 0.3418219584430787,
+      "v": 0.026204636748461078,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "Los OGRR pueden liberarse desde el laboratorio del espantapájaros. Después de hacerlo pueden aparecer en distintas zonas, principalmente durante la noche.",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pollen",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Pollen",
+      "countLabel": "4",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Leg",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Wasp Leg",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Wasp Part",
+      "countLabel": "4",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

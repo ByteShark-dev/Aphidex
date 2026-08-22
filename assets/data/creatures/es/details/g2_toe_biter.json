@@ -1,1 +1,819 @@
-{"id":"g2_toe_biter","speciesKey":"toe_biter","collectionGroup":"angry","game":"g2","danger":"unknown","order":303,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_toe_biter.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"Chinche mordedora de dedos","tier":3,"cardTier":3,"technicalId":"ToeBiterAdult","bestiaryId":"ToeBiterAdult","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Adult.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Adult_G.png","weaknesses":["spicy"],"resistances":["water","fresh","venom","slashing","gas"],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"damageWeaknesses":[],"resistancesV2":[{"type":"water","bonusPct":35},{"type":"fresh","bonusPct":50},{"type":"venom","bonusPct":50},{"type":"slashing","bonusPct":50},{"type":"gas","bonusPct":90}],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Área ataque","technicalId":"ToeBiterAdultAOE","tags":["generic"],"notes":"Daño del ataque: 125"},{"name":"Toe Biter Adult Range","technicalId":"ToeBiterAdultRange","tags":["general_unblockable","ranged"],"notes":"Daño del ataque: 100"},{"name":"Combo 5 A","technicalId":"ToeBiterAdultCombo5A","tags":["slashing"],"notes":"Daño del ataque: 75"},{"name":"Potente ataque","technicalId":"ToeBiterAdultPowerAttack","tags":["slashing"],"notes":"Daño del ataque: 130"},{"name":"Bloqueo ofensivo","technicalId":"BlockOffensive","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":1925,"rating":4},"combatStats":{"health":1925},"description":"Un mordedor de dedos adulto, aunque todavía debe recorrer un largo camino para ser tan grande como papá. Al morir, suelta caparazón de mordedor de dedos y garra.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_toe_biter",
+  "speciesKey": "toe_biter",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "muy_alta",
+  "order": 303,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_toe_biter.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Toe Biter Claw",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Shell",
+      "minCount": 2,
+      "maxCount": 8
+    }
+  ],
+  "abilities": [],
+  "behavior": "Suele permanecer inmóvil cerca de su zona de aparición, esperando a que una presa se acerque antes de atacar. Es común encontrarla dentro de túneles o en lugares con poca visibilidad, lo que le permite sorprender fácilmente a quien pase cerca.",
+  "interactionWithPlayer": "Puede tomar al jugador desprevenido debido a los lugares donde suele esconderse. Tiene una gran cantidad de vida y puede aplicar veneno y frío, por lo que entrar al combate sin preparación puede volver el enfrentamiento considerablemente más peligroso.",
+  "interactionWithCreatures": "Atacará a las criaturas que se acerquen demasiado a su zona y puede cazar distintos habitantes de los alrededores. Su tendencia a permanecer esperando hace que muchas veces el combate comience cuando otra criatura entra accidentalmente en su alcance.",
+  "strategy": "Utiliza preferentemente daño Picante y evita armas Cortantes. Antes de entrar en túneles o espacios con poca visibilidad, revisa bien los alrededores para evitar que te sorprenda. Sus ataques tienen tiempos algo variados que pueden confundir al principio, aunque después de aprenderlos son bastante manejables. Prepárate especialmente para resistir veneno y frío, y recuerda que uno de sus ataques es imbloqueable, por lo que deberás esquivarlo en lugar de intentar bloquearlo.",
+  "groupId": null,
+  "name": "Chinche mordedora de dedos",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "ToeBiterAdult",
+  "bestiaryId": "ToeBiterAdult",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Adult.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Adult_G.png",
+  "weaknesses": [
+    "spicy"
+  ],
+  "resistances": [
+    "water",
+    "fresh",
+    "venom",
+    "slashing",
+    "gas"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "water",
+      "bonusPct": 35
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 50
+    },
+    {
+      "type": "gas",
+      "bonusPct": 90
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "butt",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Área ataque",
+      "technicalId": "ToeBiterAdultAOE",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 125",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 125.0,
+      "cooldownSeconds": 12.0,
+      "range": 850.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Toe Biter Adult Range",
+      "technicalId": "ToeBiterAdultRange",
+      "tags": [
+        "general",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Daño del ataque: 100",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 5.0,
+      "range": 200.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 5 A",
+      "technicalId": "ToeBiterAdultCombo5A",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Daño del ataque: 75",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 350.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente ataque",
+      "technicalId": "ToeBiterAdultPowerAttack",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Daño del ataque: 130",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 130.0,
+      "cooldownSeconds": 8.0,
+      "range": 350.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bloqueo ofensivo",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 4,
+    "value": 1925
+  },
+  "combatStats": {
+    "health": 1925,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 10
+  },
+  "description": "Un mordedor de dedos adulto, aunque todavía debe recorrer un largo camino para ser tan grande como papá. Al morir, suelta caparazón de mordedor de dedos y garra.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_c9d287eb0ad14db4",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "abyss",
+      "world": {
+        "x": 180205.17,
+        "y": 173742.14,
+        "z": -11250.039
+      },
+      "u": 0.12122997101836411,
+      "v": 0.26321493697228154,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_9d11cfc504128c62",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "abyss",
+      "world": {
+        "x": 199364.16,
+        "y": 196002.83,
+        "z": -13099.858
+      },
+      "u": 0.383250749115192,
+      "v": 0.45762812724946683,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_d859d25b48752cb9",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "abyss",
+      "world": {
+        "x": 186548.94,
+        "y": 191550.05,
+        "z": -12045.203
+      },
+      "u": 0.20798817442404013,
+      "v": 0.41873988230277176,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_7d84d60ae64437a7",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -95718.12,
+        "y": -13136.78,
+        "z": -6085.3057
+      },
+      "u": 0.6210149441030144,
+      "v": 0.22901567282232901,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3b5b6a034c85266c",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -62848.4,
+        "y": -50818.535,
+        "z": -7210.573
+      },
+      "u": 0.74414412642669,
+      "v": 0.06632861185597438,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a19a8ac3659b0adf",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -57991.39,
+        "y": -25097.459,
+        "z": -11904.155
+      },
+      "u": 0.7623383693298214,
+      "v": 0.17737668430727718,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eec0fea1194d4056",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -47990.215,
+        "y": -22611.402,
+        "z": -12759.059
+      },
+      "u": 0.7998025308750366,
+      "v": 0.18810997703010374,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e1be1c5453e4cd51",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "abyss",
+      "world": {
+        "x": 234963.45,
+        "y": 153646.8,
+        "z": 14690.903
+      },
+      "u": 0.8701111559265444,
+      "v": 0.08771277782515982,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_2a71231eed78d330",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -20749.559,
+        "y": 44794.46,
+        "z": 5733.495
+      },
+      "u": 0.9018453745390693,
+      "v": 0.4791277807572308,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d9ebc8f2bc5384be",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -34200.742,
+        "y": 48275.605,
+        "z": 15059.555
+      },
+      "u": 0.8514575658179689,
+      "v": 0.49415726250105413,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9c0f7cf9ce93da33",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -38477.02,
+        "y": 42795.95,
+        "z": -1665.2612
+      },
+      "u": 0.8354387310506293,
+      "v": 0.4704994215363859,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_28d5b8f8d11eeee6",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -27300.191,
+        "y": 44584.03,
+        "z": -8395.549
+      },
+      "u": 0.8773068642669009,
+      "v": 0.47821927110211654,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_af1bb5e64bf75878",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -53917.18,
+        "y": 43955.03,
+        "z": -6887.5967
+      },
+      "u": 0.7776002622183202,
+      "v": 0.4755036289737751,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cddff1dd4fd766b8",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -26994.035,
+        "y": 42985.027,
+        "z": -8768.68
+      },
+      "u": 0.8784537172958736,
+      "v": 0.4713157418332068,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_611a50863b8bacea",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -54076.88,
+        "y": 45355.82,
+        "z": -4497.7803
+      },
+      "u": 0.7770020298507463,
+      "v": 0.4815513942153639,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ee7b219ce02cf05b",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -26241.57,
+        "y": 59272.68,
+        "z": 1606.7411
+      },
+      "u": 0.8812724331284753,
+      "v": 0.5416359908929925,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ef288ffd546f5537",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -41955.047,
+        "y": 54285.11,
+        "z": 1687.4977
+      },
+      "u": 0.8224101253731343,
+      "v": 0.5201026757736739,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2e0a185ecf360750",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -18685.238,
+        "y": 33517.8,
+        "z": 2640.6182
+      },
+      "u": 0.9095782714661984,
+      "v": 0.4304419731849227,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aae81a0071892984",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -31640.271,
+        "y": 41468.605,
+        "z": 7628.648
+      },
+      "u": 0.8610490287386596,
+      "v": 0.46476874744919483,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6f5506208794d095",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -49979.25,
+        "y": 74267.91,
+        "z": -5018.3438
+      },
+      "u": 0.7923516534972198,
+      "v": 0.6063763379711612,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_737e73bfb1d5d2d7",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -11505.745,
+        "y": 42274.133,
+        "z": -7556.6934
+      },
+      "u": 0.9364724799531753,
+      "v": 0.4682465308710684,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6587885a9bc9ecff",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -15486.421,
+        "y": 53899.555,
+        "z": -2490.1128
+      },
+      "u": 0.9215609631840795,
+      "v": 0.5184380821317143,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_517607d02231fb41",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -59816.582,
+        "y": 25477.488,
+        "z": -22614.578
+      },
+      "u": 0.7555012438981563,
+      "v": 0.39572876175056926,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_385378d1dabe99c0",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -66056.08,
+        "y": 5729.0537,
+        "z": -19289.076
+      },
+      "u": 0.7321282341235,
+      "v": 0.3104669491053208,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a8ed1ad2763e2e60",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -57298.87,
+        "y": 14658.359,
+        "z": -22824.021
+      },
+      "u": 0.7649325326309628,
+      "v": 0.34901829671979084,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_46d4f9c37ec0e1e6",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -45632.05,
+        "y": 15804.034,
+        "z": -17021.8
+      },
+      "u": 0.8086361603745976,
+      "v": 0.3539646294628551,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eb09b298c6dd321f",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -61086.086,
+        "y": 23891.541,
+        "z": -16216.887
+      },
+      "u": 0.7507457123792801,
+      "v": 0.3888816004047559,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c58f093456a38bc",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -69641.82,
+        "y": 31289.256,
+        "z": -17882.965
+      },
+      "u": 0.718696138132865,
+      "v": 0.4208204660763976,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e1542608a166cb49",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -58244.7,
+        "y": -13531.996,
+        "z": -12908.498
+      },
+      "u": 0.7613894761486685,
+      "v": 0.22730936881693228,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_35c2193a27a3bca3",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -47202.938,
+        "y": 2310.168,
+        "z": -24944.174
+      },
+      "u": 0.8027516516242318,
+      "v": 0.2957062654186694,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4bf2faadb8956c12",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdult",
+      "map": "surface",
+      "world": {
+        "x": -17526.576,
+        "y": 1344.027,
+        "z": -3519.8313
+      },
+      "u": 0.9139185915130231,
+      "v": 0.2915350520617253,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [
+    "required_equipment"
+  ],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Toe Biter Claw",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Claw",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

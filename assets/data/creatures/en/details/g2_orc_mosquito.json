@@ -1,1 +1,644 @@
-{"id":"g2_orc_mosquito","speciesKey":"orc_mosquito","collectionGroup":"orc","name":"O.R.C. Mosquito","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":255,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Mosquito_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Mosquito_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Mosquito.webp","weaknesses":["fresh","slashing"],"resistances":["generic"],"temperament":"aggressive","health":{"value":525,"rating":2},"description":"A remote-controlled mosquito, even has special abilities. It can drop an O.R.C. Receiver on death as well as its creature parts.","behavior":"It patrols open areas and O.R.C. zones from the air, landing only briefly to reposition. Once it locks onto a target, it stays on them far harder than a normal mosquito.","interactionWithPlayer":"It attacks on sight and tries to keep you permanently blocking or dodging. If other O.R.C. units already have you busy on the ground, the mosquito uses every opening to stab from outside your view.","interactionWithCreatures":"It usually works over grounded O.R.C. patrols, diving in from above to finish targets already occupied by soldiers or heavier insects.","strategy":"Fresh remains the best answer. Block the basic poke, watch for the sway before the combo, and punish the end of the divebomb before it gains height again.","environments":["Ceremony Area","Garden O.R.C. Waves","Fire Pit","Statue Area","Pumpkin Patch"],"loot":[{"section":"loot","item":"Mosquito Beak","minCount":1,"maxCount":1},{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"rare","item":"Mosquito Beak","minCount":0,"maxCount":2},{"section":"rare","item":"Mosquito Blood Sack","minCount":0,"maxCount":1}],"combatStats":{"health":525,"attackDamageSummary":"Poke: 75. Combo Poke: 56.25. Loop Divebomb: 87.5."},"abilities":[{"name":"Poke","description":"A direct beak thrust used to keep immediate pressure on you.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo Poke","description":"It chains several thrusts if it reads that you stayed still after the first hit.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Loop Divebomb","description":"It rises, loops around, and comes back down in a long dive to close distance.","blockable":true,"breaksGuard":false,"staggers":true}],"elementalWeaknesses":[{"type":"fresh","bonusPct":30}],"resistancesV2":[{"type":"generic","bonusPct":25}],"groupId":null,"cardTier":2,"technicalId":"MosquitoORC","bestiaryId":"MosquitoORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","damageWeaknesses":[{"type":"slashing","bonusPct":15}],"weakPoints":[],"attacks":[{"name":"Bite","technicalId":"MosquitoBite","tags":["stabbing"],"notes":"Attack damage: 60"},{"name":"Combo Stab","technicalId":"MosquitoComboStab","tags":["stabbing"],"notes":"Attack damage: 45"},{"name":"Dive Bomb","technicalId":"MosquitoDiveBomb","tags":["stabbing"],"notes":"Attack damage: 70"}],"encounterVariants":[{"id":"g2_wave_mosquito_augusta_orc_wave","characterRow":"Mosquito_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":525.0,"stun":{"max":30.0,"duration":4.0,"cooldown":12.0,"staggerThreshold":30}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"}],"weaknesses":[{"damageTypes":["Fresh"],"percent":30.0,"sourceId":"DamageResistDownFreshMedium"},{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"MosquitoBite","ability":"MosquitoBite","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"MosquitoComboStab","ability":"MosquitoCombo","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":45.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"MosquitoDiveBomb","ability":"MosquitoDive","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":70.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"}],"mechanicSignals":[],"quality":{"resolvedAttacks":3,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_mosquito_augusta_orc_wave","nameEn":"O.R.C. Mosquito Raid/Wave","nameEsMX":"Mosquito C.R.O.  (Oleada)","nameRu":"O.R.C. Комар Рейд/волна"}],"contextVariants":[{"id":"Mosquito_Augusta_ORC_Wave","characterRow":"Mosquito_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":525.0,"stun":{"max":30.0,"duration":4.0,"cooldown":12.0,"staggerThreshold":30}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"}],"weaknesses":[{"damageTypes":["Fresh"],"percent":30.0,"sourceId":"DamageResistDownFreshMedium"},{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"MosquitoBite","ability":"MosquitoBite","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"MosquitoComboStab","ability":"MosquitoCombo","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":45.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"MosquitoDiveBomb","ability":"MosquitoDive","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":70.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"}],"mechanicSignals":[],"quality":{"resolvedAttacks":3,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Mosquito C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_mosquito",
+  "speciesKey": "orc_mosquito",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Mosquito",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 255,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Mosquito_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Mosquito_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Mosquito.webp",
+  "weaknesses": [
+    "fresh",
+    "slashing"
+  ],
+  "resistances": [
+    "generic"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 2,
+    "value": 525
+  },
+  "description": "A remote-controlled mosquito, even has special abilities. It can drop an O.R.C. Receiver on death as well as its creature parts.",
+  "behavior": "It patrols open areas and O.R.C. zones from the air, landing only briefly to reposition. Once it locks onto a target, it stays on them far harder than a normal mosquito.",
+  "interactionWithPlayer": "It attacks on sight and tries to keep you permanently blocking or dodging. If other O.R.C. units already have you busy on the ground, the mosquito uses every opening to stab from outside your view.",
+  "interactionWithCreatures": "It usually works over grounded O.R.C. patrols, diving in from above to finish targets already occupied by soldiers or heavier insects.",
+  "strategy": "Fresh remains the best answer. Block the basic poke, watch for the sway before the combo, and punish the end of the divebomb before it gains height again.",
+  "environments": [
+    "Ceremony Area",
+    "Garden O.R.C. Waves",
+    "Fire Pit",
+    "Statue Area",
+    "Pumpkin Patch"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Mosquito Beak",
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Mosquito Blood Sack",
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 525,
+    "stunThreshold": 30,
+    "stunCooldownSeconds": 12
+  },
+  "abilities": [
+    {
+      "name": "Poke",
+      "description": "A direct beak thrust used to keep immediate pressure on you.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo Poke",
+      "description": "It chains several thrusts if it reads that you stayed still after the first hit.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Loop Divebomb",
+      "description": "It rises, loops around, and comes back down in a long dive to close distance.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 30
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "MosquitoORC",
+  "bestiaryId": "MosquitoORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "technicalId": "MosquitoBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 60",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 60.0,
+      "cooldownSeconds": 0.0,
+      "range": 250.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo Stab",
+      "technicalId": "MosquitoComboStab",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 45",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Dive Bomb",
+      "technicalId": "MosquitoDiveBomb",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 70",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 70.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_mosquito_augusta_orc_wave",
+      "characterRow": "Mosquito_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 525.0,
+        "stun": {
+          "max": 30.0,
+          "duration": 4.0,
+          "cooldown": 12.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "MosquitoBite",
+          "ability": "MosquitoBite",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "MosquitoComboStab",
+          "ability": "MosquitoCombo",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 45.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "MosquitoDiveBomb",
+          "ability": "MosquitoDive",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 70.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 3,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_mosquito_augusta_orc_wave",
+      "nameEn": "O.R.C. Mosquito Raid/Wave",
+      "nameEsMX": "Mosquito C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Комар Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Mosquito_Augusta_ORC_Wave",
+      "characterRow": "Mosquito_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 525.0,
+        "stun": {
+          "max": 30.0,
+          "duration": 4.0,
+          "cooldown": 12.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "MosquitoBite",
+          "ability": "MosquitoBite",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "MosquitoComboStab",
+          "ability": "MosquitoCombo",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 45.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "MosquitoDiveBomb",
+          "ability": "MosquitoDive",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 70.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 3,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Mosquito C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_bb5802565fcd6024",
+      "targetType": "creature",
+      "targetId": "g2_orc_mosquito",
+      "technicalId": "MosquitoORC",
+      "map": "surface",
+      "world": {
+        "x": -194075.0,
+        "y": -1048.4238,
+        "z": 8489.669
+      },
+      "u": 0.2525724319578578,
+      "v": 0.28120589437895277,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2c72a26d38cfa6ab",
+      "targetType": "creature",
+      "targetId": "g2_orc_mosquito",
+      "technicalId": "MosquitoORC",
+      "map": "surface",
+      "world": {
+        "x": -152820.44,
+        "y": 21959.615,
+        "z": 5189.0586
+      },
+      "u": 0.4071110237050044,
+      "v": 0.38054071068386874,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dcbbacf6529aa113",
+      "targetType": "creature",
+      "targetId": "g2_orc_mosquito",
+      "technicalId": "MosquitoORC",
+      "map": "surface",
+      "world": {
+        "x": -177411.25,
+        "y": 48420.254,
+        "z": 4946.172
+      },
+      "u": 0.3149944395668715,
+      "v": 0.4947817695252551,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d60d8743e5b858c9",
+      "targetType": "creature",
+      "targetId": "g2_orc_mosquito",
+      "technicalId": "MosquitoORC",
+      "map": "surface",
+      "world": {
+        "x": -109475.85,
+        "y": -25699.729,
+        "z": 14217.128
+      },
+      "u": 0.5694788176763242,
+      "v": 0.17477644617590019,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6c3e5ff59afec1ce",
+      "targetType": "creature",
+      "targetId": "g2_orc_mosquito",
+      "technicalId": "MosquitoORC",
+      "map": "surface",
+      "world": {
+        "x": -237191.95,
+        "y": 66464.27,
+        "z": 11243.6045
+      },
+      "u": 0.09105737196371082,
+      "v": 0.5726849332996037,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_480b44b54bb65130",
+      "targetType": "creature",
+      "targetId": "g2_orc_mosquito",
+      "technicalId": "MosquitoORC",
+      "map": "surface",
+      "world": {
+        "x": -147827.56,
+        "y": 39662.523,
+        "z": 722.64825
+      },
+      "u": 0.4258142323675739,
+      "v": 0.45697117611940297,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b67ebb262441cc81",
+      "targetType": "creature",
+      "targetId": "g2_orc_mosquito",
+      "technicalId": "MosquitoORC",
+      "map": "surface",
+      "world": {
+        "x": -56270.52,
+        "y": -45307.895,
+        "z": -4613.1943
+      },
+      "u": 0.7687847070529705,
+      "v": 0.09012022733788688,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_330239a87fe61cda",
+      "targetType": "creature",
+      "targetId": "g2_orc_mosquito",
+      "technicalId": "MosquitoORC",
+      "map": "surface",
+      "world": {
+        "x": -148234.02,
+        "y": 42189.15,
+        "z": 612.69666
+      },
+      "u": 0.4242916429616623,
+      "v": 0.46787962560080953,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/ORC_Mosquito.webp",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Mosquito Beak",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Mosquito Beak",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mosquito Blood Sack",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mosquito Blood Sack",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

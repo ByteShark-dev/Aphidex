@@ -1,1 +1,166 @@
-{"id":"g2_koi_calico","speciesKey":"g1_koi_fish","collectionGroup":"angry","game":"g2","danger":"unknown","order":243,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_koi_calico.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":"koi","name":"Calicó","tier":5,"cardTier":5,"technicalId":"KoiB","bestiaryId":"KoiB","isBoss":true,"bossCardStyle":"yellow","isKillable":false,"healthDisplay":"hidden","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png","weaknesses":[],"resistances":[],"elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[{"name":"Carga","technicalId":"KoiCharge_Augusta","tags":["general_unblockable"],"notes":"Daño del ataque: 500"},{"name":"Koi Eat","technicalId":"KoiEat_Augusta","tags":["general_unblockable"],"notes":"Daño del ataque: 500"},{"name":"Koi Thrash","technicalId":"KoiThrash_Augusta","tags":["general_unblockable"],"notes":"Daño del ataque: 500"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":null,"description":"Príncipe del Estanque del Zorrillo. Se levantó con el pie izquierdo. ¿Pie? ¿Los peces tienen pie?","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_koi_calico",
+  "speciesKey": "g1_koi_fish",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "alta",
+  "order": 243,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_koi_calico.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Koi Fish Scale",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "abilities": [],
+  "behavior": "Recorre el Estanque del Zorrillo y puede volverse agresivo con cualquier objetivo que se acerque demasiado. Cuando comienza una persecución, utiliza su velocidad y enorme tamaño para alcanzar rápidamente a su objetivo.",
+  "interactionWithPlayer": "Es extremadamente peligroso y no puede ser eliminado. Sus ataques son imbloqueables y causan una gran cantidad de daño, por lo que ser detectado en una zona abierta puede ponerte rápidamente en peligro.",
+  "interactionWithCreatures": "Como uno de los grandes depredadores del estanque, puede atacar a criaturas más pequeñas que encuentre durante su recorrido. No parece tener una interacción exclusiva documentada como la preferencia de Soleado por los renacuajos.",
+  "strategy": "No intentes combatirlo. Vigila su recorrido antes de adentrarte en aguas abiertas y utiliza plantas, estructuras y otras partes del entorno para perderlo de vista. Evita especialmente que los tres koi del estanque te detecten al mismo tiempo, ya que escapar de todos a la vez es extremadamente difícil.",
+  "groupId": "koi",
+  "name": "Calicó",
+  "tier": 5,
+  "cardTier": 5,
+  "technicalId": "KoiB",
+  "bestiaryId": "KoiB",
+  "isBoss": true,
+  "bossCardStyle": "yellow",
+  "isKillable": false,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png",
+  "weaknesses": [],
+  "resistances": [],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Carga",
+      "technicalId": "KoiCharge_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Koi Eat",
+      "technicalId": "KoiEat_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Koi Thrash",
+      "technicalId": "KoiThrash_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 5,
+    "value": 2000000000
+  },
+  "description": "Príncipe del Estanque del Zorrillo. Se levantó con el pie izquierdo. ¿Pie? ¿Los peces tienen pie?",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_6c1353f88b7a5a60",
+      "targetType": "creature",
+      "targetId": "g2_koi_calico",
+      "technicalId": "KoiB",
+      "map": "surface",
+      "world": {
+        "x": -66068.42,
+        "y": 14965.3545,
+        "z": -12845.956
+      },
+      "u": 0.7320820087796313,
+      "v": 0.3503437178851505,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "fixed_encounter",
+  "hideHealth": true,
+  "presentationOverrideProvenance": "presentation_rule",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "combatStats": {
+    "health": 2000000000,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Koi Fish Scale",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

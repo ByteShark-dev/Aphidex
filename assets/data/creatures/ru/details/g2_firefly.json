@@ -1,1 +1,1137 @@
-{"id":"g2_firefly","speciesKey":"firefly","collectionGroup":"neutral","name":"Светлячок","game":"g2","tier":3,"danger":"intermedia","isBoss":false,"order":232,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Firefly.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Firefly_G.png","photo":"assets/g2/creatures/photos/Firefly.webp","weaknesses":["stabbing"],"resistances":["generic","spicy"],"temperament":"neutral","health":{"value":660,"rating":2},"description":"Нейтральный светлячок 3-го тира, который днём отдыхает на высоких точках, а ночью патрулирует парк. Он по-прежнему даёт ценные светящиеся материалы, но сам бой с ним заметно удобнее, чем на заднем дворе.","behavior":"Днём он собирается на высоких полках, в ящиках и на возвышенностях теплицы и огорода. С наступлением ночи взлетает и облетает большую зону, а на рассвете снова возвращается к местам отдыха.","interactionWithPlayer":"Он остаётся нейтральным, пока его не атакуют, но удар по одному обычно будит и всех ближайших. Поскольку бой почти всегда идёт сверху, главная ошибка — не сам урон, а попытка случайно вытянуть сразу весь рой.","interactionWithCreatures":"Поскольку он редко опускается к самой земле, почти не втягивается в конфликты с другими существами. Если кто-то всё же добирается до него, он отвечает светящейся слизью и сразу старается снова набрать высоту.","strategy":"Лучший план — сначала выманить одного дальним выстрелом до того, как подтянется остальная группа. Стрелы с пыльцой, сильное оглушающее оружие и водяная пушка Ladybuggy отлично сбивают его с воздуха и резко сокращают бой.","environments":["Теплица","Тыквенная грядка","Огород"],"loot":[{"section":"loot","item":"Панцирь светлячка","minCount":0,"maxCount":2},{"section":"loot","item":"Светящаяся слизь","minCount":1,"maxCount":3},{"section":"rare","item":"Панцирь светлячка","minCount":0,"maxCount":3},{"section":"rare","item":"Светящаяся слизь","minCount":0,"maxCount":8}],"advancedLootTable":[{"item":"Панцирь светлячка","countLabel":"x2","chancePct":50},{"item":"Панцирь светлячка","countLabel":"x3","chancePct":1},{"item":"Светящаяся слизь","countLabel":"x1","chancePct":100},{"item":"Светящаяся слизь","countLabel":"x2","chancePct":25},{"item":"Светящаяся слизь","countLabel":"x8","chancePct":1}],"combatStats":{"health":660,"stunThreshold":30,"stunCooldownSeconds":20,"attackDamageSummary":"Выстрел слизью: 60."},"inflictsEffects":["busting"],"inflicts":["Его атака наносит дробящий урон и дополнительно накладывает замедление передвижения на 50% в течение 5 секунд."],"abilities":[{"name":"Выстрел слизью","description":"Заряжает выстрел светящейся слизью. Оружием его не заблокировать, но щитом можно; даже при блоке он всё равно замедляет, а при неидеальном блоке ломает стойку.","blockable":true,"breaksGuard":true,"staggers":false}],"damageWeaknesses":[{"type":"stabbing","bonusPct":30}],"resistancesV2":[{"type":"generic","bonusPct":50},{"type":"spicy","bonusPct":50}],"groupId":null,"cardTier":3,"technicalId":"Firefly","bestiaryId":"Firefly","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"weakPoints":[],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_firefly",
+  "speciesKey": "firefly",
+  "collectionGroup": "neutral",
+  "name": "Светлячок",
+  "game": "g2",
+  "tier": 3,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 232,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Firefly.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Firefly_G.png",
+  "photo": "assets/g2/creatures/photos/Firefly.webp",
+  "weaknesses": [
+    "stabbing"
+  ],
+  "resistances": [
+    "generic",
+    "spicy"
+  ],
+  "temperament": "neutral",
+  "health": {
+    "rating": 2,
+    "value": 660
+  },
+  "description": "Нейтральный светлячок 3-го тира, который днём отдыхает на высоких точках, а ночью патрулирует парк. Он по-прежнему даёт ценные светящиеся материалы, но сам бой с ним заметно удобнее, чем на заднем дворе.",
+  "behavior": "Днём он собирается на высоких полках, в ящиках и на возвышенностях теплицы и огорода. С наступлением ночи взлетает и облетает большую зону, а на рассвете снова возвращается к местам отдыха.",
+  "interactionWithPlayer": "Он остаётся нейтральным, пока его не атакуют, но удар по одному обычно будит и всех ближайших. Поскольку бой почти всегда идёт сверху, главная ошибка — не сам урон, а попытка случайно вытянуть сразу весь рой.",
+  "interactionWithCreatures": "Поскольку он редко опускается к самой земле, почти не втягивается в конфликты с другими существами. Если кто-то всё же добирается до него, он отвечает светящейся слизью и сразу старается снова набрать высоту.",
+  "strategy": "Лучший план — сначала выманить одного дальним выстрелом до того, как подтянется остальная группа. Стрелы с пыльцой, сильное оглушающее оружие и водяная пушка Ladybuggy отлично сбивают его с воздуха и резко сокращают бой.",
+  "environments": [
+    "Теплица",
+    "Тыквенная грядка",
+    "Огород"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Firefly Glow",
+      "minCount": 1,
+      "maxCount": 11
+    },
+    {
+      "section": "loot",
+      "item": "Firefly Scale",
+      "minCount": 0,
+      "maxCount": 5
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Firefly Glow",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 8,
+      "notes": "8 independent rolls"
+    },
+    {
+      "item": "Firefly Glow",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Firefly Glow",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Firefly Scale",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Firefly Scale",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 660,
+    "stunThreshold": 30,
+    "stunCooldownSeconds": 20
+  },
+  "inflictsEffects": [
+    "busting"
+  ],
+  "inflicts": [
+    "Его атака наносит дробящий урон и дополнительно накладывает замедление передвижения на 50% в течение 5 секунд."
+  ],
+  "abilities": [
+    {
+      "name": "Выстрел слизью",
+      "description": "Заряжает выстрел светящейся слизью. Оружием его не заблокировать, но щитом можно; даже при блоке он всё равно замедляет, а при неидеальном блоке ломает стойку.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": false
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 30
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 50
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 50
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "Firefly",
+  "bestiaryId": "Firefly",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_8d4f283a5ca32a15",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -153365.16,
+        "y": -36236.914,
+        "z": 1898.5084
+      },
+      "u": 0.4050705156570091,
+      "v": 0.12928324506282154,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d65d391ccefe465c",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -145435.08,
+        "y": -38984.36,
+        "z": 2990.0178
+      },
+      "u": 0.4347764050336553,
+      "v": 0.11742143249852428,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f08dad6056aeace1",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -148122.88,
+        "y": -31979.254,
+        "z": 2052.719
+      },
+      "u": 0.42470797073456246,
+      "v": 0.1476652496163251,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9e4632bfa73665b8",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -110809.555,
+        "y": -46673.668,
+        "z": 3964.0242
+      },
+      "u": 0.5644827907521218,
+      "v": 0.08422364435449867,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_570d80da9d13e9fd",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -110257.914,
+        "y": -51579.57,
+        "z": 7145.9043
+      },
+      "u": 0.5665492247000293,
+      "v": 0.06304292233746522,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0af9d59a75e1fd52",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -108179.23,
+        "y": -47346.79,
+        "z": 8571.199
+      },
+      "u": 0.57433592508048,
+      "v": 0.0813175100767349,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f8de6df89f25cda7",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -108323.57,
+        "y": -51662.715,
+        "z": 11392.854
+      },
+      "u": 0.573795230904302,
+      "v": 0.06268395244118397,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ecd6ad7e2ba55774",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -152633.12,
+        "y": -38543.953,
+        "z": 5368.9565
+      },
+      "u": 0.407812719929763,
+      "v": 0.11932284394974281,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_572b88c1faa83824",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -131819.14,
+        "y": -25253.062,
+        "z": 14954.404
+      },
+      "u": 0.4857813895229733,
+      "v": 0.17670488452651995,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c176fb2c3d156a9b",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -128393.38,
+        "y": -29267.92,
+        "z": 14954.404
+      },
+      "u": 0.4986142042727539,
+      "v": 0.1593711523737246,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a98ef0e65bc74230",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -129645.77,
+        "y": -25495.043,
+        "z": 14951.32
+      },
+      "u": 0.49392278138718165,
+      "v": 0.1756601567079855,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a50cf810ed4cdd4",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -68383.65,
+        "y": -48572.62,
+        "z": -3660.4458
+      },
+      "u": 0.7234092127597308,
+      "v": 0.07602511645164009,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c6a5cab6fd181483",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -68556.39,
+        "y": -44888.297,
+        "z": -3660.4458
+      },
+      "u": 0.7227621328650864,
+      "v": 0.09193179809427442,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d47cda58bca30b24",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -77184.42,
+        "y": -29898.41,
+        "z": -3235.0103
+      },
+      "u": 0.6904417395376061,
+      "v": 0.15664907732523817,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9a049583daaeb3dc",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -80284.6,
+        "y": -11507.468,
+        "z": -3695.594
+      },
+      "u": 0.6788285396546678,
+      "v": 0.2360500580487394,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf0d2a24cee712af",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -45708.727,
+        "y": -17398.982,
+        "z": -3648.7043
+      },
+      "u": 0.8083489301726661,
+      "v": 0.21061405865587318,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f12aebde33b03385",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -35772.895,
+        "y": -29875.566,
+        "z": -3356.87
+      },
+      "u": 0.8455683184079603,
+      "v": 0.15674770392107265,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c584dde06219383f",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -29869.162,
+        "y": -50647.285,
+        "z": -1219.9906
+      },
+      "u": 0.8676835605501901,
+      "v": 0.06706796593304662,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d2587fc0e9b59902",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -49310.027,
+        "y": -53364.13,
+        "z": -2965.738
+      },
+      "u": 0.7948585467954346,
+      "v": 0.055338270005902704,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_14e1652406fbf375",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -49826.777,
+        "y": -48612.8,
+        "z": -2965.738
+      },
+      "u": 0.7929228136962249,
+      "v": 0.07585164347752757,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d5c54c8c12e9eacf",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -62746.727,
+        "y": -25962.25,
+        "z": -3651.7883
+      },
+      "u": 0.7445249910447761,
+      "v": 0.17364303904207773,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7476c923ffb062cc",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -107950.375,
+        "y": 5361.2256,
+        "z": 21868.477
+      },
+      "u": 0.5751932104184958,
+      "v": 0.30887888951176323,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_68426ab2178920ce",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -112110.555,
+        "y": 13335.711,
+        "z": 21078.568
+      },
+      "u": 0.5596092759730759,
+      "v": 0.34330790144194284,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_264df259a328253a",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -105673.414,
+        "y": 18502.633,
+        "z": 20298.559
+      },
+      "u": 0.5837226516827627,
+      "v": 0.36561555018129693,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2530e5c151f9688f",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -105355.49,
+        "y": 17948.715,
+        "z": 23429.922
+      },
+      "u": 0.584913587357331,
+      "v": 0.3632240667847204,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bd4527d82391d7c1",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -105986.29,
+        "y": 15918.024,
+        "z": 25630.875
+      },
+      "u": 0.5825506256950542,
+      "v": 0.35445676944093096,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_98a92ec86f153e88",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -108197.74,
+        "y": 14261.8545,
+        "z": 24554.205
+      },
+      "u": 0.5742665870646766,
+      "v": 0.3473064297495573,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f2ff54b2e2fd9d20",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -108582.9,
+        "y": 18376.75,
+        "z": 23030.0
+      },
+      "u": 0.5728237869476148,
+      "v": 0.36507206341175474,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0ec5189f2d8f994b",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -107230.16,
+        "y": 8520.106,
+        "z": 22015.146
+      },
+      "u": 0.577891118525022,
+      "v": 0.3225170273378868,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_273fed02d5d31b3d",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -109227.305,
+        "y": 3726.7878,
+        "z": 22588.148
+      },
+      "u": 0.5704098612818262,
+      "v": 0.3018223741765747,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_290fdd9e0805de20",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -111534.016,
+        "y": 11461.596,
+        "z": 21675.02
+      },
+      "u": 0.5617689772314896,
+      "v": 0.3352166047052871,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9e759370ae542b52",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -113111.84,
+        "y": 19342.01,
+        "z": 20644.178
+      },
+      "u": 0.5558584863915715,
+      "v": 0.3692394731427608,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_400ad40d072c4bee",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -104962.555,
+        "y": 21492.213,
+        "z": 21438.553
+      },
+      "u": 0.5863855124378109,
+      "v": 0.3785227511257273,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6b8c33159371f3bf",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -105355.49,
+        "y": 15427.714,
+        "z": 21903.266
+      },
+      "u": 0.584913587357331,
+      "v": 0.3523399069736066,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a364b699cc8eefaf",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -179650.0,
+        "y": -30750.0,
+        "z": 8050.0
+      },
+      "u": 0.3066081357916301,
+      "v": 0.15297242600556538,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_927f18b709da846e",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -170950.0,
+        "y": -27500.0,
+        "z": 10250.737
+      },
+      "u": 0.33919812701199886,
+      "v": 0.1670039632346741,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_771b58982ab7657b",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -163801.16,
+        "y": -31950.0,
+        "z": 9200.0
+      },
+      "u": 0.365977510096576,
+      "v": 0.1477915507209714,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7979f18eee4e5747",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -176390.0,
+        "y": -34330.0,
+        "z": 6080.0
+      },
+      "u": 0.31882001755926254,
+      "v": 0.13751614807319334,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c03828b1eb0c595f",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -179800.0,
+        "y": -34990.0,
+        "z": 6910.0
+      },
+      "u": 0.3060462393912789,
+      "v": 0.13466666666666666,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_62786e00b6f16f58",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -170700.0,
+        "y": -21100.0,
+        "z": 3000.0
+      },
+      "u": 0.3401346210125841,
+      "v": 0.19463529808584196,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3191bb63ae59c8f2",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -177385.75,
+        "y": -21100.0,
+        "z": 3233.192
+      },
+      "u": 0.3150899619549312,
+      "v": 0.19463529808584196,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4d281858681bd917",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -179437.89,
+        "y": -30750.0,
+        "z": 8050.0
+      },
+      "u": 0.30740269476148663,
+      "v": 0.15297242600556538,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c95e3ea0878732aa",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -170642.27,
+        "y": -27500.0,
+        "z": 10250.737
+      },
+      "u": 0.34035087620719934,
+      "v": 0.1670039632346741,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_58149c8c82777190",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -163618.33,
+        "y": -31950.0,
+        "z": 9200.0
+      },
+      "u": 0.36666238688908404,
+      "v": 0.1477915507209714,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_05559ee5c9f52cf6",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -176117.44,
+        "y": -34330.0,
+        "z": 6080.0
+      },
+      "u": 0.3198410207784606,
+      "v": 0.13751614807319334,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6d0e5bf92689eeb7",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -170495.39,
+        "y": -21100.0,
+        "z": 3000.0
+      },
+      "u": 0.3409010851624231,
+      "v": 0.19463529808584196,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0312be201e5167fe",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -20953.06,
+        "y": 46063.848,
+        "z": 9032.3125
+      },
+      "u": 0.9010830646766169,
+      "v": 0.48460823152036425,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_64dc23f2866610c2",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -24518.338,
+        "y": 49305.016,
+        "z": 9805.015
+      },
+      "u": 0.8877276188469418,
+      "v": 0.49860163750737846,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ba25cbd8a43a0cc",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -27885.584,
+        "y": 47539.23,
+        "z": 10845.212
+      },
+      "u": 0.8751139961369623,
+      "v": 0.49097803996964334,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0708cfd05c34c16",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -27599.406,
+        "y": 52098.984,
+        "z": 12106.028
+      },
+      "u": 0.8761860120573602,
+      "v": 0.5106643039716671,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4d5f05dc704970f5",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -26361.715,
+        "y": 43516.992,
+        "z": 11786.191
+      },
+      "u": 0.880822372841674,
+      "v": 0.47361244543384773,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b4dcf971d5040269",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -217884.77,
+        "y": -43342.19,
+        "z": 7358.4033
+      },
+      "u": 0.16338160491659354,
+      "v": 0.09860695438063913,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_097542e14f30730e",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -19989.602,
+        "y": 62924.688,
+        "z": 4377.167
+      },
+      "u": 0.9046921552238805,
+      "v": 0.5574031558816088,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2ad2aaf6e74d1cb5",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -48430.688,
+        "y": 37203.8,
+        "z": 710.8971
+      },
+      "u": 0.7981525295873574,
+      "v": 0.44635589510076734,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c76d626219eae20f",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -47717.023,
+        "y": 45087.785,
+        "z": 8812.53
+      },
+      "u": 0.8008259015510683,
+      "v": 0.4803941809596087,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f65d11de34277aef",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -45565.086,
+        "y": 48373.918,
+        "z": 10103.894
+      },
+      "u": 0.8088870059116183,
+      "v": 0.4945817186609326,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_affac74dc06042a7",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -37842.645,
+        "y": 37980.53,
+        "z": 2528.3196
+      },
+      "u": 0.8378150845771144,
+      "v": 0.449709346150603,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c096261d2c2a0054",
+      "targetType": "creature",
+      "targetId": "g2_firefly",
+      "technicalId": "Firefly",
+      "map": "surface",
+      "world": {
+        "x": -48054.91,
+        "y": 35975.83,
+        "z": 578.71014
+      },
+      "u": 0.7995601849575651,
+      "v": 0.44105426224808175,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Firefly.webp",
+  "immunities": []
+}

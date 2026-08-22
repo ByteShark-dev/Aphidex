@@ -1,0 +1,198 @@
+{
+  "formula": "full=(world-min)/(max-min); sourcePixel=full*sourceTextureSize; normalized=(sourcePixel-contentOrigin)/contentSize",
+  "maps": {
+    "surface": {
+      "worldBounds": {
+        "minX": -261500.0,
+        "minY": -137500.0,
+        "maxX": 73500.0,
+        "maxY": 197500.0
+      },
+      "sourceTextureSize": {
+        "width": 4096,
+        "height": 4096
+      },
+      "contentPixelBounds": {
+        "x": 0,
+        "y": 872,
+        "width": 3264,
+        "height": 2832
+      },
+      "textureSize": {
+        "width": 3264,
+        "height": 2832
+      },
+      "axis": {
+        "u": "x",
+        "v": "y",
+        "invertX": false,
+        "invertY": false
+      }
+    },
+    "abyss": {
+      "worldBounds": {
+        "minX": 159500.0,
+        "minY": 137500.0,
+        "maxX": 284500.0,
+        "maxY": 262500.0
+      },
+      "sourceTextureSize": {
+        "width": 4096,
+        "height": 4096
+      },
+      "contentPixelBounds": {
+        "x": 388,
+        "y": 200,
+        "width": 2396,
+        "height": 3752
+      },
+      "textureSize": {
+        "width": 2396,
+        "height": 3752
+      },
+      "axis": {
+        "u": "x",
+        "v": "y",
+        "invertX": false,
+        "invertY": false
+      }
+    }
+  },
+  "verifiedCases": {
+    "surface": [
+      {
+        "id": "spawn_9b89641e6d34886f",
+        "targetType": "creature",
+        "targetId": "g2_black_soldier_ant",
+        "world": {
+          "x": -131527.4,
+          "y": -27812.05,
+          "z": 3005.8152
+        },
+        "u": 0.48687424056189643,
+        "v": 0.16565671979087612,
+        "representable": true
+      },
+      {
+        "id": "spawn_ff468fbbd1dbc02b",
+        "targetType": "creature",
+        "targetId": "g2_whipper_earwig",
+        "world": {
+          "x": -102534.586,
+          "y": -23558.482,
+          "z": -647.12555
+        },
+        "u": 0.5954806260462394,
+        "v": 0.1840210575596593,
+        "representable": true
+      },
+      {
+        "id": "spawn_fc5b7d78ce20e51d",
+        "targetType": "creature",
+        "targetId": "g2_tick",
+        "world": {
+          "x": -25401.152,
+          "y": 58592.76,
+          "z": 4764.474
+        },
+        "u": 0.8844206187884108,
+        "v": 0.5387005069567418,
+        "representable": true
+      },
+      {
+        "id": "spawn_5180e84e617afdad",
+        "targetType": "creature",
+        "targetId": "g2_orb_weaver_jr",
+        "world": {
+          "x": -227811.42,
+          "y": -34580.383,
+          "z": 8091.5586
+        },
+        "u": 0.12619661223295284,
+        "v": 0.13643514549287455,
+        "representable": true
+      },
+      {
+        "id": "ice_sickles",
+        "targetType": "defense",
+        "targetId": "ice_sickles",
+        "world": {
+          "x": -91088.02,
+          "y": 64498.957,
+          "z": 3650.1682
+        },
+        "u": 0.6383591875914544,
+        "v": 0.5641998986761109,
+        "representable": true
+      }
+    ],
+    "abyss": [
+      {
+        "id": "spawn_644b3ec067fe2680",
+        "targetType": "creature",
+        "targetId": "g2_koi_dagon",
+        "world": {
+          "x": 220552.22,
+          "y": 218920.27,
+          "z": -13923.988
+        },
+        "u": 0.6730213459766278,
+        "v": 0.6577770275479743,
+        "representable": true
+      },
+      {
+        "id": "spawn_0e5472d5796816ea",
+        "targetType": "creature",
+        "targetId": "g2_ancient_pond_jockey",
+        "world": {
+          "x": 228858.58,
+          "y": 169636.9,
+          "z": -11497.101
+        },
+        "u": 0.7866201792320533,
+        "v": 0.2273619240938166,
+        "representable": true
+      },
+      {
+        "id": "spawn_c3d0ad3a3f240836",
+        "targetType": "creature",
+        "targetId": "g2_chop_r",
+        "world": {
+          "x": 182977.52,
+          "y": 172613.12,
+          "z": -9723.65
+        },
+        "u": 0.15914498136894809,
+        "v": 0.2533546684861407,
+        "representable": true
+      },
+      {
+        "id": "spawn_a60db83209376f02",
+        "targetType": "creature",
+        "targetId": "g2_tadpole",
+        "world": {
+          "x": 235199.72,
+          "y": 146294.92,
+          "z": -9440.637
+        },
+        "u": 0.87334241442404,
+        "v": 0.02350531411513871,
+        "representable": true
+      },
+      {
+        "id": "spawn_18c07b59211177ca",
+        "targetType": "creature",
+        "targetId": "g2_toe_biter_nymph",
+        "world": {
+          "x": 238475.39,
+          "y": 154182.67,
+          "z": 34636.684
+        },
+        "u": 0.9181408929549252,
+        "v": 0.09239278533049053,
+        "representable": true
+      }
+    ]
+  },
+  "pointsOutOfBounds": []
+}

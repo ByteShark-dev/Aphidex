@@ -1,1 +1,709 @@
-{"id":"g2_orc_weevil","speciesKey":"orc_weevil","collectionGroup":"orc","name":"O.R.C. Долгоносик","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":322,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Weevil_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Weevil_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Weevil.webp","weaknesses":["explosive"],"resistances":[],"temperament":"aggressive","health":{"value":45,"rating":1},"description":"O.R.C. Долгоносик перестаёт быть мирной добычей и превращается в ходячую бомбу. Он всё ещё мал и хрупок, но теперь его роль — заставить игрока постоянно помнить о взрыве.","behavior":"Он движется по коротким маршрутам O.R.C. и выглядит безобидно лишь издалека. В отличие от обычного долгоносика, он не убегает, а старается подобраться как можно ближе перед взрывом.","interactionWithPlayer":"Он атакует сразу после обнаружения, но его настоящая опасность — не серия ударов, а радиус взрыва. Его очень легко недооценить, когда вы уже заняты более крупными врагами.","interactionWithCreatures":"Он действует как расходуемая единица в волнах O.R.C., врываясь вперёд, чтобы ломать построение и наказывать тех, кто стоит на месте.","strategy":"Оставлять его в живых не имеет смысла. Убивайте его с дистанции или быстро добивайте и сразу отходите до взрыва, особенно если другие враги уже заставляют вас держаться на одном месте.","environments":["Церемониальная зона","Площадка для крокета","Площадка для крокета MIX.R","Волны O.R.C. в саду","Теплица MIX.R","Сетевой центр","Волны O.R.C. у пикника","Зона стола для пикника","Сосновый холм"],"loot":[{"section":"loot","item":"Unstable Goo","minCount":1,"maxCount":1},{"section":"loot","item":"Нос долгоносика","minCount":0,"maxCount":1},{"section":"rare","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"rare","item":"Unstable Goo","minCount":0,"maxCount":1}],"combatStats":{"health":45,"attackDamageSummary":"Взрыв: 50."},"abilities":[{"name":"Взрыв","description":"Он подбегает к цели и взрывается при смерти или как только подходит достаточно близко.","blockable":false,"breaksGuard":false,"staggers":true}],"groupId":null,"cardTier":2,"technicalId":"WeevilORC","bestiaryId":"WeevilORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[{"type":"explosive","bonusPct":20}],"resistancesV2":[],"weakPoints":[],"attacks":[],"encounterVariants":[{"id":"g2_wave_weevil_orc_wave","characterRow":"Weevil_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":45.0,"stun":{"max":null,"duration":null,"cooldown":null,"staggerThreshold":15}},"weakpoints":[],"resistances":[],"weaknesses":[{"damageTypes":["Explosive"],"percent":20.0,"sourceId":"DamageResistDownExplosive"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[],"mechanicSignals":[],"quality":{"resolvedAttacks":0,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":["ability_data_list_not_resolved"]},"variantKey":"g2_wave_weevil_orc_wave","nameEn":"O.R.C. Weevil Raid/Wave","nameEsMX":"Gorgojo C.R.O.  (Oleada)","nameRu":"O.R.C. Долгоносик Рейд/волна"}],"contextVariants":[{"id":"Weevil_ORC_Wave","characterRow":"Weevil_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":45.0,"stun":{"max":null,"duration":null,"cooldown":null,"staggerThreshold":15}},"weakpoints":[],"resistances":[],"weaknesses":[{"damageTypes":["Explosive"],"percent":20.0,"sourceId":"DamageResistDownExplosive"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[],"mechanicSignals":[],"quality":{"resolvedAttacks":0,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":["ability_data_list_not_resolved"]},"nameEsMX":"Gorgojo C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_weevil",
+  "speciesKey": "orc_weevil",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Долгоносик",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 322,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Weevil_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Weevil_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Weevil.webp",
+  "weaknesses": [
+    "explosive"
+  ],
+  "resistances": [],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 1,
+    "value": 45
+  },
+  "description": "O.R.C. Долгоносик перестаёт быть мирной добычей и превращается в ходячую бомбу. Он всё ещё мал и хрупок, но теперь его роль — заставить игрока постоянно помнить о взрыве.",
+  "behavior": "Он движется по коротким маршрутам O.R.C. и выглядит безобидно лишь издалека. В отличие от обычного долгоносика, он не убегает, а старается подобраться как можно ближе перед взрывом.",
+  "interactionWithPlayer": "Он атакует сразу после обнаружения, но его настоящая опасность — не серия ударов, а радиус взрыва. Его очень легко недооценить, когда вы уже заняты более крупными врагами.",
+  "interactionWithCreatures": "Он действует как расходуемая единица в волнах O.R.C., врываясь вперёд, чтобы ломать построение и наказывать тех, кто стоит на месте.",
+  "strategy": "Оставлять его в живых не имеет смысла. Убивайте его с дистанции или быстро добивайте и сразу отходите до взрыва, особенно если другие враги уже заставляют вас держаться на одном месте.",
+  "environments": [
+    "Церемониальная зона",
+    "Площадка для крокета",
+    "Площадка для крокета MIX.R",
+    "Волны O.R.C. в саду",
+    "Теплица MIX.R",
+    "Сетевой центр",
+    "Волны O.R.C. у пикника",
+    "Зона стола для пикника",
+    "Сосновый холм"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Unstable Goo",
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Weevil Nose",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 45,
+    "stunThreshold": null,
+    "stunCooldownSeconds": null
+  },
+  "abilities": [
+    {
+      "name": "Взрыв",
+      "description": "Он подбегает к цели и взрывается при смерти или как только подходит достаточно близко.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": true
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "WeevilORC",
+  "bestiaryId": "WeevilORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [
+    {
+      "type": "explosive",
+      "bonusPct": 20
+    }
+  ],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_weevil_orc_wave",
+      "characterRow": "Weevil_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 45.0,
+        "stun": {
+          "max": null,
+          "duration": null,
+          "cooldown": null,
+          "staggerThreshold": 15
+        }
+      },
+      "weakpoints": [],
+      "resistances": [],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Explosive"
+          ],
+          "percent": 20.0,
+          "sourceId": "DamageResistDownExplosive"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 0,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": [
+          "ability_data_list_not_resolved"
+        ]
+      },
+      "variantKey": "g2_wave_weevil_orc_wave",
+      "nameEn": "O.R.C. Weevil Raid/Wave",
+      "nameEsMX": "Gorgojo C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Долгоносик Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Weevil_ORC_Wave",
+      "characterRow": "Weevil_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 45.0,
+        "stun": {
+          "max": null,
+          "duration": null,
+          "cooldown": null,
+          "staggerThreshold": 15
+        }
+      },
+      "weakpoints": [],
+      "resistances": [],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Explosive"
+          ],
+          "percent": 20.0,
+          "sourceId": "DamageResistDownExplosive"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 0,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": [
+          "ability_data_list_not_resolved"
+        ]
+      },
+      "nameEsMX": "Gorgojo C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_d213cf6624b1bc6b",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -175708.2,
+        "y": 13216.873,
+        "z": 18300.0
+      },
+      "u": 0.3213740239976587,
+      "v": 0.34279483072771727,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b28fcb9ebc8d27e2",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -175050.48,
+        "y": 13405.231,
+        "z": 17100.0
+      },
+      "u": 0.3238378273339186,
+      "v": 0.3436080468167636,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_14e93360ea713076",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -174774.17,
+        "y": 15636.791,
+        "z": 18300.0
+      },
+      "u": 0.3248728779631255,
+      "v": 0.3532425751918374,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_15652990504a6003",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -172887.22,
+        "y": 13487.999,
+        "z": 18300.0
+      },
+      "u": 0.3319413473807434,
+      "v": 0.3439653890547264,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_54075e8327c7bc6c",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -172765.0,
+        "y": 15640.0,
+        "z": 18300.0
+      },
+      "u": 0.33239918056774953,
+      "v": 0.3532564297158276,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d1d7f75ab0cc9e47",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -176315.48,
+        "y": 13880.231,
+        "z": 17100.0
+      },
+      "u": 0.319099167690957,
+      "v": 0.3456588099502488,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f03a7be830ed608f",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -173893.56,
+        "y": 14486.791,
+        "z": 18300.0
+      },
+      "u": 0.32817162189054727,
+      "v": 0.3482775697107682,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b4d842c2bd823ee4",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -173465.0,
+        "y": 16140.0,
+        "z": 18300.0
+      },
+      "u": 0.32977699736611066,
+      "v": 0.35541512775107514,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3e30d2af122bb495",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -172283.67,
+        "y": 18136.484,
+        "z": 19530.0
+      },
+      "u": 0.33420223119695636,
+      "v": 0.3640347399274812,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0ae165fc8193a550",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -189057.89,
+        "y": 78280.22,
+        "z": -157.39864
+      },
+      "u": 0.2713664056189639,
+      "v": 0.6236990693987688,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_65acb3b0c57dd7e2",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -188515.95,
+        "y": 77027.69,
+        "z": -183.78856
+      },
+      "u": 0.27339649985367276,
+      "v": 0.6182914012985918,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3fbd25c860a9908d",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -56328.184,
+        "y": -40095.08,
+        "z": -4509.3086
+      },
+      "u": 0.7685686990927715,
+      "v": 0.1126260143351041,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_34ef39918f4338f2",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -55207.95,
+        "y": -39817.617,
+        "z": -4514.698
+      },
+      "u": 0.7727650687737782,
+      "v": 0.11382393200101189,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5faff92b89ed1e68",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -55987.312,
+        "y": -38697.293,
+        "z": -4488.3086
+      },
+      "u": 0.7698455974246414,
+      "v": 0.1186608144362931,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_157771a87ced6111",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -185837.1,
+        "y": 114997.66,
+        "z": 5645.4595
+      },
+      "u": 0.2834314076675446,
+      "v": 0.7822228005734042,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6353ba33ca7ddc4d",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -189263.55,
+        "y": 111878.52,
+        "z": 4112.084
+      },
+      "u": 0.27059600819432256,
+      "v": 0.7687562377940805,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6bddae9db239897f",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -185689.66,
+        "y": 109431.6,
+        "z": 2383.9473
+      },
+      "u": 0.28398371436932984,
+      "v": 0.7581919150012648,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_11d65d522d4b63ee",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -198056.44,
+        "y": 114181.75,
+        "z": 11731.883
+      },
+      "u": 0.23765805326309625,
+      "v": 0.7787001939455266,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b359a1f6c23b7b68",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -199967.62,
+        "y": 112906.47,
+        "z": 10804.128
+      },
+      "u": 0.2304988188469418,
+      "v": 0.7731943050847457,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eaad032911b34458",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -203030.0,
+        "y": 119422.15,
+        "z": 10758.333
+      },
+      "u": 0.219027216856892,
+      "v": 0.8013250763133486,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_26b073540ab1da0b",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -191055.78,
+        "y": 121723.25,
+        "z": 7730.128
+      },
+      "u": 0.2638823576236465,
+      "v": 0.8112598364111645,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2ebf4198a2b46f82",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -191559.1,
+        "y": 120569.88,
+        "z": 7953.347
+      },
+      "u": 0.26199693298214805,
+      "v": 0.8062802813053378,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_34067371c9b19942",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -163669.36,
+        "y": 69078.51,
+        "z": 10829.71
+      },
+      "u": 0.36647122973368457,
+      "v": 0.5839716428029345,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_336ed070c3104c0a",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -58080.52,
+        "y": -44177.895,
+        "z": -4333.1943
+      },
+      "u": 0.7620044904887329,
+      "v": 0.09499888489754624,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0640eef2811eb5d1",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -55727.793,
+        "y": -32948.04,
+        "z": -4593.1943
+      },
+      "u": 0.7708177493707931,
+      "v": 0.14348261674677457,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_02dd7afe9cd67975",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -192300.52,
+        "y": -49517.895,
+        "z": 1626.8055
+      },
+      "u": 0.2592195914544923,
+      "v": 0.07194398988110301,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_836d52cf364bd8ab",
+      "targetType": "creature",
+      "targetId": "g2_orc_weevil",
+      "technicalId": "WeevilORC",
+      "map": "surface",
+      "world": {
+        "x": -189668.95,
+        "y": 76977.69,
+        "z": -178.39864
+      },
+      "u": 0.26907738952297333,
+      "v": 0.618075531495067,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Unstable Goo",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Unstable Goo",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Weevil Nose",
+      "countLabel": "1",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

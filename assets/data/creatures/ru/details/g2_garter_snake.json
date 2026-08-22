@@ -1,1 +1,61 @@
-{"id":"g2_garter_snake","speciesKey":"garter_snake","collectionGroup":"neutral","name":"Подвязочная змея","game":"g2","tier":5,"danger":"intermedia","isBoss":true,"order":275,"defaultGold":true,"cardNormal":"","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_Garter_Snake.png","photo":"assets/g2/creatures/photos/Garter_Snake.webp","weaknesses":[],"resistances":[],"temperament":"neutral","description":"Огромное нейтральное существо, бродящее по открытым зонам парка и способное мгновенно превратиться из фонового присутствия в серьёзную угрозу после провокации. Одних только размеров достаточно, чтобы менялось ощущение пространства рядом с ним.","behavior":"Она патрулирует широкие маршруты и использует тело и дальность, чтобы контролировать большое пространство без всякой спешки. Вместо скорости погони она внушает уважение тем, что постоянно вынуждает менять позицию.","interactionWithPlayer":"Она не всегда начинает бой первой, но после агра очень больно наказывает на ближней и средней дистанции. Типичная ошибка — воспринимать её просто как большую цель, когда на деле она ещё и отнимает огромное количество полезного пространства.","interactionWithCreatures":"Размеры позволяют ей почти без усилий давить более мелких существ. Даже вне прямого боя одного её движения достаточно, чтобы соседние мелкие насекомые казались рядом с ней совершенно неуместными.","strategy":"Уважай её дальность, не запаздывай с блоком и жди окон после длинных действий. Такой бой выигрывается не бесконечной агрессией, а точным пониманием, когда нужно входить, а когда просто отдавать пространство.","environments":["Площадка для крокета"],"combatStats":{"attackDamageSummary":"Bite: 1000"},"abilities":[{"name":"Укус","description":"Быстрая базовая атака вблизи."}],"groupId":null,"cardTier":5,"technicalId":"SnakeDummy","bestiaryId":"SnakeDummy","bossCardStyle":"yellow","isKillable":false,"healthDisplay":"hidden","elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":null,"listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":false,"defaultCardVariant":"gold"}
+{
+  "id": "g2_garter_snake",
+  "speciesKey": "garter_snake",
+  "collectionGroup": "neutral",
+  "name": "Подвязочная змея",
+  "game": "g2",
+  "tier": 5,
+  "danger": "intermedia",
+  "isBoss": true,
+  "order": 275,
+  "defaultGold": true,
+  "cardNormal": "",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_Garter_Snake.png",
+  "photo": "assets/g2/creatures/photos/Garter_Snake.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "neutral",
+  "description": "Огромное нейтральное существо, бродящее по открытым зонам парка и способное мгновенно превратиться из фонового присутствия в серьёзную угрозу после провокации. Одних только размеров достаточно, чтобы менялось ощущение пространства рядом с ним.",
+  "behavior": "Она патрулирует широкие маршруты и использует тело и дальность, чтобы контролировать большое пространство без всякой спешки. Вместо скорости погони она внушает уважение тем, что постоянно вынуждает менять позицию.",
+  "interactionWithPlayer": "Она не всегда начинает бой первой, но после агра очень больно наказывает на ближней и средней дистанции. Типичная ошибка — воспринимать её просто как большую цель, когда на деле она ещё и отнимает огромное количество полезного пространства.",
+  "interactionWithCreatures": "Размеры позволяют ей почти без усилий давить более мелких существ. Даже вне прямого боя одного её движения достаточно, чтобы соседние мелкие насекомые казались рядом с ней совершенно неуместными.",
+  "strategy": "Уважай её дальность, не запаздывай с блоком и жди окон после длинных действий. Такой бой выигрывается не бесконечной агрессией, а точным пониманием, когда нужно входить, а когда просто отдавать пространство.",
+  "environments": [
+    "Площадка для крокета"
+  ],
+  "combatStats": {
+    "attackDamageSummary": "Bite: 1000"
+  },
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Быстрая базовая атака вблизи."
+    }
+  ],
+  "groupId": null,
+  "cardTier": 5,
+  "technicalId": "SnakeDummy",
+  "bestiaryId": "SnakeDummy",
+  "bossCardStyle": "yellow",
+  "isKillable": false,
+  "healthDisplay": "hidden",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": null,
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": false,
+  "defaultCardVariant": "gold",
+  "appearanceType": "no_natural_spawn",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22"
+}

@@ -1,0 +1,1787 @@
+{
+  "schema": "aphidex-defenses-v1",
+  "version": "1.3.0",
+  "scheduledGroupPolicy": "source_index_not_official_wave",
+  "entries": [
+    {
+      "id": "g2_mixr_defenses",
+      "kind": "mixr",
+      "customAsset": "assets/g2/defenses/MIXR_Entry_Icon.png",
+      "variants": [
+        {
+          "id": "mixr_greenhouse",
+          "mixrId": "mixr_7545",
+          "name": {
+            "en": "MIX.R Greenhouse",
+            "es": "MIX.R Invernadero",
+            "ru": "MIX.R Теплица"
+          },
+          "difficulty": "EDefensePointDifficulty::Hard",
+          "totalCreatures": 72,
+          "location": {
+            "map": "surface",
+            "u": 0.22203823880597015,
+            "v": 0.26613376716417914
+          },
+          "scheduledGroups": [
+            {
+              "index": 0,
+              "displayOrdinal": 1,
+              "timeSeconds": 0.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "PotatoBeetleORC",
+                  "publicId": "g2_orc_potato_beetle",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 1,
+              "displayOrdinal": 2,
+              "timeSeconds": 2.5,
+              "declaredScheduledCreatures": 10,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "ScorplingORC",
+                  "publicId": "g2_orc_northern_scorpling",
+                  "count": 3
+                },
+                {
+                  "technicalId": "SpiderlingORC",
+                  "publicId": "g2_orc_spiderling",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "displayOrdinal": 3,
+              "timeSeconds": 40.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "WeevilORC",
+                  "publicId": "g2_orc_weevil",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 3,
+              "displayOrdinal": 4,
+              "timeSeconds": 43.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "WeevilORC",
+                  "publicId": "g2_orc_weevil",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 4,
+              "displayOrdinal": 5,
+              "timeSeconds": 46.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "WeevilORC",
+                  "publicId": "g2_orc_weevil",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 5,
+              "displayOrdinal": 6,
+              "timeSeconds": 49.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "WeevilORC",
+                  "publicId": "g2_orc_weevil",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 6,
+              "displayOrdinal": 7,
+              "timeSeconds": 50.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "Cockroach_NymphORC",
+                  "publicId": "g2_orc_cockroach_nymph",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 7,
+              "displayOrdinal": 8,
+              "timeSeconds": 52.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "Cockroach_NymphORC",
+                  "publicId": "g2_orc_cockroach_nymph",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 8,
+              "displayOrdinal": 9,
+              "timeSeconds": 53.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "Cockroach_NymphORC",
+                  "publicId": "g2_orc_cockroach_nymph",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 9,
+              "displayOrdinal": 10,
+              "timeSeconds": 54.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "Cockroach_NymphORC",
+                  "publicId": "g2_orc_cockroach_nymph",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 10,
+              "displayOrdinal": 11,
+              "timeSeconds": 54.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "SpiderOrbORC",
+                  "publicId": "g2_orc_weaver",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 11,
+              "displayOrdinal": 12,
+              "timeSeconds": 64.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "WeevilORC",
+                  "publicId": "g2_orc_weevil",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 12,
+              "displayOrdinal": 13,
+              "timeSeconds": 70.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "WeevilORC",
+                  "publicId": "g2_orc_weevil",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 13,
+              "displayOrdinal": 14,
+              "timeSeconds": 91.0,
+              "declaredScheduledCreatures": 3,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "AntBlackSoldierORC",
+                  "publicId": "g2_orc_black_soldier_ant",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "index": 14,
+              "displayOrdinal": 15,
+              "timeSeconds": 92.0,
+              "declaredScheduledCreatures": 3,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "AntBlackSoldierORC",
+                  "publicId": "g2_orc_black_soldier_ant",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "index": 15,
+              "displayOrdinal": 16,
+              "timeSeconds": 94.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "RustBeetleORC",
+                  "publicId": "g2_orc_rust_beetle",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 16,
+              "displayOrdinal": 17,
+              "timeSeconds": 147.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "LarvaORC",
+                  "publicId": "g2_orc_larva",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 17,
+              "displayOrdinal": 18,
+              "timeSeconds": 150.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "FireflyOrc",
+                  "publicId": "g2_orc_firefly",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 18,
+              "displayOrdinal": 19,
+              "timeSeconds": 151.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "FireflyOrc",
+                  "publicId": "g2_orc_firefly",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 19,
+              "displayOrdinal": 20,
+              "timeSeconds": 152.0,
+              "declaredScheduledCreatures": 3,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "LarvaORC",
+                  "publicId": "g2_orc_larva",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "index": 20,
+              "displayOrdinal": 21,
+              "timeSeconds": 156.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "FireflyOrc",
+                  "publicId": "g2_orc_firefly",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 21,
+              "displayOrdinal": 22,
+              "timeSeconds": 156.5,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "FireflyOrc",
+                  "publicId": "g2_orc_firefly",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 22,
+              "displayOrdinal": 23,
+              "timeSeconds": 157.0,
+              "declaredScheduledCreatures": 3,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "LarvaORC",
+                  "publicId": "g2_orc_larva",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "index": 23,
+              "displayOrdinal": 24,
+              "timeSeconds": 201.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "WaspORC",
+                  "publicId": "g2_orc_wasp",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 24,
+              "displayOrdinal": 25,
+              "timeSeconds": 209.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "WaspDroneORC",
+                  "publicId": "g2_orc_wasp_drone",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 25,
+              "displayOrdinal": 26,
+              "timeSeconds": 213.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "WeevilORC",
+                  "publicId": "g2_orc_weevil",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 26,
+              "displayOrdinal": 27,
+              "timeSeconds": 216.0,
+              "declaredScheduledCreatures": 4,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "SpiderlingORC",
+                  "publicId": "g2_orc_spiderling",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 27,
+              "displayOrdinal": 28,
+              "timeSeconds": 223.0,
+              "declaredScheduledCreatures": 4,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "ScorplingORC",
+                  "publicId": "g2_orc_northern_scorpling",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 28,
+              "displayOrdinal": 29,
+              "timeSeconds": 240.0,
+              "declaredScheduledCreatures": 3,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "SpiderOrbJrORC",
+                  "publicId": "g2_orc_weaver_jr",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 29,
+              "displayOrdinal": 30,
+              "timeSeconds": 245.0,
+              "declaredScheduledCreatures": 5,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "AntRedSoldierORC",
+                  "publicId": "g2_orc_red_soldier_ant",
+                  "count": 1
+                },
+                {
+                  "technicalId": "Cockroach_NymphORC",
+                  "publicId": "g2_orc_cockroach_nymph",
+                  "count": 1
+                },
+                {
+                  "technicalId": "EarwigORC",
+                  "publicId": "g2_orc_pincher_earwig",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 30,
+              "displayOrdinal": 31,
+              "timeSeconds": 252.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "EarwigRangeORC",
+                  "publicId": "g2_orc_whipper_earwig",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 31,
+              "displayOrdinal": 32,
+              "timeSeconds": 275.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "SpiderWolfORC",
+                  "publicId": "g2_orc_wolf_spider",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "attackers": [
+            {
+              "technicalId": "WeevilORC",
+              "publicId": "g2_orc_weevil",
+              "count": 12
+            },
+            {
+              "technicalId": "Cockroach_NymphORC",
+              "publicId": "g2_orc_cockroach_nymph",
+              "count": 10
+            },
+            {
+              "technicalId": "ScorplingORC",
+              "publicId": "g2_orc_northern_scorpling",
+              "count": 9
+            },
+            {
+              "technicalId": "SpiderlingORC",
+              "publicId": "g2_orc_spiderling",
+              "count": 9
+            },
+            {
+              "technicalId": "LarvaORC",
+              "publicId": "g2_orc_larva",
+              "count": 8
+            },
+            {
+              "technicalId": "AntBlackSoldierORC",
+              "publicId": "g2_orc_black_soldier_ant",
+              "count": 6
+            },
+            {
+              "technicalId": "FireflyOrc",
+              "publicId": "g2_orc_firefly",
+              "count": 5
+            },
+            {
+              "technicalId": "SpiderOrbJrORC",
+              "publicId": "g2_orc_weaver_jr",
+              "count": 3
+            },
+            {
+              "technicalId": "AntRedSoldierORC",
+              "publicId": "g2_orc_red_soldier_ant",
+              "count": 2
+            },
+            {
+              "technicalId": "EarwigORC",
+              "publicId": "g2_orc_pincher_earwig",
+              "count": 1
+            },
+            {
+              "technicalId": "EarwigRangeORC",
+              "publicId": "g2_orc_whipper_earwig",
+              "count": 1
+            },
+            {
+              "technicalId": "PotatoBeetleORC",
+              "publicId": "g2_orc_potato_beetle",
+              "count": 1
+            },
+            {
+              "technicalId": "RustBeetleORC",
+              "publicId": "g2_orc_rust_beetle",
+              "count": 1
+            },
+            {
+              "technicalId": "WaspORC",
+              "publicId": "g2_orc_wasp",
+              "count": 1
+            },
+            {
+              "technicalId": "WaspDroneORC",
+              "publicId": "g2_orc_wasp_drone",
+              "count": 1
+            },
+            {
+              "technicalId": "SpiderOrbORC",
+              "publicId": "g2_orc_weaver",
+              "count": 1
+            },
+            {
+              "technicalId": "SpiderWolfORC",
+              "publicId": "g2_orc_wolf_spider",
+              "count": 1
+            }
+          ],
+          "image": "assets/g2/defenses/mixr_greenhouse.webp",
+          "markerAsset": "assets/g2/defenses/MIXR_Map_Marker.png",
+          "imageStatus": "verified",
+          "rewards": {
+            "rawScience": 4000,
+            "rawScienceSources": [
+              {
+                "asset": "BP_RawScience_DefenseReward_Tiny",
+                "scienceAmount": 1000
+              },
+              {
+                "asset": "BP_RawScience_DefenseReward_Small",
+                "scienceAmount": 3000
+              }
+            ],
+            "mutationProgress": [
+              {
+                "id": "guard_dog",
+                "amount": null
+              }
+            ],
+            "equipment": [],
+            "recipes": []
+          }
+        },
+        {
+          "id": "mixr_picnic",
+          "mixrId": "mixr_7546",
+          "name": {
+            "en": "MIX.R Picnic",
+            "es": "MIX.R Pícnic",
+            "ru": "MIX.R Пикник"
+          },
+          "difficulty": "EDefensePointDifficulty::Hard",
+          "totalCreatures": 38,
+          "location": {
+            "map": "surface",
+            "u": 0.21620014925373132,
+            "v": 0.6422136895522388
+          },
+          "scheduledGroups": [
+            {
+              "index": 0,
+              "displayOrdinal": 1,
+              "timeSeconds": 0.0,
+              "declaredScheduledCreatures": 6,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "SpiderOrbJrORC",
+                  "publicId": "g2_orc_weaver_jr",
+                  "count": 1
+                },
+                {
+                  "technicalId": "WeevilORC",
+                  "publicId": "g2_orc_weevil",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 1,
+              "displayOrdinal": 2,
+              "timeSeconds": 25.0,
+              "declaredScheduledCreatures": 7,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "SpiderOrbORC",
+                  "publicId": "g2_orc_weaver",
+                  "count": 1
+                },
+                {
+                  "technicalId": "SpiderlingORC",
+                  "publicId": "g2_orc_spiderling",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "displayOrdinal": 3,
+              "timeSeconds": 45.0,
+              "declaredScheduledCreatures": 5,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "AntRedSoldierORC",
+                  "publicId": "g2_orc_red_soldier_ant",
+                  "count": 3
+                },
+                {
+                  "technicalId": "LadybugORC",
+                  "publicId": "g2_orc_ladybug",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 3,
+              "displayOrdinal": 4,
+              "timeSeconds": 125.0,
+              "declaredScheduledCreatures": 10,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "ScorplingORC",
+                  "publicId": "g2_orc_northern_scorpling",
+                  "count": 2
+                },
+                {
+                  "technicalId": "WeevilORC",
+                  "publicId": "g2_orc_weevil",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "index": 4,
+              "displayOrdinal": 5,
+              "timeSeconds": 150.0,
+              "declaredScheduledCreatures": 3,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "NorthernScorpionJrORC",
+                  "publicId": "g2_orc_northern_scorpion_jr",
+                  "count": 2
+                },
+                {
+                  "technicalId": "NorthernScorpionORC",
+                  "publicId": "g2_orc_northern_scorpion",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 5,
+              "displayOrdinal": 6,
+              "timeSeconds": 165.0,
+              "declaredScheduledCreatures": 6,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "AntRedSoldierORC",
+                  "publicId": "g2_orc_red_soldier_ant",
+                  "count": 1
+                },
+                {
+                  "technicalId": "ScorplingORC",
+                  "publicId": "g2_orc_northern_scorpling",
+                  "count": 3
+                },
+                {
+                  "technicalId": "SpiderOrbORC",
+                  "publicId": "g2_orc_weaver",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 6,
+              "displayOrdinal": 7,
+              "timeSeconds": 195.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "GreenMantisORC",
+                  "publicId": "g2_orc_praying_mantis_nymph",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "attackers": [
+            {
+              "technicalId": "WeevilORC",
+              "publicId": "g2_orc_weevil",
+              "count": 10
+            },
+            {
+              "technicalId": "ScorplingORC",
+              "publicId": "g2_orc_northern_scorpling",
+              "count": 7
+            },
+            {
+              "technicalId": "SpiderlingORC",
+              "publicId": "g2_orc_spiderling",
+              "count": 6
+            },
+            {
+              "technicalId": "AntRedSoldierORC",
+              "publicId": "g2_orc_red_soldier_ant",
+              "count": 5
+            },
+            {
+              "technicalId": "LadybugORC",
+              "publicId": "g2_orc_ladybug",
+              "count": 2
+            },
+            {
+              "technicalId": "SpiderOrbORC",
+              "publicId": "g2_orc_weaver",
+              "count": 2
+            },
+            {
+              "technicalId": "SpiderOrbJrORC",
+              "publicId": "g2_orc_weaver_jr",
+              "count": 2
+            },
+            {
+              "technicalId": "NorthernScorpionJrORC",
+              "publicId": "g2_orc_northern_scorpion_jr",
+              "count": 2
+            },
+            {
+              "technicalId": "GreenMantisORC",
+              "publicId": "g2_orc_praying_mantis_nymph",
+              "count": 1
+            },
+            {
+              "technicalId": "NorthernScorpionORC",
+              "publicId": "g2_orc_northern_scorpion",
+              "count": 1
+            }
+          ],
+          "image": "assets/g2/creatures/photos/MIXR_Defenses_G2.webp",
+          "markerAsset": "assets/g2/defenses/MIXR_Map_Marker.png",
+          "imageStatus": "known_pending_assets",
+          "rewards": {
+            "rawScience": 4000,
+            "rawScienceSources": [
+              {
+                "asset": "BP_RawScience_DefenseReward_Tiny",
+                "scienceAmount": 1000
+              },
+              {
+                "asset": "BP_RawScience_DefenseReward_Small",
+                "scienceAmount": 3000
+              }
+            ],
+            "mutationProgress": [
+              {
+                "id": "guard_dog",
+                "amount": null
+              }
+            ],
+            "equipment": [],
+            "recipes": []
+          }
+        },
+        {
+          "id": "mixr_resting",
+          "mixrId": "mixr_7547",
+          "name": {
+            "en": "MIX.R Resting",
+            "es": "MIX.R Descanso",
+            "ru": "MIX.R Зона отдыха"
+          },
+          "difficulty": "EDefensePointDifficulty::VeryHard",
+          "totalCreatures": 61,
+          "location": {
+            "map": "surface",
+            "u": 0.613540447761194,
+            "v": 0.2925163492537313
+          },
+          "scheduledGroups": [
+            {
+              "index": 0,
+              "displayOrdinal": 1,
+              "timeSeconds": 0.0,
+              "declaredScheduledCreatures": 6,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "StripedBarkScorplingORC",
+                  "publicId": "g2_orc_striped_bark_scorpling",
+                  "count": 4
+                }
+              ]
+            },
+            {
+              "index": 1,
+              "displayOrdinal": 2,
+              "timeSeconds": 2.2,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "SpiderOrbORC",
+                  "publicId": "g2_orc_weaver",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "displayOrdinal": 3,
+              "timeSeconds": 3.0,
+              "declaredScheduledCreatures": 6,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "WeevilORC",
+                  "publicId": "g2_orc_weevil",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "index": 3,
+              "displayOrdinal": 4,
+              "timeSeconds": 35.0,
+              "declaredScheduledCreatures": 5,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "LarvaORC",
+                  "publicId": "g2_orc_larva",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "index": 4,
+              "displayOrdinal": 5,
+              "timeSeconds": 36.5,
+              "declaredScheduledCreatures": 5,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "LarvaORC",
+                  "publicId": "g2_orc_larva",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "index": 5,
+              "displayOrdinal": 6,
+              "timeSeconds": 43.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "BlueButterflyORC",
+                  "publicId": "g2_orc_blue_butterfly",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 6,
+              "displayOrdinal": 7,
+              "timeSeconds": 47.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "BlueButterflyORC",
+                  "publicId": "g2_orc_blue_butterfly",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 7,
+              "displayOrdinal": 8,
+              "timeSeconds": 80.0,
+              "declaredScheduledCreatures": 3,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "ToeBiterNymphORC",
+                  "publicId": "g2_orc_toe_biter_nymph",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "index": 8,
+              "displayOrdinal": 9,
+              "timeSeconds": 83.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "BeeORC",
+                  "publicId": "g2_orc_bee",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 9,
+              "displayOrdinal": 10,
+              "timeSeconds": 105.0,
+              "declaredScheduledCreatures": 3,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "AntBlackSoldierORC",
+                  "publicId": "g2_orc_black_soldier_ant",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 10,
+              "displayOrdinal": 11,
+              "timeSeconds": 125.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "FireflyOrc",
+                  "publicId": "g2_orc_firefly",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 11,
+              "displayOrdinal": 12,
+              "timeSeconds": 127.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "FireflyOrc",
+                  "publicId": "g2_orc_firefly",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 12,
+              "displayOrdinal": 13,
+              "timeSeconds": 129.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "FireflyOrc",
+                  "publicId": "g2_orc_firefly",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 13,
+              "displayOrdinal": 14,
+              "timeSeconds": 131.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "StripedBarkScorpionAdultORC",
+                  "publicId": "g2_orc_striped_bark_scorpion",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 14,
+              "displayOrdinal": 15,
+              "timeSeconds": 132.5,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "FireflyOrc",
+                  "publicId": "g2_orc_firefly",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 15,
+              "displayOrdinal": 16,
+              "timeSeconds": 134.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "MosquitoTigerORC",
+                  "publicId": "g2_orc_tiger_mosquito",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 16,
+              "displayOrdinal": 17,
+              "timeSeconds": 185.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "SpiderlingORC",
+                  "publicId": "g2_orc_spiderling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 17,
+              "displayOrdinal": 18,
+              "timeSeconds": 187.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "RustBeetleORC",
+                  "publicId": "g2_orc_rust_beetle",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 18,
+              "displayOrdinal": 19,
+              "timeSeconds": 188.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "StripedBarkScorpionJrORC",
+                  "publicId": "g2_orc_striped_bark_scorpion_jr",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 19,
+              "displayOrdinal": 20,
+              "timeSeconds": 190.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "ToeBiterAdultORC",
+                  "publicId": "g2_orc_toe_biter",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 20,
+              "displayOrdinal": 21,
+              "timeSeconds": 193.0,
+              "declaredScheduledCreatures": 2,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "SpiderlingORC",
+                  "publicId": "g2_orc_spiderling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 21,
+              "displayOrdinal": 22,
+              "timeSeconds": 195.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "SpiderOrbJrORC",
+                  "publicId": "g2_orc_weaver_jr",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 22,
+              "displayOrdinal": 23,
+              "timeSeconds": 235.0,
+              "declaredScheduledCreatures": 4,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "AntRedSoldierORC",
+                  "publicId": "g2_orc_red_soldier_ant",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 23,
+              "displayOrdinal": 24,
+              "timeSeconds": 238.0,
+              "declaredScheduledCreatures": 4,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "AntRedSoldierORC",
+                  "publicId": "g2_orc_red_soldier_ant",
+                  "count": 1
+                },
+                {
+                  "technicalId": "StripedBarkScorpionJrORC",
+                  "publicId": "g2_orc_striped_bark_scorpion_jr",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 24,
+              "displayOrdinal": 25,
+              "timeSeconds": 239.0,
+              "declaredScheduledCreatures": 4,
+              "compositionStatus": "partial_source_anchors",
+              "creatures": [
+                {
+                  "technicalId": "AntRedSoldierORC",
+                  "publicId": "g2_orc_red_soldier_ant",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 25,
+              "displayOrdinal": 26,
+              "timeSeconds": 241.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "EarwigORC",
+                  "publicId": "g2_orc_pincher_earwig",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 26,
+              "displayOrdinal": 27,
+              "timeSeconds": 243.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "StripedBarkScorpionJrORC",
+                  "publicId": "g2_orc_striped_bark_scorpion_jr",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 27,
+              "displayOrdinal": 28,
+              "timeSeconds": 280.0,
+              "declaredScheduledCreatures": 1,
+              "compositionStatus": "complete",
+              "creatures": [
+                {
+                  "technicalId": "ToeBiterLeviathanORC",
+                  "publicId": "g2_orc_toe_biter_leviathan",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "attackers": [
+            {
+              "technicalId": "AntRedSoldierORC",
+              "publicId": "g2_orc_red_soldier_ant",
+              "count": 11
+            },
+            {
+              "technicalId": "LarvaORC",
+              "publicId": "g2_orc_larva",
+              "count": 10
+            },
+            {
+              "technicalId": "StripedBarkScorplingORC",
+              "publicId": "g2_orc_striped_bark_scorpling",
+              "count": 6
+            },
+            {
+              "technicalId": "WeevilORC",
+              "publicId": "g2_orc_weevil",
+              "count": 6
+            },
+            {
+              "technicalId": "FireflyOrc",
+              "publicId": "g2_orc_firefly",
+              "count": 4
+            },
+            {
+              "technicalId": "SpiderlingORC",
+              "publicId": "g2_orc_spiderling",
+              "count": 4
+            },
+            {
+              "technicalId": "AntBlackSoldierORC",
+              "publicId": "g2_orc_black_soldier_ant",
+              "count": 3
+            },
+            {
+              "technicalId": "StripedBarkScorpionJrORC",
+              "publicId": "g2_orc_striped_bark_scorpion_jr",
+              "count": 3
+            },
+            {
+              "technicalId": "ToeBiterNymphORC",
+              "publicId": "g2_orc_toe_biter_nymph",
+              "count": 3
+            },
+            {
+              "technicalId": "EarwigORC",
+              "publicId": "g2_orc_pincher_earwig",
+              "count": 1
+            },
+            {
+              "technicalId": "RustBeetleORC",
+              "publicId": "g2_orc_rust_beetle",
+              "count": 1
+            },
+            {
+              "technicalId": "BeeORC",
+              "publicId": "g2_orc_bee",
+              "count": 1
+            },
+            {
+              "technicalId": "BlueButterflyORC",
+              "publicId": "g2_orc_blue_butterfly",
+              "count": 1
+            },
+            {
+              "technicalId": "MosquitoTigerORC",
+              "publicId": "g2_orc_tiger_mosquito",
+              "count": 1
+            },
+            {
+              "technicalId": "StripedBarkScorpionAdultORC",
+              "publicId": "g2_orc_striped_bark_scorpion",
+              "count": 1
+            },
+            {
+              "technicalId": "ToeBiterAdultORC",
+              "publicId": "g2_orc_toe_biter",
+              "count": 1
+            },
+            {
+              "technicalId": "ToeBiterLeviathanORC",
+              "publicId": "g2_orc_toe_biter_leviathan",
+              "count": 1
+            },
+            {
+              "technicalId": "BlueButterflyORC",
+              "publicId": "g2_orc_blue_butterfly",
+              "count": 1
+            },
+            {
+              "technicalId": "SpiderOrbORC",
+              "publicId": "g2_orc_weaver",
+              "count": 1
+            },
+            {
+              "technicalId": "SpiderOrbJrORC",
+              "publicId": "g2_orc_weaver_jr",
+              "count": 1
+            }
+          ],
+          "image": "assets/g2/creatures/photos/MIXR_Defenses_G2.webp",
+          "markerAsset": "assets/g2/defenses/MIXR_Map_Marker.png",
+          "imageStatus": "known_pending_assets",
+          "rewards": {
+            "rawScience": 4000,
+            "rawScienceSources": [
+              {
+                "asset": "BP_RawScience_DefenseReward_Tiny",
+                "scienceAmount": 1000
+              },
+              {
+                "asset": "BP_RawScience_DefenseReward_Small",
+                "scienceAmount": 3000
+              }
+            ],
+            "mutationProgress": [
+              {
+                "id": "guard_dog",
+                "amount": null
+              }
+            ],
+            "equipment": [],
+            "recipes": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "g2_ice_sickles_event",
+      "kind": "story_defense",
+      "customAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "variants": [
+        {
+          "id": "ice_sickles",
+          "name": {
+            "en": "Ice Sickles",
+            "es": "Hoces de hielo",
+            "ru": "Ледяные серпы"
+          },
+          "difficulty": null,
+          "totalCreatures": 31,
+          "location": {
+            "map": "surface",
+            "u": 0.5086924776119403,
+            "v": 0.6029819611940298
+          },
+          "scheduledGroups": [
+            {
+              "index": 0,
+              "displayOrdinal": 1,
+              "timeSeconds": 2.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 1,
+              "displayOrdinal": 2,
+              "timeSeconds": 7.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "displayOrdinal": 3,
+              "timeSeconds": 12.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 3,
+              "displayOrdinal": 4,
+              "timeSeconds": 37.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 4,
+              "displayOrdinal": 5,
+              "timeSeconds": 40.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 5,
+              "displayOrdinal": 6,
+              "timeSeconds": 42.0,
+              "creatures": [
+                {
+                  "technicalId": "NorthernScorpionJr",
+                  "publicId": "g2_northern_scorpion_jr",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 6,
+              "displayOrdinal": 7,
+              "timeSeconds": 48.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 7,
+              "displayOrdinal": 8,
+              "timeSeconds": 85.0,
+              "creatures": [
+                {
+                  "technicalId": "NorthernScorpionJr",
+                  "publicId": "g2_northern_scorpion_jr",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 8,
+              "displayOrdinal": 9,
+              "timeSeconds": 88.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 9,
+              "displayOrdinal": 10,
+              "timeSeconds": 98.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 10,
+              "displayOrdinal": 11,
+              "timeSeconds": 103.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 11,
+              "displayOrdinal": 12,
+              "timeSeconds": 143.0,
+              "creatures": [
+                {
+                  "technicalId": "NorthernScorpionJr",
+                  "publicId": "g2_northern_scorpion_jr",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 12,
+              "displayOrdinal": 13,
+              "timeSeconds": 146.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 13,
+              "displayOrdinal": 14,
+              "timeSeconds": 161.0,
+              "creatures": [
+                {
+                  "technicalId": "NorthernScorpionJr",
+                  "publicId": "g2_northern_scorpion_jr",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 14,
+              "displayOrdinal": 15,
+              "timeSeconds": 166.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 15,
+              "displayOrdinal": 16,
+              "timeSeconds": 169.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 16,
+              "displayOrdinal": 17,
+              "timeSeconds": 172.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 17,
+              "displayOrdinal": 18,
+              "timeSeconds": 216.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 18,
+              "displayOrdinal": 19,
+              "timeSeconds": 224.0,
+              "creatures": [
+                {
+                  "technicalId": "NorthernScorpion",
+                  "publicId": "g2_northern_scorpion",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 19,
+              "displayOrdinal": 20,
+              "timeSeconds": 236.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 20,
+              "displayOrdinal": 21,
+              "timeSeconds": 239.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 21,
+              "displayOrdinal": 22,
+              "timeSeconds": 242.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 22,
+              "displayOrdinal": 23,
+              "timeSeconds": 276.0,
+              "creatures": [
+                {
+                  "technicalId": "NorthernScorpion",
+                  "publicId": "g2_northern_scorpion",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 23,
+              "displayOrdinal": 24,
+              "timeSeconds": 282.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "index": 24,
+              "displayOrdinal": 25,
+              "timeSeconds": 315.0,
+              "creatures": [
+                {
+                  "technicalId": "NorthernScorpionJr",
+                  "publicId": "g2_northern_scorpion_jr",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 25,
+              "displayOrdinal": 26,
+              "timeSeconds": 323.0,
+              "creatures": [
+                {
+                  "technicalId": "NorthernScorpionJr",
+                  "publicId": "g2_northern_scorpion_jr",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 26,
+              "displayOrdinal": 27,
+              "timeSeconds": 326.0,
+              "creatures": [
+                {
+                  "technicalId": "Scorpling",
+                  "publicId": "g2_northern_scorpling",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 27,
+              "displayOrdinal": 28,
+              "timeSeconds": 328.0,
+              "creatures": [
+                {
+                  "technicalId": "NorthernScorpion",
+                  "publicId": "g2_northern_scorpion",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "index": 28,
+              "displayOrdinal": 29,
+              "timeSeconds": 329.0,
+              "creatures": [
+                {
+                  "technicalId": "NorthernScorpionJr",
+                  "publicId": "g2_northern_scorpion_jr",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "attackers": [
+            {
+              "technicalId": "NorthernScorpion",
+              "publicId": "g2_northern_scorpion",
+              "count": 3
+            },
+            {
+              "technicalId": "NorthernScorpionJr",
+              "publicId": "g2_northern_scorpion_jr",
+              "count": 7
+            },
+            {
+              "technicalId": "Scorpling",
+              "publicId": "g2_northern_scorpling",
+              "count": 21
+            }
+          ],
+          "image": "assets/g2/creatures/photos/Ice_Sickles_Defense.webp",
+          "imageStatus": "verified_historical",
+          "rewards": {
+            "rawScience": null,
+            "rawScienceSources": [],
+            "mutationProgress": [
+              {
+                "id": "guard_dog",
+                "amount": null
+              }
+            ],
+            "equipment": [
+              {
+                "id": "EarwigSicklesUnique",
+                "quantity": 1
+              }
+            ],
+            "recipes": [
+              {
+                "id": "EarwigSicklesUnique",
+                "quantity": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

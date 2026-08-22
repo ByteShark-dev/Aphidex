@@ -1,1 +1,799 @@
-{"id":"g2_garden_snail","speciesKey":"garden_snail","collectionGroup":"harmless","name":"Садовая улитка","game":"g2","tier":3,"danger":"baja","isBoss":false,"order":273,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Snail.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Snail_G.png","photo":"assets/g2/creatures/photos/Garden_Snail.webp","weaknesses":["fresh","salty"],"resistances":[],"temperament":"peaceful","health":{"value":800,"rating":3},"description":"Крупная, мирная и очень медленная улитка, ползающая по разным зонам парка так, будто ничто в мире не может её поторопить. Она не агрессивна, но куда крепче, чем может показаться по её спокойному темпу.","behavior":"Она медленно продвигается через растительность и открытые тропы, почти не меняя ритм зоны. Её присутствие — скорее тяжёлое препятствие, чем активная угроза.","interactionWithPlayer":"Она не агрессивна, поэтому бой почти всегда начинается только потому, что игроку нужны её материалы или просто хочется проверить её на прочность.","interactionWithCreatures":"Она склонна сосуществовать почти со всем, пока никто не мешает её пути. Её присутствие скорее фоновое, чем доминирующее.","strategy":"Пользуйся тем, что она почти не умеет менять позицию, и наказывай её терпеливо. Бой несложный, но может превратиться в ненужное затяжное истощение, если тянуть его без причины.","environments":["Церемониальная зона","Площадка для крокета","Входная зона","Огненная яма","Окрестности теплицы","Окрестности тележки с мороженым","Зона стола для пикника","Сосновый холм","Тыквенная грядка","Передняя зона снэк-бара","Зона статуи","Огород"],"loot":[{"section":"loot","item":"Garden Snail Eyestalk","minCount":0,"maxCount":2},{"section":"loot","item":"Garden Snail Slime","minCount":1,"maxCount":3},{"section":"loot","item":"Raw Snail Meat","minCount":2,"maxCount":2},{"section":"rare","item":"Garden Snail Slime","minCount":0,"maxCount":5}],"combatStats":{"health":800},"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_arrows_only","susceptibleDamageTypes":["stabbingArrowsOnly"]},"lootTransformations":[{"id":"spicy_cooked_meat","effects":["spicy","burning"],"description":"If the creature is killed with spicy damage or a verified heat effect, compatible meat can become cooked meat."},{"id":"salty_jerky","effects":["salty"],"description":"If the creature is killed with salty damage, compatible meat can become jerky."}],"groupId":null,"cardTier":3,"technicalId":"SnailBig","bestiaryId":"SnailBig","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[{"type":"fresh","bonusPct":15},{"type":"salty","bonusPct":30}],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_garden_snail",
+  "speciesKey": "garden_snail",
+  "collectionGroup": "harmless",
+  "name": "Садовая улитка",
+  "game": "g2",
+  "tier": 3,
+  "danger": "baja",
+  "isBoss": false,
+  "order": 273,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Snail.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Snail_G.png",
+  "photo": "assets/g2/creatures/photos/Garden_Snail.webp",
+  "weaknesses": [
+    "fresh",
+    "salty"
+  ],
+  "resistances": [],
+  "temperament": "peaceful",
+  "health": {
+    "rating": 3,
+    "value": 800
+  },
+  "description": "Крупная, мирная и очень медленная улитка, ползающая по разным зонам парка так, будто ничто в мире не может её поторопить. Она не агрессивна, но куда крепче, чем может показаться по её спокойному темпу.",
+  "behavior": "Она медленно продвигается через растительность и открытые тропы, почти не меняя ритм зоны. Её присутствие — скорее тяжёлое препятствие, чем активная угроза.",
+  "interactionWithPlayer": "Она не агрессивна, поэтому бой почти всегда начинается только потому, что игроку нужны её материалы или просто хочется проверить её на прочность.",
+  "interactionWithCreatures": "Она склонна сосуществовать почти со всем, пока никто не мешает её пути. Её присутствие скорее фоновое, чем доминирующее.",
+  "strategy": "Пользуйся тем, что она почти не умеет менять позицию, и наказывай её терпеливо. Бой несложный, но может превратиться в ненужное затяжное истощение, если тянуть его без причины.",
+  "environments": [
+    "Церемониальная зона",
+    "Площадка для крокета",
+    "Входная зона",
+    "Огненная яма",
+    "Окрестности теплицы",
+    "Окрестности тележки с мороженым",
+    "Зона стола для пикника",
+    "Сосновый холм",
+    "Тыквенная грядка",
+    "Передняя зона снэк-бара",
+    "Зона статуи",
+    "Огород"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Snail Eye Stalk",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Snail Meat",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Snail Slime",
+      "minCount": 1,
+      "maxCount": 8
+    }
+  ],
+  "combatStats": {
+    "health": 800,
+    "stunThreshold": 50,
+    "stunCooldownSeconds": 5
+  },
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_arrows_only",
+    "susceptibleDamageTypes": [
+      "stabbingArrowsOnly"
+    ]
+  },
+  "lootTransformations": [
+    {
+      "id": "spicy_cooked_meat",
+      "effects": [
+        "spicy",
+        "burning"
+      ],
+      "description": "If the creature is killed with spicy damage or a verified heat effect, compatible meat can become cooked meat."
+    },
+    {
+      "id": "salty_jerky",
+      "effects": [
+        "salty"
+      ],
+      "description": "If the creature is killed with salty damage, compatible meat can become jerky."
+    }
+  ],
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "SnailBig",
+  "bestiaryId": "SnailBig",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 15
+    },
+    {
+      "type": "salty",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only",
+      "susceptibleDamageTypes": [
+        "stabbingArrowsOnly"
+      ],
+      "weaponFamilies": [
+        "bow",
+        "crossbow"
+      ],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_1cbf6079c51dc8ea",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -137311.17,
+        "y": -24762.451,
+        "z": 4428.604
+      },
+      "u": 0.46520837693883516,
+      "v": 0.17882304653006154,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_45551f2f5b1a7e0a",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -127225.52,
+        "y": -25682.0,
+        "z": 4432.925
+      },
+      "u": 0.5029889798068481,
+      "v": 0.17485298929083398,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_828540b18b87030c",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -250792.45,
+        "y": 128430.35,
+        "z": 5282.7983
+      },
+      "u": 0.04011022534386884,
+      "v": 0.8402170435955814,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1842e472465e9f8e",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -242905.7,
+        "y": 143477.47,
+        "z": 7149.311
+      },
+      "u": 0.06965380158033359,
+      "v": 0.9051814203558477,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ea3c3f13c6346676",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -26901.762,
+        "y": -43970.08,
+        "z": -1711.4865
+      },
+      "u": 0.8787993697395377,
+      "v": 0.09589610456193605,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ad932fe9444d99e",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -96234.195,
+        "y": -12589.332,
+        "z": 1681.5195
+      },
+      "u": 0.6190817395376061,
+      "v": 0.2313792226663294,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd610ca7df5234dd",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -81188.57,
+        "y": 12981.37,
+        "z": 1440.651
+      },
+      "u": 0.6754422897278314,
+      "v": 0.3417780710009275,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_28d688db679ed9a4",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -81656.766,
+        "y": 30801.678,
+        "z": 1119.2771
+      },
+      "u": 0.6736884387474393,
+      "v": 0.418715398735138,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6524f7800eeeefd3",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -94212.38,
+        "y": -13204.332,
+        "z": -61.595116
+      },
+      "u": 0.6266554100087796,
+      "v": 0.228724024082975,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6c52fb427fa23c40",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -103026.15,
+        "y": 6825.9185,
+        "z": 917.91205
+      },
+      "u": 0.5936392390986246,
+      "v": 0.3152025488827051,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_21ee2a60b0f97c53",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -84103.97,
+        "y": 944.89624,
+        "z": 1387.4009
+      },
+      "u": 0.6645212712906058,
+      "v": 0.2898118464868876,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ff727541d31dc94a",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -179723.81,
+        "y": 70108.06,
+        "z": 439.7969
+      },
+      "u": 0.3063316453028973,
+      "v": 0.5884166179273126,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d95f09a8ad8b460",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -131546.66,
+        "y": 61044.152,
+        "z": -2267.7314
+      },
+      "u": 0.4868020930640913,
+      "v": 0.5492841371447845,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7195333008d21084",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -162350.25,
+        "y": 51373.547,
+        "z": 1153.7709
+      },
+      "u": 0.3714125841381329,
+      "v": 0.5075323051184754,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5f5878747606f994",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -240511.25,
+        "y": 93146.72,
+        "z": 4878.1562
+      },
+      "u": 0.0786233538191396,
+      "v": 0.6878836380807826,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_04ecec86c97cceb2",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -222190.4,
+        "y": 133741.83,
+        "z": 99.395035
+      },
+      "u": 0.14725281826163303,
+      "v": 0.8631488064760938,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_549ec9bd85da98eb",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -172522.67,
+        "y": 47645.1,
+        "z": 4153.9917
+      },
+      "u": 0.33330694293239677,
+      "v": 0.4914351226916267,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0cd2f631d0c950e6",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -200093.03,
+        "y": 92183.76,
+        "z": 300.3468
+      },
+      "u": 0.23002903599648816,
+      "v": 0.6837261583607387,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e80550d6c0d00092",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -135347.22,
+        "y": 64159.457,
+        "z": -3028.5283
+      },
+      "u": 0.47256528650863333,
+      "v": 0.5627341427101779,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b4892196e4d05ec1",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -171461.9,
+        "y": 77150.28,
+        "z": -457.2645
+      },
+      "u": 0.3372805618964003,
+      "v": 0.6188206708828738,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d213d4014ed84176",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -207626.25,
+        "y": 146059.72,
+        "z": 4867.1562
+      },
+      "u": 0.2018097746561311,
+      "v": 0.9163300163588834,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_901f6e079f143d33",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -197011.25,
+        "y": 126326.72,
+        "z": 7750.1562
+      },
+      "u": 0.2415733099209833,
+      "v": 0.831134839699806,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_96780a98fcd2b4c9",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -58679.723,
+        "y": 148799.45,
+        "z": -3374.5496
+      },
+      "u": 0.759759890430202,
+      "v": 0.9281585158951008,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_648693bbe27c7298",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -119394.914,
+        "y": 126433.664,
+        "z": -3473.7803
+      },
+      "u": 0.5323222419666375,
+      "v": 0.8315965593051691,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f6d56b40dc87c3d8",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -234860.25,
+        "y": 117552.72,
+        "z": 4115.1562
+      },
+      "u": 0.09979186420836991,
+      "v": 0.7932540065772831,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5d15886ae62df32a",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -94811.734,
+        "y": 126630.086,
+        "z": 2923.271
+      },
+      "u": 0.6244102443078724,
+      "v": 0.832444590876128,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e7f983bc2d3128b9",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -108379.555,
+        "y": 140940.44,
+        "z": 6241.0405
+      },
+      "u": 0.573585512437811,
+      "v": 0.89422805700312,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4686a43a7ad0874d",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -78433.734,
+        "y": 148846.14,
+        "z": 2296.271
+      },
+      "u": 0.6857618392742172,
+      "v": 0.9283600951176323,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_57b15ff038c9afee",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -140825.38,
+        "y": 127016.01,
+        "z": -678.8952
+      },
+      "u": 0.4520442306116476,
+      "v": 0.8341107776372376,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4d26b4ab5eb17692",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -157489.33,
+        "y": 109776.984,
+        "z": -4209.729
+      },
+      "u": 0.38962147380743345,
+      "v": 0.7596830745256767,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_667d4c4118fcaba8",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -121737.695,
+        "y": 96368.3,
+        "z": -4518.729
+      },
+      "u": 0.5235462405618964,
+      "v": 0.7017924749135678,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a619235cf52bdbc9",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -21573.072,
+        "y": 61860.363,
+        "z": 4215.266
+      },
+      "u": 0.8987605146034534,
+      "v": 0.5528080433088794,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f8cbbc150fe365cd",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -54865.08,
+        "y": 44330.1,
+        "z": 4298.521
+      },
+      "u": 0.7740494515657008,
+      "v": 0.4771229547179357,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b1a932be91a6c101",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -22295.377,
+        "y": 23753.564,
+        "z": -4632.1245
+      },
+      "u": 0.8960547774070822,
+      "v": 0.38828589904713723,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_86cafdbe709f3e2f",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -39943.1,
+        "y": 42986.35,
+        "z": -4602.098
+      },
+      "u": 0.8299468305531167,
+      "v": 0.4713214537482081,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d7d48a5d1e9d2c3",
+      "targetType": "creature",
+      "targetId": "g2_garden_snail",
+      "technicalId": "SnailBig",
+      "map": "surface",
+      "world": {
+        "x": -17992.736,
+        "y": 71958.375,
+        "z": -598.3646
+      },
+      "u": 0.9121723673397717,
+      "v": 0.5964051606374905,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Snail Eye Stalk",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Snail Eye Stalk",
+      "countLabel": "1",
+      "chancePct": 40,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Snail Meat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Snail Slime",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 5,
+      "notes": "5 independent rolls"
+    },
+    {
+      "item": "Snail Slime",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Snail Slime",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

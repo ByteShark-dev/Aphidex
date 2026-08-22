@@ -1,1 +1,878 @@
-{"id":"g2_orc_northern_scorpion_jr","speciesKey":"orc_northern_scorpion_jr","collectionGroup":"orc","name":"O.R.C. Northern Scorpion Jr.","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":261,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_Jr_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_Jr_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Northern_Scorpion_Jr.webp","weaknesses":["busting"],"resistances":["fresh","slashing","venom"],"temperament":"aggressive","health":{"value":600,"rating":2},"weakPoint":{"part":"stinger","susceptibleDamage":"stabbing","susceptibleDamageTypes":["stabbing"]},"description":"A young remote-controlled northern scorpion. May drop its O.R.C. Receiver as well as its creature parts.","behavior":"It patrols caves and O.R.C. points on short routes, mixing quick claw attacks with aggressive burrows. It is more mobile than the adult and far more persistent than its size suggests.","interactionWithPlayer":"It attacks on sight and tries to stay glued to you at all times. It does not last as long as the adult, but it compensates with mobility and how easily it can restart pressure after burrowing.","interactionWithCreatures":"It usually accompanies larger O.R.C. scorpions and functions as a mobile pursuer to close gaps in the line.","strategy":"Busting damage and hits on the stinger remain the most efficient way to bring it down. Do not get lazy when it burrows, because if it reappears beside you it can restart the whole pressure loop.","environments":["Croquet Court MIX.R","Ice Cream Cart Surroundings","O.R.C. Caves","Statue Area"],"loot":[{"section":"loot","item":"Northern Scorpion Chunk","minCount":1,"maxCount":2},{"section":"loot","item":"Scorpion Venom","minCount":0,"maxCount":1},{"section":"rare","item":"Northern Scorpion Chunk","minCount":0,"maxCount":3},{"section":"rare","item":"O.R.C. Receiver","minCount":0,"maxCount":1}],"combatStats":{"health":600,"attackDamageSummary":"Claw Slash: 50. 2-Hit Combo: 35. 4-Hit Combo: 43.75. Charged Hit: 68.75. Burrow Strike: 75."},"abilities":[{"name":"Claw Slash","description":"A quick claw strike used to begin close-range pressure.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"2-Hit Combo","description":"A short sequence meant to catch slow reactions and keep you blocking.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Charged Hit","description":"It delays the claw for a moment and then hits forward with much more force.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Burrow Strike","description":"It burrows and reappears near the player to continue pressure without giving up distance.","blockable":false,"breaksGuard":false,"staggers":true}],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"fresh","bonusPct":50},{"type":"slashing","bonusPct":25},{"type":"venom","bonusPct":50}],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},{"part":"stinger","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"groupId":null,"cardTier":2,"technicalId":"NorthernScorpionJrORC","bestiaryId":"NorthernScorpionJrORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"attacks":[{"name":"Combo 2","technicalId":"ScorpionNorthernJrCombo2","tags":["stabbing"],"notes":"Attack damage: 28"},{"name":"Combo 4","technicalId":"ScorpionNorthernJrCombo4","tags":["stabbing"],"notes":"Attack damage: 35"},{"name":"Power","technicalId":"ScorpionNorthernJrPower","tags":["stabbing"],"notes":"Attack damage: 55"},{"name":"Burrow Strike","technicalId":"ScorpionNorthernJrBurrowStrike","tags":["stabbing"],"notes":"Attack damage: 60"}],"encounterVariants":[{"id":"g2_wave_scorpion_jr_northern_orc_wave","characterRow":"Scorpion_Jr_Northern_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":600.0,"stun":{"max":50.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":["Butt","Stinger"],"resistances":[{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"ScorpionNorthernJrCombo2","ability":"ScorpionNorthernJrCombo2","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":28.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrCombo4","ability":"ScorpionNorthernJrCombo4","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":36.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomLarge"],"statusEffectApplyType":"DamageOnly"}],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrPower","ability":"ScorpionNorthernJrPower","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":55.0,"type":"Stabbing","hitStun":16,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrBurrowStrike","ability":"ScorpionNorthernJrBurrowStrike","resolved":true,"cooldown":20.0,"priority":2,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomLarge"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":450.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_scorpion_jr_northern_orc_wave","nameEn":"O.R.C. Northern Scorpion Jr. Raid/Wave","nameEsMX":"Cría de escorpión norteño C.R.O.  (Oleada)","nameRu":"O.R.C. Молодой северный скорпион Рейд/волна"}],"contextVariants":[{"id":"Scorpion_Jr_Northern_ORC_Wave","characterRow":"Scorpion_Jr_Northern_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":600.0,"stun":{"max":50.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":["Butt","Stinger"],"resistances":[{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"ScorpionNorthernJrCombo2","ability":"ScorpionNorthernJrCombo2","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":28.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrCombo4","ability":"ScorpionNorthernJrCombo4","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":36.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomLarge"],"statusEffectApplyType":"DamageOnly"}],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrPower","ability":"ScorpionNorthernJrPower","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":55.0,"type":"Stabbing","hitStun":16,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernJrBurrowStrike","ability":"ScorpionNorthernJrBurrowStrike","resolved":true,"cooldown":20.0,"priority":2,"targetType":"Enemy","damage":{"amount":60.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomLarge"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":450.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Cría de escorpión norteño C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_northern_scorpion_jr",
+  "speciesKey": "orc_northern_scorpion_jr",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Northern Scorpion Jr.",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 261,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_Jr_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_Jr_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Northern_Scorpion_Jr.webp",
+  "weaknesses": [
+    "busting"
+  ],
+  "resistances": [
+    "fresh",
+    "slashing",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 2,
+    "value": 600
+  },
+  "weakPoint": {
+    "part": "stinger",
+    "susceptibleDamage": "stabbing",
+    "susceptibleDamageTypes": [
+      "stabbing"
+    ]
+  },
+  "description": "A young remote-controlled northern scorpion. May drop its O.R.C. Receiver as well as its creature parts.",
+  "behavior": "It patrols caves and O.R.C. points on short routes, mixing quick claw attacks with aggressive burrows. It is more mobile than the adult and far more persistent than its size suggests.",
+  "interactionWithPlayer": "It attacks on sight and tries to stay glued to you at all times. It does not last as long as the adult, but it compensates with mobility and how easily it can restart pressure after burrowing.",
+  "interactionWithCreatures": "It usually accompanies larger O.R.C. scorpions and functions as a mobile pursuer to close gaps in the line.",
+  "strategy": "Busting damage and hits on the stinger remain the most efficient way to bring it down. Do not get lazy when it burrows, because if it reappears beside you it can restart the whole pressure loop.",
+  "environments": [
+    "Croquet Court MIX.R",
+    "Ice Cream Cart Surroundings",
+    "O.R.C. Caves",
+    "Statue Area"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Northern Chunk",
+      "minCount": 1,
+      "maxCount": 5
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Venom",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 600,
+    "stunThreshold": 50,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Claw Slash",
+      "description": "A quick claw strike used to begin close-range pressure.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "2-Hit Combo",
+      "description": "A short sequence meant to catch slow reactions and keep you blocking.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Charged Hit",
+      "description": "It delays the claw for a moment and then hits forward with much more force.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Burrow Strike",
+      "description": "It burrows and reappears near the player to continue pressure without giving up distance.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": true
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "stinger",
+      "susceptibleDamage": "stabbing",
+      "susceptibleDamageTypes": [
+        "stabbing"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "NorthernScorpionJrORC",
+  "bestiaryId": "NorthernScorpionJrORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "attacks": [
+    {
+      "name": "Combo 2",
+      "technicalId": "ScorpionNorthernJrCombo2",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 28",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 28.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 4",
+      "technicalId": "ScorpionNorthernJrCombo4",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 35",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power",
+      "technicalId": "ScorpionNorthernJrPower",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 55",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 55.0,
+      "cooldownSeconds": 20.0,
+      "range": 350.0,
+      "stun": 16,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Burrow Strike",
+      "technicalId": "ScorpionNorthernJrBurrowStrike",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 60",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 60.0,
+      "cooldownSeconds": 20.0,
+      "range": 450.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Large"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Large",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_scorpion_jr_northern_orc_wave",
+      "characterRow": "Scorpion_Jr_Northern_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 600.0,
+        "stun": {
+          "max": 50.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [
+        "Butt",
+        "Stinger"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ScorpionNorthernJrCombo2",
+          "ability": "ScorpionNorthernJrCombo2",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 28.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrCombo4",
+          "ability": "ScorpionNorthernJrCombo4",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 36.0,
+              "type": "Stabbing",
+              "hitStun": 6,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [
+                "VenomLarge"
+              ],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrPower",
+          "ability": "ScorpionNorthernJrPower",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Stabbing",
+            "hitStun": 16,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrBurrowStrike",
+          "ability": "ScorpionNorthernJrBurrowStrike",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomLarge"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 450.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_scorpion_jr_northern_orc_wave",
+      "nameEn": "O.R.C. Northern Scorpion Jr. Raid/Wave",
+      "nameEsMX": "Cría de escorpión norteño C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Молодой северный скорпион Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Scorpion_Jr_Northern_ORC_Wave",
+      "characterRow": "Scorpion_Jr_Northern_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 600.0,
+        "stun": {
+          "max": 50.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [
+        "Butt",
+        "Stinger"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ScorpionNorthernJrCombo2",
+          "ability": "ScorpionNorthernJrCombo2",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 28.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrCombo4",
+          "ability": "ScorpionNorthernJrCombo4",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 36.0,
+              "type": "Stabbing",
+              "hitStun": 6,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [
+                "VenomLarge"
+              ],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrPower",
+          "ability": "ScorpionNorthernJrPower",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 55.0,
+            "type": "Stabbing",
+            "hitStun": 16,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernJrBurrowStrike",
+          "ability": "ScorpionNorthernJrBurrowStrike",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 60.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomLarge"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 450.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Cría de escorpión norteño C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_b662bb18e8743fe8",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -193177.58,
+        "y": 22570.385,
+        "z": 5265.521
+      },
+      "u": 0.2559341457418789,
+      "v": 0.38317764668184506,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9bbfda085991b95b",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -163671.92,
+        "y": 23321.0,
+        "z": 5284.6685
+      },
+      "u": 0.3664616400351185,
+      "v": 0.38641834893329957,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c06f7a9294128f70",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -170737.16,
+        "y": 35929.2,
+        "z": 4465.4087
+      },
+      "u": 0.3399954205443371,
+      "v": 0.4408529420693146,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8c436f56399be406",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -206500.0,
+        "y": 11850.0,
+        "z": 4918.3154
+      },
+      "u": 0.20602868012876793,
+      "v": 0.3368934986086517,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7ad19a9ceda1b6d1",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -149923.3,
+        "y": 128050.35,
+        "z": -4578.203
+      },
+      "u": 0.4179636406204273,
+      "v": 0.8385764330887933,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_862e7a5633c7931f",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -82039.73,
+        "y": 16896.576,
+        "z": -2797.2698
+      },
+      "u": 0.6722538647936788,
+      "v": 0.35868156600050594,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_442725f31f064f32",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -160605.97,
+        "y": 59330.453,
+        "z": -1800.9934
+      },
+      "u": 0.3779466151594967,
+      "v": 0.5418854198161733,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c585b3193cecfdbe",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -160634.27,
+        "y": 59200.336,
+        "z": -1801.6981
+      },
+      "u": 0.3778406040386304,
+      "v": 0.5413236531916689,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c13c1307ef70ab17",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -238176.36,
+        "y": 59602.824,
+        "z": 126.021706
+      },
+      "u": 0.08736979572724617,
+      "v": 0.5430613533012902,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95d9f951c0ad758e",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -84944.85,
+        "y": 77799.78,
+        "z": -5.089495
+      },
+      "u": 0.6613713549897571,
+      "v": 0.6216248196306603,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5580b9570976eaf2",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -56570.52,
+        "y": -45067.895,
+        "z": -4593.1943
+      },
+      "u": 0.7676609142522682,
+      "v": 0.09115640239480564,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b747c0d596692748",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -191390.52,
+        "y": -48987.895,
+        "z": 1626.8055
+      },
+      "u": 0.2626284296166228,
+      "v": 0.07423220979846537,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c16bb929cedae163",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "NorthernScorpionJrORC",
+      "map": "surface",
+      "world": {
+        "x": -191430.52,
+        "y": -46497.895,
+        "z": 1626.8055
+      },
+      "u": 0.26247859057652917,
+      "v": 0.08498252601399783,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Locked by story progress",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 20,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

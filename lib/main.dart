@@ -10,7 +10,7 @@ import 'controllers/theme_controller.dart';
 import 'controllers/app_reset_controller.dart';
 import 'i18n/app_localizations.dart';
 import 'models/game_pick.dart';
-import 'screens/enemy_list_screen.dart';
+import 'screens/aphidex_home_shell.dart';
 import 'startup/startup_bootstrap.dart';
 import 'startup/startup_profiler.dart';
 import 'widgets/state_panels.dart';
@@ -248,13 +248,7 @@ class AphidexApp extends StatelessWidget {
               behavior: SnackBarBehavior.floating,
             ),
           ),
-          home: EnemyListScreen(
-            preloadedEntries: startupData?.initialEntries,
-            preloadedLanguageCode: startupData?.languageCode,
-            preloadedGamePick: startupData?.gamePick,
-            restorePhoneDetailOnStartup: false,
-            onInitialListInteractive: StartupBootstrap.startDeferredServices,
-          ),
+          home: AphidexHomeShell(startupData: startupData),
         );
       },
     );

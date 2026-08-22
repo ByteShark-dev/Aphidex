@@ -1,1 +1,1412 @@
-{"id":"g2_water_boatman","speciesKey":"g1_water_boatman","collectionGroup":"angry","game":"g2","danger":"unknown","order":318,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_water_boatman.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"Bicho barquero","tier":1,"cardTier":0,"technicalId":"WaterBoatman","bestiaryId":"WaterBoatman","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Waterboatman.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Waterboatman_G.png","weaknesses":[],"resistances":[],"elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[{"name":"Waterboatman Flee","technicalId":"Waterboatman_Flee","tags":[],"notes":"Daño del ataque: 20"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":160,"rating":1},"combatStats":{"health":160},"description":"Un delicado insecto que nada con gracia en el estanque de peces koi. Al morir, suelta aleta de bicho barquero.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_water_boatman",
+  "speciesKey": "g1_water_boatman",
+  "collectionGroup": "harmless",
+  "game": "g2",
+  "danger": "baja",
+  "order": 318,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_water_boatman.webp",
+  "temperament": "peaceful",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Algae",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Water Boatman Fin",
+      "minCount": 1,
+      "maxCount": 4
+    }
+  ],
+  "abilities": [],
+  "behavior": "Se desplaza sin rumbo fijo por el estanque y ocasionalmente sube a la superficie para renovar la reserva de aire que mantiene en su cuerpo.",
+  "interactionWithPlayer": "Es una criatura pacífica y no atacará al jugador. Si recibe daño, intentará alejarse. Eliminarlo puede ser útil durante una exploración submarina, ya que permite recuperar oxígeno.",
+  "interactionWithCreatures": "Normalmente ignora a las demás criaturas del estanque y rara vez participa en enfrentamientos.",
+  "strategy": "No necesita una estrategia específica. Intenta acercarte antes de atacarlo para que no consiga alejarse demasiado. Si estás explorando una zona profunda, puede servir como una fuente rápida de oxígeno adicional.",
+  "groupId": null,
+  "name": "Bicho barquero",
+  "tier": 1,
+  "cardTier": 0,
+  "technicalId": "WaterBoatman",
+  "bestiaryId": "WaterBoatman",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier0_Waterboatman.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier0_Waterboatman_G.png",
+  "weaknesses": [],
+  "resistances": [],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Waterboatman Flee",
+      "technicalId": "Waterboatman_Flee",
+      "tags": [],
+      "notes": "Daño del ataque: 20",
+      "damageTypes": [],
+      "damage": 20.0,
+      "cooldownSeconds": 5.0,
+      "range": 2000.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "movement_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 1,
+    "value": 160
+  },
+  "combatStats": {
+    "health": 160,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "description": "Un delicado insecto que nada con gracia en el estanque de peces koi. Al morir, suelta aleta de bicho barquero.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_9c072128f0bc7154",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -29834.035,
+        "y": -14971.16,
+        "z": -5281.527
+      },
+      "u": 0.8678151454492246,
+      "v": 0.22109592781853446,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_885c45143fe3aefc",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -36176.586,
+        "y": -47291.375,
+        "z": -5248.374
+      },
+      "u": 0.844056101609599,
+      "v": 0.08155675857998149,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ec008581252ce583",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -34283.633,
+        "y": -18254.027,
+        "z": -5238.5723
+      },
+      "u": 0.851147058121159,
+      "v": 0.20692249073277677,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_697220784fe9e09a",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -40051.54,
+        "y": -16869.895,
+        "z": -5705.1885
+      },
+      "u": 0.8295406169154228,
+      "v": 0.2128983367906231,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cb7ce16b14751534",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -47726.83,
+        "y": -21287.824,
+        "z": -5274.2163
+      },
+      "u": 0.8007891647644132,
+      "v": 0.19382438748629735,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7c92776463471af7",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -75903.63,
+        "y": -19384.387,
+        "z": -5373.496
+      },
+      "u": 0.6952395481416447,
+      "v": 0.20204227891053206,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d6fa82bed2434d94",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -63167.625,
+        "y": -35251.35,
+        "z": -6445.8555
+      },
+      "u": 0.7429483172373428,
+      "v": 0.13353831520364273,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8c6e706f035c0368",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -63451.145,
+        "y": -32816.164,
+        "z": -6338.3516
+      },
+      "u": 0.7418862581211589,
+      "v": 0.14405197767096722,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_887b036aa60cda49",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -72187.61,
+        "y": -20620.852,
+        "z": -5299.853
+      },
+      "u": 0.7091596698858649,
+      "v": 0.19670396977822754,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4251be8b739fcd00",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -42612.117,
+        "y": -23139.758,
+        "z": -5309.5938
+      },
+      "u": 0.819948756921276,
+      "v": 0.18582885491188125,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2db5a5f8964e9839",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -30635.152,
+        "y": -13171.597,
+        "z": -5309.5938
+      },
+      "u": 0.8648141803921569,
+      "v": 0.2288653540433426,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_81b22b974124c384",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -47618.77,
+        "y": -24018.229,
+        "z": -5309.5938
+      },
+      "u": 0.8011939549312262,
+      "v": 0.1820361476684375,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_826c1622606f823e",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -53736.484,
+        "y": -23357.395,
+        "z": -5309.5938
+      },
+      "u": 0.7782771450980392,
+      "v": 0.1848892297832869,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_360f7989d56123cd",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -27805.205,
+        "y": -21247.152,
+        "z": -5247.458
+      },
+      "u": 0.8754150939420543,
+      "v": 0.19399998461927645,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9498e72ab2dddebb",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -38681.445,
+        "y": -49413.895,
+        "z": -5309.5938
+      },
+      "u": 0.8346729599063506,
+      "v": 0.07239299907243452,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_81e8d752b449f0bf",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -45798.617,
+        "y": -48156.01,
+        "z": -5309.5938
+      },
+      "u": 0.8080122043898157,
+      "v": 0.07782378682856897,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_718f7e586d20e97a",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -42219.055,
+        "y": -41693.082,
+        "z": -5309.5938
+      },
+      "u": 0.8214211577407083,
+      "v": 0.105726806779661,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_49ac55860878c037",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -63579.066,
+        "y": -38349.54,
+        "z": -5790.669
+      },
+      "u": 0.7414070691249635,
+      "v": 0.12016220187199593,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f0078b12082f859c",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -78679.48,
+        "y": -21245.854,
+        "z": -5255.799
+      },
+      "u": 0.6848412806555458,
+      "v": 0.19400558859937606,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a8b343368892a427",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -79289.82,
+        "y": -17240.287,
+        "z": -5362.468
+      },
+      "u": 0.6825549616622769,
+      "v": 0.2112992078252804,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f4014bf89e5e69e1",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -74662.65,
+        "y": -27306.994,
+        "z": -5013.812
+      },
+      "u": 0.6998882294410302,
+      "v": 0.16783724658065602,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4067f2150e534d1c",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -35105.207,
+        "y": 11064.384,
+        "z": -6157.7744
+      },
+      "u": 0.8480694616330114,
+      "v": 0.33350168317733364,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_77b807782e0db49c",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -34678.184,
+        "y": 13026.563,
+        "z": -6157.7744
+      },
+      "u": 0.8496690795434592,
+      "v": 0.3419731870815414,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8103398f0a30dc53",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -42662.45,
+        "y": -218.0703,
+        "z": -6413.7544
+      },
+      "u": 0.81976021071115,
+      "v": 0.2847908593169745,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_029b882593a6e3e4",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -41055.8,
+        "y": 1897.5068,
+        "z": -6530.0854
+      },
+      "u": 0.8257786830553117,
+      "v": 0.29392464357534365,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7b1529593e6ce0cd",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -40275.008,
+        "y": -119.54272,
+        "z": -5968.918
+      },
+      "u": 0.8287035111501316,
+      "v": 0.2852162419037019,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9c52a0fd13b9934",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -59110.97,
+        "y": -6689.452,
+        "z": -6168.0757
+      },
+      "u": 0.7581444495171203,
+      "v": 0.2568513413947213,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e0232821c99f67d8",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -57799.746,
+        "y": -7272.9546,
+        "z": -6631.64
+      },
+      "u": 0.7630562631548142,
+      "v": 0.25433212956235773,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_30ffadc61740e34a",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -58881.594,
+        "y": -8462.946,
+        "z": -5943.352
+      },
+      "u": 0.7590036865086333,
+      "v": 0.2491944653680749,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_32942707c4909abe",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -70696.35,
+        "y": -3427.769,
+        "z": -6374.5396
+      },
+      "u": 0.7147458940591161,
+      "v": 0.27093331876212157,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f61111107408fe79",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -70531.9,
+        "y": -780.4438,
+        "z": -7026.9136
+      },
+      "u": 0.7153619198127013,
+      "v": 0.2823628701779239,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_30a9a80023dc584f",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -69063.16,
+        "y": -2714.683,
+        "z": -7026.9136
+      },
+      "u": 0.7208637846063799,
+      "v": 0.2740119934564466,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d8d5985687baf4bd",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -68845.8,
+        "y": 12708.929,
+        "z": -5488.1704
+      },
+      "u": 0.7216780099502489,
+      "v": 0.34060183529808585,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_39549834cb1e3f25",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -68974.37,
+        "y": 10902.27,
+        "z": -6080.5728
+      },
+      "u": 0.7211963898156278,
+      "v": 0.3328017728307614,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_83ad22378461347a",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -70599.81,
+        "y": 12544.809,
+        "z": -6443.634
+      },
+      "u": 0.7151075305823822,
+      "v": 0.3398932642549962,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_828c9d77b4326129",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -61803.914,
+        "y": 22406.66,
+        "z": -7149.3276
+      },
+      "u": 0.7480567459174715,
+      "v": 0.3824707810102032,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_23e5d4d4159621c2",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -61915.94,
+        "y": 24489.506,
+        "z": -6532.3906
+      },
+      "u": 0.7476370992098331,
+      "v": 0.39146325214604943,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d4eb36046a24d017",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -60108.375,
+        "y": 25536.611,
+        "z": -6532.3906
+      },
+      "u": 0.7544081943225052,
+      "v": 0.3959840191584451,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_668ff80482091968",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -43636.523,
+        "y": 23552.744,
+        "z": -7367.957
+      },
+      "u": 0.8161113566286216,
+      "v": 0.38741887956826043,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8281daede6fd27fe",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -45045.36,
+        "y": 22172.615,
+        "z": -7367.957
+      },
+      "u": 0.8108338870354113,
+      "v": 0.3814603160468842,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5c4e735a3e534a99",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -43044.98,
+        "y": 21764.576,
+        "z": -7367.957
+      },
+      "u": 0.8183272625109744,
+      "v": 0.3796986500716755,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_60882ba0d16670dc",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -32222.879,
+        "y": 23616.73,
+        "z": -6487.4307
+      },
+      "u": 0.8588665931518875,
+      "v": 0.3876951324732271,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_46418af0b0996e10",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -33735.21,
+        "y": 24161.7,
+        "z": -5806.5557
+      },
+      "u": 0.853201437518291,
+      "v": 0.39004798380976474,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_82965f8b112d2bc2",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -52374.617,
+        "y": 15132.083,
+        "z": -7840.8896
+      },
+      "u": 0.7833786661984197,
+      "v": 0.3510635508558901,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_68b8b85834d2473e",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -53525.29,
+        "y": 16302.9,
+        "z": -8318.077
+      },
+      "u": 0.7790682727538777,
+      "v": 0.35611843157095874,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1f1820a1335a4242",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -55590.71,
+        "y": 826.52924,
+        "z": -7485.363
+      },
+      "u": 0.7713312589991221,
+      "v": 0.2893008092662113,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_704fe23e1d90462a",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -56785.633,
+        "y": 556.3255,
+        "z": -7844.029
+      },
+      "u": 0.7668551061164763,
+      "v": 0.2881342327009023,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_57e86fddd1e04a9f",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -64537.26,
+        "y": -17972.324,
+        "z": -5849.6357
+      },
+      "u": 0.737817697395376,
+      "v": 0.20813871415802349,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_63f3d8104bb517bc",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -63923.863,
+        "y": 11389.998,
+        "z": -8146.3945
+      },
+      "u": 0.7401154678372841,
+      "v": 0.3349074877814318,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_606008ac74d75bc0",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -62704.566,
+        "y": 12167.449,
+        "z": -7892.0024
+      },
+      "u": 0.7446829251390109,
+      "v": 0.33826405167383417,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_daa6b5998d7c271b",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -30775.889,
+        "y": 18786.15,
+        "z": -7929.394
+      },
+      "u": 0.8642869829675155,
+      "v": 0.3668396053630154,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_db77453717349b1f",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -32859.56,
+        "y": 20967.256,
+        "z": -6807.394
+      },
+      "u": 0.8564816014047409,
+      "v": 0.37625630383674846,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d0032361223c8aab",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -26754.88,
+        "y": 5210.593,
+        "z": -5273.074
+      },
+      "u": 0.8793495861867134,
+      "v": 0.30822854891643475,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_951b38703fe5b246",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -33261.47,
+        "y": -914.27057,
+        "z": -5670.642
+      },
+      "u": 0.85497605618964,
+      "v": 0.28178508700699895,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7746b9cf29c91aea",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -39032.75,
+        "y": -10817.784,
+        "z": -5670.493
+      },
+      "u": 0.8333569798068481,
+      "v": 0.23902769704022261,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_97e1c8c63b595dea",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -56733.84,
+        "y": -15226.5625,
+        "z": -6166.7163
+      },
+      "u": 0.7670491214515657,
+      "v": 0.2199932540686399,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_71a5a88732885901",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -71242.77,
+        "y": -10135.234,
+        "z": -6380.297
+      },
+      "u": 0.7126990178519168,
+      "v": 0.24197453572813898,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_920b74190f441ad5",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -76533.47,
+        "y": 6041.0874,
+        "z": -6258.7837
+      },
+      "u": 0.6928801826163301,
+      "v": 0.3118141221755628,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eb1c3c2db9780877",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -68765.23,
+        "y": 30327.312,
+        "z": -7029.9634
+      },
+      "u": 0.7219798232367575,
+      "v": 0.41666737283076144,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1bc11941bcc247e6",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -45147.74,
+        "y": 25700.979,
+        "z": -7021.511
+      },
+      "u": 0.8104503740122915,
+      "v": 0.39669366091576014,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_59fe5b465e6628b1",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -60224.27,
+        "y": 19146.424,
+        "z": -12283.904
+      },
+      "u": 0.7539740544337138,
+      "v": 0.3683950509149169,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a94a273361ad4571",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -64850.844,
+        "y": 4348.5996,
+        "z": -12096.024
+      },
+      "u": 0.7366430192566579,
+      "v": 0.3045069819984821,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6dcb262f5890c507",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -50890.195,
+        "y": 9654.921,
+        "z": -11852.06
+      },
+      "u": 0.788939275387767,
+      "v": 0.3274164731596256,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_971a604d661b36fc",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -56920.527,
+        "y": 14372.212,
+        "z": -8110.977
+      },
+      "u": 0.7663497964296166,
+      "v": 0.34778288678640695,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d63a4fe4999aeace",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -44446.69,
+        "y": -7030.2163,
+        "z": -5912.4077
+      },
+      "u": 0.8130764904887328,
+      "v": 0.25538012694493634,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_48a6416d35091d7e",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -73734.914,
+        "y": 19241.865,
+        "z": -6854.8506
+      },
+      "u": 0.7033635062335382,
+      "v": 0.368807107513281,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_87fca7a4d61b39e0",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -32889.78,
+        "y": 11279.462,
+        "z": -6835.006
+      },
+      "u": 0.8563683980099503,
+      "v": 0.3344302600893836,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_372c2e5ffdc8627a",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -25234.79,
+        "y": 10178.989,
+        "z": -5675.5054
+      },
+      "u": 0.8850438068481123,
+      "v": 0.3296790822834978,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1972a4abddb79f6a",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -49898.98,
+        "y": -14773.371,
+        "z": -6112.038
+      },
+      "u": 0.7926523429909277,
+      "v": 0.22194986126992156,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dda10f45b969c11a",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -62705.285,
+        "y": -16607.428,
+        "z": -6410.019
+      },
+      "u": 0.7446802317822651,
+      "v": 0.21403151078505772,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2ad12ae24077226c",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -74727.64,
+        "y": -8965.071,
+        "z": -6301.3403
+      },
+      "u": 0.699644778460638,
+      "v": 0.24702659286617762,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_86b1d7043cd0abc7",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -81548.17,
+        "y": -5573.716,
+        "z": -5827.452
+      },
+      "u": 0.6740952367573897,
+      "v": 0.261668415616831,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1d2fd1d2abbbe857",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -76928.65,
+        "y": 11152.631,
+        "z": -6254.5547
+      },
+      "u": 0.6913998478197249,
+      "v": 0.3338826804283666,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d2ae068e05a4981b",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -69076.89,
+        "y": 33921.6,
+        "z": -6165.4023
+      },
+      "u": 0.7208123523558677,
+      "v": 0.43218533771818873,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b3480401c986d00f",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -52716.016,
+        "y": 25452.521,
+        "z": -8013.6455
+      },
+      "u": 0.7820997937371963,
+      "v": 0.39562096932287716,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f09bc4b8eae52fb3",
+      "targetType": "creature",
+      "targetId": "g2_water_boatman",
+      "technicalId": "WaterBoatman",
+      "map": "surface",
+      "world": {
+        "x": -38868.668,
+        "y": 24913.418,
+        "z": -6409.8184
+      },
+      "u": 0.8339716270412643,
+      "v": 0.3932934481490851,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "confirmed_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Algae",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Water Boatman Fin",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Water Boatman Fin",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

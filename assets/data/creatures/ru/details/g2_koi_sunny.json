@@ -1,1 +1,166 @@
-{"id":"g2_koi_sunny","speciesKey":"g1_koi_fish","collectionGroup":"angry","game":"g2","danger":"unknown","order":242,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_koi_sunny.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Мы готовим эту информацию для вас.","interactionWithPlayer":"Мы готовим эту информацию для вас.","interactionWithCreatures":"Мы готовим эту информацию для вас.","strategy":"Мы готовим эту информацию для вас.","groupId":"koi","name":"Санни","tier":5,"cardTier":5,"technicalId":"KoiA","bestiaryId":"KoiA","isBoss":true,"bossCardStyle":"yellow","isKillable":false,"healthDisplay":"hidden","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png","weaknesses":[],"resistances":[],"elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[{"name":"Charge","technicalId":"KoiCharge_Augusta","tags":["general_unblockable"],"notes":"Урон атаки: 500"},{"name":"Koi Eat","technicalId":"KoiEat_Augusta","tags":["general_unblockable"],"notes":"Урон атаки: 500"},{"name":"Koi Thrash","technicalId":"KoiThrash_Augusta","tags":["general_unblockable"],"notes":"Урон атаки: 500"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":null,"description":"Мы готовим эту информацию для вас.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_koi_sunny",
+  "speciesKey": "g1_koi_fish",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "alta",
+  "order": 242,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_koi_sunny.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Koi Fish Scale",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "abilities": [],
+  "behavior": "Он патрулирует воды Скунсового пруда в поисках пищи. Атакует существ, которых считает добычей, и может преследовать их, чтобы проглотить.",
+  "interactionWithPlayer": "Он чрезвычайно опасен и не может быть убит. Заметив игрока, способен долго преследовать его и наносить огромный урон, поэтому прямой бой не является вариантом.",
+  "interactionWithCreatures": "Это один из главных хищников пруда, особенно охотно охотящийся на головастиков, которых он может преследовать и проглатывать.",
+  "strategy": "Всегда следите за его положением и не задерживайтесь надолго в открытой воде. Не позволяйте всем трём кои пруда заметить вас одновременно: уйти от трёх преследующих рыб практически невозможно, и это обычно заканчивается смертью. Если Санни начал погоню, ищите укрытие или место, где можно быстро выйти из зоны его досягаемости.",
+  "groupId": "koi",
+  "name": "Санни",
+  "tier": 5,
+  "cardTier": 5,
+  "technicalId": "KoiA",
+  "bestiaryId": "KoiA",
+  "isBoss": true,
+  "bossCardStyle": "yellow",
+  "isKillable": false,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png",
+  "weaknesses": [],
+  "resistances": [],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Charge",
+      "technicalId": "KoiCharge_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Koi Eat",
+      "technicalId": "KoiEat_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Koi Thrash",
+      "technicalId": "KoiThrash_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 5,
+    "value": 2000000000
+  },
+  "description": "Мы готовим эту информацию для вас.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_7238029dd476166c",
+      "targetType": "creature",
+      "targetId": "g2_koi_sunny",
+      "technicalId": "KoiA",
+      "map": "surface",
+      "world": {
+        "x": -53287.3,
+        "y": -2591.5747,
+        "z": -10605.467
+      },
+      "u": 0.7799597775826749,
+      "v": 0.2745435007471119,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "fixed_encounter",
+  "hideHealth": true,
+  "presentationOverrideProvenance": "presentation_rule",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "combatStats": {
+    "health": 2000000000,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Koi Fish Scale",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

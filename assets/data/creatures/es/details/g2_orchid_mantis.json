@@ -1,1 +1,334 @@
-{"id":"g2_orchid_mantis","underConstruction":true,"speciesKey":"orchid_mantis","collectionGroup":"other","name":"Mantis orquídea","game":"g2","tier":3,"danger":"proximamente","isBoss":true,"order":287,"defaultGold":false,"cardNormal":"assets/g1/creatures/cards/normal/Creaturecard_Mantis.webp","cardGold":"assets/g1/creatures/cards/gold/Creaturecardgold_Mantis.webp","photo":"assets/g1/creatures/photos/Mantis.webp","weaknesses":["salty"],"resistances":["spicy","busting","chopping","slashing","stabbing","explosive","poison","gas"],"temperament":"aggressive","health":{"rating":5,"value":3400},"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_arrows_only","susceptibleDamageTypes":["stabbingArrowsOnly"]},"description":"La Mantis Orquídea también existe en Grounded 2, pero solo dentro de los Playgrounds creados por jugadores. Incluso fuera de la campaña principal mantiene casi toda su identidad de duelo opcional brutal y muy técnico.","behavior":"Dentro de Playgrounds se comporta como un asesino móvil, alternando cortes frontales, saltos de reposicionamiento y gritos que debilitan al jugador. No forma parte del mapa normal de Brookhollow Park.","interactionWithPlayer":"Ataca tan pronto como comienza el encuentro y no regala ventanas seguras. Sus ataques de sangrado y reducción de estadísticas significan que incluso el bloqueo correcto no siempre es suficiente por sí solo.","interactionWithCreatures":"Como jefe exclusivo de Playgrounds, su interacción con otras criaturas depende del mapa personalizado, pero su diseño está diseñado para dominar cualquier arena cerrada donde los jugadores lo coloquen.","strategy":"Salty sigue siendo la respuesta directa más limpia. La prioridad es negar los ataques libres y nunca subestimar el grito: una vez que se acumulan el daño, la recuperación y las penalizaciones por bloqueo perfecto, la pelea colapsa rápidamente.","environments":["Playgrounds"],"respawnInfo":"Depende de la configuración Playground.","loot":[{"section":"loot","item":"Trozo de mantis orquídea","minCount":4,"maxCount":11},{"section":"loot","item":"Garra Mantis Orquídea","minCount":2,"maxCount":2},{"section":"loot","item":"Cabeza de mantis orquídea","minCount":1,"maxCount":1},{"section":"rare","item":"Trozo de mantis orquídea","minCount":0,"maxCount":13},{"section":"rare","item":"Dije de mantis","minCount":0,"maxCount":1}],"advancedLootTable":[{"item":"Dije de mantis","countLabel":"1","chancePct":1},{"item":"Trozo de mantis orquídea","countLabel":"x4","chancePct":100},{"item":"Trozo de mantis orquídea","countLabel":"x1","chancePct":40},{"item":"Trozo de mantis orquídea","countLabel":"x5","chancePct":25},{"item":"Trozo de mantis orquídea","countLabel":"x1","chancePct":20},{"item":"Trozo de mantis orquídea","countLabel":"x13","chancePct":1},{"item":"Garra Mantis Orquídea","countLabel":"x2","chancePct":100,"notes":"No robable"},{"item":"Cabeza de mantis orquídea","countLabel":"x1","chancePct":100,"notes":"No robable"}],"combatStats":{"health":3400,"stunThreshold":260,"stunCooldownSeconds":120,"attackDamageSummary":"Tajo: 150\nGolpe cargado: 175\nCombo slam: 120\nGround Shred: 90\nOnda vertical: 120\nGolpe emergente cargado: 80\nSalto depredador: 100\nSalto de escape: 90\nGrito: 10"},"inflictsEffects":["generic","slashing","bleed"],"specialTraits":["Ground Shred y Vertical Shockwave reducen el daño de ataque del jugador en un 50% durante 30 segundos.","Pounce y Scream reducen la recuperación del agotamiento en un 50% durante 20 segundos.","Combo Slam y Grito empeoran la ventana de perfect block en 150 ms durante 30 segundos."],"elementalWeaknesses":[{"type":"salty","bonusPct":25}],"damageWeaknesses":[],"resistancesV2":[{"type":"spicy","bonusPct":50},{"type":"chopping","bonusPct":25},{"type":"busting","bonusPct":50},{"type":"slashing","bonusPct":50},{"type":"stabbing","bonusPct":50},{"type":"explosive","bonusPct":50},{"type":"gas","bonusPct":100}],"bossPhases":[{"id":"phase1","label":"Fase 1","startsAtHealthPct":100,"trigger":"Comienza en cuanto arranca el encuentro del Playground.","summary":"La fase inicial sigue siendo un duelo limpio pero letal. Mezcla tajos, un golpe cargado que provoca sangrado, combo slams, saltos largos y ondas verticales en cuanto le regalas distancia.","aggressionChange":"El ritmo ya es alto, pero los movimientos más comprometidos todavía dejan ventanas cortas y claras de castigo.","newPatterns":["Si se aleja demasiado, alterna Pounce y Vertical Shockwave para recuperar el carril.","Cuando lo aprietas demasiado, puede usar Escape Leap para saltar hacia atrás y restablecer el espaciado."],"attacks":[{"name":"Tajo","tags":["melee"],"tell":"Retira una guadaña y la suelta en un arco frontal muy rápido.","howToAvoid":"Bloquee perfectamente limpiamente o abandone su semicírculo frontal antes de que termine el arco.","notes":"Esta es la herramienta básica que utiliza para abrir la mayoría de los intercambios de corto alcance."},{"name":"Golpe cargado","tags":["melee","bleed"],"tell":"Se detiene por una fracción de segundo y retiene una guadaña antes de lanzar un corte mucho más pesado.","howToAvoid":"No lo bloquees por reflejo temprano; espera el golpe real o rueda hacia el costado.","notes":"Aplica sangrado incluso a través de un bloqueo normal, por lo que lo bloqueas perfectamente o evitas estar allí."},{"name":"Combo slam","tags":["melee","aoe"],"tell":"Es más alto y golpea el suelo varias veces seguidas con sus extremidades delanteras.","howToAvoid":"No te quedes plantado debajo de él. Solo bloquea si realmente lees la cadena, o sal de la línea antes del segundo golpe.","notes":"Es uno de los patrones que castiga con más fuerza la avaricia cuerpo a cuerpo y también empeora tu ventana de bloqueo perfecto al golpear."},{"name":"Salto depredador","tags":["melee"],"tell":"Baja su cuerpo, vibra brevemente y luego se lanza en línea recta hacia tu última posición.","howToAvoid":"Enrolle tarde hacia un lado; retroceder inmediatamente normalmente te deja dentro de la zona de aterrizaje.","notes":"Además del golpe directo, este salto también reduce la recuperación de resistencia si conecta."},{"name":"Onda vertical","tags":["ranged","aoe"],"tell":"Golpea el suelo con fuerza y ​​envía una onda de choque directa que sale de su posición.","howToAvoid":"Sal del carril o salta cuando la ola esté a punto de alcanzarte; bloquear no es la respuesta correcta.","notes":"Al golpear, también reduce el daño de tu ataque en un 50% durante 30 segundos."}]},{"id":"phase2","label":"Fase 2","startsAtHealthPct":80,"trigger":"Alrededor del 80% de vida suelta un grito enorme y entra en la fase de desgaste real.","summary":"El primer grito impulsa la lucha. La mantis gana alrededor de un 10% más de daño, aumenta a aproximadamente un 62,5% de resistencia genérica y agrega Ground Shred para destrozar a cualquiera que permanezca al frente demasiado tiempo.","aggressionChange":"El grito puede volver aproximadamente cada minuto, por lo que la presión nunca vuelve a enfriarse por completo.","newPatterns":["La penalización por la recuperación de resistencia hace que el bloqueo del pánico sea mucho más costoso.","Ground Shred es una ráfaga de cinco golpes que te obliga a salir de la línea central."],"resistancesV2":[{"type":"generic","bonusPct":62}],"attacks":[{"name":"Grito","tags":["aoe"],"tell":"Se alza, vibra el cuerpo y descarga un chillido que sacude toda la arena.","howToAvoid":"No gastes tu resistencia justo antes. Si ya estás dentro de su hitbox, intenta salir; de lo contrario, estabiliza tu defensa.","notes":"Inflige daño y también reduce la recuperación de resistencia en un 50% durante 20 segundos, mientras que empeora el tiempo de bloqueo perfecto en 150 ms durante 30 segundos."},{"name":"Ground Shred","tags":["melee","bleed"],"tell":"Baja sus guadañas y encadena una larga serie de golpes bajos y destructores hacia adelante.","howToAvoid":"No intentes comerte la serie completa bloqueando sin plan. Sal del eje o responde solo a los timings que realmente lees.","notes":"Es una ráfaga de cinco golpes, inflige sangrado y también reduce el daño de ataque en un 50% durante 30 segundos al golpear."}],"specialTraits":["Durante esta fase, la mantis se vuelve mucho más dura y golpea aproximadamente un 10% más fuerte que en el primer partido."]},{"id":"phase3","label":"Fase 3","startsAtHealthPct":40,"trigger":"Por debajo del 40% de salud, vuelve a gritar y convierte cada error en un rápido colapso.","summary":"La fase final aumenta la resistencia genérica a aproximadamente el 77,5%, aumenta la mejora del daño total al 25% y mejora tanto las ondas de choque verticales como el seguimiento cargado.","aggressionChange":"Aquí casi no quedan ventanas de castigo largas. Curaciones obvias o combos demasiado extendidos son exactamente para lo que esta fase está diseñada para matar.","newPatterns":["Multi Shockwave dispara cuatro ondas verticales en una sucesión muy rápida.","El golpe cargado ahora puede continuar con un segundo impacto si te precipitas tras el primero."],"resistancesV2":[{"type":"generic","bonusPct":78}],"attacks":[{"name":"Multi Shockwave","tags":["ranged","aoe"],"tell":"Planta sus guadañas y repite la liberación de la onda de choque casi sin pausa entre cada una.","howToAvoid":"No leer la primera ola como si fuera la única. Salga del carril temprano o prepárese para saltar más de una vez.","notes":"Cada ola aún reduce el daño de tu ataque al golpear, por lo que dejar pasar incluso una hace que el resto de la fase empeore."},{"name":"Golpe cargado doble","tags":["melee","bleed"],"tell":"La primera carga le resulta familiar, pero su cuerpo no se asienta tras el impacto inicial y encadena un segundo golpe.","howToAvoid":"No contraataques por reflejo tras el primer impacto. Espera la segunda descarga o rueda fuera del costado completo.","notes":"Convierte una respuesta automática que de otro modo sería correcta en un error si olvida que el movimiento ahora tiene un seguimiento."}],"specialTraits":["El grito que inicia esta fase vuelve a aplicar las mismas penalizaciones de recuperación y bloqueo perfecto de la fase 2."]}],"listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orchid_mantis",
+  "underConstruction": true,
+  "speciesKey": "orchid_mantis",
+  "collectionGroup": "other",
+  "name": "Mantis orquídea",
+  "game": "g2",
+  "tier": 3,
+  "danger": "proximamente",
+  "isBoss": true,
+  "order": 287,
+  "defaultGold": false,
+  "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Mantis.webp",
+  "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Mantis.webp",
+  "photo": "assets/g1/creatures/photos/Mantis.webp",
+  "weaknesses": [
+    "salty"
+  ],
+  "resistances": [
+    "spicy",
+    "busting",
+    "chopping",
+    "slashing",
+    "stabbing",
+    "explosive",
+    "poison",
+    "gas"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 5,
+    "value": 3400
+  },
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_arrows_only",
+    "susceptibleDamageTypes": [
+      "stabbingArrowsOnly"
+    ]
+  },
+  "description": "La Mantis Orquídea también existe en Grounded 2, pero solo dentro de los Playgrounds creados por jugadores. Incluso fuera de la campaña principal mantiene casi toda su identidad de duelo opcional brutal y muy técnico.",
+  "behavior": "Dentro de Playgrounds se comporta como un asesino móvil, alternando cortes frontales, saltos de reposicionamiento y gritos que debilitan al jugador. No forma parte del mapa normal de Brookhollow Park.",
+  "interactionWithPlayer": "Ataca tan pronto como comienza el encuentro y no regala ventanas seguras. Sus ataques de sangrado y reducción de estadísticas significan que incluso el bloqueo correcto no siempre es suficiente por sí solo.",
+  "interactionWithCreatures": "Como jefe exclusivo de Playgrounds, su interacción con otras criaturas depende del mapa personalizado, pero su diseño está diseñado para dominar cualquier arena cerrada donde los jugadores lo coloquen.",
+  "strategy": "Salty sigue siendo la respuesta directa más limpia. La prioridad es negar los ataques libres y nunca subestimar el grito: una vez que se acumulan el daño, la recuperación y las penalizaciones por bloqueo perfecto, la pelea colapsa rápidamente.",
+  "environments": [
+    "Playgrounds"
+  ],
+  "respawnInfo": "Depende de la configuración Playground.",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Trozo de mantis orquídea",
+      "minCount": 4,
+      "maxCount": 11
+    },
+    {
+      "section": "loot",
+      "item": "Garra Mantis Orquídea",
+      "minCount": 2,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Cabeza de mantis orquídea",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Trozo de mantis orquídea",
+      "minCount": 0,
+      "maxCount": 13
+    },
+    {
+      "section": "rare",
+      "item": "Dije de mantis",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Dije de mantis",
+      "countLabel": "1",
+      "chancePct": 1
+    },
+    {
+      "item": "Trozo de mantis orquídea",
+      "countLabel": "x4",
+      "chancePct": 100
+    },
+    {
+      "item": "Trozo de mantis orquídea",
+      "countLabel": "x1",
+      "chancePct": 40
+    },
+    {
+      "item": "Trozo de mantis orquídea",
+      "countLabel": "x5",
+      "chancePct": 25
+    },
+    {
+      "item": "Trozo de mantis orquídea",
+      "countLabel": "x1",
+      "chancePct": 20
+    },
+    {
+      "item": "Trozo de mantis orquídea",
+      "countLabel": "x13",
+      "chancePct": 1
+    },
+    {
+      "item": "Garra Mantis Orquídea",
+      "countLabel": "x2",
+      "chancePct": 100,
+      "notes": "No robable"
+    },
+    {
+      "item": "Cabeza de mantis orquídea",
+      "countLabel": "x1",
+      "chancePct": 100,
+      "notes": "No robable"
+    }
+  ],
+  "combatStats": {
+    "health": 3400,
+    "stunThreshold": 260,
+    "stunCooldownSeconds": 120,
+    "attackDamageSummary": "Tajo: 150\nGolpe cargado: 175\nCombo slam: 120\nGround Shred: 90\nOnda vertical: 120\nGolpe emergente cargado: 80\nSalto depredador: 100\nSalto de escape: 90\nGrito: 10"
+  },
+  "inflictsEffects": [
+    "generic",
+    "slashing",
+    "bleed"
+  ],
+  "specialTraits": [
+    "Ground Shred y Vertical Shockwave reducen el daño de ataque del jugador en un 50% durante 30 segundos.",
+    "Pounce y Scream reducen la recuperación del agotamiento en un 50% durante 20 segundos.",
+    "Combo Slam y Grito empeoran la ventana de perfect block en 150 ms durante 30 segundos."
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "salty",
+      "bonusPct": 25
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "spicy",
+      "bonusPct": 50
+    },
+    {
+      "type": "chopping",
+      "bonusPct": 25
+    },
+    {
+      "type": "busting",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 50
+    },
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    },
+    {
+      "type": "explosive",
+      "bonusPct": 50
+    },
+    {
+      "type": "gas",
+      "bonusPct": 100
+    }
+  ],
+  "bossPhases": [
+    {
+      "id": "phase1",
+      "label": "Fase 1",
+      "startsAtHealthPct": 100,
+      "trigger": "Comienza en cuanto arranca el encuentro del Playground.",
+      "summary": "La fase inicial sigue siendo un duelo limpio pero letal. Mezcla tajos, un golpe cargado que provoca sangrado, combo slams, saltos largos y ondas verticales en cuanto le regalas distancia.",
+      "aggressionChange": "El ritmo ya es alto, pero los movimientos más comprometidos todavía dejan ventanas cortas y claras de castigo.",
+      "newPatterns": [
+        "Si se aleja demasiado, alterna Pounce y Vertical Shockwave para recuperar el carril.",
+        "Cuando lo aprietas demasiado, puede usar Escape Leap para saltar hacia atrás y restablecer el espaciado."
+      ],
+      "attacks": [
+        {
+          "name": "Tajo",
+          "tags": [
+            "melee"
+          ],
+          "tell": "Retira una guadaña y la suelta en un arco frontal muy rápido.",
+          "howToAvoid": "Bloquee perfectamente limpiamente o abandone su semicírculo frontal antes de que termine el arco.",
+          "notes": "Esta es la herramienta básica que utiliza para abrir la mayoría de los intercambios de corto alcance."
+        },
+        {
+          "name": "Golpe cargado",
+          "tags": [
+            "melee",
+            "bleed"
+          ],
+          "tell": "Se detiene por una fracción de segundo y retiene una guadaña antes de lanzar un corte mucho más pesado.",
+          "howToAvoid": "No lo bloquees por reflejo temprano; espera el golpe real o rueda hacia el costado.",
+          "notes": "Aplica sangrado incluso a través de un bloqueo normal, por lo que lo bloqueas perfectamente o evitas estar allí."
+        },
+        {
+          "name": "Combo slam",
+          "tags": [
+            "melee",
+            "aoe"
+          ],
+          "tell": "Es más alto y golpea el suelo varias veces seguidas con sus extremidades delanteras.",
+          "howToAvoid": "No te quedes plantado debajo de él. Solo bloquea si realmente lees la cadena, o sal de la línea antes del segundo golpe.",
+          "notes": "Es uno de los patrones que castiga con más fuerza la avaricia cuerpo a cuerpo y también empeora tu ventana de bloqueo perfecto al golpear."
+        },
+        {
+          "name": "Salto depredador",
+          "tags": [
+            "melee"
+          ],
+          "tell": "Baja su cuerpo, vibra brevemente y luego se lanza en línea recta hacia tu última posición.",
+          "howToAvoid": "Enrolle tarde hacia un lado; retroceder inmediatamente normalmente te deja dentro de la zona de aterrizaje.",
+          "notes": "Además del golpe directo, este salto también reduce la recuperación de resistencia si conecta."
+        },
+        {
+          "name": "Onda vertical",
+          "tags": [
+            "ranged",
+            "aoe"
+          ],
+          "tell": "Golpea el suelo con fuerza y ​​envía una onda de choque directa que sale de su posición.",
+          "howToAvoid": "Sal del carril o salta cuando la ola esté a punto de alcanzarte; bloquear no es la respuesta correcta.",
+          "notes": "Al golpear, también reduce el daño de tu ataque en un 50% durante 30 segundos."
+        }
+      ]
+    },
+    {
+      "id": "phase2",
+      "label": "Fase 2",
+      "startsAtHealthPct": 80,
+      "trigger": "Alrededor del 80% de vida suelta un grito enorme y entra en la fase de desgaste real.",
+      "summary": "El primer grito impulsa la lucha. La mantis gana alrededor de un 10% más de daño, aumenta a aproximadamente un 62,5% de resistencia genérica y agrega Ground Shred para destrozar a cualquiera que permanezca al frente demasiado tiempo.",
+      "aggressionChange": "El grito puede volver aproximadamente cada minuto, por lo que la presión nunca vuelve a enfriarse por completo.",
+      "newPatterns": [
+        "La penalización por la recuperación de resistencia hace que el bloqueo del pánico sea mucho más costoso.",
+        "Ground Shred es una ráfaga de cinco golpes que te obliga a salir de la línea central."
+      ],
+      "resistancesV2": [
+        {
+          "type": "generic",
+          "bonusPct": 62
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Grito",
+          "tags": [
+            "aoe"
+          ],
+          "tell": "Se alza, vibra el cuerpo y descarga un chillido que sacude toda la arena.",
+          "howToAvoid": "No gastes tu resistencia justo antes. Si ya estás dentro de su hitbox, intenta salir; de lo contrario, estabiliza tu defensa.",
+          "notes": "Inflige daño y también reduce la recuperación de resistencia en un 50% durante 20 segundos, mientras que empeora el tiempo de bloqueo perfecto en 150 ms durante 30 segundos."
+        },
+        {
+          "name": "Ground Shred",
+          "tags": [
+            "melee",
+            "bleed"
+          ],
+          "tell": "Baja sus guadañas y encadena una larga serie de golpes bajos y destructores hacia adelante.",
+          "howToAvoid": "No intentes comerte la serie completa bloqueando sin plan. Sal del eje o responde solo a los timings que realmente lees.",
+          "notes": "Es una ráfaga de cinco golpes, inflige sangrado y también reduce el daño de ataque en un 50% durante 30 segundos al golpear."
+        }
+      ],
+      "specialTraits": [
+        "Durante esta fase, la mantis se vuelve mucho más dura y golpea aproximadamente un 10% más fuerte que en el primer partido."
+      ]
+    },
+    {
+      "id": "phase3",
+      "label": "Fase 3",
+      "startsAtHealthPct": 40,
+      "trigger": "Por debajo del 40% de salud, vuelve a gritar y convierte cada error en un rápido colapso.",
+      "summary": "La fase final aumenta la resistencia genérica a aproximadamente el 77,5%, aumenta la mejora del daño total al 25% y mejora tanto las ondas de choque verticales como el seguimiento cargado.",
+      "aggressionChange": "Aquí casi no quedan ventanas de castigo largas. Curaciones obvias o combos demasiado extendidos son exactamente para lo que esta fase está diseñada para matar.",
+      "newPatterns": [
+        "Multi Shockwave dispara cuatro ondas verticales en una sucesión muy rápida.",
+        "El golpe cargado ahora puede continuar con un segundo impacto si te precipitas tras el primero."
+      ],
+      "resistancesV2": [
+        {
+          "type": "generic",
+          "bonusPct": 78
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Multi Shockwave",
+          "tags": [
+            "ranged",
+            "aoe"
+          ],
+          "tell": "Planta sus guadañas y repite la liberación de la onda de choque casi sin pausa entre cada una.",
+          "howToAvoid": "No leer la primera ola como si fuera la única. Salga del carril temprano o prepárese para saltar más de una vez.",
+          "notes": "Cada ola aún reduce el daño de tu ataque al golpear, por lo que dejar pasar incluso una hace que el resto de la fase empeore."
+        },
+        {
+          "name": "Golpe cargado doble",
+          "tags": [
+            "melee",
+            "bleed"
+          ],
+          "tell": "La primera carga le resulta familiar, pero su cuerpo no se asienta tras el impacto inicial y encadena un segundo golpe.",
+          "howToAvoid": "No contraataques por reflejo tras el primer impacto. Espera la segunda descarga o rueda fuera del costado completo.",
+          "notes": "Convierte una respuesta automática que de otro modo sería correcta en un error si olvida que el movimiento ahora tiene un seguimiento."
+        }
+      ],
+      "specialTraits": [
+        "El grito que inicia esta fase vuelve a aplicar las mismas penalizaciones de recuperación y bloqueo perfecto de la fase 2."
+      ]
+    }
+  ],
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "appearanceType": "no_natural_spawn"
+}

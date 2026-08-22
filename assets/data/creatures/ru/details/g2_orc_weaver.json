@@ -1,1 +1,970 @@
-{"id":"g2_orc_weaver","speciesKey":"orc_weaver","collectionGroup":"orc","name":"O.R.C. Кругопряд","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":284,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_OrbWeaver_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaver_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Orb_Weaver.webp","weaknesses":["spicy"],"resistances":["fresh","stabbing","venom"],"temperament":"aggressive","health":{"value":730,"rating":3},"description":"O.R.C. Кругопряд — милитаризованная версия обычного крупного паука парка. Он по-прежнему остаётся эталоном ближнего давления среди средних паучьих видов, но теперь встроен в патрули и засады контроля.","behavior":"Он перемещается между гнёздами, паутиной и зонами контроля O.R.C., не уходя далеко от маршрута. Поведение остаётся территориальным, как у обычного паука, но на возможность атаки он реагирует быстрее.","interactionWithPlayer":"Он атакует с ходу и заставляет уважать свои серии укусов. Если рядом есть паучки или молодые кругопряды, бой становится намного теснее и хуже читается.","interactionWithCreatures":"Обычно он действует рядом с другими пауками O.R.C. как главный источник ближнего давления в паутинных засадах.","strategy":"Базовый матчап остаётся тем же: уважать серию укусов, уходить с линии заряженного выпада и драться вне лишней паутины. Если дать ему диктовать темп, вы будете защищаться куда больше, чем атаковать.","environments":["Церемониальная зона","Площадка для крокета MIX.R","Теплица MIX.R","Муравейник инкубатория","Волны O.R.C. у пикника","Сосновый холм","Зона статуи"],"loot":[{"section":"loot","item":"Orb Weaver Chunk","minCount":2,"maxCount":5},{"section":"loot","item":"Orb Weaver Fang","minCount":0,"maxCount":1},{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"loot","item":"Web Fiber","minCount":0,"maxCount":4},{"section":"rare","item":"Orb Weaver Chunk","minCount":0,"maxCount":2},{"section":"rare","item":"Web Fiber","minCount":0,"maxCount":1}],"combatStats":{"health":730,"attackDamageSummary":"Укус: 62.5. Комбо из 3 укусов: 37.5. Заряженный укус: 81.25."},"abilities":[{"name":"Укус","description":"Тяжёлый стартовый укус, который удерживает игрока прямо перед собой.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 укусов","description":"Он давит короткой серией укусов, наказывая за слишком ранний ответ.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Заряженный укус","description":"Он на мгновение задерживает удар, а затем бросается вперёд с заметно большей силой.","blockable":true,"breaksGuard":true,"staggers":false}],"elementalWeaknesses":[{"type":"spicy","bonusPct":30}],"resistancesV2":[{"type":"fresh","bonusPct":25},{"type":"stabbing","bonusPct":25},{"type":"venom","bonusPct":50}],"groupId":null,"cardTier":2,"technicalId":"SpiderOrbORC","bestiaryId":"SpiderOrbORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Spider","technicalId":"SpiderAugusta","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Bite","technicalId":"SpiderAugustaLeftBite","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Triple Bite","technicalId":"SpiderAugustaTripleBite","tags":["stabbing"],"notes":"Урон атаки: 30"},{"name":"Power Attack","technicalId":"SpiderAugustaPowerAttack","tags":["stabbing"],"notes":"Урон атаки: 65"},{"name":"Spider Web","technicalId":"SpiderAugustaWeb","tags":["general_ranged","ranged"],"notes":"Урон атаки: 25"},{"name":"Spider Scripted Web Target","technicalId":"SpiderAugustaScriptedWebTarget","tags":["stabbing"],"notes":"Урон атаки: 50"},{"name":"Roar","technicalId":"OrbWeaverSwarmRoarORC","tags":["general_unblockable"],"notes":"Урон атаки: 0"}],"encounterVariants":[{"id":"g2_wave_spider_orb_weaver_augusta_orc_wave","characterRow":"Spider_OrbWeaver_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":730.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":[],"resistances":[{"damageTypes":["Fresh"],"percent":25.0,"sourceId":"DamageResistFreshTiny"},{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[{"damageTypes":["Spicy"],"percent":30.0,"sourceId":"DamageResistDownSpicyMedium"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"SpiderAugusta","ability":"SpiderAugustaBite1","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaLeftBite","ability":"SpiderAugustaBite2","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaTripleBite","ability":"SpiderAugustaTripleBite","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaPowerAttack","ability":"SpiderAugustaPower","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":65.0,"type":"Stabbing","hitStun":10,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaWeb","ability":"SpiderAugustaWeb","resolved":true,"cooldown":30.0,"priority":0,"targetType":"Enemy","damage":{"amount":25.0,"type":"GeneralRanged","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["WebSlow"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":1500.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaScriptedWebTarget","ability":"SpiderAugustaBiteScriptedWebTarget","resolved":true,"cooldown":0.0,"priority":99,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"OrbWeaverSwarmRoarORC","ability":"OrbWeaverSwarmRoarORC","resolved":true,"cooldown":15.0,"priority":3,"targetType":"Enemy","damage":{"amount":0.0,"type":"GeneralUnblockable","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["OrbWeaverSwarmRoarSpeedBuffORC","OrbWeaverSwarmRoarTokenDebuffORC","ORCsScreamSlow"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":1700.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":7,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_spider_orb_weaver_augusta_orc_wave","nameEn":"O.R.C. Weaver Raid/Wave","nameEsMX":"Araña tejedora C.R.O.  (Oleada)","nameRu":"O.R.C. Кругопряд Рейд/волна"}],"contextVariants":[{"id":"Spider_OrbWeaver_Augusta_ORC_Wave","characterRow":"Spider_OrbWeaver_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":730.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":[],"resistances":[{"damageTypes":["Fresh"],"percent":25.0,"sourceId":"DamageResistFreshTiny"},{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[{"damageTypes":["Spicy"],"percent":30.0,"sourceId":"DamageResistDownSpicyMedium"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"SpiderAugusta","ability":"SpiderAugustaBite1","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaLeftBite","ability":"SpiderAugustaBite2","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaTripleBite","ability":"SpiderAugustaTripleBite","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaPowerAttack","ability":"SpiderAugustaPower","resolved":true,"cooldown":3.0,"priority":0,"targetType":"Enemy","damage":{"amount":65.0,"type":"Stabbing","hitStun":10,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaWeb","ability":"SpiderAugustaWeb","resolved":true,"cooldown":30.0,"priority":0,"targetType":"Enemy","damage":{"amount":25.0,"type":"GeneralRanged","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["WebSlow"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":1500.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"SpiderAugustaScriptedWebTarget","ability":"SpiderAugustaBiteScriptedWebTarget","resolved":true,"cooldown":0.0,"priority":99,"targetType":"Enemy","damage":{"amount":50.0,"type":"Stabbing","hitStun":5,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"OrbWeaverSwarmRoarORC","ability":"OrbWeaverSwarmRoarORC","resolved":true,"cooldown":15.0,"priority":3,"targetType":"Enemy","damage":{"amount":0.0,"type":"GeneralUnblockable","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["OrbWeaverSwarmRoarSpeedBuffORC","OrbWeaverSwarmRoarTokenDebuffORC","ORCsScreamSlow"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":1700.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":7,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Araña tejedora C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_weaver",
+  "speciesKey": "orc_weaver",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Кругопряд",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 284,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_OrbWeaver_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_OrbWeaver_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Orb_Weaver.webp",
+  "weaknesses": [
+    "spicy"
+  ],
+  "resistances": [
+    "fresh",
+    "stabbing",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 3,
+    "value": 730
+  },
+  "description": "O.R.C. Кругопряд — милитаризованная версия обычного крупного паука парка. Он по-прежнему остаётся эталоном ближнего давления среди средних паучьих видов, но теперь встроен в патрули и засады контроля.",
+  "behavior": "Он перемещается между гнёздами, паутиной и зонами контроля O.R.C., не уходя далеко от маршрута. Поведение остаётся территориальным, как у обычного паука, но на возможность атаки он реагирует быстрее.",
+  "interactionWithPlayer": "Он атакует с ходу и заставляет уважать свои серии укусов. Если рядом есть паучки или молодые кругопряды, бой становится намного теснее и хуже читается.",
+  "interactionWithCreatures": "Обычно он действует рядом с другими пауками O.R.C. как главный источник ближнего давления в паутинных засадах.",
+  "strategy": "Базовый матчап остаётся тем же: уважать серию укусов, уходить с линии заряженного выпада и драться вне лишней паутины. Если дать ему диктовать темп, вы будете защищаться куда больше, чем атаковать.",
+  "environments": [
+    "Церемониальная зона",
+    "Площадка для крокета MIX.R",
+    "Теплица MIX.R",
+    "Муравейник инкубатория",
+    "Волны O.R.C. у пикника",
+    "Сосновый холм",
+    "Зона статуи"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Spider Chunk",
+      "minCount": 2,
+      "maxCount": 7
+    },
+    {
+      "section": "loot",
+      "item": "Spider Fang",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Web",
+      "minCount": 0,
+      "maxCount": 5
+    }
+  ],
+  "combatStats": {
+    "health": 730,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Тяжёлый стартовый укус, который удерживает игрока прямо перед собой.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Комбо из 3 укусов",
+      "description": "Он давит короткой серией укусов, наказывая за слишком ранний ответ.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Заряженный укус",
+      "description": "Он на мгновение задерживает удар, а затем бросается вперёд с заметно большей силой.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 30
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 25
+    },
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "SpiderOrbORC",
+  "bestiaryId": "SpiderOrbORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Spider",
+      "technicalId": "SpiderAugusta",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 300.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite",
+      "technicalId": "SpiderAugustaLeftBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 2.0,
+      "range": 300.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Triple Bite",
+      "technicalId": "SpiderAugustaTripleBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 3.0,
+      "range": 300.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power Attack",
+      "technicalId": "SpiderAugustaPowerAttack",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 65",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 65.0,
+      "cooldownSeconds": 3.0,
+      "range": 300.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spider Web",
+      "technicalId": "SpiderAugustaWeb",
+      "tags": [
+        "general",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Урон атаки: 25",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 25.0,
+      "cooldownSeconds": 30.0,
+      "range": 1500.0,
+      "stun": 8,
+      "statusEffects": [
+        "Web Slow"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Web Slow",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "projectile",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Spider Scripted Web Target",
+      "technicalId": "SpiderAugustaScriptedWebTarget",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 0.0,
+      "range": 300.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Roar",
+      "technicalId": "OrbWeaverSwarmRoarORC",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 15.0,
+      "range": 1700.0,
+      "stun": 0,
+      "statusEffects": [
+        "Orb Weaver Swarm Roar Speed Buff ORC",
+        "Orb Weaver Swarm Roar Token Debuff ORC",
+        "ORCs Scream Slow"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Orb Weaver Swarm Roar Speed Buff ORC",
+          "value": null,
+          "durationSeconds": null
+        },
+        {
+          "id": "Orb Weaver Swarm Roar Token Debuff ORC",
+          "value": null,
+          "durationSeconds": null
+        },
+        {
+          "id": "ORCs Scream Slow",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_spider_orb_weaver_augusta_orc_wave",
+      "characterRow": "Spider_OrbWeaver_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 730.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownSpicyMedium"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "SpiderAugusta",
+          "ability": "SpiderAugustaBite1",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaLeftBite",
+          "ability": "SpiderAugustaBite2",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaTripleBite",
+          "ability": "SpiderAugustaTripleBite",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaPowerAttack",
+          "ability": "SpiderAugustaPower",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 65.0,
+            "type": "Stabbing",
+            "hitStun": 10,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaWeb",
+          "ability": "SpiderAugustaWeb",
+          "resolved": true,
+          "cooldown": 30.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 25.0,
+            "type": "GeneralRanged",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "WebSlow"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 1500.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaScriptedWebTarget",
+          "ability": "SpiderAugustaBiteScriptedWebTarget",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 99,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "OrbWeaverSwarmRoarORC",
+          "ability": "OrbWeaverSwarmRoarORC",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 3,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "OrbWeaverSwarmRoarSpeedBuffORC",
+              "OrbWeaverSwarmRoarTokenDebuffORC",
+              "ORCsScreamSlow"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 1700.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 7,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_spider_orb_weaver_augusta_orc_wave",
+      "nameEn": "O.R.C. Weaver Raid/Wave",
+      "nameEsMX": "Araña tejedora C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Кругопряд Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Spider_OrbWeaver_Augusta_ORC_Wave",
+      "characterRow": "Spider_OrbWeaver_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 730.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownSpicyMedium"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "SpiderAugusta",
+          "ability": "SpiderAugustaBite1",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaLeftBite",
+          "ability": "SpiderAugustaBite2",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaTripleBite",
+          "ability": "SpiderAugustaTripleBite",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaPowerAttack",
+          "ability": "SpiderAugustaPower",
+          "resolved": true,
+          "cooldown": 3.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 65.0,
+            "type": "Stabbing",
+            "hitStun": 10,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaWeb",
+          "ability": "SpiderAugustaWeb",
+          "resolved": true,
+          "cooldown": 30.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 25.0,
+            "type": "GeneralRanged",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "WebSlow"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 1500.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "SpiderAugustaScriptedWebTarget",
+          "ability": "SpiderAugustaBiteScriptedWebTarget",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 99,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "Stabbing",
+            "hitStun": 5,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "OrbWeaverSwarmRoarORC",
+          "ability": "OrbWeaverSwarmRoarORC",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 3,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "OrbWeaverSwarmRoarSpeedBuffORC",
+              "OrbWeaverSwarmRoarTokenDebuffORC",
+              "ORCsScreamSlow"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 1700.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 7,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Araña tejedora C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_3953437cb9caf195",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver",
+      "technicalId": "SpiderOrbORC",
+      "map": "surface",
+      "world": {
+        "x": -183186.84,
+        "y": 4061.6897,
+        "z": 9040.002
+      },
+      "u": 0.2933592180275095,
+      "v": 0.303268278323636,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9875550209ed9971",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver",
+      "technicalId": "SpiderOrbORC",
+      "map": "surface",
+      "world": {
+        "x": -148448.73,
+        "y": 74728.93,
+        "z": -4495.6484
+      },
+      "u": 0.42348734445419955,
+      "v": 0.6083667439075806,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9cddb228f3653705",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver",
+      "technicalId": "SpiderOrbORC",
+      "map": "surface",
+      "world": {
+        "x": -123099.39,
+        "y": 101064.234,
+        "z": -9159.931
+      },
+      "u": 0.5184453637693883,
+      "v": 0.7220666819124715,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ba90bf89f9593cfc",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver",
+      "technicalId": "SpiderOrbORC",
+      "map": "surface",
+      "world": {
+        "x": -34199.57,
+        "y": 44703.38,
+        "z": 36119.707
+      },
+      "u": 0.8514619561018436,
+      "v": 0.47873455232313017,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_305e15b7ea701c37",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver",
+      "technicalId": "SpiderOrbORC",
+      "map": "surface",
+      "world": {
+        "x": -214641.89,
+        "y": 138466.8,
+        "z": -18.124979
+      },
+      "u": 0.1755293555750658,
+      "v": 0.8835483733873006,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8edc538c242dbd1d",
+      "targetType": "creature",
+      "targetId": "g2_orc_weaver",
+      "technicalId": "SpiderOrbORC",
+      "map": "surface",
+      "world": {
+        "x": -215177.72,
+        "y": 138344.06,
+        "z": 34.43751
+      },
+      "u": 0.17352214925373133,
+      "v": 0.8830184561936082,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Заблокировано прогрессом сюжета",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Spider Chunk",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Chunk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Chunk",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Fang",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spider Fang",
+      "countLabel": "1",
+      "chancePct": 65,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Web",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Web",
+      "countLabel": "4",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

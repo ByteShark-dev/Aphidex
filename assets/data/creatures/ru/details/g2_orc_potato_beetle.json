@@ -1,1 +1,1517 @@
-{"id":"g2_orc_potato_beetle","speciesKey":"orc_potato_beetle","collectionGroup":"orc","name":"O.R.C. Картофельный жук","game":"g2","tier":3,"danger":"muy_alta","isBoss":false,"order":267,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PotatoBeetle_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PotatoBeetle_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Potato_Beetle.webp","weaknesses":["busting","fresh"],"resistances":["stabbing","spicy"],"temperament":"aggressive","description":"O.R.C. Картофельный жук — контролируемая версия brookhollow-картофельного жука. Он сохраняет тяжёлое тело и лобовое давление, но теперь использует свои разгоны куда стабильнее в составе волн O.R.C.","behavior":"Он патрулирует сады и зоны O.R.C. медленными шагами, пока не найдёт линию для разгона. Даже когда кажется неповоротливым, он обычно уже готовит следующий лобовой заход.","interactionWithPlayer":"Он атакует сразу после обнаружения и сильно наказывает тех, кто ошибается с таймингом его разгонов. Дайте ему снова взять дистанцию — и он вернётся с куда более тяжёлым давлением.","interactionWithCreatures":"В построениях O.R.C. он обычно играет роль тяжёлого проламывателя строя, открывая пространство для более быстрых или воздушных бойцов.","strategy":"Свежесть остаётся его главной слабостью. Блокируйте разгон, наказывайте конец бокового удара и не злоупотребляйте позицией за спиной, пока не выманите заднюю отдачу.","environments":["Волны O.R.C. в саду","Теплица MIX.R","Окрестности теплицы","Тыквенная грядка","Огород"],"loot":[{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"loot","item":"Potato Beetle Head","minCount":0,"maxCount":1},{"section":"loot","item":"Potato Beetle Shell","minCount":1,"maxCount":5},{"section":"rare","item":"Potato Beetle Head","minCount":0,"maxCount":1},{"section":"rare","item":"Potato Beetle Shell","minCount":0,"maxCount":3}],"combatStats":{"attackDamageSummary":"Укус: 106.25. Разгон с ударом: 162.5. Боковой удар: 137.5. Задняя отдача: 162.5.","health":2000},"abilities":[{"name":"Укус","description":"Короткая атака жвалами, которой он начинает давление, когда уже подошёл вплотную.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Бегущий таран","description":"Он разгоняется по прямой и врезается всей массой, мгновенно сокращая дистанцию.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Боковой удар","description":"Он разворачивает корпус в сторону, наказывая тех, кто пытается слишком рано обойти его сбоку.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Задняя встряска","description":"Он резко брыкается назад, сбивая с позиции всех, кто слишком долго сидит у него за спиной.","blockable":true,"breaksGuard":true,"staggers":true}],"elementalWeaknesses":[{"type":"fresh","bonusPct":15}],"resistancesV2":[{"type":"stabbing","bonusPct":25},{"type":"spicy","bonusPct":25}],"weakPoint":{"part":"legs","susceptibleDamage":"slashing","susceptibleDamageTypes":["slashing"]},"healthDisplay":"normal","health":{"value":2000,"rating":5},"groupId":null,"cardTier":3,"technicalId":"PotatoBeetleORC","bestiaryId":"PotatoBeetleORC","bossCardStyle":null,"isKillable":true,"damageWeaknesses":[{"type":"busting","bonusPct":15}],"weakPoints":[{"part":"legs","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Charge","technicalId":"PotatoBugCharge","tags":["chopping"],"notes":"Урон атаки: 130"},{"name":"Buck","technicalId":"PotatoBugBuck","tags":["generic"],"notes":"Урон атаки: 130"},{"name":"Melee","technicalId":"PotatoBugMelee","tags":["chopping"],"notes":"Урон атаки: 85"},{"name":"Bite Right","technicalId":"PotatoBugBiteRight","tags":["chopping"],"notes":"Урон атаки: 85"},{"name":"Bite Left","technicalId":"PotatoBugBiteLeft","tags":["chopping"],"notes":"Урон атаки: 85"},{"name":"Power Attack","technicalId":"PotatoBugPowerAttack","tags":["generic"],"notes":"Урон атаки: 110"},{"name":"Roar","technicalId":"PotatoBugRoar","tags":["buff"],"notes":"Урон атаки: 0"},{"name":"Block Defensive","technicalId":"BlockDefensive","tags":["maine"],"notes":"Урон атаки: 0"}],"encounterVariants":[{"id":"PotatoBug_Augusta_ORC_A_Named","characterRow":"PotatoBug_Augusta_ORC_A_Named","role":"named_or_miniboss","variantMarkers":["named"],"sharedBestiaryEntry":true,"stats":{"health":1900.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":40}},"weakpoints":["Legs"],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"},{"damageTypes":["Fresh"],"percent":15.0,"sourceId":"DamageResistDownFreshTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"PotatoBugCharge","ability":"PotatoBugCharge","resolved":true,"cooldown":10.0,"priority":8,"targetType":"Enemy","damage":{"amount":130.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"PotatoBugBuck","ability":"PotatoBugBuck","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Self","damage":{"amount":130.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":500.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"PotatoBugMelee","ability":"PotatoBugMelee","resolved":true,"cooldown":10.0,"priority":5,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugBiteRight","ability":"PotatoBugBiteRight","resolved":true,"cooldown":2.0,"priority":2,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugBiteLeft","ability":"PotatoBugBiteLeft","resolved":true,"cooldown":2.0,"priority":2,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugPowerAttack","ability":"PotatoBugPowerAttack","resolved":true,"cooldown":10.0,"priority":10,"targetType":"Enemy","damage":{"amount":110.0,"type":"General","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugRoar","ability":"PotatoBugRoar","resolved":true,"cooldown":35.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Buff","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["PotatoBeetleRoar_VenonResist","PotatoBeetleRoar_HealthRegen"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Self"},{"id":"ORC_LaserAttack","ability":"ORC_LaserAttack","resolved":true,"cooldown":15.0,"priority":20,"targetType":"Enemy","damage":{"amount":5.0,"type":"ORCLaser","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[{"keyword":"laser","sources":["/Game/Releases/Release_0_3_0/Blueprints/Creatures/Ominent/PotatoBug/BP_PotatoBug_Augusta_ORC_Laser","ORC_LaserAttack","/Game/Releases/Release_0_3_0/Blueprints/Creatures/Attacks/CombatActions/CA_ORC_LaserAttack.0"]}],"quality":{"resolvedAttacks":8,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"parentBestiaryId":"PotatoBeetleORC","parentAphidexId":"g2_orc_potato_beetle","technicalCharacterRow":"PotatoBug_Augusta_ORC_A_Named","variantKey":"PotatoBug_Augusta_ORC_A_Named","nameEn":"Chief Titan","nameEsMX":"Jefe titán","nameBindingConfidence":"probable_order_binding","topLevelAphidexId":null,"killFavoriteStateOwner":"g2_orc_potato_beetle","policy":"CHILD_VARIANT_NO_TOP_LEVEL_ID"},{"id":"PotatoBug_Augusta_ORC_B_Named","characterRow":"PotatoBug_Augusta_ORC_B_Named","role":"named_or_miniboss","variantMarkers":["named"],"sharedBestiaryEntry":true,"stats":{"health":1900.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":40}},"weakpoints":["Legs"],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"},{"damageTypes":["Fresh"],"percent":15.0,"sourceId":"DamageResistDownFreshTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"PotatoBugCharge","ability":"PotatoBugCharge","resolved":true,"cooldown":10.0,"priority":8,"targetType":"Enemy","damage":{"amount":130.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"PotatoBugBuck","ability":"PotatoBugBuck","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Self","damage":{"amount":130.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":500.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"PotatoBugMelee","ability":"PotatoBugMelee","resolved":true,"cooldown":10.0,"priority":5,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugBiteRight","ability":"PotatoBugBiteRight","resolved":true,"cooldown":2.0,"priority":2,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugBiteLeft","ability":"PotatoBugBiteLeft","resolved":true,"cooldown":2.0,"priority":2,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugPowerAttack","ability":"PotatoBugPowerAttack","resolved":true,"cooldown":10.0,"priority":10,"targetType":"Enemy","damage":{"amount":110.0,"type":"General","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugRoar","ability":"PotatoBugRoar","resolved":true,"cooldown":35.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Buff","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["PotatoBeetleRoar_VenonResist","PotatoBeetleRoar_HealthRegen"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Self"},{"id":"ORC_LaserAttack","ability":"ORC_LaserAttack","resolved":true,"cooldown":15.0,"priority":20,"targetType":"Enemy","damage":{"amount":5.0,"type":"ORCLaser","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[{"keyword":"laser","sources":["/Game/Releases/Release_0_3_0/Blueprints/Creatures/Ominent/PotatoBug/BP_PotatoBug_Augusta_ORC_Laser","ORC_LaserAttack","/Game/Releases/Release_0_3_0/Blueprints/Creatures/Attacks/CombatActions/CA_ORC_LaserAttack.0"]}],"quality":{"resolvedAttacks":8,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"parentBestiaryId":"PotatoBeetleORC","parentAphidexId":"g2_orc_potato_beetle","technicalCharacterRow":"PotatoBug_Augusta_ORC_B_Named","variantKey":"PotatoBug_Augusta_ORC_B_Named","nameEn":"Major Pain","nameEsMX":"General Tortura","nameBindingConfidence":"probable_order_binding","topLevelAphidexId":null,"killFavoriteStateOwner":"g2_orc_potato_beetle","policy":"CHILD_VARIANT_NO_TOP_LEVEL_ID"},{"id":"g2_wave_potato_bug_augusta_orc_wave","characterRow":"PotatoBug_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":2000.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":40}},"weakpoints":["Legs"],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"},{"damageTypes":["Fresh"],"percent":15.0,"sourceId":"DamageResistDownFreshTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"PotatoBugCharge","ability":"PotatoBugCharge","resolved":true,"cooldown":10.0,"priority":8,"targetType":"Enemy","damage":{"amount":130.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"PotatoBugBuck","ability":"PotatoBugBuck","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Self","damage":{"amount":130.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":500.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"PotatoBugMelee","ability":"PotatoBugMelee","resolved":true,"cooldown":10.0,"priority":5,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugBiteRight","ability":"PotatoBugBiteRight","resolved":true,"cooldown":2.0,"priority":2,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugBiteLeft","ability":"PotatoBugBiteLeft","resolved":true,"cooldown":2.0,"priority":2,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugPowerAttack","ability":"PotatoBugPowerAttack","resolved":true,"cooldown":10.0,"priority":10,"targetType":"Enemy","damage":{"amount":110.0,"type":"General","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugRoar","ability":"PotatoBugRoar","resolved":true,"cooldown":35.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Buff","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["PotatoBeetleRoar_VenonResist","PotatoBeetleRoar_HealthRegen"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Self"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":8,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_potato_bug_augusta_orc_wave","nameEn":"O.R.C. Potato Beetle Raid/Wave","nameEsMX":"Escarabajo de la papa C.R.O.  (Oleada)","nameRu":"O.R.C. Картофельный жук Рейд/волна"}],"contextVariants":[{"id":"PotatoBug_Augusta_ORC_Wave","characterRow":"PotatoBug_Augusta_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":2000.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":40}},"weakpoints":["Legs"],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"},{"damageTypes":["Fresh"],"percent":15.0,"sourceId":"DamageResistDownFreshTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"PotatoBugCharge","ability":"PotatoBugCharge","resolved":true,"cooldown":10.0,"priority":8,"targetType":"Enemy","damage":{"amount":130.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"PotatoBugBuck","ability":"PotatoBugBuck","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Self","damage":{"amount":130.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":500.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"PotatoBugMelee","ability":"PotatoBugMelee","resolved":true,"cooldown":10.0,"priority":5,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugBiteRight","ability":"PotatoBugBiteRight","resolved":true,"cooldown":2.0,"priority":2,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugBiteLeft","ability":"PotatoBugBiteLeft","resolved":true,"cooldown":2.0,"priority":2,"targetType":"Enemy","damage":{"amount":85.0,"type":"Chopping","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugPowerAttack","ability":"PotatoBugPowerAttack","resolved":true,"cooldown":10.0,"priority":10,"targetType":"Enemy","damage":{"amount":110.0,"type":"General","hitStun":12,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":240.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"PotatoBugRoar","ability":"PotatoBugRoar","resolved":true,"cooldown":35.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Buff","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["PotatoBeetleRoar_VenonResist","PotatoBeetleRoar_HealthRegen"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Self"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":8,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Escarabajo de la papa C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_potato_beetle",
+  "speciesKey": "orc_potato_beetle",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Картофельный жук",
+  "game": "g2",
+  "tier": 3,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 267,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PotatoBeetle_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PotatoBeetle_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Potato_Beetle.webp",
+  "weaknesses": [
+    "busting",
+    "fresh"
+  ],
+  "resistances": [
+    "stabbing",
+    "spicy"
+  ],
+  "temperament": "aggressive",
+  "description": "O.R.C. Картофельный жук — контролируемая версия brookhollow-картофельного жука. Он сохраняет тяжёлое тело и лобовое давление, но теперь использует свои разгоны куда стабильнее в составе волн O.R.C.",
+  "behavior": "Он патрулирует сады и зоны O.R.C. медленными шагами, пока не найдёт линию для разгона. Даже когда кажется неповоротливым, он обычно уже готовит следующий лобовой заход.",
+  "interactionWithPlayer": "Он атакует сразу после обнаружения и сильно наказывает тех, кто ошибается с таймингом его разгонов. Дайте ему снова взять дистанцию — и он вернётся с куда более тяжёлым давлением.",
+  "interactionWithCreatures": "В построениях O.R.C. он обычно играет роль тяжёлого проламывателя строя, открывая пространство для более быстрых или воздушных бойцов.",
+  "strategy": "Свежесть остаётся его главной слабостью. Блокируйте разгон, наказывайте конец бокового удара и не злоупотребляйте позицией за спиной, пока не выманите заднюю отдачу.",
+  "environments": [
+    "Волны O.R.C. в саду",
+    "Теплица MIX.R",
+    "Окрестности теплицы",
+    "Тыквенная грядка",
+    "Огород"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Potato Beetle Head",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Potato Beetle Shell",
+      "minCount": 1,
+      "maxCount": 8
+    }
+  ],
+  "combatStats": {
+    "health": 2000,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Короткая атака жвалами, которой он начинает давление, когда уже подошёл вплотную.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Бегущий таран",
+      "description": "Он разгоняется по прямой и врезается всей массой, мгновенно сокращая дистанцию.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Боковой удар",
+      "description": "Он разворачивает корпус в сторону, наказывая тех, кто пытается слишком рано обойти его сбоку.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Задняя встряска",
+      "description": "Он резко брыкается назад, сбивая с позиции всех, кто слишком долго сидит у него за спиной.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoint": {
+    "part": "legs",
+    "susceptibleDamage": "slashing",
+    "susceptibleDamageTypes": [
+      "slashing"
+    ]
+  },
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 5,
+    "value": 2000
+  },
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "PotatoBeetleORC",
+  "bestiaryId": "PotatoBeetleORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "legs",
+      "susceptibleDamage": "slashing",
+      "susceptibleDamageTypes": [
+        "slashing"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Charge",
+      "technicalId": "PotatoBugCharge",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 130",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 130.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Buck",
+      "technicalId": "PotatoBugBuck",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 130",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 130.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Melee",
+      "technicalId": "PotatoBugMelee",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 85",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 10.0,
+      "range": 240.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Right",
+      "technicalId": "PotatoBugBiteRight",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 85",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 2.0,
+      "range": 240.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Left",
+      "technicalId": "PotatoBugBiteLeft",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Урон атаки: 85",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 2.0,
+      "range": 240.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power Attack",
+      "technicalId": "PotatoBugPowerAttack",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 110",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 110.0,
+      "cooldownSeconds": 10.0,
+      "range": 240.0,
+      "stun": 12,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Roar",
+      "technicalId": "PotatoBugRoar",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 35.0,
+      "range": 250.0,
+      "stun": 0,
+      "statusEffects": [
+        "Potato Beetle Roar Venon Resist",
+        "Potato Beetle Roar Health Regen"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Potato Beetle Roar Venon Resist",
+          "value": null,
+          "durationSeconds": null
+        },
+        {
+          "id": "Potato Beetle Roar Health Regen",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Defensive",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "PotatoBug_Augusta_ORC_A_Named",
+      "characterRow": "PotatoBug_Augusta_ORC_A_Named",
+      "role": "named_or_miniboss",
+      "variantMarkers": [
+        "named"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1900.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [
+        "Legs"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownFreshTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "PotatoBugCharge",
+          "ability": "PotatoBugCharge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 8,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 130.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "PotatoBugBuck",
+          "ability": "PotatoBugBuck",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Self",
+          "damage": {
+            "amount": 130.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 500.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "PotatoBugMelee",
+          "ability": "PotatoBugMelee",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 5,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugBiteRight",
+          "ability": "PotatoBugBiteRight",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugBiteLeft",
+          "ability": "PotatoBugBiteLeft",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugPowerAttack",
+          "ability": "PotatoBugPowerAttack",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 10,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 110.0,
+            "type": "General",
+            "hitStun": 12,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugRoar",
+          "ability": "PotatoBugRoar",
+          "resolved": true,
+          "cooldown": 35.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Buff",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "PotatoBeetleRoar_VenonResist",
+              "PotatoBeetleRoar_HealthRegen"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Self"
+        },
+        {
+          "id": "ORC_LaserAttack",
+          "ability": "ORC_LaserAttack",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 20,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 5.0,
+            "type": "ORCLaser",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [
+        {
+          "keyword": "laser",
+          "sources": [
+            "/Game/Releases/Release_0_3_0/Blueprints/Creatures/Ominent/PotatoBug/BP_PotatoBug_Augusta_ORC_Laser",
+            "ORC_LaserAttack",
+            "/Game/Releases/Release_0_3_0/Blueprints/Creatures/Attacks/CombatActions/CA_ORC_LaserAttack.0"
+          ]
+        }
+      ],
+      "quality": {
+        "resolvedAttacks": 8,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "parentBestiaryId": "PotatoBeetleORC",
+      "parentAphidexId": "g2_orc_potato_beetle",
+      "technicalCharacterRow": "PotatoBug_Augusta_ORC_A_Named",
+      "variantKey": "PotatoBug_Augusta_ORC_A_Named",
+      "nameEn": "Chief Titan",
+      "nameEsMX": "Jefe titán",
+      "nameBindingConfidence": "probable_order_binding",
+      "topLevelAphidexId": null,
+      "killFavoriteStateOwner": "g2_orc_potato_beetle",
+      "policy": "CHILD_VARIANT_NO_TOP_LEVEL_ID"
+    },
+    {
+      "id": "PotatoBug_Augusta_ORC_B_Named",
+      "characterRow": "PotatoBug_Augusta_ORC_B_Named",
+      "role": "named_or_miniboss",
+      "variantMarkers": [
+        "named"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1900.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [
+        "Legs"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownFreshTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "PotatoBugCharge",
+          "ability": "PotatoBugCharge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 8,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 130.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "PotatoBugBuck",
+          "ability": "PotatoBugBuck",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Self",
+          "damage": {
+            "amount": 130.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 500.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "PotatoBugMelee",
+          "ability": "PotatoBugMelee",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 5,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugBiteRight",
+          "ability": "PotatoBugBiteRight",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugBiteLeft",
+          "ability": "PotatoBugBiteLeft",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugPowerAttack",
+          "ability": "PotatoBugPowerAttack",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 10,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 110.0,
+            "type": "General",
+            "hitStun": 12,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugRoar",
+          "ability": "PotatoBugRoar",
+          "resolved": true,
+          "cooldown": 35.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Buff",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "PotatoBeetleRoar_VenonResist",
+              "PotatoBeetleRoar_HealthRegen"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Self"
+        },
+        {
+          "id": "ORC_LaserAttack",
+          "ability": "ORC_LaserAttack",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 20,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 5.0,
+            "type": "ORCLaser",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [
+        {
+          "keyword": "laser",
+          "sources": [
+            "/Game/Releases/Release_0_3_0/Blueprints/Creatures/Ominent/PotatoBug/BP_PotatoBug_Augusta_ORC_Laser",
+            "ORC_LaserAttack",
+            "/Game/Releases/Release_0_3_0/Blueprints/Creatures/Attacks/CombatActions/CA_ORC_LaserAttack.0"
+          ]
+        }
+      ],
+      "quality": {
+        "resolvedAttacks": 8,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "parentBestiaryId": "PotatoBeetleORC",
+      "parentAphidexId": "g2_orc_potato_beetle",
+      "technicalCharacterRow": "PotatoBug_Augusta_ORC_B_Named",
+      "variantKey": "PotatoBug_Augusta_ORC_B_Named",
+      "nameEn": "Major Pain",
+      "nameEsMX": "General Tortura",
+      "nameBindingConfidence": "probable_order_binding",
+      "topLevelAphidexId": null,
+      "killFavoriteStateOwner": "g2_orc_potato_beetle",
+      "policy": "CHILD_VARIANT_NO_TOP_LEVEL_ID"
+    },
+    {
+      "id": "g2_wave_potato_bug_augusta_orc_wave",
+      "characterRow": "PotatoBug_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 2000.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [
+        "Legs"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownFreshTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "PotatoBugCharge",
+          "ability": "PotatoBugCharge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 8,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 130.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "PotatoBugBuck",
+          "ability": "PotatoBugBuck",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Self",
+          "damage": {
+            "amount": 130.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 500.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "PotatoBugMelee",
+          "ability": "PotatoBugMelee",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 5,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugBiteRight",
+          "ability": "PotatoBugBiteRight",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugBiteLeft",
+          "ability": "PotatoBugBiteLeft",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugPowerAttack",
+          "ability": "PotatoBugPowerAttack",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 10,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 110.0,
+            "type": "General",
+            "hitStun": 12,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugRoar",
+          "ability": "PotatoBugRoar",
+          "resolved": true,
+          "cooldown": 35.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Buff",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "PotatoBeetleRoar_VenonResist",
+              "PotatoBeetleRoar_HealthRegen"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Self"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 8,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_potato_bug_augusta_orc_wave",
+      "nameEn": "O.R.C. Potato Beetle Raid/Wave",
+      "nameEsMX": "Escarabajo de la papa C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Картофельный жук Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "PotatoBug_Augusta_ORC_Wave",
+      "characterRow": "PotatoBug_Augusta_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 2000.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [
+        "Legs"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownFreshTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "PotatoBugCharge",
+          "ability": "PotatoBugCharge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 8,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 130.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "PotatoBugBuck",
+          "ability": "PotatoBugBuck",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Self",
+          "damage": {
+            "amount": 130.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 500.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "PotatoBugMelee",
+          "ability": "PotatoBugMelee",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 5,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugBiteRight",
+          "ability": "PotatoBugBiteRight",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugBiteLeft",
+          "ability": "PotatoBugBiteLeft",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 85.0,
+            "type": "Chopping",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugPowerAttack",
+          "ability": "PotatoBugPowerAttack",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 10,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 110.0,
+            "type": "General",
+            "hitStun": 12,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 240.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "PotatoBugRoar",
+          "ability": "PotatoBugRoar",
+          "resolved": true,
+          "cooldown": 35.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Buff",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "PotatoBeetleRoar_VenonResist",
+              "PotatoBeetleRoar_HealthRegen"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Self"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 8,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Escarabajo de la papa C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_83b9611be749dd24",
+      "targetType": "creature",
+      "targetId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBeetleORC",
+      "map": "surface",
+      "world": {
+        "x": -138996.48,
+        "y": -15014.466,
+        "z": 7793.659
+      },
+      "u": 0.4588952461223295,
+      "v": 0.2209089586643056,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_54620cf83d6398e4",
+      "targetType": "creature",
+      "targetId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBeetleORC",
+      "map": "surface",
+      "world": {
+        "x": -176335.81,
+        "y": -41025.582,
+        "z": -825.9065
+      },
+      "u": 0.3190230119988294,
+      "v": 0.10860866865671642,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_93deec36c116e28c",
+      "targetType": "creature",
+      "targetId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBeetleORC",
+      "map": "surface",
+      "world": {
+        "x": -125422.26,
+        "y": -23179.795,
+        "z": -3550.0
+      },
+      "u": 0.5097439484928299,
+      "v": 0.1856559993254069,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9ce7fe6616434884",
+      "targetType": "creature",
+      "targetId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBeetleORC",
+      "map": "surface",
+      "world": {
+        "x": -227451.25,
+        "y": -17426.486,
+        "z": 15159.096
+      },
+      "u": 0.1275458004097161,
+      "v": 0.21049531299435026,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 85,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Potato Beetle Head",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Potato Beetle Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Potato Beetle Shell",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Potato Beetle Shell",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Potato Beetle Shell",
+      "countLabel": "4",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

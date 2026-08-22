@@ -1,1 +1,966 @@
-{"id":"g2_orc_cricket","speciesKey":"orc_cricket","collectionGroup":"orc","name":"O.R.C. Cricket","game":"g2","tier":3,"danger":"muy_alta","isBoss":false,"order":224,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Cricket_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Cricket_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Cricket.webp","weaknesses":["busting","fresh"],"resistances":["stabbing","spicy"],"temperament":"aggressive","description":"This remote-controlled cricket bolsters allies with a militant tune. Can drop an O.R.C. Receiver on death as well as its creature parts.","behavior":"It patrols greenhouses and O.R.C. wave zones with a lot of lateral movement and long jumps. Even when it looks like it is backing off, it is usually searching for the angle to crash back in.","interactionWithPlayer":"It attacks on sight and especially punishes anyone who reads its jumps and headbutts poorly. React late to the long leap and you are forced back into defense before you can reset position.","interactionWithCreatures":"It often serves as a mobile harasser inside O.R.C. formations, jumping in and out to keep the fight's rhythm broken.","strategy":"Fresh and busting damage are still the best route. Punish the end of the headbutt and long leap, but do not linger behind it because the back kick is still a very reliable punish.","environments":["Garden O.R.C. Waves","Greenhouse"],"loot":[{"section":"loot","item":"Cricket Drumstick","minCount":0,"maxCount":2},{"section":"loot","item":"Cricket Head","minCount":0,"maxCount":1},{"section":"loot","item":"Cricket Part","minCount":1,"maxCount":5},{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"rare","item":"Fabulous Femur","minCount":0,"maxCount":1},{"section":"rare","item":"Cricket Part","minCount":0,"maxCount":4}],"combatStats":{"attackDamageSummary":"3-Hit Combo Bite: 110. Charged Headbutt: 140. Back Kick: 119. Leap of Faith: 150.","health":1400},"abilities":[{"name":"3-Hit Combo Bite","description":"It chains a quick string of bites to keep you from recovering tempo.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Charged Headbutt","description":"It winds up briefly and then smashes forward with much more force.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Back Kick","description":"It kicks backward to punish anyone staying behind it for too long.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Leap of Faith","description":"It takes a long aggressive leap to land on top of the target and seize the initiative again.","blockable":true,"breaksGuard":false,"staggers":true}],"elementalWeaknesses":[{"type":"fresh","bonusPct":30}],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"stabbing","bonusPct":25},{"type":"spicy","bonusPct":25}],"healthDisplay":"normal","health":{"value":1400,"rating":4},"groupId":null,"cardTier":3,"technicalId":"CricketORC","bestiaryId":"CricketORC","bossCardStyle":null,"isKillable":true,"weakPoints":[],"attacks":[{"name":"Combo 3 X","technicalId":"CricketAttackCombo3X","tags":["stabbing"],"notes":"Attack damage: 88"},{"name":"Power Attack","technicalId":"CricketAttackPowerAttack","tags":["stabbing"],"notes":"Attack damage: 112"},{"name":"Back Kick","technicalId":"CricketAttackBackKick","tags":["stabbing"],"notes":"Attack damage: 95"},{"name":"Leap Of Faith","technicalId":"CricketAttackLeapOfFaith","tags":["cricket_leap_of_faith"],"notes":"Attack damage: 120"},{"name":"Sonic Screech","technicalId":"CricketAttackSonicScreech","tags":["general_unblockable"],"notes":"Attack damage: 0"},{"name":"Block Defensive","technicalId":"BlockDefensive","tags":["maine"],"notes":"Attack damage: 0"}],"encounterVariants":[{"id":"Cricket_ORC_A_Named","characterRow":"Cricket_ORC_A_Named","role":"named_or_miniboss","variantMarkers":["named"],"sharedBestiaryEntry":true,"stats":{"health":1800.0,"stun":{"max":75.0,"duration":4.0,"cooldown":10.0,"staggerThreshold":40}},"weakpoints":[],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"},{"damageTypes":["Fresh"],"percent":30.0,"sourceId":"DamageResistDownFreshMedium"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"CricketANamedAttackCombo3X","ability":"CricketANamedAttackComboX3","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":98.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CricketANamedAttackPowerAttack","ability":"CricketANamedAttackPowerAttack","resolved":true,"cooldown":8.0,"priority":0,"targetType":"Enemy","damage":{"amount":122.0,"type":"Stabbing","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CricketANamedAttackBackKick","ability":"CricketANamedAttackBackKick","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":105.0,"type":"Stabbing","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CricketANamedAttackLeapOfFaith","ability":"CricketANamedAttackLeapOfFaith","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":130.0,"type":"CricketLeapOfFaith","hitStun":15,"poiseDamage":0.0,"pushback":50.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":true,"hitResolutionType":"AOE"},{"id":"CricketANamedAttackSonicScreech","ability":"CricketANamedAttackSonicScreech","resolved":true,"cooldown":15.0,"priority":0,"targetType":"Enemy","damage":{"amount":0.0,"type":"GeneralUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":30.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":2000.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"}],"mechanicSignals":[],"quality":{"resolvedAttacks":5,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"parentBestiaryId":"CricketORC","parentAphidexId":"g2_orc_cricket","technicalCharacterRow":"Cricket_ORC_A_Named","variantKey":"Cricket_ORC_A_Named","nameEn":"Private Bouncer","nameEsMX":"Guardia soldado","nameBindingConfidence":"high","topLevelAphidexId":null,"killFavoriteStateOwner":"g2_orc_cricket","policy":"CHILD_VARIANT_NO_TOP_LEVEL_ID"},{"id":"g2_wave_cricket_orc_wave","characterRow":"Cricket_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1400.0,"stun":{"max":75.0,"duration":4.0,"cooldown":10.0,"staggerThreshold":40}},"weakpoints":[],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"},{"damageTypes":["Fresh"],"percent":30.0,"sourceId":"DamageResistDownFreshMedium"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"CricketAttackCombo3X","ability":"CricketAttackCombo3X","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":88.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CricketAttackPowerAttack","ability":"CricketAttackPowerAttack","resolved":true,"cooldown":8.0,"priority":0,"targetType":"Enemy","damage":{"amount":112.0,"type":"Stabbing","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CricketAttackBackKick","ability":"CricketAttackBackKick","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":95.0,"type":"Stabbing","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CricketAttackLeapOfFaith","ability":"CricketAttackLeapOfFaith","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":120.0,"type":"CricketLeapOfFaith","hitStun":15,"poiseDamage":0.0,"pushback":50.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":true,"hitResolutionType":"AOE"},{"id":"CricketAttackSonicScreech","ability":"CricketAttackSonicScreech","resolved":true,"cooldown":15.0,"priority":0,"targetType":"Enemy","damage":{"amount":0.0,"type":"GeneralUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":30.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":2000.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_cricket_orc_wave","nameEn":"O.R.C. Cricket Raid/Wave","nameEsMX":"Grillo C.R.O.  (Oleada)","nameRu":"O.R.C. Сверчок Рейд/волна"}],"contextVariants":[{"id":"Cricket_ORC_Wave","characterRow":"Cricket_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1400.0,"stun":{"max":75.0,"duration":4.0,"cooldown":10.0,"staggerThreshold":40}},"weakpoints":[],"resistances":[{"damageTypes":["Stabbing"],"percent":25.0,"sourceId":"DamageResistStabbingTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"},{"damageTypes":["Fresh"],"percent":30.0,"sourceId":"DamageResistDownFreshMedium"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"CricketAttackCombo3X","ability":"CricketAttackCombo3X","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":88.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CricketAttackPowerAttack","ability":"CricketAttackPowerAttack","resolved":true,"cooldown":8.0,"priority":0,"targetType":"Enemy","damage":{"amount":112.0,"type":"Stabbing","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CricketAttackBackKick","ability":"CricketAttackBackKick","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":95.0,"type":"Stabbing","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CricketAttackLeapOfFaith","ability":"CricketAttackLeapOfFaith","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":120.0,"type":"CricketLeapOfFaith","hitStun":15,"poiseDamage":0.0,"pushback":50.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":400.0,"ranged":false,"jumpAttack":true,"hitResolutionType":"AOE"},{"id":"CricketAttackSonicScreech","ability":"CricketAttackSonicScreech","resolved":true,"cooldown":15.0,"priority":0,"targetType":"Enemy","damage":{"amount":0.0,"type":"GeneralUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":30.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":2000.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Grillo C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_cricket",
+  "speciesKey": "orc_cricket",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Cricket",
+  "game": "g2",
+  "tier": 3,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 224,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_Cricket_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_Cricket_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Cricket.webp",
+  "weaknesses": [
+    "busting",
+    "fresh"
+  ],
+  "resistances": [
+    "stabbing",
+    "spicy"
+  ],
+  "temperament": "aggressive",
+  "description": "This remote-controlled cricket bolsters allies with a militant tune. Can drop an O.R.C. Receiver on death as well as its creature parts.",
+  "behavior": "It patrols greenhouses and O.R.C. wave zones with a lot of lateral movement and long jumps. Even when it looks like it is backing off, it is usually searching for the angle to crash back in.",
+  "interactionWithPlayer": "It attacks on sight and especially punishes anyone who reads its jumps and headbutts poorly. React late to the long leap and you are forced back into defense before you can reset position.",
+  "interactionWithCreatures": "It often serves as a mobile harasser inside O.R.C. formations, jumping in and out to keep the fight's rhythm broken.",
+  "strategy": "Fresh and busting damage are still the best route. Punish the end of the headbutt and long leap, but do not linger behind it because the back kick is still a very reliable punish.",
+  "environments": [
+    "Garden O.R.C. Waves",
+    "Greenhouse"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Cricket",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cricket Drumstick",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Cricket Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cricket Part",
+      "minCount": 1,
+      "maxCount": 9
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1400,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 10
+  },
+  "abilities": [
+    {
+      "name": "3-Hit Combo Bite",
+      "description": "It chains a quick string of bites to keep you from recovering tempo.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Charged Headbutt",
+      "description": "It winds up briefly and then smashes forward with much more force.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Back Kick",
+      "description": "It kicks backward to punish anyone staying behind it for too long.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Leap of Faith",
+      "description": "It takes a long aggressive leap to land on top of the target and seize the initiative again.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 30
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    }
+  ],
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 4,
+    "value": 1400
+  },
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "CricketORC",
+  "bestiaryId": "CricketORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Combo 3 X",
+      "technicalId": "CricketAttackCombo3X",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 88",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 88.0,
+      "cooldownSeconds": 2.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power Attack",
+      "technicalId": "CricketAttackPowerAttack",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 112",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 112.0,
+      "cooldownSeconds": 8.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Back Kick",
+      "technicalId": "CricketAttackBackKick",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 95",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 95.0,
+      "cooldownSeconds": 2.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Leap Of Faith",
+      "technicalId": "CricketAttackLeapOfFaith",
+      "tags": [
+        "chopping"
+      ],
+      "notes": "Attack damage: 120",
+      "damageTypes": [
+        "chopping"
+      ],
+      "damage": 120.0,
+      "cooldownSeconds": 10.0,
+      "range": 400.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Sonic Screech",
+      "technicalId": "CricketAttackSonicScreech",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 15.0,
+      "range": 2000.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Defensive",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "Cricket_ORC_A_Named",
+      "characterRow": "Cricket_ORC_A_Named",
+      "role": "named_or_miniboss",
+      "variantMarkers": [
+        "named"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1800.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 10.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownFreshMedium"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "CricketANamedAttackCombo3X",
+          "ability": "CricketANamedAttackComboX3",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 98.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CricketANamedAttackPowerAttack",
+          "ability": "CricketANamedAttackPowerAttack",
+          "resolved": true,
+          "cooldown": 8.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 122.0,
+            "type": "Stabbing",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CricketANamedAttackBackKick",
+          "ability": "CricketANamedAttackBackKick",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 105.0,
+            "type": "Stabbing",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CricketANamedAttackLeapOfFaith",
+          "ability": "CricketANamedAttackLeapOfFaith",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 130.0,
+            "type": "CricketLeapOfFaith",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 50.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": true,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "CricketANamedAttackSonicScreech",
+          "ability": "CricketANamedAttackSonicScreech",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 30.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 2000.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 5,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "parentBestiaryId": "CricketORC",
+      "parentAphidexId": "g2_orc_cricket",
+      "technicalCharacterRow": "Cricket_ORC_A_Named",
+      "variantKey": "Cricket_ORC_A_Named",
+      "nameEn": "Private Bouncer",
+      "nameEsMX": "Guardia soldado",
+      "nameBindingConfidence": "high",
+      "topLevelAphidexId": null,
+      "killFavoriteStateOwner": "g2_orc_cricket",
+      "policy": "CHILD_VARIANT_NO_TOP_LEVEL_ID"
+    },
+    {
+      "id": "g2_wave_cricket_orc_wave",
+      "characterRow": "Cricket_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1400.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 10.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownFreshMedium"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "CricketAttackCombo3X",
+          "ability": "CricketAttackCombo3X",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 88.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CricketAttackPowerAttack",
+          "ability": "CricketAttackPowerAttack",
+          "resolved": true,
+          "cooldown": 8.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 112.0,
+            "type": "Stabbing",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CricketAttackBackKick",
+          "ability": "CricketAttackBackKick",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 95.0,
+            "type": "Stabbing",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CricketAttackLeapOfFaith",
+          "ability": "CricketAttackLeapOfFaith",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 120.0,
+            "type": "CricketLeapOfFaith",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 50.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": true,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "CricketAttackSonicScreech",
+          "ability": "CricketAttackSonicScreech",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 30.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 2000.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_cricket_orc_wave",
+      "nameEn": "O.R.C. Cricket Raid/Wave",
+      "nameEsMX": "Grillo C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Сверчок Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Cricket_ORC_Wave",
+      "characterRow": "Cricket_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1400.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 10.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistStabbingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 30.0,
+          "sourceId": "DamageResistDownFreshMedium"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "CricketAttackCombo3X",
+          "ability": "CricketAttackCombo3X",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 88.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CricketAttackPowerAttack",
+          "ability": "CricketAttackPowerAttack",
+          "resolved": true,
+          "cooldown": 8.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 112.0,
+            "type": "Stabbing",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CricketAttackBackKick",
+          "ability": "CricketAttackBackKick",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 95.0,
+            "type": "Stabbing",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CricketAttackLeapOfFaith",
+          "ability": "CricketAttackLeapOfFaith",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 120.0,
+            "type": "CricketLeapOfFaith",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 50.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 400.0,
+          "ranged": false,
+          "jumpAttack": true,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "CricketAttackSonicScreech",
+          "ability": "CricketAttackSonicScreech",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 30.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 2000.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Grillo C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_4d738f371cccb230",
+      "targetType": "creature",
+      "targetId": "g2_orc_cricket",
+      "technicalId": "CricketORC",
+      "map": "surface",
+      "world": {
+        "x": -180386.34,
+        "y": -28142.482,
+        "z": -599.5544
+      },
+      "u": 0.30384982382206616,
+      "v": 0.16423011397251033,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "fixed_encounter",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Cricket",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Drumstick",
+      "countLabel": "1",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Drumstick",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Cricket Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cricket Part",
+      "countLabel": "4",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

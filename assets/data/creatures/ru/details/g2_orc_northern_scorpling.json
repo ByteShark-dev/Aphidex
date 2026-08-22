@@ -1,1 +1,639 @@
-{"id":"g2_orc_northern_scorpling","speciesKey":"orc_northern_scorpling","collectionGroup":"orc","name":"O.R.C. Северный скорплинг","game":"g2","tier":2,"danger":"intermedia","isBoss":false,"order":272,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpling_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpling_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Northern_Scorpling.webp","weaknesses":["busting"],"resistances":["fresh","slashing","venom"],"temperament":"aggressive","health":{"value":200,"rating":1},"description":"O.R.C. Северный скорплинг — уменьшенная и ускоренная версия северного скорпиона под контролем O.R.C. Он по-прежнему мал, но теперь с куда большим напором мешает игроку и подготавливает пространство для крупных скорпионов.","behavior":"Он патрулирует песчаные зоны, пещеры и точки O.R.C. короткими агрессивными маршрутами. В бой вступает быстро и старается постоянно висеть на игроке, не давая передышки.","interactionWithPlayer":"Он атакует сразу после обнаружения и обычно делает это как часть более крупной стаи. Урон за удар не огромный, но сбивать темп игрока он умеет отлично.","interactionWithCreatures":"Он служит лёгкой поддержкой для более крупных вариантов скорпионов O.R.C., врываясь первым, чтобы зафиксировать игрока и открыть окно для тяжёлых бойцов.","strategy":"Дробящий урон по-прежнему остаётся самым чистым способом быстро убирать его. Не позволяйте нескольким сразу повиснуть на вас и убивайте их до переключения на крупных скорпионов.","environments":["Площадка для крокета MIX.R","Волны O.R.C. в саду","Теплица MIX.R","Окрестности тележки с мороженым","Волны O.R.C. у пикника","Пещера Scarlet Aegis","Зона статуи"],"loot":[{"section":"loot","item":"Northern Scorpion Chunk","minCount":1,"maxCount":2},{"section":"rare","item":"Northern Scorpion Chunk","minCount":0,"maxCount":1},{"section":"rare","item":"O.R.C. Receiver","minCount":0,"maxCount":1}],"combatStats":{"health":200,"attackDamageSummary":"Удар клешнёй: 37.5."},"abilities":[{"name":"Режущий удар клешнёй","description":"Быстрый взмах клешнёй, которым он начинает размен и удерживает внимание игрока.","blockable":true,"breaksGuard":false,"staggers":false}],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"fresh","bonusPct":50},{"type":"slashing","bonusPct":25},{"type":"venom","bonusPct":50}],"groupId":null,"cardTier":2,"technicalId":"ScorplingORC","bestiaryId":"ScorplingORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Right Strike","technicalId":"ScorplingNorthernRight","tags":["stabbing"],"notes":"Урон атаки: 30"},{"name":"Left Strike","technicalId":"ScorplingNorthernLeft","tags":["stabbing"],"notes":"Урон атаки: 30"}],"encounterVariants":[{"id":"g2_wave_scorpling_orc_wave","characterRow":"Scorpling_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":200.0,"stun":{"max":20.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":7}},"weakpoints":[],"resistances":[{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"ScorplingNorthernRight","ability":"ScorplingNorthernRight","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorplingNorthernLeft","ability":"ScorplingNorthernLeft","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":2,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_scorpling_orc_wave","nameEn":"O.R.C. Northern Scorpling Raid/Wave","nameEsMX":"Cría de escorpión norteño C.R.O.  (Oleada)","nameRu":"O.R.C. Северный скорплинг Рейд/волна"}],"contextVariants":[{"id":"Scorpling_ORC_Wave","characterRow":"Scorpling_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":200.0,"stun":{"max":20.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":7}},"weakpoints":[],"resistances":[{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"ScorplingNorthernRight","ability":"ScorplingNorthernRight","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorplingNorthernLeft","ability":"ScorplingNorthernLeft","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":2,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Cría de escorpión norteño C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_northern_scorpling",
+  "speciesKey": "orc_northern_scorpling",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Северный скорплинг",
+  "game": "g2",
+  "tier": 2,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 272,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpling_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpling_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Northern_Scorpling.webp",
+  "weaknesses": [
+    "busting"
+  ],
+  "resistances": [
+    "fresh",
+    "slashing",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 1,
+    "value": 200
+  },
+  "description": "O.R.C. Северный скорплинг — уменьшенная и ускоренная версия северного скорпиона под контролем O.R.C. Он по-прежнему мал, но теперь с куда большим напором мешает игроку и подготавливает пространство для крупных скорпионов.",
+  "behavior": "Он патрулирует песчаные зоны, пещеры и точки O.R.C. короткими агрессивными маршрутами. В бой вступает быстро и старается постоянно висеть на игроке, не давая передышки.",
+  "interactionWithPlayer": "Он атакует сразу после обнаружения и обычно делает это как часть более крупной стаи. Урон за удар не огромный, но сбивать темп игрока он умеет отлично.",
+  "interactionWithCreatures": "Он служит лёгкой поддержкой для более крупных вариантов скорпионов O.R.C., врываясь первым, чтобы зафиксировать игрока и открыть окно для тяжёлых бойцов.",
+  "strategy": "Дробящий урон по-прежнему остаётся самым чистым способом быстро убирать его. Не позволяйте нескольким сразу повиснуть на вас и убивайте их до переключения на крупных скорпионов.",
+  "environments": [
+    "Площадка для крокета MIX.R",
+    "Волны O.R.C. в саду",
+    "Теплица MIX.R",
+    "Окрестности тележки с мороженым",
+    "Волны O.R.C. у пикника",
+    "Пещера Scarlet Aegis",
+    "Зона статуи"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Northern Chunk",
+      "minCount": 1,
+      "maxCount": 3
+    }
+  ],
+  "combatStats": {
+    "health": 200,
+    "stunThreshold": 20,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Режущий удар клешнёй",
+      "description": "Быстрый взмах клешнёй, которым он начинает размен и удерживает внимание игрока.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "ScorplingORC",
+  "bestiaryId": "ScorplingORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Right Strike",
+      "technicalId": "ScorplingNorthernRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 0.0,
+      "range": 175.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Left Strike",
+      "technicalId": "ScorplingNorthernLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 0.0,
+      "range": 175.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_scorpling_orc_wave",
+      "characterRow": "Scorpling_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 200.0,
+        "stun": {
+          "max": 20.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 7
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ScorplingNorthernRight",
+          "ability": "ScorplingNorthernRight",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorplingNorthernLeft",
+          "ability": "ScorplingNorthernLeft",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 2,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_scorpling_orc_wave",
+      "nameEn": "O.R.C. Northern Scorpling Raid/Wave",
+      "nameEsMX": "Cría de escorpión norteño C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Северный скорплинг Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Scorpling_ORC_Wave",
+      "characterRow": "Scorpling_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 200.0,
+        "stun": {
+          "max": 20.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 7
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ScorplingNorthernRight",
+          "ability": "ScorplingNorthernRight",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorplingNorthernLeft",
+          "ability": "ScorplingNorthernLeft",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 2,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Cría de escorpión norteño C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_06c72453ff24b7bd",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -176604.89,
+        "y": 37709.32,
+        "z": 4068.3596
+      },
+      "u": 0.3180150447761193,
+      "v": 0.44853842516232395,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f3cd667437d35a18",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -195487.56,
+        "y": 23612.004,
+        "z": 4392.4517
+      },
+      "u": 0.24728101609599062,
+      "v": 0.387674728459398,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9eb52b53c085e545",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -194439.97,
+        "y": 25005.057,
+        "z": 4670.553
+      },
+      "u": 0.25120526309628327,
+      "v": 0.39368909000758917,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3e98582d0d09b7a6",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -194098.78,
+        "y": 22599.604,
+        "z": 4719.697
+      },
+      "u": 0.2524833526485221,
+      "v": 0.38330379667762876,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2451212375e95d52",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -178663.89,
+        "y": 37596.32,
+        "z": 4068.3596
+      },
+      "u": 0.31030208018729877,
+      "v": 0.448050559406358,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2441c6d4e4d0d3da",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -86809.51,
+        "y": 79997.74,
+        "z": 136.31456
+      },
+      "u": 0.6543863833772314,
+      "v": 0.6311142834977654,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_debdbe7ab45bad85",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -191520.52,
+        "y": -46597.895,
+        "z": 1726.8055
+      },
+      "u": 0.26214145273631845,
+      "v": 0.08455078640694834,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f1825a6895e3ebc7",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -191980.52,
+        "y": -49537.895,
+        "z": 1636.8055
+      },
+      "u": 0.2604183037752415,
+      "v": 0.07185764195969312,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_25ef0c1a9294f574",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -81020.125,
+        "y": 12909.815,
+        "z": -2851.3389
+      },
+      "u": 0.6760732806555458,
+      "v": 0.3414691397251033,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_83ec76ec2edce989",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -160605.97,
+        "y": 59330.453,
+        "z": -1800.9934
+      },
+      "u": 0.3779466151594967,
+      "v": 0.5418854198161733,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bdb0ffacb599ed34",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -161428.62,
+        "y": 61690.562,
+        "z": -1801.2822
+      },
+      "u": 0.37486498800117063,
+      "v": 0.5520749451387132,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07398e3f440e982a",
+      "targetType": "creature",
+      "targetId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingORC",
+      "map": "surface",
+      "world": {
+        "x": -162143.31,
+        "y": 58455.465,
+        "z": -1811.2649
+      },
+      "u": 0.37218777641205736,
+      "v": 0.5381077500632431,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Заблокировано прогрессом сюжета",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 20,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

@@ -1,1 +1,429 @@
-{"id":"g2_ogrr_green_shield_bug","speciesKey":"ogrr_green_shield_bug","collectionGroup":"ogrr","game":"g2","danger":"unknown","order":239,"defaultGold":false,"photo":"assets/global/Proximamente.png","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"Chinche verde I.R.G.O.","tier":3,"cardTier":3,"technicalId":"GreenShieldBugOGRE","bestiaryId":"GreenShieldBugOGRE","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_GreenShield_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_GreenShield_OGRR_G.png","weaknesses":["stabbing"],"resistances":["generic","gas"],"elementalWeaknesses":[],"damageWeaknesses":[{"type":"stabbing","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25},{"type":"gas","bonusPct":90}],"weakPoints":[],"attacks":[{"name":"Mordida L","technicalId":"GreenShieldBug_BiteL_Augusta","tags":["generic"],"notes":"Daño del ataque: 100"},{"name":"Mordida R","technicalId":"GreenShieldBug_BiteR_Augusta","tags":["generic"],"notes":"Daño del ataque: 100"},{"name":"Nube de gas","technicalId":"GreenShieldBug_Fart_Augusta","tags":["gas"],"notes":"Daño del ataque: 0"},{"name":"Salto","technicalId":"GreenShieldBug_Leap_Augusta","tags":["generic"],"notes":"Daño del ataque: 125"},{"name":"Salto Dodge","technicalId":"GreenShieldBug_LeapDodge_Augusta","tags":["generic"],"notes":"Daño del ataque: 45"},{"name":"Carga","technicalId":"GreenShieldBug_Charge_Augusta","tags":["generic"],"notes":"Daño del ataque: 125"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":2400,"rating":5},"combatStats":{"health":2400},"description":"Una chinche verde que acecha en sueños a los científicos que la crearon. Es resistente a la esencia de su mutación.","localizationStatus":"ru_automatic_pending_review","infusions":[{"id":"fresh","name":"Fresco","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Chill."],"recommendations":"No te quedes en daño Fresh como respuesta principal.","combatTips":["Cambia a daño picante o a un arma física consistente si tu build depende de Fresh."]},{"id":"sour","name":"Ácido","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Tang."],"recommendations":"Evita quedarte en armas ácidas como respuesta principal.","combatTips":["Picante es la respuesta elemental más limpia; si no, usa un arma física que no dependa de Tang."]},{"id":"spicy","name":"Picante","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["Todos sus golpes directos añaden 20 de acumulación de Sizzle."],"recommendations":"No dependas de daño picante cuando esta infusión está activa.","combatTips":["Fresh es la respuesta elemental más limpia si la criatura te deja sostener el ritmo."]}],"listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_green_shield_bug",
+  "speciesKey": "ogrr_green_shield_bug",
+  "collectionGroup": "ogrr",
+  "game": "g2",
+  "danger": "imposible",
+  "order": 239,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/OGRR_Green_Shield_Bug.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Stink Bug Gas Sack",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Stink Bug Gas Sack Super",
+      "minCount": 3,
+      "maxCount": 6
+    },
+    {
+      "section": "loot",
+      "item": "Stinkbug Part Green Shield",
+      "minCount": 2,
+      "maxCount": 6
+    }
+  ],
+  "abilities": [],
+  "behavior": "Permanece en una zona bastante apartada y, una vez encontrada, conserva el patrón de la chinche verde normal: mordidas, cargas, saltos y nubes de gas para controlar el espacio.",
+  "interactionWithPlayer": "Es una criatura muy resistente, pero gran parte de la dificultad viene de llegar hasta ella. El trayecto puede hacerte gastar curaciones, comida, durabilidad u otros recursos antes de siquiera comenzar el enfrentamiento.",
+  "interactionWithCreatures": "Su zona de combate es relativamente tranquila y no suele estar rodeada de demasiadas amenazas. Si permaneces cerca del área donde aparece, es poco probable que otras criaturas interfieran demasiado durante la pelea.",
+  "strategy": "Llega con suficientes recursos y evita gastarlos innecesariamente durante el camino. Lleva protección contra el gas, usa preferentemente Perforante y revisa siempre su infusión: Fresco → Ácido, Ácido → Picante y Picante → Fresco. Una vez dentro de su zona, intenta mantener el combate ahí para evitar atraer amenazas externas.",
+  "groupId": null,
+  "name": "Chinche verde I.R.G.O.",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "GreenShieldBugOGRE",
+  "bestiaryId": "GreenShieldBugOGRE",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_GreenShield_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_GreenShield_OGRR_G.png",
+  "weaknesses": [
+    "stabbing"
+  ],
+  "resistances": [
+    "generic",
+    "gas"
+  ],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    },
+    {
+      "type": "gas",
+      "bonusPct": 90
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Mordida L",
+      "technicalId": "GreenShieldBug_BiteL_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 100",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 0.0,
+      "range": 500.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Mordida R",
+      "technicalId": "GreenShieldBug_BiteR_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 100",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 0.0,
+      "range": 500.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Nube de gas",
+      "technicalId": "GreenShieldBug_Fart_Augusta",
+      "tags": [
+        "gas",
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [
+        "gas"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 25.0,
+      "range": 1000.0,
+      "stun": 5,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Salto",
+      "technicalId": "GreenShieldBug_Leap_Augusta",
+      "tags": [
+        "general",
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 125",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 125.0,
+      "cooldownSeconds": 30.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Salto Dodge",
+      "technicalId": "GreenShieldBug_LeapDodge_Augusta",
+      "tags": [
+        "general",
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 45",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 45.0,
+      "cooldownSeconds": 20.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "movement_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Carga",
+      "technicalId": "GreenShieldBug_Charge_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 125",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 125.0,
+      "cooldownSeconds": 30.0,
+      "range": 500.0,
+      "stun": 20,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 5,
+    "value": 2400
+  },
+  "combatStats": {
+    "health": 2400,
+    "stunThreshold": 120,
+    "stunCooldownSeconds": 60
+  },
+  "description": "Una chinche verde que acecha en sueños a los científicos que la crearon. Es resistente a la esencia de su mutación.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresco",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Chill."
+      ],
+      "recommendations": "No te quedes en daño Fresh como respuesta principal.",
+      "combatTips": [
+        "Cambia a daño picante o a un arma física consistente si tu build depende de Fresh."
+      ]
+    },
+    {
+      "id": "sour",
+      "name": "Ácido",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Tang."
+      ],
+      "recommendations": "Evita quedarte en armas ácidas como respuesta principal.",
+      "combatTips": [
+        "Picante es la respuesta elemental más limpia; si no, usa un arma física que no dependa de Tang."
+      ]
+    },
+    {
+      "id": "spicy",
+      "name": "Picante",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "Todos sus golpes directos añaden 20 de acumulación de Sizzle."
+      ],
+      "recommendations": "No dependas de daño picante cuando esta infusión está activa.",
+      "combatTips": [
+        "Fresh es la respuesta elemental más limpia si la criatura te deja sostener el ritmo."
+      ]
+    }
+  ],
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_6cb4df0905fe0950",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_green_shield_bug",
+      "technicalId": "GreenShieldBugOGRE",
+      "map": "surface",
+      "world": {
+        "x": -34227.043,
+        "y": -48787.69,
+        "z": -2563.85
+      },
+      "u": 0.8513590429031314,
+      "v": 0.07509657407875878,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "Los OGRR pueden liberarse desde el laboratorio del espantapájaros. Después de hacerlo pueden aparecer en distintas zonas, principalmente durante la noche.",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/OGRR_Green_Shield_Bug.webp",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stink Bug Gas Sack",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stink Bug Gas Sack Super",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Stink Bug Gas Sack Super",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stink Bug Gas Sack Super",
+      "countLabel": "3",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stinkbug Part Green Shield",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 2,
+      "notes": "2 independent rolls"
+    },
+    {
+      "item": "Stinkbug Part Green Shield",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Stinkbug Part Green Shield",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

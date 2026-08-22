@@ -1,1 +1,612 @@
-{"id":"g2_orc_toe_biter_nymph","speciesKey":"orc_toe_biter_nymph","collectionGroup":"orc","game":"g2","danger":"unknown","order":311,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_orc_toe_biter_nymph.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"Ninfa de chinche mordedora de dedos C.R.O.","tier":3,"cardTier":3,"technicalId":"ToeBiterNymphORC","bestiaryId":"ToeBiterNymphORC","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Nymph_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Nymph_ORC_G.png","weaknesses":["spicy"],"resistances":["water","fresh","venom","stabbing"],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"damageWeaknesses":[],"resistancesV2":[{"type":"water","bonusPct":35},{"type":"fresh","bonusPct":50},{"type":"venom","bonusPct":50},{"type":"stabbing","bonusPct":50}],"weakPoints":[],"attacks":[{"name":"Área ataque","technicalId":"ToeBiterNymphAOE","tags":["generic"],"notes":"Daño del ataque: 0"},{"name":"Combo 3","technicalId":"ToeBiterNymphCombo3","tags":["slashing"],"notes":"Daño del ataque: 65"},{"name":"Potente ataque","technicalId":"ToeBiterNymphPowerAttack","tags":["stabbing"],"notes":"Daño del ataque: 110"},{"name":"Bloqueo defensivo","technicalId":"BlockDefensive","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[{"id":"g2_wave_toe_biter_land_nymph_orc_wave","characterRow":"ToeBiter_Land_Nymph_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":900.0,"stun":{"max":60.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":40}},"weakpoints":[],"resistances":[{"damageTypes":["Water"],"percent":35.0,"sourceId":"DamageResistWaterBoss"},{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"},{"damageTypes":["Stabbing"],"percent":50.0,"sourceId":"DamageResistStabbingMedium"}],"weaknesses":[{"damageTypes":["Spicy"],"percent":15.0,"sourceId":"DamageResistDownSpicyTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"ToeBiterNymphAOE","ability":"ToeBiterNymphAOE","resolved":true,"cooldown":12.0,"priority":1,"targetType":"Enemy","damage":{"amount":0.0,"type":"General","hitStun":15,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":550.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"ToeBiterNymphCombo3","ability":"ToeBiterNymphCombo3","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":65.0,"type":"Slashing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":65.0,"type":"Stabbing","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomMedium","ChillDoTHuge"],"statusEffectApplyType":"DamageOnly"}],"range":225.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ToeBiterNymphPowerAttack","ability":"ToeBiterNymphPowerAttack","resolved":true,"cooldown":8.0,"priority":1,"targetType":"Enemy","damage":{"amount":110.0,"type":"Stabbing","hitStun":10,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":225.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_toe_biter_land_nymph_orc_wave","nameEn":"O.R.C. Toe Biter Nymph Raid/Wave","nameEsMX":"Ninfa de chinche mordedora de dedos C.R.O.  (Oleada)","nameRu":"Нимфа водяного клопа O.R.C. Рейд/волна"}],"contextVariants":[{"id":"ToeBiter_Land_Nymph_ORC_Wave","characterRow":"ToeBiter_Land_Nymph_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":900.0,"stun":{"max":60.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":40}},"weakpoints":[],"resistances":[{"damageTypes":["Water"],"percent":35.0,"sourceId":"DamageResistWaterBoss"},{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"},{"damageTypes":["Stabbing"],"percent":50.0,"sourceId":"DamageResistStabbingMedium"}],"weaknesses":[{"damageTypes":["Spicy"],"percent":15.0,"sourceId":"DamageResistDownSpicyTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"ToeBiterNymphAOE","ability":"ToeBiterNymphAOE","resolved":true,"cooldown":12.0,"priority":1,"targetType":"Enemy","damage":{"amount":0.0,"type":"General","hitStun":15,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":550.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"ToeBiterNymphCombo3","ability":"ToeBiterNymphCombo3","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":65.0,"type":"Slashing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":65.0,"type":"Stabbing","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomMedium","ChillDoTHuge"],"statusEffectApplyType":"DamageOnly"}],"range":225.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ToeBiterNymphPowerAttack","ability":"ToeBiterNymphPowerAttack","resolved":true,"cooldown":8.0,"priority":1,"targetType":"Enemy","damage":{"amount":110.0,"type":"Stabbing","hitStun":10,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":225.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"BlockDefensive","ability":"BlockDefensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Ninfa de chinche mordedora de dedos C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":900,"rating":3},"combatStats":{"health":900},"description":"Una ninfa de mordedor de dedos a control remoto. Al morir, puede soltar un receptor C.R.O. y partes de criatura.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_toe_biter_nymph",
+  "speciesKey": "orc_toe_biter_nymph",
+  "collectionGroup": "orc",
+  "game": "g2",
+  "danger": "muy_alta",
+  "order": 311,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_orc_toe_biter_nymph.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Shell",
+      "minCount": 1,
+      "maxCount": 6
+    }
+  ],
+  "abilities": [],
+  "behavior": "Conserva el comportamiento de una ninfa normal, utilizando combos cuerpo a cuerpo, ataques potentes y bloqueos defensivos. En encuentros C.R.O. suele mantenerse muy cerca del resto de enemigos y entrar constantemente en medio del combate.",
+  "interactionWithPlayer": "Su mayor problema no suele ser el daño, sino lo mucho que limita el movimiento y bloquea el acceso a otros objetivos. Puede colocarse entre el jugador y criaturas más peligrosas, absorber golpes destinados a ellas y funcionar prácticamente como un pequeño tanque dentro de la oleada.",
+  "interactionWithCreatures": "Suele combatir junto a otras criaturas C.R.O. y, por su tendencia a permanecer cerca de ellas, termina actuando de forma indirecta como protección. Mientras intentas alcanzar a un enemigo prioritario, las ninfas pueden interponerse y dificultar bastante mantener el objetivo.",
+  "strategy": "Utiliza daño Picante y evita armas Perforantes. Si varias comienzan a bloquearte el movimiento, elimínalas primero aunque haya enemigos más peligrosos presentes, ya que dejarlas vivas puede hacer mucho más difícil llegar hasta ellos. Los ataques de área son especialmente útiles para despejar espacio y, si tienes acceso a una torreta, su vulnerabilidad C.R.O. permite eliminarlas todavía más rápido.",
+  "groupId": null,
+  "name": "Ninfa de chinche mordedora de dedos C.R.O.",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "ToeBiterNymphORC",
+  "bestiaryId": "ToeBiterNymphORC",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Nymph_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Nymph_ORC_G.png",
+  "weaknesses": [
+    "spicy"
+  ],
+  "resistances": [
+    "water",
+    "fresh",
+    "venom",
+    "stabbing"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "water",
+      "bonusPct": 35
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    },
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Área ataque",
+      "technicalId": "ToeBiterNymphAOE",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 12.0,
+      "range": 550.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 3",
+      "technicalId": "ToeBiterNymphCombo3",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Daño del ataque: 65",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 65.0,
+      "cooldownSeconds": 5.0,
+      "range": 225.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente ataque",
+      "technicalId": "ToeBiterNymphPowerAttack",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 110",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 110.0,
+      "cooldownSeconds": 8.0,
+      "range": 225.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bloqueo defensivo",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_toe_biter_land_nymph_orc_wave",
+      "characterRow": "ToeBiter_Land_Nymph_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 900.0,
+        "stun": {
+          "max": 60.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Water"
+          ],
+          "percent": 35.0,
+          "sourceId": "DamageResistWaterBoss"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        },
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistStabbingMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSpicyTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ToeBiterNymphAOE",
+          "ability": "ToeBiterNymphAOE",
+          "resolved": true,
+          "cooldown": 12.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "General",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 550.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "ToeBiterNymphCombo3",
+          "ability": "ToeBiterNymphCombo3",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 65.0,
+            "type": "Slashing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 65.0,
+              "type": "Stabbing",
+              "hitStun": 0,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [
+                "VenomMedium",
+                "ChillDoTHuge"
+              ],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 225.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ToeBiterNymphPowerAttack",
+          "ability": "ToeBiterNymphPowerAttack",
+          "resolved": true,
+          "cooldown": 8.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 110.0,
+            "type": "Stabbing",
+            "hitStun": 10,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 225.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_toe_biter_land_nymph_orc_wave",
+      "nameEn": "O.R.C. Toe Biter Nymph Raid/Wave",
+      "nameEsMX": "Ninfa de chinche mordedora de dedos C.R.O.  (Oleada)",
+      "nameRu": "Нимфа водяного клопа O.R.C. Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "ToeBiter_Land_Nymph_ORC_Wave",
+      "characterRow": "ToeBiter_Land_Nymph_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 900.0,
+        "stun": {
+          "max": 60.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 40
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Water"
+          ],
+          "percent": 35.0,
+          "sourceId": "DamageResistWaterBoss"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        },
+        {
+          "damageTypes": [
+            "Stabbing"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistStabbingMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSpicyTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ToeBiterNymphAOE",
+          "ability": "ToeBiterNymphAOE",
+          "resolved": true,
+          "cooldown": 12.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "General",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 550.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "ToeBiterNymphCombo3",
+          "ability": "ToeBiterNymphCombo3",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 65.0,
+            "type": "Slashing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 65.0,
+              "type": "Stabbing",
+              "hitStun": 0,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [
+                "VenomMedium",
+                "ChillDoTHuge"
+              ],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 225.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ToeBiterNymphPowerAttack",
+          "ability": "ToeBiterNymphPowerAttack",
+          "resolved": true,
+          "cooldown": 8.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 110.0,
+            "type": "Stabbing",
+            "hitStun": 10,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 225.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "BlockDefensive",
+          "ability": "BlockDefensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Ninfa de chinche mordedora de dedos C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 3,
+    "value": 900
+  },
+  "combatStats": {
+    "health": 900,
+    "stunThreshold": 60,
+    "stunCooldownSeconds": 5
+  },
+  "description": "Una ninfa de mordedor de dedos a control remoto. Al morir, puede soltar un receptor C.R.O. y partes de criatura.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_fc5ab57d9cf0cd34",
+      "targetType": "creature",
+      "targetId": "g2_orc_toe_biter_nymph",
+      "technicalId": "ToeBiterNymphORC",
+      "map": "surface",
+      "world": {
+        "x": -46610.688,
+        "y": 77292.94,
+        "z": -5140.0493
+      },
+      "u": 0.8049702059116184,
+      "v": 0.6194365906062906,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "fixed_encounter",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 20,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "2",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

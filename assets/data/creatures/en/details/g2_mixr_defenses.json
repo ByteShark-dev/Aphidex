@@ -1,1 +1,83 @@
-{"id":"g2_mixr_defenses","speciesKey":"mixr_defenses","collectionGroup":"other","name":"MIX.R Defenses","game":"g2","tier":3,"danger":"imposible","isBoss":false,"order":288,"defaultGold":false,"cardNormal":"","cardGold":"","photo":"assets/g2/creatures/photos/MIXR_Defenses_G2.webp","weaknesses":[],"resistances":[],"temperament":"other","description":"Grounded 2 MIX.R events are objective-protection encounters tied to progression and to reducing O.R.C. waves in specific park zones.","behavior":"They function as wave defenses where the MIX.R matters more than individual kills. The creatures try to break the objective, and the mix of O.R.C. variants changes a lot from one arena to another.","interactionWithPlayer":"Unlike the classic G1 factional raids, the point here is story progression and shutting down specific O.R.C. control points. Failing does not end the run, but it does force you to repair and repeat.","interactionWithCreatures":"The waves mix beetles, spiders, ants, scorpions, and other O.R.C. variants depending on the site. The real danger is usually letting a small unit slip through while you get tied up by the tank of the wave.","strategy":"Building clean lanes, cutting short routes, and using fast-clearing damage usually pays off more than chasing targets away from the MIX.R. In Brookhollow, a positioning mistake often costs more than a raw DPS mistake.","environments":["Croquet Court MIX.R","Greenhouse MIX.R"],"loot":[{"section":"passive","item":"Can contribute to unlocking or upgrading Guard Dog.","minCount":0,"maxCount":0}],"combatStats":{"attackDamageSummary":"Varies by MIX.R, active O.R.C. waves, and the composition of each wave."},"abilities":[{"name":"MIX.R Overdrive","description":"The defense ends when the MIX.R bar finishes charging or when the objective is destroyed first.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Local O.R.C. Waves","description":"Each MIX.R shuts down a specific set of O.R.C. waves, so the reward also has a real impact on the map.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Repair Reset","description":"If you fail, the device can be repaired so you can try again instead of losing it forever.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Guard Dog Progress","description":"Completing these defenses can unlock or advance the Guard Dog mutation in Grounded 2 as well.","blockable":false,"breaksGuard":false,"staggers":false}],"specialTraits":["Grounded 2 keeps the objective-defense idea, but adds zone-based O.R.C. pressure.","This is not a creature: it summarizes MIX.R defenses and wave control."],"favoriteKey":"mixr_defenses","isKillable":false,"listIconAsset":"assets/global/effects_damage/Summon_HP.webp","hasCreatureCard":false,"hasGoldCreatureCard":false,"hasSelectableCardVariants":false,"defaultCardVariant":null}
+{
+  "id": "g2_mixr_defenses",
+  "speciesKey": "mixr_defenses",
+  "collectionGroup": "other",
+  "name": "MIX.R Defenses",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible",
+  "isBoss": false,
+  "order": 288,
+  "defaultGold": false,
+  "cardNormal": "",
+  "cardGold": "",
+  "photo": "assets/g2/creatures/photos/MIXR_Defenses_G2.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "other",
+  "description": "Grounded 2 MIX.R events are objective-protection encounters tied to progression and to reducing O.R.C. waves in specific park zones.",
+  "behavior": "They function as wave defenses where the MIX.R matters more than individual kills. The creatures try to break the objective, and the mix of O.R.C. variants changes a lot from one arena to another.",
+  "interactionWithPlayer": "Unlike the classic G1 factional raids, the point here is story progression and shutting down specific O.R.C. control points. Failing does not end the run, but it does force you to repair and repeat.",
+  "interactionWithCreatures": "The waves mix beetles, spiders, ants, scorpions, and other O.R.C. variants depending on the site. The real danger is usually letting a small unit slip through while you get tied up by the tank of the wave.",
+  "strategy": "Building clean lanes, cutting short routes, and using fast-clearing damage usually pays off more than chasing targets away from the MIX.R. In Brookhollow, a positioning mistake often costs more than a raw DPS mistake.",
+  "environments": [
+    "Croquet Court MIX.R",
+    "Greenhouse MIX.R"
+  ],
+  "loot": [
+    {
+      "section": "passive",
+      "item": "Can contribute to unlocking or upgrading Guard Dog.",
+      "minCount": 0,
+      "maxCount": 0
+    }
+  ],
+  "combatStats": {
+    "attackDamageSummary": "Varies by MIX.R, active O.R.C. waves, and the composition of each wave."
+  },
+  "abilities": [
+    {
+      "name": "MIX.R Overdrive",
+      "description": "The defense ends when the MIX.R bar finishes charging or when the objective is destroyed first.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Local O.R.C. Waves",
+      "description": "Each MIX.R shuts down a specific set of O.R.C. waves, so the reward also has a real impact on the map.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Repair Reset",
+      "description": "If you fail, the device can be repaired so you can try again instead of losing it forever.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Guard Dog Progress",
+      "description": "Completing these defenses can unlock or advance the Guard Dog mutation in Grounded 2 as well.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "specialTraits": [
+    "Grounded 2 keeps the objective-defense idea, but adds zone-based O.R.C. pressure.",
+    "This is not a creature: it summarizes MIX.R defenses and wave control."
+  ],
+  "favoriteKey": "mixr_defenses",
+  "isKillable": false,
+  "listIconAsset": "assets/global/effects_damage/Summon_HP.webp",
+  "hasCreatureCard": false,
+  "hasGoldCreatureCard": false,
+  "hasSelectableCardVariants": false,
+  "defaultCardVariant": null,
+  "appearanceType": "no_natural_spawn",
+  "entityType": "defense",
+  "customAsset": "assets/g2/defenses/MIXR_Entry_Icon.png",
+  "presentationOverrideProvenance": "user_provided_editorial_asset"
+}

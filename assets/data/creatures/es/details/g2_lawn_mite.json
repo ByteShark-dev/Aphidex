@@ -1,1 +1,2103 @@
-{"id":"g2_lawn_mite","speciesKey":"lawn_mite","collectionGroup":"angry","name":"Ácaro de jardín","game":"g2","tier":1,"danger":"baja","isBoss":false,"order":252,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Mite.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Mite_G.png","photo":"assets/g2/creatures/photos/Lawn_Mite.webp","weaknesses":["stabbing"],"resistances":[],"temperament":"aggressive","health":{"value":41,"rating":1},"description":"Insecto pequeño y peludo que muerde muy fuerte y salta muy alto. Al morir, suelta una pelusa de ácaro y colmillos de ácaro.","behavior":"Patrulla trayectos cortos y semialeatorios, rompiendo la rutina en cuanto detecta una amenaza. No corre demasiado, pero compensa con saltos repentinos que sirven para robarte ritmo y espacio.","interactionWithPlayer":"Es hostil con el jugador y se lanza encima para entrar en rango. La mordida en sí es simple; lo que molesta de verdad es lo fácil que varios ácaros te cortan la atención al mismo tiempo.","interactionWithCreatures":"Caza pulgones y gorgojos pequeños, pero rara vez domina una zona por sí solo. Su función natural es más la de molestia constante que la de depredador principal.","strategy":"Mueren rápido con casi cualquier arma, así que lo importante es no ignorarlos si empiezan a sumar número. Lee el salto, bloquea o aparta, y límpialos antes de que te distraigan de algo peor.","environments":["Área de ceremonia","Cancha de croquet","Zona de entrada","Pozo de fuego","Alrededores del invernadero","Alrededores del carrito de helados","Cuevas menores","Instalación de onboarding de Ominent","Zona de la mesa de pícnic","Colina de pinos","Zona frontal del snack bar"],"respawnInfo":"1 día","loot":[{"section":"loot","item":"Mite Fang","minCount":0,"maxCount":1},{"section":"loot","item":"Mite Fuzz","minCount":1,"maxCount":1},{"section":"rare","item":"Mite Fang","minCount":0,"maxCount":1},{"section":"rare","item":"Mite Fuzz","minCount":0,"maxCount":2}],"advancedLootTable":[{"item":"Mite Fang","countLabel":"x1","chancePct":20},{"item":"Mite Fang","countLabel":"x1","chancePct":10},{"item":"Mite Fuzz","countLabel":"x1","chancePct":100},{"item":"Mite Fuzz","countLabel":"x1","chancePct":10},{"item":"Mite Fuzz","countLabel":"x1","chancePct":1}],"combatStats":{"health":41,"attackDamageSummary":"Salto: 15."},"inflictsEffects":["busting"],"inflicts":["Todos sus ataques hacen daño demoledor."],"abilities":[{"name":"Salto","description":"Se abalanza hacia el jugador con un salto largo y muy rápido. El daño es bajo, pero puede cerrar mucha distancia.","blockable":true,"breaksGuard":false,"staggers":false}],"damageWeaknesses":[{"type":"stabbing","bonusPct":15}],"groupId":null,"cardTier":1,"technicalId":"Mite","bestiaryId":"Mite","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_lawn_mite",
+  "speciesKey": "lawn_mite",
+  "collectionGroup": "angry",
+  "name": "Ácaro de jardín",
+  "game": "g2",
+  "tier": 1,
+  "danger": "baja",
+  "isBoss": false,
+  "order": 252,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier1_Mite.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier1_Mite_G.png",
+  "photo": "assets/g2/creatures/photos/Lawn_Mite.webp",
+  "weaknesses": [
+    "stabbing"
+  ],
+  "resistances": [],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 1,
+    "value": 41
+  },
+  "description": "Insecto pequeño y peludo que muerde muy fuerte y salta muy alto. Al morir, suelta una pelusa de ácaro y colmillos de ácaro.",
+  "behavior": "Patrulla trayectos cortos y semialeatorios, rompiendo la rutina en cuanto detecta una amenaza. No corre demasiado, pero compensa con saltos repentinos que sirven para robarte ritmo y espacio.",
+  "interactionWithPlayer": "Es hostil con el jugador y se lanza encima para entrar en rango. La mordida en sí es simple; lo que molesta de verdad es lo fácil que varios ácaros te cortan la atención al mismo tiempo.",
+  "interactionWithCreatures": "Caza pulgones y gorgojos pequeños, pero rara vez domina una zona por sí solo. Su función natural es más la de molestia constante que la de depredador principal.",
+  "strategy": "Mueren rápido con casi cualquier arma, así que lo importante es no ignorarlos si empiezan a sumar número. Lee el salto, bloquea o aparta, y límpialos antes de que te distraigan de algo peor.",
+  "environments": [
+    "Área de ceremonia",
+    "Cancha de croquet",
+    "Zona de entrada",
+    "Pozo de fuego",
+    "Alrededores del invernadero",
+    "Alrededores del carrito de helados",
+    "Cuevas menores",
+    "Instalación de onboarding de Ominent",
+    "Zona de la mesa de pícnic",
+    "Colina de pinos",
+    "Zona frontal del snack bar"
+  ],
+  "respawnInfo": "1 día",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Fuzz Mite",
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Mite Lawn Fang",
+      "minCount": 0,
+      "maxCount": 2
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Fuzz Mite",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Fuzz Mite",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Fuzz Mite",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mite Lawn Fang",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mite Lawn Fang",
+      "countLabel": "1",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    }
+  ],
+  "combatStats": {
+    "health": 41,
+    "stunThreshold": null,
+    "stunCooldownSeconds": null
+  },
+  "inflictsEffects": [
+    "busting"
+  ],
+  "inflicts": [
+    "Todos sus ataques hacen daño demoledor."
+  ],
+  "abilities": [
+    {
+      "name": "Salto",
+      "description": "Se abalanza hacia el jugador con un salto largo y muy rápido. El daño es bajo, pero puede cerrar mucha distancia.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "stabbing",
+      "bonusPct": 15
+    }
+  ],
+  "groupId": null,
+  "cardTier": 1,
+  "technicalId": "Mite",
+  "bestiaryId": "Mite",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_78e75a491cd45490",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -256870.56,
+        "y": 81638.266,
+        "z": 2459.673
+      },
+      "u": 0.017341771144278616,
+      "v": 0.6381970840037102,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3afd274587ed1dc5",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -207958.19,
+        "y": 69055.21,
+        "z": -729.25055
+      },
+      "u": 0.20056633538191396,
+      "v": 0.583871047474492,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_44ae40eee50c5226",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -135174.44,
+        "y": -55898.645,
+        "z": -1628.912
+      },
+      "u": 0.4732125162423178,
+      "v": 0.044395764904292145,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aefd46489ac31c41",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -137570.0,
+        "y": -50636.656,
+        "z": -1852.2404
+      },
+      "u": 0.46423880597014927,
+      "v": 0.06711385553587994,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0faf7c0f74044415",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -134470.61,
+        "y": -52901.215,
+        "z": -1611.1075
+      },
+      "u": 0.47584904653204574,
+      "v": 0.057336857407875884,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fe9aaaeee495208",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -113203.125,
+        "y": -37129.035,
+        "z": 511.27026
+      },
+      "u": 0.5555165349721979,
+      "v": 0.12543160536301542,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0608833ae600733",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -160107.27,
+        "y": -48122.543,
+        "z": 5027.6484
+      },
+      "u": 0.3798147333918642,
+      "v": 0.0779682771228603,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_04b1c8430510fd0e",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -103349.31,
+        "y": 13836.331,
+        "z": 1180.3727
+      },
+      "u": 0.592428689493708,
+      "v": 0.34546927626275403,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa3b53cd6bb3c0eb",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -109903.31,
+        "y": -3242.4868,
+        "z": 7465.5444
+      },
+      "u": 0.5678775627743635,
+      "v": 0.27173325540433424,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_271a93c0aaf2d3dc",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -120412.46,
+        "y": 34618.77,
+        "z": 206.11403
+      },
+      "u": 0.5285105390693591,
+      "v": 0.43519529673665563,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_edcb100799fbc1ec",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -240210.25,
+        "y": 112855.93,
+        "z": 1459.764
+      },
+      "u": 0.07975089259584431,
+      "v": 0.772976103887343,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1fc9de069f9b25b8",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -221615.44,
+        "y": 41088.438,
+        "z": -348.53378
+      },
+      "u": 0.14940660462393912,
+      "v": 0.4631274159372629,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f609c4a0a4827218",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -250119.22,
+        "y": 138360.17,
+        "z": 4618.8916
+      },
+      "u": 0.04263212876792508,
+      "v": 0.8830880094443041,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_614264874c449edd",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -248518.75,
+        "y": 135269.61,
+        "z": 4962.335
+      },
+      "u": 0.04862745098039216,
+      "v": 0.8697448378446749,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1130cbb2fea68621",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -258634.98,
+        "y": 116859.35,
+        "z": 4868.096
+      },
+      "u": 0.010732296166227645,
+      "v": 0.7902604536638841,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ee85e6eb86d4f407",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -256830.1,
+        "y": 115470.445,
+        "z": 4868.096
+      },
+      "u": 0.017493333333333312,
+      "v": 0.7842640006745931,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5b1fd6839ddf276f",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -258361.83,
+        "y": 115184.88,
+        "z": 4868.096
+      },
+      "u": 0.011755509511267241,
+      "v": 0.7830311034657222,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9bffd23562df79ec",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -256755.23,
+        "y": 117856.375,
+        "z": 4868.096
+      },
+      "u": 0.017773794556628583,
+      "v": 0.7945650054810693,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_802b778cc61fb30e",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -222799.75,
+        "y": 59236.715,
+        "z": -813.72546
+      },
+      "u": 0.1449702077846064,
+      "v": 0.5414807157433174,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9d5ebaa0ad62f16a",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -210903.5,
+        "y": 54956.71,
+        "z": 310.72354
+      },
+      "u": 0.1895332748024583,
+      "v": 0.5230022389746185,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9995e6e76b2783b",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -201286.84,
+        "y": 56745.535,
+        "z": 457.90277
+      },
+      "u": 0.22555705238513318,
+      "v": 0.5307253050004216,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_495db84227fc5c43",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -222412.48,
+        "y": 26160.28,
+        "z": -142.09724
+      },
+      "u": 0.146420911911033,
+      "v": 0.3986766452483346,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f381ffd6c35513aa",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -171900.0,
+        "y": 135700.0,
+        "z": -368.75867
+      },
+      "u": 0.3356394498097746,
+      "v": 0.8716030019394552,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_86030ce7b159f02a",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -181500.0,
+        "y": 109500.0,
+        "z": 1284.848
+      },
+      "u": 0.2996780801872988,
+      "v": 0.7584872248924867,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8c732a607b76bf13",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -217158.1,
+        "y": 130808.82,
+        "z": 1075.1863
+      },
+      "u": 0.16610369329821478,
+      "v": 0.8504858406273716,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b88a259d2fe60f02",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -167200.0,
+        "y": -37750.0,
+        "z": -1800.0
+      },
+      "u": 0.35324553702077843,
+      "v": 0.1227506535121005,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f4762db3ea2a280d",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -167150.0,
+        "y": -36900.0,
+        "z": -1800.0
+      },
+      "u": 0.3534328358208955,
+      "v": 0.12642044017202123,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9e95c327d4908001",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -167950.0,
+        "y": -38300.0,
+        "z": -1836.0067
+      },
+      "u": 0.35043605501902253,
+      "v": 0.12037608567332825,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3cd09f5a2595714f",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -173150.0,
+        "y": -40850.0,
+        "z": -619.5656
+      },
+      "u": 0.33095697980684813,
+      "v": 0.10936672569356609,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ea2e29575555b4ad",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -171140.92,
+        "y": -42909.902,
+        "z": -575.17163
+      },
+      "u": 0.3384829452736318,
+      "v": 0.10047331289316133,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c39d8fad3f8e61a4",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -233825.14,
+        "y": 79301.03,
+        "z": 963.22034
+      },
+      "u": 0.1036693614281533,
+      "v": 0.6281063104814909,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa5a19e29dcff4c8",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -211924.45,
+        "y": 125770.8,
+        "z": 372.45197
+      },
+      "u": 0.18570882060286797,
+      "v": 0.8287347128762964,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_579cf1aca76c15c6",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -179117.33,
+        "y": -43008.902,
+        "z": -711.40686
+      },
+      "u": 0.3086035048287972,
+      "v": 0.10004589068218227,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4d1e30d66c35eb08",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -177533.06,
+        "y": -42100.39,
+        "z": 696.95575
+      },
+      "u": 0.31453814223002635,
+      "v": 0.10396829682097981,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_160bf94f2b35e364",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -179118.3,
+        "y": -45055.55,
+        "z": -725.32086
+      },
+      "u": 0.308599871232075,
+      "v": 0.09120970064929589,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_edd1516ae2d785a6",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -169981.23,
+        "y": -40581.094,
+        "z": 696.95575
+      },
+      "u": 0.3428271161837869,
+      "v": 0.11052769940129861,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca3829647e801a69",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -169462.84,
+        "y": -43297.094,
+        "z": 696.95575
+      },
+      "u": 0.34476899268364064,
+      "v": 0.09880165167383427,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c3d9e2986b21446a",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -171537.73,
+        "y": -42187.016,
+        "z": 696.95575
+      },
+      "u": 0.3369965045361428,
+      "v": 0.10359429806897716,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_142ca5387fe7f5fe",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -109409.02,
+        "y": 17932.79,
+        "z": 3785.2942
+      },
+      "u": 0.5697291612525607,
+      "v": 0.36315531225229786,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_83a1ea8d021630ff",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -111708.55,
+        "y": 17802.68,
+        "z": 2600.5476
+      },
+      "u": 0.5611151770558971,
+      "v": 0.3625935758495657,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1800585712188e00",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -172933.48,
+        "y": 139757.5,
+        "z": 548.366
+      },
+      "u": 0.331768058530875,
+      "v": 0.8891208364954887,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6037cf479c0fe7d8",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -183553.92,
+        "y": 145845.33,
+        "z": 1031.9702
+      },
+      "u": 0.29198414515657006,
+      "v": 0.91540440981533,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_849398981e38ee83",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -244086.48,
+        "y": 85729.2,
+        "z": 3170.3445
+      },
+      "u": 0.0652306280362891,
+      "v": 0.6558592663799647,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_50a9a5aee3b241c5",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -170001.5,
+        "y": -6771.312,
+        "z": 7662.052
+      },
+      "u": 0.3427511852502195,
+      "v": 0.2564979193523906,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f6c51b53d09011e7",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -109851.38,
+        "y": 19007.31,
+        "z": 3819.8833
+      },
+      "u": 0.568072091308165,
+      "v": 0.3677944406779661,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_af83257b93284a2b",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -110449.46,
+        "y": 16997.318,
+        "z": 3235.7043
+      },
+      "u": 0.5658316979806848,
+      "v": 0.3591165091154398,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bde5150cf3cdd04c",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -109193.37,
+        "y": 20460.246,
+        "z": 3802.027
+      },
+      "u": 0.5705369809774656,
+      "v": 0.3740673408550467,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c1980c007231266c",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -185613.22,
+        "y": 145150.17,
+        "z": 919.72437
+      },
+      "u": 0.28427005677494877,
+      "v": 0.912403128762965,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_147acc44c501617d",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -172245.03,
+        "y": -9863.438,
+        "z": 284.70218
+      },
+      "u": 0.33434697570968686,
+      "v": 0.24314798671051524,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_230bc584ae6d1f76",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -173467.11,
+        "y": -10311.418,
+        "z": -190.85239
+      },
+      "u": 0.32976909335674576,
+      "v": 0.24121387961885488,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7250e3316f77ceac",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -174438.45,
+        "y": -12592.636,
+        "z": 425.17416
+      },
+      "u": 0.3261304770266315,
+      "v": 0.2313649579897125,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6fb77ea11f249cba",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -173769.86,
+        "y": -13346.632,
+        "z": 752.58014
+      },
+      "u": 0.3286349991220369,
+      "v": 0.22810965862214355,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9b07cb78ee84a9fb",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -195224.81,
+        "y": 105679.195,
+        "z": 2090.3398
+      },
+      "u": 0.2482652712906058,
+      "v": 0.7419912963993592,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c612c6c2a349eb49",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -188735.94,
+        "y": 109040.11,
+        "z": 1188.2489
+      },
+      "u": 0.27257242259291775,
+      "v": 0.7565016976136267,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_42f3a253f36462da",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -174416.1,
+        "y": 139348.34,
+        "z": 460.0921
+      },
+      "u": 0.32621419959028386,
+      "v": 0.8873543307192847,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_895d3b3d4cf76a34",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -195985.77,
+        "y": 145675.2,
+        "z": 2207.753
+      },
+      "u": 0.24541473339186426,
+      "v": 0.9146698912218569,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d165334d8ddb54e2",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -111740.2,
+        "y": 16939.451,
+        "z": 713.3018
+      },
+      "u": 0.5609966169154228,
+      "v": 0.3588666743570284,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_063a793aa86e3505",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -108863.01,
+        "y": 17633.145,
+        "z": 1512.0658
+      },
+      "u": 0.571774501609599,
+      "v": 0.3618616261067543,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ca011f0c0a5067ab",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -108332.15,
+        "y": 7604.433,
+        "z": 4971.428
+      },
+      "u": 0.5737630904302019,
+      "v": 0.3185637043258284,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ad6cd3c30b3a4a1",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -111894.78,
+        "y": 9727.16,
+        "z": 3019.031
+      },
+      "u": 0.560417563944981,
+      "v": 0.32772835753436214,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_58682a6374984a3d",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -197902.55,
+        "y": 128451.195,
+        "z": 1383.1781
+      },
+      "u": 0.23823452151009664,
+      "v": 0.8403070397166709,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2f99a1cfcd6d8058",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -218322.83,
+        "y": 131422.23,
+        "z": 1075.1863
+      },
+      "u": 0.16174064266900795,
+      "v": 0.8531341745509738,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3542803ab53a275f",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -199166.75,
+        "y": 137428.42,
+        "z": 1061.2737
+      },
+      "u": 0.2334988586479368,
+      "v": 0.8790652756556203,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3ad987ea03999321",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -177558.64,
+        "y": 156621.73,
+        "z": 3413.8953
+      },
+      "u": 0.3144423201638864,
+      "v": 0.9619303968294122,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0f9d37201fa3bc4a",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -122861.1,
+        "y": 57899.4,
+        "z": -856.10376
+      },
+      "u": 0.5193379923909862,
+      "v": 0.5357069972173032,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0e02f5ae8c60e639",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -89611.055,
+        "y": 86134.92,
+        "z": -1435.0581
+      },
+      "u": 0.6438918630377525,
+      "v": 0.6576109203136858,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c185801091a556e1",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -92523.51,
+        "y": 50607.742,
+        "z": -1538.2915
+      },
+      "u": 0.6329818764998537,
+      "v": 0.50422602162071,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cc3c694837d0cab7",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -175300.0,
+        "y": -10350.0,
+        "z": 460.13083
+      },
+      "u": 0.3229031314018145,
+      "v": 0.24104730584366307,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c4bd465bec17b0ae",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -174100.0,
+        "y": -9300.0,
+        "z": 295.28677
+      },
+      "u": 0.32739830260462394,
+      "v": 0.24558057171768274,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b40c247b288e8dc1",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -177300.0,
+        "y": -9800.0,
+        "z": 385.1142
+      },
+      "u": 0.31541117939713204,
+      "v": 0.24342187368243523,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0759f5b93cbc2259",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -160422.6,
+        "y": -40323.473,
+        "z": 1458.6084
+      },
+      "u": 0.37863351477904594,
+      "v": 0.1116399512943756,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_89f153546afe420f",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -161671.94,
+        "y": -40973.277,
+        "z": 876.39233
+      },
+      "u": 0.37395351712028096,
+      "v": 0.10883449005818366,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f78191022c7c8114",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -248540.55,
+        "y": 91956.5,
+        "z": 2873.9343
+      },
+      "u": 0.04854578870354116,
+      "v": 0.6827449869297579,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3148c3c4e3227bdf",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -124632.55,
+        "y": 1954.8966,
+        "z": 851.124
+      },
+      "u": 0.512702183201639,
+      "v": 0.2941724180723501,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c95be0ed3210810a",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -124485.945,
+        "y": -2006.8783,
+        "z": 916.3205
+      },
+      "u": 0.5132513620134621,
+      "v": 0.2770678666869045,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f26b879d3119d7a7",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -129712.586,
+        "y": 64631.977,
+        "z": -2229.2595
+      },
+      "u": 0.49367249025460924,
+      "v": 0.5647741987014083,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_62be7faa93a6b734",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -70087.52,
+        "y": 138522.42,
+        "z": -2169.5364
+      },
+      "u": 0.7170265566286215,
+      "v": 0.8837885069567418,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c60d97c7d7109486",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -122954.07,
+        "y": 121468.16,
+        "z": -4395.62
+      },
+      "u": 0.5189897290020485,
+      "v": 0.8101585118475418,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fe67f58b2afe6073",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -117010.69,
+        "y": 112126.37,
+        "z": -4297.0938
+      },
+      "u": 0.5412534878548434,
+      "v": 0.7698263044101527,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95a3b4c455462c0e",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -96937.4,
+        "y": 111462.69,
+        "z": -2670.8389
+      },
+      "u": 0.6164475504828797,
+      "v": 0.7669609349860864,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cd3b4a26a2f97160",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -118882.51,
+        "y": 90232.73,
+        "z": -5410.7124
+      },
+      "u": 0.534241695054141,
+      "v": 0.6753027891053207,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a0c343276993db0",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -163636.77,
+        "y": 62107.133,
+        "z": 138.53688
+      },
+      "u": 0.36659331109160087,
+      "v": 0.5538734471371953,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_73b694656b1369de",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -166020.72,
+        "y": 46298.086,
+        "z": 2930.381
+      },
+      "u": 0.3576630916008194,
+      "v": 0.4856195297411249,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6a8804c562684dd6",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -155715.94,
+        "y": 61116.164,
+        "z": -596.8616
+      },
+      "u": 0.39626455019022533,
+      "v": 0.549595041470613,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7334560398ade832",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -154347.08,
+        "y": 133673.81,
+        "z": -3557.23
+      },
+      "u": 0.40139226690079016,
+      "v": 0.8628551371953791,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fb4247959aab14c0",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -143049.11,
+        "y": 30408.93,
+        "z": 1009.06757
+      },
+      "u": 0.4437141913959614,
+      "v": 0.41701975006324304,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9ff3d6e18a0bf87f",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -139597.44,
+        "y": 56646.77,
+        "z": -2397.9016
+      },
+      "u": 0.45664406438396254,
+      "v": 0.5302988973775192,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dfdbbaf9ed65fbfc",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -129873.23,
+        "y": 41097.75,
+        "z": -1941.6873
+      },
+      "u": 0.4930707216856892,
+      "v": 0.4631676195294714,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_42116859ab1541cd",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -145916.05,
+        "y": 59917.58,
+        "z": -666.4632
+      },
+      "u": 0.43297470295580925,
+      "v": 0.5444202796188549,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_96fd13abfa1e759d",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -146633.06,
+        "y": 116370.02,
+        "z": -3734.8645
+      },
+      "u": 0.4302888007023705,
+      "v": 0.7881478222447087,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a6633bef792b0c57",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -75668.52,
+        "y": 155628.31,
+        "z": 1008.7028
+      },
+      "u": 0.6961202645595551,
+      "v": 0.9576414092250611,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c1d9c591fe6d72a1",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -108403.62,
+        "y": 156580.66,
+        "z": -268.07623
+      },
+      "u": 0.5734953655253147,
+      "v": 0.9617530813727971,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e04b8f263d563af",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -155945.89,
+        "y": 123891.41,
+        "z": -4015.3865
+      },
+      "u": 0.3954031630084869,
+      "v": 0.8206206418753689,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ef60898edddb91f3",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -139765.4,
+        "y": 100261.05,
+        "z": -5156.477
+      },
+      "u": 0.45601489025460934,
+      "v": 0.7185990184669871,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_22cb12b2450a8ad0",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -87580.625,
+        "y": 129893.07,
+        "z": 2313.5244
+      },
+      "u": 0.6514978050921861,
+      "v": 0.8465321851758159,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a216b93d616592d3",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -89545.52,
+        "y": 147873.61,
+        "z": 816.2779
+      },
+      "u": 0.6441373555750658,
+      "v": 0.9241612979171937,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0cca83a859842e3d",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -75250.33,
+        "y": 112743.484,
+        "z": -2110.3508
+      },
+      "u": 0.6976867942639743,
+      "v": 0.7724906299688,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bb674b6361e877d1",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -83334.7,
+        "y": 90207.195,
+        "z": -1783.1302
+      },
+      "u": 0.6674029382499268,
+      "v": 0.6751925443966608,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_575b032b96c0a64b",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -70160.99,
+        "y": 63234.574,
+        "z": -350.05374
+      },
+      "u": 0.7167513397717297,
+      "v": 0.5587410564803102,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_33252a1434e08ef6",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -131453.94,
+        "y": 78086.1,
+        "z": -5112.9536
+      },
+      "u": 0.4871494199590284,
+      "v": 0.6228609764735644,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_510495d757305e0a",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -67024.76,
+        "y": 99085.67,
+        "z": -3412.1812
+      },
+      "u": 0.7284995820895522,
+      "v": 0.7135244374736486,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_70082b27cb21a3a6",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -164841.0,
+        "y": 92818.6,
+        "z": -3577.5422
+      },
+      "u": 0.36208229441030143,
+      "v": 0.6864670140821317,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_27afde36a1195dd0",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -107893.09,
+        "y": 119596.11,
+        "z": -3431.8386
+      },
+      "u": 0.5754077986537899,
+      "v": 0.8020761305337718,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d3dfb28f20525db",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -111369.39,
+        "y": 119315.12,
+        "z": -3768.3347
+      },
+      "u": 0.562385662276851,
+      "v": 0.8008629854119235,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d9792f6670dd28bd",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -150487.75,
+        "y": 81429.07,
+        "z": -4253.7705
+      },
+      "u": 0.4158492244659057,
+      "v": 0.637293902015347,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c850e239ed47d934",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -96858.625,
+        "y": 146889.67,
+        "z": -339.02597
+      },
+      "u": 0.6167426397424641,
+      "v": 0.919913239227591,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1f7f6ab73aa17839",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -168501.95,
+        "y": 121274.48,
+        "z": -2246.3262
+      },
+      "u": 0.3483684635645302,
+      "v": 0.8093223185766084,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9b504ff30ab52662",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -106629.516,
+        "y": 118436.77,
+        "z": -1935.912
+      },
+      "u": 0.5801411165349721,
+      "v": 0.7970708005734043,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dbbdb920de86b7fb",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -109197.93,
+        "y": 124010.47,
+        "z": -2805.921
+      },
+      "u": 0.570519899326895,
+      "v": 0.821134671051522,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_04df7f0dfddb3424",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -126907.086,
+        "y": 126540.65,
+        "z": -3718.4038
+      },
+      "u": 0.5041818259291776,
+      "v": 0.8320584602411671,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4afd243a061b0624",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -107200.695,
+        "y": 115530.41,
+        "z": -3374.657
+      },
+      "u": 0.578001493707931,
+      "v": 0.7845228933299604,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_91bf203a4c6b754c",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -117685.0,
+        "y": 139740.94,
+        "z": -2300.0
+      },
+      "u": 0.5387275387767047,
+      "v": 0.8890493404165614,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_42f3e985dc367311",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -117496.91,
+        "y": 139862.42,
+        "z": -2300.0
+      },
+      "u": 0.5394321194029851,
+      "v": 0.8895738176912051,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e07d9db9b818aeb0",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -117496.91,
+        "y": 140027.25,
+        "z": -2300.0
+      },
+      "u": 0.5394321194029851,
+      "v": 0.8902854540855046,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6077adf99eba92ae",
+      "targetType": "creature",
+      "targetId": "g2_lawn_mite",
+      "technicalId": "Mite",
+      "map": "surface",
+      "world": {
+        "x": -117496.91,
+        "y": 140193.08,
+        "z": -2300.0
+      },
+      "u": 0.5394321194029851,
+      "v": 0.8910014078758748,
+      "type": "story_locked",
+      "conditional": true,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "story_related",
+  "appearanceCondition": "Bloqueado por progreso de historia",
+  "immunities": []
+}

@@ -1,1 +1,2058 @@
-{"id":"g2_toe_biter_nymph","speciesKey":"toe_biter_nymph","collectionGroup":"angry","game":"g2","danger":"unknown","order":310,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_toe_biter_nymph.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Estamos preparando esta información para ti.","interactionWithPlayer":"Estamos preparando esta información para ti.","interactionWithCreatures":"Estamos preparando esta información para ti.","strategy":"Estamos preparando esta información para ti.","groupId":null,"name":"Ninfa de chinche mordedora de dedos","tier":3,"cardTier":3,"technicalId":"ToeBiterNymph","bestiaryId":"ToeBiterNymph","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Nymph.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Nymph_G.png","weaknesses":["spicy"],"resistances":["water","fresh","venom","slashing","gas"],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"damageWeaknesses":[],"resistancesV2":[{"type":"water","bonusPct":35},{"type":"fresh","bonusPct":50},{"type":"venom","bonusPct":50},{"type":"slashing","bonusPct":50},{"type":"gas","bonusPct":90}],"weakPoints":[],"attacks":[{"name":"Área ataque","technicalId":"ToeBiterNymphAOE","tags":["generic"],"notes":"Daño del ataque: 0"},{"name":"Combo 3","technicalId":"ToeBiterNymphCombo3","tags":["slashing"],"notes":"Daño del ataque: 65"},{"name":"Potente ataque","technicalId":"ToeBiterNymphPowerAttack","tags":["stabbing"],"notes":"Daño del ataque: 110"},{"name":"Bloqueo defensivo","technicalId":"BlockDefensive","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":700,"rating":3},"combatStats":{"health":700},"description":"Una cría de mordedor de dedos recién salida del huevo. No tiene idea cuánto crecerá. Al morir, suelta caparazón de mordedor de dedos.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_toe_biter_nymph",
+  "speciesKey": "toe_biter_nymph",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "alta",
+  "order": 310,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_toe_biter_nymph.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Toe Biter Shell",
+      "minCount": 1,
+      "maxCount": 6
+    }
+  ],
+  "abilities": [],
+  "behavior": "Es agresiva y utiliza un repertorio más sencillo que una chinche mordedora adulta. Puede encontrarse con mucha frecuencia en zonas con agua, túneles y áreas húmedas de las nuevas regiones, donde permanece cerca de su territorio hasta detectar una amenaza.",
+  "interactionWithPlayer": "Es considerablemente menos resistente que una adulta, aunque su ataque más fuerte todavía puede causar bastante daño. Debido a lo común que es encontrarla en túneles y zonas acuáticas, puede aparecer repetidamente durante la exploración y terminar volviéndose bastante molesta.",
+  "interactionWithCreatures": "Suele compartir territorio con criaturas acuáticas y es muy común verla peleando contra arañas campana. Estos enfrentamientos pueden dejar a cualquiera de las dos criaturas debilitada antes de que el jugador intervenga.",
+  "strategy": "Utiliza daño Picante y evita armas Cortantes. Sus 700 puntos de vida permiten eliminarla con relativa rapidez, pero si ya está peleando contra una araña campana puedes simplemente dejar que se debiliten entre ellas antes de intervenir. Si no necesitas su botín, muchas veces tampoco vale la pena detener la exploración únicamente para enfrentarla.",
+  "groupId": null,
+  "name": "Ninfa de chinche mordedora de dedos",
+  "tier": 3,
+  "cardTier": 3,
+  "technicalId": "ToeBiterNymph",
+  "bestiaryId": "ToeBiterNymph",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_ToeBiter_Nymph.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_ToeBiter_Nymph_G.png",
+  "weaknesses": [
+    "spicy"
+  ],
+  "resistances": [
+    "water",
+    "fresh",
+    "venom",
+    "slashing",
+    "gas"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "water",
+      "bonusPct": 35
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 50
+    },
+    {
+      "type": "gas",
+      "bonusPct": 90
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Área ataque",
+      "technicalId": "ToeBiterNymphAOE",
+      "tags": [
+        "general"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 0.0,
+      "cooldownSeconds": 12.0,
+      "range": 550.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 3",
+      "technicalId": "ToeBiterNymphCombo3",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Daño del ataque: 65",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 65.0,
+      "cooldownSeconds": 5.0,
+      "range": 225.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente ataque",
+      "technicalId": "ToeBiterNymphPowerAttack",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 110",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 110.0,
+      "cooldownSeconds": 8.0,
+      "range": 225.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bloqueo defensivo",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 3,
+    "value": 700
+  },
+  "combatStats": {
+    "health": 700,
+    "stunThreshold": 60,
+    "stunCooldownSeconds": 5
+  },
+  "description": "Una cría de mordedor de dedos recién salida del huevo. No tiene idea cuánto crecerá. Al morir, suelta caparazón de mordedor de dedos.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_5b5f43e01db7db5f",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 193565.61,
+        "y": 177098.81,
+        "z": -12152.36
+      },
+      "u": 0.3039490436060099,
+      "v": 0.2925303321108742,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_ef567b88655ce9f3",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 209363.98,
+        "y": 183861.31,
+        "z": -12121.112
+      },
+      "u": 0.5200095561936562,
+      "v": 0.3515904600426439,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_36d0bdd8b8b2f58b",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 197265.98,
+        "y": 165324.08,
+        "z": -14500.01
+      },
+      "u": 0.3545557732220369,
+      "v": 0.18969601637526642,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_4d7ca4d1dc0e679a",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 173463.55,
+        "y": 197464.55,
+        "z": -8296.555
+      },
+      "u": 0.02903072053422354,
+      "v": 0.4703940230277185,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_6aeeb691bf5cccea",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 185114.47,
+        "y": 169702.62,
+        "z": -11250.039
+      },
+      "u": 0.18837018070116862,
+      "v": 0.22793588810234536,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_ca87f6ff27ddab00",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 207835.75,
+        "y": 177441.06,
+        "z": -14352.266
+      },
+      "u": 0.49910928881469113,
+      "v": 0.2955193640938166,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_e1a1453c4fb796a1",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 198517.78,
+        "y": 191373.98,
+        "z": -13174.101
+      },
+      "u": 0.3716755488480802,
+      "v": 0.4172021792750534,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_211fba18047725e8",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 195447.44,
+        "y": 192800.1,
+        "z": -13218.658
+      },
+      "u": 0.3296851894490819,
+      "v": 0.42965716332622605,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_efddad759dfeefac",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 197049.86,
+        "y": 166130.62,
+        "z": -14500.01
+      },
+      "u": 0.351600088681135,
+      "v": 0.1967399136886993,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_f6ff2065d9a4d522",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 192108.38,
+        "y": 168050.6,
+        "z": -14500.0
+      },
+      "u": 0.2840197812353924,
+      "v": 0.21350801194029853,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_85e770ff99bf9931",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 175907.77,
+        "y": 174725.9,
+        "z": -11250.029
+      },
+      "u": 0.062458183372286986,
+      "v": 0.27180658081023445,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_b5078eec4fe3deff",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 178593.55,
+        "y": 190508.53,
+        "z": -14468.081
+      },
+      "u": 0.09918925141903154,
+      "v": 0.40964379292110875,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_03a597431fa287cc",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 189747.11,
+        "y": 180298.89,
+        "z": -11892.799
+      },
+      "u": 0.2517267531218696,
+      "v": 0.32047815232409393,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_202143339a6e6d5c",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 183441.1,
+        "y": 197128.84,
+        "z": -14500.0
+      },
+      "u": 0.16548496026711196,
+      "v": 0.4674621079744136,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_76f84601f510b000",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 196745.61,
+        "y": 199071.75,
+        "z": -14500.054
+      },
+      "u": 0.3474391270784639,
+      "v": 0.48443046481876334,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_490c0849d7b1aa1e",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 185594.38,
+        "y": 200765.48,
+        "z": -10998.784
+      },
+      "u": 0.19493349075125213,
+      "v": 0.49922261424307046,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_e49f0b1054d1e6fb",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 215534.98,
+        "y": 180167.47,
+        "z": -12267.083
+      },
+      "u": 0.6044049351585978,
+      "v": 0.31933039897654586,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_9964c22d5db758cd",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 187450.33,
+        "y": 178251.5,
+        "z": -12141.453
+      },
+      "u": 0.22031569843071772,
+      "v": 0.3025973219616205,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_c1274efafffca0de",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -88322.01,
+        "y": -15835.112,
+        "z": -7226.3286
+      },
+      "u": 0.6487205946736903,
+      "v": 0.21736590484863821,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a870da19bcfa0314",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -95574.94,
+        "y": -16321.86,
+        "z": -6640.7397
+      },
+      "u": 0.6215512929470296,
+      "v": 0.21526442094611684,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_579a0fde7d819314",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -99706.2,
+        "y": -9628.624,
+        "z": -2131.2556
+      },
+      "u": 0.6060756921275973,
+      "v": 0.2441617717514125,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8dd714ac6c45c123",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -95292.37,
+        "y": -13476.24,
+        "z": -4112.1367
+      },
+      "u": 0.6226097933860111,
+      "v": 0.22755008955223877,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_baeac53a21bb1443",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -62765.69,
+        "y": -42544.723,
+        "z": -7106.573
+      },
+      "u": 0.7444539561018437,
+      "v": 0.10204993527278865,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5bc2f6fe94650892",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -62756.195,
+        "y": -46468.28,
+        "z": -7558.3228
+      },
+      "u": 0.744489524143986,
+      "v": 0.08511038569862553,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_784154a293bd15f9",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -23458.371,
+        "y": -47522.477,
+        "z": -4686.014
+      },
+      "u": 0.8916982297922155,
+      "v": 0.08055899971329794,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d5e20c615ce82950",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -46691.047,
+        "y": -21196.139,
+        "z": -11216.891
+      },
+      "u": 0.8046691830260463,
+      "v": 0.19422022794502072,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3630759646f30382",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -87632.016,
+        "y": -25307.719,
+        "z": -3361.0398
+      },
+      "u": 0.6513052956394498,
+      "v": 0.17646890860949488,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eae0e5ef482f160c",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -79414.64,
+        "y": -23869.205,
+        "z": -5352.0337
+      },
+      "u": 0.6820873889376645,
+      "v": 0.18267954330044694,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_94ba39767f55b466",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -77558.586,
+        "y": -16979.127,
+        "z": -5700.0684
+      },
+      "u": 0.689040122680714,
+      "v": 0.2124267389830508,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_93ceb411d73609de",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -72831.766,
+        "y": -20255.717,
+        "z": -5455.63
+      },
+      "u": 0.7067466769681007,
+      "v": 0.19828040219242768,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b4ab8416a5fb6d99",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -74302.33,
+        "y": -26552.38,
+        "z": -5278.1333
+      },
+      "u": 0.7012379795141936,
+      "v": 0.17109521409899653,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cf36b7802bdd4b28",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -97641.52,
+        "y": -13089.851,
+        "z": -5795.324
+      },
+      "u": 0.6138099338601112,
+      "v": 0.22921828390252127,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a61167167fcb27c0",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -100504.35,
+        "y": -16004.657,
+        "z": -5136.3223
+      },
+      "u": 0.6030858413813287,
+      "v": 0.21663391193186604,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_96c77096521e1d08",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -97541.88,
+        "y": -8890.328,
+        "z": -3127.943
+      },
+      "u": 0.6141831829089844,
+      "v": 0.24734928800067463,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a1d5565febfca6f2",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -45378.24,
+        "y": -22489.814,
+        "z": -11907.834
+      },
+      "u": 0.8095869265437519,
+      "v": 0.18863492058352305,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6aaae98015a761ca",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -25976.082,
+        "y": -46934.355,
+        "z": -4686.014
+      },
+      "u": 0.8822669448053849,
+      "v": 0.08309815532506952,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_adba715a81890fd1",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -92209.25,
+        "y": -24823.363,
+        "z": -2977.8613
+      },
+      "u": 0.6341590869183494,
+      "v": 0.17856006530061555,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_905644d5fa2a233d",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -89885.664,
+        "y": -14540.136,
+        "z": -3407.5867
+      },
+      "u": 0.6428631843137255,
+      "v": 0.22295682914242348,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e515c1bd7670f60",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -91092.734,
+        "y": -18263.621,
+        "z": -2221.4917
+      },
+      "u": 0.6383415290605794,
+      "v": 0.20688106963487646,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7a04190075240ad5",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 237659.52,
+        "y": 153535.5,
+        "z": 24433.795
+      },
+      "u": 0.9069829513188647,
+      "v": 0.0867407420042644,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_2cc1ea45a644c1ad",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 238052.3,
+        "y": 151064.72,
+        "z": 17884.094
+      },
+      "u": 0.9123546604340567,
+      "v": 0.06516224545842218,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_ca689d1444492278",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 235419.28,
+        "y": 153988.73,
+        "z": 17933.361
+      },
+      "u": 0.8763451448414025,
+      "v": 0.09069901509594892,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_8ec9e99e7f718cba",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 231982.78,
+        "y": 151074.12,
+        "z": 2895.6904
+      },
+      "u": 0.8293471348247078,
+      "v": 0.06524434012793173,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_5d6688939edc0b73",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 237124.61,
+        "y": 146643.3,
+        "z": 11674.374
+      },
+      "u": 0.8996674542904839,
+      "v": 0.02654788230277175,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_452461ba7c59eebb",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 234128.95,
+        "y": 146784.5,
+        "z": 11624.374
+      },
+      "u": 0.8586984280467448,
+      "v": 0.02778104904051172,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_d8ed561f33bf49e2",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 231533.89,
+        "y": 148444.81,
+        "z": 34744.42
+      },
+      "u": 0.8232080582303842,
+      "v": 0.042281325714285695,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_1485f6dde8f96f65",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 232719.84,
+        "y": 151898.62,
+        "z": 5743.8926
+      },
+      "u": 0.8394272609015024,
+      "v": 0.07244509066098077,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_7ebf08255ad749ae",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 233026.7,
+        "y": 152633.38,
+        "z": 34890.305
+      },
+      "u": 0.8436239171953257,
+      "v": 0.07886209910447765,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_18c07b59211177ca",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "abyss",
+      "world": {
+        "x": 238475.39,
+        "y": 154182.67,
+        "z": 34636.684
+      },
+      "u": 0.9181408929549252,
+      "v": 0.09239278533049053,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": [
+        {
+          "type": "required_equipment",
+          "equipmentId": "DivingArmor"
+        }
+      ]
+    },
+    {
+      "id": "spawn_2ff01287320de1b1",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -29461.727,
+        "y": 46502.2,
+        "z": 11317.124
+      },
+      "u": 0.8692098022827041,
+      "v": 0.48650077072265796,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6df860d21a346595",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -23455.736,
+        "y": 48615.098,
+        "z": 6915.322
+      },
+      "u": 0.8917081004389816,
+      "v": 0.49562298824521467,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a27018c4385dbf1",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -22552.008,
+        "y": 51733.395,
+        "z": -1510.079
+      },
+      "u": 0.8950934438396254,
+      "v": 0.5090859114596508,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_52be90921c8c53f8",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -20684.234,
+        "y": 51388.97,
+        "z": -1266.6484
+      },
+      "u": 0.9020900804214224,
+      "v": 0.5075988923180706,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a6f98e79e72d12e0",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -22823.967,
+        "y": 50069.29,
+        "z": -1440.965
+      },
+      "u": 0.8940746919520046,
+      "v": 0.50190131107176,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0264744dd37d2ba5",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -14616.233,
+        "y": 58547.035,
+        "z": 1506.1918
+      },
+      "u": 0.9248206665496049,
+      "v": 0.5385030940214183,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_313fd45b05971274",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -15775.081,
+        "y": 60510.19,
+        "z": 1506.1918
+      },
+      "u": 0.9204796497512437,
+      "v": 0.5469788117041909,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d1b356d71701f553",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -9797.27,
+        "y": 41070.234,
+        "z": -3937.938
+      },
+      "u": 0.9428723863037753,
+      "v": 0.46304882205919556,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d2ebc096431239fa",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -18077.564,
+        "y": 43100.07,
+        "z": 6540.757
+      },
+      "u": 0.9118546036874452,
+      "v": 0.47181242802934475,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8cc40da297a61273",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -17999.602,
+        "y": 47279.395,
+        "z": 6506.879
+      },
+      "u": 0.9121466474685396,
+      "v": 0.48985622936166623,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e853d5d921b54876",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -26055.232,
+        "y": 61597.285,
+        "z": 1606.7411
+      },
+      "u": 0.8819704508047995,
+      "v": 0.5516722313854457,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7a9843622d9e6d5b",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -68322.55,
+        "y": 47420.45,
+        "z": -1235.9912
+      },
+      "u": 0.7236380918934738,
+      "v": 0.4904652196643899,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e181e5fae4618527",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -68921.63,
+        "y": 50261.168,
+        "z": -1213.439
+      },
+      "u": 0.7213939525899912,
+      "v": 0.5027297243949743,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d035a4b8069098a6",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -45383.473,
+        "y": 43253.934,
+        "z": -4593.7583
+      },
+      "u": 0.8095673238513316,
+      "v": 0.47247671985833545,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_26aa10207956f417",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -44136.547,
+        "y": 43194.56,
+        "z": -4584.673
+      },
+      "u": 0.814238278724027,
+      "v": 0.4722203787840458,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8463c08fee5497f9",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -29659.232,
+        "y": 42027.13,
+        "z": -12153.973
+      },
+      "u": 0.8684699532923618,
+      "v": 0.46718012108946794,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cb9b89c395b3686f",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -19236.025,
+        "y": 45500.2,
+        "z": 3595.8508
+      },
+      "u": 0.9075150365817969,
+      "v": 0.4821747398600219,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d4b5505165f16eeb",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -53972.973,
+        "y": 72582.805,
+        "z": 24.161068
+      },
+      "u": 0.7773912629792216,
+      "v": 0.5991010722657897,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_26df9f3f9e8e89e3",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -22256.592,
+        "y": 42509.402,
+        "z": -2527.2288
+      },
+      "u": 0.896200065086333,
+      "v": 0.4692622803271777,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b44095bcbd76ca65",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -22648.707,
+        "y": 41056.035,
+        "z": -2610.2493
+      },
+      "u": 0.894731211706175,
+      "v": 0.46298751935239063,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6c89452209bbc863",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -32650.492,
+        "y": 40528.754,
+        "z": -6033.5156
+      },
+      "u": 0.8572647651155985,
+      "v": 0.46071103843494393,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_11192519030bf34f",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -33946.445,
+        "y": 39743.477,
+        "z": -6033.5156
+      },
+      "u": 0.8524101562774363,
+      "v": 0.45732068660089387,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_99ae557ebc8f63e0",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -41814.51,
+        "y": 44553.965,
+        "z": -6967.5557
+      },
+      "u": 0.8229365736025752,
+      "v": 0.47808946858925705,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4d4b741850946e95",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -42220.25,
+        "y": 44290.355,
+        "z": -6515.071
+      },
+      "u": 0.8214166812993855,
+      "v": 0.476951359811114,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7a6bd0d5ef3cd09a",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -53645.547,
+        "y": 44619.188,
+        "z": -7643.7104
+      },
+      "u": 0.7786177929177641,
+      "v": 0.47837106211316294,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4c32c28916135dd2",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -51312.727,
+        "y": 41886.117,
+        "z": -4298.119
+      },
+      "u": 0.7873564806555458,
+      "v": 0.46657131211737923,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5aebf0e942847d66",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -37193.0,
+        "y": 41765.746,
+        "z": -4484.06
+      },
+      "u": 0.8402486391571554,
+      "v": 0.46605162283497753,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c667192651310b62",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -38483.344,
+        "y": 43323.973,
+        "z": -4408.5527
+      },
+      "u": 0.8354150414983905,
+      "v": 0.4727791059617169,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_22ab34bfc4c8440b",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -16961.736,
+        "y": 65357.965,
+        "z": 1506.1918
+      },
+      "u": 0.9160344685981856,
+      "v": 0.5679085764398347,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5e632c1f5277d486",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -69452.22,
+        "y": 50290.62,
+        "z": -1275.1046
+      },
+      "u": 0.719406375182909,
+      "v": 0.5028568803440425,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0413196b9240e94a",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -37306.902,
+        "y": 48731.098,
+        "z": 2190.8423
+      },
+      "u": 0.8398219649985367,
+      "v": 0.496123806189392,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_32a6772794b92f41",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -36865.926,
+        "y": 47862.43,
+        "z": 2214.388
+      },
+      "u": 0.8414738505121452,
+      "v": 0.4923734223796273,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e61d801c8681b7f2",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -42174.47,
+        "y": 46296.977,
+        "z": 2121.435
+      },
+      "u": 0.8215881720807726,
+      "v": 0.4856147417488828,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_713687a44104cb4e",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -15751.069,
+        "y": 65806.766,
+        "z": 1680.5425
+      },
+      "u": 0.920569598127012,
+      "v": 0.569846228113669,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e468c211859923d7",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -30094.678,
+        "y": 28338.014,
+        "z": -4704.8667
+      },
+      "u": 0.8668387830260461,
+      "v": 0.40807878546251786,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_04bb8466f8b8300c",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -51762.52,
+        "y": 73355.45,
+        "z": -4465.961
+      },
+      "u": 0.7856715668715248,
+      "v": 0.6024368867526774,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_34affb8d59894e11",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -53044.754,
+        "y": 46571.953,
+        "z": -4598.8257
+      },
+      "u": 0.7808683490781387,
+      "v": 0.4868019220507632,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6aa7f1cb1ace67f6",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -13570.447,
+        "y": 45106.37,
+        "z": -8635.895
+      },
+      "u": 0.9287381558091894,
+      "v": 0.4804744197655789,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f8b1bc7e183fbddb",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -15703.023,
+        "y": 43530.066,
+        "z": -8047.722
+      },
+      "u": 0.9207495772900206,
+      "v": 0.4736688910700733,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c51e59d5c0acc741",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -15322.304,
+        "y": 50994.02,
+        "z": -2577.9824
+      },
+      "u": 0.9221757415276559,
+      "v": 0.5058937367400286,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f97211fb2ee0944d",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -61400.273,
+        "y": 24638.807,
+        "z": -22407.34
+      },
+      "u": 0.7495687754170325,
+      "v": 0.3921078436967704,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_429247c83b3e839d",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -51073.184,
+        "y": 7687.263,
+        "z": -22970.291
+      },
+      "u": 0.7882538029850745,
+      "v": 0.3189213142423476,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cef272fe17bdd417",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -44688.94,
+        "y": 5902.184,
+        "z": -21857.654
+      },
+      "u": 0.8121690278021657,
+      "v": 0.31121442118222453,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3a0ab170e1f2f495",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -63938.574,
+        "y": 8612.41,
+        "z": -19177.955
+      },
+      "u": 0.7400603607843138,
+      "v": 0.32291554026477787,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1f848c04c94154a4",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -64842.754,
+        "y": 3275.536,
+        "z": -19732.682
+      },
+      "u": 0.7366733242025167,
+      "v": 0.299874141428451,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf142cc47f66e3d6",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -64859.465,
+        "y": 17424.209,
+        "z": -21197.955
+      },
+      "u": 0.7366107251975418,
+      "v": 0.36095956664136947,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f0f35cf239c685b2",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -54212.844,
+        "y": 19981.402,
+        "z": -19650.168
+      },
+      "u": 0.7764927119695639,
+      "v": 0.37199998165106674,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_707cc43233ff4f5d",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -56070.188,
+        "y": 12982.807,
+        "z": -16481.709
+      },
+      "u": 0.7695351459174715,
+      "v": 0.3417842750990809,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d9f99e312ed743e1",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -42266.4,
+        "y": 17998.348,
+        "z": -19845.957
+      },
+      "u": 0.8212438045068774,
+      "v": 0.3634383521038873,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f2dc26f6b79521aa",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -44498.98,
+        "y": 14174.171,
+        "z": -18316.94
+      },
+      "u": 0.8128806134035703,
+      "v": 0.34692786535121006,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e3e1907bdce5e729",
+      "targetType": "creature",
+      "targetId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymph",
+      "map": "surface",
+      "world": {
+        "x": -18441.348,
+        "y": 1134.099,
+        "z": -3842.181
+      },
+      "u": 0.9104918775534094,
+      "v": 0.29062870973943833,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [
+    "required_equipment"
+  ],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "2",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

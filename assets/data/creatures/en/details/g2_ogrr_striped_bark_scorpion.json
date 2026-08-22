@@ -1,1 +1,491 @@
-{"id":"g2_ogrr_striped_bark_scorpion","speciesKey":"ogrr_striped_bark_scorpion","collectionGroup":"ogrr","game":"g2","danger":"unknown","order":293,"defaultGold":false,"photo":"assets/global/Proximamente.png","temperament":"aggressive","loot":[],"abilities":[],"behavior":"We're preparing this information for you.","interactionWithPlayer":"We're preparing this information for you.","interactionWithCreatures":"We're preparing this information for you.","strategy":"We're preparing this information for you.","groupId":null,"name":"O.G.R.R. Striped Bark Scorpion","tier":4,"cardTier":4,"technicalId":"StripedBarkScorpionAdultOGRE","bestiaryId":"StripedBarkScorpionAdultOGRE","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_StripedBark_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_StripedBark_OGRR_G.png","weaknesses":["busting"],"resistances":["slashing","venom"],"elementalWeaknesses":[],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"slashing","bonusPct":25},{"type":"venom","bonusPct":75}],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},{"part":"stinger","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Combo 2","technicalId":"ScorpionStripedBarkAdultCombo2","tags":["stabbing"],"notes":"Attack damage: 105"},{"name":"Combo 4","technicalId":"ScorpionStripedBarkAdultCombo4","tags":["stabbing"],"notes":"Attack damage: 88"},{"name":"Power","technicalId":"ScorpionStripedBarkAdultPower","tags":["stabbing"],"notes":"Attack damage: 142"},{"name":"Burrow Strike","technicalId":"ScorpionStripedBarkAdultBurrowStrike","tags":["stabbing"],"notes":"Attack damage: 165"},{"name":"Block Offensive","technicalId":"BlockOffensive","tags":["maine"],"notes":"Attack damage: 0"},{"name":"Tail Whip","technicalId":"ScorpionStripedBarkAdultTailWhip","tags":["stabbing"],"notes":"Attack damage: 10"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":1800,"rating":4},"combatStats":{"health":1800},"description":"A striped bark scorpion with some of the most messed-up DNA Ominent's ever put into a bug. They are resistant to the flavor of their mutation.","localizationStatus":"ru_automatic_pending_review","infusions":[{"id":"fresh","name":"Fresh","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["All direct hits also apply 20 Chill buildup."],"recommendations":"Do not stay on fresh damage as your main answer.","combatTips":["Swap to spicy damage or a reliable physical weapon if your build depends on fresh."]},{"id":"sour","name":"Sour","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["All direct hits also apply 20 Tang buildup."],"recommendations":"Avoid staying on sour weapons as your main answer.","combatTips":["Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."]},{"id":"spicy","name":"Spicy","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["All direct hits also apply 20 Sizzle buildup."],"recommendations":"Do not depend on spicy damage while this infusion is active.","combatTips":["Fresh is the cleanest elemental answer if the creature lets you hold the tempo."]}],"listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_striped_bark_scorpion",
+  "speciesKey": "ogrr_striped_bark_scorpion",
+  "collectionGroup": "ogrr",
+  "game": "g2",
+  "danger": "imposible_superior",
+  "order": 293,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/OGRR_Striped_Bark_Scorpion.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Scorpion Finale Venom",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Striped Chunk",
+      "minCount": 2,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Striped Claw",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Striped Stinger",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Venom",
+      "minCount": 0,
+      "maxCount": 5
+    }
+  ],
+  "abilities": [],
+  "behavior": "It remains inside one of the fallen tree tunnels and keeps the adult Striped Bark Scorpion's moveset: close-range combos, tail attacks, and a strong tendency to burrow and strike from underground.",
+  "interactionWithPlayer": "Its location can catch the player completely off guard. You may enter the tunnel after spending health and resources on the many creatures outside, only to suddenly run into an O.G.R.R. capable of ending the fight very quickly.",
+  "interactionWithCreatures": "The area around its hiding place is full of threats such as earwigs, Toe Biters, spiders, and other creatures. They may not necessarily join the actual fight, but they can weaken you before you reach the scorpion or follow you to the tunnel entrance.",
+  "strategy": "The biggest problem is the lack of mobility inside the tunnel. Do not rush in: kill or avoid nearby creatures first, recover health, and prepare your resources before advancing. Check its infusion and use Fresh → Sour, Sour → Spicy, or Spicy → Fresh, preferably combined with Busting damage. Inside the tunnel, avoid getting cornered and be especially careful when it burrows, because the narrow space severely limits your dodging options.",
+  "groupId": null,
+  "name": "O.G.R.R. Striped Bark Scorpion",
+  "tier": 4,
+  "cardTier": 4,
+  "technicalId": "StripedBarkScorpionAdultOGRE",
+  "bestiaryId": "StripedBarkScorpionAdultOGRE",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_StripedBark_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_StripedBark_OGRR_G.png",
+  "weaknesses": [
+    "busting"
+  ],
+  "resistances": [
+    "slashing",
+    "venom"
+  ],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 75
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "butt",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    },
+    {
+      "part": "stinger",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Combo 2",
+      "technicalId": "ScorpionStripedBarkAdultCombo2",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 105",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 105.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 4",
+      "technicalId": "ScorpionStripedBarkAdultCombo4",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 88",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 88.0,
+      "cooldownSeconds": 15.0,
+      "range": 350.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power",
+      "technicalId": "ScorpionStripedBarkAdultPower",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 142",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 142.0,
+      "cooldownSeconds": 20.0,
+      "range": 350.0,
+      "stun": 12,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Burrow Strike",
+      "technicalId": "ScorpionStripedBarkAdultBurrowStrike",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 165",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 165.0,
+      "cooldownSeconds": 5.0,
+      "range": 550.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Huge"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Huge",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Offensive",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Tail Whip",
+      "technicalId": "ScorpionStripedBarkAdultTailWhip",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 10",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 10.0,
+      "cooldownSeconds": 30.0,
+      "range": 200.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 4,
+    "value": 1800
+  },
+  "combatStats": {
+    "health": 1800,
+    "stunThreshold": 120,
+    "stunCooldownSeconds": 5
+  },
+  "description": "A striped bark scorpion with some of the most messed-up DNA Ominent's ever put into a bug. They are resistant to the flavor of their mutation.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresh",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Chill buildup."
+      ],
+      "recommendations": "Do not stay on fresh damage as your main answer.",
+      "combatTips": [
+        "Swap to spicy damage or a reliable physical weapon if your build depends on fresh."
+      ]
+    },
+    {
+      "id": "sour",
+      "name": "Sour",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Tang buildup."
+      ],
+      "recommendations": "Avoid staying on sour weapons as your main answer.",
+      "combatTips": [
+        "Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."
+      ]
+    },
+    {
+      "id": "spicy",
+      "name": "Spicy",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Sizzle buildup."
+      ],
+      "recommendations": "Do not depend on spicy damage while this infusion is active.",
+      "combatTips": [
+        "Fresh is the cleanest elemental answer if the creature lets you hold the tempo."
+      ]
+    }
+  ],
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_7abb665c9c8ab951",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_striped_bark_scorpion",
+      "technicalId": "StripedBarkScorpionAdultOGRE",
+      "map": "surface",
+      "world": {
+        "x": -27839.203,
+        "y": 61053.973,
+        "z": -370.85666
+      },
+      "u": 0.8752877382499268,
+      "v": 0.5493265382915928,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "OGRR creatures can be released from the scarecrow laboratory. Afterwards they may appear in different areas, mainly at night.",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/OGRR_Striped_Bark_Scorpion.webp",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Scorpion Finale Venom",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Striped Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Scorpion Striped Chunk",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Striped Chunk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Striped Chunk",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Striped Claw",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Striped Claw",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Striped Stinger",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

@@ -1,1 +1,2372 @@
-{"id":"g2_northern_scorpling","speciesKey":"northern_scorpling","collectionGroup":"angry","name":"Северный скорплинг","game":"g2","tier":2,"danger":"intermedia","isBoss":false,"order":271,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpling.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpling_G.png","photo":"assets/g2/creatures/photos/Northern_Scorpling.webp","weaknesses":["busting"],"resistances":["fresh","slashing","venom"],"temperament":"aggressive","health":{"value":200,"rating":1},"description":"Агрессивный северный скорплинг из Grounded 2, который резко врывается и давит короткими, но злыми сериями ударов.","behavior":"Он двигается короткими рывками и почти сразу атакует, как только замечает игрока.","interactionWithPlayer":"Он атакует сразу после обнаружения игрока и поддерживает давление быстрыми комбо.","interactionWithCreatures":"Обычно он лезет в драку почти с любым существом поблизости.","strategy":"Держите дистанцию после его рывков и наказывайте в конце цепочки ударов клешнями.","environments":["Бой с Axl","Церемониальная зона","Площадка для крокета","Входная зона","Огненная яма","Теплица","Тележка с мороженым","Окрестности тележки с мороженым","Малые пещеры"],"loot":[{"section":"loot","item":"Northern Scorpion Chunk","minCount":1,"maxCount":2},{"section":"rare","item":"Northern Scorpion Chunk","minCount":0,"maxCount":1}],"combatStats":{"health":200,"attackDamageSummary":"Удар клешнёй: 30."},"abilities":[{"name":"Режущий удар клешнёй","description":"Он резко бьёт клешнёй коротким быстрым ударом, не давая вернуть себе темп.","blockable":true,"breaksGuard":false,"staggers":false}],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"fresh","bonusPct":50},{"type":"slashing","bonusPct":25},{"type":"venom","bonusPct":50}],"groupId":null,"cardTier":2,"technicalId":"Scorpling","bestiaryId":"Scorpling","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Right Strike","technicalId":"ScorplingNorthernRight","tags":["stabbing"],"notes":"Урон атаки: 30"},{"name":"Left Strike","technicalId":"ScorplingNorthernLeft","tags":["stabbing"],"notes":"Урон атаки: 30"}],"encounterVariants":[{"id":"g2_wave_scorpling_northern_wave","characterRow":"Scorpling_Northern_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":200.0,"stun":{"max":20.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":7}},"weakpoints":[],"resistances":[{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"ScorplingNorthernRight","ability":"ScorplingNorthernRight","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorplingNorthernLeft","ability":"ScorplingNorthernLeft","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":2,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_scorpling_northern_wave","nameEn":"Northern Scorpling Raid/Wave","nameEsMX":"Cría de escorpión norteño  (Oleada)","nameRu":"Северный скорплинг Рейд/волна"}],"contextVariants":[{"id":"Scorpling_Northern_Wave","characterRow":"Scorpling_Northern_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":200.0,"stun":{"max":20.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":7}},"weakpoints":[],"resistances":[{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Venom"],"percent":50.0,"sourceId":"DamageResistVenomMedium"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"ScorplingNorthernRight","ability":"ScorplingNorthernRight","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorplingNorthernLeft","ability":"ScorplingNorthernLeft","resolved":true,"cooldown":0.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":3,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":175.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":2,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Cría de escorpión norteño  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_northern_scorpling",
+  "speciesKey": "northern_scorpling",
+  "collectionGroup": "angry",
+  "name": "Северный скорплинг",
+  "game": "g2",
+  "tier": 2,
+  "danger": "intermedia",
+  "isBoss": false,
+  "order": 271,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpling.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpling_G.png",
+  "photo": "assets/g2/creatures/photos/Northern_Scorpling.webp",
+  "weaknesses": [
+    "busting"
+  ],
+  "resistances": [
+    "fresh",
+    "slashing",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 1,
+    "value": 200
+  },
+  "description": "Агрессивный северный скорплинг из Grounded 2, который резко врывается и давит короткими, но злыми сериями ударов.",
+  "behavior": "Он двигается короткими рывками и почти сразу атакует, как только замечает игрока.",
+  "interactionWithPlayer": "Он атакует сразу после обнаружения игрока и поддерживает давление быстрыми комбо.",
+  "interactionWithCreatures": "Обычно он лезет в драку почти с любым существом поблизости.",
+  "strategy": "Держите дистанцию после его рывков и наказывайте в конце цепочки ударов клешнями.",
+  "environments": [
+    "Бой с Axl",
+    "Церемониальная зона",
+    "Площадка для крокета",
+    "Входная зона",
+    "Огненная яма",
+    "Теплица",
+    "Тележка с мороженым",
+    "Окрестности тележки с мороженым",
+    "Малые пещеры"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Scorpion Northern Chunk",
+      "minCount": 1,
+      "maxCount": 3
+    }
+  ],
+  "combatStats": {
+    "health": 200,
+    "stunThreshold": 20,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Режущий удар клешнёй",
+      "description": "Он резко бьёт клешнёй коротким быстрым ударом, не давая вернуть себе темп.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Scorpling",
+  "bestiaryId": "Scorpling",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Right Strike",
+      "technicalId": "ScorplingNorthernRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 0.0,
+      "range": 175.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Left Strike",
+      "technicalId": "ScorplingNorthernLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 0.0,
+      "range": 175.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_scorpling_northern_wave",
+      "characterRow": "Scorpling_Northern_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 200.0,
+        "stun": {
+          "max": 20.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 7
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ScorplingNorthernRight",
+          "ability": "ScorplingNorthernRight",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorplingNorthernLeft",
+          "ability": "ScorplingNorthernLeft",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 2,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_scorpling_northern_wave",
+      "nameEn": "Northern Scorpling Raid/Wave",
+      "nameEsMX": "Cría de escorpión norteño  (Oleada)",
+      "nameRu": "Северный скорплинг Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Scorpling_Northern_Wave",
+      "characterRow": "Scorpling_Northern_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 200.0,
+        "stun": {
+          "max": 20.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 7
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistVenomMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ScorplingNorthernRight",
+          "ability": "ScorplingNorthernRight",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorplingNorthernLeft",
+          "ability": "ScorplingNorthernLeft",
+          "resolved": true,
+          "cooldown": 0.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 3,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 175.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 2,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Cría de escorpión norteño  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_f76c0d926df189ab",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -204143.3,
+        "y": 29200.764,
+        "z": -521.8751
+      },
+      "u": 0.21485682177348556,
+      "v": 0.41180361892233747,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ac47f10ccadfece0",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -204252.03,
+        "y": 28190.873,
+        "z": 22.379625
+      },
+      "u": 0.21444952180275095,
+      "v": 0.40744351948730917,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9768d98af79003a4",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -206625.2,
+        "y": 30229.703,
+        "z": 422.37964
+      },
+      "u": 0.20555968393327476,
+      "v": 0.4162459561177165,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_47d9bb508c535434",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -203251.0,
+        "y": 74727.805,
+        "z": -848.0673
+      },
+      "u": 0.2181993561603746,
+      "v": 0.6083618868370014,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ef45dfa1d523ba4",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -129851.08,
+        "y": -19071.44,
+        "z": 952.26044
+      },
+      "u": 0.49315369505414103,
+      "v": 0.20339339505860526,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9ae1865fa32a2cd7",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -134236.77,
+        "y": -19045.195,
+        "z": 2088.7268
+      },
+      "u": 0.4767250055604332,
+      "v": 0.20350670511847538,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_408b1669293172c1",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -127662.125,
+        "y": -14155.607,
+        "z": -592.8089
+      },
+      "u": 0.5013534679543459,
+      "v": 0.22461699313601485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_035ff8ccba106876",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -130389.305,
+        "y": -17056.867,
+        "z": -88.131966
+      },
+      "u": 0.4911375171202809,
+      "v": 0.2120911046125306,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_aa990fa10fb8067a",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -95045.266,
+        "y": 57865.504,
+        "z": 2279.2864
+      },
+      "u": 0.6235354390400937,
+      "v": 0.535560654760098,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ca8d762b0d0ac04",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -102415.55,
+        "y": 59055.434,
+        "z": 2061.6328
+      },
+      "u": 0.5959265320456542,
+      "v": 0.5406980538662619,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ab4c9677723cd419",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -100093.75,
+        "y": 58352.77,
+        "z": 2050.4165
+      },
+      "u": 0.6046239391278899,
+      "v": 0.5376643750737836,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_74fe3754e6a37bc5",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -195662.03,
+        "y": 113742.08,
+        "z": 1160.4216
+      },
+      "u": 0.24662745566286215,
+      "v": 0.7768019644152121,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_768745067aa9cace",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -93576.23,
+        "y": 62941.19,
+        "z": -179.43486
+      },
+      "u": 0.629038412642669,
+      "v": 0.5574744015515642,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_95aae61ea23bbb80",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -115294.6,
+        "y": 46734.953,
+        "z": 881.9284
+      },
+      "u": 0.5476819198127012,
+      "v": 0.48750565761025383,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e95c6d6b71948637",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -91666.23,
+        "y": 62061.19,
+        "z": 1050.9355
+      },
+      "u": 0.6361932268071409,
+      "v": 0.5536750930095287,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_34c5044ac46a8636",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -99948.16,
+        "y": 61087.016,
+        "z": 2816.825
+      },
+      "u": 0.6051693157740708,
+      "v": 0.5494691980099503,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_288d015f5044d479",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -249506.86,
+        "y": 49623.926,
+        "z": -427.62036
+      },
+      "u": 0.04492601463271881,
+      "v": 0.49997849828822,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9b84ac0e9e43bad",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -249992.42,
+        "y": 48645.035,
+        "z": -526.74207
+      },
+      "u": 0.0431071185250219,
+      "v": 0.495752238131377,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_01400b734e30c1bc",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -252184.36,
+        "y": 50014.074,
+        "z": -488.7672
+      },
+      "u": 0.03489616388645015,
+      "v": 0.5016629217303313,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_62e73b2a77caaf96",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -235525.02,
+        "y": 121297.74,
+        "z": 2662.302
+      },
+      "u": 0.09730165174129357,
+      "v": 0.8094227412092082,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b3bcfb52ecc18584",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -164205.56,
+        "y": -753.0582,
+        "z": 1066.9669
+      },
+      "u": 0.36446263740122914,
+      "v": 0.28248110465975207,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bc0d69ee2b9c7822",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -165235.56,
+        "y": -2403.058,
+        "z": 1066.9669
+      },
+      "u": 0.36060428211881773,
+      "v": 0.2753574020069146,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a809740b0f141d9",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -234174.98,
+        "y": 122044.15,
+        "z": 2471.602
+      },
+      "u": 0.10235886918349425,
+      "v": 0.8126452888101863,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_57cabf7f8ac6146f",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -237113.23,
+        "y": 124798.06,
+        "z": 1975.4034
+      },
+      "u": 0.09135225519461512,
+      "v": 0.8245350090226832,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c0e97fdd702da960",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -239432.84,
+        "y": 127927.64,
+        "z": 1680.2726
+      },
+      "u": 0.08266305179982442,
+      "v": 0.8380466454169829,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_09d4cefd2a0cd5ee",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -207616.86,
+        "y": 103667.48,
+        "z": 981.8988
+      },
+      "u": 0.20184494937079314,
+      "v": 0.7333059259634033,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7258ccbdc1e08424",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -171796.86,
+        "y": 153375.23,
+        "z": 884.3519
+      },
+      "u": 0.3360258097746562,
+      "v": 0.9479139704865502,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3f324dc85be1ca91",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -116917.41,
+        "y": 44311.836,
+        "z": 175.52646
+      },
+      "u": 0.5416029124963418,
+      "v": 0.4770441017961042,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d1a81976f449b4d9",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -131859.36,
+        "y": -14284.051,
+        "z": -1526.5078
+      },
+      "u": 0.4856307263681593,
+      "v": 0.22406244951513618,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5c046165defb80d5",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -131182.45,
+        "y": -15122.331,
+        "z": -1526.5078
+      },
+      "u": 0.48816641498390395,
+      "v": 0.22044326273716164,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5688365055a3fb7d",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -129386.2,
+        "y": -14953.55,
+        "z": -1526.5078
+      },
+      "u": 0.4948951243781094,
+      "v": 0.22117195716333582,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9a0d4123a0ad33f1",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -130317.19,
+        "y": -13884.396,
+        "z": -1526.5078
+      },
+      "u": 0.49140765817968973,
+      "v": 0.22578791844168986,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd0d25d27c88b3bf",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -164106.36,
+        "y": -28375.074,
+        "z": 1989.6233
+      },
+      "u": 0.36483423822066147,
+      "v": 0.16322592218568177,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e3a1fde4ac1bc0c5",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -161606.36,
+        "y": -28675.074,
+        "z": 2066.1404
+      },
+      "u": 0.3741991782265145,
+      "v": 0.1619307033645333,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_cd71ef62691abef5",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -161606.36,
+        "y": -29975.074,
+        "z": 2113.9844
+      },
+      "u": 0.3741991782265145,
+      "v": 0.15631808847288983,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c7c16571c583df27",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -139353.55,
+        "y": 539.0878,
+        "z": 548.42896
+      },
+      "u": 0.4575576704711736,
+      "v": 0.2880598107226579,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d36358da9474586a",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -187738.66,
+        "y": 145255.56,
+        "z": 1224.6163
+      },
+      "u": 0.27630820954053265,
+      "v": 0.9128581391348343,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3b6eb28a1444eacf",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -97720.375,
+        "y": 57269.684,
+        "z": 4751.915
+      },
+      "u": 0.6135145449224466,
+      "v": 0.5329882638333756,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_49638531ea834845",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -101009.99,
+        "y": 56653.41,
+        "z": 5802.449
+      },
+      "u": 0.6011917260755049,
+      "v": 0.5303275648874274,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e82b01f265a28040",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -91419.21,
+        "y": 61826.617,
+        "z": 1078.6951
+      },
+      "u": 0.637118557799239,
+      "v": 0.5526623484610845,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bde421170e1b23b8",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -94485.11,
+        "y": 58273.016,
+        "z": 2279.2864
+      },
+      "u": 0.6256337699736612,
+      "v": 0.5373200454675774,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9500af6b6f4fe78f",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -102590.16,
+        "y": 57208.703,
+        "z": 2059.0232
+      },
+      "u": 0.5952724471758852,
+      "v": 0.5327249847036006,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_772668715944d2bb",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -93752.695,
+        "y": 64513.64,
+        "z": -200.03477
+      },
+      "u": 0.6283773789874157,
+      "v": 0.5642632910026141,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_77fc005de039d8c2",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -138773.47,
+        "y": 25831.66,
+        "z": 373.548
+      },
+      "u": 0.4597306362306116,
+      "v": 0.3972578625516486,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ea6bdbe6bfa664b4",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -97043.75,
+        "y": 57502.77,
+        "z": 1049.9866
+      },
+      "u": 0.6160491659350307,
+      "v": 0.5339945884138628,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_08dfaf64c19993b7",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -139244.42,
+        "y": 25506.182,
+        "z": 535.45337
+      },
+      "u": 0.457966468832309,
+      "v": 0.39585264511341595,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_33ea8485f1f6380f",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -139244.42,
+        "y": 25183.396,
+        "z": 633.6051
+      },
+      "u": 0.457966468832309,
+      "v": 0.3944590501054052,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_58f1564ff9a8ebc0",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -91093.75,
+        "y": 58502.77,
+        "z": 1050.9835
+      },
+      "u": 0.638337723148961,
+      "v": 0.5383119844843578,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_11be8d1a4511457c",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -240774.02,
+        "y": 113799.38,
+        "z": 1443.2206
+      },
+      "u": 0.07763902370500443,
+      "v": 0.7770493512100515,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4617fc1b477b9832",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -186196.34,
+        "y": -27056.53,
+        "z": 1132.8256
+      },
+      "u": 0.28208570324846355,
+      "v": 0.16891859887005653,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_89741e48334f34a0",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -184063.66,
+        "y": -34938.293,
+        "z": 708.7033
+      },
+      "u": 0.29007467134913667,
+      "v": 0.1348899062652837,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_24b2e7c5b8c9ca26",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -185311.83,
+        "y": -35923.14,
+        "z": 410.37872
+      },
+      "u": 0.28539905648229447,
+      "v": 0.130637931697445,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b460da0c317d5ca8",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -98257.336,
+        "y": 46534.59,
+        "z": -1397.4777
+      },
+      "u": 0.6115031019022534,
+      "v": 0.4866406111813812,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_be8da70dce75d87b",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -101507.4,
+        "y": 60315.844,
+        "z": 3488.0742
+      },
+      "u": 0.5993284401521803,
+      "v": 0.5461397430474745,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5f22113274a193ab",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -188460.0,
+        "y": 145006.25,
+        "z": 1253.6699
+      },
+      "u": 0.2736060872110038,
+      "v": 0.9117817691204991,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f0c95c4a815c7e01",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -242964.02,
+        "y": 86709.38,
+        "z": 1402.5955
+      },
+      "u": 0.06943533625987713,
+      "v": 0.6600910916603424,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2ab6f50638821bab",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -247991.27,
+        "y": 87018.72,
+        "z": 543.03296
+      },
+      "u": 0.05060337840210715,
+      "v": 0.6614266349607894,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a8b3f135fe42b493",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -100523.914,
+        "y": 57362.227,
+        "z": 5682.3755
+      },
+      "u": 0.603012555106819,
+      "v": 0.5333878086179275,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3013102e3b99dc0c",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -184482.77,
+        "y": -29380.562,
+        "z": 784.99695
+      },
+      "u": 0.28850469534679546,
+      "v": 0.15888483224555186,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1988d6940b0d058c",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -165452.77,
+        "y": -22706.688,
+        "z": 2977.2102
+      },
+      "u": 0.3597906186713492,
+      "v": 0.18769858962813052,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dddf2450a862973f",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -164579.44,
+        "y": -20697.574,
+        "z": 2977.2102
+      },
+      "u": 0.3630620918934738,
+      "v": 0.196372730516907,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b1ad27fe1adc63d0",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -92085.06,
+        "y": 14352.057,
+        "z": 401.6647
+      },
+      "u": 0.6346242996780802,
+      "v": 0.3476958696686061,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d20fe6057e5c8036",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -91449.68,
+        "y": 14500.391,
+        "z": 401.6647
+      },
+      "u": 0.6370044179104478,
+      "v": 0.34833628629732694,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_954e62c2c14d58fa",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -92419.03,
+        "y": 13479.596,
+        "z": 411.0275
+      },
+      "u": 0.6333732560725783,
+      "v": 0.34392910997554593,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_772135dea90af1c8",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -92576.11,
+        "y": 14003.179,
+        "z": 411.0275
+      },
+      "u": 0.6327848381621305,
+      "v": 0.34618962516232393,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bc4fda99db9521a3",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -123959.64,
+        "y": 13845.234,
+        "z": -786.2436
+      },
+      "u": 0.5152228879133742,
+      "v": 0.34550771403996966,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a4c2ef9524080118",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -123504.84,
+        "y": 14100.449,
+        "z": -801.2683
+      },
+      "u": 0.5169265577992391,
+      "v": 0.346609578278101,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_478ed1e1335874a9",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -93233.73,
+        "y": 141269.66,
+        "z": 1383.3994
+      },
+      "u": 0.6303214094234709,
+      "v": 0.8956494301374485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b26187bbbe2d5191",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -103724.63,
+        "y": 151543.97,
+        "z": -111.675575
+      },
+      "u": 0.5910227497805092,
+      "v": 0.9400076957584955,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_96a5da1051649818",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -70476.84,
+        "y": 111453.42,
+        "z": -3238.4856
+      },
+      "u": 0.7155681732513901,
+      "v": 0.7669209127245129,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4525b799fd9e905c",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -75049.04,
+        "y": 139361.86,
+        "z": -722.8604
+      },
+      "u": 0.6984408217734855,
+      "v": 0.887412701914158,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fed5591b94a6fc75",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -94350.97,
+        "y": 106922.15,
+        "z": -2935.0537
+      },
+      "u": 0.6261362551946151,
+      "v": 0.7473576254321611,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4dc6c81d0f48c4bc",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -156112.28,
+        "y": 139520.7,
+        "z": -4186.6475
+      },
+      "u": 0.3947798700614574,
+      "v": 0.8880984771059955,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b623e51b923234ed",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -162146.17,
+        "y": 58412.957,
+        "z": -1811.3822
+      },
+      "u": 0.37217706292069064,
+      "v": 0.5379242261910785,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_04b58a4603b82047",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -145528.77,
+        "y": 126949.61,
+        "z": -4194.443
+      },
+      "u": 0.43442544454199594,
+      "v": 0.8338241025381566,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_07b67ede7ad65f07",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -163321.2,
+        "y": 114540.94,
+        "z": -3468.9924
+      },
+      "u": 0.36777542873865965,
+      "v": 0.7802509594400877,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9747a2c6fbf6df5b",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -163222.42,
+        "y": 115711.55,
+        "z": -3565.1895
+      },
+      "u": 0.36814545624817085,
+      "v": 0.7853049464541698,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_38c828ed9e1a6454",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -139231.4,
+        "y": 84429.266,
+        "z": -7833.465
+      },
+      "u": 0.45801524143985956,
+      "v": 0.6502469364364617,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_35b7e8c2e4718262",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -138104.25,
+        "y": 89541.21,
+        "z": -8344.181
+      },
+      "u": 0.46223751829089843,
+      "v": 0.6723172233746522,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2c392a503dc6bb81",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -125959.695,
+        "y": 73418.24,
+        "z": -3577.921
+      },
+      "u": 0.5077307298800117,
+      "v": 0.6027079760519436,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d95bb8e72d697ce3",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -152492.75,
+        "y": 71946.24,
+        "z": -2912.2866
+      },
+      "u": 0.4083385425812116,
+      "v": 0.5963527690361751,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bad5fc0d357e4a5a",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -149125.64,
+        "y": 70751.74,
+        "z": -3157.3174
+      },
+      "u": 0.42095165583845473,
+      "v": 0.5911956394299687,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7f4d388194c9fc35",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -145193.39,
+        "y": 63901.383,
+        "z": -2473.744
+      },
+      "u": 0.43568176997366104,
+      "v": 0.5616199350366811,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8bab2d3f918da710",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -148154.47,
+        "y": 62059.32,
+        "z": -1860.3221
+      },
+      "u": 0.42458963535264854,
+      "v": 0.5536670194788768,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e38b8f0eef431bb",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -162995.7,
+        "y": 75180.85,
+        "z": -1305.5759
+      },
+      "u": 0.36899474392742165,
+      "v": 0.6103178615397589,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ad9648add62532d9",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -145811.72,
+        "y": 126699.305,
+        "z": -4227.662
+      },
+      "u": 0.43336552063213346,
+      "v": 0.8327434367147314,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_230945aae53e4b66",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -163175.03,
+        "y": 97450.6,
+        "z": -3652.746
+      },
+      "u": 0.36832297805092185,
+      "v": 0.7064651926806645,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_085aaf9b78853de3",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -168039.14,
+        "y": 96017.93,
+        "z": -4925.574
+      },
+      "u": 0.3501021387181738,
+      "v": 0.7002797888523484,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_69dde27baa3b9be2",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -71851.23,
+        "y": 115743.28,
+        "z": -4963.558
+      },
+      "u": 0.7104197412935324,
+      "v": 0.7854419374314867,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_afaf8bbda85227eb",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -138976.16,
+        "y": 83604.984,
+        "z": -7836.985
+      },
+      "u": 0.4589713643546971,
+      "v": 0.646688184568682,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_14336210872c61d2",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -174029.44,
+        "y": 86786.5,
+        "z": -1242.4899
+      },
+      "u": 0.3276626186713491,
+      "v": 0.660424049245299,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ace5206da1305d60",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -161239.61,
+        "y": 61773.645,
+        "z": -1793.205
+      },
+      "u": 0.3755730149253732,
+      "v": 0.5524336473564381,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0724af84ecb56b15",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -162111.19,
+        "y": 61786.387,
+        "z": -1796.0446
+      },
+      "u": 0.37230809716125257,
+      "v": 0.5524886596171684,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6b2fe32320693eeb",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -73424.22,
+        "y": 141208.53,
+        "z": -1047.8474
+      },
+      "u": 0.7045273585016096,
+      "v": 0.8953855077156592,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e266f283fb9d907",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -94815.555,
+        "y": 108329.195,
+        "z": -3041.3923
+      },
+      "u": 0.6243959309335675,
+      "v": 0.7534323959861708,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_72f410aa17a31917",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -101273.266,
+        "y": 150692.1,
+        "z": -370.88812
+      },
+      "u": 0.6002055004975124,
+      "v": 0.9363298355679229,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e828c58da52355cc",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -94325.99,
+        "y": 139407.56,
+        "z": 1234.6085
+      },
+      "u": 0.6262298296751537,
+      "v": 0.8876100069145797,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7969a91c308a89b6",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -158506.3,
+        "y": 70019.22,
+        "z": -590.96594
+      },
+      "u": 0.3858119285923325,
+      "v": 0.5880330604604097,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e078b52464c8a365",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -71150.234,
+        "y": 114822.29,
+        "z": -4961.9277
+      },
+      "u": 0.7130456554872696,
+      "v": 0.7814656588245213,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e63f561aea9b1d40",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -92962.836,
+        "y": 62630.918,
+        "z": 4102.9795
+      },
+      "u": 0.6313361718466491,
+      "v": 0.5561348344379795,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_66c99cd516efec7f",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -89271.68,
+        "y": 62340.465,
+        "z": 3643.0742
+      },
+      "u": 0.645163153643547,
+      "v": 0.5548808337971161,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6ef411ab026cddff",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -92594.55,
+        "y": 60776.957,
+        "z": 4110.6064
+      },
+      "u": 0.6327157623646474,
+      "v": 0.5481305505017287,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b2754dd8f2d8087b",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -88803.17,
+        "y": 63420.29,
+        "z": 3510.7056
+      },
+      "u": 0.646918180860404,
+      "v": 0.5595428660089383,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9f57989fbc6d7267",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -93503.4,
+        "y": 64453.02,
+        "z": 4117.029
+      },
+      "u": 0.6293112320749195,
+      "v": 0.5640015704528206,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_67700501ed3cfe1a",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -92644.75,
+        "y": 60815.15,
+        "z": 4117.029
+      },
+      "u": 0.6325277143693298,
+      "v": 0.548295444809849,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1c5d2ba2582fbcdf",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -88651.09,
+        "y": 63203.285,
+        "z": 3498.5793
+      },
+      "u": 0.6474878688908399,
+      "v": 0.5586059694746606,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b9a3530d11214bd5",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -88909.97,
+        "y": 64574.008,
+        "z": 3498.5793
+      },
+      "u": 0.6465181106233538,
+      "v": 0.5645239235685977,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f2afc33352bf95e9",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -94453.62,
+        "y": 65228.848,
+        "z": 4278.649
+      },
+      "u": 0.6257517307579749,
+      "v": 0.5673511272114006,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_47541958fcc002ef",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -252092.25,
+        "y": 152063.5,
+        "z": 9559.0
+      },
+      "u": 0.03524120573602575,
+      "v": 0.942250712539,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_225e802e6fa32b61",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -253804.48,
+        "y": 151072.11,
+        "z": 10179.0
+      },
+      "u": 0.02882723324553698,
+      "v": 0.9379704892486718,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8d3309b6d1884633",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -93654.09,
+        "y": 64828.875,
+        "z": 4138.993
+      },
+      "u": 0.6287467509511268,
+      "v": 0.5656242853528965,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5aafed0ca40fe81a",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -93200.625,
+        "y": 63902.67,
+        "z": 4138.993
+      },
+      "u": 0.6304454199590284,
+      "v": 0.5616254915254236,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_12295e2b658374f3",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -97669.09,
+        "y": 58119.53,
+        "z": 2910.6543
+      },
+      "u": 0.6137066573017267,
+      "v": 0.5366573856143014,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_88186277200e9c1d",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -198243.72,
+        "y": 87242.24,
+        "z": -1126.795
+      },
+      "u": 0.2369565068773778,
+      "v": 0.6623916593304663,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_98a6c59c10d0d503",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -197564.97,
+        "y": 111272.086,
+        "z": 798.2404
+      },
+      "u": 0.23949908808896692,
+      "v": 0.7661380220254659,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f4ba8ca60230f473",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpling",
+      "technicalId": "Scorpling",
+      "map": "surface",
+      "world": {
+        "x": -240004.02,
+        "y": 89369.38,
+        "z": 1295.4387
+      },
+      "u": 0.08052342522680718,
+      "v": 0.6715753652078591,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/Northern_Scorpling.webp",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 20,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

@@ -1,1 +1,611 @@
-{"id":"g2_orc_bombardier_beetle","speciesKey":"orc_bombardier_beetle","collectionGroup":"orc","name":"Escarabajo bombardero C.R.O.","game":"g2","tier":2,"danger":"muy_alta","isBoss":false,"order":214,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bombardier_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bombardier_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Bombardier_Beetle.webp","weaknesses":["slashing","fresh"],"resistances":["stabbing","spicy"],"temperament":"aggressive","health":{"value":900,"rating":3},"description":"Un escarabajo bombardero a control remoto con habilidades especiales. Al morir, puede soltar un receptor C.R.O. y partes de criaturas.","behavior":"Patrulla rutas muy concretas en zonas O.R.C. y rara vez abandona su línea de control. A diferencia del bombardero normal, administra mejor cuándo disparar y cuándo guardarte el spray cercano.","interactionWithPlayer":"Te detecta y convierte el suelo en una trampa de ácido muy rápido. Si intentas tanquearlo de frente sin mover los pies, el espacio seguro desaparece enseguida.","interactionWithCreatures":"Sirve como pieza pesada de apoyo en oleadas O.R.C., obligando a otras criaturas a rodear charcos o comer daño residual.","strategy":"Fresh sigue siendo la mejor respuesta, pero la pelea se gana con posicionamiento. Muévete entre disparos, evita quedar encerrado por el spray y castiga cuando termine una secuencia larga de ácido.","environments":["Pozo de fuego","Oleadas O.R.C. del picnic","Colina de pinos","Zona de la estatua"],"combatStats":{"health":900,"attackDamageSummary":"Mordisco: 81.25. Spray cercano: 75. Disparo a distancia: 87.5. Triple disparo alto: 87.5."},"abilities":[{"name":"Mordisco","description":"Un mordisco pesado para castigar a cualquiera que se acerque demasiado entre charcos de ácido.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Rociada cercana","description":"Escupe ácido a corta distancia para abrir espacio y obligarte a retroceder.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Disparo a distancia","description":"Lanza un proyectil de ácido recto para controlar la distancia media.","blockable":false,"breaksGuard":false,"staggers":false},{"name":"Triple disparo ascendente","description":"Dispara varias bolas de ácido hacia arriba para que caigan y cierren aún más el área.","blockable":false,"breaksGuard":false,"staggers":false}],"elementalWeaknesses":[{"type":"fresh","bonusPct":30}],"resistancesV2":[{"type":"stabbing","bonusPct":25},{"type":"spicy","bonusPct":50}],"weakPoint":{"part":"rump","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},"groupId":null,"cardTier":2,"technicalId":"BombardierORC","bestiaryId":"BombardierORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","damageWeaknesses":[{"type":"slashing","bonusPct":15}],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Cuerpo a cuerpo izquierda","technicalId":"BeetleMeleeLeft","tags":["stabbing"],"notes":"Daño del ataque: 30"},{"name":"Cuerpo a cuerpo derecha","technicalId":"BeetleMeleeRight","tags":["stabbing"],"notes":"Daño del ataque: 30"},{"name":"A distancia","technicalId":"BeetleRanged","tags":["sizzle","ranged"],"notes":"Daño del ataque: 35"},{"name":"Rocío","technicalId":"BeetleSpray","tags":["sizzle_direct_hit"],"notes":"Daño del ataque: 20"},{"name":"Área ataque","technicalId":"BeetleAOE","tags":[],"notes":"Sin identificar"},{"name":"Bloqueo defensivo","technicalId":"BlockDefensive","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_bombardier_beetle",
+  "speciesKey": "orc_bombardier_beetle",
+  "collectionGroup": "orc",
+  "name": "Escarabajo bombardero C.R.O.",
+  "game": "g2",
+  "tier": 2,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 214,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Bombardier_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Bombardier_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Bombardier_Beetle.webp",
+  "weaknesses": [
+    "slashing",
+    "fresh"
+  ],
+  "resistances": [
+    "stabbing",
+    "spicy"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 3,
+    "value": 900
+  },
+  "description": "Un escarabajo bombardero a control remoto con habilidades especiales. Al morir, puede soltar un receptor C.R.O. y partes de criaturas.",
+  "behavior": "Patrulla rutas muy concretas en zonas O.R.C. y rara vez abandona su línea de control. A diferencia del bombardero normal, administra mejor cuándo disparar y cuándo guardarte el spray cercano.",
+  "interactionWithPlayer": "Te detecta y convierte el suelo en una trampa de ácido muy rápido. Si intentas tanquearlo de frente sin mover los pies, el espacio seguro desaparece enseguida.",
+  "interactionWithCreatures": "Sirve como pieza pesada de apoyo en oleadas O.R.C., obligando a otras criaturas a rodear charcos o comer daño residual.",
+  "strategy": "Fresh sigue siendo la mejor respuesta, pero la pelea se gana con posicionamiento. Muévete entre disparos, evita quedar encerrado por el spray y castiga cuando termine una secuencia larga de ácido.",
+  "environments": [
+    "Pozo de fuego",
+    "Oleadas O.R.C. del picnic",
+    "Colina de pinos",
+    "Zona de la estatua"
+  ],
+  "combatStats": {
+    "health": 900,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": null
+  },
+  "abilities": [
+    {
+      "name": "Mordisco",
+      "description": "Un mordisco pesado para castigar a cualquiera que se acerque demasiado entre charcos de ácido.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Rociada cercana",
+      "description": "Escupe ácido a corta distancia para abrir espacio y obligarte a retroceder.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Disparo a distancia",
+      "description": "Lanza un proyectil de ácido recto para controlar la distancia media.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Triple disparo ascendente",
+      "description": "Dispara varias bolas de ácido hacia arriba para que caigan y cierren aún más el área.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "fresh",
+      "bonusPct": 30
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoint": {
+    "part": "rump",
+    "susceptibleDamage": "any",
+    "susceptibleDamageTypes": [
+      "any"
+    ]
+  },
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "BombardierORC",
+  "bestiaryId": "BombardierORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "rump",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Cuerpo a cuerpo izquierda",
+      "technicalId": "BeetleMeleeLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 5.0,
+      "range": 300.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Cuerpo a cuerpo derecha",
+      "technicalId": "BeetleMeleeRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 5.0,
+      "range": 300.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "A distancia",
+      "technicalId": "BeetleRanged",
+      "tags": [
+        "projectile",
+        "ranged",
+        "sizzle"
+      ],
+      "notes": "Daño del ataque: 35",
+      "damageTypes": [
+        "sizzle"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 18.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Rocío",
+      "technicalId": "BeetleSpray",
+      "tags": [
+        "sizzle"
+      ],
+      "notes": "Daño del ataque: 20",
+      "damageTypes": [
+        "sizzle"
+      ],
+      "damage": 20.0,
+      "cooldownSeconds": 20.0,
+      "range": 750.0,
+      "stun": 20,
+      "statusEffects": [
+        "Sizzle Small Increase"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Sizzle Small Increase",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Área ataque",
+      "technicalId": "BeetleAOE",
+      "tags": [],
+      "notes": "Sin identificar"
+    },
+    {
+      "name": "Bloqueo defensivo",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_4439e6cef728d9c7",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -152980.78,
+        "y": 28650.732,
+        "z": 4939.4404
+      },
+      "u": 0.406510393912789,
+      "v": 0.40942891292689093,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e327352728c7be3",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -182541.56,
+        "y": 50918.24,
+        "z": 4668.2954
+      },
+      "u": 0.29577642142230026,
+      "v": 0.5055665644658065,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e76a76756775e2d0",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -163883.05,
+        "y": 37587.367,
+        "z": 4985.0938
+      },
+      "u": 0.3656707521217443,
+      "v": 0.4480119057593389,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d5403e4f4f5619c2",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -172484.92,
+        "y": 50753.094,
+        "z": 4556.092
+      },
+      "u": 0.33344835352648516,
+      "v": 0.5048535637743485,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e603ae6f039e3ab0",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -154977.3,
+        "y": 27602.268,
+        "z": 4888.271
+      },
+      "u": 0.39903147790459476,
+      "v": 0.40490227857323563,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dd4b58a3a6af12d3",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -191996.5,
+        "y": 37339.207,
+        "z": 5116.6924
+      },
+      "u": 0.260358443078724,
+      "v": 0.4469405007504848,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1f6a4fbd154fa77f",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -203825.83,
+        "y": 24738.86,
+        "z": 4817.765
+      },
+      "u": 0.2160460567749488,
+      "v": 0.3925398121258116,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_11cb71893b4f40b2",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -202415.83,
+        "y": 24118.037,
+        "z": 5081.6455
+      },
+      "u": 0.22132788293824995,
+      "v": 0.38985947334513876,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ba0f67197d160333",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -195352.16,
+        "y": 34020.11,
+        "z": 4900.651
+      },
+      "u": 0.2477882212467076,
+      "v": 0.43261064440509317,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_70e06b7e605bd4f4",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -190892.73,
+        "y": 39060.81,
+        "z": 4921.0503
+      },
+      "u": 0.26449313901082816,
+      "v": 0.4543733427776373,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_17daca412bc2f1bc",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -228585.53,
+        "y": 100111.53,
+        "z": -313.69672
+      },
+      "u": 0.12329681474978052,
+      "v": 0.7179534814065266,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_597bc0143d3c83c0",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -225764.31,
+        "y": 100327.67,
+        "z": 625.953
+      },
+      "u": 0.13386503716710565,
+      "v": 0.7188866433932034,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_73c3cd9860bcdb12",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -229235.39,
+        "y": 103468.23,
+        "z": 649.1242
+      },
+      "u": 0.12086245478489899,
+      "v": 0.7324456847963572,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ebe3943a761bddae",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -197164.05,
+        "y": 153548.42,
+        "z": 16443.639
+      },
+      "u": 0.24100092478782562,
+      "v": 0.9486617003119995,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7bc603d781379f98",
+      "targetType": "creature",
+      "targetId": "g2_orc_bombardier_beetle",
+      "technicalId": "BombardierORC",
+      "map": "surface",
+      "world": {
+        "x": -195821.38,
+        "y": 155423.52,
+        "z": 15725.24
+      },
+      "u": 0.24603053438688907,
+      "v": 0.9567572496837846,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Spicy Aftershock",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Bombardier Exp Gland",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Bombardier Part",
+      "minCount": 1,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Spicy Aftershock",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bombardier Exp Gland",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bombardier Exp Gland",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bombardier Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 5,
+      "notes": "5 independent rolls"
+    },
+    {
+      "item": "Bombardier Part",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Bombardier Part",
+      "countLabel": "2",
+      "chancePct": 40,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

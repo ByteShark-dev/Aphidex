@@ -1,1 +1,870 @@
-{"id":"g2_orc_blue_butterfly","speciesKey":"orc_blue_butterfly","collectionGroup":"orc","name":"O.R.C. Синяя бабочка","game":"g2","tier":2,"danger":"alta","isBoss":false,"order":212,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_BlueButterfly_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_BlueButterfly_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Blue_Butterfly.webp","weaknesses":["slashing","spicy"],"resistances":["generic","fresh"],"temperament":"aggressive","description":"O.R.C. Синяя бабочка — патрульная морозная версия синей бабочки в Grounded 2. Она сохраняет воздушную подвижность, но сеть O.R.C. делает её куда настойчивее в сериях пикирования и холодных порывов.","behavior":"Она патрулирует с воздуха маршруты O.R.C. и открытые зоны парка. В отличие от базовой бабочки, в бой она входит заметно быстрее и почти всегда старается повторять цикл пикирования и холодного порыва.","interactionWithPlayer":"Она атакует сразу после обнаружения и отлично использует вертикаль, постоянно входя и выходя из дистанции. Если позволить ей задавать темп, вы будете больше смотреть вверх, чем наносить удары.","interactionWithCreatures":"Она часто служит воздушной поддержкой для наземных патрулей O.R.C., заходя в бой после того, как другая единица уже зафиксировала игрока на земле.","strategy":"Острота по-прежнему лучший ответ. Наказывайте конец пикирования, не стойте под холодным порывом и не гонитесь вслепую, когда она снова набирает высоту.","environments":["Огненная яма","Церемониальная зона","Волны O.R.C. в саду","Волны O.R.C. у пикника","Сосновый холм","Тыквенная грядка"],"loot":[{"section":"loot","item":"Blue Butterfly Chunk","minCount":1,"maxCount":5},{"section":"loot","item":"Blue Butterfly Scales","minCount":0,"maxCount":2},{"section":"loot","item":"Blue Butterfly Wing","minCount":0,"maxCount":1},{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"rare","item":"Blue Butterfly Chunk","minCount":0,"maxCount":3},{"section":"rare","item":"Blue Butterfly Scales","minCount":0,"maxCount":1},{"section":"rare","item":"Shivering Scale","minCount":0,"maxCount":1}],"combatStats":{"attackDamageSummary":"Пикирующий удар головой: 31. Комбо из 3 укусов: 25. Леденящий порыв: 44.","health":500},"inflictsEffects":["busting"],"abilities":[{"name":"Пикирующий таран","description":"Она поднимается вверх, а затем резко падает по прямой с быстрым лобовым ударом.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Комбо из 3 укусов","description":"Она связывает несколько коротких ударов подряд, когда оказывается на вашей высоте после пикирования.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Леденящий порыв","description":"Она взмахивает крыльями и выпускает холодный порыв, из-за которого опасно оставаться прямо под ней.","blockable":false,"breaksGuard":false,"staggers":false}],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"resistancesV2":[{"type":"generic","bonusPct":25},{"type":"fresh","bonusPct":50}],"healthDisplay":"normal","health":{"value":500,"rating":2},"groupId":null,"cardTier":2,"technicalId":"BlueButterflyORC","bestiaryId":"BlueButterflyORC","bossCardStyle":null,"isKillable":true,"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"weakPoints":[],"attacks":[{"name":"Gust","technicalId":"BlueButterflyGust","tags":["general_unblockable","ranged"],"notes":"Урон атаки: 35"},{"name":"Charge","technicalId":"BlueButterflyCharge","tags":["generic"],"notes":"Урон атаки: 50"},{"name":"Triple Bite","technicalId":"BlueButterflyTripleBite","tags":["generic"],"notes":"Урон атаки: 20"}],"encounterVariants":[{"id":"BlueButterfly_ORC_A_Named","characterRow":"BlueButterfly_ORC_A_Named","role":"named_or_miniboss","variantMarkers":["named"],"sharedBestiaryEntry":true,"stats":{"health":825.0,"stun":{"max":30.0,"duration":4.0,"cooldown":12.0,"staggerThreshold":30}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"},{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"},{"damageTypes":["Spicy"],"percent":15.0,"sourceId":"DamageResistDownSpicyTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"BlueButterflyGust","ability":"BlueButterflyGust","resolved":true,"cooldown":20.0,"priority":1,"targetType":"Enemy","damage":{"amount":35.0,"type":"GeneralUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["BlueButterflyChillGust"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":1600.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"BlueButterflyCharge","ability":"BlueButterflyCharge","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"BlueButterflyTripleBite","ability":"BlueButterflyTripleBite","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":20.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ORC_LaserHeal","ability":"ORC_LaserHeal","resolved":true,"cooldown":15.0,"priority":20,"targetType":"Friendly","damage":{"amount":0.0,"type":"ORCLaserHealing","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[{"keyword":"laser","sources":["ORC_LaserHeal","/Game/Releases/Release_0_3_0/Blueprints/Creatures/Attacks/CombatActions/CA_ORC_LaserHeal.0"]}],"quality":{"resolvedAttacks":4,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"parentBestiaryId":"BlueButterflyORC","parentAphidexId":"g2_orc_blue_butterfly","technicalCharacterRow":"BlueButterfly_ORC_A_Named","variantKey":"BlueButterfly_ORC_A_Named","nameEn":"Major Dazzler","nameEsMX":"Comandante deslumbrante","nameBindingConfidence":"high","topLevelAphidexId":null,"killFavoriteStateOwner":"g2_orc_blue_butterfly","policy":"CHILD_VARIANT_NO_TOP_LEVEL_ID"},{"id":"g2_wave_blue_butterfly_orc_wave","characterRow":"BlueButterfly_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":500.0,"stun":{"max":30.0,"duration":4.0,"cooldown":12.0,"staggerThreshold":30}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"},{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"},{"damageTypes":["Spicy"],"percent":15.0,"sourceId":"DamageResistDownSpicyTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"BlueButterflyGust","ability":"BlueButterflyGust","resolved":true,"cooldown":20.0,"priority":1,"targetType":"Enemy","damage":{"amount":35.0,"type":"GeneralUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["BlueButterflyChillGust"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":1600.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"BlueButterflyCharge","ability":"BlueButterflyCharge","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"BlueButterflyTripleBite","ability":"BlueButterflyTripleBite","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":20.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":3,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_blue_butterfly_orc_wave","nameEn":"O.R.C. Blue Butterfly Raid/Wave","nameEsMX":"Mariposa azul C.R.O.  (Oleada)","nameRu":"O.R.C. Синяя бабочка Рейд/волна"}],"contextVariants":[{"id":"BlueButterfly_ORC_Wave","characterRow":"BlueButterfly_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":500.0,"stun":{"max":30.0,"duration":4.0,"cooldown":12.0,"staggerThreshold":30}},"weakpoints":[],"resistances":[{"damageTypes":["General"],"percent":25.0,"sourceId":"DamageResistGeneralTiny"},{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"}],"weaknesses":[{"damageTypes":["Slashing"],"percent":15.0,"sourceId":"DamageResistDownSlashingTiny"},{"damageTypes":["Spicy"],"percent":15.0,"sourceId":"DamageResistDownSpicyTiny"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"immunities":[],"attacks":[{"id":"BlueButterflyGust","ability":"BlueButterflyGust","resolved":true,"cooldown":20.0,"priority":1,"targetType":"Enemy","damage":{"amount":35.0,"type":"GeneralUnblockable","hitStun":15,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["BlueButterflyChillGust"],"statusEffectApplyType":"Always"},"secondaryDamage":[],"range":1600.0,"ranged":true,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"BlueButterflyCharge","ability":"BlueButterflyCharge","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":50.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":300.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"ActiveLoop"},{"id":"BlueButterflyTripleBite","ability":"BlueButterflyTripleBite","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":20.0,"type":"General","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":250.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":3,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Mariposa azul C.R.O.  (Oleada)"}],"specialCombatModifiers":[{"kind":"player_turret_weakness","classification":"weakness","multiplier":3.0,"percent":200.0,"sourceId":"DamageResistTurretDownORC"}],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_blue_butterfly",
+  "speciesKey": "orc_blue_butterfly",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Синяя бабочка",
+  "game": "g2",
+  "tier": 2,
+  "danger": "alta",
+  "isBoss": false,
+  "order": 212,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_BlueButterfly_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_BlueButterfly_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Blue_Butterfly.webp",
+  "weaknesses": [
+    "slashing",
+    "spicy"
+  ],
+  "resistances": [
+    "generic",
+    "fresh"
+  ],
+  "temperament": "aggressive",
+  "description": "O.R.C. Синяя бабочка — патрульная морозная версия синей бабочки в Grounded 2. Она сохраняет воздушную подвижность, но сеть O.R.C. делает её куда настойчивее в сериях пикирования и холодных порывов.",
+  "behavior": "Она патрулирует с воздуха маршруты O.R.C. и открытые зоны парка. В отличие от базовой бабочки, в бой она входит заметно быстрее и почти всегда старается повторять цикл пикирования и холодного порыва.",
+  "interactionWithPlayer": "Она атакует сразу после обнаружения и отлично использует вертикаль, постоянно входя и выходя из дистанции. Если позволить ей задавать темп, вы будете больше смотреть вверх, чем наносить удары.",
+  "interactionWithCreatures": "Она часто служит воздушной поддержкой для наземных патрулей O.R.C., заходя в бой после того, как другая единица уже зафиксировала игрока на земле.",
+  "strategy": "Острота по-прежнему лучший ответ. Наказывайте конец пикирования, не стойте под холодным порывом и не гонитесь вслепую, когда она снова набирает высоту.",
+  "environments": [
+    "Огненная яма",
+    "Церемониальная зона",
+    "Волны O.R.C. в саду",
+    "Волны O.R.C. у пикника",
+    "Сосновый холм",
+    "Тыквенная грядка"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Charged Chill",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Butterfly Blue Chunk",
+      "minCount": 1,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "Butterfly Blue Scale",
+      "minCount": 0,
+      "maxCount": 3
+    },
+    {
+      "section": "loot",
+      "item": "Butterfly Blue Wing",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 500,
+    "stunThreshold": 30,
+    "stunCooldownSeconds": 12
+  },
+  "inflictsEffects": [
+    "busting"
+  ],
+  "abilities": [
+    {
+      "name": "Пикирующий таран",
+      "description": "Она поднимается вверх, а затем резко падает по прямой с быстрым лобовым ударом.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Комбо из 3 укусов",
+      "description": "Она связывает несколько коротких ударов подряд, когда оказывается на вашей высоте после пикирования.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Леденящий порыв",
+      "description": "Она взмахивает крыльями и выпускает холодный порыв, из-за которого опасно оставаться прямо под ней.",
+      "blockable": false,
+      "breaksGuard": false,
+      "staggers": false
+    }
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "general",
+      "bonusPct": 25
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    }
+  ],
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 2,
+    "value": 500
+  },
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "BlueButterflyORC",
+  "bestiaryId": "BlueButterflyORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Gust",
+      "technicalId": "BlueButterflyGust",
+      "tags": [
+        "general",
+        "ranged"
+      ],
+      "notes": "Урон атаки: 35",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 20.0,
+      "range": 1600.0,
+      "stun": 15,
+      "statusEffects": [
+        "Blue Butterfly Chill Gust"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Blue Butterfly Chill Gust",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": true,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Charge",
+      "technicalId": "BlueButterflyCharge",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 50",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 50.0,
+      "cooldownSeconds": 10.0,
+      "range": 300.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "ActiveLoop",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Triple Bite",
+      "technicalId": "BlueButterflyTripleBite",
+      "tags": [
+        "general"
+      ],
+      "notes": "Урон атаки: 20",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 20.0,
+      "cooldownSeconds": 10.0,
+      "range": 250.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "BlueButterfly_ORC_A_Named",
+      "characterRow": "BlueButterfly_ORC_A_Named",
+      "role": "named_or_miniboss",
+      "variantMarkers": [
+        "named"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 825.0,
+        "stun": {
+          "max": 30.0,
+          "duration": 4.0,
+          "cooldown": 12.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSpicyTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "BlueButterflyGust",
+          "ability": "BlueButterflyGust",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "BlueButterflyChillGust"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 1600.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlueButterflyCharge",
+          "ability": "BlueButterflyCharge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "BlueButterflyTripleBite",
+          "ability": "BlueButterflyTripleBite",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 20.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ORC_LaserHeal",
+          "ability": "ORC_LaserHeal",
+          "resolved": true,
+          "cooldown": 15.0,
+          "priority": 20,
+          "targetType": "Friendly",
+          "damage": {
+            "amount": 0.0,
+            "type": "ORCLaserHealing",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [
+        {
+          "keyword": "laser",
+          "sources": [
+            "ORC_LaserHeal",
+            "/Game/Releases/Release_0_3_0/Blueprints/Creatures/Attacks/CombatActions/CA_ORC_LaserHeal.0"
+          ]
+        }
+      ],
+      "quality": {
+        "resolvedAttacks": 4,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "parentBestiaryId": "BlueButterflyORC",
+      "parentAphidexId": "g2_orc_blue_butterfly",
+      "technicalCharacterRow": "BlueButterfly_ORC_A_Named",
+      "variantKey": "BlueButterfly_ORC_A_Named",
+      "nameEn": "Major Dazzler",
+      "nameEsMX": "Comandante deslumbrante",
+      "nameBindingConfidence": "high",
+      "topLevelAphidexId": null,
+      "killFavoriteStateOwner": "g2_orc_blue_butterfly",
+      "policy": "CHILD_VARIANT_NO_TOP_LEVEL_ID"
+    },
+    {
+      "id": "g2_wave_blue_butterfly_orc_wave",
+      "characterRow": "BlueButterfly_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 500.0,
+        "stun": {
+          "max": 30.0,
+          "duration": 4.0,
+          "cooldown": 12.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSpicyTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "BlueButterflyGust",
+          "ability": "BlueButterflyGust",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "BlueButterflyChillGust"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 1600.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlueButterflyCharge",
+          "ability": "BlueButterflyCharge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "BlueButterflyTripleBite",
+          "ability": "BlueButterflyTripleBite",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 20.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 3,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_blue_butterfly_orc_wave",
+      "nameEn": "O.R.C. Blue Butterfly Raid/Wave",
+      "nameEsMX": "Mariposa azul C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Синяя бабочка Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "BlueButterfly_ORC_Wave",
+      "characterRow": "BlueButterfly_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 500.0,
+        "stun": {
+          "max": 30.0,
+          "duration": 4.0,
+          "cooldown": 12.0,
+          "staggerThreshold": 30
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "General"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistGeneralTiny"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownSpicyTiny"
+        }
+      ],
+      "specialCombatModifiers": [
+        {
+          "kind": "player_turret_weakness",
+          "classification": "weakness",
+          "multiplier": 3.0,
+          "percent": 200.0,
+          "sourceId": "DamageResistTurretDownORC"
+        }
+      ],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "BlueButterflyGust",
+          "ability": "BlueButterflyGust",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "GeneralUnblockable",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "BlueButterflyChillGust"
+            ],
+            "statusEffectApplyType": "Always"
+          },
+          "secondaryDamage": [],
+          "range": 1600.0,
+          "ranged": true,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlueButterflyCharge",
+          "ability": "BlueButterflyCharge",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 50.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 300.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "ActiveLoop"
+        },
+        {
+          "id": "BlueButterflyTripleBite",
+          "ability": "BlueButterflyTripleBite",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 20.0,
+            "type": "General",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 250.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 3,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Mariposa azul C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [
+    {
+      "kind": "player_turret_weakness",
+      "classification": "weakness",
+      "multiplier": 3.0,
+      "percent": 200.0,
+      "sourceId": "DamageResistTurretDownORC"
+    }
+  ],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_c2c2b77dce8a9e9c",
+      "targetType": "creature",
+      "targetId": "g2_orc_blue_butterfly",
+      "technicalId": "BlueButterflyORC",
+      "map": "surface",
+      "world": {
+        "x": -143573.83,
+        "y": -15195.6045,
+        "z": 8079.1147
+      },
+      "u": 0.44174860286801293,
+      "v": 0.22012691201619022,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_161ec8190fc2f469",
+      "targetType": "creature",
+      "targetId": "g2_orc_blue_butterfly",
+      "technicalId": "BlueButterflyORC",
+      "map": "surface",
+      "world": {
+        "x": -236472.97,
+        "y": 68972.79,
+        "z": 11305.427
+      },
+      "u": 0.09375065378987416,
+      "v": 0.5835152076903617,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8dc0c985d1be3be2",
+      "targetType": "creature",
+      "targetId": "g2_orc_blue_butterfly",
+      "technicalId": "BlueButterflyORC",
+      "map": "surface",
+      "world": {
+        "x": -162931.31,
+        "y": 70534.21,
+        "z": 11157.204
+      },
+      "u": 0.3692359473222125,
+      "v": 0.5902564762627542,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3354271eccdb0663",
+      "targetType": "creature",
+      "targetId": "g2_orc_blue_butterfly",
+      "technicalId": "BlueButterflyORC",
+      "map": "surface",
+      "world": {
+        "x": -34856.934,
+        "y": 43968.516,
+        "z": 36270.07
+      },
+      "u": 0.8489994863330407,
+      "v": 0.4755618533771819,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_45673746db421e56",
+      "targetType": "creature",
+      "targetId": "g2_orc_blue_butterfly",
+      "technicalId": "BlueButterflyORC",
+      "map": "surface",
+      "world": {
+        "x": -161262.67,
+        "y": 69346.84,
+        "z": 11234.702
+      },
+      "u": 0.3754866327187591,
+      "v": 0.5851301296905305,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0e5fed411a6042d1",
+      "targetType": "creature",
+      "targetId": "g2_orc_blue_butterfly",
+      "technicalId": "BlueButterflyORC",
+      "map": "surface",
+      "world": {
+        "x": -195212.97,
+        "y": 156629.62,
+        "z": 8048.5386
+      },
+      "u": 0.24830962364647352,
+      "v": 0.9619644610844085,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Charged Chill",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Butterfly Blue Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Chunk",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Chunk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Scale",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Scale",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Scale",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Butterfly Blue Wing",
+      "countLabel": "1",
+      "chancePct": 40,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

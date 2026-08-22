@@ -1,1 +1,911 @@
-{"id":"g2_orc_cockroach","speciesKey":"orc_cockroach","collectionGroup":"orc","name":"O.R.C. Таракан","game":"g2","tier":2,"danger":"muy_alta","isBoss":false,"order":217,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_ORC.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_ORC_G.png","photo":"assets/g2/creatures/photos/ORC_Cockroach.webp","weaknesses":[],"resistances":["gas","fresh","spicy","venom"],"temperament":"aggressive","health":{"value":1000,"rating":3},"description":"O.R.C. Таракан — бронированная агрессивная версия таракана в Grounded 2. Он сохраняет живучесть и таранный потенциал базового существа, но теперь сражается как полноценная штурмовая единица.","behavior":"Он патрулирует тесные грязные зоны O.R.C. короткими маршрутами, используя широкое тело, чтобы перекрывать проходы и входы. Если ему удалось зажать игрока, далеко преследовать уже не нужно.","interactionWithPlayer":"Он атакует сразу после обнаружения и особенно хорош в тесных местах. Если слишком долго стоять перед ним, серия укусов и боковой пинок быстро заставят вас перейти в глухую оборону.","interactionWithCreatures":"Обычно он действует вместе с нимфами и королевой как стабильная стена давления на передней линии.","strategy":"Механически он несложный, но в тесных помещениях очень неприятен. Наказывайте конец тарана, не стойте долго прямо перед ним и сначала убирайте нимф, если они идут вместе с ним.","environments":["Огненная яма","Сетевой центр"],"loot":[{"section":"loot","item":"O.R.C. Receiver","minCount":0,"maxCount":1},{"section":"loot","item":"Roach Chunk","minCount":2,"maxCount":4},{"section":"loot","item":"Roach Head","minCount":0,"maxCount":1},{"section":"rare","item":"Apple Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Billy Hog Bite","minCount":0,"maxCount":1},{"section":"rare","item":"Cookie Sandwich Bits","minCount":0,"maxCount":1},{"section":"rare","item":"Roach Chunk","minCount":0,"maxCount":4},{"section":"rare","item":"Rotten Food","minCount":0,"maxCount":1},{"section":"rare","item":"Spoiled Meat","minCount":0,"maxCount":1}],"combatStats":{"health":1000,"attackDamageSummary":"Укус: 30. Комбо из 3 укусов: 25. Боковой удар: 25. Безголовый таран: 25."},"abilities":[{"name":"Укус","description":"Лобовой укус, которым он начинает давление вблизи.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 укусов","description":"Он связывает несколько коротких укусов подряд, наказывая за то, что вы не ушли с его фронта вовремя.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Боковой удар","description":"Он бьёт в сторону, пытаясь поймать тех, кто обходит его по флангу.","blockable":true,"breaksGuard":false,"staggers":true},{"name":"Безголовый таран","description":"Он бросает всё тело вперёд в резком таране, который легко недооценить, если расслабиться.","blockable":true,"breaksGuard":true,"staggers":true}],"resistancesV2":[{"type":"gas","bonusPct":90},{"type":"fresh","bonusPct":25},{"type":"spicy","bonusPct":25},{"type":"venom","bonusPct":25}],"bossPhases":[{"id":"phase1","label":"Фаза 1","summary":"Пока голова на месте, таракан давит быстрыми укусами и боковыми ударами, удерживая тебя прямо перед собой.","startsAtHealthPct":100,"abilities":[{"name":"Укус","description":"Лобовой укус, которым он начинает давление вблизи.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Комбо из 3 укусов","description":"Он связывает несколько коротких укусов подряд, наказывая за то, что вы не ушли с его фронта вовремя.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Боковой удар","description":"Он бьёт в сторону, пытаясь поймать тех, кто обходит его по флангу.","blockable":true,"breaksGuard":false,"staggers":true}]},{"id":"phase2","label":"Фаза 2","summary":"Оставшись без головы, он становится более неуклюжим, но и заметно опаснее, если дать ему разогнаться по коридору.","trigger":"Начинается, когда таракан теряет голову, но остаётся активным в последнем рывке.","abilities":[{"name":"Безголовый таран","description":"Он бросает всё тело вперёд в резком таране, который легко недооценить, если расслабиться.","blockable":true,"breaksGuard":true,"staggers":true}]}],"groupId":null,"cardTier":2,"technicalId":"CockroachORC","bestiaryId":"CockroachORC","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"weakPoints":[],"attacks":[{"name":"Bite","technicalId":"CockroachBite","tags":["stabbing"],"notes":"Урон атаки: 30"},{"name":"Bite Right","technicalId":"CockroachBiteRight","tags":["stabbing"],"notes":"Урон атаки: 30"},{"name":"Bite Left","technicalId":"CockroachBiteLeft","tags":["stabbing"],"notes":"Урон атаки: 30"},{"name":"Karate Kick Left","technicalId":"CockroachKarateKickLeft","tags":["stabbing"],"notes":"Урон атаки: 35"},{"name":"Karate Kick Right","technicalId":"CockroachKarateKickRight","tags":["stabbing"],"notes":"Урон атаки: 35"},{"name":"Combo 3","technicalId":"CockroachCombo3","tags":["stabbing"],"notes":"Урон атаки: 25"}],"encounterVariants":[{"id":"g2_wave_cockroach_orc_wave","characterRow":"Cockroach_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1000.0,"stun":{"max":70.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":[],"resistances":[{"damageTypes":["Gas"],"percent":90.0,"sourceId":"DamageResistGasLarge"},{"damageTypes":["Fresh"],"percent":25.0,"sourceId":"DamageResistFreshTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"},{"damageTypes":["Venom"],"percent":25.0,"sourceId":"DamageResistVenomSmall"}],"weaknesses":[],"specialCombatModifiers":[],"immunities":[{"damageTypes":["Gas"],"sourceId":"GasImmunity"}],"attacks":[{"id":"CockroachBite","ability":"CockroachBite","resolved":true,"cooldown":1.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachBiteRight","ability":"CockroachBiteRight","resolved":true,"cooldown":1.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachBiteLeft","ability":"CockroachBiteLeft","resolved":true,"cooldown":1.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachKarateKickLeft","ability":"CockroachKarateKickLeft","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":15,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachKarateKickRight","ability":"CockroachKarateKickRight","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":15,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachCombo3","ability":"CockroachCombo3","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":25.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_cockroach_orc_wave","nameEn":"O.R.C. Cockroach Raid/Wave","nameEsMX":"Cucaracha C.R.O.  (Oleada)","nameRu":"O.R.C. Таракан Рейд/волна"}],"contextVariants":[{"id":"Cockroach_ORC_Wave","characterRow":"Cockroach_ORC_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":1000.0,"stun":{"max":70.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":[],"resistances":[{"damageTypes":["Gas"],"percent":90.0,"sourceId":"DamageResistGasLarge"},{"damageTypes":["Fresh"],"percent":25.0,"sourceId":"DamageResistFreshTiny"},{"damageTypes":["Spicy"],"percent":25.0,"sourceId":"DamageResistSpicyTiny"},{"damageTypes":["Venom"],"percent":25.0,"sourceId":"DamageResistVenomSmall"}],"weaknesses":[],"specialCombatModifiers":[],"immunities":[{"damageTypes":["Gas"],"sourceId":"GasImmunity"}],"attacks":[{"id":"CockroachBite","ability":"CockroachBite","resolved":true,"cooldown":1.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachBiteRight","ability":"CockroachBiteRight","resolved":true,"cooldown":1.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachBiteLeft","ability":"CockroachBiteLeft","resolved":true,"cooldown":1.0,"priority":0,"targetType":"Enemy","damage":{"amount":30.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachKarateKickLeft","ability":"CockroachKarateKickLeft","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":15,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachKarateKickRight","ability":"CockroachKarateKickRight","resolved":true,"cooldown":5.0,"priority":1,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":15,"poiseDamage":0.0,"pushback":10.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"CockroachCombo3","ability":"CockroachCombo3","resolved":true,"cooldown":2.0,"priority":0,"targetType":"Enemy","damage":{"amount":25.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":500.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":6,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Cucaracha C.R.O.  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_orc_cockroach",
+  "speciesKey": "orc_cockroach",
+  "collectionGroup": "orc",
+  "name": "O.R.C. Таракан",
+  "game": "g2",
+  "tier": 2,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 217,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Cockroach_ORC.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Cockroach_ORC_G.png",
+  "photo": "assets/g2/creatures/photos/ORC_Cockroach.webp",
+  "weaknesses": [],
+  "resistances": [
+    "gas",
+    "fresh",
+    "spicy",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 3,
+    "value": 1000
+  },
+  "description": "O.R.C. Таракан — бронированная агрессивная версия таракана в Grounded 2. Он сохраняет живучесть и таранный потенциал базового существа, но теперь сражается как полноценная штурмовая единица.",
+  "behavior": "Он патрулирует тесные грязные зоны O.R.C. короткими маршрутами, используя широкое тело, чтобы перекрывать проходы и входы. Если ему удалось зажать игрока, далеко преследовать уже не нужно.",
+  "interactionWithPlayer": "Он атакует сразу после обнаружения и особенно хорош в тесных местах. Если слишком долго стоять перед ним, серия укусов и боковой пинок быстро заставят вас перейти в глухую оборону.",
+  "interactionWithCreatures": "Обычно он действует вместе с нимфами и королевой как стабильная стена давления на передней линии.",
+  "strategy": "Механически он несложный, но в тесных помещениях очень неприятен. Наказывайте конец тарана, не стойте долго прямо перед ним и сначала убирайте нимф, если они идут вместе с ним.",
+  "environments": [
+    "Огненная яма",
+    "Сетевой центр"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Cockroach Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Cockroach Part",
+      "minCount": 2,
+      "maxCount": 8
+    },
+    {
+      "section": "rare",
+      "item": "Food Apple",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Cookie Sandwich",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "rare",
+      "item": "Food Hot Dog",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Food Rotten",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "ORCChip",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Spoiled Meat",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1000,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Укус",
+      "description": "Лобовой укус, которым он начинает давление вблизи.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Комбо из 3 укусов",
+      "description": "Он связывает несколько коротких укусов подряд, наказывая за то, что вы не ушли с его фронта вовремя.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Боковой удар",
+      "description": "Он бьёт в сторону, пытаясь поймать тех, кто обходит его по флангу.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": true
+    },
+    {
+      "name": "Безголовый таран",
+      "description": "Он бросает всё тело вперёд в резком таране, который легко недооценить, если расслабиться.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "gas",
+      "bonusPct": 90
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 25
+    },
+    {
+      "type": "spicy",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 25
+    }
+  ],
+  "bossPhases": [
+    {
+      "id": "phase1",
+      "label": "Фаза 1",
+      "summary": "Пока голова на месте, таракан давит быстрыми укусами и боковыми ударами, удерживая тебя прямо перед собой.",
+      "startsAtHealthPct": 100,
+      "abilities": [
+        {
+          "name": "Укус",
+          "description": "Лобовой укус, которым он начинает давление вблизи.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Комбо из 3 укусов",
+          "description": "Он связывает несколько коротких укусов подряд, наказывая за то, что вы не ушли с его фронта вовремя.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": false
+        },
+        {
+          "name": "Боковой удар",
+          "description": "Он бьёт в сторону, пытаясь поймать тех, кто обходит его по флангу.",
+          "blockable": true,
+          "breaksGuard": false,
+          "staggers": true
+        }
+      ]
+    },
+    {
+      "id": "phase2",
+      "label": "Фаза 2",
+      "summary": "Оставшись без головы, он становится более неуклюжим, но и заметно опаснее, если дать ему разогнаться по коридору.",
+      "trigger": "Начинается, когда таракан теряет голову, но остаётся активным в последнем рывке.",
+      "abilities": [
+        {
+          "name": "Безголовый таран",
+          "description": "Он бросает всё тело вперёд в резком таране, который легко недооценить, если расслабиться.",
+          "blockable": true,
+          "breaksGuard": true,
+          "staggers": true
+        }
+      ]
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "CockroachORC",
+  "bestiaryId": "CockroachORC",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Bite",
+      "technicalId": "CockroachBite",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 1.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Right",
+      "technicalId": "CockroachBiteRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 1.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bite Left",
+      "technicalId": "CockroachBiteLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 30",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 30.0,
+      "cooldownSeconds": 1.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Karate Kick Left",
+      "technicalId": "CockroachKarateKickLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 35",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 5.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Karate Kick Right",
+      "technicalId": "CockroachKarateKickRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 35",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 5.0,
+      "range": 500.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 3",
+      "technicalId": "CockroachCombo3",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 25",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 25.0,
+      "cooldownSeconds": 2.0,
+      "range": 500.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_cockroach_orc_wave",
+      "characterRow": "Cockroach_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1000.0,
+        "stun": {
+          "max": 70.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 90.0,
+          "sourceId": "DamageResistGasLarge"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistVenomSmall"
+        }
+      ],
+      "weaknesses": [],
+      "specialCombatModifiers": [],
+      "immunities": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "sourceId": "GasImmunity"
+        }
+      ],
+      "attacks": [
+        {
+          "id": "CockroachBite",
+          "ability": "CockroachBite",
+          "resolved": true,
+          "cooldown": 1.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachBiteRight",
+          "ability": "CockroachBiteRight",
+          "resolved": true,
+          "cooldown": 1.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachBiteLeft",
+          "ability": "CockroachBiteLeft",
+          "resolved": true,
+          "cooldown": 1.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachKarateKickLeft",
+          "ability": "CockroachKarateKickLeft",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachKarateKickRight",
+          "ability": "CockroachKarateKickRight",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachCombo3",
+          "ability": "CockroachCombo3",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 25.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_cockroach_orc_wave",
+      "nameEn": "O.R.C. Cockroach Raid/Wave",
+      "nameEsMX": "Cucaracha C.R.O.  (Oleada)",
+      "nameRu": "O.R.C. Таракан Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Cockroach_ORC_Wave",
+      "characterRow": "Cockroach_ORC_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 1000.0,
+        "stun": {
+          "max": 70.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "percent": 90.0,
+          "sourceId": "DamageResistGasLarge"
+        },
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistFreshTiny"
+        },
+        {
+          "damageTypes": [
+            "Spicy"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSpicyTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistVenomSmall"
+        }
+      ],
+      "weaknesses": [],
+      "specialCombatModifiers": [],
+      "immunities": [
+        {
+          "damageTypes": [
+            "Gas"
+          ],
+          "sourceId": "GasImmunity"
+        }
+      ],
+      "attacks": [
+        {
+          "id": "CockroachBite",
+          "ability": "CockroachBite",
+          "resolved": true,
+          "cooldown": 1.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachBiteRight",
+          "ability": "CockroachBiteRight",
+          "resolved": true,
+          "cooldown": 1.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachBiteLeft",
+          "ability": "CockroachBiteLeft",
+          "resolved": true,
+          "cooldown": 1.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 30.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachKarateKickLeft",
+          "ability": "CockroachKarateKickLeft",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachKarateKickRight",
+          "ability": "CockroachKarateKickRight",
+          "resolved": true,
+          "cooldown": 5.0,
+          "priority": 1,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 15,
+            "poiseDamage": 0.0,
+            "pushback": 10.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "CockroachCombo3",
+          "ability": "CockroachCombo3",
+          "resolved": true,
+          "cooldown": 2.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 25.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 500.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 6,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Cucaracha C.R.O.  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_2f4128593828a97e",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach",
+      "technicalId": "CockroachORC",
+      "map": "surface",
+      "world": {
+        "x": -172600.0,
+        "y": 15550.0,
+        "z": 19500.0
+      },
+      "u": 0.33301726660813574,
+      "v": 0.35286786406948306,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a484832b2aa5d372",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach",
+      "technicalId": "CockroachORC",
+      "map": "surface",
+      "world": {
+        "x": -212372.8,
+        "y": 4789.0186,
+        "z": 1206.2789
+      },
+      "u": 0.18402931226221836,
+      "v": 0.30640844525845357,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_73560942421e4135",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach",
+      "technicalId": "CockroachORC",
+      "map": "surface",
+      "world": {
+        "x": -234064.72,
+        "y": 96281.75,
+        "z": -256.47897
+      },
+      "u": 0.10277190049751243,
+      "v": 0.7014188042836664,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f7449b0b7636ec80",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach",
+      "technicalId": "CockroachORC",
+      "map": "surface",
+      "world": {
+        "x": -216262.25,
+        "y": 86773.99,
+        "z": 408.84338
+      },
+      "u": 0.16945952589991223,
+      "v": 0.6603700386204571,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6390de35932f9708",
+      "targetType": "creature",
+      "targetId": "g2_orc_cockroach",
+      "technicalId": "CockroachORC",
+      "map": "surface",
+      "world": {
+        "x": -234405.19,
+        "y": 98531.984,
+        "z": -163.65894
+      },
+      "u": 0.1014965080479953,
+      "v": 0.7111339557129607,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [
+    "gas"
+  ],
+  "advancedLootTable": [
+    {
+      "item": "Cockroach Head",
+      "countLabel": "1",
+      "chancePct": 45,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 4,
+      "notes": "4 independent rolls"
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Cockroach Part",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Apple",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Cookie Sandwich",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Hot Dog",
+      "countLabel": "1",
+      "chancePct": 5,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Food Rotten",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "ORCChip",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Spoiled Meat",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

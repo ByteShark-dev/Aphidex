@@ -1,1 +1,555 @@
-{"id":"g2_striped_bark_scorpling","speciesKey":"striped_bark_scorpling","collectionGroup":"angry","game":"g2","danger":"unknown","order":297,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_striped_bark_scorpling.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"Мы готовим эту информацию для вас.","interactionWithPlayer":"Мы готовим эту информацию для вас.","interactionWithCreatures":"Мы готовим эту информацию для вас.","strategy":"Мы готовим эту информацию для вас.","groupId":null,"name":"Детёныш полосатого древесного скорпиона","tier":3,"cardTier":4,"technicalId":"StripedBarkScorpling","bestiaryId":"StripedBarkScorpling","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpling_StripedBark.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpling_StripedBark_G.png","weaknesses":["busting"],"resistances":["fresh","slashing","venom"],"elementalWeaknesses":[],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"fresh","bonusPct":50},{"type":"slashing","bonusPct":25},{"type":"venom","bonusPct":50}],"weakPoints":[],"attacks":[{"name":"Melee Left","technicalId":"ScorplingStripedBarkMeleeLeft","tags":["stabbing"],"notes":"Урон атаки: 70"},{"name":"Melee Right","technicalId":"ScorplingStripedBarkMeleeRight","tags":["stabbing"],"notes":"Урон атаки: 70"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":300,"rating":1},"combatStats":{"health":300},"description":"Мы готовим эту информацию для вас.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_striped_bark_scorpling",
+  "speciesKey": "striped_bark_scorpling",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "intermedia",
+  "order": 297,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_striped_bark_scorpling.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Scorpion Striped Chunk",
+      "minCount": 1,
+      "maxCount": 3
+    }
+  ],
+  "abilities": [],
+  "behavior": "Он обычно перемещается рядом с другими детёнышами или держится возле крупных скорпионов. В бою атакует напрямую с близкой дистанции и больше полагается на численность, чем на сложные приёмы.",
+  "interactionWithPlayer": "Сам по себе почти не опасен, но маленький размер и привычка появляться группами могут сильно мешать, особенно во время боя со взрослым или молодым скорпионом.",
+  "interactionWithCreatures": "Несколько детёнышей часто встречаются вместе и рядом с другими скорпионами. Они также могут втягиваться в драки с другими существами, обитающими в этой зоне.",
+  "strategy": "Отдавайте приоритет оружию и атакам по площади. Детёныши маленькие и часто появляются группами, поэтому удар по нескольким целям одновременно намного эффективнее. Если они сопровождают более крупного скорпиона, сначала зачистите детёнышей — остальная часть боя станет заметно проще.",
+  "groupId": null,
+  "name": "Детёныш полосатого древесного скорпиона",
+  "tier": 3,
+  "cardTier": 4,
+  "technicalId": "StripedBarkScorpling",
+  "bestiaryId": "StripedBarkScorpling",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpling_StripedBark.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpling_StripedBark_G.png",
+  "weaknesses": [
+    "busting"
+  ],
+  "resistances": [
+    "fresh",
+    "slashing",
+    "venom"
+  ],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    }
+  ],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Melee Left",
+      "technicalId": "ScorplingStripedBarkMeleeLeft",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 70",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 70.0,
+      "cooldownSeconds": 0.0,
+      "range": 175.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Melee Right",
+      "technicalId": "ScorplingStripedBarkMeleeRight",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Урон атаки: 70",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 70.0,
+      "cooldownSeconds": 0.0,
+      "range": 175.0,
+      "stun": 3,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 1,
+    "value": 300
+  },
+  "combatStats": {
+    "health": 300,
+    "stunThreshold": 30,
+    "stunCooldownSeconds": 5
+  },
+  "description": "Мы готовим эту информацию для вас.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_7464761fa2e283bd",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -220079.95,
+        "y": 76512.336,
+        "z": -2217.105
+      },
+      "u": 0.15515851331577404,
+      "v": 0.616066413964078,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f5952ee35ccc1e1b",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -222555.62,
+        "y": 80238.47,
+        "z": -2621.8564
+      },
+      "u": 0.14588471290605795,
+      "v": 0.6321536102538157,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1a9885cda9bc74b0",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -221973.83,
+        "y": 78023.02,
+        "z": -2217.105
+      },
+      "u": 0.1480640842844601,
+      "v": 0.6225886351294377,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_13a765030da10f47",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -38419.797,
+        "y": 67503.375,
+        "z": -251.85419
+      },
+      "u": 0.8356530870354112,
+      "v": 0.5771711611434354,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8d22c69b7f6949ad",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -31189.797,
+        "y": 59288.37,
+        "z": 93.06547
+      },
+      "u": 0.8627364935323384,
+      "v": 0.5417037308373387,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1316830d75df3371",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -30679.797,
+        "y": 60118.37,
+        "z": 100.84494
+      },
+      "u": 0.8646469412935324,
+      "v": 0.5452871695758496,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_41cd59ebafa7ab76",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -44142.887,
+        "y": 44160.285,
+        "z": 6779.0317
+      },
+      "u": 0.8142145292361721,
+      "v": 0.4763897961042246,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c054337b01949bb6",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -38205.055,
+        "y": 79366.15,
+        "z": -1448.141
+      },
+      "u": 0.836457505414106,
+      "v": 0.6283874593136014,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_275de79e88e94f7d",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -9343.635,
+        "y": 35636.438,
+        "z": -649.5719
+      },
+      "u": 0.9445716921275972,
+      "v": 0.43958897256092416,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_152730c908cd030b",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -19755.365,
+        "y": 41855.992,
+        "z": -2770.4844
+      },
+      "u": 0.9055696014047411,
+      "v": 0.4664412505607555,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6df3910cd8ab2694",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -17295.627,
+        "y": 24171.393,
+        "z": -2148.8223
+      },
+      "u": 0.9147837209247878,
+      "v": 0.3900898323298761,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e9aa1ce4122276c0",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -22212.064,
+        "y": 41334.05,
+        "z": -2628.4548
+      },
+      "u": 0.8963668659057652,
+      "v": 0.4641878202209292,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_9b35b02825ba1d65",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -62543.613,
+        "y": 53932.605,
+        "z": -125.1145
+      },
+      "u": 0.7452858512145156,
+      "v": 0.5185807720718442,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_00bb80656837d224",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -3446.0671,
+        "y": 54213.047,
+        "z": -1479.6722
+      },
+      "u": 0.9666638399531754,
+      "v": 0.5197915512606459,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_eff4127a5e2a362e",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -19818.664,
+        "y": 40837.668,
+        "z": -2770.4844
+      },
+      "u": 0.9053324848697688,
+      "v": 0.4620447425246648,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_81e396dc38682658",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -38362.62,
+        "y": 43977.85,
+        "z": 7373.673
+      },
+      "u": 0.8358672707052971,
+      "v": 0.47560215195210387,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_357b14dcbf5fdf67",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -42177.81,
+        "y": 43933.113,
+        "z": 6347.758
+      },
+      "u": 0.8215756605209248,
+      "v": 0.4754090046040982,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2e4e0e60be01cf70",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -24003.186,
+        "y": 60497.49,
+        "z": 4576.7803
+      },
+      "u": 0.8896573658764999,
+      "v": 0.5469239807740955,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_3a2a8835ecdcc61e",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -16204.463,
+        "y": 27258.865,
+        "z": -801.086
+      },
+      "u": 0.9188711950834065,
+      "v": 0.4034196718104393,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d9395f02280bb020",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -47522.637,
+        "y": 66997.42,
+        "z": 854.6994
+      },
+      "u": 0.8015540668422594,
+      "v": 0.574986753014588,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a142cfddda5c9cb5",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -39153.06,
+        "y": 42336.145,
+        "z": 1375.7852
+      },
+      "u": 0.8329063014340065,
+      "v": 0.46851426123619183,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_23f391b4b9a45357",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -38383.97,
+        "y": 42841.125,
+        "z": 1474.467
+      },
+      "u": 0.8357872941176471,
+      "v": 0.4706944599038705,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_e3a12ee5951eb445",
+      "targetType": "creature",
+      "targetId": "g2_striped_bark_scorpling",
+      "technicalId": "StripedBarkScorpling",
+      "map": "surface",
+      "world": {
+        "x": -41395.98,
+        "y": 41248.69,
+        "z": 531.2959
+      },
+      "u": 0.8245043769388353,
+      "v": 0.4638192872923518,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Scorpion Striped Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Striped Chunk",
+      "countLabel": "1",
+      "chancePct": 20,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Striped Chunk",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

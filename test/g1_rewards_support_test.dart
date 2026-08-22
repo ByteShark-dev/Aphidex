@@ -50,8 +50,12 @@ void main() {
       );
       expect(
         UiMapper.rewardIcon('raw_science'),
-        'assets/global/rewards/Raw_Science.webp',
+        'assets/global/rewards/Raw_Science.png',
       );
+      expect(UiMapper.isRawScienceLabel('Raw Science'), isTrue);
+      expect(UiMapper.isRawScienceLabel('Ciencia pura'), isTrue);
+      expect(UiMapper.isRawScienceLabel('Ciencia bruta'), isTrue);
+      expect(UiMapper.isRawScienceLabel('Ciencia arrugada'), isFalse);
     });
   });
 

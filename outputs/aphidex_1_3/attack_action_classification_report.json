@@ -1,0 +1,6262 @@
+{
+  "actions": [
+    {
+      "publicId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_5Projectile",
+      "name": "Pond Jockey Homing Projectile 5 Projectile",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_5Projectile_Burst",
+      "name": "Pond Jockey Homing Projectile 5 Projectile Burst",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_3Projectile",
+      "name": "Pond Jockey Homing Projectile 3 Projectile",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_3Projectile_Burst",
+      "name": "Pond Jockey Homing Projectile 3 Projectile Burst",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_1Projectile",
+      "name": "Pond Jockey Homing Projectile 1 Projectile",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_1Projectile_Burst",
+      "name": "Pond Jockey Homing Projectile 1 Projectile Burst",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockey_WaterDodge",
+      "name": "Pond Jockey Water Dodge",
+      "actionType": "movement_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockey_Melee",
+      "name": "Melee",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ancient_pond_jockey",
+      "technicalId": "PondJockey_Melee_W_Swarm",
+      "name": "Melee W Swarm",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_bee",
+      "technicalId": "BeeSting",
+      "name": "Sting",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 60.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_bee",
+      "technicalId": "BeeStingCharged",
+      "name": "Sting Charged",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 80.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_bee",
+      "technicalId": "BeeBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_bee",
+      "technicalId": "BeePollenCloud",
+      "name": "Pollen Cloud",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaBiteLeft",
+      "name": "Bite Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaBiteRight",
+      "name": "Bite Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaMultistrike",
+      "name": "Multistrike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaSmash",
+      "name": "Smash",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 60.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaSourSpray",
+      "name": "Spray",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 80.0,
+      "damageTypes": [
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_black_soldier_ant",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_black_worker_ant",
+      "technicalId": "AntWorkerBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 48.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_black_worker_ant",
+      "technicalId": "AntWorkerLunge",
+      "name": "Lunge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_blue_butterfly",
+      "technicalId": "BlueButterflyGust",
+      "name": "Gust",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_blue_butterfly",
+      "technicalId": "BlueButterflyCharge",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_blue_butterfly",
+      "technicalId": "BlueButterflyTripleBite",
+      "name": "Triple Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 20.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_bombardier_beetle",
+      "technicalId": "BeetleMeleeLeft",
+      "name": "Melee Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_bombardier_beetle",
+      "technicalId": "BeetleMeleeRight",
+      "name": "Melee Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_bombardier_beetle",
+      "technicalId": "BeetleRanged",
+      "name": "Ranged",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "sizzle"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_bombardier_beetle",
+      "technicalId": "BeetleSpray",
+      "name": "Spray",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 20.0,
+      "damageTypes": [
+        "sizzle"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_bombardier_beetle",
+      "technicalId": "BeetleAOE",
+      "name": "Area Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_bombardier_beetle",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_chop_r",
+      "technicalId": "TayzT_Melee_Augusta",
+      "name": "Melee",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "smashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_chop_r",
+      "technicalId": "TayzT_Combo_Augusta",
+      "name": "Combo",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "smashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_chop_r",
+      "technicalId": "TayzT_Pincher_Augusta",
+      "name": "Tayz T Pincher",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "smashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cku",
+      "technicalId": "TayzT_Melee_Augusta",
+      "name": "Melee",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "smashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cku",
+      "technicalId": "TayzT_Combo_Augusta",
+      "name": "Combo",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "smashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cku",
+      "technicalId": "TayzT_Pincher_Augusta",
+      "name": "Tayz T Pincher",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "smashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach",
+      "technicalId": "CockroachBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach",
+      "technicalId": "CockroachBiteRight",
+      "name": "Bite Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach",
+      "technicalId": "CockroachBiteLeft",
+      "name": "Bite Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach",
+      "technicalId": "CockroachKarateKickLeft",
+      "name": "Karate Kick Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach",
+      "technicalId": "CockroachKarateKickRight",
+      "name": "Karate Kick Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach",
+      "technicalId": "CockroachCombo3",
+      "name": "Combo 3",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach_nymph",
+      "technicalId": "CockroachNymphBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 15.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach_nymph",
+      "technicalId": "CockroachNymphBiteLeft",
+      "name": "Bite Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 15.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach_nymph",
+      "technicalId": "CockroachNymphBiteRight",
+      "name": "Bite Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 15.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach_queen",
+      "technicalId": "CockroachQueenBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach_queen",
+      "technicalId": "CockroachQueenBiteRight",
+      "name": "Bite Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach_queen",
+      "technicalId": "CockroachQueenBiteLeft",
+      "name": "Bite Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach_queen",
+      "technicalId": "CockroachQueenKarateKickLeft",
+      "name": "Karate Kick Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach_queen",
+      "technicalId": "CockroachQueenKarateKickRight",
+      "name": "Karate Kick Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach_queen",
+      "technicalId": "CockroachQueenCombo3",
+      "name": "Combo 3",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach_queen",
+      "technicalId": "CockroachQueen_Slam",
+      "name": "Slam",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 60.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cockroach_queen",
+      "technicalId": "CockroachQueenSpray",
+      "name": "Spray",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "sizzle"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cricket",
+      "technicalId": "CricketAttackCombo3X",
+      "name": "Combo 3 X",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 88.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cricket",
+      "technicalId": "CricketAttackPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 112.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cricket",
+      "technicalId": "CricketAttackBackKick",
+      "name": "Back Kick",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 95.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cricket",
+      "technicalId": "CricketAttackLeapOfFaith",
+      "name": "Leap Of Faith",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cricket",
+      "technicalId": "CricketAttackSonicScreech",
+      "name": "Sonic Screech",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_cricket",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBellBite_Augusta",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBellLunge_Augusta",
+      "name": "Lunge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 68.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_diving_bell_spider",
+      "technicalId": "SpiderDivingBell_WaterDodge_Augusta",
+      "name": "Spider Diving Bell Water Dodge",
+      "actionType": "movement_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug_BiteL_Augusta",
+      "name": "Bite L",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug_BiteR_Augusta",
+      "name": "Bite R",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug_Fart_Augusta",
+      "name": "Fart",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "gas"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug_Leap_Augusta",
+      "name": "Leap",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 125.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug_LeapDodge_Augusta",
+      "name": "Leap Dodge",
+      "actionType": "movement_action",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_green_shield_bug",
+      "technicalId": "GreenShieldBug_Charge_Augusta",
+      "name": "Charge",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 125.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_calico",
+      "technicalId": "KoiCharge_Augusta",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_calico",
+      "technicalId": "KoiEat_Augusta",
+      "name": "Koi Eat",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_calico",
+      "technicalId": "KoiThrash_Augusta",
+      "name": "Koi Thrash",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_dagon",
+      "technicalId": "KoiCharge_Augusta",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_dagon",
+      "technicalId": "KoiEat_Augusta",
+      "name": "Koi Eat",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_dagon",
+      "technicalId": "KoiThrash_Augusta",
+      "name": "Koi Thrash",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_oriole",
+      "technicalId": "KoiCharge_Augusta",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_oriole",
+      "technicalId": "KoiEat_Augusta",
+      "name": "Koi Eat",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_oriole",
+      "technicalId": "KoiThrash_Augusta",
+      "name": "Koi Thrash",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_sunny",
+      "technicalId": "KoiCharge_Augusta",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_sunny",
+      "technicalId": "KoiEat_Augusta",
+      "name": "Koi Eat",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_koi_sunny",
+      "technicalId": "KoiThrash_Augusta",
+      "name": "Koi Thrash",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 500.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ladybug",
+      "technicalId": "LadybugCharge",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ladybug",
+      "technicalId": "LadybugBuck",
+      "name": "Buck",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ladybug",
+      "technicalId": "LadybugMelee",
+      "name": "Melee",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ladybug",
+      "technicalId": "LadyBugBite_R",
+      "name": "Bite R",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ladybug",
+      "technicalId": "LadyBugBite_L",
+      "name": "Bite L",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ladybug",
+      "technicalId": "LadybugPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ladybug",
+      "technicalId": "LadybugRoar",
+      "name": "Roar",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ladybug",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_larva",
+      "technicalId": "LarvaMeleeLeft",
+      "name": "Melee Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_larva",
+      "technicalId": "LarvaLunge",
+      "name": "Lunge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_larva",
+      "technicalId": "LarvaDoubleBite",
+      "name": "Double Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_larva",
+      "technicalId": "LarvaTripleBite",
+      "name": "Triple Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_masked_fighter",
+      "technicalId": "SubjectV_Garden_2H_Combo_3Hits",
+      "name": "Combo 3 Hits",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "slashing",
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_masked_fighter",
+      "technicalId": "SubjectV_Garden_2H_Combo_4HitsSpin",
+      "name": "Combo 4 Hits Spin",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "slashing",
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_masked_fighter",
+      "technicalId": "SubjectV_Garden_2H_Combo_5Hits",
+      "name": "Combo 5 Hits",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 43.0,
+      "damageTypes": [
+        "slashing",
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_masked_fighter",
+      "technicalId": "SubjectV_Garden_2H_Power",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 110.0,
+      "damageTypes": [
+        "slashing",
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_masked_fighter",
+      "technicalId": "SubjectV_Garden_Leap",
+      "name": "Leap",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "slashing",
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_masked_fighter",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_masked_stranger",
+      "technicalId": "SubjectV_2H_Right",
+      "name": "Right Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_masked_stranger",
+      "technicalId": "SubjectV_2H_Combo_3Hits",
+      "name": "Combo 3 Hits",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_masked_stranger",
+      "technicalId": "SubjectV_2H_Power",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_masked_stranger",
+      "technicalId": "SubjectV_Leap",
+      "name": "Leap",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "slashing",
+        "spicy"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_masked_stranger",
+      "technicalId": "SubjectV_AOE_Transition",
+      "name": "Area Attack Transition",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "explosive"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_masked_stranger",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_mosquito",
+      "technicalId": "MosquitoBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 60.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_mosquito",
+      "technicalId": "MosquitoComboStab",
+      "name": "Combo Stab",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_mosquito",
+      "technicalId": "MosquitoDiveBomb",
+      "name": "Dive Bomb",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultCombo2",
+      "name": "Combo 2",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 28.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultCombo4",
+      "name": "Combo 4",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultPower",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 72.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultBurrowStrike",
+      "name": "Burrow Strike",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_northern_scorpion",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_northern_scorpion_jr",
+      "technicalId": "ScorpionNorthernJrCombo2",
+      "name": "Combo 2",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 28.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_northern_scorpion_jr",
+      "technicalId": "ScorpionNorthernJrCombo4",
+      "name": "Combo 4",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_northern_scorpion_jr",
+      "technicalId": "ScorpionNorthernJrPower",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_northern_scorpion_jr",
+      "technicalId": "ScorpionNorthernJrBurrowStrike",
+      "name": "Burrow Strike",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 60.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_northern_scorpling",
+      "technicalId": "ScorplingNorthernRight",
+      "name": "Right Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_northern_scorpling",
+      "technicalId": "ScorplingNorthernLeft",
+      "name": "Left Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_blue_butterfly",
+      "technicalId": "OGRE_BlueButterflyGust_Mint",
+      "name": "Gust Mint",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_blue_butterfly",
+      "technicalId": "BlueButterflyCharge",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_blue_butterfly",
+      "technicalId": "BlueButterflyTripleBite",
+      "name": "Triple Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 20.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_blue_butterfly",
+      "technicalId": "OGRE_BlueButterflyGust_Sour",
+      "name": "Gust Sour",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_blue_butterfly",
+      "technicalId": "OGRE_BlueButterflyGust_Spicy",
+      "name": "Gust Spicy",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_cricket",
+      "technicalId": "CricketAttackCombo3X",
+      "name": "Combo 3 X",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 88.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_cricket",
+      "technicalId": "CricketAttackPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 112.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_cricket",
+      "technicalId": "CricketAttackBackKick",
+      "name": "Back Kick",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 95.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_cricket",
+      "technicalId": "CricketAttackLeapOfFaith",
+      "name": "Leap Of Faith",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_cricket",
+      "technicalId": "CricketAttackSonicScreech",
+      "name": "Sonic Screech",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_cricket",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_cricket",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_green_shield_bug",
+      "technicalId": "GreenShieldBug_BiteL_Augusta",
+      "name": "Bite L",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_green_shield_bug",
+      "technicalId": "GreenShieldBug_BiteR_Augusta",
+      "name": "Bite R",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_green_shield_bug",
+      "technicalId": "GreenShieldBug_Fart_Augusta",
+      "name": "Fart",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "gas"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_green_shield_bug",
+      "technicalId": "GreenShieldBug_Leap_Augusta",
+      "name": "Leap",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 125.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_green_shield_bug",
+      "technicalId": "GreenShieldBug_LeapDodge_Augusta",
+      "name": "Leap Dodge",
+      "actionType": "movement_action",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_green_shield_bug",
+      "technicalId": "GreenShieldBug_Charge_Augusta",
+      "name": "Charge",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 125.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_ladybug",
+      "technicalId": "LadybugCharge",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_ladybug",
+      "technicalId": "LadybugBuck",
+      "name": "Buck",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_ladybug",
+      "technicalId": "LadybugMelee",
+      "name": "Melee",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_ladybug",
+      "technicalId": "LadyBugBite_R",
+      "name": "Bite R",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_ladybug",
+      "technicalId": "LadyBugBite_L",
+      "name": "Bite L",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_ladybug",
+      "technicalId": "LadybugPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_ladybug",
+      "technicalId": "LadybugRoar",
+      "name": "Roar",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_ladybug",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultCombo2",
+      "name": "Combo 2",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 28.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultCombo4",
+      "name": "Combo 4",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultPower",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 72.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultBurrowStrike",
+      "name": "Burrow Strike",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_northern_scorpion",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_northern_scorpion",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_pincher_earwig",
+      "technicalId": "EarwigCombo3X",
+      "name": "Combo 3 X",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_pincher_earwig",
+      "technicalId": "EarwigCombo5X",
+      "name": "Combo 5 X",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_pincher_earwig",
+      "technicalId": "EarwigPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_pincher_earwig",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_praying_mantis_nymph",
+      "technicalId": "PrayingMantisCleaveLeft",
+      "name": "Left Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_praying_mantis_nymph",
+      "technicalId": "PrayingMantisCleaveRight",
+      "name": "Right Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_praying_mantis_nymph",
+      "technicalId": "PrayingMantisPounce",
+      "name": "Praying Mantis Pounce",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_praying_mantis_nymph",
+      "technicalId": "PrayingMantisSlash",
+      "name": "Praying Mantis Slash",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_praying_mantis_nymph",
+      "technicalId": "PrayingMantisPowerattack",
+      "name": "Praying Mantis Powerattack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_praying_mantis_nymph",
+      "technicalId": "PrayingMantisAttackCombo",
+      "name": "Combo",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_praying_mantis_nymph",
+      "technicalId": "PrayingMantisStealthJumpAttack",
+      "name": "Praying Mantis Stealth Jump Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 80.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_praying_mantis_nymph",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "RustBeetleMeleeRight",
+      "name": "Melee Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "RustBeetleMeleeLeft",
+      "name": "Melee Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "OGRE_RustBeetleAOE_Mint",
+      "name": "Area Attack Mint",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "fresh"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "OGRE_RustBeetleAOE_Sour",
+      "name": "Area Attack Sour",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "OGRE_RustBeetleAOE_Spicy",
+      "name": "Area Attack Spicy",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "sizzle"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "OGRE_RustBeetleRanged_Mint",
+      "name": "Ranged Mint",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "fresh"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "OGRE_RustBeetleRanged_Sour",
+      "name": "Ranged Sour",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "OGRE_RustBeetleRanged_Spicy",
+      "name": "Ranged Spicy",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "sizzle"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "OGRE_RustBeetleSpray_Mint",
+      "name": "Spray Mint",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "fresh"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "OGRE_RustBeetleSpray_Sour",
+      "name": "Spray Sour",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "OGRE_RustBeetleSpray_Spicy",
+      "name": "Spray Spicy",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "sizzle"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_rust_beetle",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultCombo2",
+      "name": "Combo 2",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 105.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultCombo4",
+      "name": "Combo 4",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 88.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultPower",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 142.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultBurrowStrike",
+      "name": "Burrow Strike",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 165.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_striped_bark_scorpion",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultTailWhip",
+      "name": "Tail Whip",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 10.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_tiger_mosquito",
+      "technicalId": "MosquitoTigerBite_Augusta",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_tiger_mosquito",
+      "technicalId": "MosquitoTigerComboStab_Augusta",
+      "name": "Combo Stab",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_tiger_mosquito",
+      "technicalId": "MosquitoTigerDiveBomb_Augusta",
+      "name": "Dive Bomb",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_tiger_mosquito",
+      "technicalId": "MosquitoTigerDodge",
+      "name": "Mosquito Tiger Dodge",
+      "actionType": "movement_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_tiger_mosquito",
+      "technicalId": "MosquitoTiger_2Hit_SideCombo",
+      "name": "Combo",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter",
+      "technicalId": "ToeBiterAdultAOE",
+      "name": "Area Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 125.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter",
+      "technicalId": "ToeBiterAdultRange",
+      "name": "Toe Biter Adult Range",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter",
+      "technicalId": "ToeBiterAdultCombo5A",
+      "name": "Combo 5 A",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter",
+      "technicalId": "ToeBiterAdultPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 130.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanAOE",
+      "name": "Area Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 140.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanRange",
+      "name": "Toe Biter Leviathan Range",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanCombo5A",
+      "name": "Combo 5 A",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanCombo5B",
+      "name": "Combo 5 B",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 150.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter_leviathan",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanGas",
+      "name": "Gas",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "gas"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_wasp",
+      "technicalId": "WaspStingAugusta",
+      "name": "Sting",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_wasp",
+      "technicalId": "WaspStingChargedAugusta",
+      "name": "Sting Charged",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_wasp",
+      "technicalId": "WaspStingerShotAugusta",
+      "name": "Wasp Stinger Shot",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_wasp_drone",
+      "technicalId": "WaspDroneStingerShotAugusta",
+      "name": "Wasp Drone Stinger Shot",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_wasp_drone",
+      "technicalId": "WaspDroneHealAugusta",
+      "name": "Wasp Drone Heal",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_wasp_drone",
+      "technicalId": "WaspStingAugusta",
+      "name": "Sting",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_whipper_earwig",
+      "technicalId": "EarwigCombo3XRange",
+      "name": "Combo 3 XRange",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_whipper_earwig",
+      "technicalId": "EarwigCombo5XRange",
+      "name": "Combo 5 XRange",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_whipper_earwig",
+      "technicalId": "EarwigPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_whipper_earwig",
+      "technicalId": "EarwigTaiWhip",
+      "name": "Earwig Tai Whip",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_whipper_earwig",
+      "technicalId": "EarwigRangeAttack",
+      "name": "Earwig Range Attack",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_whipper_earwig",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_ogrr_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "name": "Spider Wolf",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_wolf_spider",
+      "technicalId": "SpiderWolfLeftBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_wolf_spider",
+      "technicalId": "SpiderWolfFlurry",
+      "name": "Spider Wolf Flurry",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_wolf_spider",
+      "technicalId": "SpiderWolfPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 80.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_wolf_spider",
+      "technicalId": "SpiderJumpAttack",
+      "name": "Spider Jump Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 95.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_ogrr_wolf_spider",
+      "technicalId": "SpiderWolfRiposteStance",
+      "name": "Spider Wolf Riposte Stance",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orb_weaver",
+      "technicalId": "SpiderAugusta",
+      "name": "Spider",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orb_weaver",
+      "technicalId": "SpiderAugustaLeftBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orb_weaver",
+      "technicalId": "SpiderAugustaTripleBite",
+      "name": "Triple Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orb_weaver",
+      "technicalId": "SpiderAugustaPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orb_weaver",
+      "technicalId": "SpiderAugustaWeb",
+      "name": "Spider Web",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orb_weaver",
+      "technicalId": "SpiderAugustaScriptedWebTarget",
+      "name": "Spider Scripted Web Target",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orb_weaver",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orb_weaver_jr",
+      "technicalId": "SpiderSmall",
+      "name": "Spider Small",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orb_weaver_jr",
+      "technicalId": "SpiderSmallLeftBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orb_weaver_jr",
+      "technicalId": "SpiderSmallTripleBite",
+      "name": "Triple Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orb_weaver_jr",
+      "technicalId": "SpiderSmallPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_bee",
+      "technicalId": "BeeSting",
+      "name": "Sting",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 60.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_bee",
+      "technicalId": "BeeStingCharged",
+      "name": "Sting Charged",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 80.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_bee",
+      "technicalId": "BeeBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_bee",
+      "technicalId": "BeePollenCloud",
+      "name": "Pollen Cloud",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaBiteLeft",
+      "name": "Bite Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaBiteRight",
+      "name": "Bite Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaMultistrike",
+      "name": "Multistrike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaSmash",
+      "name": "Smash",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 60.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_black_soldier_ant",
+      "technicalId": "AntBlackSoldierAugustaSourSpray",
+      "name": "Spray",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 80.0,
+      "damageTypes": [
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_black_soldier_ant",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_blue_butterfly",
+      "technicalId": "BlueButterflyGust",
+      "name": "Gust",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_blue_butterfly",
+      "technicalId": "BlueButterflyCharge",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_blue_butterfly",
+      "technicalId": "BlueButterflyTripleBite",
+      "name": "Triple Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 20.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_bombardier_beetle",
+      "technicalId": "BeetleMeleeLeft",
+      "name": "Melee Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_bombardier_beetle",
+      "technicalId": "BeetleMeleeRight",
+      "name": "Melee Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_bombardier_beetle",
+      "technicalId": "BeetleRanged",
+      "name": "Ranged",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "sizzle"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_bombardier_beetle",
+      "technicalId": "BeetleSpray",
+      "name": "Spray",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 20.0,
+      "damageTypes": [
+        "sizzle"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_bombardier_beetle",
+      "technicalId": "BeetleAOE",
+      "name": "Area Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_bombardier_beetle",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_broodmother",
+      "technicalId": "BroodmotherBiteLeft",
+      "name": "Bite Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_broodmother",
+      "technicalId": "BroodmotherBiteRight",
+      "name": "Bite Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_broodmother",
+      "technicalId": "BroodmotherCombo3",
+      "name": "Combo 3",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_broodmother",
+      "technicalId": "BroodmotherCombo5",
+      "name": "Combo 5",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_broodmother",
+      "technicalId": "BroodmotherLunge",
+      "name": "Lunge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_broodmother",
+      "technicalId": "BroodmotherPower",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_broodmother",
+      "technicalId": "SpiderBossLunge",
+      "name": "Spider Boss Lunge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_broodmother",
+      "technicalId": "SpiderBMTripleBite",
+      "name": "Spider Boss Triple Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 80.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach",
+      "technicalId": "CockroachBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach",
+      "technicalId": "CockroachBiteRight",
+      "name": "Bite Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach",
+      "technicalId": "CockroachBiteLeft",
+      "name": "Bite Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach",
+      "technicalId": "CockroachKarateKickLeft",
+      "name": "Karate Kick Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach",
+      "technicalId": "CockroachKarateKickRight",
+      "name": "Karate Kick Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach",
+      "technicalId": "CockroachCombo3",
+      "name": "Combo 3",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach_nymph",
+      "technicalId": "CockroachNymphBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 15.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach_nymph",
+      "technicalId": "CockroachNymphBiteLeft",
+      "name": "Bite Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 15.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach_nymph",
+      "technicalId": "CockroachNymphBiteRight",
+      "name": "Bite Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 15.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach_queen",
+      "technicalId": "CockroachQueenBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach_queen",
+      "technicalId": "CockroachQueenBiteRight",
+      "name": "Bite Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach_queen",
+      "technicalId": "CockroachQueenBiteLeft",
+      "name": "Bite Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach_queen",
+      "technicalId": "CockroachQueenKarateKickLeft",
+      "name": "Karate Kick Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach_queen",
+      "technicalId": "CockroachQueenKarateKickRight",
+      "name": "Karate Kick Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach_queen",
+      "technicalId": "CockroachQueenCombo3",
+      "name": "Combo 3",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach_queen",
+      "technicalId": "CockroachQueen_Slam",
+      "name": "Slam",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 60.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cockroach_queen",
+      "technicalId": "CockroachQueenSpray",
+      "name": "Spray",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "sizzle"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cricket",
+      "technicalId": "CricketAttackCombo3X",
+      "name": "Combo 3 X",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 88.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cricket",
+      "technicalId": "CricketAttackPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 112.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cricket",
+      "technicalId": "CricketAttackBackKick",
+      "name": "Back Kick",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 95.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cricket",
+      "technicalId": "CricketAttackLeapOfFaith",
+      "name": "Leap Of Faith",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cricket",
+      "technicalId": "CricketAttackSonicScreech",
+      "name": "Sonic Screech",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_cricket",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_green_shield_bug",
+      "technicalId": "GreenShieldBug_BiteL_Augusta",
+      "name": "Bite L",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_green_shield_bug",
+      "technicalId": "GreenShieldBug_BiteR_Augusta",
+      "name": "Bite R",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_green_shield_bug",
+      "technicalId": "GreenShieldBug_Fart_Augusta",
+      "name": "Fart",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "gas"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_green_shield_bug",
+      "technicalId": "GreenShieldBug_Leap_Augusta",
+      "name": "Leap",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 125.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_green_shield_bug",
+      "technicalId": "GreenShieldBug_LeapDodge_Augusta",
+      "name": "Leap Dodge",
+      "actionType": "movement_action",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_green_shield_bug",
+      "technicalId": "GreenShieldBug_Charge_Augusta",
+      "name": "Charge",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 125.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_ladybug",
+      "technicalId": "LadybugCharge",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_ladybug",
+      "technicalId": "LadybugBuck",
+      "name": "Buck",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_ladybug",
+      "technicalId": "LadybugMelee",
+      "name": "Melee",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_ladybug",
+      "technicalId": "LadyBugBite_R",
+      "name": "Bite R",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_ladybug",
+      "technicalId": "LadyBugBite_L",
+      "name": "Bite L",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_ladybug",
+      "technicalId": "LadybugPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_ladybug",
+      "technicalId": "LadybugRoar",
+      "name": "Roar",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_ladybug",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_larva",
+      "technicalId": "LarvaMeleeLeft",
+      "name": "Melee Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_larva",
+      "technicalId": "LarvaLunge",
+      "name": "Lunge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_larva",
+      "technicalId": "LarvaDoubleBite",
+      "name": "Double Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_larva",
+      "technicalId": "LarvaTripleBite",
+      "name": "Triple Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_mosquito",
+      "technicalId": "MosquitoBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 60.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_mosquito",
+      "technicalId": "MosquitoComboStab",
+      "name": "Combo Stab",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_mosquito",
+      "technicalId": "MosquitoDiveBomb",
+      "name": "Dive Bomb",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultCombo2",
+      "name": "Combo 2",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 28.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultCombo4",
+      "name": "Combo 4",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultPower",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 72.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_northern_scorpion",
+      "technicalId": "ScorpionNorthernAdultBurrowStrike",
+      "name": "Burrow Strike",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_northern_scorpion",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "ScorpionNorthernJrCombo2",
+      "name": "Combo 2",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 28.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "ScorpionNorthernJrCombo4",
+      "name": "Combo 4",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "ScorpionNorthernJrPower",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_northern_scorpion_jr",
+      "technicalId": "ScorpionNorthernJrBurrowStrike",
+      "name": "Burrow Strike",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 60.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingNorthernRight",
+      "name": "Right Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_northern_scorpling",
+      "technicalId": "ScorplingNorthernLeft",
+      "name": "Left Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_pincher_earwig",
+      "technicalId": "EarwigCombo3X",
+      "name": "Combo 3 X",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_pincher_earwig",
+      "technicalId": "EarwigCombo5X",
+      "name": "Combo 5 X",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_pincher_earwig",
+      "technicalId": "EarwigPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_pincher_earwig",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBugCharge",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 130.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBugBuck",
+      "name": "Buck",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 130.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBugMelee",
+      "name": "Melee",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBugBiteRight",
+      "name": "Bite Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBugBiteLeft",
+      "name": "Bite Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBugPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 110.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_potato_beetle",
+      "technicalId": "PotatoBugRoar",
+      "name": "Roar",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_potato_beetle",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_praying_mantis_nymph",
+      "technicalId": "PrayingMantisCleaveLeft",
+      "name": "Left Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_praying_mantis_nymph",
+      "technicalId": "PrayingMantisCleaveRight",
+      "name": "Right Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_praying_mantis_nymph",
+      "technicalId": "PrayingMantisPounce",
+      "name": "Praying Mantis Pounce",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_praying_mantis_nymph",
+      "technicalId": "PrayingMantisSlash",
+      "name": "Praying Mantis Slash",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_praying_mantis_nymph",
+      "technicalId": "PrayingMantisPowerattack",
+      "name": "Praying Mantis Powerattack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_praying_mantis_nymph",
+      "technicalId": "PrayingMantisAttackCombo",
+      "name": "Combo",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_praying_mantis_nymph",
+      "technicalId": "PrayingMantisStealthJumpAttack",
+      "name": "Praying Mantis Stealth Jump Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 80.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_praying_mantis_nymph",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_red_soldier_ant",
+      "technicalId": "AntRedSoldierAugustaLeft",
+      "name": "Left Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_red_soldier_ant",
+      "technicalId": "AntRedSoldierAugustaRight",
+      "name": "Right Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_red_soldier_ant",
+      "technicalId": "AntRedSoldierAugustaMultistrike",
+      "name": "Multistrike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_red_soldier_ant",
+      "technicalId": "AntRedSoldierAugustaPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_red_soldier_ant",
+      "technicalId": "AntRedSoldierAugustaSmash",
+      "name": "Smash",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_red_soldier_ant",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleMeleeRight",
+      "name": "Melee Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleMeleeLeft",
+      "name": "Melee Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleRanged",
+      "name": "Ranged",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleSpray",
+      "name": "Spray",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_rust_beetle",
+      "technicalId": "RustBeetleAOE",
+      "name": "Area Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_rust_beetle",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_spiderling",
+      "technicalId": "Spiderling",
+      "name": "Spiderling",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_spiderling",
+      "technicalId": "SpiderlingRight",
+      "name": "Right Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_stinkbug",
+      "technicalId": "StinkBugBite_L",
+      "name": "Bite L",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_stinkbug",
+      "technicalId": "StinkBugBite_R",
+      "name": "Bite R",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_stinkbug",
+      "technicalId": "StinkBugFart",
+      "name": "Fart",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_stinkbug",
+      "technicalId": "StinkBugLeap",
+      "name": "Leap",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "smashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultCombo2",
+      "name": "Combo 2",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 105.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultCombo4",
+      "name": "Combo 4",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 88.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultPower",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 142.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultBurrowStrike",
+      "name": "Burrow Strike",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 165.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultTailWhip",
+      "name": "Tail Whip",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 10.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion",
+      "technicalId": "ORC_LaserAttack",
+      "name": "Laser Attack",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 5.0,
+      "damageTypes": [
+        "shock"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion_jr",
+      "technicalId": "ScorpionStripedBarkJrCombo2",
+      "name": "Combo 2",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion_jr",
+      "technicalId": "ScorpionStripedBarkJrCombo4",
+      "name": "Combo 4",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 68.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion_jr",
+      "technicalId": "ScorpionStripedBarkJrPower",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 122.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion_jr",
+      "technicalId": "ScorpionStripedBarkJrBurrowStrike",
+      "name": "Burrow Strike",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 145.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpion_jr",
+      "technicalId": "ScorpionStripedBarkJrTailWhip",
+      "name": "Tail Whip",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 10.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpling",
+      "technicalId": "ScorplingStripedBarkMeleeLeft",
+      "name": "Melee Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_striped_bark_scorpling",
+      "technicalId": "ScorplingStripedBarkMeleeRight",
+      "name": "Melee Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_tiger_mosquito",
+      "technicalId": "MosquitoTigerBite_Augusta",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_tiger_mosquito",
+      "technicalId": "MosquitoTigerComboStab_Augusta",
+      "name": "Combo Stab",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_tiger_mosquito",
+      "technicalId": "MosquitoTigerDiveBomb_Augusta",
+      "name": "Dive Bomb",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_tiger_mosquito",
+      "technicalId": "MosquitoTigerDodge",
+      "name": "Mosquito Tiger Dodge",
+      "actionType": "movement_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_tiger_mosquito",
+      "technicalId": "MosquitoTiger_2Hit_SideCombo",
+      "name": "Combo",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter",
+      "technicalId": "ToeBiterAdultAOE",
+      "name": "Area Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 125.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter",
+      "technicalId": "ToeBiterAdultRange",
+      "name": "Toe Biter Adult Range",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter",
+      "technicalId": "ToeBiterAdultCombo5A",
+      "name": "Combo 5 A",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter",
+      "technicalId": "ToeBiterAdultPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 130.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanAOE",
+      "name": "Area Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 140.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanRange",
+      "name": "Toe Biter Leviathan Range",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanCombo5A",
+      "name": "Combo 5 A",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanCombo5B",
+      "name": "Combo 5 B",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 150.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter_leviathan",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanGas",
+      "name": "Gas",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "gas"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter_leviathan",
+      "technicalId": "ORC_LaserAttack_Long",
+      "name": "Laser Attack Long",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 5.0,
+      "damageTypes": [
+        "shock"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter_nymph",
+      "technicalId": "ToeBiterNymphAOE",
+      "name": "Area Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter_nymph",
+      "technicalId": "ToeBiterNymphCombo3",
+      "name": "Combo 3",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter_nymph",
+      "technicalId": "ToeBiterNymphPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 110.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_toe_biter_nymph",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_wasp",
+      "technicalId": "WaspStingAugusta",
+      "name": "Sting",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_wasp",
+      "technicalId": "WaspStingChargedAugusta",
+      "name": "Sting Charged",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_wasp",
+      "technicalId": "WaspStingerShotAugusta",
+      "name": "Wasp Stinger Shot",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_wasp_drone",
+      "technicalId": "WaspDroneStingerShotAugusta",
+      "name": "Wasp Drone Stinger Shot",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_wasp_drone",
+      "technicalId": "WaspDroneHealAugusta",
+      "name": "Wasp Drone Heal",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_wasp_drone",
+      "technicalId": "WaspStingAugusta",
+      "name": "Sting",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_weaver",
+      "technicalId": "SpiderAugusta",
+      "name": "Spider",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_weaver",
+      "technicalId": "SpiderAugustaLeftBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_weaver",
+      "technicalId": "SpiderAugustaTripleBite",
+      "name": "Triple Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_weaver",
+      "technicalId": "SpiderAugustaPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_weaver",
+      "technicalId": "SpiderAugustaWeb",
+      "name": "Spider Web",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_weaver",
+      "technicalId": "SpiderAugustaScriptedWebTarget",
+      "name": "Spider Scripted Web Target",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_weaver",
+      "technicalId": "OrbWeaverSwarmRoarORC",
+      "name": "Roar",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderSmall",
+      "name": "Spider Small",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderSmallLeftBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 35.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderSmallTripleBite",
+      "name": "Triple Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_weaver_jr",
+      "technicalId": "SpiderSmallPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_whipper_earwig",
+      "technicalId": "EarwigCombo3XRange",
+      "name": "Combo 3 XRange",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_whipper_earwig",
+      "technicalId": "EarwigCombo5XRange",
+      "name": "Combo 5 XRange",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_whipper_earwig",
+      "technicalId": "EarwigPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_whipper_earwig",
+      "technicalId": "EarwigTaiWhip",
+      "name": "Earwig Tai Whip",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_whipper_earwig",
+      "technicalId": "EarwigRangeAttack",
+      "name": "Earwig Range Attack",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_whipper_earwig",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_orc_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "name": "Spider Wolf",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_wolf_spider",
+      "technicalId": "SpiderWolfLeftBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_wolf_spider",
+      "technicalId": "SpiderWolfFlurry",
+      "name": "Spider Wolf Flurry",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_wolf_spider",
+      "technicalId": "SpiderWolfPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 80.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_wolf_spider",
+      "technicalId": "SpiderJumpAttack",
+      "name": "Spider Jump Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 95.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_orc_wolf_spider",
+      "technicalId": "SpiderWolfRiposteStance",
+      "name": "Spider Wolf Riposte Stance",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_papa_toe_biter",
+      "technicalId": "ToeBiterLeviathanEggAOE",
+      "name": "Area Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 125.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_papa_toe_biter",
+      "technicalId": "ToeBiterLeviathanEggRange",
+      "name": "Toe Biter Leviathan Egg Range",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_papa_toe_biter",
+      "technicalId": "ToeBiterLeviathanEggCombo5A",
+      "name": "Combo 5 A",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_papa_toe_biter",
+      "technicalId": "ToeBiterLeviathanEggCombo5B",
+      "name": "Combo 5 B",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_papa_toe_biter",
+      "technicalId": "ToeBiterLeviathanEggPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 150.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_papa_toe_biter",
+      "technicalId": "ToeBiterLeviathanSpawnNymphs",
+      "name": "Toe Biter Leviathan Spawn Nymphs",
+      "actionType": "summon_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_papa_toe_biter",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_pincher_earwig",
+      "technicalId": "EarwigCombo3X",
+      "name": "Combo 3 X",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_pincher_earwig",
+      "technicalId": "EarwigCombo5X",
+      "name": "Combo 5 X",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_pincher_earwig",
+      "technicalId": "EarwigPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_pincher_earwig",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_5Projectile",
+      "name": "Pond Jockey Homing Projectile 5 Projectile",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_5Projectile_Burst",
+      "name": "Pond Jockey Homing Projectile 5 Projectile Burst",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_3Projectile",
+      "name": "Pond Jockey Homing Projectile 3 Projectile",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_3Projectile_Burst",
+      "name": "Pond Jockey Homing Projectile 3 Projectile Burst",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_1Projectile",
+      "name": "Pond Jockey Homing Projectile 1 Projectile",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_pond_jockey",
+      "technicalId": "PondJockey_HomingProjectile_1Projectile_Burst",
+      "name": "Pond Jockey Homing Projectile 1 Projectile Burst",
+      "actionType": "ranged",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_pond_jockey",
+      "technicalId": "PondJockey_WaterDodge",
+      "name": "Pond Jockey Water Dodge",
+      "actionType": "movement_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_pond_jockey",
+      "technicalId": "PondJockey_Melee",
+      "name": "Melee",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_pond_jockey",
+      "technicalId": "PondJockey_Melee_W_Swarm",
+      "name": "Melee W Swarm",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_potato_beetle",
+      "technicalId": "PotatoBugCharge",
+      "name": "Charge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 130.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_potato_beetle",
+      "technicalId": "PotatoBugBuck",
+      "name": "Buck",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 130.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_potato_beetle",
+      "technicalId": "PotatoBugMelee",
+      "name": "Melee",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_potato_beetle",
+      "technicalId": "PotatoBugBiteRight",
+      "name": "Bite Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_potato_beetle",
+      "technicalId": "PotatoBugBiteLeft",
+      "name": "Bite Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_potato_beetle",
+      "technicalId": "PotatoBugPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 110.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_potato_beetle",
+      "technicalId": "PotatoBugRoar",
+      "name": "Roar",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_potato_beetle",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_praying_mantis_nymph",
+      "technicalId": "PrayingMantisCleaveLeft",
+      "name": "Left Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_praying_mantis_nymph",
+      "technicalId": "PrayingMantisCleaveRight",
+      "name": "Right Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_praying_mantis_nymph",
+      "technicalId": "PrayingMantisPounce",
+      "name": "Praying Mantis Pounce",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_praying_mantis_nymph",
+      "technicalId": "PrayingMantisSlash",
+      "name": "Praying Mantis Slash",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_praying_mantis_nymph",
+      "technicalId": "PrayingMantisPowerattack",
+      "name": "Praying Mantis Powerattack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": null,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_praying_mantis_nymph",
+      "technicalId": "PrayingMantisAttackCombo",
+      "name": "Combo",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_praying_mantis_nymph",
+      "technicalId": "PrayingMantisStealthJumpAttack",
+      "name": "Praying Mantis Stealth Jump Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 80.0,
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_praying_mantis_nymph",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldierAugustaLeft",
+      "name": "Left Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldierAugustaRight",
+      "name": "Right Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldierAugustaMultistrike",
+      "name": "Multistrike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldierAugustaPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_red_soldier_ant",
+      "technicalId": "AntRedSoldierAugustaSmash",
+      "name": "Smash",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_red_soldier_ant",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_red_worker_ant",
+      "technicalId": "AntLunge",
+      "name": "Lunge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_red_worker_ant",
+      "technicalId": "AntWorker",
+      "name": "Ant Worker",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 18.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_rust_beetle",
+      "technicalId": "RustBeetleMeleeRight",
+      "name": "Melee Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_rust_beetle",
+      "technicalId": "RustBeetleMeleeLeft",
+      "name": "Melee Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_rust_beetle",
+      "technicalId": "RustBeetleRanged",
+      "name": "Ranged",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_rust_beetle",
+      "technicalId": "RustBeetleSpray",
+      "name": "Spray",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_rust_beetle",
+      "technicalId": "RustBeetleAOE",
+      "name": "Area Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 45.0,
+      "damageTypes": [
+        "sour"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_rust_beetle",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_sauc_r",
+      "technicalId": "ArcR_Ranged_Augusta",
+      "name": "Ranged",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 60.0,
+      "damageTypes": [
+        "sizzle"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_sauc_r",
+      "technicalId": "TayzT_Pincher_Augusta",
+      "name": "Tayz T Pincher",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "smashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_spiderling",
+      "technicalId": "Spiderling",
+      "name": "Spiderling",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_spiderling",
+      "technicalId": "SpiderlingRight",
+      "name": "Right Strike",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 25.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_spiny_water_flea",
+      "technicalId": "WaterFleaSpiny_Bite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 30.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_stinkbug",
+      "technicalId": "StinkBugBite_L",
+      "name": "Bite L",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_stinkbug",
+      "technicalId": "StinkBugBite_R",
+      "name": "Bite R",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_stinkbug",
+      "technicalId": "StinkBugFart",
+      "name": "Fart",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_stinkbug",
+      "technicalId": "StinkBugLeap",
+      "name": "Leap",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "smashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultCombo2",
+      "name": "Combo 2",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 105.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultCombo4",
+      "name": "Combo 4",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 88.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultPower",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 142.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultBurrowStrike",
+      "name": "Burrow Strike",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 165.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion",
+      "technicalId": "ScorpionStripedBarkAdultTailWhip",
+      "name": "Tail Whip",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 10.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "ScorpionStripedBarkJrCombo2",
+      "name": "Combo 2",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "ScorpionStripedBarkJrCombo4",
+      "name": "Combo 4",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 68.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "ScorpionStripedBarkJrPower",
+      "name": "Power",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 122.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "ScorpionStripedBarkJrBurrowStrike",
+      "name": "Burrow Strike",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 145.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpion_jr",
+      "technicalId": "ScorpionStripedBarkJrTailWhip",
+      "name": "Tail Whip",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 10.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpling",
+      "technicalId": "ScorplingStripedBarkMeleeLeft",
+      "name": "Melee Left",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_striped_bark_scorpling",
+      "technicalId": "ScorplingStripedBarkMeleeRight",
+      "name": "Melee Right",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_tick",
+      "technicalId": "MiteTickLunge_Augusta",
+      "name": "Lunge",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_tick",
+      "technicalId": "MiteTickInfectedBite_Augusta",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTigerBite_Augusta",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTigerComboStab_Augusta",
+      "name": "Combo Stab",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTigerDiveBomb_Augusta",
+      "name": "Dive Bomb",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 120.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTigerDodge",
+      "name": "Mosquito Tiger Dodge",
+      "actionType": "movement_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_tiger_mosquito",
+      "technicalId": "MosquitoTiger_2Hit_SideCombo",
+      "name": "Combo",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdultAOE",
+      "name": "Area Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 125.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdultRange",
+      "name": "Toe Biter Adult Range",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdultCombo5A",
+      "name": "Combo 5 A",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 75.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter",
+      "technicalId": "ToeBiterAdultPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 130.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanAOE",
+      "name": "Area Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 140.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanRange",
+      "name": "Toe Biter Leviathan Range",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 100.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanCombo5A",
+      "name": "Combo 5 A",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanCombo5B",
+      "name": "Combo 5 B",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 85.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 150.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter_leviathan",
+      "technicalId": "BlockOffensive",
+      "name": "Block Offensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_toe_biter_leviathan",
+      "technicalId": "ToeBiterLeviathanGas",
+      "name": "Gas",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "gas"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymphAOE",
+      "name": "Area Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymphCombo3",
+      "name": "Combo 3",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "slashing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter_nymph",
+      "technicalId": "ToeBiterNymphPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 110.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_toe_biter_nymph",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_wasp",
+      "technicalId": "WaspStingAugusta",
+      "name": "Sting",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_wasp",
+      "technicalId": "WaspStingChargedAugusta",
+      "name": "Sting Charged",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_wasp",
+      "technicalId": "WaspStingerShotAugusta",
+      "name": "Wasp Stinger Shot",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_wasp_drone",
+      "technicalId": "WaspDroneStingerShotAugusta",
+      "name": "Wasp Drone Stinger Shot",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_wasp_drone",
+      "technicalId": "WaspDroneHealAugusta",
+      "name": "Wasp Drone Heal",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_wasp_drone",
+      "technicalId": "WaspStingAugusta",
+      "name": "Sting",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 40.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_water_boatman",
+      "technicalId": "Waterboatman_Flee",
+      "name": "Waterboatman Flee",
+      "actionType": "movement_action",
+      "blockability": "unknown",
+      "damage": 20.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_water_flea",
+      "technicalId": "WaterFlea_Bite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 20.0,
+      "damageTypes": [
+        "stabbing"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_whipper_earwig",
+      "technicalId": "EarwigCombo3XRange",
+      "name": "Combo 3 XRange",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_whipper_earwig",
+      "technicalId": "EarwigCombo5XRange",
+      "name": "Combo 5 XRange",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_whipper_earwig",
+      "technicalId": "EarwigPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 90.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_whipper_earwig",
+      "technicalId": "EarwigTaiWhip",
+      "name": "Earwig Tai Whip",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 55.0,
+      "damageTypes": [
+        "chopping"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_whipper_earwig",
+      "technicalId": "EarwigRangeAttack",
+      "name": "Earwig Range Attack",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 70.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_whipper_earwig",
+      "technicalId": "BlockDefensive",
+      "name": "Block Defensive",
+      "actionType": "defensive_action",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": false
+    },
+    {
+      "publicId": "g2_wolf_spider",
+      "technicalId": "SpiderWolf",
+      "name": "Spider Wolf",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_wolf_spider",
+      "technicalId": "SpiderWolfLeftBite",
+      "name": "Bite",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 65.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_wolf_spider",
+      "technicalId": "SpiderWolfFlurry",
+      "name": "Spider Wolf Flurry",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 50.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_wolf_spider",
+      "technicalId": "SpiderWolfPowerAttack",
+      "name": "Power Attack",
+      "actionType": "melee",
+      "blockability": "unknown",
+      "damage": 80.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_wolf_spider",
+      "technicalId": "SpiderJumpAttack",
+      "name": "Spider Jump Attack",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 95.0,
+      "damageTypes": [
+        "general"
+      ],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_wolf_spider",
+      "technicalId": "SpiderWolfRiposteStance",
+      "name": "Spider Wolf Riposte Stance",
+      "actionType": "projectile",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    },
+    {
+      "publicId": "g2_woolly_aphid",
+      "technicalId": "WoolyAphidChill",
+      "name": "Wooly Aphid Chill",
+      "actionType": "aoe",
+      "blockability": "unknown",
+      "damage": 0.0,
+      "damageTypes": [],
+      "offensiveFieldsVisible": true
+    }
+  ],
+  "summary": {
+    "total": 531,
+    "byType": {
+      "ranged": 14,
+      "movement_action": 10,
+      "melee": 339,
+      "aoe": 105,
+      "defensive_action": 48,
+      "projectile": 14,
+      "summon_action": 1
+    },
+    "nonOffensiveWithOffensivePresentation": 0
+  }
+}

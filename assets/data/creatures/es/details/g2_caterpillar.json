@@ -1,1 +1,1101 @@
-{"id":"g2_caterpillar","speciesKey":"caterpillar","collectionGroup":"harmless","name":"Oruga","game":"g2","tier":2,"danger":"baja","isBoss":false,"order":215,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Caterpillar.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Caterpillar_G.png","photo":"assets/g2/creatures/photos/Caterpillar.webp","weaknesses":[],"resistances":[],"temperament":"peaceful","health":{"value":300,"rating":1},"description":"Una larva de mariposa lista para una transformación espectacular. Al morir, puede soltar piel de oruga, pegote y carne.","behavior":"Se mueve despacio, come y cruza vegetación baja sin demasiado apuro. Su presencia cambia poco el ritmo del área, salvo cuando algo más agresivo decide convertirla en presa.","interactionWithPlayer":"No suele iniciar combate por sí misma. Si decides atacarla, el encuentro gira más en torno a paciencia y colocación que a reflejos rápidos.","interactionWithCreatures":"Su lentitud la vuelve una presa potencial para varios depredadores. Más que dominar la zona, suele formar parte del fondo vivo del parque hasta que algo decide morderla.","strategy":"Aprovecha su ritmo lento y no sobrecomprometas tus ataques. No es una pelea complicada, pero sí una de esas en las que bajar la guardia por aburrimiento te hace perder tiempo gratis.","environments":["Batalla con Axl","Cancha de croquet","Zona de entrada","Alrededores del carrito de helados","Zona de la mesa de pícnic","Colina de pinos","Parche de calabazas","Zona frontal del snack bar","Huerto vegetal"],"loot":[{"section":"loot","item":"Caterpillar Goop","minCount":1,"maxCount":5},{"section":"loot","item":"Raw Caterpillar Meat","minCount":1,"maxCount":2},{"section":"loot","item":"Spine Nub","minCount":1,"maxCount":4},{"section":"rare","item":"Caterpillar Goop","minCount":0,"maxCount":3},{"section":"rare","item":"Spine Nub","minCount":0,"maxCount":1}],"combatStats":{"health":300},"lootTransformations":[{"id":"spicy_cooked_meat","effects":["spicy","burning"],"description":"Si la criatura se elimina con daño picante o un efecto de calor verificado, la carne compatible puede convertirse en carne cocinada."},{"id":"salty_jerky","effects":["salty"],"description":"Si la criatura se elimina con daño salado, la carne compatible puede convertirse en carne seca."}],"groupId":null,"cardTier":2,"technicalId":"Caterpillar","bestiaryId":"Caterpillar","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_caterpillar",
+  "speciesKey": "caterpillar",
+  "collectionGroup": "harmless",
+  "name": "Oruga",
+  "game": "g2",
+  "tier": 2,
+  "danger": "baja",
+  "isBoss": false,
+  "order": 215,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Caterpillar.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Caterpillar_G.png",
+  "photo": "assets/g2/creatures/photos/Caterpillar.webp",
+  "weaknesses": [],
+  "resistances": [],
+  "temperament": "peaceful",
+  "health": {
+    "rating": 1,
+    "value": 300
+  },
+  "description": "Una larva de mariposa lista para una transformación espectacular. Al morir, puede soltar piel de oruga, pegote y carne.",
+  "behavior": "Se mueve despacio, come y cruza vegetación baja sin demasiado apuro. Su presencia cambia poco el ritmo del área, salvo cuando algo más agresivo decide convertirla en presa.",
+  "interactionWithPlayer": "No suele iniciar combate por sí misma. Si decides atacarla, el encuentro gira más en torno a paciencia y colocación que a reflejos rápidos.",
+  "interactionWithCreatures": "Su lentitud la vuelve una presa potencial para varios depredadores. Más que dominar la zona, suele formar parte del fondo vivo del parque hasta que algo decide morderla.",
+  "strategy": "Aprovecha su ritmo lento y no sobrecomprometas tus ataques. No es una pelea complicada, pero sí una de esas en las que bajar la guardia por aburrimiento te hace perder tiempo gratis.",
+  "environments": [
+    "Batalla con Axl",
+    "Cancha de croquet",
+    "Zona de entrada",
+    "Alrededores del carrito de helados",
+    "Zona de la mesa de pícnic",
+    "Colina de pinos",
+    "Parche de calabazas",
+    "Zona frontal del snack bar",
+    "Huerto vegetal"
+  ],
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Caterpillar Goop",
+      "minCount": 1,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "Caterpillar Hide",
+      "minCount": 1,
+      "maxCount": 5
+    },
+    {
+      "section": "loot",
+      "item": "Caterpillar Meat",
+      "minCount": 1,
+      "maxCount": 2
+    }
+  ],
+  "combatStats": {
+    "health": 300,
+    "stunThreshold": 0,
+    "stunCooldownSeconds": 0
+  },
+  "lootTransformations": [
+    {
+      "id": "spicy_cooked_meat",
+      "effects": [
+        "spicy",
+        "burning"
+      ],
+      "description": "Si la criatura se elimina con daño picante o un efecto de calor verificado, la carne compatible puede convertirse en carne cocinada."
+    },
+    {
+      "id": "salty_jerky",
+      "effects": [
+        "salty"
+      ],
+      "description": "Si la criatura se elimina con daño salado, la carne compatible puede convertirse en carne seca."
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "Caterpillar",
+  "bestiaryId": "Caterpillar",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_9410ba7f85a4f434",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -156694.84,
+        "y": -47729.152,
+        "z": 2494.0515
+      },
+      "u": 0.39259761428153356,
+      "v": 0.07966670188042833,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_63b9105c85a3e014",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -119239.4,
+        "y": -40518.65,
+        "z": 2713.7815
+      },
+      "u": 0.5329047936786655,
+      "v": 0.11079729488152457,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bdf91d9fb42b0283",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -221244.69,
+        "y": 11541.069,
+        "z": 328.99994
+      },
+      "u": 0.15079542522680714,
+      "v": 0.3355597211231975,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_334f749507db3f41",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -90678.61,
+        "y": -50976.293,
+        "z": -70.47533
+      },
+      "u": 0.639892827626573,
+      "v": 0.0656475080866852,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0413d8858d0607fb",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -88524.62,
+        "y": -44785.3,
+        "z": -1169.445
+      },
+      "u": 0.6479616224758561,
+      "v": 0.09237647693734719,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_78be807995c9c673",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -88062.195,
+        "y": -28159.15,
+        "z": -1172.9548
+      },
+      "u": 0.6496938554287386,
+      "v": 0.16415815161480735,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_67061dbd5ff00032",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -85084.6,
+        "y": -14295.0205,
+        "z": -1348.5508
+      },
+      "u": 0.6608478548434299,
+      "v": 0.22401508983894086,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dc14cac7d45a4df6",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -249514.0,
+        "y": 155849.0,
+        "z": 8346.387
+      },
+      "u": 0.044899268364062044,
+      "v": 0.9585942153638587,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_28710ad05b272120",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -254614.0,
+        "y": 154644.0,
+        "z": 9360.0
+      },
+      "u": 0.025794790752121745,
+      "v": 0.9533917530989122,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_99eb98945e429505",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -248550.0,
+        "y": 151320.0,
+        "z": 10239.0
+      },
+      "u": 0.048510389230318994,
+      "v": 0.939040728560587,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d751cc9cd97896c6",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -253511.0,
+        "y": 149537.0,
+        "z": 10239.0
+      },
+      "u": 0.029926602282704124,
+      "v": 0.9313428113668943,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a97e1e4c9fdf5754",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -124744.75,
+        "y": 80991.7,
+        "z": -2621.8826
+      },
+      "u": 0.5122818846941761,
+      "v": 0.6354056024959946,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_98f44cf2cf8a7158",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -121587.36,
+        "y": 75755.48,
+        "z": -2565.8413
+      },
+      "u": 0.5241093918642084,
+      "v": 0.6127987668437472,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0d6455c3fc09f12c",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -116527.11,
+        "y": 127394.96,
+        "z": -1175.1807
+      },
+      "u": 0.5430649669300557,
+      "v": 0.8357468548781516,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_404d48d802de3b16",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -169981.8,
+        "y": 123839.234,
+        "z": -177.76797
+      },
+      "u": 0.34282498097746567,
+      "v": 0.8203953774179948,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e48b574ada688de",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -172220.97,
+        "y": 109632.15,
+        "z": 772.748
+      },
+      "u": 0.3344371038923032,
+      "v": 0.7590577687832026,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_684f2afd1503b10a",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -170642.44,
+        "y": 97195.99,
+        "z": 500.23724
+      },
+      "u": 0.34035023939127884,
+      "v": 0.7053659404671557,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_2607ad8f015e05e1",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -104641.836,
+        "y": 133485.98,
+        "z": 1826.1677
+      },
+      "u": 0.5875869181153057,
+      "v": 0.8620442006914579,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_098f0113d93277f6",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -92838.23,
+        "y": 133342.77,
+        "z": 3656.1125
+      },
+      "u": 0.6318029429323969,
+      "v": 0.8614259064002024,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f4b0490f0a2b1484",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -78056.664,
+        "y": 136310.39,
+        "z": 1375.8026
+      },
+      "u": 0.68717433444542,
+      "v": 0.8742382973269248,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5b8f6f630e378d1a",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -71800.21,
+        "y": 133601.62,
+        "z": -1386.5116
+      },
+      "u": 0.7106108609891717,
+      "v": 0.86254346437305,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d6b18ecde4ef7a53",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -173804.2,
+        "y": 103234.43,
+        "z": 1776.6343
+      },
+      "u": 0.32850636230611646,
+      "v": 0.7314362775950753,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b389d114fa7c8d2d",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -81845.305,
+        "y": 69308.87,
+        "z": 1672.3893
+      },
+      "u": 0.672982176177934,
+      "v": 0.5849661981617337,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_89febf055dc685d2",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -115875.42,
+        "y": 54587.387,
+        "z": 972.8295
+      },
+      "u": 0.5455061820310214,
+      "v": 0.5214077253056749,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_0d928b6cf1da0edc",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -153536.34,
+        "y": 136041.6,
+        "z": -656.61176
+      },
+      "u": 0.40442927948492835,
+      "v": 0.8730778244371362,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7e89aab143f9e6eb",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -203237.56,
+        "y": 157023.98,
+        "z": 6704.488
+      },
+      "u": 0.21824970207784608,
+      "v": 0.9636670693987688,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_31fd8318a915e9ea",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -198321.05,
+        "y": 157315.5,
+        "z": 12034.56
+      },
+      "u": 0.2366668305531168,
+      "v": 0.9649256767012395,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_fab86283d76344a6",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -201165.6,
+        "y": 156253.05,
+        "z": 14733.493
+      },
+      "u": 0.22601121451565698,
+      "v": 0.960338659246142,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_10869f1c7152095b",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -219866.94,
+        "y": 147076.06,
+        "z": 7922.367
+      },
+      "u": 0.15595644366403277,
+      "v": 0.9207179586811705,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7d4852d99fdbe540",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -233582.84,
+        "y": 146487.56,
+        "z": 7471.8213
+      },
+      "u": 0.10457701141352065,
+      "v": 0.9181771710936841,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a7fbbb157efdc0ec",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -247463.73,
+        "y": 122651.5,
+        "z": 8159.8887
+      },
+      "u": 0.05257953058238216,
+      "v": 0.8152674593136015,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_dbbdd33af6d67111",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -257189.61,
+        "y": 119186.75,
+        "z": 14158.467
+      },
+      "u": 0.016146617500731687,
+      "v": 0.800308761278354,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_549690ea2039d774",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -257116.88,
+        "y": 113140.71,
+        "z": 9475.878
+      },
+      "u": 0.016419062335381897,
+      "v": 0.7742056119402986,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4e39a8eb56c2da41",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -171805.88,
+        "y": 87857.42,
+        "z": 95.079956
+      },
+      "u": 0.335992021071115,
+      "v": 0.6650476350451133,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d07b9344e32652ba",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -208984.47,
+        "y": 82729.81,
+        "z": 1839.1552
+      },
+      "u": 0.19672191513023118,
+      "v": 0.6429097117800826,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b1f4687c743298de",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -203410.3,
+        "y": -45339.496,
+        "z": 2535.0388
+      },
+      "u": 0.2176026221832017,
+      "v": 0.0899837933046631,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1e52a87cd9cfcce4",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -200937.88,
+        "y": -48315.977,
+        "z": 2406.2688
+      },
+      "u": 0.22686424817091014,
+      "v": 0.07713314593136011,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b0c779236e7fe6d4",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -211469.81,
+        "y": -48035.94,
+        "z": 2453.8186
+      },
+      "u": 0.18741189113257242,
+      "v": 0.07834217657475331,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_ba810feae170bc6f",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -55442.094,
+        "y": 75916.6,
+        "z": 803.7847
+      },
+      "u": 0.7718879709686861,
+      "v": 0.6134943856986255,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_af9080a3142a167e",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -223059.34,
+        "y": -26977.56,
+        "z": 4831.061
+      },
+      "u": 0.14399778987415862,
+      "v": 0.16925954363774354,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_00c2cc55f68fdde3",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -225197.56,
+        "y": -23616.002,
+        "z": 5754.921
+      },
+      "u": 0.13598806906643254,
+      "v": 0.18377272093768443,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_55f4d00f55f3f20f",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -212441.81,
+        "y": -35134.133,
+        "z": 3012.4878
+      },
+      "u": 0.18377080245829677,
+      "v": 0.13404438741883798,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7668758cd8b6b4fc",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -210410.56,
+        "y": -22941.555,
+        "z": 5948.875
+      },
+      "u": 0.1913798162130524,
+      "v": 0.18668457576524167,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_71ab25b685d0f445",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -208275.67,
+        "y": -24496.752,
+        "z": 3770.008
+      },
+      "u": 0.1993770629206906,
+      "v": 0.17997017434859597,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4b07d37029ed9914",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -197796.19,
+        "y": -52406.16,
+        "z": 4242.5513
+      },
+      "u": 0.2386329435177056,
+      "v": 0.05947420591955476,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_bf0f5d1d71fdc52d",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -222549.33,
+        "y": -25659.342,
+        "z": 6743.8877
+      },
+      "u": 0.14590827509511273,
+      "v": 0.1749508128509992,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c9892687746513c8",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -211222.81,
+        "y": -22985.734,
+        "z": 5052.745
+      },
+      "u": 0.18833714720515074,
+      "v": 0.1864938375242432,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b13dc7d214b55c7e",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -53559.37,
+        "y": 77913.92,
+        "z": 465.4874
+      },
+      "u": 0.778940609891718,
+      "v": 0.6221176072181465,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_4ee67bacae001d62",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -50128.688,
+        "y": 73089.99,
+        "z": 1779.1194
+      },
+      "u": 0.791791862335382,
+      "v": 0.6012907907918037,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_46b370458098f909",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -17956.305,
+        "y": 67292.53,
+        "z": 4499.553
+      },
+      "u": 0.9123088369915131,
+      "v": 0.5762608597689518,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5f963e525149b8a6",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -15802.137,
+        "y": 66243.13,
+        "z": 3279.313
+      },
+      "u": 0.9203782986245245,
+      "v": 0.5717301843325745,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_78797aa9a6fa9332",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -49467.367,
+        "y": 76583.82,
+        "z": -621.08966
+      },
+      "u": 0.7942691549312263,
+      "v": 0.6163750387047813,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_1f308e084306e23d",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -13198.755,
+        "y": 15992.547,
+        "z": 493.11658
+      },
+      "u": 0.9301305051214516,
+      "v": 0.35477851474829236,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c46ca70a2a3cbc40",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -17867.959,
+        "y": -2180.923,
+        "z": -1636.2853
+      },
+      "u": 0.9126397789874158,
+      "v": 0.2763164467830339,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7dcd563223c2c6e3",
+      "targetType": "creature",
+      "targetId": "g2_caterpillar",
+      "technicalId": "Caterpillar",
+      "map": "surface",
+      "world": {
+        "x": -16621.123,
+        "y": -6769.0015,
+        "z": 1025.7849
+      },
+      "u": 0.917310396722271,
+      "v": 0.2565078946960115,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Caterpillar Goop",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Caterpillar Goop",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Caterpillar Goop",
+      "countLabel": "4",
+      "chancePct": 30,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Caterpillar Hide",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Caterpillar Hide",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Caterpillar Hide",
+      "countLabel": "3",
+      "chancePct": 35,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Caterpillar Meat",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Caterpillar Meat",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

@@ -78,6 +78,8 @@ class UiMapper {
         return '$base/TangBuildUp.webp';
       case 'infection':
         return '$base/Infection.webp';
+      case 'acid':
+        return '$base/Tooltype_Acid.webp';
 
       default:
         return '$base/Generic_Damage.webp';
@@ -106,7 +108,7 @@ class UiMapper {
       case 'truffle_tussle':
         return '$base/Mutation_Truffle_Tussle.webp';
       case 'raw_science':
-        return '$base/Raw_Science.webp';
+        return '$base/Raw_Science.png';
       case 'new_game_plus':
         return '$base/New_Game_Plus.webp';
       case 'attack_damage':
@@ -130,8 +132,22 @@ class UiMapper {
       case 'broodmother_poison':
         return '$base/Poison_Broodmother.webp';
       default:
-        return '$base/Raw_Science.webp';
+        return '$base/Raw_Science.png';
     }
+  }
+
+  static bool isRawScienceLabel(String label) {
+    final normalized = label.trim().toLowerCase().replaceAll(
+      RegExp(r'[\s._-]+'),
+      ' ',
+    );
+    return const {
+      'raw science',
+      'ciencia pura',
+      'ciencia bruta',
+      'сырая наука',
+      'чистая наука',
+    }.contains(normalized);
   }
 
   // ================= WEAK POINT ICONS =================
@@ -153,7 +169,7 @@ class UiMapper {
       case 'stinger':
         return '$base/T_UI_Weakspot_Stinger.webp';
       default:
-        return '$base/T_UI_Weakspot_Back.webp';
+        return 'assets/global/effects_damage/Generic_Damage.webp';
     }
   }
 

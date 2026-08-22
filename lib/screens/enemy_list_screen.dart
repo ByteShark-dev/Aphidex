@@ -15,12 +15,14 @@ import '../config/feature_flags.dart';
 import '../data/creature_card_state.dart';
 import '../data/creature_kill_tracking.dart';
 import '../data/enemy_repository.dart';
+import '../data/entity_asset_resolver.dart';
 import '../data/enemy_variants.dart';
 import '../data/local_storage.dart';
 import '../data/ui_mapper.dart';
 import '../i18n/app_localizations.dart';
 import '../layout/app_breakpoints.dart';
 import '../models/enemy_index_entry.dart';
+import '../models/catalog_entry_kind.dart';
 import '../models/game_pick.dart';
 import '../startup/startup_profiler.dart';
 import '../widgets/icon_badge.dart';
@@ -32,6 +34,7 @@ import '../widgets/state_panels.dart';
 import '../scanner/creature_scanner_page.dart';
 import '../scanner/creature_scanner_service.dart';
 import 'enemy_detail_screen.dart';
+import 'defense_detail_screen.dart';
 import 'effect_codex_screen.dart';
 import 'settings_screen.dart';
 import 'player_profile_screen.dart';
@@ -1080,11 +1083,15 @@ class _EnemyListScreenState extends State<EnemyListScreen>
       await Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (_) => EnemyDetailScreen(
-            summary: restoredEntry.activeEnemy,
-            variantSummaries: restoredEntry.entry.variants,
-            initialGame: restored?.detailGame ?? restoredEntry.activeEnemy.game,
-          ),
+          builder: (_) =>
+              restoredEntry.activeEnemy.entryKind == CatalogEntryKind.defense
+              ? DefenseDetailScreen(defenseId: restoredEntry.activeEnemy.id)
+              : EnemyDetailScreen(
+                  summary: restoredEntry.activeEnemy,
+                  variantSummaries: restoredEntry.entry.variants,
+                  initialGame:
+                      restored?.detailGame ?? restoredEntry.activeEnemy.game,
+                ),
         ),
       );
       if (!mounted || !context.mounted) {
@@ -1983,11 +1990,17 @@ class _EnemyListScreenState extends State<EnemyListScreen>
                           await Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (_) => EnemyDetailScreen(
-                                summary: entry.activeEnemy,
-                                variantSummaries: entry.entry.variants,
-                                initialGame: entry.activeEnemy.game,
-                              ),
+                              builder: (_) =>
+                                  entry.activeEnemy.entryKind ==
+                                      CatalogEntryKind.defense
+                                  ? DefenseDetailScreen(
+                                      defenseId: entry.activeEnemy.id,
+                                    )
+                                  : EnemyDetailScreen(
+                                      summary: entry.activeEnemy,
+                                      variantSummaries: entry.entry.variants,
+                                      initialGame: entry.activeEnemy.game,
+                                    ),
                             ),
                           );
                           if (!context.mounted) {
@@ -2288,17 +2301,29 @@ class _EnemyListScreenState extends State<EnemyListScreen>
                                             color: Theme.of(
                                               context,
                                             ).colorScheme.surface,
-                                            child: EnemyDetailScreen(
-                                              key: ValueKey(
-                                                'detail:${detailSummary.id}:${tutorialEnemy != null}',
-                                              ),
-                                              summary: detailSummary,
-                                              variantSummaries: detailVariants,
-                                              initialGame: detailSummary.game,
-                                              tutorialTargetScope:
-                                                  TutorialTargetScope
-                                                      .inlineDetail,
-                                            ),
+                                            child:
+                                                detailSummary.entryKind ==
+                                                    CatalogEntryKind.defense
+                                                ? DefenseDetailScreen(
+                                                    key: ValueKey(
+                                                      'defense:${detailSummary.id}',
+                                                    ),
+                                                    defenseId: detailSummary.id,
+                                                    embedded: true,
+                                                  )
+                                                : EnemyDetailScreen(
+                                                    key: ValueKey(
+                                                      'detail:${detailSummary.id}:${tutorialEnemy != null}',
+                                                    ),
+                                                    summary: detailSummary,
+                                                    variantSummaries:
+                                                        detailVariants,
+                                                    initialGame:
+                                                        detailSummary.game,
+                                                    tutorialTargetScope:
+                                                        TutorialTargetScope
+                                                            .inlineDetail,
+                                                  ),
                                           ),
                                         );
                                       },
@@ -2641,8 +2666,9 @@ class EnemyTile extends StatelessWidget {
     final cardProgress = resolveCreatureCardProgress(enemy, cardProgressByKey);
     final nextCardProgress = nextCreatureCardProgress(enemy, cardProgress);
     final tracksCardProgress = shouldTrackCreatureCardProgress(enemy);
-    final thumbnailAsset = _resolveThumbnailAsset(enemy, cardProgress);
-    final usesIconThumbnail = enemy.listIconAsset.trim().isNotEmpty;
+    final thumbnail = _resolveThumbnailAsset(enemy, cardProgress);
+    final thumbnailAsset = thumbnail.asset;
+    final usesIconThumbnail = thumbnail.source == 'entity_thumbnail';
     final weaknessChips = enemy.weaknesses
         .map(
           (weakness) => IconBadge.asset(
@@ -2761,15 +2787,17 @@ class EnemyTile extends StatelessWidget {
     );
   }
 
-  String? _resolveThumbnailAsset(
+  EntityAssetResolution _resolveThumbnailAsset(
     EnemyIndexEntry enemy,
     CreatureCardProgress progress,
   ) {
-    final listIcon = enemy.listIconAsset.trim();
-    if (listIcon.isNotEmpty) {
-      return listIcon;
-    }
-    return resolveCreatureCardAsset(enemy, progress);
+    return EntityAssetResolver.resolveEnemyIndex(
+      enemy,
+      enemy.entryKind != CatalogEntryKind.creature
+          ? EntityAssetUsage.customEntry
+          : EntityAssetUsage.card,
+      selectedCardAsset: resolveCreatureCardAsset(enemy, progress),
+    );
   }
 }
 

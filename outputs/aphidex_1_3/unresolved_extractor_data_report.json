@@ -1,0 +1,68 @@
+{
+  "unresolvedAcquisitions": [
+    {
+      "id": "RomanCandle",
+      "status": "unresolved_acquisition"
+    },
+    {
+      "id": "BombSourUnique",
+      "status": "unresolved_acquisition"
+    },
+    {
+      "id": "OminentBadgeOfficeSupplies",
+      "status": "unresolved_acquisition"
+    },
+    {
+      "id": "OminentBadgeCustomerSatisfaction",
+      "status": "unresolved_acquisition"
+    },
+    {
+      "id": "OminentBadgeMouthFeel",
+      "status": "unresolved_acquisition"
+    },
+    {
+      "id": "OminentBadgeLegal",
+      "status": "unresolved_acquisition"
+    },
+    {
+      "id": "OminentBadgeWaspDen",
+      "status": "unresolved_acquisition"
+    },
+    {
+      "id": "AccessoryHedgeWeb",
+      "status": "unresolved_acquisition"
+    },
+    {
+      "id": "AccessoryBlockStrength",
+      "status": "unresolved_acquisition"
+    },
+    {
+      "id": "AccessoryWidowling",
+      "status": "unresolved_acquisition"
+    },
+    {
+      "id": "AccessoryLips",
+      "status": "unresolved_acquisition"
+    }
+  ],
+  "sourceWarnings": [
+    {
+      "code": "UNRESOLVED_EQUIPMENT_ACQUISITION",
+      "count": 11,
+      "items": [
+        "AccessoryBlockStrength",
+        "AccessoryHedgeWeb",
+        "AccessoryLips",
+        "AccessoryWidowling",
+        "BombSourUnique",
+        "OminentBadgeCustomerSatisfaction",
+        "OminentBadgeLegal",
+        "OminentBadgeMouthFeel",
+        "OminentBadgeOfficeSupplies",
+        "OminentBadgeWaspDen",
+        "RomanCandle"
+      ],
+      "note": "Preserved as unresolved; no acquisition method is invented."
+    }
+  ]
+}

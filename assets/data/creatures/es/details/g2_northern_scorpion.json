@@ -1,1 +1,1062 @@
-{"id":"g2_northern_scorpion","speciesKey":"northern_scorpion","collectionGroup":"angry","name":"Escorpión norteño","game":"g2","tier":2,"danger":"muy_alta","isBoss":false,"order":259,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_G.png","photo":"assets/g2/creatures/photos/Northern_Scorpion.webp","weaknesses":["busting"],"resistances":["fresh","slashing","venom"],"temperament":"aggressive","health":{"value":875,"rating":3},"weakPoint":{"part":"stinger","susceptibleDamage":"stabbing","susceptibleDamageTypes":["stabbing"]},"description":"Un escorpión excavador con pinzas y un aguijón. Al morir, puede soltar sus herramientas letales y también trozos de escorpión norteño.","behavior":"Patrulla su zona con agresividad y usa embestidas, garras y enterramiento para controlar el espacio.","interactionWithPlayer":"Ataca de inmediato y puede encadenar presión si el jugador se queda cerca.","interactionWithCreatures":"Suele entrar en combate con casi cualquier criatura que invada su territorio.","strategy":"Aprende a leer sus ventanas de enterramiento y castígalo después de salir del suelo.","environments":["Combate contra Axl","Área de ceremonia","Cancha de croquet","Invernadero","Zona de entrada","Alrededores del carrito de helados","Cuevas menores","Colina de pinos","Parche de calabazas","Zona frontal del snack bar"],"loot":[{"section":"loot","item":"Northern Scorpion Chunk","minCount":2,"maxCount":5},{"section":"loot","item":"Northern Scorpion Pincer","minCount":0,"maxCount":1},{"section":"loot","item":"Northern Scorpion Stinger","minCount":0,"maxCount":1},{"section":"loot","item":"Scorpion Venom","minCount":0,"maxCount":4},{"section":"rare","item":"Northern Scorpion Chunk","minCount":0,"maxCount":3},{"section":"rare","item":"Northern Scorpion Pincer","minCount":0,"maxCount":1},{"section":"rare","item":"Scorpion Venom","minCount":0,"maxCount":1},{"section":"rare","item":"Stabby Stinger","minCount":0,"maxCount":1}],"combatStats":{"health":875,"attackDamageSummary":"Combo de 2 golpes: 28. Combo largo: 35. Golpe de garra: 72. Ataque enterrado: 90."},"abilities":[{"name":"Combo de 2 golpes","description":"Una apertura rápida de dos golpes para fijarte delante de él.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Combo largo","description":"Alarga la secuencia de garras para castigar respuestas impulsivas.","blockable":true,"breaksGuard":false,"staggers":false},{"name":"Golpe de pinza","description":"Un impacto pesado con la garra para cortar cualquier intento de adelantarte.","blockable":true,"breaksGuard":true,"staggers":true},{"name":"Golpe subterráneo","description":"Se entierra y emerge con violencia para golpear donde el jugador cree estar a salvo.","blockable":true,"breaksGuard":true,"staggers":true}],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"fresh","bonusPct":50},{"type":"slashing","bonusPct":25},{"type":"venom","bonusPct":75}],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},{"part":"stinger","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"groupId":null,"cardTier":2,"technicalId":"NorthernScorpion","bestiaryId":"NorthernScorpion","bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","elementalWeaknesses":[],"attacks":[{"name":"Combo 2","technicalId":"ScorpionNorthernAdultCombo2","tags":["stabbing"],"notes":"Daño del ataque: 28"},{"name":"Combo 4","technicalId":"ScorpionNorthernAdultCombo4","tags":["stabbing"],"notes":"Daño del ataque: 35"},{"name":"Potente","technicalId":"ScorpionNorthernAdultPower","tags":["stabbing"],"notes":"Daño del ataque: 72"},{"name":"Subterráneo golpe","technicalId":"ScorpionNorthernAdultBurrowStrike","tags":["stabbing"],"notes":"Daño del ataque: 90"},{"name":"Bloqueo ofensivo","technicalId":"BlockOffensive","tags":["maine"],"notes":"Daño del ataque: 0"}],"encounterVariants":[{"id":"g2_wave_scorpion_northern_wave","characterRow":"Scorpion_Northern_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":875.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":["Butt","Stinger"],"resistances":[{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Venom"],"percent":75.0,"sourceId":"DamageResistVenomLarge"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"ScorpionNorthernAdultCombo2","ability":"ScorpionNorthernAdultCombo2","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":28.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernAdultCombo4","ability":"ScorpionNorthernAdultCombo4","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomVeryLarge"],"statusEffectApplyType":"DamageOnly"}],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernAdultPower","ability":"ScorpionNorthernAdultPower","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":72.0,"type":"Stabbing","hitStun":16,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernAdultBurrowStrike","ability":"ScorpionNorthernAdultBurrowStrike","resolved":true,"cooldown":20.0,"priority":2,"targetType":"Enemy","damage":{"amount":90.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomHuge"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":550.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"BlockOffensive","ability":"BlockOffensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":5,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"variantKey":"g2_wave_scorpion_northern_wave","nameEn":"Northern Scorpion Raid/Wave","nameEsMX":"Escorpión norteño  (Oleada)","nameRu":"Северный скорпион Рейд/волна"}],"contextVariants":[{"id":"Scorpion_Northern_Wave","characterRow":"Scorpion_Northern_Wave","role":"wave_or_raid","variantMarkers":["wave"],"sharedBestiaryEntry":true,"stats":{"health":875.0,"stun":{"max":75.0,"duration":4.0,"cooldown":5.0,"staggerThreshold":10}},"weakpoints":["Butt","Stinger"],"resistances":[{"damageTypes":["Fresh"],"percent":50.0,"sourceId":"DamageResistFreshMedium"},{"damageTypes":["Slashing"],"percent":25.0,"sourceId":"DamageResistSlashingTiny"},{"damageTypes":["Venom"],"percent":75.0,"sourceId":"DamageResistVenomLarge"}],"weaknesses":[{"damageTypes":["Busting"],"percent":15.0,"sourceId":"DamageResistDownGeneralTiny"}],"specialCombatModifiers":[],"immunities":[],"attacks":[{"id":"ScorpionNorthernAdultCombo2","ability":"ScorpionNorthernAdultCombo2","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":28.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernAdultCombo4","ability":"ScorpionNorthernAdultCombo4","resolved":true,"cooldown":10.0,"priority":0,"targetType":"Enemy","damage":{"amount":35.0,"type":"Stabbing","hitStun":6,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[{"amount":50.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomVeryLarge"],"statusEffectApplyType":"DamageOnly"}],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernAdultPower","ability":"ScorpionNorthernAdultPower","resolved":true,"cooldown":20.0,"priority":0,"targetType":"Enemy","damage":{"amount":72.0,"type":"Stabbing","hitStun":16,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":350.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"},{"id":"ScorpionNorthernAdultBurrowStrike","ability":"ScorpionNorthernAdultBurrowStrike","resolved":true,"cooldown":20.0,"priority":2,"targetType":"Enemy","damage":{"amount":90.0,"type":"Stabbing","hitStun":8,"poiseDamage":0.0,"pushback":0.0,"statusEffects":["VenomHuge"],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":550.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"AOE"},{"id":"BlockOffensive","ability":"BlockOffensive","resolved":true,"cooldown":6.0,"priority":15,"targetType":"Enemy","damage":{"amount":0.0,"type":"Maine","hitStun":0,"poiseDamage":0.0,"pushback":0.0,"statusEffects":[],"statusEffectApplyType":"DamageOnly"},"secondaryDamage":[],"range":100.0,"ranged":false,"jumpAttack":false,"hitResolutionType":"Default"}],"mechanicSignals":[],"quality":{"resolvedAttacks":5,"unresolvedAttacks":0,"hiddenContextualModifiers":[],"extractionWarnings":[]},"nameEsMX":"Escorpión norteño  (Oleada)"}],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_northern_scorpion",
+  "speciesKey": "northern_scorpion",
+  "collectionGroup": "angry",
+  "name": "Escorpión norteño",
+  "game": "g2",
+  "tier": 2,
+  "danger": "muy_alta",
+  "isBoss": false,
+  "order": 259,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_G.png",
+  "photo": "assets/g2/creatures/photos/Northern_Scorpion.webp",
+  "weaknesses": [
+    "busting"
+  ],
+  "resistances": [
+    "fresh",
+    "slashing",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "health": {
+    "rating": 3,
+    "value": 875
+  },
+  "weakPoint": {
+    "part": "stinger",
+    "susceptibleDamage": "stabbing",
+    "susceptibleDamageTypes": [
+      "stabbing"
+    ]
+  },
+  "description": "Un escorpión excavador con pinzas y un aguijón. Al morir, puede soltar sus herramientas letales y también trozos de escorpión norteño.",
+  "behavior": "Patrulla su zona con agresividad y usa embestidas, garras y enterramiento para controlar el espacio.",
+  "interactionWithPlayer": "Ataca de inmediato y puede encadenar presión si el jugador se queda cerca.",
+  "interactionWithCreatures": "Suele entrar en combate con casi cualquier criatura que invada su territorio.",
+  "strategy": "Aprende a leer sus ventanas de enterramiento y castígalo después de salir del suelo.",
+  "environments": [
+    "Combate contra Axl",
+    "Área de ceremonia",
+    "Cancha de croquet",
+    "Invernadero",
+    "Zona de entrada",
+    "Alrededores del carrito de helados",
+    "Cuevas menores",
+    "Colina de pinos",
+    "Parche de calabazas",
+    "Zona frontal del snack bar"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Scorpion Finale Venom",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Northern Chunk",
+      "minCount": 2,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Northern Claw",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Northern Stinger",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Venom",
+      "minCount": 0,
+      "maxCount": 5
+    }
+  ],
+  "combatStats": {
+    "health": 875,
+    "stunThreshold": 75,
+    "stunCooldownSeconds": 5
+  },
+  "abilities": [
+    {
+      "name": "Combo de 2 golpes",
+      "description": "Una apertura rápida de dos golpes para fijarte delante de él.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Combo largo",
+      "description": "Alarga la secuencia de garras para castigar respuestas impulsivas.",
+      "blockable": true,
+      "breaksGuard": false,
+      "staggers": false
+    },
+    {
+      "name": "Golpe de pinza",
+      "description": "Un impacto pesado con la garra para cortar cualquier intento de adelantarte.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    },
+    {
+      "name": "Golpe subterráneo",
+      "description": "Se entierra y emerge con violencia para golpear donde el jugador cree estar a salvo.",
+      "blockable": true,
+      "breaksGuard": true,
+      "staggers": true
+    }
+  ],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 75
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "stinger",
+      "susceptibleDamage": "stabbing",
+      "susceptibleDamageTypes": [
+        "stabbing"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "NorthernScorpion",
+  "bestiaryId": "NorthernScorpion",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "elementalWeaknesses": [],
+  "attacks": [
+    {
+      "name": "Combo 2",
+      "technicalId": "ScorpionNorthernAdultCombo2",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 28",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 28.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 4",
+      "technicalId": "ScorpionNorthernAdultCombo4",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 35",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Potente",
+      "technicalId": "ScorpionNorthernAdultPower",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 72",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 72.0,
+      "cooldownSeconds": 20.0,
+      "range": 350.0,
+      "stun": 16,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Subterráneo golpe",
+      "technicalId": "ScorpionNorthernAdultBurrowStrike",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Daño del ataque: 90",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 90.0,
+      "cooldownSeconds": 20.0,
+      "range": 550.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Huge"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Huge",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Bloqueo ofensivo",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Daño del ataque: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [
+    {
+      "id": "g2_wave_scorpion_northern_wave",
+      "characterRow": "Scorpion_Northern_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 875.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [
+        "Butt",
+        "Stinger"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 75.0,
+          "sourceId": "DamageResistVenomLarge"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ScorpionNorthernAdultCombo2",
+          "ability": "ScorpionNorthernAdultCombo2",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 28.0,
+            "type": "Stabbing",
+            "hitStun": 6,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernAdultCombo4",
+          "ability": "ScorpionNorthernAdultCombo4",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 6,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 50.0,
+              "type": "Stabbing",
+              "hitStun": 8,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [
+                "VenomVeryLarge"
+              ],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernAdultPower",
+          "ability": "ScorpionNorthernAdultPower",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 72.0,
+            "type": "Stabbing",
+            "hitStun": 16,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernAdultBurrowStrike",
+          "ability": "ScorpionNorthernAdultBurrowStrike",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 90.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomHuge"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 550.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlockOffensive",
+          "ability": "BlockOffensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 5,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "variantKey": "g2_wave_scorpion_northern_wave",
+      "nameEn": "Northern Scorpion Raid/Wave",
+      "nameEsMX": "Escorpión norteño  (Oleada)",
+      "nameRu": "Северный скорпион Рейд/волна"
+    }
+  ],
+  "contextVariants": [
+    {
+      "id": "Scorpion_Northern_Wave",
+      "characterRow": "Scorpion_Northern_Wave",
+      "role": "wave_or_raid",
+      "variantMarkers": [
+        "wave"
+      ],
+      "sharedBestiaryEntry": true,
+      "stats": {
+        "health": 875.0,
+        "stun": {
+          "max": 75.0,
+          "duration": 4.0,
+          "cooldown": 5.0,
+          "staggerThreshold": 10
+        }
+      },
+      "weakpoints": [
+        "Butt",
+        "Stinger"
+      ],
+      "resistances": [
+        {
+          "damageTypes": [
+            "Fresh"
+          ],
+          "percent": 50.0,
+          "sourceId": "DamageResistFreshMedium"
+        },
+        {
+          "damageTypes": [
+            "Slashing"
+          ],
+          "percent": 25.0,
+          "sourceId": "DamageResistSlashingTiny"
+        },
+        {
+          "damageTypes": [
+            "Venom"
+          ],
+          "percent": 75.0,
+          "sourceId": "DamageResistVenomLarge"
+        }
+      ],
+      "weaknesses": [
+        {
+          "damageTypes": [
+            "Busting"
+          ],
+          "percent": 15.0,
+          "sourceId": "DamageResistDownGeneralTiny"
+        }
+      ],
+      "specialCombatModifiers": [],
+      "immunities": [],
+      "attacks": [
+        {
+          "id": "ScorpionNorthernAdultCombo2",
+          "ability": "ScorpionNorthernAdultCombo2",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 28.0,
+            "type": "Stabbing",
+            "hitStun": 6,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernAdultCombo4",
+          "ability": "ScorpionNorthernAdultCombo4",
+          "resolved": true,
+          "cooldown": 10.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 35.0,
+            "type": "Stabbing",
+            "hitStun": 6,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [
+            {
+              "amount": 50.0,
+              "type": "Stabbing",
+              "hitStun": 8,
+              "poiseDamage": 0.0,
+              "pushback": 0.0,
+              "statusEffects": [
+                "VenomVeryLarge"
+              ],
+              "statusEffectApplyType": "DamageOnly"
+            }
+          ],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernAdultPower",
+          "ability": "ScorpionNorthernAdultPower",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 0,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 72.0,
+            "type": "Stabbing",
+            "hitStun": 16,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 350.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        },
+        {
+          "id": "ScorpionNorthernAdultBurrowStrike",
+          "ability": "ScorpionNorthernAdultBurrowStrike",
+          "resolved": true,
+          "cooldown": 20.0,
+          "priority": 2,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 90.0,
+            "type": "Stabbing",
+            "hitStun": 8,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [
+              "VenomHuge"
+            ],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 550.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "AOE"
+        },
+        {
+          "id": "BlockOffensive",
+          "ability": "BlockOffensive",
+          "resolved": true,
+          "cooldown": 6.0,
+          "priority": 15,
+          "targetType": "Enemy",
+          "damage": {
+            "amount": 0.0,
+            "type": "Maine",
+            "hitStun": 0,
+            "poiseDamage": 0.0,
+            "pushback": 0.0,
+            "statusEffects": [],
+            "statusEffectApplyType": "DamageOnly"
+          },
+          "secondaryDamage": [],
+          "range": 100.0,
+          "ranged": false,
+          "jumpAttack": false,
+          "hitResolutionType": "Default"
+        }
+      ],
+      "mechanicSignals": [],
+      "quality": {
+        "resolvedAttacks": 5,
+        "unresolvedAttacks": 0,
+        "hiddenContextualModifiers": [],
+        "extractionWarnings": []
+      },
+      "nameEsMX": "Escorpión norteño  (Oleada)"
+    }
+  ],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_ecf57d09eca79066",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -129079.05,
+        "y": -14462.778,
+        "z": -590.7071
+      },
+      "u": 0.4960457009072286,
+      "v": 0.22329081426764483,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_a6bb68d1ecd7f05a",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -117040.125,
+        "y": -50951.887,
+        "z": 1641.7705
+      },
+      "u": 0.5411432250512145,
+      "v": 0.06575287845518173,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_b5dd9801cfd48fb5",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -116729.91,
+        "y": 45776.953,
+        "z": 109.511345
+      },
+      "u": 0.5423052829967808,
+      "v": 0.4833695921747196,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8e5be4fc5ec315ce",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -254633.64,
+        "y": 51520.594,
+        "z": -480.67267
+      },
+      "u": 0.02572121978343571,
+      "v": 0.5081671652584534,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_50ec6f8a15560ad7",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -239843.78,
+        "y": 42267.88,
+        "z": -276.50372
+      },
+      "u": 0.0811236804214223,
+      "v": 0.4682195341934396,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_87f592125a5b4286",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -160539.14,
+        "y": 59281.59,
+        "z": -1798.955
+      },
+      "u": 0.37819695873573306,
+      "v": 0.5416744588919808,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_5049745a3b81baa3",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -71934.79,
+        "y": 114594.32,
+        "z": -4956.497
+      },
+      "u": 0.7101067275387768,
+      "v": 0.7804814220423307,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_479dbc6f46f4169e",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -123869.83,
+        "y": 83797.305,
+        "z": -5259.6377
+      },
+      "u": 0.5155593140181445,
+      "v": 0.6475185104983556,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_35a4a579aeb8a7a0",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -70509.63,
+        "y": 58132.33,
+        "z": -983.7089
+      },
+      "u": 0.7154453426982732,
+      "v": 0.5367126482840038,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_77f9eb354d2a215c",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -102555.08,
+        "y": 151750.48,
+        "z": -315.69757
+      },
+      "u": 0.5954038560140473,
+      "v": 0.9408992812210135,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d10d845fdfbc2b20",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -162412.02,
+        "y": 95709.28,
+        "z": -3502.9841
+      },
+      "u": 0.37118119520046833,
+      "v": 0.6989472245551902,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_f92f17a69dcf02d3",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -159954.62,
+        "y": 71068.52,
+        "z": -951.7216
+      },
+      "u": 0.38038655662862164,
+      "v": 0.5925633041571803,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_413098181efe423a",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -254075.52,
+        "y": 152274.78,
+        "z": 9559.0
+      },
+      "u": 0.027811923909862493,
+      "v": 0.9431628919807742,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_d60263258b88a146",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -209133.53,
+        "y": 102216.86,
+        "z": 834.3591
+      },
+      "u": 0.19616353994732222,
+      "v": 0.7270430248756219,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_6d53359b99da78f6",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -200707.5,
+        "y": 87046.85,
+        "z": -1306.8638
+      },
+      "u": 0.22772724612232953,
+      "v": 0.6615480833122522,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_c33009ce110e0759",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -67145.93,
+        "y": 82987.98,
+        "z": -4354.1895
+      },
+      "u": 0.7280456821773487,
+      "v": 0.6440243339236023,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_8a043902fa2d86e4",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -146381.23,
+        "y": 62589.086,
+        "z": -2333.829
+      },
+      "u": 0.43123214983904007,
+      "v": 0.5559542291255587,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_7bbb1b8a1414e802",
+      "targetType": "creature",
+      "targetId": "g2_northern_scorpion",
+      "technicalId": "NorthernScorpion",
+      "map": "surface",
+      "world": {
+        "x": -174361.88,
+        "y": 153369.95,
+        "z": 846.2609
+      },
+      "u": 0.3264173064091308,
+      "v": 0.9478911746352982,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "natural",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Scorpion Finale Venom",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Claw",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Claw",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Stinger",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

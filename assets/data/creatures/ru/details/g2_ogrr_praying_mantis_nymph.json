@@ -1,1 +1,540 @@
-{"id":"g2_ogrr_praying_mantis_nymph","speciesKey":"ogrr_praying_mantis_nymph","collectionGroup":"ogrr","name":"O.G.R.R. Нимфа богомола","game":"g2","tier":3,"danger":"imposible","isBoss":false,"order":236,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PrayingMantis_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PrayingMantis_OGRR_G.png","photo":"assets/g2/creatures/photos/OGRR_Praying_Mantis_Nymph.webp","weaknesses":["slashing"],"resistances":["stabbing","generic"],"temperament":"aggressive","description":"O.G.R.R. Нимфа богомола сохраняет скорость и рубящие атаки базового вида, но теперь входит в бой и выходит из него куда беспощаднее. Это тот тип врага, который прежде всего наказывает за спешку.","behavior":"Она давит быстрыми входами, короткими рубящими атаками и прыжками, не позволяя надолго опускать защиту. Даже когда кажется, что серия закончилась, она почти никогда не ощущается по-настоящему неподвижной.","interactionWithPlayer":"Она особенно жёстко наказывает за поздние блоки и спешные попытки наказать ложное окно. Её опасность не всегда в голом уроне — часто она в том, как легко она крадёт ритм всего размена.","interactionWithCreatures":"В группах O.G.R.R. она часто работает как быстрый добиватель, врываясь сразу после того, как другое существо уже зафиксировало тебя или вынудило блокировать.","strategy":"Не гоняйся за ней, не прочитав следующий вход. Fresh по-прежнему помогает, но здесь ещё важнее сохранять спокойствие и наказывать только тогда, когда она действительно переразогналась.","environments":["После высвобождения O.G.R.R.","Церемониальная зона","Площадка для крокета"],"loot":[{"section":"loot","item":"Buffin' Gland","minCount":1,"maxCount":1},{"section":"loot","item":"Praying Mantis Chunk","minCount":2,"maxCount":6},{"section":"loot","item":"Praying Mantis Claw","minCount":0,"maxCount":2},{"section":"loot","item":"Praying Mantis Head","minCount":0,"maxCount":1},{"section":"rare","item":"Cleaving Claw","minCount":0,"maxCount":1},{"section":"rare","item":"Praying Mantis Chunk","minCount":0,"maxCount":9}],"combatStats":{"attackDamageSummary":"Slash: 943-Hit Combo Slash: 94Charged Strike: 125Pounce: 113Vertical Shockwave: 106","health":1800},"abilities":[{"name":"Разрез","description":"Быстрый ближний режущий удар для постоянного давления."},{"name":"Комбо рубящих ударов","description":"Быстрая цепочка режущих ударов с очень маленьким окном ответа."},{"name":"Заряженный удар","description":"Более медленный удар, наказывающий за неподвижность."},{"name":"Наскок","description":"Резко бросается прямо на цель."},{"name":"Вертикальная волна","description":"Вертикальная ударная волна для контроля пространства рядом."}],"elementalWeaknesses":[],"resistancesV2":[{"type":"stabbing","bonusPct":50},{"type":"generic","bonusPct":25}],"weakPoint":{"part":"eyes","susceptibleDamage":"stabbing_bows_and_spears","susceptibleDamageTypes":["stabbing"]},"infusions":[{"id":"fresh","name":"Fresh","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["All direct hits also apply 20 Chill buildup."],"recommendations":"Do not stay on fresh damage as your main answer.","combatTips":["Swap to spicy damage or a reliable physical weapon if your build depends on fresh."],"imageAsset":"assets/g2/creatures/photos/OGRR_Praying_Mantis_Nymph_Fresh.webp"},{"id":"sour","name":"Sour","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["All direct hits also apply 20 Tang buildup."],"recommendations":"Avoid staying on sour weapons as your main answer.","combatTips":["Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."],"imageAsset":"assets/g2/creatures/photos/OGRR_Praying_Mantis_Nymph_Sour.webp"},{"id":"spicy","name":"Spicy","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["All direct hits also apply 20 Sizzle buildup."],"recommendations":"Do not depend on spicy damage while this infusion is active.","combatTips":["Fresh is the cleanest elemental answer if the creature lets you hold the tempo."],"imageAsset":"assets/g2/creatures/photos/OGRR_Praying_Mantis_Nymph_Spicy.webp"}],"lesserMutationsDescription":"Besides the main infusion, it can also spawn with a random lesser mutation. That roll is independent from the active flavor and stays separate from the selector.","lesserMutations":["Attack Up: increases attack damage by 33%.","The Quickness: increases movement speed by 200%.","Damage Resist: reduces all incoming damage by 25%.","Life Steal: heals for 150% of the damage it deals.","Blastwave: on hit, it has a 33% chance to trigger an unblockable extra blast for 50 explosive damage and a long stun.","Shockwave: on hit, it has a 75% chance to fire an extra wave for 50 shock damage. Weapons do not block it, but shields do.","Summon Ally: on hit, it has a 75% chance to summon a faction ally: Spiderling (25 HP) if it is a spider, Northern Scorpling (200 HP) if it is a scorpion, or Mini Larva (75 HP) otherwise."],"inflictsEffects":["chopping"],"inflicts":["Chopping damage."],"specialTraits":["Its combat affinities depend on the active infusion. Select the flavor to review the current immunities, weaknesses, and applied effects."],"healthDisplay":"normal","health":{"value":1800,"rating":4},"groupId":null,"cardTier":3,"technicalId":"GreenMantisOGRE","bestiaryId":"GreenMantisOGRE","bossCardStyle":null,"isKillable":true,"damageWeaknesses":[{"type":"slashing","bonusPct":15}],"weakPoints":[{"part":"eyes","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Left Strike","technicalId":"PrayingMantisCleaveLeft","tags":["chopping_slashing"],"notes":"Урон атаки: 75"},{"name":"Right Strike","technicalId":"PrayingMantisCleaveRight","tags":["chopping_slashing"],"notes":"Урон атаки: 75"},{"name":"Praying Mantis Pounce","technicalId":"PrayingMantisPounce","tags":["chopping_slashing_unblockable"],"notes":"Урон атаки: 90"},{"name":"Praying Mantis Slash","technicalId":"PrayingMantisSlash","tags":["chopping_slashing_unblockable"],"notes":"Урон атаки: 85"},{"name":"Praying Mantis Powerattack","technicalId":"PrayingMantisPowerattack","tags":[],"notes":"Не идентифицировано"},{"name":"Combo","technicalId":"PrayingMantisAttackCombo","tags":["chopping_slashing"],"notes":"Урон атаки: 75"},{"name":"Praying Mantis Stealth Jump Attack","technicalId":"PrayingMantisStealthJumpAttack","tags":["chopping_slashing_unblockable"],"notes":"Урон атаки: 80"},{"name":"Block Defensive","technicalId":"BlockDefensive","tags":["maine"],"notes":"Урон атаки: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_praying_mantis_nymph",
+  "speciesKey": "ogrr_praying_mantis_nymph",
+  "collectionGroup": "ogrr",
+  "name": "O.G.R.R. Нимфа богомола",
+  "game": "g2",
+  "tier": 3,
+  "danger": "imposible",
+  "isBoss": false,
+  "order": 236,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier3_PrayingMantis_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier3_PrayingMantis_OGRR_G.png",
+  "photo": "assets/g2/creatures/photos/OGRR_Praying_Mantis_Nymph.webp",
+  "weaknesses": [
+    "slashing"
+  ],
+  "resistances": [
+    "stabbing",
+    "generic"
+  ],
+  "temperament": "aggressive",
+  "description": "O.G.R.R. Нимфа богомола сохраняет скорость и рубящие атаки базового вида, но теперь входит в бой и выходит из него куда беспощаднее. Это тот тип врага, который прежде всего наказывает за спешку.",
+  "behavior": "Она давит быстрыми входами, короткими рубящими атаками и прыжками, не позволяя надолго опускать защиту. Даже когда кажется, что серия закончилась, она почти никогда не ощущается по-настоящему неподвижной.",
+  "interactionWithPlayer": "Она особенно жёстко наказывает за поздние блоки и спешные попытки наказать ложное окно. Её опасность не всегда в голом уроне — часто она в том, как легко она крадёт ритм всего размена.",
+  "interactionWithCreatures": "В группах O.G.R.R. она часто работает как быстрый добиватель, врываясь сразу после того, как другое существо уже зафиксировало тебя или вынудило блокировать.",
+  "strategy": "Не гоняйся за ней, не прочитав следующий вход. Fresh по-прежнему помогает, но здесь ещё важнее сохранять спокойствие и наказывать только тогда, когда она действительно переразогналась.",
+  "environments": [
+    "После высвобождения O.G.R.R.",
+    "Церемониальная зона",
+    "Площадка для крокета"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Mantis Low Life Crit",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Mantis Green Chunk",
+      "minCount": 2,
+      "maxCount": 15
+    },
+    {
+      "section": "loot",
+      "item": "Mantis Green Claw",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Mantis Green Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ],
+  "combatStats": {
+    "health": 1800,
+    "stunThreshold": 100,
+    "stunCooldownSeconds": 20
+  },
+  "abilities": [
+    {
+      "name": "Разрез",
+      "description": "Быстрый ближний режущий удар для постоянного давления."
+    },
+    {
+      "name": "Комбо рубящих ударов",
+      "description": "Быстрая цепочка режущих ударов с очень маленьким окном ответа."
+    },
+    {
+      "name": "Заряженный удар",
+      "description": "Более медленный удар, наказывающий за неподвижность."
+    },
+    {
+      "name": "Наскок",
+      "description": "Резко бросается прямо на цель."
+    },
+    {
+      "name": "Вертикальная волна",
+      "description": "Вертикальная ударная волна для контроля пространства рядом."
+    }
+  ],
+  "elementalWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "stabbing",
+      "bonusPct": 50
+    },
+    {
+      "type": "general",
+      "bonusPct": 25
+    }
+  ],
+  "weakPoint": {
+    "part": "eyes",
+    "susceptibleDamage": "stabbing_bows_and_spears",
+    "susceptibleDamageTypes": [
+      "stabbing"
+    ]
+  },
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresh",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Chill buildup."
+      ],
+      "recommendations": "Do not stay on fresh damage as your main answer.",
+      "combatTips": [
+        "Swap to spicy damage or a reliable physical weapon if your build depends on fresh."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Praying_Mantis_Nymph_Fresh.webp"
+    },
+    {
+      "id": "sour",
+      "name": "Sour",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Tang buildup."
+      ],
+      "recommendations": "Avoid staying on sour weapons as your main answer.",
+      "combatTips": [
+        "Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Praying_Mantis_Nymph_Sour.webp"
+    },
+    {
+      "id": "spicy",
+      "name": "Spicy",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Sizzle buildup."
+      ],
+      "recommendations": "Do not depend on spicy damage while this infusion is active.",
+      "combatTips": [
+        "Fresh is the cleanest elemental answer if the creature lets you hold the tempo."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Praying_Mantis_Nymph_Spicy.webp"
+    }
+  ],
+  "lesserMutationsDescription": "Besides the main infusion, it can also spawn with a random lesser mutation. That roll is independent from the active flavor and stays separate from the selector.",
+  "lesserMutations": [
+    "Attack Up: increases attack damage by 33%.",
+    "The Quickness: increases movement speed by 200%.",
+    "Damage Resist: reduces all incoming damage by 25%.",
+    "Life Steal: heals for 150% of the damage it deals.",
+    "Blastwave: on hit, it has a 33% chance to trigger an unblockable extra blast for 50 explosive damage and a long stun.",
+    "Shockwave: on hit, it has a 75% chance to fire an extra wave for 50 shock damage. Weapons do not block it, but shields do.",
+    "Summon Ally: on hit, it has a 75% chance to summon a faction ally: Spiderling (25 HP) if it is a spider, Northern Scorpling (200 HP) if it is a scorpion, or Mini Larva (75 HP) otherwise."
+  ],
+  "inflictsEffects": [
+    "chopping"
+  ],
+  "inflicts": [
+    "Chopping damage."
+  ],
+  "specialTraits": [
+    "Its combat affinities depend on the active infusion. Select the flavor to review the current immunities, weaknesses, and applied effects."
+  ],
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 4,
+    "value": 1800
+  },
+  "groupId": null,
+  "cardTier": 3,
+  "technicalId": "GreenMantisOGRE",
+  "bestiaryId": "GreenMantisOGRE",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "damageWeaknesses": [
+    {
+      "type": "slashing",
+      "bonusPct": 15
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_bows_and_spears",
+      "susceptibleDamageTypes": [
+        "stabbing"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Left Strike",
+      "technicalId": "PrayingMantisCleaveLeft",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 75",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Right Strike",
+      "technicalId": "PrayingMantisCleaveRight",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 75",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Pounce",
+      "technicalId": "PrayingMantisPounce",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 90",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 90.0,
+      "cooldownSeconds": 20.0,
+      "range": 600.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Slash",
+      "technicalId": "PrayingMantisSlash",
+      "tags": [
+        "chopping",
+        "projectile",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 85",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 85.0,
+      "cooldownSeconds": 20.0,
+      "range": 200.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "projectile",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Powerattack",
+      "technicalId": "PrayingMantisPowerattack",
+      "tags": [],
+      "notes": "Не идентифицировано"
+    },
+    {
+      "name": "Combo",
+      "technicalId": "PrayingMantisAttackCombo",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 75",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 750.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Praying Mantis Stealth Jump Attack",
+      "technicalId": "PrayingMantisStealthJumpAttack",
+      "tags": [
+        "chopping",
+        "slashing"
+      ],
+      "notes": "Урон атаки: 80",
+      "damageTypes": [
+        "chopping",
+        "slashing"
+      ],
+      "damage": 80.0,
+      "cooldownSeconds": 0.0,
+      "range": 600.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Defensive",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Урон атаки: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 7.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_baff7e08d5370f9e",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_praying_mantis_nymph",
+      "technicalId": "GreenMantisOGRE",
+      "map": "surface",
+      "world": {
+        "x": -105291.15,
+        "y": 138665.77,
+        "z": 3915.9924
+      },
+      "u": 0.5851546034533217,
+      "v": 0.8844074056834472,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "Существ OGRR можно освободить из лаборатории у пугала. После этого они могут появляться в разных местах, преимущественно ночью.",
+  "mapMarkerAsset": "assets/g2/creatures/thumbnails/OGRR_Praying_Mantis_Nymph.webp",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Mantis Low Life Crit",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 9,
+      "notes": "9 independent rolls"
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Chunk",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Claw",
+      "countLabel": "1",
+      "chancePct": 40,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Claw",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Mantis Green Head",
+      "countLabel": "1",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

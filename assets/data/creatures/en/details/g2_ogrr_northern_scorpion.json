@@ -1,1 +1,545 @@
-{"id":"g2_ogrr_northern_scorpion","speciesKey":"ogrr_northern_scorpion","collectionGroup":"ogrr","name":"O.G.R.R. Northern Scorpion","game":"g2","tier":2,"danger":"imposible","isBoss":false,"order":262,"defaultGold":false,"cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_OGRR.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_OGRR_G.png","photo":"assets/g2/creatures/photos/OGRR_Northern_Scorpion.webp","weaknesses":["busting"],"resistances":["slashing","venom"],"temperament":"aggressive","weakPoint":{"part":"stinger","susceptibleDamage":"stabbing","susceptibleDamageTypes":["stabbing"]},"description":"A northern scorpion pumped up with bizarre strength. They are resistant to the flavor of their mutation.","behavior":"It guards the lime tree seed and does not depend on nighttime to appear. It uses its claws to pin you in front, its leap to break tempo, and its stinger to turn any opening into a real punish.","interactionWithPlayer":"It attacks immediately and demands much tighter control of mid-range than the normal version. A single bad choice can spiral into venom, space denial, and another follow-up before you breathe again.","interactionWithCreatures":"It shares space extremely well with other threats because its reach forces you to give ground. In a wave, it is often the piece that pries your defense open so the rest can finish closing around you.","strategy":"Do not hand over clean mid-range or a free frontal line. Sour and explosive still help, but here it matters even more to break the tempo before the fight turns into a loop of venom and pursuit.","environments":["After Unleashing the O.G.R.Rs.","Lime Tree Seed"],"loot":[{"section":"loot","item":"Buffin' Gland","minCount":1,"maxCount":1},{"section":"loot","item":"Northern Scorpion Chunk","minCount":2,"maxCount":5},{"section":"loot","item":"Northern Scorpion Pincer","minCount":0,"maxCount":1},{"section":"loot","item":"Northern Scorpion Stinger","minCount":0,"maxCount":1},{"section":"loot","item":"Scorpion Venom","minCount":0,"maxCount":4},{"section":"rare","item":"Northern Scorpion Chunk","minCount":0,"maxCount":3},{"section":"rare","item":"Northern Scorpion Pincer","minCount":0,"maxCount":1},{"section":"rare","item":"Scorpion Venom","minCount":0,"maxCount":1},{"section":"rare","item":"Stabby Stinger","minCount":0,"maxCount":1}],"combatStats":{"attackDamageSummary":"Claw Slash: 882-Hit Combo: 354-Hit Combo: 44Claw Slam: 90Burrow Strike: 113","health":1700},"abilities":[{"name":"Claw Slash","description":"A quick claw swipe that punishes side movement."},{"name":"Hit Combo","description":"A short chain of consecutive hits."},{"name":"Claw Slam","description":"Brings the claw down hard to close space in front of it."},{"name":"Burrow Strike","description":"Strikes from below the ground to catch you on re-emerge."}],"elementalWeaknesses":[],"damageWeaknesses":[{"type":"busting","bonusPct":15}],"resistancesV2":[{"type":"slashing","bonusPct":25},{"type":"venom","bonusPct":75}],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]},{"part":"stinger","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"infusions":[{"id":"fresh","name":"Fresh","iconAsset":"assets/global/effects_damage/Damagetype_Fresh.webp","elementalWeaknesses":[{"type":"sour","bonusPct":50}],"resistances":[{"type":"fresh","bonusPct":100},{"type":"chill","bonusPct":100},{"type":"spicy","bonusPct":50}],"effects":["chill"],"specialTraits":["All direct hits also apply 20 Chill buildup."],"recommendations":"Do not stay on fresh damage as your main answer.","combatTips":["Swap to spicy damage or a reliable physical weapon if your build depends on fresh."],"imageAsset":"assets/g2/creatures/photos/OGRR_Northern_Scorpion_Fresh.webp"},{"id":"sour","name":"Sour","iconAsset":"assets/global/effects_damage/Damagetype_Sour.webp","elementalWeaknesses":[{"type":"spicy","bonusPct":50}],"resistances":[{"type":"sour","bonusPct":100},{"type":"tang_buildup","bonusPct":100},{"type":"fresh","bonusPct":50}],"effects":["tang_buildup"],"specialTraits":["All direct hits also apply 20 Tang buildup."],"recommendations":"Avoid staying on sour weapons as your main answer.","combatTips":["Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."],"imageAsset":"assets/g2/creatures/photos/OGRR_Northern_Scorpion_Sour.webp"},{"id":"spicy","name":"Spicy","iconAsset":"assets/global/effects_damage/Damagetype_Spicy.webp","elementalWeaknesses":[{"type":"fresh","bonusPct":50}],"resistances":[{"type":"spicy","bonusPct":100},{"type":"sizzle","bonusPct":100},{"type":"sour","bonusPct":50}],"effects":["sizzle"],"specialTraits":["All direct hits also apply 20 Sizzle buildup."],"recommendations":"Do not depend on spicy damage while this infusion is active.","combatTips":["Fresh is the cleanest elemental answer if the creature lets you hold the tempo."],"imageAsset":"assets/g2/creatures/photos/OGRR_Northern_Scorpion_Spicy.webp"}],"lesserMutationsDescription":"Besides the main infusion, it can also spawn with a random lesser mutation. That roll is independent from the active flavor and stays separate from the selector.","lesserMutations":["Attack Up: increases attack damage by 33%.","The Quickness: increases movement speed by 200%.","Damage Resist: reduces all incoming damage by 25%.","Life Steal: heals for 150% of the damage it deals.","Blastwave: on hit, it has a 33% chance to trigger an unblockable extra blast for 50 explosive damage and a long stun.","Shockwave: on hit, it has a 75% chance to fire an extra wave for 50 shock damage. Weapons do not block it, but shields do.","Summon Ally: on hit, it has a 75% chance to summon a faction ally: Spiderling (25 HP) if it is a spider, Northern Scorpling (200 HP) if it is a scorpion, or Mini Larva (75 HP) otherwise."],"inflictsEffects":["stabbing","venom"],"inflicts":["Its claws and stinger deal stabbing damage, and its heavier punishers also stack Venom."],"specialTraits":["Claw Slam and Burrow Strike still add 50 Venom on hit. The active infusion adds its own buildup on top of that impact.","Its combat affinities depend on the active infusion. Select the flavor to review the current immunities, weaknesses, and applied effects."],"healthDisplay":"normal","health":{"value":1700,"rating":4},"groupId":null,"cardTier":2,"technicalId":"NorthernScorpionOGRE","bestiaryId":"NorthernScorpionOGRE","bossCardStyle":null,"isKillable":true,"attacks":[{"name":"Combo 2","technicalId":"ScorpionNorthernAdultCombo2","tags":["stabbing"],"notes":"Attack damage: 28"},{"name":"Combo 4","technicalId":"ScorpionNorthernAdultCombo4","tags":["stabbing"],"notes":"Attack damage: 35"},{"name":"Power","technicalId":"ScorpionNorthernAdultPower","tags":["stabbing"],"notes":"Attack damage: 72"},{"name":"Burrow Strike","technicalId":"ScorpionNorthernAdultBurrowStrike","tags":["stabbing"],"notes":"Attack damage: 90"},{"name":"Block Defensive","technicalId":"BlockDefensive","tags":["maine"],"notes":"Attack damage: 0"},{"name":"Block Offensive","technicalId":"BlockOffensive","tags":["maine"],"notes":"Attack damage: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_ogrr_northern_scorpion",
+  "speciesKey": "ogrr_northern_scorpion",
+  "collectionGroup": "ogrr",
+  "name": "O.G.R.R. Northern Scorpion",
+  "game": "g2",
+  "tier": 2,
+  "danger": "imposible",
+  "isBoss": false,
+  "order": 262,
+  "defaultGold": false,
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier2_Scorpion_OGRR.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier2_Scorpion_OGRR_G.png",
+  "photo": "assets/g2/creatures/photos/OGRR_Northern_Scorpion.webp",
+  "weaknesses": [
+    "busting"
+  ],
+  "resistances": [
+    "slashing",
+    "venom"
+  ],
+  "temperament": "aggressive",
+  "weakPoint": {
+    "part": "stinger",
+    "susceptibleDamage": "stabbing",
+    "susceptibleDamageTypes": [
+      "stabbing"
+    ]
+  },
+  "description": "A northern scorpion pumped up with bizarre strength. They are resistant to the flavor of their mutation.",
+  "behavior": "It guards the lime tree seed and does not depend on nighttime to appear. It uses its claws to pin you in front, its leap to break tempo, and its stinger to turn any opening into a real punish.",
+  "interactionWithPlayer": "It attacks immediately and demands much tighter control of mid-range than the normal version. A single bad choice can spiral into venom, space denial, and another follow-up before you breathe again.",
+  "interactionWithCreatures": "It shares space extremely well with other threats because its reach forces you to give ground. In a wave, it is often the piece that pries your defense open so the rest can finish closing around you.",
+  "strategy": "Do not hand over clean mid-range or a free frontal line. Sour and explosive still help, but here it matters even more to break the tempo before the fight turns into a loop of venom and pursuit.",
+  "environments": [
+    "After Unleashing the O.G.R.Rs.",
+    "Lime Tree Seed"
+  ],
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Scorpion Finale Venom",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Ogrr Gland",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Northern Chunk",
+      "minCount": 2,
+      "maxCount": 8
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Northern Claw",
+      "minCount": 0,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Northern Stinger",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Scorpion Venom",
+      "minCount": 0,
+      "maxCount": 5
+    }
+  ],
+  "combatStats": {
+    "health": 1700,
+    "stunThreshold": 100,
+    "stunCooldownSeconds": 20
+  },
+  "abilities": [
+    {
+      "name": "Claw Slash",
+      "description": "A quick claw swipe that punishes side movement."
+    },
+    {
+      "name": "Hit Combo",
+      "description": "A short chain of consecutive hits."
+    },
+    {
+      "name": "Claw Slam",
+      "description": "Brings the claw down hard to close space in front of it."
+    },
+    {
+      "name": "Burrow Strike",
+      "description": "Strikes from below the ground to catch you on re-emerge."
+    }
+  ],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [
+    {
+      "type": "general",
+      "bonusPct": 15
+    }
+  ],
+  "resistancesV2": [
+    {
+      "type": "slashing",
+      "bonusPct": 25
+    },
+    {
+      "type": "venom",
+      "bonusPct": 75
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "stinger",
+      "susceptibleDamage": "stabbing",
+      "susceptibleDamageTypes": [
+        "stabbing"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "infusions": [
+    {
+      "id": "fresh",
+      "name": "Fresh",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Fresh.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "fresh",
+          "bonusPct": 100
+        },
+        {
+          "type": "chill",
+          "bonusPct": 100
+        },
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "chill"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Chill buildup."
+      ],
+      "recommendations": "Do not stay on fresh damage as your main answer.",
+      "combatTips": [
+        "Swap to spicy damage or a reliable physical weapon if your build depends on fresh."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Northern_Scorpion_Fresh.webp"
+    },
+    {
+      "id": "sour",
+      "name": "Sour",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Sour.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "spicy",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sour",
+          "bonusPct": 100
+        },
+        {
+          "type": "tang_buildup",
+          "bonusPct": 100
+        },
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "tang_buildup"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Tang buildup."
+      ],
+      "recommendations": "Avoid staying on sour weapons as your main answer.",
+      "combatTips": [
+        "Spicy is the cleanest elemental answer; otherwise use a physical weapon that does not depend on Tang."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Northern_Scorpion_Sour.webp"
+    },
+    {
+      "id": "spicy",
+      "name": "Spicy",
+      "iconAsset": "assets/global/effects_damage/Damagetype_Spicy.webp",
+      "elementalWeaknesses": [
+        {
+          "type": "fresh",
+          "bonusPct": 50
+        }
+      ],
+      "resistances": [
+        {
+          "type": "spicy",
+          "bonusPct": 100
+        },
+        {
+          "type": "sizzle",
+          "bonusPct": 100
+        },
+        {
+          "type": "sour",
+          "bonusPct": 50
+        }
+      ],
+      "effects": [
+        "sizzle"
+      ],
+      "specialTraits": [
+        "All direct hits also apply 20 Sizzle buildup."
+      ],
+      "recommendations": "Do not depend on spicy damage while this infusion is active.",
+      "combatTips": [
+        "Fresh is the cleanest elemental answer if the creature lets you hold the tempo."
+      ],
+      "imageAsset": "assets/g2/creatures/photos/OGRR_Northern_Scorpion_Spicy.webp"
+    }
+  ],
+  "lesserMutationsDescription": "Besides the main infusion, it can also spawn with a random lesser mutation. That roll is independent from the active flavor and stays separate from the selector.",
+  "lesserMutations": [
+    "Attack Up: increases attack damage by 33%.",
+    "The Quickness: increases movement speed by 200%.",
+    "Damage Resist: reduces all incoming damage by 25%.",
+    "Life Steal: heals for 150% of the damage it deals.",
+    "Blastwave: on hit, it has a 33% chance to trigger an unblockable extra blast for 50 explosive damage and a long stun.",
+    "Shockwave: on hit, it has a 75% chance to fire an extra wave for 50 shock damage. Weapons do not block it, but shields do.",
+    "Summon Ally: on hit, it has a 75% chance to summon a faction ally: Spiderling (25 HP) if it is a spider, Northern Scorpling (200 HP) if it is a scorpion, or Mini Larva (75 HP) otherwise."
+  ],
+  "inflictsEffects": [
+    "stabbing",
+    "venom"
+  ],
+  "inflicts": [
+    "Its claws and stinger deal stabbing damage, and its heavier punishers also stack Venom."
+  ],
+  "specialTraits": [
+    "Claw Slam and Burrow Strike still add 50 Venom on hit. The active infusion adds its own buildup on top of that impact.",
+    "Its combat affinities depend on the active infusion. Select the flavor to review the current immunities, weaknesses, and applied effects."
+  ],
+  "healthDisplay": "normal",
+  "health": {
+    "rating": 4,
+    "value": 1700
+  },
+  "groupId": null,
+  "cardTier": 2,
+  "technicalId": "NorthernScorpionOGRE",
+  "bestiaryId": "NorthernScorpionOGRE",
+  "bossCardStyle": null,
+  "isKillable": true,
+  "attacks": [
+    {
+      "name": "Combo 2",
+      "technicalId": "ScorpionNorthernAdultCombo2",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 28",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 28.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 4",
+      "technicalId": "ScorpionNorthernAdultCombo4",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 35",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 35.0,
+      "cooldownSeconds": 10.0,
+      "range": 350.0,
+      "stun": 6,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power",
+      "technicalId": "ScorpionNorthernAdultPower",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 72",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 72.0,
+      "cooldownSeconds": 20.0,
+      "range": 350.0,
+      "stun": 16,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Burrow Strike",
+      "technicalId": "ScorpionNorthernAdultBurrowStrike",
+      "tags": [
+        "stabbing"
+      ],
+      "notes": "Attack damage: 90",
+      "damageTypes": [
+        "stabbing"
+      ],
+      "damage": 90.0,
+      "cooldownSeconds": 20.0,
+      "range": 550.0,
+      "stun": 8,
+      "statusEffects": [
+        "Venom Huge"
+      ],
+      "statusEffectDetails": [
+        {
+          "id": "Venom Huge",
+          "value": null,
+          "durationSeconds": null
+        }
+      ],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Defensive",
+      "technicalId": "BlockDefensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 7.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Offensive",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 9.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_e1d947485b158120",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_northern_scorpion",
+      "technicalId": "NorthernScorpionOGRE",
+      "map": "surface",
+      "world": {
+        "x": -163761.81,
+        "y": -24374.01,
+        "z": 7415.807
+      },
+      "u": 0.36612491425226806,
+      "v": 0.1805001001770807,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    },
+    {
+      "id": "spawn_367622ab99682fa2",
+      "targetType": "creature",
+      "targetId": "g2_ogrr_northern_scorpion",
+      "technicalId": "NorthernScorpionOGRE",
+      "map": "surface",
+      "world": {
+        "x": -150362.11,
+        "y": 9519.126,
+        "z": 5120.22
+      },
+      "u": 0.41631986889084,
+      "v": 0.32683019236023264,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "ogrr_released",
+  "appearanceCondition": "OGRR creatures can be released from the scarecrow laboratory. Afterwards they may appear in different areas, mainly at night.",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Scorpion Finale Venom",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Ogrr Gland",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 3,
+      "notes": "3 independent rolls"
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "1",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Chunk",
+      "countLabel": "2",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Claw",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Claw",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Northern Stinger",
+      "countLabel": "1",
+      "chancePct": 60,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Scorpion Venom",
+      "countLabel": "2",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

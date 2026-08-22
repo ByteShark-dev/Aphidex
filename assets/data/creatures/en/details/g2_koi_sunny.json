@@ -1,1 +1,166 @@
-{"id":"g2_koi_sunny","speciesKey":"g1_koi_fish","collectionGroup":"angry","game":"g2","danger":"unknown","order":242,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_koi_sunny.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"We're preparing this information for you.","interactionWithPlayer":"We're preparing this information for you.","interactionWithCreatures":"We're preparing this information for you.","strategy":"We're preparing this information for you.","groupId":"koi","name":"Sunny","tier":5,"cardTier":5,"technicalId":"KoiA","bestiaryId":"KoiA","isBoss":true,"bossCardStyle":"yellow","isKillable":false,"healthDisplay":"hidden","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png","weaknesses":[],"resistances":[],"elementalWeaknesses":[],"damageWeaknesses":[],"resistancesV2":[],"weakPoints":[],"attacks":[{"name":"Charge","technicalId":"KoiCharge_Augusta","tags":["general_unblockable"],"notes":"Attack damage: 500"},{"name":"Koi Eat","technicalId":"KoiEat_Augusta","tags":["general_unblockable"],"notes":"Attack damage: 500"},{"name":"Koi Thrash","technicalId":"KoiThrash_Augusta","tags":["general_unblockable"],"notes":"Attack damage: 500"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":null,"description":"Prince of Skunk Pond. Likes to bully the tadpoles. And by bully, I mean eat.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_koi_sunny",
+  "speciesKey": "g1_koi_fish",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "alta",
+  "order": 242,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_koi_sunny.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "loot",
+      "item": "Koi Fish Scale",
+      "minCount": 0,
+      "maxCount": 1
+    }
+  ],
+  "abilities": [],
+  "behavior": "It patrols the waters of the Skunk Pond in search of food. It attacks creatures it considers prey and may chase them down to swallow them.",
+  "interactionWithPlayer": "It is extremely dangerous and cannot be killed. If it detects the player, it can pursue them and use attacks that deal enormous damage, so fighting it directly is not an option.",
+  "interactionWithCreatures": "It is one of the pond's main predators and shows a particular preference for tadpoles, which it may chase and devour.",
+  "strategy": "Always keep track of its position and avoid staying in open water for too long. Do not let all three koi in the pond detect you at the same time, because escaping all three at once is nearly impossible and usually ends in certain death. If Sunny starts chasing you, look for cover or a place where you can quickly get out of its reach.",
+  "groupId": "koi",
+  "name": "Sunny",
+  "tier": 5,
+  "cardTier": 5,
+  "technicalId": "KoiA",
+  "bestiaryId": "KoiA",
+  "isBoss": true,
+  "bossCardStyle": "yellow",
+  "isKillable": false,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png",
+  "weaknesses": [],
+  "resistances": [],
+  "elementalWeaknesses": [],
+  "damageWeaknesses": [],
+  "resistancesV2": [],
+  "weakPoints": [],
+  "attacks": [
+    {
+      "name": "Charge",
+      "technicalId": "KoiCharge_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Koi Eat",
+      "technicalId": "KoiEat_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Koi Thrash",
+      "technicalId": "KoiThrash_Augusta",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 500",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 500.0,
+      "cooldownSeconds": 10.0,
+      "range": 100.0,
+      "stun": 200,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 5,
+    "value": 2000000000
+  },
+  "description": "Prince of Skunk Pond. Likes to bully the tadpoles. And by bully, I mean eat.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_7238029dd476166c",
+      "targetType": "creature",
+      "targetId": "g2_koi_sunny",
+      "technicalId": "KoiA",
+      "map": "surface",
+      "world": {
+        "x": -53287.3,
+        "y": -2591.5747,
+        "z": -10605.467
+      },
+      "u": 0.7799597775826749,
+      "v": 0.2745435007471119,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "fixed_encounter",
+  "hideHealth": true,
+  "presentationOverrideProvenance": "presentation_rule",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "combatStats": {
+    "health": 2000000000,
+    "stunThreshold": 70,
+    "stunCooldownSeconds": 5
+  },
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Koi Fish Scale",
+      "countLabel": "1",
+      "chancePct": 10,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}

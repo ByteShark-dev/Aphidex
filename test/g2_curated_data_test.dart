@@ -308,10 +308,11 @@ void main() {
 
   test('g2 boss danger tiers match the current community read', () {
     expect(entry('g2_axl')['danger'], 'imposible_superior');
-    expect(entry('g2_king_dozer')['danger'], 'extrema');
-    expect(entry('g2_orc_broodmother')['danger'], 'imposible');
-    expect(entry('g2_masked_stranger')['danger'], 'imposible');
-    expect(entry('g2_masked_fighter')['danger'], 'imposible');
+    expect(entry('g2_king_dozer')['danger'], 'imposible_superior');
+    expect(entry('g2_orc_broodmother')['danger'], 'muy_alta');
+    expect(entry('g2_masked_stranger')['danger'], 'muy_alta');
+    expect(entry('g2_masked_fighter')['danger'], 'alta');
+    expect(entry('g2_ogrr_toe_biter_leviathan')['danger'], 'extrema');
     expect(entry('g2_orchid_mantis')['danger'], 'proximamente');
     expect(entry('g2_orchid_mantis')['underConstruction'], isTrue);
   });
@@ -326,8 +327,8 @@ void main() {
     expect(entry('g2_rust_beetle')['danger'], 'muy_alta');
   });
 
-  test('g2 indirect-threat creatures use the elevated danger tier', () {
-    expect(entry('g2_woolly_aphid')['danger'], 'intermedia');
+  test('g2 indirect-threat creatures use their calibrated danger tier', () {
+    expect(entry('g2_woolly_aphid')['danger'], 'baja');
     expect(entry('g2_garter_snake')['danger'], 'intermedia');
     expect(entry('g2_orc_weevil')['danger'], 'alta');
   });

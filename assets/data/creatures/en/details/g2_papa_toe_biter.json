@@ -1,1 +1,393 @@
-{"id":"g2_papa_toe_biter","speciesKey":"papa_toe_biter","collectionGroup":"angry","game":"g2","danger":"unknown","order":307,"defaultGold":false,"photo":"assets/g2/creatures/photos/v4_4_g2_papa_toe_biter.webp","temperament":"aggressive","loot":[],"abilities":[],"behavior":"We're preparing this information for you.","interactionWithPlayer":"We're preparing this information for you.","interactionWithCreatures":"We're preparing this information for you.","strategy":"We're preparing this information for you.","groupId":null,"name":"Papa Toe Biter","tier":4,"cardTier":4,"technicalId":"ToeBiterLeviathanEggs","bestiaryId":"ToeBiterLeviathanEggs","isBoss":false,"bossCardStyle":null,"isKillable":true,"healthDisplay":"normal","cardNormal":"assets/g2/creatures/cards/Creaturecard_T_UI_Tier4_ToeBiter_LeviathanEggs.png","cardGold":"assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier4_ToeBiter_LeviathanEggs_G.png","weaknesses":["spicy"],"resistances":["water","fresh","venom","slashing","gas"],"elementalWeaknesses":[{"type":"spicy","bonusPct":15}],"damageWeaknesses":[],"resistancesV2":[{"type":"water","bonusPct":35},{"type":"fresh","bonusPct":50},{"type":"venom","bonusPct":50},{"type":"slashing","bonusPct":50},{"type":"gas","bonusPct":90}],"weakPoints":[{"part":"butt","susceptibleDamage":"any","susceptibleDamageTypes":["any"]}],"attacks":[{"name":"Area Attack","technicalId":"ToeBiterLeviathanEggAOE","tags":["generic"],"notes":"Attack damage: 125"},{"name":"Toe Biter Leviathan Egg Range","technicalId":"ToeBiterLeviathanEggRange","tags":["general_unblockable","ranged"],"notes":"Attack damage: 100"},{"name":"Combo 5 A","technicalId":"ToeBiterLeviathanEggCombo5A","tags":["slashing"],"notes":"Attack damage: 75"},{"name":"Combo 5 B","technicalId":"ToeBiterLeviathanEggCombo5B","tags":["slashing"],"notes":"Attack damage: 75"},{"name":"Power Attack","technicalId":"ToeBiterLeviathanEggPowerAttack","tags":["slashing"],"notes":"Attack damage: 150"},{"name":"Toe Biter Leviathan Spawn Nymphs","technicalId":"ToeBiterLeviathanSpawnNymphs","tags":[],"notes":"Attack damage: 0"},{"name":"Block Offensive","technicalId":"BlockOffensive","tags":["maine"],"notes":"Attack damage: 0"}],"encounterVariants":[],"contextVariants":[],"specialCombatModifiers":[],"mechanicSignals":[],"dataRevision":"grounded2-v4.4","health":{"value":2890,"rating":5},"combatStats":{"health":2890},"description":"A devoted daddy toe biter who will aggressively protect his kids. Drops hatchable toe biter eggs on death.","localizationStatus":"ru_automatic_pending_review","listIconAsset":"","hasCreatureCard":true,"hasGoldCreatureCard":true,"hasSelectableCardVariants":true,"defaultCardVariant":"normal"}
+{
+  "id": "g2_papa_toe_biter",
+  "speciesKey": "papa_toe_biter",
+  "collectionGroup": "angry",
+  "game": "g2",
+  "danger": "imposible_superior",
+  "order": 307,
+  "defaultGold": false,
+  "photo": "assets/g2/creatures/photos/v4_4_g2_papa_toe_biter.webp",
+  "temperament": "aggressive",
+  "loot": [
+    {
+      "section": "rare",
+      "item": "Accessory Toenail",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Taming Egg Toe Biter",
+      "minCount": 4,
+      "maxCount": 4
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Claw",
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Head",
+      "minCount": 0,
+      "maxCount": 1
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Shell",
+      "minCount": 3,
+      "maxCount": 11
+    },
+    {
+      "section": "loot",
+      "item": "Toe Biter Venom",
+      "minCount": 1,
+      "maxCount": 4
+    }
+  ],
+  "abilities": [],
+  "behavior": "It remains inside its arena guarding the area and becomes aggressive when the player gets too close. During combat it keeps much of the adult Toe Biter's moveset and can summon nymphs to join the fight.",
+  "interactionWithPlayer": "Reaching it can be more dangerous than entering the arena itself because the surrounding area is difficult to access and full of enemies. Fortunately, once you reach the combat area you have a chance to stop, heal, and prepare your equipment before engaging, as long as you keep enough distance to avoid triggering it early.",
+  "interactionWithCreatures": "Once inside the arena, the fight essentially begins as a one-on-one and nearby creatures normally do not interfere. However, the Papa Toe Biter can summon nymphs during the fight, gradually increasing the number of enemies present.",
+  "strategy": "Do not waste resources unnecessarily on the way to the arena. Once you arrive, keep your distance, recover health, and prepare all your gear before approaching. Use Spicy damage, avoid Slashing weapons, and quickly kill the nymphs it summons, preferably with area attacks. Also watch for its unblockable attack and use openings to strike its rear weak point.",
+  "groupId": null,
+  "name": "Papa Toe Biter",
+  "tier": 4,
+  "cardTier": 4,
+  "technicalId": "ToeBiterLeviathanEggs",
+  "bestiaryId": "ToeBiterLeviathanEggs",
+  "isBoss": false,
+  "bossCardStyle": null,
+  "isKillable": true,
+  "healthDisplay": "normal",
+  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier4_ToeBiter_LeviathanEggs.png",
+  "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier4_ToeBiter_LeviathanEggs_G.png",
+  "weaknesses": [
+    "spicy"
+  ],
+  "resistances": [
+    "water",
+    "fresh",
+    "venom",
+    "slashing",
+    "gas"
+  ],
+  "elementalWeaknesses": [
+    {
+      "type": "spicy",
+      "bonusPct": 15
+    }
+  ],
+  "damageWeaknesses": [],
+  "resistancesV2": [
+    {
+      "type": "water",
+      "bonusPct": 35
+    },
+    {
+      "type": "fresh",
+      "bonusPct": 50
+    },
+    {
+      "type": "venom",
+      "bonusPct": 50
+    },
+    {
+      "type": "slashing",
+      "bonusPct": 50
+    },
+    {
+      "type": "gas",
+      "bonusPct": 90
+    }
+  ],
+  "weakPoints": [
+    {
+      "part": "butt",
+      "susceptibleDamage": "any",
+      "susceptibleDamageTypes": [
+        "any"
+      ],
+      "weaponFamilies": [],
+      "provenance": "historical_editorial"
+    }
+  ],
+  "attacks": [
+    {
+      "name": "Area Attack",
+      "technicalId": "ToeBiterLeviathanEggAOE",
+      "tags": [
+        "general"
+      ],
+      "notes": "Attack damage: 125",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 125.0,
+      "cooldownSeconds": 12.0,
+      "range": 1200.0,
+      "stun": 20,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Toe Biter Leviathan Egg Range",
+      "technicalId": "ToeBiterLeviathanEggRange",
+      "tags": [
+        "general",
+        "projectile",
+        "ranged"
+      ],
+      "notes": "Attack damage: 100",
+      "damageTypes": [
+        "general"
+      ],
+      "damage": 100.0,
+      "cooldownSeconds": 5.0,
+      "range": 200.0,
+      "stun": 15,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": true,
+      "projectile": true,
+      "hitResolutionType": "AOE",
+      "actionType": "aoe",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 5 A",
+      "technicalId": "ToeBiterLeviathanEggCombo5A",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Attack damage: 75",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 650.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Combo 5 B",
+      "technicalId": "ToeBiterLeviathanEggCombo5B",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Attack damage: 75",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 75.0,
+      "cooldownSeconds": 5.0,
+      "range": 650.0,
+      "stun": 8,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Power Attack",
+      "technicalId": "ToeBiterLeviathanEggPowerAttack",
+      "tags": [
+        "slashing"
+      ],
+      "notes": "Attack damage: 150",
+      "damageTypes": [
+        "slashing"
+      ],
+      "damage": 150.0,
+      "cooldownSeconds": 8.0,
+      "range": 650.0,
+      "stun": 10,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Default",
+      "actionType": "melee",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Toe Biter Leviathan Spawn Nymphs",
+      "technicalId": "ToeBiterLeviathanSpawnNymphs",
+      "tags": [],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 30.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": false,
+      "hitResolutionType": "Self",
+      "actionType": "summon_action",
+      "blockability": "unknown"
+    },
+    {
+      "name": "Block Offensive",
+      "technicalId": "BlockOffensive",
+      "tags": [
+        "projectile"
+      ],
+      "notes": "Attack damage: 0",
+      "damageTypes": [],
+      "damage": 0.0,
+      "cooldownSeconds": 6.0,
+      "range": 100.0,
+      "stun": 0,
+      "statusEffects": [],
+      "statusEffectDetails": [],
+      "ranged": false,
+      "projectile": true,
+      "hitResolutionType": "Default",
+      "actionType": "defensive_action",
+      "blockability": "unknown"
+    }
+  ],
+  "encounterVariants": [],
+  "contextVariants": [],
+  "specialCombatModifiers": [],
+  "mechanicSignals": [],
+  "dataRevision": "grounded2-v4.4",
+  "health": {
+    "rating": 5,
+    "value": 2890
+  },
+  "combatStats": {
+    "health": 2890,
+    "stunThreshold": 120,
+    "stunCooldownSeconds": 60
+  },
+  "description": "A devoted daddy toe biter who will aggressively protect his kids. Drops hatchable toe biter eggs on death.",
+  "localizationStatus": "ru_automatic_pending_review",
+  "listIconAsset": "",
+  "hasCreatureCard": true,
+  "hasGoldCreatureCard": true,
+  "hasSelectableCardVariants": true,
+  "defaultCardVariant": "normal",
+  "locations": [
+    {
+      "id": "spawn_3a1fc0c505c58467",
+      "targetType": "creature",
+      "targetId": "g2_papa_toe_biter",
+      "technicalId": "ToeBiterLeviathanEggs",
+      "map": "surface",
+      "world": {
+        "x": -33674.816,
+        "y": 48005.043,
+        "z": 11530.571
+      },
+      "u": 0.8534276719929764,
+      "v": 0.49298913918542875,
+      "type": "placed_encounter",
+      "conditional": false,
+      "environmentHazards": []
+    }
+  ],
+  "environmentHazards": [],
+  "eventAppearances": [],
+  "appearanceType": "fixed_encounter",
+  "presentationOverrideProvenance": "explicit_editorial",
+  "dangerOverrideProvenance": "community_calibrated_2026_08_22",
+  "immunities": [],
+  "advancedLootTable": [
+    {
+      "item": "Accessory Toenail",
+      "countLabel": "1",
+      "chancePct": 4,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Taming Egg Toe Biter",
+      "countLabel": "4",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Claw",
+      "countLabel": "1",
+      "chancePct": 20,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Claw",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Head",
+      "countLabel": "1",
+      "chancePct": 75,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 5,
+      "notes": "5 independent rolls"
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "3",
+      "chancePct": 50,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Shell",
+      "countLabel": "3",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Venom",
+      "countLabel": "1",
+      "chancePct": 1,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Venom",
+      "countLabel": "1",
+      "chancePct": 100,
+      "rollCount": 1,
+      "notes": null
+    },
+    {
+      "item": "Toe Biter Venom",
+      "countLabel": "2",
+      "chancePct": 25,
+      "rollCount": 1,
+      "notes": null
+    }
+  ]
+}
