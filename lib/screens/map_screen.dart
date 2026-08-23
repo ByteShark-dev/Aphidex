@@ -98,8 +98,7 @@ class _MapScreenState extends State<MapScreen>
   void didChangeDependencies() {
     super.didChangeDependencies();
     final language = _language;
-    if (widget.request?.target.type == MapTargetType.creature &&
-        _presentationLanguage != language) {
+    if (widget.request != null && _presentationLanguage != language) {
       _presentationLanguage = language;
       _presentationsFuture = _loadPresentations(language);
     }
@@ -379,7 +378,7 @@ class _MapScreenState extends State<MapScreen>
             ? EntityAssetResolver.creatureCardFallback
             : EntityAssetResolver.resolveEnemyIndex(
                 entry,
-                EntityAssetUsage.mapMarker,
+                EntityAssetUsage.card,
               ).asset;
         actionLabel = _t('View creature', 'Ver criatura', 'Открыть существо');
         if (entry != null) {
@@ -524,37 +523,73 @@ class _MapScreenState extends State<MapScreen>
   Future<Map<String, _MarkerPresentation>> _loadPresentations(
     String language,
   ) async {
-    final creatures = await EnemyRepository.loadGame('g2', language);
-    return {
-      for (final creature in creatures)
-        _presentationKey(
-          MapTargetType.creature,
-          creature.id,
-        ): _MarkerPresentation(
-          name: creature.name,
-          image: EntityAssetResolver.resolveEnemyIndex(
-            creature,
-            EntityAssetUsage.mapMarker,
-          ).asset,
-        ),
-    };
+    switch (widget.request?.target.type) {
+      case MapTargetType.creature:
+        final creatures = await EnemyRepository.loadGame('g2', language);
+        return {
+          for (final creature in creatures)
+            _presentationKey(
+              MapTargetType.creature,
+              creature.id,
+            ): _MarkerPresentation(
+              name: creature.name,
+              image: mapCreatureCardAsset(creature),
+            ),
+        };
+      case MapTargetType.defense:
+        final defenses = await DefenseRepository.load();
+        return {
+          for (final defense in defenses)
+            for (final variant in defense.variants)
+              _presentationKey(
+                MapTargetType.defense,
+                variant.id,
+              ): _MarkerPresentation(
+                name: variant.name.resolve(language),
+                image: variant.markerAsset.isNotEmpty
+                    ? variant.markerAsset
+                    : variant.image,
+              ),
+        };
+      case MapTargetType.equipment:
+        final equipment = await EquipmentRepository.load();
+        return {
+          for (final item in equipment.items)
+            _presentationKey(
+              MapTargetType.equipment,
+              item.id,
+            ): _MarkerPresentation(
+              name: item.name.resolve(language),
+              image: EntityAssetResolver.resolveEquipment(item).asset,
+            ),
+        };
+      case null:
+        return const <String, _MarkerPresentation>{};
+    }
   }
 }
+
+@visibleForTesting
+String mapCreatureCardAsset(EnemyIndexEntry creature) =>
+    EntityAssetResolver.resolveEnemyIndex(
+      creature,
+      EntityAssetUsage.card,
+    ).asset;
 
 @visibleForTesting
 List<LocationRecord> visibleMapMarkersForRequest(
   List<LocationRecord> markers,
   MapOpenRequest? request,
 ) {
-  if (request == null || request.target.type != MapTargetType.creature) {
+  if (request == null) {
     return const <LocationRecord>[];
   }
   final targetId = request.target.id;
+  final targetType = request.target.type;
   final filter = request.filter;
   return markers
       .where((marker) {
-        if (marker.targetType != MapTargetType.creature ||
-            marker.targetId != targetId) {
+        if (marker.targetType != targetType || marker.targetId != targetId) {
           return false;
         }
         if (filter.type != null && marker.targetType != filter.type) {
