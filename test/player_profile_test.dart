@@ -349,6 +349,34 @@ void main() {
     );
   });
 
+  test('linked base and Buggie entries count as one profile card', () {
+    const base = _FakeCardCarrier(
+      id: 'g2_ladybug',
+      game: 'g2',
+      normalAsset: 'normal.webp',
+      goldAsset: 'gold.webp',
+    );
+    const buggy = _FakeCardCarrier(
+      id: 'g2_buggy_ladybug',
+      game: 'g2',
+      goldLinkId: 'g2_ladybug',
+      normalAsset: 'buggy-normal.webp',
+      goldAsset: 'buggy-gold.webp',
+    );
+
+    final stats = summarizePlayerProfileStats(
+      [base, buggy],
+      const <String, CreatureCardProgress>{
+        'g2:g2_ladybug': CreatureCardProgress.gold,
+      },
+    );
+
+    expect(stats.cardsTotal, 1);
+    expect(stats.cardsObtained, 1);
+    expect(stats.goldCardsTotal, 1);
+    expect(stats.goldCardsObtained, 1);
+  });
+
   test('profile copy is available in Spanish, English, and Russian', () {
     final spanish = AppLocalizations(const Locale('es'));
     final english = AppLocalizations(const Locale('en'));
@@ -716,6 +744,7 @@ class _FakeCardCarrier implements CreatureCardCarrier {
     required this.game,
     this.normalAsset = '',
     this.goldAsset = '',
+    this.goldLinkId,
   });
 
   @override
@@ -726,10 +755,10 @@ class _FakeCardCarrier implements CreatureCardCarrier {
   final String goldAsset;
 
   @override
-  bool get defaultGold => false;
+  final String? goldLinkId;
 
   @override
-  String? get goldLinkId => null;
+  bool get defaultGold => false;
 
   @override
   bool get hasCreatureCard => normalAsset.isNotEmpty || goldAsset.isNotEmpty;

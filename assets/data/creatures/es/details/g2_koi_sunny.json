@@ -5,7 +5,7 @@
   "game": "g2",
   "danger": "alta",
   "order": 242,
-  "defaultGold": false,
+  "defaultGold": true,
   "photo": "assets/g2/creatures/photos/v4_4_g2_koi_sunny.webp",
   "temperament": "aggressive",
   "loot": [
@@ -31,7 +31,7 @@
   "bossCardStyle": "yellow",
   "isKillable": false,
   "healthDisplay": "normal",
-  "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+  "cardNormal": "",
   "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png",
   "weaknesses": [],
   "resistances": [],
@@ -121,8 +121,8 @@
   "listIconAsset": "",
   "hasCreatureCard": true,
   "hasGoldCreatureCard": true,
-  "hasSelectableCardVariants": true,
-  "defaultCardVariant": "normal",
+  "hasSelectableCardVariants": false,
+  "defaultCardVariant": "gold",
   "locations": [
     {
       "id": "spawn_7238029dd476166c",

@@ -2,10 +2,12 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:aphidex/data/entity_asset_resolver.dart';
+import 'package:aphidex/data/creature_card_state.dart';
 import 'package:aphidex/data/ui_mapper.dart';
 import 'package:aphidex/data/weakpoint_resolver.dart';
 import 'package:aphidex/i18n/app_localizations.dart';
 import 'package:aphidex/models/catalog_entry_kind.dart';
+import 'package:aphidex/models/creature_card_support.dart';
 import 'package:aphidex/models/defense_event.dart';
 import 'package:aphidex/models/enemy.dart';
 import 'package:aphidex/models/enemy_index_entry.dart';
@@ -66,6 +68,15 @@ void main() {
         expect(enemy.hideHealth, isTrue);
         expect(enemy.combatStats?.health, 2000000000);
         expect(enemy.health?.value, 2000000000);
+        expect(enemy.cardNormal, isEmpty);
+        expect(enemy.cardGold, isNotEmpty);
+        expect(enemy.defaultGold, isTrue);
+        expect(enemy.hasSelectableCardVariants, isFalse);
+        expect(enemy.defaultCardVariant, CreatureCardVariant.gold);
+        expect(
+          nextCreatureCardProgress(enemy, CreatureCardProgress.unowned),
+          CreatureCardProgress.gold,
+        );
       }
     });
 

@@ -417,7 +417,7 @@ def main() -> None:
         health = game.get("stats", {}).get("health")
         if yellow:
             health = None
-        normal_card = copy_card(raw, "normal")
+        normal_card = "" if yellow else copy_card(raw, "normal")
         gold_card = copy_card(raw, "gold") or copy_special_gold_card(stable_id)
         old.update({
             "id": stable_id,
@@ -428,6 +428,7 @@ def main() -> None:
             "tier": 5 if is_boss else max(1, raw_tier), "cardTier": card_tier,
             "technicalId": technical_id, "bestiaryId": bestiary_id,
             "isBoss": is_boss, "bossCardStyle": "yellow" if yellow else ("red" if is_boss else None),
+            "defaultGold": yellow,
             "isKillable": not yellow, "healthDisplay": "hidden" if yellow else "normal",
             "cardNormal": normal_card, "cardGold": gold_card,
             "weaknesses": [normalized_weakness_id(x) for row in game.get("weaknesses", []) for x in row.get("damageTypes", [])],

@@ -32624,7 +32624,7 @@
       "mapLayers": [
         "surface"
       ],
-      "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+      "cardNormal": "",
       "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png",
       "mapMarkerAsset": null
     },
@@ -32800,7 +32800,7 @@
       "mapLayers": [
         "abyss"
       ],
-      "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+      "cardNormal": "",
       "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png",
       "mapMarkerAsset": null
     },
@@ -32971,7 +32971,7 @@
       "mapLayers": [
         "surface"
       ],
-      "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+      "cardNormal": "",
       "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png",
       "mapMarkerAsset": null
     },
@@ -33142,7 +33142,7 @@
       "mapLayers": [
         "surface"
       ],
-      "cardNormal": "assets/g2/creatures/cards/Creaturecard_T_UI_Tier5_KoiFish_G.png",
+      "cardNormal": "",
       "cardGold": "assets/g2/creatures/cards_golden/Creaturecardgold_T_UI_Tier5_KoiFish_G.png",
       "mapMarkerAsset": null
     },

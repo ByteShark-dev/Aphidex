@@ -25,8 +25,18 @@ typedef CreatureCardProgressMap = Map<String, CreatureCardProgress>;
 
 const String creatureCardProgressStorageKey = 'creature_card_progress_v2';
 
+String? creatureCardProgressKeyOrNull(CreatureCardCarrier enemy) {
+  final game = enemy.game.trim();
+  final linkedId = enemy.goldLinkId?.trim() ?? '';
+  final cardId = linkedId.isNotEmpty ? linkedId : enemy.id.trim();
+  if (game.isEmpty || cardId.isEmpty) {
+    return null;
+  }
+  return '$game:$cardId';
+}
+
 String creatureCardProgressKey(CreatureCardCarrier enemy) =>
-    '${enemy.game}:${enemy.id}';
+    creatureCardProgressKeyOrNull(enemy) ?? '';
 
 CreatureCardProgressMap decodeCreatureCardProgressMap(String? raw) {
   if (raw == null || raw.trim().isEmpty) {
@@ -82,11 +92,15 @@ bool shouldTrackCreatureCardProgress(CreatureCardCarrier enemy) {
 }
 
 Set<String> creatureCardLegacyAliases(CreatureCardCarrier enemy) {
+  final game = enemy.game.trim();
+  final id = enemy.id.trim();
+  final linkedId = enemy.goldLinkId?.trim() ?? '';
   final aliases = <String>{
-    enemy.id.trim(),
+    id,
     creatureCardProgressKey(enemy),
-    if (enemy.goldLinkId != null) enemy.goldLinkId!.trim(),
-    if (enemy.goldLinkId != null) '${enemy.game}:${enemy.goldLinkId!.trim()}',
+    if (game.isNotEmpty && id.isNotEmpty) '$game:$id',
+    linkedId,
+    if (game.isNotEmpty && linkedId.isNotEmpty) '$game:$linkedId',
   }..removeWhere((value) => value.isEmpty);
 
   final expanded = <String>{...aliases};
@@ -106,6 +120,27 @@ Set<String> creatureCardLegacyAliases(CreatureCardCarrier enemy) {
     }
   }
   return expanded;
+}
+
+Set<String> creatureCardObsoleteProgressKeys(CreatureCardCarrier enemy) {
+  final game = enemy.game.trim();
+  final id = enemy.id.trim();
+  final linkedId = enemy.goldLinkId?.trim() ?? '';
+  final keys = <String>{
+    id,
+    linkedId,
+    if (game.isNotEmpty && id.isNotEmpty) ...{
+      '$game:$id',
+      '$game|$id',
+      '$game/$id',
+    },
+    if (game.isNotEmpty && linkedId.isNotEmpty) ...{
+      '$game:$linkedId',
+      '$game|$linkedId',
+      '$game/$linkedId',
+    },
+  }..removeWhere((value) => value.isEmpty);
+  return keys;
 }
 
 CreatureCardProgress normalizeCreatureCardProgress(
@@ -262,7 +297,11 @@ CreatureCardProgress resolveCreatureCardProgress(
     return CreatureCardProgress.unowned;
   }
 
-  final stored = progressByKey[creatureCardProgressKey(enemy)];
+  final key = creatureCardProgressKeyOrNull(enemy);
+  if (key == null) {
+    return CreatureCardProgress.unowned;
+  }
+  final stored = progressByKey[key];
   if (stored != null) {
     return normalizeCreatureCardProgress(enemy, stored);
   }

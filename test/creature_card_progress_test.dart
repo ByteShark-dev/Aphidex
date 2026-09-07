@@ -123,6 +123,39 @@ void main() {
       );
     },
   );
+
+  test('linked base and Buggie entries use one canonical progress key', () {
+    const base = _FakeCardCarrier(
+      id: 'g2_ladybug',
+      cardNormal: 'normal.webp',
+      cardGold: 'gold.webp',
+    );
+    const buggy = _FakeCardCarrier(
+      id: 'g2_buggy_ladybug',
+      goldLinkId: 'g2_ladybug',
+      cardNormal: 'buggy-normal.webp',
+      cardGold: 'buggy-gold.webp',
+    );
+
+    expect(creatureCardProgressKey(base), 'g2:g2_ladybug');
+    expect(creatureCardProgressKey(buggy), 'g2:g2_ladybug');
+    expect(
+      creatureCardObsoleteProgressKeys(buggy),
+      contains('g2:g2_buggy_ladybug'),
+    );
+  });
+
+  test('empty game or card identity cannot create a storage key', () {
+    const emptyId = _FakeCardCarrier(id: '', cardNormal: 'normal.webp');
+    const emptyGame = _FakeCardCarrier(
+      id: 'card',
+      game: '',
+      cardNormal: 'normal.webp',
+    );
+
+    expect(creatureCardProgressKeyOrNull(emptyId), isNull);
+    expect(creatureCardProgressKeyOrNull(emptyGame), isNull);
+  });
 }
 
 class _FakeCardCarrier implements CreatureCardCarrier {
@@ -132,6 +165,7 @@ class _FakeCardCarrier implements CreatureCardCarrier {
     this.cardGold = '',
     this.goldLinkId,
     this.defaultGold = false,
+    this.game = 'g2',
   });
 
   @override
@@ -144,7 +178,7 @@ class _FakeCardCarrier implements CreatureCardCarrier {
   final bool defaultGold;
 
   @override
-  String get game => 'g2';
+  final String game;
 
   @override
   bool get hasCreatureCard => cardNormal.isNotEmpty || cardGold.isNotEmpty;
