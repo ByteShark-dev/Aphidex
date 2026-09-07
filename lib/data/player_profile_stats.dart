@@ -33,16 +33,32 @@ PlayerProfileStats summarizePlayerProfileStats(
   var goldCardsObtained = 0;
   var goldCardsTotal = 0;
 
+  final cardsByKey = <String, List<CreatureCardCarrier>>{};
   for (final entry in entries) {
-    if (!shouldTrackCreatureCardProgress(entry)) {
+    final key = creatureCardProgressKeyOrNull(entry);
+    if (key == null || !shouldTrackCreatureCardProgress(entry)) {
       continue;
     }
+    cardsByKey.putIfAbsent(key, () => <CreatureCardCarrier>[]).add(entry);
+  }
+
+  for (final cardEntries in cardsByKey.values) {
     cardsTotal += 1;
-    final progress = resolveCreatureCardProgress(entry, progressByKey);
+    var progress = CreatureCardProgress.unowned;
+    for (final entry in cardEntries) {
+      final candidate = resolveCreatureCardProgress(entry, progressByKey);
+      if (candidate == CreatureCardProgress.gold) {
+        progress = candidate;
+        break;
+      }
+      if (candidate == CreatureCardProgress.obtained) {
+        progress = candidate;
+      }
+    }
     if (progress != CreatureCardProgress.unowned) {
       cardsObtained += 1;
     }
-    if (creatureCardHasGoldVariant(entry)) {
+    if (cardEntries.any(creatureCardHasGoldVariant)) {
       goldCardsTotal += 1;
       if (progress == CreatureCardProgress.gold) {
         goldCardsObtained += 1;

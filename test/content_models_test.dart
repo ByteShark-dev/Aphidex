@@ -3,6 +3,7 @@ import 'package:aphidex/data/enemy_repository.dart';
 import 'package:aphidex/models/defense_event.dart';
 import 'package:aphidex/models/equipment.dart';
 import 'package:aphidex/models/location.dart';
+import 'package:aphidex/screens/map_screen.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
 
@@ -66,6 +67,74 @@ void main() {
       expect(point.dy, closeTo(.166, .002));
     },
   );
+
+  test(
+    'every MIX.R and Ice Sickles entry opens its contextual marker',
+    () async {
+      MapRepository.clearCache();
+      DefenseRepository.clearCache();
+      final map = await MapRepository.load();
+      final defenses = await DefenseRepository.load();
+      final variants = defenses.expand((entry) => entry.variants).toList();
+      expect(
+        variants.map((variant) => variant.id).toSet(),
+        containsAll(<String>{
+          'mixr_greenhouse',
+          'mixr_picnic',
+          'mixr_resting',
+          'ice_sickles',
+        }),
+      );
+      for (final variant in variants) {
+        final visible = visibleMapMarkersForRequest(
+          map.markers,
+          MapOpenRequest(
+            target: MapTarget(MapTargetType.defense, variant.id),
+            filter: MapFilter(
+              type: MapTargetType.defense,
+              targetId: variant.id,
+            ),
+            focus: MapFocus(preferredLayer: variant.location.layer),
+          ),
+        );
+        expect(visible, hasLength(1), reason: variant.id);
+        expect(visible.single.targetId, variant.id);
+      }
+    },
+  );
+
+  test('every mapped equipment entry opens only its locations', () async {
+    MapRepository.clearCache();
+    EquipmentRepository.clearCache();
+    final map = await MapRepository.load();
+    final equipment = await EquipmentRepository.load();
+    final itemIds = equipment.items.map((item) => item.id).toSet();
+    final mappedIds = map.markers
+        .where((marker) => marker.targetType == MapTargetType.equipment)
+        .map((marker) => marker.targetId)
+        .toSet();
+
+    expect(mappedIds, isNotEmpty);
+    expect(mappedIds, everyElement(isIn(itemIds)));
+    for (final itemId in mappedIds) {
+      final expected = map.markers
+          .where(
+            (marker) =>
+                marker.targetType == MapTargetType.equipment &&
+                marker.targetId == itemId,
+          )
+          .toList();
+      final visible = visibleMapMarkersForRequest(
+        map.markers,
+        MapOpenRequest(
+          target: MapTarget(MapTargetType.equipment, itemId),
+          filter: MapFilter(type: MapTargetType.equipment, targetId: itemId),
+          focus: const MapFocus(),
+        ),
+      );
+      expect(visible, expected, reason: itemId);
+    }
+  });
 
   test('invalid normalized coordinates fail before runtime drawing', () {
     expect(

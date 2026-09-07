@@ -32,6 +32,34 @@ void main() {
 
     expect(filtered, ['g2_regular_test']);
   });
+
+  test('gold filter keeps both views of one linked gold card', () {
+    const base = _FakeCardCarrier(
+      id: 'g2_ladybug',
+      cardNormal: 'normal.webp',
+      cardGold: 'gold.webp',
+    );
+    const buggy = _FakeCardCarrier(
+      id: 'g2_buggy_ladybug',
+      goldLinkId: 'g2_ladybug',
+      cardNormal: 'buggy-normal.webp',
+      cardGold: 'buggy-gold.webp',
+    );
+    const progress = <String, CreatureCardProgress>{
+      'g2:g2_ladybug': CreatureCardProgress.gold,
+    };
+
+    expect(
+      [base, buggy]
+          .where(
+            (entry) =>
+                resolveCreatureCardProgress(entry, progress) ==
+                CreatureCardProgress.gold,
+          )
+          .map((entry) => entry.id),
+      ['g2_ladybug', 'g2_buggy_ladybug'],
+    );
+  });
 }
 
 class _FakeCardCarrier implements CreatureCardCarrier {
@@ -39,6 +67,7 @@ class _FakeCardCarrier implements CreatureCardCarrier {
     required this.id,
     this.cardNormal = '',
     this.cardGold = '',
+    this.goldLinkId,
   });
 
   @override
@@ -47,10 +76,10 @@ class _FakeCardCarrier implements CreatureCardCarrier {
   final String cardGold;
 
   @override
-  String get game => 'g2';
+  final String? goldLinkId;
 
   @override
-  String? get goldLinkId => null;
+  String get game => 'g2';
 
   @override
   bool get defaultGold => false;

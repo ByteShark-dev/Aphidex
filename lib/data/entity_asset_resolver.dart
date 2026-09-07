@@ -1,3 +1,4 @@
+import '../models/catalog_entry_kind.dart';
 import '../models/enemy.dart';
 import '../models/enemy_index_entry.dart';
 import '../models/equipment.dart';
@@ -71,6 +72,31 @@ class EntityAssetResolver {
     mapMarkerAsset: enemy.mapMarkerAsset,
     customAsset: enemy.customAsset,
   );
+
+  /// Resolves the image shown by catalog list entries. Grounded 1 special
+  /// entries predate [customAsset] and keep their approved historical image in
+  /// [EnemyIndexEntry.listIconAsset]. This explicit compatibility path avoids
+  /// treating Grounded 2 map thumbnails as list cards.
+  static EntityAssetResolution resolveListEntry(
+    EnemyIndexEntry enemy, {
+    String? selectedCardAsset,
+  }) {
+    if (enemy.game == 'g1' && enemy.listIconAsset.trim().isNotEmpty) {
+      return resolveCreature(
+        publicId: enemy.id,
+        game: enemy.game,
+        usage: EntityAssetUsage.customEntry,
+        customAsset: enemy.listIconAsset,
+      );
+    }
+    return resolveEnemyIndex(
+      enemy,
+      enemy.entryKind != CatalogEntryKind.creature
+          ? EntityAssetUsage.customEntry
+          : EntityAssetUsage.card,
+      selectedCardAsset: selectedCardAsset,
+    );
+  }
 
   static EntityAssetResolution resolveCreature({
     required String game,

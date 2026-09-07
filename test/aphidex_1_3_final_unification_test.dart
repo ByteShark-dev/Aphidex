@@ -2,14 +2,17 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:aphidex/data/entity_asset_resolver.dart';
+import 'package:aphidex/data/creature_card_state.dart';
 import 'package:aphidex/data/ui_mapper.dart';
 import 'package:aphidex/data/weakpoint_resolver.dart';
 import 'package:aphidex/i18n/app_localizations.dart';
 import 'package:aphidex/models/catalog_entry_kind.dart';
+import 'package:aphidex/models/creature_card_support.dart';
 import 'package:aphidex/models/defense_event.dart';
 import 'package:aphidex/models/enemy.dart';
 import 'package:aphidex/models/enemy_index_entry.dart';
 import 'package:aphidex/screens/defense_detail_screen.dart';
+import 'package:aphidex/screens/map_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -65,6 +68,15 @@ void main() {
         expect(enemy.hideHealth, isTrue);
         expect(enemy.combatStats?.health, 2000000000);
         expect(enemy.health?.value, 2000000000);
+        expect(enemy.cardNormal, isEmpty);
+        expect(enemy.cardGold, isNotEmpty);
+        expect(enemy.defaultGold, isTrue);
+        expect(enemy.hasSelectableCardVariants, isFalse);
+        expect(enemy.defaultCardVariant, CreatureCardVariant.gold);
+        expect(
+          nextCreatureCardProgress(enemy, CreatureCardProgress.unowned),
+          CreatureCardProgress.gold,
+        );
       }
     });
 
@@ -124,7 +136,7 @@ void main() {
       expect(File(UiMapper.rewardIcon('raw_science')).existsSync(), isTrue);
     });
 
-    test('derived thumbnails are map markers and never list cards', () {
+    test('derived thumbnails never replace list or map Creature Cards', () {
       final index = (readJson('assets/data/creatures/en/index_g2.json') as List)
           .cast<Map<String, dynamic>>();
       for (final row in index) {
@@ -140,13 +152,31 @@ void main() {
         bee,
         EntityAssetUsage.card,
       );
-      final marker = EntityAssetResolver.resolveEnemyIndex(
-        bee,
-        EntityAssetUsage.mapMarker,
-      );
       expect(card.asset, bee.cardNormal);
       expect(card.asset, isNot(bee.mapMarkerAsset));
-      expect(marker.asset, bee.mapMarkerAsset);
+      expect(mapCreatureCardAsset(bee), bee.cardNormal);
+      expect(mapCreatureCardAsset(bee), isNot(bee.mapMarkerAsset));
+    });
+
+    test('G1 special entries retain their historical list assets', () {
+      final index = (readJson('assets/data/creatures/en/index_g1.json') as List)
+          .cast<Map<String, dynamic>>();
+      for (final id in [
+        'g1_enemy_infused',
+        'g1_enemy_orc',
+        'g1_factional_raids',
+        'g1_mixr_defenses',
+        'g1_spicy_coaltana_event',
+        'g1_javamatic_cable_defense',
+      ]) {
+        final entry = EnemyIndexEntry.fromJson(
+          index.singleWhere((row) => row['id'] == id),
+        );
+        final resolved = EntityAssetResolver.resolveListEntry(entry);
+        expect(resolved.asset, entry.listIconAsset, reason: id);
+        expect(resolved.fallbackUsed, isFalse, reason: id);
+        expect(File(resolved.asset).existsSync(), isTrue, reason: id);
+      }
     });
 
     test('all 48 trinkets resolve a real material icon', () {

@@ -2791,11 +2791,8 @@ class EnemyTile extends StatelessWidget {
     EnemyIndexEntry enemy,
     CreatureCardProgress progress,
   ) {
-    return EntityAssetResolver.resolveEnemyIndex(
+    return EntityAssetResolver.resolveListEntry(
       enemy,
-      enemy.entryKind != CatalogEntryKind.creature
-          ? EntityAssetUsage.customEntry
-          : EntityAssetUsage.card,
       selectedCardAsset: resolveCreatureCardAsset(enemy, progress),
     );
   }
